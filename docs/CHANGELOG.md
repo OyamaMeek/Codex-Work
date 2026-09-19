@@ -36,6 +36,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`（新增）
   - `docs/CHANGELOG.md`（追加）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`0d02025 docs: add problem explanation agent instructions`，已推送至 `origin/main`。
 
 ---
