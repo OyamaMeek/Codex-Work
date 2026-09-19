@@ -73,6 +73,6 @@
   - `AGENTS.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`09400c2 docs: restore missing agent requirements`。
 
 ---
