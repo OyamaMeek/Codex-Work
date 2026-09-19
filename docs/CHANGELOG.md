@@ -53,6 +53,6 @@
   - `AGENTS.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`611ec5c docs: address user as 妹妹 before every response`。
 
 ---
