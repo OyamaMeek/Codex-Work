@@ -15,7 +15,7 @@
 - 原始备份 `blt-Launchpad/db_daohang_bilunton_20241218_023001_5m3WTa.sql` 保持只读，绝不复制到新项目或提交至 Git。
 - 不迁移 WordPress 用户、文章、评论、隐私政策页面与上传文件路径。
 - 使用 `sqlglot` 解析 SQL；不得手写字符串解析器。
-- 输出的 `data/webstack.yml` 必须保留 44 条有效导航链接与 12 个分类，URL 不得改写。
+- 输出的 `data/webstack.yml` 必须保留 44 条有效导航链接、12 个原始分类与末尾“其他”分组，URL 不得改写。
 - 缺失 Logo 时不下载替代图；对应 YAML 条目不写 `logo` 字段。
 - 网站项目的 Git 提交仅包含其文件；提交说明遵循 Conventional Commits。
 
@@ -25,6 +25,7 @@
 - 失效链接：保留数据库中的原 URL，不进行网络探测或替换。
 - 没有 `_sites_order` 的条目：排在同分类有数字排序条目之后，并保持数据库出现顺序。
 - 分类顺序：`_term_order` 为零的分类按术语 ID 排序，再接升序的非零排序；当前备份的 12 个 `favorites` 分类均为顶级分类。
+- 无 `favorites` 分类关系的链接：保留在末尾“其他”分组，不静默丢弃。
 - 缺失 Logo：最终 YAML 不含本地不存在的图片路径，Hugo 构建仍成功。
 
 ### Task 1: 初始化独立 Hugo 项目
@@ -141,9 +142,9 @@ class ImportWordPressTests(unittest.TestCase):
         data = build_webstack(SQL)
         links = [link for group in data for link in group["links"]]
         self.assertEqual(44, len(links))
-        self.assertEqual(12, len(data))
+        self.assertEqual(13, len(data))
         self.assertEqual(
-            ["基金项目", "科研社区", "问卷调查", "文档翻译", "学历查询", "图书查询", "学术词典", "必备软件", "投稿选刊", "文献下载", "论文课程", "论文查重"],
+            ["基金项目", "科研社区", "问卷调查", "文档翻译", "学历查询", "图书查询", "学术词典", "必备软件", "投稿选刊", "文献下载", "论文课程", "论文查重", "其他"],
             [group["taxonomy"] for group in data],
         )
         self.assertIn("https://cx.cnki.net/main.html#/login", {link["url"] for link in links})
@@ -205,7 +206,7 @@ python3 -m unittest tools/test_import_wordpress.py -v
 python3 tools/import_wordpress.py ../db_daohang_bilunton_20241218_023001_5m3WTa.sql --output data/webstack.yml
 ```
 
-预期：两个测试通过，生成的 YAML 有 12 个顶级分类和 44 条导航记录。
+预期：两个测试通过，生成的 YAML 有 12 个原始顶级分类、末尾“其他”分组和 44 条导航记录。
 
 - [ ] **Step 6: 提交转换器和数据文件**
 

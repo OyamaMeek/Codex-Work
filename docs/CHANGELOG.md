@@ -1,5 +1,31 @@
 # 开发记录
 
+## [2026-09-21 12:58] 迁移 WordPress 导航站为 WebStack-Hugo
+
+- **需求/问题描述**：
+  > 从 `blt-Launchpad/` 的旧 WordPress 数据库提取导航数据，整理为可部署的 WebStack-Hugo 项目，并提供 Cloudflare Pages 部署指南；不代为操作 Cloudflare。
+
+- **实际实现的功能与改动**：
+  - 在 `blt-Launchpad/webstack-hugo/` 建立独立 Hugo 项目，使用 SQL 解析器从真实备份迁移 44 条链接、12 个原始分类和 3 条归入“其他”的无分类链接。
+  - 保留标题、URL、描述及排序；转换 4 个与主题不兼容的旧版图标，关闭无 key 的天气外链组件，并移除会自动更新子模块并推送的上游发布工作流。
+  - 提供本地预览、数据重导入与手动 Cloudflare Pages 部署说明；项目不包含数据库备份、用户数据、媒体上传文件或密钥。
+  - [测试/验证]：真实 SQL 数据的 2 项转换测试通过；Hugo `v0.166.0+extended` 构建成功，页面包含迁移链接与 4 个兼容图标，且不加载天气组件。上游主题使用已弃用的 `.Site.Data`，当前构建仅输出兼容性警告。
+
+- **涉及文件**：
+  - `blt-Launchpad/webstack-hugo/config.toml`
+  - `blt-Launchpad/webstack-hugo/data/webstack.yml`
+  - `blt-Launchpad/webstack-hugo/tools/import_wordpress.py`
+  - `blt-Launchpad/webstack-hugo/tools/test_import_wordpress.py`
+  - `blt-Launchpad/webstack-hugo/README.md`
+  - `blt-Launchpad/webstack-hugo/.github/workflows/HugoAction.yml`（删除）
+  - `docs/superpowers/specs/2026-09-21-wordpress-webstack-hugo-migration-design.md`
+  - `docs/superpowers/plans/2026-09-21-wordpress-webstack-hugo-migration.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：网站项目：`809eeca chore: initialize webstack hugo site`、`00ba95e feat: import wordpress navigation data`、`b457e81 docs: add site deployment guide`、`2872c1b fix: configure current hugo build`、`feb830b fix: harden migrated site configuration`、`d8abf8c chore: remove upstream deployment workflow`、`b8641c6 docs: clarify deployment setup`。
+
+---
+
 ## [2026-09-17 12:47] 合并代理工作规则
 
 - **需求/问题描述**：
