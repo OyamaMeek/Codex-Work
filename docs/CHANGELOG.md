@@ -1,5 +1,27 @@
 # 开发记录
 
+## [2026-09-21 13:08] 移除导航中的两个百度条目
+
+- **需求/问题描述**：
+  > 移除“百度一下”和“百度汉语”两个导航条目，并推送到远端仓库。
+
+- **实际实现的功能与改动**：
+  - 从 WebStack-Hugo 的“其他”分组移除两个链接，并在导入规则中排除它们，避免重新导入旧数据库时回流。
+  - 将迁移后链接数更新为 42，新增真实数据断言以验证两项排除规则。
+  - [测试/验证]：真实数据测试 2 项通过；Hugo `v0.166.0+extended` 构建成功，静态页面不含两个已移除链接的 URL。
+
+- **涉及文件**：
+  - `blt-Launchpad/webstack-hugo/data/webstack.yml`
+  - `blt-Launchpad/webstack-hugo/tools/import_wordpress.py`
+  - `blt-Launchpad/webstack-hugo/tools/test_import_wordpress.py`
+  - `blt-Launchpad/webstack-hugo/README.md`
+  - `blt-Launchpad/webstack-hugo/docs/CHANGELOG.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：网站项目：`fe536fb fix: remove unwanted navigation links`、`4a10991 docs: record navigation cleanup`。
+
+---
+
 ## [2026-09-21 12:58] 迁移 WordPress 导航站为 WebStack-Hugo
 
 - **需求/问题描述**：
