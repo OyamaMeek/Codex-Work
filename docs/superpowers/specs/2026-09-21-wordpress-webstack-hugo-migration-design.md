@@ -2,7 +2,7 @@
 
 ## 目标
 
-将 `blt-Launchpad/db_daohang_bilunton_20241218_023001_5m3WTa.sql` 中的导航数据迁移为可由 Hugo 构建的 WebStack-Hugo 静态站点，并使站点可直接连接 Cloudflare Pages 部署。
+将 `blt-Launchpad/db_daohang_bilunton_20241218_023001_5m3WTa.sql` 中的导航数据迁移为可由 Hugo 构建的 WebStack-Hugo 静态站点。
 
 ## 已核实的数据
 
@@ -18,14 +18,14 @@
 - 在 `blt-Launchpad/webstack-hugo/` 创建独立的 WebStack-Hugo 项目。
 - 使用 MariaDB 导入副本并通过 SQL 查询读取 WordPress 数据；不以字符串解析 SQL 备份。
 - 将标题、链接、描述、分类、分类图标、显示排序迁移至 `data/webstack.yml`。
-- 生成站点配置、构建说明及 Cloudflare Pages 部署说明。
+- 生成站点配置与本地构建说明。
 - 在本地运行 Hugo 构建，验证静态文件可生成到 `public/`。
 
 ### 不包含
 
 - 迁移 WordPress 用户、评论、文章、隐私政策页面或旧主题代码。
 - 恢复缺失的 WordPress 上传图片。
-- 创建 GitHub 仓库、授予 Cloudflare 权限或发布到用户的 Cloudflare 账户。
+- 创建 GitHub 仓库或发布到任何托管平台。
 
 ## 项目结构
 
@@ -57,22 +57,11 @@ blt-Launchpad/
 
 现有备份缺少实际上传图片，无法可靠复原 WordPress Logo。每个站点将使用 WebStack-Hugo 的默认图标展示机制；不臆造或下载替代图片。以后若补充旧站 `wp-content/uploads/`，可将图片映射至 `static/assets/images/logos/` 并在同一数据文件中补充 Logo 字段。
 
-## Cloudflare Pages
-
-部署项目连接用户自己的 GitHub 仓库后，Cloudflare Pages 使用：
-
-- 生产分支：`main`
-- 构建命令：`hugo -b $CF_PAGES_URL`
-- 发布目录：`public`
-- 环境变量：`HUGO_VERSION` 设置为本地验证通过的 Hugo 版本，并同时配置 Production 与 Preview。
-
-Cloudflare Pages 会在推送到已连接分支时自动构建和发布。实际仓库地址、Cloudflare 项目和自定义域名由用户在账户中创建与绑定。
-
 ## 验证
 
 - 转换测试使用导入后的真实 SQL 数据，检查 44 个链接记录均被读取且 12 个分类均被生成。
 - 验证生成的 YAML 可被 Hugo 读取。
-- 运行 `hugo -b https://example.pages.dev`，确认成功生成 `public/`。
+- 运行 `hugo`，确认成功生成 `public/`。
 - 检查生成页面包含每个分类标题和每个导航链接 URL。
 - 确认 `git status` 不包含 SQL 备份、MariaDB 临时数据、构建产物或任何数据库凭据。
 
@@ -80,4 +69,3 @@ Cloudflare Pages 会在推送到已连接分支时自动构建和发布。实际
 
 - 外部导航链接可能已经失效：迁移保留原始链接，不以可用性猜测替换目标。
 - WordPress 媒体文件缺失：使用主题默认图标，记录可选补充路径。
-- 用户尚未提供自己的 GitHub 仓库或 Cloudflare 项目：完成本地可构建项目与部署参数，发布操作留给已授权账户环境。
