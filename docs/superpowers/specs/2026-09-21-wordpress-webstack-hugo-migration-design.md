@@ -18,14 +18,14 @@
 - 在 `blt-Launchpad/webstack-hugo/` 创建独立的 WebStack-Hugo 项目。
 - 使用 MariaDB 导入副本并通过 SQL 查询读取 WordPress 数据；不以字符串解析 SQL 备份。
 - 将标题、链接、描述、分类、分类图标、显示排序迁移至 `data/webstack.yml`。
-- 生成站点配置与本地构建说明。
+- 生成站点配置、本地构建说明与 Cloudflare Pages 部署指南。
 - 在本地运行 Hugo 构建，验证静态文件可生成到 `public/`。
 
 ### 不包含
 
 - 迁移 WordPress 用户、评论、文章、隐私政策页面或旧主题代码。
 - 恢复缺失的 WordPress 上传图片。
-- 创建 GitHub 仓库或发布到任何托管平台。
+- 创建 GitHub 仓库、访问 Cloudflare 账户或发布站点。
 
 ## 项目结构
 
@@ -40,6 +40,10 @@ blt-Launchpad/
 ```
 
 `webstack-hugo/` 是独立 Git 项目。上游 WebStack-Hugo 文件作为项目基础，导航内容仅维护在 `data/webstack.yml`；后续新增或编辑导航链接不需要接触模板文件。
+
+## 部署指南
+
+项目 `README.md` 提供 Cloudflare Pages 的人工部署步骤：创建并推送到用户自己的 GitHub 仓库，在 Cloudflare Pages 导入该仓库，并填写生产分支 `main`、构建命令 `hugo -b $CF_PAGES_URL`、发布目录 `public`。指南会说明将本地验证通过的 Hugo 版本设置为 `HUGO_VERSION`，并在 Production 与 Preview 环境中分别配置。指南不包含账户操作、仓库创建或实际发布。
 
 ## 数据转换
 
