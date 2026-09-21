@@ -9,6 +9,7 @@
 - 备份使用 WordPress 数据表，主题配置为 WebStack。
 - 导航链接保存在 `wp_posts` 与 `wp_postmeta`：链接为 `_sites_link`，描述为 `_sites_sescribe`，排序为 `_sites_order`。
 - 备份包含 44 个导航链接记录、12 个带图标与排序信息的分类记录。
+- 12 个分类均属于 `favorites` taxonomy，父分类均为 `0`，可直接映射为 WebStack-Hugo 顶级分类。
 - 备份只有 19 个媒体文件路径记录，没有任何上传文件二进制内容。
 
 ## 范围
@@ -51,8 +52,8 @@ blt-Launchpad/
 
 1. 只保留拥有非空 `_sites_link` 的已发布导航条目。
 2. 采用 `_sites_order` 排序；没有数值时放在相应分类的末尾。
-3. 通过术语关系还原分类，并按 `_term_order` 排序。
-4. 输出 WebStack-Hugo 所需的 YAML 结构，保持 Unicode 文本、HTTPS 链接与多行描述正确转义。
+3. 通过术语关系还原 12 个顶级分类，并按 `_term_order`、术语 ID 排序。
+4. 输出 WebStack-Hugo 所需的 `taxonomy`、`icon` 与 `links` YAML 结构，保持 Unicode 文本、HTTPS 链接与多行描述正确转义。
 5. 对没有分类、没有链接或没有标题的数据输出明确错误，避免静默遗漏。
 
 原始 SQL 备份保持只读且不加入新站点 Git 历史。导入数据库的临时数据也不进入版本控制。
