@@ -43,7 +43,7 @@ If the files do not exist, initialize them before substantive work.
   redesign it unless there is a real blocker; flag the blocker and wait.
 - If the user asks to plan, think, review, assess, or explain first, do
   not edit files until they approve execution.
-- Never push to a shared remote unless the user explicitly asks.
+- 用户已授权每次自动推送：提交完成后，向当前分支已经配置的远端执行普通 `git push`，无需再次征求用户同意。不强制推送，不擅自更换远端或目标分支。
 - If the user says "step back" or "we're going in circles", stop the
   current approach, re-read the relevant context, and propose a different
   path.
