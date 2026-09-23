@@ -178,6 +178,6 @@
   - `context/2026/09/23/20-57-42/对话.md`（从原时间戳目录迁移并补充消息）
   - `docs/CHANGELOG.md`（追加记录）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`76734f3 docs: nest conversation archives by date and time`。
 
 ---
