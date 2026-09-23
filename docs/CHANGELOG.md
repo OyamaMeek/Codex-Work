@@ -159,6 +159,6 @@
   - `AGENT.md`（追加规则）
   - `docs/CHANGELOG.md`（追加记录）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`ab9a79f docs: archive conversation and add archive rule`。
 
 ---
