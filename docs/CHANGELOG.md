@@ -200,3 +200,25 @@
 - **Git 提交**：`8ab51dd docs: authorize automatic pushes without reconfirmation`。
 
 ---
+
+## [2026-09-29 21:24] 将图片白色部分转为透明
+
+- **需求/问题描述**：
+  > 把 `2026-09-29 21.17.56.jpg` 白色部分抠成透明。
+
+- **实际实现的功能与改动**：
+  - 经用户明确授权，使用本地 Pillow 像素处理导出独立 RGBA PNG，保留原图 400×250 尺寸。
+  - 外部白底和内部白色文字转换为透明，边缘去除白色混合分量；原 JPG 保持不变。
+  - [测试/验证]：输出文件重新读取成功；尺寸及 RGBA 验证通过；所有 RGB 三通道不低于 240 的像素均透明；最小通道低于 40 的彩色内部像素及其完全不透明状态保持不变。
+  - 保存会话归档并更新当前任务记录；本地处理脚本保留于已忽略的 `.agent/image-edit/`。
+
+- **涉及文件**：
+  - `2026-09-29 21.17.56-透明.png`
+  - `.gitignore`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/09/29/21-24-27/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
