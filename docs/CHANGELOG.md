@@ -219,6 +219,6 @@
   - `context/2026/09/29/21-24-27/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`5870b57 feat: extract white areas into transparent PNG`，已推送至 `origin/main`。
 
 ---
