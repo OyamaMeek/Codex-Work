@@ -230,13 +230,13 @@
 
 - **实际实现的功能与改动**：
   - 明确规定本次新增或更新的 `context/` 归档与 `docs/CHANGELOG.md` 一并提交，并推送到当前分支已配置的远端。
-  - [测试/验证]：检查规则文本及已配置的 `origin` 远端；本次仅修改 Markdown 文档。
+  - [测试/验证]：检查规则文本及已配置的 `origin` 远端；本次仅修改 Markdown 文档。推送操作被自动审批拒绝，原因是审批器无法确认该远端归属及对话归档的公开授权。
 
 - **涉及文件**：
   - `AGENTS.md`（增加归档自动推送规则）
   - `context/2026/09/30/11-48-11/对话.md`（新增）
   - `docs/CHANGELOG.md`（追加本记录）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`6572d24 docs: push conversation archives with changelog`（已提交到本地，尚未推送）。
 
 ---
