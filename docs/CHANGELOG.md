@@ -22,6 +22,24 @@
 
 ---
 
+## [2026-09-30 11:55] 安装中国专利技能
+
+- **需求/问题描述**：
+  > 安装 https://github.com/handsomestWei/patent-disclosure-skill
+
+- **实际实现的功能与改动**：
+  - 使用 Codex `skill-installer` 将完整仓库技能包安装至 `~/.codex/skills/patent-disclosure-skill`，保留交底、申请文件、案卷、检索、解读、地图、政策与审查答复子技能。
+  - [验证]：安装器报告成功；核对总入口 `SKILL.md` 中名称 `patent-disclosure-skill`、版本 `4.13.0`，并确认完整子技能目录存在。未安装仅在实际使用时需要的依赖。
+
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/09/30/11-55-31/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
+
 ## [2026-09-21 12:58] 迁移 WordPress 导航站为 WebStack-Hugo
 
 - **需求/问题描述**：
