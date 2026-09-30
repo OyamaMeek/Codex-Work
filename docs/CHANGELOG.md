@@ -258,3 +258,24 @@
 - **Git 提交**：`6572d24 docs: push conversation archives with changelog`（已提交到本地，尚未推送）。
 
 ---
+
+## [2026-09-30 18:34] 建立斯特朗线性代数教学清单
+
+- **需求/问题描述**：
+  > 使用 teach 技能学习《斯特朗线性代数》第4版 PDF。
+
+- **实际实现的功能与改动**：
+  - 按本地 PDF 书签建立八章及两个附录的43项学习清单，确认数为0；从1.2开始一次一个问题。
+  - [测试/验证]：pypdf 核验520页及章节、小节页码；PDFKit/Vision 成功识别第22–24页，全文尚未读取；清单计数与初始勾选状态验证通过，git diff --check 通过。
+  - 更新当前任务记忆，归档截至本次记录时的可见对话；原 PDF 不纳入提交。
+
+- **涉及文件**：
+  - `sessions/teaching/2026-09-30-strang-linear-algebra-4e.md`
+  - `.gitignore`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/09/30/18-34-00/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
