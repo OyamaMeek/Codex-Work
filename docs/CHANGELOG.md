@@ -276,6 +276,6 @@
   - `context/2026/09/30/18-34-00/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：`75499e3 docs(teaching): add Strang linear algebra checklist`；推送结果待确认。
+- **Git 提交**：`75499e3 docs(teaching): add Strang linear algebra checklist`；提交信息补记为 `50f49e9 docs: record teaching checklist commit`，均已推送至 `origin/main`。
 
 ---

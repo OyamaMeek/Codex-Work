@@ -5,7 +5,7 @@
 - [x] 用 PDFKit/Vision 读取 PDF 第22–24页，确认 1.2 的行图与列图主题。
 - [x] 建立并验证 43 项学习清单，全部未勾选。
 - [x] 保存会话归档、开发记录；提交 `75499e3 docs(teaching): add Strang linear algebra checklist`。
-- [ ] 推送当前分支至已配置的 `origin/main`。
+- [x] 推送当前分支至已配置的 `origin/main`，远端已确认接收至 `50f49e9`。
 - [ ] 等待用户对第一个诊断问题的回答；当前掌握情况为 0/43。
 - 教学清单：`sessions/teaching/2026-09-30-strang-linear-algebra-4e.md`。
 - 用户已有的文件修改、删除、未跟踪项目及原始 PDF 不纳入本次提交。
