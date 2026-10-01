@@ -319,3 +319,24 @@
 - **Git 提交**：`8894056 docs: record drawio-skill installation`；提交信息补记为 `2569254 docs: record drawio installation commit and sync status`，均已推送至 `origin/main`。推送前已无冲突合并远端的历史图片删除提交。
 
 ---
+
+## [2026-10-01 16:18] 建立 AI-Coding-Guide-Zh 教学清单
+
+- **需求/问题描述**：
+  > 使用 teach 技能学习 AI-Coding-Guide-Zh。
+
+- **实际实现的功能与改动**：
+  - 以本地 README 为目录来源，建立覆盖 Claude Code、OpenClaw、Codex、WorkBuddy 的50项教学清单，初始确认数0；按用户回答确定起点，每次只问一个问题。
+  - 已读 README 和 CX-02 的核心模型、任务描述、Review 部分，其余正文按教学轮次读取；未声称核验教程产品版本或完成全文学习。
+  - [测试/验证]：Python 只读检查确认50项唯一、均未勾选且50篇来源文件均存在；git diff --check 通过。无代码修改，未运行应用测试或视觉检查。
+  - 更新任务记忆，保存截至归档时的可见对话；原始教程目录及用户已有修改不纳入提交。
+
+- **涉及文件**：
+  - `sessions/teaching/2026-10-01-ai-coding-guide-zh.md`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/01/16-18-30/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交；实际哈希与推送结果通过后续文档提交补记。
+
+---
