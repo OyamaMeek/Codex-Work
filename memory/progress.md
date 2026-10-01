@@ -17,6 +17,6 @@
 - [x] 核验 SKILL.md、scripts/、references/；doctor 及 CLI 帮助均退出 0。
 - [x] 保存开发记录、截至归档时的可见对话。
 - [x] 安装记录与归档已提交：`8894056 docs: record drawio-skill installation`。
-- [ ] 普通推送至 `origin/main`；首次推送因远端新增历史图片删除提交而拒绝，已无冲突合并该提交，等待重试。
+- [x] 已普通推送至 `origin/main`，远端确认接收至 `2569254`；已无冲突合并远端的历史图片删除提交。
 - doctor：Python 3.9.6 可用；draw.io、Graphviz 未安装，原生导出及自动布局不可用；PyYAML、python-pptx、Pillow 为未安装的可选依赖。
 - 用户原有的 AGENTS.md 修改、文件删除及 .DS_Store 不纳入本次提交。
