@@ -26,7 +26,7 @@
 - [x] 确认本地教程目录及 README 中的四条路线、50篇教程。
 - [x] 读取 CX-02 的核心模型、任务描述及 Review 部分，用于开场诊断。
 - [x] 建立并核验50项教学清单；初始确认数0，50篇来源文件均存在。
-- [ ] 保存本次日志与可见对话，提交并推送至 `origin/main`。
+- [x] 保存本次日志与可见对话；提交 `192b67a docs(teaching): add AI-Coding-Guide-Zh checklist`，已推送至 `origin/main`。
 - [ ] 等待用户回答开场诊断问题，开始逐项教学。
 - 清单：`sessions/teaching/2026-10-01-ai-coding-guide-zh.md`。
 - 正文按轮次读取；尚未核验教程所述产品版本或完成全部正文阅读。
