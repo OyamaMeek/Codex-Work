@@ -16,3 +16,9 @@
 - 执行代理：Codex；使用 teach 和 verification-before-completion，无子代理。
 - 来源：本地 `AI-Coding-Guide-Zh/README.md` 及其四条路线的50篇教程；未找到同主题 Claude 会话，按本地材料教学。
 - 仅维护教学清单与工作空间记录，不修改或提交原始教程目录。
+
+## 2026-10-01 vibe coding 完整教程
+
+- 执行代理：Codex；使用 human-writing、OpenAI Docs 和 verification-before-completion，无子代理。
+- 教程采用本地 CX-02 的工作流材料，并核对 OpenAI 官方开发实践、AGENTS.md 和 MDN 本地存储资料。
+- 交付单份 Markdown；不创建示例程序，不进行视觉检查，不改变学习确认数。

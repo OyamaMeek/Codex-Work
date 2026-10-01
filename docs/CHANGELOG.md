@@ -361,3 +361,25 @@
 - **Git 提交**：`2c14939 docs(teaching): start stepwise vibe coding practice`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-01 16:58] 编写完整 vibe coding Markdown 教程
+
+- **需求/问题描述**：
+  > 全部讲完写到一个md文件里。
+
+- **实际实现的功能与改动**：
+  - 交付单份19节教程，以个人待办网页贯穿需求、环境、验收、计划、实现、运行、调试、数据保存、审查、Git、发布和维护；附分阶段提示词、完整开工提示词和12项练习验收。
+  - 核对本地 CX-02、OpenAI 官方开发实践与 AGENTS.md、MDN localStorage 与 Web Storage。教程明确示例运行条件及数据限制，不声称已实现练习程序。
+  - [测试/验证]：标题序号、代码块闭合、12项练习清单、4个资料页面与本地来源检查通过；check_prose.py、git diff --check、http.server --help 均退出0。句长接近的风格提醒已按教程体裁复核；未运行示例应用、视觉或发布测试。
+  - 更新教学状态与记忆，学习确认数保留0/50；保存截至归档时的完整可见会话。
+
+- **涉及文件**：
+  - `docs/Vibe-Coding-从零到交付完整教程.md`
+  - `sessions/teaching/2026-10-01-ai-coding-guide-zh.md`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/01/16-58-28/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
