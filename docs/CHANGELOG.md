@@ -358,6 +358,6 @@
   - `context/2026/10/01/16-44-04/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`2c14939 docs(teaching): start stepwise vibe coding practice`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
