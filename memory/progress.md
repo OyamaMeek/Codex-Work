@@ -29,7 +29,7 @@
 - [x] 保存本次日志与可见对话；提交 `192b67a docs(teaching): add AI-Coding-Guide-Zh checklist`，已推送至 `origin/main`。
 - [x] 按用户最新要求生成单份完整 vibe coding 教程，共19节；不等待逐步回答，确认数保持0/50。
 - [x] 核验19节标题、代码块闭合、12项练习验收、4个资料页面及写作规则；http.server 帮助确认启动参数有效。
-- [ ] 保存归档、日志并提交推送。
+- [x] 教程、归档、日志及记忆提交为 `bb4cfa5 docs: add complete vibe coding tutorial`，已推送至 `origin/main`。
 - 教程目标：`docs/Vibe-Coding-从零到交付完整教程.md`。
 - 清单：`sessions/teaching/2026-10-01-ai-coding-guide-zh.md`。
 - 正文按轮次读取；尚未核验教程所述产品版本或完成全部正文阅读。

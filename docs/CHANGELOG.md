@@ -380,6 +380,6 @@
   - `context/2026/10/01/16-58-28/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`bb4cfa5 docs: add complete vibe coding tutorial`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
