@@ -279,3 +279,21 @@
 - **Git 提交**：`75499e3 docs(teaching): add Strang linear algebra checklist`；提交信息补记为 `50f49e9 docs: record teaching checklist commit`，均已推送至 `origin/main`。
 
 ---
+
+## [2026-10-01 15:51] 核验 ARS-Codex 安装
+
+- **需求/问题描述**：
+  > 安装 https://github.com/Imbad0202/academic-research-skills-codex。
+
+- **实际实现的功能与改动**：
+  - 读取仓库安装说明；发现来自该仓库的 `ars-codex@ars-codex` 3.22.2 已安装并启用，当前会话已加载 `academic-research-suite`，因此保留现有安装。
+  - [测试/验证]：`codex plugin list --marketplace ars-codex --json` 与 marketplace JSON 确认版本、启用状态及来源。维护者静态检查中 manifest、single-root-skill、hook-safety、reviewer-fixture、upstream-lock、topology-experiment 六项通过；desktop-plugin-bundle 要求源码目录名称，与版本号缓存目录不符；root-router 因系统及 bundled Python 均缺少 PyYAML 未通过，未声称完整检查通过。
+  - 保存截至归档时的可见任务对话；本次未修改插件、全局配置或应用代码。
+
+- **涉及文件**：
+  - `context/2026/10/01/15-51-28/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
