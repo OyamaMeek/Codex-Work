@@ -316,6 +316,6 @@
   - `context/2026/10/01/16-10-14/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`8894056 docs: record drawio-skill installation`；提交信息通过后续文档提交补记。首次推送因远端新增历史图片删除提交而拒绝，已合并该提交，无冲突，待重新普通推送。
 
 ---
