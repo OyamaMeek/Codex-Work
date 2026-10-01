@@ -9,3 +9,13 @@
 - [ ] 等待用户对第一个诊断问题的回答；当前掌握情况为 0/43。
 - 教学清单：`sessions/teaching/2026-09-30-strang-linear-algebra-4e.md`。
 - 用户已有的文件修改、删除、未跟踪项目及原始 PDF 不纳入本次提交。
+
+## 2026-10-01 drawio-skill 安装进度
+
+- [x] 读取完整 README 和安装说明，确认技能路径及版本 3.4.0，目标目录未占用。
+- [x] 使用 skill-installer 安装 3.4.0 到 `~/.codex/skills/drawio-skill/`。
+- [x] 核验 SKILL.md、scripts/、references/；doctor 及 CLI 帮助均退出 0。
+- [x] 保存开发记录、截至归档时的可见对话。
+- [ ] 提交记录并普通推送至 `origin/main`。
+- doctor：Python 3.9.6 可用；draw.io、Graphviz 未安装，原生导出及自动布局不可用；PyYAML、python-pptx、Pillow 为未安装的可选依赖。
+- 用户原有的 AGENTS.md 修改、文件删除及 .DS_Store 不纳入本次提交。

@@ -297,3 +297,25 @@
 - **Git 提交**：`517da2c docs: verify existing ARS-Codex installation`；提交信息通过后续文档提交补记。
 
 ---
+
+## [2026-10-01 16:10] 安装 drawio-skill
+
+- **需求/问题描述**：
+  > 安装 https://github.com/Agents365-ai/drawio-skill。
+
+- **实际实现的功能与改动**：
+  - 使用 Codex skill-installer，将固定提交 `7aa92f73819766eb914fffac66762cf2adb5d828` 的 `skills/drawio-skill/` 安装到 `~/.codex/skills/drawio-skill/`，版本 3.4.0。
+  - [测试/验证]：安装器、`diagramctl.py doctor`、`diagramctl.py --help` 均退出 0；非空 SKILL.md、scripts/、references/ 检查通过。
+  - doctor 确认 Python 3.9.6 可用；draw.io、Graphviz 缺失，原生导出与自动布局不可用；PyYAML、python-pptx、Pillow 为未安装的可选依赖。未执行 GUI、图像渲染或视觉检查。
+  - 保存任务记忆及可见对话；安装器临时目录位于已忽略的 `.agent/drawio-install/`，未改动上游技能或全局配置。
+
+- **涉及文件**：
+  - `~/.codex/skills/drawio-skill/`（全局技能文件，不纳入工作空间提交）
+  - `.gitignore`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/01/16-10-14/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---

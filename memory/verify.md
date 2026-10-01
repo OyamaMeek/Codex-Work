@@ -5,3 +5,12 @@
 - 单次教学只包含一个问题，未获得用户回答不得宣称掌握。
 - 检查 Markdown 差异、清单计数与归档内容；本次不修改应用代码，无需代码测试。
 - 只暂存本次清单、记忆、忽略规则、日志和对话归档，不暂存 PDF 或用户原有修改。
+
+## 2026-10-01 drawio-skill 安装验证
+
+- 安装器成功退出，目标包含非空 SKILL.md、scripts/ 和 references/。
+- `diagramctl.py doctor` 能运行并明确报告 Python、draw.io、Graphviz 的状态，不传 --probe，不启动 GUI。
+- `diagramctl.py --help` 成功退出；验证不包含图像导出或视觉检查。
+- 仅暂存本次记忆、忽略规则、开发记录、对话归档；检查 git diff --check 及远端提交状态。
+
+实际结果：安装器、doctor、CLI 帮助均退出 0；技能文件检查通过。doctor 报告核心 XML、IR、同步能力可用，原生导出与自动布局因可选依赖缺失而不可用；未执行图像渲染或视觉检查。
