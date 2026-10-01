@@ -294,6 +294,6 @@
   - `context/2026/10/01/15-51-28/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`517da2c docs: verify existing ARS-Codex installation`；提交信息通过后续文档提交补记。
 
 ---
