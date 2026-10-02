@@ -6,7 +6,7 @@
 - [x] 创建 HappaConfig.ini 与 HappaConfig.conf，保留23个英文分组、58条原生规则及中文注释。
 - [x] 本地一致性检查通过；官方0.9.0渲染两文件的结果与源文件逐字节一致，验证进程已终止。
 - [ ] 实际订阅转换验证：原地址返回 HTTP 404，已请求可用订阅链接；未获得输入，不生成虚构节点。
-- [ ] 保存记录与归档，提交并推送模板；原 JIUWEI.conf 保留本地。
+- [x] 保存记录与归档；模板提交 `c796397 feat: add HappaConfig subconverter template` 并推送至 `origin/main`；两个公开模板地址下载后与本地逐字节一致。原 JIUWEI.conf 保留本地。
 
 ## 2026-10-02 JIUWEI.conf 英文分组名
 
