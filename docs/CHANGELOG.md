@@ -514,6 +514,6 @@
   - `context/2026/10/02/22-43-44/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`f649f04 docs: record WeChat IPv6 connection diagnosis`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
