@@ -1,5 +1,13 @@
 # 当前协作环境
 
+## 2026-10-02 配置注释
+
+- 执行代理：Codex；使用 using-superpowers、verification-before-completion，无子代理。
+- 工具：本地文件读取与编辑、Python 标准库只读摘要核验、Surge 官方手册、Git。
+- 仅修改 JIUWEI.conf 注释；配置含 CA 密钥与密码，不上传配置本体，不执行脚本或订阅访问。
+
+## 斯特朗线性代数教学环境
+
 - 执行代理：Codex；本次未使用子代理。
 - 教学技能：`~/.codex/skills/teach/SKILL.md`；一次一个问题，依据回答确认掌握。
 - 来源：本地《斯特朗线性代数》第4版 PDF，520 页；用 bundled pypdf 读取书签，用原生 PDFKit/Vision 尝试提取扫描正文。

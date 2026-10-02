@@ -383,3 +383,24 @@
 - **Git 提交**：`bb4cfa5 docs: add complete vibe coding tutorial`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-02 19:46] 为 JIUWEI.conf 补充中文注释
+
+- **需求/问题描述**：
+  > 给 JIUWEI.conf 加上注释。
+
+- **实际实现的功能与改动**：
+  - 为 General、Proxy、Proxy Group、Rule、Host、MITM、Script 补充中文说明，覆盖全局参数、节点订阅与名称筛选、分流顺序、DNS 映射、证书和定时脚本；纠正既有注释中的表述。
+  - 标注现有重复键名、select 中的 persistent 参数及未设置 MITM hostname 等情况；所有有效配置值、顺序与启用状态保持一致。
+  - [测试/验证]：Python 标准库只读检查确认149行有效内容与修改前 SHA-256 完全一致，行尾空白检查与 git diff --check 通过；核对 Surge 官方手册。未执行 Surge 导入、联网或脚本运行测试。
+  - JIUWEI.conf 为未跟踪文件，含 CA 证书私钥和密码，修改仅保留本地；遵守不提交密钥要求，仅上传任务记录与对话归档。
+
+- **涉及文件**：
+  - `JIUWEI.conf`（本地交付，不提交）
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/02/19-46-39/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交；配置本体因含敏感密钥材料不纳入提交。
+
+---
