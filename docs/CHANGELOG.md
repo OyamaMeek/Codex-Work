@@ -404,3 +404,25 @@
 - **Git 提交**：`660941b docs: record JIUWEI configuration annotations`，已推送至 `origin/main`；本条通过后续文档提交补记。配置本体因含敏感密钥材料不纳入提交。
 
 ---
+
+## [2026-10-02 19:56] 将 JIUWEI.conf 中文分组名改为英文
+
+- **需求/问题描述**：
+  > 把中文分组名称换成英文名，注释保持中文。
+
+- **实际实现的功能与改动**：
+  - 将9个中文分组改为 Proxy、Manual、International、Global Media、Social Media、Apple、Global、China、All Proxies；同步组成员、include-other-group、规则和中文注释中的名称引用，共修改61行。
+  - 保留用户当前的 Direct / Reject、已有地区代码与品牌名；所有其他有效配置值、正则、订阅地址、证书及规则顺序保持原样。
+  - [测试/验证]：本地重命名检查修改前因中文旧分组退出1，修改后退出0；149行有效内容满足预计算的名称替换摘要；中文注释引用与空白检查通过。未执行 Surge 导入或联网测试。
+  - 配置及本地检查保留在工作空间；含 CA 私钥和密码的配置不提交，仅上传不含敏感信息的记录与对话归档。
+
+- **涉及文件**：
+  - `JIUWEI.conf`（本地交付，不提交）
+  - `.agent/jiuwei-verify/check_groups.py`（本地检查，已忽略）
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/02/19-56-29/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交；配置本体因含敏感密钥材料不纳入提交。
+
+---

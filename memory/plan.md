@@ -1,5 +1,12 @@
 # 当前任务计划
 
+## 2026-10-02 JIUWEI.conf 英文分组名
+
+1. 将9个含中文的分组名分别改为 Proxy、Manual、International、Global Media、Social Media、Apple、Global、China、All Proxies；已有英文名称及地区代码保留。
+2. 同步策略组成员、include-other-group 和规则引用；中文注释中的名称引用同步，说明文字保留中文。
+3. 以当前用户已改为 Direct / Reject 的文件为基础，验证仅名称替换、149行有效内容的顺序与其他值不变。
+4. 配置仍含私钥，保留本地；任务记录及完整可见会话提交并推送。
+
 ## 2026-10-02 JIUWEI.conf 中文注释
 
 1. 读取完整配置，核对 Surge 官方参数说明；仅修改注释，不调整值、规则顺序或启用状态。
