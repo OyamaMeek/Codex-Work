@@ -1,5 +1,15 @@
 # 当前任务验证标准
 
+## 2026-10-02 HappaConfig 模板验证
+
+- 官方 Subconverter 接受 HappaConfig.ini 的 [custom] 与重复 custom_proxy_group 定义。
+- 实际订阅转换为 Surge 4，23个分组和所有成员引用有效；地区正则能按名称导入节点。
+- 生成规则按原配置顺序保留，包括 AND、RULE-SET、DOMAIN-SET、GEOIP、FINAL,dns-failed；仅直连名称统一为 DIRECT。
+- General / Host / Script 保留，重复键名修正；模板不包含 CA 私钥、密码和固定订阅地址。
+- 运行最小本地检查并检查 git diff --check；不宣称完成代理连通性或 Surge 应用导入验证。
+
+实际结果：`.agent/happa-subconverter/check_template.py` 在缺少基础模板时退出1，创建模板后退出0；核验标准 INI 语法、23组引用、58条原规则顺序、基础参数与敏感材料排除。官方 Subconverter v0.9.0 的 /render 渲染两文件均成功，结果逐字节一致；原 JIUWEI.conf 的既有检查仍通过。原订阅返回404，未完成真实节点转换、地区筛选运行及 Surge 导入测试。
+
 ## 2026-10-02 英文分组名验证
 
 - 先运行分组重命名检查，确认当前中文分组触发失败；修改后复用相同检查。

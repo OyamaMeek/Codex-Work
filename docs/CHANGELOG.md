@@ -426,3 +426,26 @@
 - **Git 提交**：`dff897f docs: record English JIUWEI group names`，已推送至 `origin/main`；本条通过后续文档提交补记。配置本体因含敏感密钥材料不纳入提交。
 
 ---
+
+## [2026-10-02 20:31] 制作 HappaConfig Subconverter 模板
+
+- **需求/问题描述**：
+  > 修改为符合 Subconverter 规范的模板，命名为 HappaConfig。
+
+- **实际实现的功能与改动**：
+  - 创建 HappaConfig.ini，使用官方 [custom]、custom_proxy_group 与 surge_rule_base 格式；23个英文策略组由转换输入的节点生成，中文注释保留。
+  - 创建 HappaConfig.conf 配套 Surge 4 基础模板，保留58条原生分流规则、General、Host、MITM 参数和脚本；统一直连引用为 DIRECT，修正重复 always-raw-tcp-hosts 键名，共用模板不包含 CA 私钥、密码或固定订阅地址。
+  - 使用 enable_rule_generator=false 保留 AND、RULE-SET、DOMAIN-SET、FINAL,dns-failed 及规则顺序；HappaConfig.ini 注释说明 config、url 和目标参数的用法。
+  - [测试/验证]：最小检查先因基础模板缺失失败，创建模板后通过；确认23组引用、58条规则顺序、基础参数与敏感材料排除。官方 Subconverter 0.9.0 本地 /render 渲染两文件成功，与源文件逐字节一致。既有 JIUWEI.conf 检查及 git diff --check 通过。
+  - 原订阅地址返回 HTTP 404，已请求可用链接；未执行真实节点转换、地区筛选运行、代理连通性或 Surge 导入验证。本地验证进程已终止，原配置保留本地。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`HappaConfig.conf`
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `.agent/happa-subconverter/check_template.py`（本地检查，已忽略）
+  - `context/2026/10/02/20-31-46/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---

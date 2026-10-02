@@ -1,5 +1,13 @@
 # 当前任务计划
 
+## 2026-10-02 HappaConfig Subconverter 模板
+
+1. 读取官方示例与 Surge 导出流程；制作 HappaConfig.ini 外部配置和 HappaConfig.conf Surge 基础模板。
+2. 将23个手动策略组转换为 custom_proxy_group，地区组以节点名称正则筛选，Manual / All Proxies 从转换输入导入全部节点。
+3. 基础模板保留 General、Host、MITM 参数、Script 与原有全部规则；直连统一为内置 DIRECT，修正重复的 always-raw-tcp-hosts 键名；不包含 CA 私钥、密码及固定订阅地址。
+4. 使用官方 Subconverter 0.9.0 本地转换实际订阅，核验分组、规则顺序及基础设置；记录未能执行的验证。
+5. 保存使用说明（模板中文注释）、开发记录及可见会话；提交并普通推送新模板与记录。
+
 ## 2026-10-02 JIUWEI.conf 英文分组名
 
 1. 将9个含中文的分组名分别改为 Proxy、Manual、International、Global Media、Social Media、Apple、Global、China、All Proxies；已有英文名称及地区代码保留。

@@ -1,5 +1,12 @@
 # 当前协作环境
 
+## 2026-10-02 HappaConfig 模板
+
+- 执行代理：Codex；使用 verification-before-completion，无子代理。
+- 依据：Subconverter 官方外部配置示例、README-cn 与 Surge 导出源码；本地使用官方 darwinarm v0.9.0 二进制。
+- 交付：HappaConfig.ini 与 HappaConfig.conf；保留中文注释，不包含私钥或固定订阅。
+- 检查与运行文件位于已忽略的 `.agent/happa-subconverter/`；官方模板渲染检查通过，验证进程已终止。
+
 ## 2026-10-02 配置注释与英文分组
 
 - 执行代理：Codex；使用 using-superpowers、verification-before-completion，无子代理。
