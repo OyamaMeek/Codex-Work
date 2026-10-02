@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-02 微信直连规则
+
+- 执行代理：Codex；使用 systematic-debugging、test-driven-development 和 verification-before-completion，无子代理。
+- 使用 Python 标准库 configparser 严格解析基础模板配置节；检查文件保留于 `.agent/happa-subconverter/check_template.py`。
+- HappaConfig.conf 已添加7条微信域名优先直连规则；未获取有效订阅和失败请求日志，无法验证真实图片下载。
+
 ## 2026-10-02 HappaConfig 模板
 
 - 执行代理：Codex；使用 verification-before-completion，无子代理。

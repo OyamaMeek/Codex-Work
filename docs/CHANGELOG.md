@@ -434,9 +434,9 @@
 
 - **实际实现的功能与改动**：
   - 创建 HappaConfig.ini，使用官方 [custom]、custom_proxy_group 与 surge_rule_base 格式；23个英文策略组由转换输入的节点生成，中文注释保留。
-  - 创建 HappaConfig.conf 配套 Surge 4 基础模板，保留58条原生分流规则、General、Host、MITM 参数和脚本；统一直连引用为 DIRECT，修正重复 always-raw-tcp-hosts 键名，共用模板不包含 CA 私钥、密码或固定订阅地址。
+  - 创建 HappaConfig.conf 配套 Surge 4 基础模板，保留48条原生分流规则、General、Host、MITM 参数和脚本；统一直连引用为 DIRECT，修正重复 always-raw-tcp-hosts 键名，共用模板不包含 CA 私钥、密码或固定订阅地址。
   - 使用 enable_rule_generator=false 保留 AND、RULE-SET、DOMAIN-SET、FINAL,dns-failed 及规则顺序；HappaConfig.ini 注释说明 config、url 和目标参数的用法。
-  - [测试/验证]：最小检查先因基础模板缺失失败，创建模板后通过；确认23组引用、58条规则顺序、基础参数与敏感材料排除。官方 Subconverter 0.9.0 本地 /render 渲染两文件成功，与源文件逐字节一致。既有 JIUWEI.conf 检查及 git diff --check 通过。
+  - [测试/验证]：最小检查先因基础模板缺失失败，创建模板后通过；确认23组引用、基础参数与敏感材料排除。初版节提取误识别注释中的 [Rule]，58条计数包含策略组；后续微信规则任务修正检查与结构，核实原规则为48条。官方 Subconverter 0.9.0 本地 /render 渲染两文件成功，与源文件逐字节一致，仅证明渲染成功。既有 JIUWEI.conf 检查及 git diff --check 通过。
   - 原订阅地址返回 HTTP 404，已请求可用链接；未执行真实节点转换、地区筛选运行、代理连通性或 Surge 导入验证。本地验证进程已终止，原配置保留本地。推送后，两个公开模板地址下载成功，内容与本地逐字节一致。
 
 - **涉及文件**：
@@ -447,5 +447,27 @@
   - `docs/CHANGELOG.md`
 
 - **Git 提交**：`c796397 feat: add HappaConfig subconverter template`，已推送至 `origin/main`；本条通过后续文档提交补记。
+
+---
+
+## [2026-10-02 21:23] 添加微信图片直连规则
+
+- **需求/问题描述**：
+  > 微信图片加载不出来，按已说明的方案添加规则。
+
+- **实际实现的功能与改动**：
+  - 在 HappaConfig.conf 唯一的 Rule 节最前面添加 qpic.cn、qlogo.cn、weixin.qq.com、wx.qq.com、wx.gtimg.com、weixin.com、wechat.com 的 DIRECT 规则，保留中文注释。
+  - 删除错误混入规则区的策略组和畸形节标题；其余48条原规则及 General、Host、MITM 参数、Script 保持原样。
+  - [测试/验证]：改进后的检查修改前因畸形节标题退出1，修改后退出0；标准库解析确认配置节唯一、7条规则优先、55条规则顺序和23组引用有效，敏感材料排除检查及 git diff --check 通过。
+  - 未执行真实节点转换、Surge 导入或微信图片下载验证，缺少有效订阅和失败请求日志。
+
+- **涉及文件**：
+  - `HappaConfig.conf` (+8 / -17)
+  - `.agent/happa-subconverter/check_template.py`（本地检查，已忽略）
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `context/2026/10/02/21-23-39/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
 
 ---
