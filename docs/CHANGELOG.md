@@ -468,6 +468,6 @@
   - `context/2026/10/02/21-23-39/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`108b17d fix: prioritize WeChat direct routing in HappaConfig`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---

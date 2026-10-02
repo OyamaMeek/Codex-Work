@@ -4,7 +4,8 @@
 
 - [x] 修正规则节检查，修改前因畸形节标题退出1，修改后通过标准库配置解析。
 - [x] 添加7条优先直连规则，保留其后48条原规则及其他设置；55条规则检查通过。
-- [ ] 检查、归档、提交并推送；实际图片下载缺少请求日志，尚未验证。
+- [x] 检查、归档、提交并推送；提交 `108b17d fix: prioritize WeChat direct routing in HappaConfig` 已推送至 `origin/main`。
+- 实际图片下载缺少请求日志，尚未验证。
 
 ## 2026-10-02 HappaConfig Subconverter 模板
 
