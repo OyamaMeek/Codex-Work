@@ -493,3 +493,27 @@
 - **Git 提交**：`3498921 fix: extend WeChat routing with IP and Surge ruleset`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-02 22:43] 诊断微信 IPv6 直连超时并完成临时对照
+
+- **需求/问题描述**：
+  > 微信图片仍不显示，提供 Surge 请求及详情截图；批准临时调整 IPv6 验证并恢复。
+
+- **实际实现的功能与改动**：
+  - 从 Surge 6.6.0 本地日志确认截图地址经 DIRECT 的实际错误为 Connection timeout；QUIC 另被通用 UDP 443 拒绝规则阻止。
+  - 绑定物理接口 en8 / en0 测试：微信和国内对照 IPv6 均4秒超时，国内 IPv4 对照分别约7 / 14毫秒连接成功；普通 VIF 握手不作为外网连通证据。
+  - 用户批准后，临时将 Wi-Fi 和 AX88179B 的 IPv6 从自动调整为仅本地链接；IPv6 目标立即报告 No route to host，IPv4 对照保持可用，用户明确反馈“图片可以显示”。
+  - 按约定恢复两条网络的 IPv6 自动模式，恢复命令均退出0，分别读取确认 Automatic；未修改 HappaConfig 或运行中的 Surge 配置。
+  - [验证范围]：证据支持所测 IPv6 直连路径异常是本次故障的关键因素；具体路由器、运营商或本机过滤环节未定位，恢复自动后是否复发尚未验证。
+  - 保存诊断说明和手动调整/恢复路径。未上传原始日志、系统完整网络输出或用户截图。
+
+- **涉及文件**：
+  - `docs/WeChat-连接诊断.md`
+  - `.agent/happa-subconverter/probe_connections.py`（本地诊断，已忽略）
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `context/2026/10/02/22-43-44/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
