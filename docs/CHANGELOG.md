@@ -490,6 +490,6 @@
   - `context/2026/10/02/22-13-50/对话.md`
   - `docs/CHANGELOG.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`3498921 fix: extend WeChat routing with IP and Surge ruleset`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
