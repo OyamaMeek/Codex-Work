@@ -471,3 +471,25 @@
 - **Git 提交**：`108b17d fix: prioritize WeChat direct routing in HappaConfig`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-02 22:13] 完善微信 IP 与 IPv6 分流
+
+- **需求/问题描述**：
+  > 微信图片仍有问题，参考 blackmatrix7 的 Clash 微信规则和 issue #939。
+
+- **实际实现的功能与改动**：
+  - 阅读指定 [Clash 规则](https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/WeChat/WeChat.list)、[issue #939](https://github.com/blackmatrix7/ios_rule_script/issues/939) 正文及4条评论，核对对应 Surge 规则集和官方 RULE-SET 文档。
+  - HappaConfig.conf 首条规则添加 `IP-CIDR,43.156.222.0/24,DIRECT,no-resolve`，保留原7条微信域名直连，并引用 Surge 版完整微信规则集；两项补充均位于通用 UDP 443 拦截前。
+  - [测试/验证]：检查修改前因缺少优先 IP 网段退出1，修改后退出0。远程规则集下载成功，332条子规则包含原7域名、IPv4/IPv6 和 ASN；IP 网段经标准库解析，issue 中的 IP 位于新增直连网段。57条主规则结构、优先级、原48条规则和其他参数保留检查及 git diff --check 通过。
+  - 已请求当前失败请求的域名/IP、命中规则、实际策略和错误；尚未获得日志，未执行 Surge 导入、实际规则命中或图片下载，不宣称图片恢复。
+
+- **涉及文件**：
+  - `HappaConfig.conf` (+5 / -0)
+  - `.agent/happa-subconverter/check_template.py`、`.agent/happa-subconverter/WeChat.list`（本地检查与下载，已忽略）
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `context/2026/10/02/22-13-50/对话.md`
+  - `docs/CHANGELOG.md`
+
+- **Git 提交**：待提交。
+
+---
