@@ -540,3 +540,25 @@
 - **Git 提交**：`022d784 fix: reject direct WeChat IPv6 requests`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-03 09:49] 将微信 IPv6 拒绝规则定义移入 ini
+
+- **需求/问题描述**：
+  > 把新增微信拒绝规则放到 ini 里。
+
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 增加 template 节及完整 wechat_ipv6_rule；HappaConfig.conf 的 Rule 节首位只保留 local 变量引用，中文注释保留。
+  - 使用官方模板变量机制，现有规则生成开关及其余规则不变；当前 Surge 中展开后的运行规则和系统网络无需再次调整。
+  - [测试/验证]：新增检查先因缺少 template 节退出1，修改后退出0。官方 Subconverter 0.9.0 使用本机实际配置转换出19个节点与23个策略定义（20个组及3个地区直连别名），58条有效规则内容和顺序一致，首位规则正确，无占位符残留；Surge 原生检查返回 OK，git diff --check 通过，验证服务已停止。
+  - 真实配置输入、转换输出、源码下载和运行检查均在已忽略目录中，不上传节点凭据。本次未新增图片恢复证据。
+
+- **涉及文件**：
+  - `HappaConfig.ini` (+5 / -0)、`HappaConfig.conf` (+2 / -2)
+  - `docs/WeChat-连接诊断.md`、`docs/CHANGELOG.md`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `context/2026/10/03/09-49-02/对话.md`
+  - `.agent/happa-subconverter/check_template.py`、`check_conversion.py` 与本地输入输出（已忽略）
+
+- **Git 提交**：待提交。
+
+---

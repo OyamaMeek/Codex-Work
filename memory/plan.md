@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-03 将微信拒绝规则移入 ini
+
+1. 在 HappaConfig.ini 的 template 节定义完整拒绝规则，HappaConfig.conf 首位引用 local.wechat_ipv6_rule，保留现有规则生成开关及全部规则顺序。
+2. 更新原检查并先确认缺少 ini 定义时失败；使用官方 Subconverter 0.9.0 和本机实际节点配置完成转换，检查输出首位规则与原58条规则一致。
+3. 运行 Surge 原生配置检查；保存记录与会话，提交并推送两个配套模板。当前运行规则和系统 IPv6 无需再次调整。
+
 ## 2026-10-03 拒绝微信直接 IPv6 请求
 
 1. 在 HappaConfig.conf 的 Rule 节首位加入 WeChat 进程与 IPv6 地址类型的 AND 拒绝规则，保留中文说明及现有57条规则。

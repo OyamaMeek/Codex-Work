@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-03 ini 中的微信规则定义
+
+- 规则定义位于 HappaConfig.ini 的 template.wechat_ipv6_rule；HappaConfig.conf 首位用 INJA 的 local 变量引用。
+- 官方 Subconverter 0.9.0 已用本机实际配置转换成功：19个节点、23个策略定义（20组与3个地区直连别名）、58条原序规则；Surge 原生检查返回 OK。检查脚本位于已忽略的 .agent/happa-subconverter/，本地验证服务已停止。
+
 ## 2026-10-03 微信 IPv6 拒绝规则
 
 - 在 HappaConfig.conf 和当前 Surge 配置 261002-3 的 Rule 节首位加入 WeChat 进程与 IPv6 地址类型的 AND 拒绝规则。
