@@ -667,6 +667,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/03/11-17-00/对话.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`20a7f54 fix: preserve original HappaConfig node order`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
