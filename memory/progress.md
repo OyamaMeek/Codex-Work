@@ -5,7 +5,7 @@
 - [x] 读取模板及官方参数：select 无历史选择时使用首位成员；Subconverter 多正则按顺序添加并去重。
 - [x] 按截图调整初始成员，将 All Proxies 移至 Manual 后、Emby 前。
 - [x] 检查修改前退出1，修改后退出0；真实转换验证20组默认项、23个策略定义、19节点及58条原序规则，全部候选保持不变，Surge 原生检查返回 OK；验证服务已停止。
-- [ ] 保存日志和可见会话，提交并推送当前 origin/main。
+- [x] 保存日志和可见会话；`90e4020 fix: match HappaConfig defaults to selected policies` 已推送至 origin/main。首次推送审批拒绝后，通过 GitHub 官方 API 验证认证账户与仓库所有者一致、push 权限有效，再次审批通过并推送成功。
 
 ## 2026-10-03 微信 IPv6 改走 Proxy
 
