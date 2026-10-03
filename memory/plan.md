@@ -2,9 +2,9 @@
 
 ## 2026-10-03 HappaConfig 默认选择与展示顺序
 
-1. 用户最新截图限定 Emby 至 Final 的14个用途分组默认项；只调整这些组的首位策略，Proxy、Manual、All Proxies 及地区节点列表沿用修改前顺序。
+1. 在用户截图的 Emby 至 Final 共14个用途组首位加入 All Proxies，全部默认使用该组；保留原候选成员与顺序，Proxy、Manual、All Proxies 及地区节点列表不调整。
 2. All Proxies 紧接 Manual、位于 Emby 前；保留全部23组、候选成员及基础模板规则。
-3. 检查14组默认项与 All Proxies 位置，并逐项比较其余组的候选顺序；先确认当前结果失败，再完成真实转换及 Surge 原生检查。
+3. 检查14组默认 All Proxies 与显示位置，逐项比较全部原候选的顺序；先确认当前结果失败，再完成真实转换及 Surge 原生检查。
 4. 保存验证、日志与可见会话，提交并推送当前 origin/main。已有 Surge 手动选择按客户端记忆保留，本任务修改生成模板的初始默认项。
 
 ## 2026-10-03 微信 IPv6 改走 Proxy

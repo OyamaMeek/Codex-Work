@@ -670,3 +670,23 @@
 - **Git 提交**：`20a7f54 fix: preserve original HappaConfig node order`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-03 16:21] 用途分组新增并默认选择 All Proxies
+
+- **需求/问题描述**：
+  > 下面这些都增加 All Proxies，默认用这个。
+
+- **实际实现的功能与改动**：
+  - Emby、Global Media、Netflix、TikTok、Disney、Social Media、Spotify、OpenAI、Apple、Global、Google Voice、SpeedTest、China、Final 共14组在首位新增 All Proxies，作为初始默认选项。
+  - 原候选成员及顺序完整保留；节点列表及地区筛选保持原顺序，All Proxies 仍位于 Manual 与 Emby 之间。
+  - [测试/验证]：新增前检查因 Emby 默认 DIRECT 退出1，新增后退出0；官方 Subconverter 0.9.0 真实转换验证14组默认项、候选顺序及策略引用，19节点、23个策略定义和58条原序规则保留。模板检查、git diff --check 通过，Surge 原生检查返回 OK；验证服务已停止。
+  - [验证范围]：修改生成模板，当前运行配置未重载；客户端保存的手动选择不由初始默认项覆盖。节点凭据与转换结果只保留于已忽略目录。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_defaults.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/03/16-21-15/对话.md`
+
+- **Git 提交**：待提交。
+
+---

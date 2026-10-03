@@ -2,22 +2,10 @@ import configparser
 from pathlib import Path
 import sys
 
-expected = {
-    "Emby": "DIRECT",
-    "Global Media": "Proxy",
-    "Netflix": "Manual",
-    "TikTok": "Manual",
-    "Disney": "Manual",
-    "Social Media": "Manual",
-    "Spotify": "HK",
-    "OpenAI": "Manual",
-    "Apple": "DIRECT",
-    "Global": "Manual",
-    "Google Voice": "US",
-    "SpeedTest": "Manual",
-    "China": "DIRECT",
-    "Final": "Proxy",
-}
+expected = dict.fromkeys([
+    "Emby", "Global Media", "Netflix", "TikTok", "Disney", "Social Media",
+    "Spotify", "OpenAI", "Apple", "Global", "Google Voice", "SpeedTest", "China", "Final",
+], "All Proxies")
 config = configparser.ConfigParser(interpolation=None, allow_no_value=True, delimiters=("=",), comment_prefixes=("#", ";", "//"))
 config.optionxform = str
 config.read_string(Path(sys.argv[1]).read_text())
@@ -39,6 +27,6 @@ for name in groups:
     if name not in expected:
         assert groups[name] == baseline["Proxy Group"][name], f"{name} 的候选顺序或默认项改变"
     else:
-        assert set(groups[name].split(",")) == set(baseline["Proxy Group"][name].split(",")), f"{name} 的候选成员改变"
+        assert groups[name].split(",")[2:] == baseline["Proxy Group"][name].split(",")[1:], f"{name} 未保留其余候选成员与顺序"
 assert list(config["Rule"]) == list(baseline["Rule"]), "原规则或顺序改变"
-print(f"PASS：截图14组默认项与 All Proxies 位置正确，其余组及{len(nodes)}个真实节点的原顺序保留")
+print(f"PASS：14个用途组均新增并默认选择 All Proxies，原候选与{len(nodes)}个真实节点的顺序保留")

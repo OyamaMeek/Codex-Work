@@ -2,12 +2,12 @@
 
 ## 2026-10-03 HappaConfig 默认选择与展示顺序
 
-- 最新截图的 Emby 至 Final 共14组初始策略匹配要求；All Proxies 位于 Manual 与 Emby 之间。
-- Proxy、Manual、All Proxies 与地区组候选项及顺序与首次修改前逐项一致；用途组候选集合保持不变。
+- 最新截图的 Emby 至 Final 共14组首位均为 All Proxies；该组位于 Manual 与 Emby 之间。
+- 14用途组仅在首位新增 All Proxies，原候选项及顺序逐项保持；Proxy、Manual、All Proxies 与地区组候选项及顺序保持不变。
 - 检查先失败再通过；真实转换保留23个策略定义与58条原序规则，Surge 原生检查通过，git diff --check 通过。
 - 不将模板默认值更改视为已覆盖当前运行配置保存的手动选择。
 
-实际结果：回归检查对修正前转换结果因范围外 Proxy 组顺序变化退出1；修正后官方 Subconverter 0.9.0 真实转换检查通过，14组用途默认项及 All Proxies 位置正确。逐项比对首次修改前的真实转换结果，Proxy 与所有节点组候选项和顺序完全一致，19个节点参数、23个策略定义和58条原序规则保留。Surge --check 返回 OK，模板检查与 git diff --check 通过；验证服务已停止。本次未重载运行配置。
+实际结果：新增前检查因 Emby 默认 DIRECT 退出1，新增后退出0；官方 Subconverter 0.9.0 真实转换确认14组首位均为 All Proxies，原候选及节点组顺序逐项一致，19个节点参数、23个策略定义和58条原序规则保留。Surge --check 返回 OK，模板检查与 git diff --check 通过；验证服务已停止。本次未重载运行配置。
 
 ## 2026-10-03 微信 IPv6 改走 Proxy
 
