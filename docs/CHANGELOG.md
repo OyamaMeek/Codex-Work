@@ -611,3 +611,22 @@
 - **Git 提交**：`2fbc3df fix: route WeChat IPv6 through Proxy`，已推送至 `origin/main`；本条通过后续文档提交补记。两个公开模板下载后与本地逐字节一致。
 
 ---
+
+## [2026-10-03 10:47] 解释 Surge 代理分组
+
+- **需求/问题描述**：
+  > 配置文件里这几个分别是干嘛的，截图圈出 Manual、All Proxies、International。
+
+- **实际实现的功能与改动**：
+  - 读取 JIUWEI.conf 的代理组定义及 HappaConfig.ini 对应项，核对 Surge 官方手动选择与节点导入文档。
+  - Manual 提供全部节点的手动选择；JIUWEI.conf 从订阅及本地 Proxy 节导入，转换模板从输入节点导入。All Proxies 提供相同节点的另一个独立选择组；International 按名称排除香港、日本、台湾、新加坡、美国等标记及 WARP。
+  - 截图中 Proxy 选择 Manual，OpenAI 等组直接选择 Manual，因此这些流量跟随 Manual 的节点；All Proxies 与 International 的选择独立，节点列表复用不表示选择同步。
+  - [验证]：本地两份配置定义与 Surge 官方参数说明一致；本次只解释配置，未修改配置或运行网络测试。
+
+- **涉及文件**：
+  - `docs/CHANGELOG.md`
+  - `context/2026/10/03/10-47-01/对话.md`
+
+- **Git 提交**：待提交。
+
+---
