@@ -581,8 +581,9 @@
   - `docs/WeChat-连接诊断.md`、`docs/CHANGELOG.md`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `context/2026/10/03/10-15-49/对话.md`
+  - `context/2026/10/03/10-17-18/对话.md`（补记时的可见会话）
   - `.agent/happa-subconverter/probe_wechat_policy.js`、请求数据、恢复点与候选（已忽略）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`8849792 docs: record failed WeChat IPv6 rejection and proxy probe`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
