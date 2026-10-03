@@ -687,6 +687,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/03/16-21-15/对话.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`373026d feat: default service groups to All Proxies`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
