@@ -587,3 +587,27 @@
 - **Git 提交**：`8849792 docs: record failed WeChat IPv6 rejection and proxy probe`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-03 10:30] 微信直接 IPv6 请求改走 Proxy 并恢复照片加载
+
+- **需求/问题描述**：
+  > 用户批准试用代理路径，并明确允许当前 Proxy 所选节点转发微信 IPv6 请求、验证照片。
+
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 的 template.wechat_ipv6_rule 策略改为 Proxy；基础模板首位引用保留，中文注释同步，其余57条规则与基础参数不变。
+  - 保存活动配置 261003-2 的恢复点，同步首条规则并重载。自动审批最初要求确认具体节点与转发目标；用户补充明确授权后，同一修改重新通过审批并执行。
+  - [测试/验证]：检查修改前因策略尚为拒绝退出1，修改后退出0；官方 Subconverter 0.9.0 用真实配置转换出19节点、23策略定义和58条规则，首条展开正确。转换输出和运行配置的 Surge 原生检查返回 OK，重载后读取有效首位规则为 Proxy；与恢复点比较仅有预期策略及注释差异，git diff --check 通过，验证服务已停止。
+  - [实际结果]：5项 WeChat IPv6 请求命中首条 AND 并经过授权节点，未拒绝且未失败，收到531至11497字节数据；此前失败的 IPv6 HTTPS 目标收到11497字节。用户重新加载后明确反馈“照片可以显示”。
+  - [验证范围]：两条网络的 IPv6 只读核对均为 Automatic，本次未调整系统设置。当前代理绕过恢复图片；公网 IPv6 直连路径的具体故障仍未定位，规则不保证匹配域名解析后的 IPv6。
+  - 恢复点、运行请求数据及节点凭据只保留在本地已忽略目录，不上传。
+
+- **涉及文件**：
+  - `HappaConfig.ini` (+3 / -2)、`HappaConfig.conf` (+1 / -1)
+  - `docs/WeChat-连接诊断.md`、`docs/CHANGELOG.md`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `context/2026/10/03/10-30-17/对话.md`
+  - `.agent/happa-subconverter/` 中的检查与恢复点（已忽略）；本机 Surge 活动配置（仅本地）
+
+- **Git 提交**：待提交。
+
+---
