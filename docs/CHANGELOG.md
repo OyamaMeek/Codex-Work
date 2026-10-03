@@ -564,3 +564,25 @@
 - **Git 提交**：`d7716a4 refactor: define WeChat IPv6 rule in HappaConfig ini`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-03 10:15] 诊断微信拒绝 IPv6 后照片仍不显示
+
+- **需求/问题描述**：
+  > 用户提供新截图，反馈照片仍不显示。
+
+- **实际实现的功能与改动**：
+  - 当前有效规则及最近请求确认：132个微信连接命中首条 REJECT-NO-DROP，涉及10个 IPv6 目标，微信继续重试；用户明确反馈照片失败，拒绝方案未恢复图片。
+  - 核对用户已切换至活动配置 261003-2；停止沿用旧配置名。
+  - [网络验证]：通过 Surge 原生 HTTP 客户端指定现有 Proxy，两个失败微信 IPv6 地址约2.14 / 2.28秒返回 HTTP 404 / 400，国内 IPv6 对照约0.90秒返回 HTTP 404，日志确认收到数据。空路径 HEAD 使用 insecure=true，仅验证 HTTPS 响应可达，不能作为照片下载或鉴权成功证据。
+  - 保存活动配置恢复点，准备仅将首条策略改为 Proxy 的候选，Surge 原生检查返回 OK。新增代理流量行为已询问用户，尚未授权执行；模板、当前生效分流和系统网络保持原样。
+  - [记录验证]：实际拒绝命中与用户反馈已写入诊断及进度；git diff --check 通过。请求数据、脚本和候选仅保留本地已忽略目录，不上传节点凭据或截图。
+
+- **涉及文件**：
+  - `docs/WeChat-连接诊断.md`、`docs/CHANGELOG.md`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `context/2026/10/03/10-15-49/对话.md`
+  - `.agent/happa-subconverter/probe_wechat_policy.js`、请求数据、恢复点与候选（已忽略）
+
+- **Git 提交**：待提交。
+
+---

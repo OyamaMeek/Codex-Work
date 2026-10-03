@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-03 拒绝后的微信失败诊断
+
+- 当前活动配置为 261003-2，首位拒绝规则已实际命中；用户确认图片仍失败，停止将拒绝视为可靠回退方式。
+- 使用 Surge CLI 与原生 $httpClient 的 policy 选项，仅发起真实 HEAD 对照，不改变分流；两项微信 IPv6 经现有 Proxy 均返回 HTTPS 响应。候选策略改为 Proxy 已通过原生检查，等待用户授权新增代理行为。
+
 ## 2026-10-03 ini 中的微信规则定义
 
 - 规则定义位于 HappaConfig.ini 的 template.wechat_ipv6_rule；HappaConfig.conf 首位用 INJA 的 local 变量引用。

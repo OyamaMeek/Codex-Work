@@ -1,6 +1,6 @@
 # 微信图片连接诊断
 
-更新时间：2026-10-03 09:48（本地时间）。
+更新时间：2026-10-03 10:15（本地时间）。
 
 Surge 6.6.0 的本地日志确认：截图中的微信 HTTPS 请求经 DIRECT 连接 `240e:971:4001:3:1b::` 时发生 `Connection timeout`。同一请求的 QUIC 被模板中的通用 UDP 443 拒绝规则阻止；HTTPS 连接超时需要单独处理。
 
@@ -41,6 +41,12 @@ wechat_ipv6_rule=AND,((PROCESS-NAME,WeChat),(HOSTNAME-TYPE,IPv6)),REJECT-NO-DROP
 
 HappaConfig.conf 的 Rule 节首位通过 `{{ local.wechat_ipv6_rule }}` 引用该定义，按 [Subconverter 官方模板功能](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#模板功能) 在转换时展开。官方0.9.0使用本机真实节点配置转换后，首位规则正确，58条规则的内容与顺序保持不变；19个节点和23个策略定义有效（20个组与3个地区直连别名），Surge 原生检查返回 OK。
 
-当前 Surge 配置 261002-3 已加载展开后的首位拒绝规则，Wi-Fi 与 AX88179B 的 IPv6 保持 Automatic；本次移动定义无需改变运行规则或系统网络。恢复点保存于本地已忽略的 `.agent/happa-subconverter/261002-3-before-ipv6.conf`，其中含用户配置材料，不上传。
+当前 Surge 配置已切换为 261003-2（日志记录10:08:27），有效规则首位仍为展开后的拒绝规则。Wi-Fi 与 AX88179B 的 IPv6 已恢复 Automatic；本次排查未调整系统网络。配置恢复点仅保留于本地已忽略目录，不上传。
 
-已请求重新打开微信并加载图片；重载后观察到5个微信 IPv4 直连请求收到315至1262字节下载数据。尚未确认新增拒绝规则的实际命中、回退因果或图片恢复，图片结果等待反馈。
+用户明确反馈照片仍不显示。最近请求中132项微信连接命中首条拒绝规则，涉及10个 IPv6 目标；微信继续重试 IPv6，拒绝方案未恢复本次照片加载。部分其他 IPv4 请求正常收发，不能据此判断这张照片已成功下载。
+
+## 代理路径对照
+
+在不改当前分流的情况下，通过 Surge 原生 `$httpClient` 指定现有 Proxy，对失败地址发起 HEAD 请求。两项微信 IPv6 `240e:971:4001:5:24::`、`240e:930:c200:be:34::1` 分别在约2.14和2.28秒返回 HTTP 404 / 400，国内 IPv6 对照 `2400:3200::1` 约0.90秒返回 HTTP 404，Surge 请求记录确认收到数据。测试使用空路径和 `insecure=true`，只证明代理路径可以获得 HTTPS 响应，不证明微信图片、鉴权或证书验证成功。[原生客户端策略选项](https://manual.nssurge.com/scripting/api.html)。
+
+已准备仅将首条微信 IPv6 策略由 REJECT-NO-DROP 改为 Proxy 的候选配置，Surge 原生检查返回 OK，恢复点已保存。已请求用户批准这项新增代理流量行为；截至记录，尚未修改 ini 或运行策略，图片验证等待授权后执行。
