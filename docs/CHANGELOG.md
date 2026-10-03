@@ -630,3 +630,23 @@
 - **Git 提交**：`9dd0dec docs: explain Surge proxy groups`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-03 10:57] 按截图设置 HappaConfig 默认选项及分组顺序
+
+- **需求/问题描述**：
+  > 在 happaconfig 里将默认选项设置为截图中的选择，将 All Proxies 放到 Manual 下面、Emby 上面。
+
+- **实际实现的功能与改动**：
+  - 将截图指定的分组成员置于 select 首位；Manual 与 JP 优先 JP-GreenCloud-3，All Proxies 优先 JP-zgo-2，US 优先 US-DMIT-3，International 优先 UK-GreenCloud-3；保留全部候选节点与原地区筛选。
+  - All Proxies 紧接 Manual、位于 Emby 前。配置注释说明初始默认值、客户端已保存的选择及指定节点缺失时的选择顺序。
+  - [测试/验证]：新增检查先对原转换结果退出1，修改后退出0。官方 Subconverter 0.9.0 使用真实输入转换，20组默认项与展示顺序匹配要求，23个策略定义、19个节点和58条原序规则保留；全部策略候选集合及节点参数与修改前相同。模板检查通过，Surge 原生检查返回 OK，git diff --check 通过；本地验证服务已停止。
+  - [验证范围]：本次修改生成模板的初始默认项，未重载当前运行配置；Surge 已保存的手动选择继续保留，依据 [Surge 官方文档](https://manual.nssurge.com/policy-groups/select.html)。真实节点、转换结果与凭据仅存于已忽略目录。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_defaults.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/03/10-57-30/对话.md`
+
+- **Git 提交**：待提交。
+
+---

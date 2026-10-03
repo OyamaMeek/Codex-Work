@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-03 HappaConfig 默认选择
+
+- 通过 select 首位成员与有序节点正则设置截图默认项；All Proxies 位于 Manual 与 Emby 之间。
+- 官方 Subconverter 0.9.0 真实转换和 Surge 原生检查通过；可运行检查为 tests/check_happa_defaults.py，输入为真实转换结果。验证服务已停止，节点材料只存已忽略目录。
+
 ## 2026-10-03 微信 IPv6 代理验证
 
 - 用户明确授权现有 Proxy 所选节点及微信 IPv6 转发目标；ini 与活动配置 261003-2 的首位策略已改为 Proxy，系统网络未调整。
