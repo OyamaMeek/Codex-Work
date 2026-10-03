@@ -527,15 +527,16 @@
   - 在 HappaConfig.conf 的 Rule 节首位增加 `AND,((PROCESS-NAME,WeChat),(HOSTNAME-TYPE,IPv6)),REJECT-NO-DROP` 及中文注释，原57条规则与其他参数保留。
   - 保存当前 Surge 配置 261002-3 的本地恢复点，加入相同规则并重载；未改变系统 IPv6 设置，两条网络再次核对均为 Automatic。恢复点和原始请求数据只保留于已忽略目录。
   - [测试/验证]：新增断言修改前因缺失首位规则退出1，修改后模板检查退出0；58条规则、23组引用和原参数保留通过。Surge 原生检查返回 OK，重载返回 success，有效规则读取确认首位拒绝规则已加载，git diff --check 通过。
-  - [验证范围]：已请求重新打开微信并加载图片，尚无重载后的新微信请求与图片反馈；未宣称验证回退或图片恢复。此规则只匹配 WeChat 直接 IPv6 地址请求，不保证拦截域名解析后的 IPv6。
+  - [验证范围]：重载后观察到5个微信 IPv4 直连请求收到315至1262字节下载数据，尚未确认新增拒绝规则实际命中、回退因果或图片恢复，图片结果等待反馈。此规则只匹配 WeChat 直接 IPv6 地址请求，不保证拦截域名解析后的 IPv6。公开模板下载后与本地逐字节一致。
 
 - **涉及文件**：
   - `HappaConfig.conf` (+2 / -0)
   - `docs/WeChat-连接诊断.md`、`docs/CHANGELOG.md`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `context/2026/10/03/09-26-14/对话.md`
+  - `context/2026/10/03/09-29-08/对话.md`（补记时的可见会话）
   - `.agent/happa-subconverter/check_template.py` 与配置恢复点（本地，已忽略）；本机 Surge 配置 261002-3（仅本地）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`022d784 fix: reject direct WeChat IPv6 requests`，已推送至 `origin/main`；本条通过后续文档提交补记。
 
 ---
