@@ -608,6 +608,6 @@
   - `context/2026/10/03/10-30-17/对话.md`
   - `.agent/happa-subconverter/` 中的检查与恢复点（已忽略）；本机 Surge 活动配置（仅本地）
 
-- **Git 提交**：待提交。
+- **Git 提交**：`2fbc3df fix: route WeChat IPv6 through Proxy`，已推送至 `origin/main`；本条通过后续文档提交补记。两个公开模板下载后与本地逐字节一致。
 
 ---
