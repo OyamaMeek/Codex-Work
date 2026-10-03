@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-03 微信 IPv6 拒绝规则
+
+- 在 HappaConfig.conf 和当前 Surge 配置 261002-3 的 Rule 节首位加入 WeChat 进程与 IPv6 地址类型的 AND 拒绝规则。
+- 复用模板检查；Surge 自带 surge-cli 原生检查与重载通过，有效规则读取确认已加载。系统 IPv6 保持自动，微信实际回退与图片结果等待反馈。
+
 ## 2026-10-02 微信直连规则
 
 - 执行代理：Codex；使用 systematic-debugging、test-driven-development 和 verification-before-completion，无子代理。

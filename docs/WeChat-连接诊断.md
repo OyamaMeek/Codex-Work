@@ -1,6 +1,6 @@
 # 微信图片连接诊断
 
-更新时间：2026-10-02 22:42（本地时间）。
+更新时间：2026-10-03 09:26（本地时间）。
 
 Surge 6.6.0 的本地日志确认：截图中的微信 HTTPS 请求经 DIRECT 连接 `240e:971:4001:3:1b::` 时发生 `Connection timeout`。同一请求的 QUIC 被模板中的通用 UDP 443 拒绝规则阻止；HTTPS 连接超时需要单独处理。
 
@@ -26,4 +26,18 @@ Surge 6.6.0 的本地日志确认：截图中的微信 HTTPS 请求经 DIRECT �
 
 长期采用“仅本地链接”可以作为经本次对照验证的绕过方式，会限制两条网络上所有应用的公网 IPv6 通信，需要用户另行确认。恢复 IPv6 自动模式前应先排查并修复网络的 IPv6 连通性。
 
-本轮未修改 HappaConfig 或正在运行的 Surge 配置；系统网络只按授权临时调整并恢复。诊断脚本保留于本地已忽略的 `.agent/happa-subconverter/probe_connections.py`。
+上述网络对照完成时未修改模板与运行配置；诊断脚本保留于本地已忽略的 `.agent/happa-subconverter/probe_connections.py`。
+
+## 当前微信 IPv6 拒绝规则
+
+2026-10-03 按用户授权，在 HappaConfig.conf 的 Rule 节首位以及当前 Surge 配置 261002-3 中增加：
+
+```ini
+AND,((PROCESS-NAME,WeChat),(HOSTNAME-TYPE,IPv6)),REJECT-NO-DROP
+```
+
+此规则仅用于 Surge Mac，匹配 WeChat 进程直接访问 IPv6 地址的请求；域名解析后使用 IPv6 的请求不由 HOSTNAME-TYPE 保证拦截。[进程规则](https://manual.nssurge.com/rules/process.html)、[地址类型规则](https://manual.nssurge.com/rules/protocol-and-network.html)。REJECT-NO-DROP 避免频繁拒绝时自动升级为静默丢弃；它不会把 IPv6 地址转换为 IPv4，实际回退取决于微信。[拒绝策略](https://manual.nssurge.com/policies/reject.html)。
+
+模板检查确认58条规则与23个分组有效，原57条规则及其他设置保持不变。Surge 原生配置检查返回 OK，重载返回 success，随后读取有效规则确认新增规则位于首位。Wi-Fi 与 AX88179B 的 IPv6 均再次核对为 Automatic，本轮未调整系统网络。当前配置的恢复点保存于本地已忽略的 `.agent/happa-subconverter/261002-3-before-ipv6.conf`，其中含用户配置材料，不上传。
+
+已请求重新打开微信并加载图片；截至本次记录，尚无重载后的新微信请求与图片反馈，未验证微信实际回退或图片恢复。
