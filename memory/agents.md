@@ -2,8 +2,8 @@
 
 ## 2026-10-03 HappaConfig 默认选择
 
-- 通过 select 首位成员与有序节点正则设置截图默认项；All Proxies 位于 Manual 与 Emby 之间。
-- 官方 Subconverter 0.9.0 真实转换和 Surge 原生检查通过；可运行检查为 tests/check_happa_defaults.py，输入为真实转换结果。验证服务已停止，节点材料只存已忽略目录。
+- 仅通过用途分组首位策略设置 Emby 至 Final 的14项默认值；节点组使用原筛选顺序，All Proxies 位于 Manual 与 Emby 之间。
+- 官方 Subconverter 0.9.0 真实转换和 Surge 原生检查通过；tests/check_happa_defaults.py 输入为当前转换结果及首次修改前的真实转换结果，检查默认项与原节点顺序。验证服务已停止，节点材料只存已忽略目录。
 
 ## 2026-10-03 微信 IPv6 代理验证
 

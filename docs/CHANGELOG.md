@@ -650,3 +650,23 @@
 - **Git 提交**：`90e4020 fix: match HappaConfig defaults to selected policies`，已推送至 origin/main；本条通过后续文档提交补记。推送首次被自动审批拒绝，因无法核实远端所有者；通过 GitHub 官方 API 确认认证账户为仓库所有者且具有 push 权限后，重试审批通过并推送成功。
 
 ---
+
+## [2026-10-03 11:17] 限定默认项修改范围并恢复节点顺序
+
+- **需求/问题描述**：
+  > 用户明确只修改 Emby 至 Final 的用途分组默认项，要求删除截图圈出的具体节点优先匹配内容。
+
+- **实际实现的功能与改动**：
+  - 删除 Manual、All Proxies、JP、US、International 中具体节点名称的优先匹配；Proxy 与节点组的候选项及顺序恢复首次修改前状态。
+  - 保留 Emby 至 Final 的14组截图默认项，以及 Manual → All Proxies → Emby 的展示位置。
+  - 回归检查逐项比较范围外组顺序，保留用途组候选集合、节点定义及规则；加入防止扩大截图修改范围的注意事项。
+  - [测试/验证]：检查对修正前结果因范围外组顺序改变退出1，修正后退出0；官方 Subconverter 0.9.0 真实转换保留19节点、23策略定义及58条原序规则，节点组顺序与首次修改前逐项一致。模板检查和 git diff --check 通过，Surge 原生检查返回 OK；验证服务已停止，运行配置未重载。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_defaults.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/03/11-17-00/对话.md`
+
+- **Git 提交**：待提交。
+
+---
