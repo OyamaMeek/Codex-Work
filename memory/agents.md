@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-04 自行车骑鹈鹕 SVG 动画
+
+- Codex 单代理执行，参考 brainstorming、test-driven-development 与 verification-before-completion；ego-browser 验证浏览器实际行为。
+- 独立 HTML 内嵌 SVG、CSS、JavaScript，按本次文字顺序表现自行车坐在鹈鹕背上；不执行截图或图像检查。
+
 ## 2026-10-04 鹈鹕骑行 SVG 动画
 
 - 执行代理：Codex，无子代理；参考 brainstorming 与 verification-before-completion，浏览器行为验证使用 ego-browser。
