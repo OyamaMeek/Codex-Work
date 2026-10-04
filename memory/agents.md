@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-04 微信分流定义直接放入 ini
+
+- Codex 单代理，复用既有 INJA local 变量、Subconverter 0.9.0 和 Surge 原生检查；只移动规则定义位置。
+
 ## 2026-10-04 替换微信分流方法
 
 - Codex 单代理执行，使用 brainstorming、test-driven-development 与 verification-before-completion。

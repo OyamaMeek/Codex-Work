@@ -796,3 +796,22 @@
 - **Git 提交**：`a3e44de feat: replace WeChat routing with domain and GeoIP rules`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-04 20:53] 微信规则完整定义直接放入 ini
+
+- **需求/问题描述**：
+  > 直接放到 ini。
+
+- **实际实现的功能与改动**：
+  - 将现有18条微信及腾讯规则完整定义集中在 HappaConfig.ini 的 template 节；HappaConfig.conf 对应位置仅保留变量引用。
+  - [测试/验证]：迁移前检查因 ini 缺少微信 User-Agent 定义退出1；移动后官方 Subconverter 0.9.0 实际展开18变量，保留19节点、23策略定义、66规则，所有节参数与条目顺序逐项同移动前结果一致。现有微信规则检查及 Surge 原生 --check 通过，git diff --check 通过，验证服务已停止。
+  - [验证范围]：仅调整规则定义位置，运行配置与系统网络未修改；未进行实时图片请求测试。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`HappaConfig.conf`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/04/20-53-43/对话.md`
+
+- **Git 提交**：待提交。
+
+---
