@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-04 鹈鹕骑行 SVG 动画
+
+- 执行代理：Codex，无子代理；参考 brainstorming 与 verification-before-completion，浏览器行为验证使用 ego-browser。
+- 单文件 HTML 内嵌 SVG、CSS 与 JavaScript，无外部资源；未经视觉验证授权，不截图或检查图片。
+
 ## 2026-10-03 HappaConfig 默认选择
 
 - Emby 至 Final 的14个用途组首位新增 All Proxies，作为初始默认选项；节点组使用原筛选顺序，All Proxies 位于 Manual 与 Emby 之间。
