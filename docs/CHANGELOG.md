@@ -753,3 +753,24 @@
 - **Git 提交**：`2b01b09 docs: analyze QuanX WeChat image routing`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-04 20:14] 分析 260810.conf 微信图片分流
+
+- **需求/问题描述**：
+  > 260810.conf中微信图片如何分流的
+
+- **实际实现的功能与改动**：
+  - 读取本地配置及引用的 nexitally.ini；配置的 Rule、Proxy、Proxy Group 和 Script 均由本机 Subconverter 动态引入，没有本地微信专用规则。
+  - 读取模板引用的全部远程规则内容。China.list 包含 MicroMessenger / WeChat User-Agent 和 qq.com、wechat.com、servicewechat.com、gtimg.com、idqqimg.com、myqcloud.com 等域名规则，策略为 DIRECT。
+  - 未发现 qpic.cn、qlogo.cn 专用规则。未命中前序规则的请求继续经过中国规则、GEOIP,CN,DIRECT，最终进入 Proxies；User-Agent 规则只在对应 HTTP 属性可见时适用，不能保证覆盖全部 HTTPS 图片连接。
+  - 本地配置没有微信 IPv6 特殊规则；直接 IP 请求须依据 IP 规则及兜底决定出口。DNS 设置不等于分流策略。
+  - [测试/验证]：远程模板及其全部15项资源引用读取成功；核对 Surge 官方规则顺序与 HTTP 规则文档。本机 127.0.0.1:25500 拒绝连接，无法读取最终生成配置或核验实际图片请求；上游当前内容不能替代客户端缓存。
+  - 260810.conf 保持原样，SHA-256 为 a63fdb3acd2a225109d9dae4c62142075a2220b48542ac4ed4107adba3761faf；配置及订阅凭据不提交。
+
+- **涉及文件**：
+  - `docs/CHANGELOG.md`
+  - `context/2026/10/04/20-14-16/对话.md`
+
+- **Git 提交**：待提交。
+
+---
