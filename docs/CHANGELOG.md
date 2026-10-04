@@ -812,6 +812,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/04/20-53-43/对话.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`0d03cb3 refactor: define all WeChat routing rules in ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---

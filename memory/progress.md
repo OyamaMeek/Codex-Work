@@ -5,7 +5,7 @@
 - [x] 用户要求直接放入 ini，已重新读取当前文件。
 - [x] 18条完整规则定义均在 ini，conf 仅引用；迁移前检查因 ini 缺少微信 User-Agent 定义退出1。
 - [x] 实际转换保留19节点、23策略定义与66条规则；各节参数及顺序逐项与移动前一致，Surge 原生检查返回 OK，验证服务已停止。
-- [ ] 日志和会话已归档，待提交并推送。
+- [x] 日志和会话已归档；0d03cb3 refactor: define all WeChat routing rules in ini 已提交并推送 origin/main。
 
 ## 2026-10-04 替换微信分流方法
 
