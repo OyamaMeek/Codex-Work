@@ -750,6 +750,6 @@
   - `docs/CHANGELOG.md`
   - `context/2026/10/04/20-02-06/对话.md`
 
-- **Git 提交**：待提交。
+- **Git 提交**：`2b01b09 docs: analyze QuanX WeChat image routing`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
