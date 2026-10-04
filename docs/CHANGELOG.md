@@ -815,3 +815,22 @@
 - **Git 提交**：`0d03cb3 refactor: define all WeChat routing rules in ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-04 21:01] 全部分流规则定义集中到 ini
+
+- **需求/问题描述**：
+  > 全部规则都放过来。
+
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 的 template 节完整定义全部66条分流及中文说明；HappaConfig.conf 的 Rule 节仅保留66个变量引用。未启用的去广告示例也移入 ini 并保持禁用。
+  - [测试/验证]：迁移前检查因 ini 仅有18条定义退出1。官方 Subconverter 0.9.0 实际转换展开66变量，保留19节点、23策略定义和66规则；全部配置节的参数及条目顺序逐项与移动前一致。现有微信规则检查、Surge 原生 --check 和 git diff --check 通过；转换服务已停止。
+  - [验证范围]：仅调整定义位置，未更改运行配置、系统网络或分流行为；未进行实时请求测试。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`HappaConfig.conf`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/04/21-01-42/对话.md`
+
+- **Git 提交**：待提交。
+
+---

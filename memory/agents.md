@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-04 全部分流定义放入 ini
+
+- Codex 单代理，复用 INJA local 变量、官方 Subconverter 0.9.0 与 Surge 原生检查；完整移动所有分流定义，不改变行为。
+
 ## 2026-10-04 微信分流定义直接放入 ini
 
 - Codex 单代理，复用既有 INJA local 变量、Subconverter 0.9.0 和 Surge 原生检查；只移动规则定义位置。
