@@ -1,5 +1,15 @@
 # 当前任务验证标准
 
+## 2026-10-04 替换微信分流方法
+
+- 真实转换保留16条腾讯 User-Agent / 域名直连规则；其后微信进程及 qpic.cn / qlogo.cn 范围内先匹配 GEOIP,CN,DIRECT，再进入 Final。
+- 无微信 IPv6 特殊规则、43.156.222.0/24 优先直连及 WeChat.list 引用；图片域名只在条件规则中出现，不无条件直连。
+- 其余48条原规则、23策略定义、节点参数及全部分组顺序与原生成结果一致；General、Host、MITM、Script 保留。
+- 新检查先失败后通过，Subconverter 实际转换成功，无模板占位符；Surge --check 返回 OK，git diff --check 通过。
+- 不调整运行配置，不将配置语法检查当作实时命中或图片下载成功。
+
+实际结果：tests/check_happa_wechat.py 对旧真实转换结果因缺少腾讯直连规则退出1；修改后官方 Subconverter 0.9.0 实际生成19节点、23策略定义、66条规则，两个 ini 变量完整展开，检查退出0。原48条规则、节点参数、所有分组成员及顺序、General / Host / MITM / Script 均与原结果一致；Surge --check 返回 OK，git diff --check 通过。转换服务已停止；未重载当前 Surge 或进行图片请求实测。
+
 ## 2026-10-04 自行车骑鹈鹕 SVG 动画
 
 - 自行车位于鹈鹕背部上方；脚部、身体与车轮随时间推进，所有坐标有限。

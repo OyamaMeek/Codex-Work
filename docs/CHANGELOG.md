@@ -774,3 +774,25 @@
 - **Git 提交**：`5b46980 docs: analyze 260810 WeChat image routing`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-04 20:27] 完整替换 HappaConfig 微信分流方法
+
+- **需求/问题描述**：
+  > 把 260810.conf 的微信分流方法写入 HappaConfig；用户明确选择完整替换。
+
+- **实际实现的功能与改动**：
+  - HappaConfig.conf 写入当前 260810 上游中国规则腾讯段的16条 User-Agent / 域名直连规则。
+  - HappaConfig.ini 定义 wechat_cn_rule 与 wechat_final_rule，由 conf 展开。微信进程（Mac）及 qpic.cn / qlogo.cn 请求先按中国 IP 直连，其余进入 Final；IPv4 与 IPv6 使用同一判断。
+  - 微信范围内的判断先于其他服务规则，避免图片进入后序 China / HK 可选组；Final 使用客户端当前选择，模板默认 All Proxies。
+  - 其余48条规则、23个策略定义、节点与分组顺序、General / Host / MITM / Script 保留。
+  - [测试/验证]：新检查先对旧转换结果退出1，修改后退出0；官方 Subconverter 0.9.0 实际生成19节点、23策略定义、66条规则，变量全部展开，Surge 原生 --check 返回 OK，git diff --check 通过；验证服务已停止。
+  - [验证范围]：未重载运行中的 Surge 配置，未验证实时规则命中或微信图片下载。敏感节点输入输出只保留于已忽略目录。
+
+- **涉及文件**：
+  - `HappaConfig.ini`、`HappaConfig.conf`、`tests/check_happa_wechat.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/04/20-27-34/对话.md`
+
+- **Git 提交**：待提交。
+
+---

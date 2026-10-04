@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-04 替换微信分流方法
+
+- Codex 单代理执行，使用 brainstorming、test-driven-development 与 verification-before-completion。
+- 使用官方 Subconverter 0.9.0 的实际节点转换结果和 Surge 原生配置检查；敏感输入输出仅保留于已忽略的 .agent/happa-subconverter/。
+- 用户明确选择完整替换旧微信规则；不修改运行中的 Surge 配置或系统网络。
+
 ## 2026-10-04 自行车骑鹈鹕 SVG 动画
 
 - Codex 单代理执行，参考 brainstorming、test-driven-development 与 verification-before-completion；ego-browser 验证浏览器实际行为。
