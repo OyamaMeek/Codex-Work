@@ -850,6 +850,6 @@
   - `memory/agents.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/05/10-46-26/对话.md`
 
-- **Git 提交**：待提交；用户已明确批准本次文件及记录上传至 OyamaMeek/Codex-Work 的 main。
+- **Git 提交**：`6c3bf9f feat: add Claude domain rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---

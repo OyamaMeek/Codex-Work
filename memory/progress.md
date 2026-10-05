@@ -4,7 +4,7 @@
 
 - [x] 创建 Claude.list，首项精确匹配，另外8项后缀匹配；HappaConfig.ini 保持原样。
 - [x] 只读检查确认9项内容、顺序与格式准确，git diff --check 通过；日志和对话已保存。
-- [ ] 用户已明确批准将 Claude.list 及本次记忆、日志、对话归档提交并推送至 OyamaMeek/Codex-Work 的 main；正在执行。
+- [x] 用户明确批准后，6c3bf9f feat: add Claude domain rule list 已提交并推送 origin/main。
 
 ## 2026-10-04 全部分流定义放入 ini
 
