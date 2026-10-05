@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-05 Claude 规则列表
+
+- Codex 单代理；按 Surge 官方 RULE-SET 格式转换用户提供的9项域名，使用本地条目核对和 Git 检查。技能：using-superpowers、verification-before-completion。
+
 ## 2026-10-04 全部分流定义放入 ini
 
 - Codex 单代理，复用 INJA local 变量、官方 Subconverter 0.9.0 与 Surge 原生检查；完整移动所有分流定义，不改变行为。

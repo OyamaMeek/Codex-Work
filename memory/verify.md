@@ -1,5 +1,12 @@
 # 当前任务验证标准
 
+## 2026-10-05 Claude 规则列表
+
+- Claude.list 恰好9行：1条 DOMAIN 与8条 DOMAIN-SUFFIX，顺序及域名对应用户 payload，不包含策略字段、YAML 前缀或重复项。
+- 执行只读条目核对与 git diff --check；未进行 Surge 导入或实时流量命中验证。
+
+实际结果：只读核对退出0，9项域名及顺序准确，1条 DOMAIN、8条 DOMAIN-SUFFIX，无重复及策略字段；git diff --check 通过。
+
 ## 2026-10-04 全部分流定义放入 ini
 
 - ini 定义全部66条有效分流，conf 的 Rule 节只含对应变量引用；未启用的去广告示例保持禁用。

@@ -834,3 +834,22 @@
 - **Git 提交**：`283d36e refactor: define all routing rules in HappaConfig ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-05 10:46] 转换 Claude 域名规则列表
+
+- **需求/问题描述**：
+  > 将用户提供的9项 payload 域名整理成 ini 可引用的 list 文件。
+
+- **实际实现的功能与改动**：
+  - 新建 Claude.list，servd-anthropic-website.b-cdn.net 使用 DOMAIN，其余8项去除 +. 并使用 DOMAIN-SUFFIX；文件内不包含策略字段。
+  - 适用于当前 HappaConfig.ini 引用的 Surge RULE-SET 格式；本次未修改 ini。
+  - [测试/验证]：只读检查退出0，9项内容、顺序、规则类型及唯一性核对通过，git diff --check 通过；未执行 Surge 导入或流量验证。
+
+- **涉及文件**：
+  - `Claude.list`
+  - `memory/agents.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/05/10-46-26/对话.md`
+
+- **Git 提交**：待提交；用户已明确批准本次文件及记录上传至 OyamaMeek/Codex-Work 的 main。
+
+---
