@@ -853,3 +853,22 @@
 - **Git 提交**：`6c3bf9f feat: add Claude domain rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-06 11:59] China 默认直连
+
+- **需求/问题描述**：
+  > ini中china默认direct
+
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 中 China 的 select 首项设为 DIRECT，All Proxies 移至第二项，保留全部候选。
+  - [测试/验证]：修改前首项检查退出1；修改后只读检查退出0，INI 解析成功，逐行比较确认仅调整 China 候选顺序；git diff --check 通过。
+  - [验证范围]：未执行订阅转换或运行中 Surge 验证；客户端已保存的手动选择可能继续保留。
+
+- **涉及文件**：
+  - `HappaConfig.ini` (+1 / -1)
+  - `memory/agents.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/06/11-59-43/对话.md`
+
+- **Git 提交**：待提交。
+
+---

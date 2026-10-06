@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-06 China 默认直连
+
+- Codex 单代理；使用 using-superpowers、verification-before-completion，执行 Python 只读配置核对与 Git 检查；仅调整 ini 中 China 首项。
+
 ## 2026-10-05 Claude 规则列表
 
 - Codex 单代理；按 Surge 官方 RULE-SET 格式转换用户提供的9项域名，使用本地条目核对和 Git 检查。技能：using-superpowers、verification-before-completion。

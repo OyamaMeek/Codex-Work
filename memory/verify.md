@@ -1,5 +1,12 @@
 # 当前任务验证标准
 
+## 2026-10-06 China 默认直连
+
+- China 的 select 首项必须为 []DIRECT；与修改前比较仅交换 China 的 DIRECT 与 All Proxies 顺序。
+- 标准库 INI 解析与 git diff --check 通过；不将本地配置核对视为客户端运行验证。
+
+实际结果：修改前首项检查因 All Proxies 退出1；修改后检查退出0，China 默认 DIRECT，INI 解析成功，其余所有行与 HEAD 一致；git diff --check 通过。未执行订阅转换或重载 Surge，已保存的手动选择由客户端保留。
+
 ## 2026-10-05 Claude 规则列表
 
 - Claude.list 恰好9行：1条 DOMAIN 与8条 DOMAIN-SUFFIX，顺序及域名对应用户 payload，不包含策略字段、YAML 前缀或重复项。
