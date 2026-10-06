@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-06 DoT DNS
+
+- Codex 单代理；using-superpowers、brainstorming、test-driven-development、verification-before-completion；复用官方 Subconverter 0.9.0、Python 标准库与 Surge 6.6.0 原生配置检查。
+- 依据 Surge 当前加密 DNS 文档和 Cloudflare DoT 文档；只修改共享模板，不调整系统网络或活动配置。
+
 ## 2026-10-06 Claude 独立策略组
 
 - Codex 单代理；使用 using-superpowers、verification-before-completion；复用官方 Subconverter 0.9.0 和 Surge 原生配置检查，curl 读取远程规则。

@@ -1,5 +1,12 @@
 # 当前任务计划
 
+## 2026-10-06 DoT DNS
+
+1. 将 DNS 参数与首位 DoT 分流定义放入 ini 的 template 节，conf 仅引用；使用 tls://1.1.1.1 与 tls://1.0.0.1，开启证书验证及跟随出站，PROTOCOL,DOT 使用现有 All Proxies。
+2. 传统 DNS 仅保留 Cloudflare，接管53端口查询；删除 Host 中大陆 DNS 与显式系统解析映射，保留固定 IP。局域网 .local 与简单主机名仍受客户端原生解析行为影响。
+3. 对修改前后真实转换结果运行 DNS 检查和 Surge 原生检查；不重载活动配置，不宣称已完成实际 DNS 泄漏检测。记录代理域名可能触发 Surge 的 DoT 直连回退限制。
+4. 归档可见对话与日志，提交并推送 origin/main。
+
 ## 2026-10-06 Claude 独立策略组
 
 1. 在 ini 的 OpenAI 与 Apple 策略组之间插入 Claude，候选沿用 OpenAI 的 All Proxies、Manual、US；Claude 远程 RULE-SET 使用 Claude 策略，conf 引用变量，规则总数为67。

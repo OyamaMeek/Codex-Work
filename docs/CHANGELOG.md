@@ -893,3 +893,25 @@
 - **Git 提交**：`46a62fb feat: add Claude policy group between OpenAI and Apple`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-06 14:30] INI 引入 DoT 并清理大陆 DNS
+
+- **需求/问题描述**：
+  > 在ini中帮我引入DoT做dns方式不要暴露来自大陆的dns
+
+- **实际实现的功能与改动**：
+  - INI 的 template 节定义 tls://1.1.1.1、tls://1.0.0.1，开启证书验证、跟随出站和53端口 DNS 接管；DoT 首位分流使用 All Proxies。
+  - 基础模板引用 INI 变量，清理大陆 DNS、system 和全部 Host 的 server: 覆盖；保留 mtalk 固定 IP 与原67条分流规则、节点和策略组。
+  - [测试/验证]：修改前真实转换结果检查因未全部使用 DoT 退出1；修改后官方 Subconverter 0.9.0 生成19节点、24策略定义、68条规则，73个变量展开。DNS 检查与范围外配置比较通过，Surge 6.6.0 --check 返回 OK，git diff --check 通过；本地转换服务已停止。
+  - [验证范围]：未重载活动配置或实测 DNS 泄漏。All Proxies 需选择海外节点；代理端解析取决于节点服务商，代理服务器为域名时可能触发 Surge 的加密 DNS 直连回退。传统 DNS 用于连通性测试，.local / 简单主机名保留原生解析行为；移除系统映射后，部分路由器管理域名可能需要通过局域网 IP 访问。
+  - [依据]：[Surge 加密 DNS](https://manual.nssurge.com/dns/encrypted-dns.html)、[Cloudflare DoT](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-tls/)；DoT 要求 Surge Mac 5.10.2+ / iOS 5.14.5+。
+
+- **涉及文件**：
+  - `HappaConfig.ini` (+15 / -2)、`HappaConfig.conf` (+9 / -57)
+  - `tests/check_happa_dns.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/06/14-30-16/对话.md`
+
+- **Git 提交**：待提交。
+
+---

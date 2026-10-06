@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-10-06 DoT DNS
+
+- 实际转换全部展开 ini 的 DNS 变量，DoT 为 Cloudflare IP 端点；传统 DNS 无大陆或 system，证书验证开启，53端口接管生效于配置。
+- 首位 PROTOCOL,DOT,All Proxies；原67条规则、节点及分组顺序保持一致，Host 无 server: 覆盖。
+- 检查修改前真实转换结果应失败；修改后 DNS 检查、Subconverter 转换、Surge --check 和 git diff --check 通过。
+- 未修改活动配置；不将语法和转换检查当作实际 DNS 出口证明。海外出口与代理服务器解析循环限制需要由用户实际节点决定。
+
+实际结果：修改前真实转换导入19节点、24策略定义、67条规则，DNS 检查因未全部使用 DoT 退出1。修改后实际转换生成68条规则、73个变量完整展开，19节点与24策略定义保留；DNS 检查、其他分流及配置节比较通过，Surge 6.6.0 --check 返回 OK，git diff --check 通过。转换服务已停止；未调整活动配置或系统网络，未实测 DNS 泄漏。传统 DNS 仍用于连通性测试，.local / 简单主机名按客户端原生方式处理；代理服务器使用域名时可能触发加密 DNS 直连回退。
+
 ## 2026-10-06 Claude 独立策略组
 
 - ini 与实际生成结果的分组顺序为 OpenAI、Claude、Apple；Claude 候选为 All Proxies、Manual、US。
