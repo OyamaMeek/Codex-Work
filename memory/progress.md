@@ -4,7 +4,7 @@
 
 - [x] 将 HappaConfig.ini 的 China 首项改为 DIRECT，保留全部候选。
 - [x] 修改前默认项检查失败；修改后 INI 解析、首项检查、与 HEAD 逐行比较及 git diff --check 通过。未执行订阅转换或运行中 Surge 验证。
-- [ ] 保存开发日志与可见对话，提交并推送 origin/main。
+- [x] 开发日志与可见对话已保存；81e5707 fix: default China policy to DIRECT 已提交并推送 origin/main。
 
 ## 2026-10-05 Claude 规则列表
 
