@@ -1,5 +1,11 @@
 # 当前任务进度
 
+## 2026-10-06 Claude 与 Apple 默认项
+
+- [x] HappaConfig.ini 的 Claude 首项改为 US，Apple 首项改为 DIRECT，保留全部候选。
+- [x] 默认项检查修改前退出1，修改后退出0；INI 解析、与 HEAD 比较和 git diff --check 通过，仅两行顺序变化。未执行订阅转换或重载 Surge。
+- [ ] 保存日志与可见对话，提交并推送 origin/main。
+
 ## 2026-10-06 Notion Browser 整理
 
 - [x] 找到截图对应的 Browser 页，读取163个顶层标题、2个子页及20个未知嵌入块。

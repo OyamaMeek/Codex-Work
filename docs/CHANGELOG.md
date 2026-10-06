@@ -932,3 +932,19 @@
 - **Git 提交**：`7f4bfa2 docs: record Notion note organization`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-06 21:04] 修改 Claude 与 Apple 默认项
+
+- **需求/问题描述**：
+  > ini中Claude默认改成US Apple改成direct
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 将 Claude 首位调整为 US，Apple 首位调整为 DIRECT，保留全部候选及其他配置。
+  - [测试/验证]：默认项检查修改前退出1、修改后退出0；INI 解析、与 HEAD 逐行比较及 git diff --check 通过，仅两行顺序变化。
+  - [验证范围]：未执行订阅转换或重载活动 Surge 配置；客户端已保存的手动选择继续保留。
+- **涉及文件**：
+  - `HappaConfig.ini` (+2 / -2)
+  - `memory/progress.md`、`memory/verify.md`、`docs/CHANGELOG.md`
+  - `context/2026/10/06/21-04-52/对话.md`
+- **Git 提交**：待提交。
+
+---
