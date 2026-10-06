@@ -5,7 +5,7 @@
 - [x] 读取当前 INI、基础模板和官方文档；确认本机 Surge 6.6.0 支持 DoT，识别大陆 DNS、system 和 Host 覆盖。
 - [x] 修改前真实转换检查因未全部使用 DoT 退出1；DNS 参数和规则集中于 ini，conf 引用；移除大陆与显式系统 DNS 覆盖。
 - [x] 官方转换生成19节点、24策略定义、68条规则，73个变量完整展开；DNS 检查及 Surge --check 通过，服务已停止。未重载活动配置或实测 DNS 泄漏。
-- [ ] 可见对话与开发日志已保存，待提交与推送。
+- [x] 可见对话与开发日志已保存；e8d0975 feat: configure proxied DoT DNS in HappaConfig ini 已提交并推送 origin/main。
 
 ## 2026-10-06 Claude 独立策略组
 
