@@ -915,3 +915,20 @@
 - **Git 提交**：`e8d0975 feat: configure proxied DoT DNS in HappaConfig ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-06 15:47] 整理 Notion Browser 笔记
+
+- **需求/问题描述**：
+  > 整理混乱的 Notion 笔记，并把 Android Studio 折叠项里的其他内容整理到外层。
+- **实际实现的功能与改动**：
+  - 原163条顶层笔记添加 AI、开发、网络、安全、学习、金融、通信、生活八类标签，精简标题并统一二级折叠层级；添加分类速查、原生目录及备忘录和 iOS 入口。
+  - Android Studio 下56行混杂资料拆分为27个独立同级条目，按主题排列，Android Studio 自身归入开发并保留教程链接；总计190条。
+  - [测试/验证]：Notion 更新任务均返回 succeeded；读取核对分类计数、2个子页和20个未知块标识。排除显示格式与列表序号差异后，其余正文一致；迁出56行文字和链接全部保留。规范化 DeepTutor 重复编号，核对原文及链接；未执行视觉检查。
+  - [验证范围]：接口报告截断，20个嵌入块内部不可读取，保留原标识且未编辑其内容；不验证收藏中商品宣传与外部网页事实。
+- **涉及文件**：
+  - Notion 页面：`https://app.notion.com/p/396867d026d9800b8982eea11a33bb9f`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/06/15-47-13/对话.md`
+- **Git 提交**：待提交。
+
+---

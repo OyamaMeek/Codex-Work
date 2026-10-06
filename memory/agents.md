@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-06 Notion Browser 整理
+
+- Codex 单代理，使用 Notion 连接器读取和更新原生内容；已读取 using-superpowers 与 ego-browser 技能。浏览器 TaskSpace 后续不可用，页面修改使用已连接 Notion 工具。
+
 ## 2026-10-06 DoT DNS
 
 - Codex 单代理；using-superpowers、brainstorming、test-driven-development、verification-before-completion；复用官方 Subconverter 0.9.0、Python 标准库与 Surge 6.6.0 原生配置检查。
