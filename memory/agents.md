@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-06 Claude 独立策略组
+
+- Codex 单代理；使用 using-superpowers、verification-before-completion；复用官方 Subconverter 0.9.0 和 Surge 原生配置检查，curl 读取远程规则。
+
 ## 2026-10-06 China 默认直连
 
 - Codex 单代理；使用 using-superpowers、verification-before-completion，执行 Python 只读配置核对与 Git 检查；仅调整 ini 中 China 首项。

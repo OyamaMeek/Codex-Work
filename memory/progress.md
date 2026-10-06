@@ -1,5 +1,12 @@
 # 当前任务进度
 
+## 2026-10-06 Claude 独立策略组
+
+- [x] 已读取远程9条域名规则与当前模板；独立分组检查修改前因缺少 Claude 策略组退出1。
+- [x] Claude 分组插入 OpenAI 与 Apple 之间，默认 All Proxies，候选还有 Manual、US；远程列表使用 Claude 策略。
+- [x] 官方 Subconverter 实际转换生成19节点、24策略定义、67规则；分组顺序、候选与 Claude 规则策略检查通过，其他 ini 配置保持一致；Surge --check 返回 OK，验证服务已停止。
+- [ ] 保存日志与可见对话，提交并推送 origin/main。
+
 ## 2026-10-06 China 默认直连
 
 - [x] 将 HappaConfig.ini 的 China 首项改为 DIRECT，保留全部候选。

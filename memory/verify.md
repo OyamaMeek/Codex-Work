@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-10-06 Claude 独立策略组
+
+- ini 与实际生成结果的分组顺序为 OpenAI、Claude、Apple；Claude 候选为 All Proxies、Manual、US。
+- Claude 远程 RULE-SET 紧接 OpenAI，完整定义位于 ini，策略为 Claude；conf 引用对应变量。
+- 生成结果包含67条原序规则，无残留变量；官方转换与 Surge 原生检查通过；git diff --check 通过。
+- 修改前独立分组检查因缺少 Claude 策略组退出1；不将配置检查当作实时流量验证。
+
+实际结果：官方 Subconverter 0.9.0 实际转换生成19节点、24策略定义、67规则，全部变量展开；生成顺序为 OpenAI、Claude、Apple，Claude 候选为 All Proxies、Manual、US，远程规则使用 Claude。移除新增定义后其余 ini 配置与 HEAD 一致；Surge --check 返回 OK，验证服务已停止。未重载活动配置或验证实时流量。
+
 ## 2026-10-06 China 默认直连
 
 - China 的 select 首项必须为 []DIRECT；与修改前比较仅交换 China 的 DIRECT 与 All Proxies 顺序。

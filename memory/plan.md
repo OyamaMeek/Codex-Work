@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-06 Claude 独立策略组
+
+1. 在 ini 的 OpenAI 与 Apple 策略组之间插入 Claude，候选沿用 OpenAI 的 All Proxies、Manual、US；Claude 远程 RULE-SET 使用 Claude 策略，conf 引用变量，规则总数为67。
+2. 修改前后核对规则定义、引用和顺序；使用现有官方转换环境与 Surge 原生配置检查验证生成结果。
+3. 保存日志与可见对话，提交并推送 origin/main；不修改活动配置。
+
 ## 2026-10-04 全部分流定义放入 ini
 
 1. 将剩余48条分流规则与中文说明移入 HappaConfig.ini，连同已有18条，共66条完整定义；conf 的 Rule 节仅引用变量。

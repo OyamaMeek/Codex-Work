@@ -872,3 +872,24 @@
 - **Git 提交**：`81e5707 fix: default China policy to DIRECT`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-06 12:10] 在 OpenAI 与 Apple 之间新增 Claude 策略组
+
+- **需求/问题描述**：
+  > 引用 https://document.happanetwork.com/HappaConfig/Claude.list，并在截图中的 OpenAI 与 Apple 之间插入独立 Claude 策略组。
+
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 的 OpenAI 与 Apple 策略组之间新增 Claude，默认 All Proxies，另有 Manual、US 候选。
+  - openai_rule 下新增 claude_rule，引用用户指定远程列表，使用 Claude 策略组；规则总数注释更新为67。
+  - HappaConfig.conf 在 OpenAI 引用后展开 Claude 变量。
+  - [测试/验证]：远程9条域名规则读取成功；独立分组检查修改前因缺少 Claude 退出1。官方 Subconverter 0.9.0 实际导入19节点、24策略定义和67规则，无残留变量；生成分组顺序、Claude 候选和规则策略检查通过，原有 ini 配置保持一致；Surge --check 返回 OK，验证服务已停止。
+  - [验证范围]：未重载运行中的 Surge 配置，未验证实时流量命中。
+
+- **涉及文件**：
+  - `HappaConfig.ini` (+4 / -1)、`HappaConfig.conf` (+1)
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/06/12-10-02/对话.md`
+
+- **Git 提交**：待提交。
+
+---
