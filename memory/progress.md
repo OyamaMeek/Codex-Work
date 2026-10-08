@@ -4,7 +4,7 @@
 
 - [x] 读取 AGENTS.md 和相关记录，确认已有未提交规则修改及历史文件删除。
 - [x] 合并用户提供的7条规则；7项内容与完整交付要求检查通过，git diff --check 通过。
-- [ ] 保存开发记录、可见对话，提交并推送 origin/main，补记提交信息。
+- [x] 开发记录与可见对话已保存；cd58c24 docs: add practical AI coding rules 已提交并推送 origin/main，实际提交信息已补记。
 
 ## 2026-10-06 Claude 与 Apple 默认项
 
