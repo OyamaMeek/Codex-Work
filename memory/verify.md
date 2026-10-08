@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-08 STUN 拦截
+
+- INI 完整定义 STUN 拒绝规则，CONF 首位引用；实际转换生成69条规则，原68条与其余配置节逐项保持一致。
+- 新检查先失败后通过；官方 Subconverter 转换、Surge --check 与 git diff --check 通过后提交。
+- 不修改活动配置，不以语法通过宣称 WebRTC 全部禁用或无 IP 泄漏；Mac 需要增强模式，通话可能受到影响。
+
+实际结果：修改前 STUN 检查退出1，修改后退出0；官方转换展开74个变量，生成19节点、24策略定义与69条规则，原68条及其余配置节逐项保留。Surge CLI --check 返回 OK，git diff --check 通过；验证服务已停止，未重载活动配置或实测 WebRTC。
+
 ## 2026-10-08 Website Cloner 安装
 
 - npm ci 成功，npm run check 的 lint、typecheck、生产构建全部退出0。

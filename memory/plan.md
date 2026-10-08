@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-10-08 STUN 拦截
+
+1. 在 INI 定义 PROTOCOL,STUN,REJECT，CONF 的 Rule 节首位引用；其余规则顺序与配置保留。
+2. 检查实际转换结果与 Surge 语法，记录验证边界；保存日志与对话，提交推送既有 origin/main。
+
 ## 2026-10-08 Website Cloner 安装
 
 1. 读取官方 README、项目 AGENTS.md、依赖和运行要求，安装至独立 ai-website-cloner-template/ 目录并移除上游 origin。

@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-08 STUN 拦截
+
+- Codex 单代理，using-superpowers、ponytail、verification-before-completion；复用官方 Subconverter 0.9.0、Python 标准库与 Surge 原生语法检查。
+- 只修改共享转换模板；敏感转换输入和输出保留在已忽略的 .agent/happa-subconverter/，不重载活动配置。
+
 ## 2026-10-08 Website Cloner 安装
 
 - Codex 单代理，using-superpowers；使用 Git、Node.js 26.5.1、npm 11.17.0 安装官方独立项目，不安装全局 skill。

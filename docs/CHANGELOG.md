@@ -980,3 +980,20 @@
 - **Git 提交**：`1484294 chore: record website cloner template installation`，已推送父仓库 origin/main；本条通过后续文档提交补记。独立项目未配置推送目标。
 
 ---
+
+## [2026-10-08 20:45] 在 INI 添加 STUN 拦截规则
+
+- **需求/问题描述**：
+  > 通过 Surge 设置屏蔽 WebRTC，并将相关规则写入 INI。
+- **实际实现的功能与改动**：
+  - HappaConfig.ini 定义 stun_rule=PROTOCOL,STUN,REJECT；HappaConfig.conf 在 Rule 节首位引用，规则数量说明更新为69条。
+  - 注释说明 Mac 需要增强模式，可能影响语音和视频通话，不能保证全部禁用 WebRTC。
+  - [测试/验证]：新增 STUN 检查修改前退出1、修改后退出0；官方 Subconverter 0.9.0 实际转换展开74变量、导入19节点、24策略定义及69条规则，原68条规则及其余配置节逐项保留；Surge CLI --check 返回 OK，git diff --check 通过，验证服务已停止。
+  - [验证范围]：未重载当前 Surge 配置或实测 WebRTC / IP 泄漏；配置需要重新订阅转换才能供客户端使用。
+- **涉及文件**：
+  - `HappaConfig.ini` (+3 / -1)、`HappaConfig.conf` (+1 / -0)、`tests/check_happa_stun.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/08/20-45-30/对话.md`
+- **Git 提交**：待提交。
+
+---
