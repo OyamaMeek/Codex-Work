@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-08 Website Cloner 安装
+
+- npm ci 成功，npm run check 的 lint、typecheck、生产构建全部退出0。
+- 项目内 .agents/skills/clone-website/SKILL.md 存在且非空；独立项目无上游远端，安装不改变模板源码。
+- 父仓库忽略安装目录，记录差异通过 git diff --check；不进行视觉检查和实际网站克隆。
+
+实际结果：默认 npm 缓存受写入权限限制，改用已忽略的 .agent/website-cloner-npm-cache/ 后 npm ci 退出0，安装621个包。npm run check 退出0；生产服务首页 HTTP 200，服务已停止。项目 Git 状态无源码改动，无上游远端，skill 文件非空。npm 提示 msw 和 unrs-resolver 的安装脚本未批准，未影响本次检查；Next.js 有外层锁文件及 standalone 启动提示，Node.js 有弃用提示，未改变官方配置。
+
 ## 2026-10-08 AI 编程规则
 
 - 覆盖最简单实现、最小版本逐步完善、组件职责、成熟库、现有依赖能力核查、维护成本和成熟产品实践7项要求。

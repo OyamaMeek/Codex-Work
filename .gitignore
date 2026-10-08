@@ -4,3 +4,5 @@
 .agent/jiuwei-verify/
 .agent/happa-subconverter/
 .agent/pelican-verify/
+ai-website-cloner-template/
+.agent/website-cloner-npm-cache/

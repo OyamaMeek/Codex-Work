@@ -963,3 +963,20 @@
 - **Git 提交**：`cd58c24 docs: add practical AI coding rules`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-08 19:38] 安装 AI Website Cloner Template
+
+- **需求/问题描述**：
+  > 安装 https://github.com/JCodesMore/ai-website-cloner-template。
+- **实际实现的功能与改动**：
+  - 将官方提交 ee3f5a2f31fd549b9593fa4f7cf6d2955ee593bb 克隆到独立 ai-website-cloner-template/，按安装说明移除其 origin；保留项目内 clone-website skill，模板源码无改动。
+  - 使用工作空间缓存执行 npm ci，安装621个依赖；父仓库忽略项目目录和缓存。
+  - [测试/验证]：npm run check 的 ESLint、TypeScript 与生产构建全部通过；本地生产服务首页返回 HTTP 200，服务已停止；项目 skill 非空、Git 状态无改动、无远端，git diff --check 通过。
+  - [验证范围]：未进行实际网站克隆、视觉检查或依赖漏洞审计。npm 提示两个未批准安装脚本；Next.js 外层锁文件及 standalone 启动提示、Node.js 弃用提示均未影响检查结果。
+- **涉及文件**：
+  - 独立安装目录 ai-website-cloner-template/（父仓库忽略）
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/08/19-38-59/对话.md`
+- **Git 提交**：待提交；仅上传安装记录，项目未配置推送目标。
+
+---

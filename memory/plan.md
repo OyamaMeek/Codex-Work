@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-08 Website Cloner 安装
+
+1. 读取官方 README、项目 AGENTS.md、依赖和运行要求，安装至独立 ai-website-cloner-template/ 目录并移除上游 origin。
+2. 使用 npm ci 安装锁定依赖，执行 npm run check；检查项目 skill、Git 状态及运行结果，不进行视觉检查。
+3. 父仓库忽略安装目录；保存安装结果、日志和可见对话，仅提交记录并推送既有 origin/main。
+
 ## 2026-10-08 AI 编程规则
 
 1. 将用户提供的7条规则合并到 AGENTS.md 的规划、代码与依赖章节，保留全部已约定能力的完成要求。

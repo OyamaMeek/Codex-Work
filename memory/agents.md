@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-08 Website Cloner 安装
+
+- Codex 单代理，using-superpowers；使用 Git、Node.js 26.5.1、npm 11.17.0 安装官方独立项目，不安装全局 skill。
+- 来源提交 ee3f5a2f31fd549b9593fa4f7cf6d2955ee593bb；项目位于 ai-website-cloner-template/，从父仓库排除，移除项目上游 origin。
+
 ## 2026-10-06 Notion Browser 整理
 
 - Codex 单代理，使用 Notion 连接器读取和更新原生内容；已读取 using-superpowers 与 ego-browser 技能。浏览器 TaskSpace 后续不可用，页面修改使用已连接 Notion 工具。
