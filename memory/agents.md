@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-09 SiriAI 规则列表
+
+- Codex 单代理；复用 Surge RULE-SET 格式，使用本地只读条目核对与 Git。技能：using-superpowers、verification-before-completion。
+
 ## 2026-10-08 STUN 拦截
 
 - Codex 单代理，using-superpowers、ponytail、verification-before-completion；复用官方 Subconverter 0.9.0、Python 标准库与 Surge 原生语法检查。

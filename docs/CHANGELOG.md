@@ -997,3 +997,18 @@
 - **Git 提交**：`500ece8 feat: block STUN in HappaConfig ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-09 00:14] 整理 SiriAI 规则列表
+
+- **需求/问题描述**：
+  > 将用户提供的 Siri / Apple Intelligence 域名规则整理成 SiriAI.list。
+- **实际实现的功能与改动**：
+  - 新建 Surge RULE-SET 格式列表，保留16项规则的域名、类型、分组与顺序，移除 YAML 前缀和 PROXY 字段。
+  - 文件注明引用时指定代理策略，且放在 Apple 域名直连规则之前。
+  - [测试/验证]：只读核对退出0，16项内容、类型、顺序、唯一性及格式通过，git diff --check 通过；未修改运行配置或验证流量。
+- **涉及文件**：
+  - `SiriAI.list`、`memory/agents.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/09/00-14-26/对话.md`
+- **Git 提交**：待提交。
+
+---
