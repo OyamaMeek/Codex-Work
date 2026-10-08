@@ -4,7 +4,7 @@
 
 - [x] 读取官方安装说明，克隆独立项目并移除上游 origin；本机 Node.js 满足 >=24 的要求。
 - [x] 使用项目缓存安装621个依赖，npm run check 全部通过；生产服务首页 HTTP 200，检查后停止服务，模板源码无改动。
-- [ ] 保存安装结果、可见对话与日志，提交并推送父仓库记录。
+- [x] 安装结果、可见对话与日志已保存；1484294 chore: record website cloner template installation 已提交并推送父仓库 origin/main。
 
 ## 2026-10-08 AI 编程规则
 

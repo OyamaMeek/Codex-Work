@@ -977,6 +977,6 @@
   - 独立安装目录 ai-website-cloner-template/（父仓库忽略）
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/08/19-38-59/对话.md`
-- **Git 提交**：待提交；仅上传安装记录，项目未配置推送目标。
+- **Git 提交**：`1484294 chore: record website cloner template installation`，已推送父仓库 origin/main；本条通过后续文档提交补记。独立项目未配置推送目标。
 
 ---
