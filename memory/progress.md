@@ -4,7 +4,7 @@
 
 - [x] 创建 SiriAI.list，保留用户16项规则顺序与匹配类型，移除 YAML 前缀和 PROXY 策略字段，注明引用优先于 Apple 直连。
 - [x] 只读核对退出0，16项内容、类型、顺序、唯一性及格式通过，git diff --check 通过；开发日志与可见对话已保存。
-- [ ] 提交并推送 origin/main。
+- [x] 29037a6 feat: add Siri and Apple Intelligence rule list 已提交并推送 origin/main，实际提交信息已补记。
 
 ## 2026-10-08 STUN 拦截
 
