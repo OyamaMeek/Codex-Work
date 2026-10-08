@@ -994,6 +994,6 @@
   - `HappaConfig.ini` (+3 / -1)、`HappaConfig.conf` (+1 / -0)、`tests/check_happa_stun.py`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/08/20-45-30/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`500ece8 feat: block STUN in HappaConfig ini`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
