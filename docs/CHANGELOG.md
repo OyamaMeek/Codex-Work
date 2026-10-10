@@ -1026,6 +1026,6 @@
   - 本机 /opt/homebrew/lib/node_modules/rea-agents、~/.codex/config.toml、~/.agents/skills/reverse-engineer-anything。
   - .gitignore、memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md。
   - docs/CHANGELOG.md、context/2026/10/10/11-13-00/对话.md；缓存与验证文件仅留于忽略目录 .agent/rea-install/。
-- **Git 提交**：待提交。
+- **Git 提交**：`e31f6d6 chore: record REA installation for Codex`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---

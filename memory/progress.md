@@ -5,7 +5,7 @@
 - [x] 读取官方完整安装说明；Node.js 26.5.1 与 npm 11.17.0 符合要求，现有 CLI 未安装。
 - [x] 全局 CLI 6.3.0、Codex MCP 与 ~/.agents/skills/reverse-engineer-anything 已安装；官方 setup 返回 ready，保留 config.toml.rea.backup。
 - [x] CLI 版本与帮助、Codex/技能 doctor、配置保留核对和真实 MCP 握手通过，共139工具；未运行目标分析，需重启 Codex 加载连接。
-- [ ] 保存记录与可见对话，提交并推送当前 origin/main。
+- [x] 已保存记录与可见对话；e31f6d6 chore: record REA installation for Codex 已提交并推送 origin/main，实际提交信息已补记。
 
 ## 2026-10-09 SiriAI 规则列表
 
