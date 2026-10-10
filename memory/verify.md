@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-10 REA 安装
+
+- rea --version 与 npm 当前发布版本一致；CLI 帮助成功运行。
+- 官方 doctor --client codex 和 --skill 检查通过；真实 MCP 初始化与 tools/list 成功。
+- 检查 git diff --check，只提交本次记录；不安装额外引擎，不宣称验证了实际目标分析。
+
+实际结果：npm install 退出0；rea 6.3.0 的 CLI 帮助退出0；doctor --client codex --skill 返回 healthy=true；Node assert 核对其他配置语义不变，真实 MCP 初始化返回 rea 6.3.0，tools/list 返回139项唯一工具。git diff --check 通过。已有 Hopper v4 被注册为候选引擎，未启动或验证其分析行为；未重启 Codex。
+
 ## 2026-10-09 SiriAI 规则列表
 
 - SiriAI.list 保留16项原序规则：15条 DOMAIN、1条 DOMAIN-SUFFIX，无重复、YAML 前缀或策略字段；注明代理策略与 Apple 直连前的引用顺序。

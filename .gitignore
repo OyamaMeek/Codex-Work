@@ -6,3 +6,5 @@
 .agent/pelican-verify/
 ai-website-cloner-template/
 .agent/website-cloner-npm-cache/
+.agent/rea-installation.md
+.agent/rea-install/

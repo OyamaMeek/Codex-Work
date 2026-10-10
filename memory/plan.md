@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-10 REA 安装
+
+1. 核对 npm 最新版本及运行要求，安装全局 rea CLI。
+2. 检查官方 Codex setup 计划，再执行明确的 Codex 与配套技能安装范围，保留其他配置及备份。
+3. 验证版本、Codex/技能 doctor 和真实 MCP 握手；保存日志与可见对话，提交推送当前 origin/main。
+
 ## 2026-10-08 STUN 拦截
 
 1. 在 INI 定义 PROTOCOL,STUN,REJECT，CONF 的 Rule 节首位引用；其余规则顺序与配置保留。

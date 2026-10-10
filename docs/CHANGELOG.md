@@ -1012,3 +1012,20 @@
 - **Git 提交**：`29037a6 feat: add Siri and Apple Intelligence rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-10 11:13] 安装 REA
+
+- **需求/问题描述**：
+  > 安装 https://github.com/morluto/rea。
+- **实际实现的功能与改动**：
+  - 官方 npm 全局安装 rea-agents 6.3.0，命令位于 /opt/homebrew/bin/rea。
+  - 官方 setup 仅配置 Codex MCP 与 ~/.agents/skills/reverse-engineer-anything 配套技能；配置备份为 ~/.codex/config.toml.rea.backup，保留其他配置。
+  - [测试/验证]：版本、CLI 帮助、Codex/技能 doctor 均通过；Node assert 确认其他 TOML 配置不变，真实 MCP 握手成功并返回139个工具；git diff --check 通过。
+  - [验证范围]：需重启 Codex 加载连接；检测到已有 Hopper v4，未启动引擎或执行实际目标分析，未安装额外引擎。
+- **涉及文件**：
+  - 本机 /opt/homebrew/lib/node_modules/rea-agents、~/.codex/config.toml、~/.agents/skills/reverse-engineer-anything。
+  - .gitignore、memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md。
+  - docs/CHANGELOG.md、context/2026/10/10/11-13-00/对话.md；缓存与验证文件仅留于忽略目录 .agent/rea-install/。
+- **Git 提交**：待提交。
+
+---

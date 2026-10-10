@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-10 REA 安装
+
+- Codex 单代理，using-superpowers、verification-before-completion；使用官方 npm rea-agents 6.3.0 与 setup 安装 CLI、Codex MCP 和匹配技能，保留现有配置。
+- npm 缓存及安装验证结果存于已忽略的 .agent/rea-install/；不安装额外分析引擎。
+
 ## 2026-10-09 SiriAI 规则列表
 
 - Codex 单代理；复用 Surge RULE-SET 格式，使用本地只读条目核对与 Git。技能：using-superpowers、verification-before-completion。
