@@ -1037,9 +1037,9 @@
 - **实际实现的功能与改动**：
   - 更新现有 Claude.list，按现有 RULE-SET 格式收录全部21项规则，保留原有 claude.dev 与 claudemcpcontent.com，共23项。
   - 移除链接包装与策略字段，保留 no-resolve；主配置继续通过 RULE-SET 指定 Claude 策略。
-  - [验证范围]：核对条目、重复项、字段及 Git 差异；未导入客户端或测试实时流量。
+  - [测试/验证]：23项规则的计数、唯一性、字段格式及 IP 网段检查通过，git diff --check 通过；未导入客户端或测试实时流量。
 - **涉及文件**：
   - `Claude.list`、`docs/CHANGELOG.md`、`context/2026/10/10/23-01-36/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`0d9ee14 feat: extend Claude rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
