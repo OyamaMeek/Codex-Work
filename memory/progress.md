@@ -5,7 +5,7 @@
 - [x] 读取远程16项规则；检查修改前因 SiriAI 分组缺失退出1。
 - [x] 在 Apple 下方添加默认 US 的 SiriAI 分组；INI 定义规则，CONF 在 Apple 通用规则前引用。
 - [x] 配置检查通过：70条规则、策略引用与顺序有效；git diff --check 通过，归档已保存。
-- [ ] 提交推送。
+- [x] `c545b2b feat: add SiriAI routing group below Apple` 已提交并推送 origin/main。
 
 ## 2026-10-10 REA 安装
 
