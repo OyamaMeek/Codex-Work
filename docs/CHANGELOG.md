@@ -1029,3 +1029,17 @@
 - **Git 提交**：`e31f6d6 chore: record REA installation for Codex`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-10 23:01] 补充 Claude 规则列表
+
+- **需求/问题描述**：
+  > 将用户提供的 Claude 域名、第三方服务、IP 网段和 ASN 规则放入 claude.list。
+- **实际实现的功能与改动**：
+  - 更新现有 Claude.list，按现有 RULE-SET 格式收录全部21项规则，保留原有 claude.dev 与 claudemcpcontent.com，共23项。
+  - 移除链接包装与策略字段，保留 no-resolve；主配置继续通过 RULE-SET 指定 Claude 策略。
+  - [验证范围]：核对条目、重复项、字段及 Git 差异；未导入客户端或测试实时流量。
+- **涉及文件**：
+  - `Claude.list`、`docs/CHANGELOG.md`、`context/2026/10/10/23-01-36/对话.md`
+- **Git 提交**：待提交。
+
+---
