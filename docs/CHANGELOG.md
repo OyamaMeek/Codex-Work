@@ -1043,3 +1043,19 @@
 - **Git 提交**：`0d9ee14 feat: extend Claude rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-10 23:23] SiriAI 接入 INI
+
+- **需求/问题描述**：
+  > 将 https://document.happanetwork.com/HappaConfig/SiriAI.list 放到 INI 中 Apple 的下面。
+- **实际实现的功能与改动**：
+  - Apple 下方新增 SiriAI 策略组，默认 US，可选 All Proxies、Manual；INI 定义完整远程规则，CONF 在 Apple 通用规则前引用。
+  - [测试/验证]：远程列表读取成功；新增检查修改前退出1、修改后退出0，模板变量展开后标准库解析确认70条规则，策略引用与顺序有效，git diff --check 通过。
+  - [验证范围]：未执行真实订阅转换、客户端重载或 Siri 实时流量测试。
+- **涉及文件**：
+  - `HappaConfig.ini` (+4 / -1)、`HappaConfig.conf` (+1 / -0)、`tests/check_happa_siriai.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/10/23-23-20/对话.md`
+- **Git 提交**：待提交。
+
+---

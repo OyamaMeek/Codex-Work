@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-10 SiriAI 接入 INI
+
+1. Apple 下方新增 SiriAI 策略组，默认 US，候选复用 All Proxies、Manual。
+2. INI 定义远程规则，CONF 在 Apple 通用规则前引用；核对分组、变量与70条规则。
+3. 保存开发记录和可见对话，提交并推送 origin/main。
+
 ## 2026-10-10 REA 安装
 
 1. 核对 npm 最新版本及运行要求，安装全局 rea CLI。

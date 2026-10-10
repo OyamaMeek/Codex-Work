@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-10 SiriAI 接入 INI
+
+- Codex 单代理，ponytail；复用现有策略组与模板变量，用 curl、Python 标准库和 Git 核对。
+
 ## 2026-10-10 REA 安装
 
 - Codex 单代理，using-superpowers、verification-before-completion；使用官方 npm rea-agents 6.3.0 与 setup 安装 CLI、Codex MCP 和匹配技能，保留现有配置。
