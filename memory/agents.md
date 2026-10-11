@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-11 Proxy 默认项
+
+- Codex 单代理，ponytail；使用 Python 标准库、既有模板检查与 Git，只调整 INI 的组候选顺序。
+
 ## 2026-10-10 SiriAI 接入 INI
 
 - Codex 单代理，ponytail；复用现有策略组与模板变量，用 curl、Python 标准库和 Git 核对。

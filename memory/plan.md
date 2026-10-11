@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-11 Proxy 默认项
+
+1. Google Voice 首项调整为 US，Proxy 首项新增 All Proxies。
+2. 其余原本默认 All Proxies 的11个用途组首项调整为 Proxy，保留候选且避免重复引用。
+3. 检查默认项、引用和循环，保存记录与对话，提交推送 origin/main。
+
 ## 2026-10-10 SiriAI 接入 INI
 
 1. Apple 下方新增 SiriAI 策略组，默认 US，候选复用 All Proxies、Manual。

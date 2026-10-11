@@ -1059,3 +1059,19 @@
 - **Git 提交**：`c545b2b feat: add SiriAI routing group below Apple`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-11 22:03] 调整 Proxy 与用途组默认项
+
+- **需求/问题描述**：
+  > 在 ini 中 GoogleVoice 默认用 US，Proxy 增加默认 AllProxies，下方原本默认 AllProxies 的组改为默认 Proxy。
+- **实际实现的功能与改动**：
+  - Google Voice 首项设为 US；Proxy 首项新增 All Proxies；其余11个原本默认 All Proxies 的用途组首项设为 Proxy，保留原候选且避免重复。
+  - [测试/验证]：新增检查修改前退出1、修改后退出0；17组默认项、候选唯一性、引用和无循环检查通过；对照 HEAD 确认仅13组调整且保留原候选、分组顺序及非分组配置，SiriAI 模板检查确认70条规则有效，git diff --check 通过。
+  - [验证范围]：未执行真实订阅转换、Surge 重载或流量测试；客户端已保存的手动选择可能继续保留。
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_proxy_defaults.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/11/22-03-28/对话.md`
+- **Git 提交**：待提交。
+
+---
