@@ -1072,6 +1072,6 @@
   - `HappaConfig.ini`、`tests/check_happa_proxy_defaults.py`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/11/22-03-28/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`7cf6254 fix: route default service groups through Proxy`；普通 git push 被自动审批拒绝，原因是未确认远端归属及本次配置、记忆和对话归档向该目的地的明确授权。gh 未安装，未推送；本条通过后续文档提交补记。
 
 ---

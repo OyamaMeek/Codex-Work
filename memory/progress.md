@@ -4,7 +4,8 @@
 
 - [x] 默认项检查修改前退出1；修改后17组默认项、候选唯一性、引用和无循环检查通过。
 - [x] 与 HEAD 比较确认仅13组候选调整、全部原候选保留；SiriAI 模板检查确认70条规则有效，git diff --check 通过。
-- [ ] 已保存开发记录与可见对话，等待提交并推送 origin/main。
+- [x] 已保存开发记录与可见对话，提交为 `7cf6254 fix: route default service groups through Proxy`。
+- [ ] 普通 git push 被自动审批拒绝：远端归属未确认，要求明确授权将本次配置、记忆和对话归档发往 OyamaMeek/Codex-Work 的 main 分支；gh 未安装，未推送。
 
 ## 2026-10-10 SiriAI 接入 INI
 
