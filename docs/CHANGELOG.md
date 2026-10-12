@@ -1091,3 +1091,18 @@
 - **Git 提交**：`5a3ace0 fix: remove Manual proxy group and references`；普通 git push 被自动审批拒绝，要求用户明确授权向 `OyamaMeek/Codex-Work` 的 main 分支发送本次配置、检查、记忆和对话归档，未推送；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-12 11:35] 添加 iCloud 课表到 Google 日历
+
+- **需求/问题描述**：
+  > 将用户提供的 iCloud 发布日历添加到 Google 日历。
+- **实际实现的功能与改动**：
+  - 用户完成网页登录后，通过网址添加订阅，显示名称设为“大一上课表”。
+  - [验证]：其他日历列表已显示该名称，周视图已加载课程名称、时间及地点；公开访问未开启，任务空间已关闭。
+  - [验证范围]：保留现有 GMT+09 显示时区，未验证后续订阅刷新或手机显示；归档省略发布链接的访问标识，日历数据未保留。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/12/11-35-49/对话.md`
+- **Git 提交**：待提交。
+
+---

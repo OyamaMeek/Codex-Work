@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-12 iCloud 课表订阅
+
+- Codex 单代理，ponytail、ego-browser；Google Calendar 连接器核对账号，网页添加外部订阅并修改显示名称。
+- 用户自行登录；不保存日历数据或发布链接的访问标识，不执行截图。
+
 ## 2026-10-12 删除 Manual
 
 - Codex 单代理，ponytail；复用 Python 标准库、默认项与 SiriAI 模板检查，仅删除 INI 的 Manual 组与引用。
