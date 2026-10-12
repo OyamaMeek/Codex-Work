@@ -1119,6 +1119,6 @@
   - `HappaConfig.ini`、`tests/check_happa_proxy_defaults.py`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/12/16-09-41/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`3dc8487 fix: add JP option to OpenAI proxy group`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---

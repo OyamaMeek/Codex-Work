@@ -3,7 +3,8 @@
 ## 2026-10-12 OpenAI 增加 JP
 
 - [x] OpenAI 候选末尾已加入 JP；新增断言修改前退出1，修改后配置与模板检查通过。
-- [ ] 保存记录与对话，提交并推送 origin/main。
+- [x] 记录与对话已随 `3dc8487 fix: add JP option to OpenAI proxy group` 提交并推送 origin/main。
+
 
 ## 2026-10-12 iCloud 课表订阅
 
