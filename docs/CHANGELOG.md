@@ -1106,3 +1106,19 @@
 - **Git 提交**：`e6e2e10 docs: record iCloud timetable subscription`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-12 16:09] OpenAI 增加 JP 候选
+
+- **需求/问题描述**：
+  > ini中openai增加JP。
+- **实际实现的功能与改动**：
+  - OpenAI 候选末尾加入已有 JP 分组，候选顺序为 Proxy、All Proxies、US、JP。
+  - [测试/验证]：新增断言修改前退出1、修改后退出0；默认项、候选唯一性、引用、无循环及70条模板规则检查通过，git diff --check 通过。
+  - [验证范围]：未执行真实订阅转换、客户端重载或连通性测试。
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_proxy_defaults.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/12/16-09-41/对话.md`
+- **Git 提交**：待提交。
+
+---

@@ -10,6 +10,7 @@ groups = dict(
 assert "Manual" not in groups, "Manual 策略组尚未删除"
 assert all("[]Manual" not in members for members in groups.values()), "仍有 Manual 候选引用"
 assert list(groups)[:3] == ["Proxy", "All Proxies", "Emby"], "前3组顺序错误"
+assert groups["OpenAI"] == ["[]Proxy", "[]All Proxies", "[]US", "[]JP"], "OpenAI 候选应包含 JP 且保留原顺序"
 expected = dict.fromkeys([
     "Emby", "Global Media", "Netflix", "TikTok", "Disney", "Social Media",
     "Spotify", "OpenAI", "Global", "SpeedTest", "Final",
