@@ -7,6 +7,9 @@ groups = dict(
     if line.startswith("custom_proxy_group=")
     for parts in [line.split("=", 1)[1].split("`")]
 )
+assert "Manual" not in groups, "Manual 策略组尚未删除"
+assert all("[]Manual" not in members for members in groups.values()), "仍有 Manual 候选引用"
+assert list(groups)[:3] == ["Proxy", "All Proxies", "Emby"], "前3组顺序错误"
 expected = dict.fromkeys([
     "Emby", "Global Media", "Netflix", "TikTok", "Disney", "Social Media",
     "Spotify", "OpenAI", "Global", "SpeedTest", "Final",
@@ -34,4 +37,4 @@ def check_cycles(name, ancestors):
 
 for name in groups:
     check_cycles(name, set())
-print("PASS：17组默认项、候选唯一性、策略引用与无循环检查通过")
+print("PASS：Manual 已移除，17组默认项、候选唯一性、策略引用与无循环检查通过")

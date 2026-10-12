@@ -1075,3 +1075,19 @@
 - **Git 提交**：`7cf6254 fix: route default service groups through Proxy`；普通 git push 被自动审批拒绝，原因是未确认远端归属及本次配置、记忆和对话归档向该目的地的明确授权。gh 未安装，未推送；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-12 10:02] 删除 Manual 策略组
+
+- **需求/问题描述**：
+  > 把截图中的 Manual 去掉。
+- **实际实现的功能与改动**：
+  - 删除 HappaConfig.ini 的 Manual 组及17处候选引用，Proxy、All Proxies、Emby 紧邻；其他默认项、候选顺序、节点筛选和分流保留。
+  - [测试/验证]：默认项与 SiriAI 检查修改前退出1、修改后退出0；完整 INI 比较确认仅移除 Manual 定义、说明和引用，70条规则有效，git diff --check 通过。
+  - [验证范围]：未执行真实订阅转换、客户端重载、流量测试或视觉检查。
+- **涉及文件**：
+  - `HappaConfig.ini`、`tests/check_happa_proxy_defaults.py`、`tests/check_happa_siriai.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/12/10-02-34/对话.md`
+- **Git 提交**：待提交。
+
+---

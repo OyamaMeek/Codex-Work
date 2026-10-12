@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-12 删除 Manual
+
+- Codex 单代理，ponytail；复用 Python 标准库、默认项与 SiriAI 模板检查，仅删除 INI 的 Manual 组与引用。
+
 ## 2026-10-11 Proxy 默认项
 
 - Codex 单代理，ponytail；使用 Python 标准库、既有模板检查与 Git，只调整 INI 的组候选顺序。

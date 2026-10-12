@@ -7,7 +7,7 @@ source = (root / "HappaConfig.ini").read_text()
 groups = [line.split("=", 1)[1].split("`") for line in source.splitlines() if line.startswith("custom_proxy_group=")]
 names = [group[0] for group in groups]
 assert names[names.index("Apple") + 1] == "SiriAI", "SiriAI 分组未紧接 Apple"
-assert groups[names.index("SiriAI")][1:] == ["select", "[]US", "[]All Proxies", "[]Manual"], "SiriAI 候选或默认项错误"
+assert groups[names.index("SiriAI")][1:] == ["select", "[]US", "[]All Proxies"], "SiriAI 候选或默认项错误"
 assert len(names) == len(set(names)), "策略组重名"
 assert all(member[2:] in set(names) | {"DIRECT", "REJECT"} for group in groups for member in group[2:] if member.startswith("[]")), "引用未定义策略"
 external = configparser.ConfigParser(interpolation=None, strict=False)
