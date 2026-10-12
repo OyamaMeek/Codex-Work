@@ -1122,3 +1122,20 @@
 - **Git 提交**：`3dc8487 fix: add JP option to OpenAI proxy group`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-12 16:12] 整合中国网站备用规则
+
+- **需求/问题描述**：
+  > 将 MetaCubeX/meta-rules-dat 的 geosite 中国网站整合成 list，给 INI 备用。
+- **实际实现的功能与改动**：
+  - 固定来源版本 `83c8208bdfae92b1caaa29745f51f233b6f1847e`，合并 cn、名称以 -cn 结尾的集合及 @cn 分类，共202个源集合，生成114137条唯一规则的 China.list。
+  - 保留精确域名及后缀匹配语义，文件注明来源清单、版本和备用 RULE-SET 引用；未接入 INI。
+  - [测试/验证]：未截断目录5752项；源覆盖检查生成前因文件缺失退出1，生成后退出0，格式、唯一性、排序和全部来源覆盖通过；git diff --check 通过。
+  - [验证范围]：未执行客户端加载或实际流量验证；规则为固定版本快照，包括海外服务的中国域名，范围以仓库分类为准。
+- **涉及文件**：
+  - `China.list`、`tests/check_china_list.py`、`.gitignore`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/12/16-12-07/对话.md`
+- **Git 提交**：待提交。
+
+---

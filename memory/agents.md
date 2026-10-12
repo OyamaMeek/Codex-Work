@@ -4,6 +4,11 @@
 
 - Codex 单代理，ponytail；复用现有 JP 分组和 Python 配置检查，仅添加 OpenAI 候选。
 
+## 2026-10-12 中国网站备用规则
+
+- Codex 单代理，ponytail；使用 GitHub API、curl 与 Python 标准库获取固定提交的中国分类集合，生成 Surge RULE-SET 备用文件。
+- 原始来源与处理中间文件保存在已忽略的 .agent/china-rules/；不修改 INI 或运行中的客户端配置。
+
 ## 2026-10-12 iCloud 课表订阅
 
 - Codex 单代理，ponytail、ego-browser；Google Calendar 连接器核对账号，网页添加外部订阅并修改显示名称。
