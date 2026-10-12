@@ -9,7 +9,7 @@
 
 - [x] 核对 README 与当前 INI，读取未截断的 geosite 目录，共5752项。
 - [x] 下载202个 cn、-cn、@cn 集合，生成114137条唯一规则；完整源集合覆盖、匹配语义、排序与格式检查通过。
-- [ ] 保存记录与对话，提交推送。
+- [x] 保存记录与对话，随 `6b520d5 feat: consolidate China geosite backup rule list` 提交并推送 origin/main。
 
 ## 2026-10-12 iCloud 课表订阅
 

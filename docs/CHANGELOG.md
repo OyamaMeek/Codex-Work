@@ -1136,6 +1136,6 @@
   - `China.list`、`tests/check_china_list.py`、`.gitignore`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/12/16-12-07/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`6b520d5 feat: consolidate China geosite backup rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
