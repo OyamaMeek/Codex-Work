@@ -4,7 +4,8 @@
 
 - [x] 已定位 HappaConfig.ini 的 Manual 定义、17组引用与相关检查。
 - [x] 两项检查修改前退出1、修改后退出0；完整 INI 比较确认仅删除 Manual 及引用，其余内容一致。
-- [ ] 保存记录和对话，提交、推送既有 origin/main。
+- [x] 已保存记录和对话，提交为 `5a3ace0 fix: remove Manual proxy group and references`。
+- [ ] 普通 git push 被自动审批拒绝：要求用户明确授权向 `OyamaMeek/Codex-Work` 的 main 分支发送本次配置、检查、记忆和对话归档；未推送。
 
 ## 2026-10-11 Proxy 默认项
 
