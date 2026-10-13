@@ -6,7 +6,7 @@
 - [x] 完整下载3052668字节，114137条规则与202个源集合一致；新增检查因缺少规则退出1。
 - [x] 接入远程规则，China 与 SiriAI 模板检查、17组默认项检查均通过；比较确认其他配置与规则顺序保留。
 - [x] 开发记录与截至归档时的可见对话已保存。
-- [ ] 提交并普通推送 origin/main。
+- [x] 已提交为 `db1b953 feat: integrate remote China rule list into routing`，普通推送 origin/main 成功。
 
 ## 2026-10-12 OpenAI 增加 JP
 

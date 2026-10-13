@@ -1154,6 +1154,6 @@
   - `tests/check_happa_china.py`、`tests/check_happa_siriai.py`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/13/23-18-57/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`db1b953 feat: integrate remote China rule list into routing`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
