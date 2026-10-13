@@ -22,6 +22,6 @@ rendered = re.sub(r"{{ local\.(\w+) }}", lambda match: external["template"][matc
 profile = configparser.ConfigParser(interpolation=None, allow_no_value=True, delimiters=("=",), comment_prefixes=("#", ";", "//"))
 profile.optionxform = str
 profile.read_string(rendered)
-assert len(profile["Rule"]) == 70, "规则总数错误"
+assert len(profile["Rule"]) == 71, "规则总数错误"
 assert list(profile["Rule"]).count(rule) == 1
-print("PASS：SiriAI 紧接 Apple、默认 US，完整规则与模板引用有效，共70条规则")
+print("PASS：SiriAI 紧接 Apple、默认 US，完整规则与模板引用有效，共71条规则")

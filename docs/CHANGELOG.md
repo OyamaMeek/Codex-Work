@@ -1139,3 +1139,21 @@
 - **Git 提交**：`6b520d5 feat: consolidate China geosite backup rule list`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-13 23:18] 将远程 China.list 接入 China 分流
+
+- **需求/问题描述**：
+  > 把 https://document.happanetwork.com/HappaConfig/China.list 整合到 INI 的 China 中。
+- **实际实现的功能与改动**：
+  - INI 国内网站段新增 China 远程 RULE-SET；CONF 在既有中国域名集合之后引用，策略为 China，默认仍为 DIRECT。
+  - 原有规则与分组保留，分流数量说明和 SiriAI 检查更新为71条；新增 China 配置检查。
+  - [测试/验证]：远程 HTTP 200，3052668字节；114137条唯一规则与202个源集合完整一致。新增检查修改前退出1、修改后退出0；China、SiriAI 模板检查、17组默认项及引用与无循环检查、配置范围比较和 git diff --check 均通过。
+  - [验证范围]：未执行真实订阅转换、客户端重载或实际流量验证。
+- **涉及文件**：
+  - `HappaConfig.ini` (+2 / -1)、`HappaConfig.conf` (+1 / -0)
+  - `tests/check_happa_china.py`、`tests/check_happa_siriai.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/13/23-18-57/对话.md`
+- **Git 提交**：待提交。
+
+---

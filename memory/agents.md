@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-13 China 远程规则接入
+
+- Codex 单代理；使用 ponytail、using-superpowers 与 verification-before-completion，复用 Surge RULE-SET、Python 标准库检查和 Git。
+- 完整远程列表保存在已忽略的 .agent/china-rules/remote-china.list；仅修改共享模板，不重载客户端。
+
 ## 2026-10-12 OpenAI 增加 JP
 
 - Codex 单代理，ponytail；复用现有 JP 分组和 Python 配置检查，仅添加 OpenAI 候选。

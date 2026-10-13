@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-10-13 China 远程规则接入
+
+- 用户指定列表完整下载，所有条目与固定来源集合一致，格式及唯一性检查通过。
+- INI 定义 RULE-SET,https://document.happanetwork.com/HappaConfig/China.list,China；CONF 唯一引用，紧接 china_domain_rule、位于 china_asn_rule 之前。
+- 模板展开为71条规则，China 默认 DIRECT，其他模板内容、分组及规则顺序与修改前一致。
+- 新检查先失败后通过，现有 SiriAI 与默认项检查、git diff --check 通过；不执行客户端重载或实际流量验证。
+
+实际结果：远程下载 HTTP 200、3052668字节，114137条唯一规则与202个源集合完整一致。新检查修改前因缺少 INI 定义退出1、修改后退出0；China 和 SiriAI 模板展开为71条规则，17组默认项、唯一性、引用与无循环检查通过。对照 HEAD 确认仅新增规则、引用与数量说明，原有内容及顺序保留；git diff --check 通过。未执行真实订阅转换、客户端重载或实际流量验证。
+
 ## 2026-10-12 OpenAI 增加 JP
 
 - OpenAI 候选为 Proxy、All Proxies、US、JP，JP 引用已有分组。
