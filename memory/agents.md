@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-14 职业规划表达调整
+
+- Codex 单代理；按用户明确指定的 human-writing 调整正文，复用 documents 的 bundled Python、lxml 与 python-docx。修改现有已填写文档的文字，另存润色版，保留旧文件与所有格式。
+
 ## 2026-10-14 职业发展规划
 
 - Codex 单代理；使用 documents、human-writing，使用 bundled Python、lxml 和 python-docx 填写与核对 Word 模板。
