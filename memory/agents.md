@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-14 职业发展规划
+
+- Codex 单代理；使用 documents、human-writing，使用 bundled Python、lxml 和 python-docx 填写与核对 Word 模板。
+- 仅更新 document.xml，保留模板其他包部件；中间稿和检查脚本位于已忽略的 .agent/career-plan/。用户未要求视觉验证，不渲染或检查图片。
+
 ## 2026-10-13 China 远程规则接入
 
 - Codex 单代理；使用 ponytail、using-superpowers 与 verification-before-completion，复用 Surge RULE-SET、Python 标准库检查和 Git。
