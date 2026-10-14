@@ -5,7 +5,7 @@
 - [x] 本地与 GitHub 两份配置逐字节一致，变量定义和引用完整；document 托管 INI 缺少 china_happa_rule，同时仍引用 GitHub 最新 CONF。
 - [x] 本地 Subconverter 0.9.0 读取托管 INI 返回 HTTP 400，复现截图错误；读取 GitHub INI 返回 HTTP 200，71条规则内容及顺序一致，24个策略定义完整，真实节点导入成功。
 - [x] China、SiriAI 与策略组默认项检查通过；INI、CONF 未修改。
-- [ ] 保存诊断记录及可见对话，提交并普通推送 origin/main。
+- [x] 诊断记录与可见对话已随 `324b5f0 docs: diagnose mismatched hosted HappaConfig templates` 提交并普通推送 origin/main；本地验证进程已退出。
 - 后续使用 GitHub INI 作为 config；原托管地址需要服务器管理员同步最新 INI。未修改托管服务器，未验证 scapi 原始完整请求或客户端实际流量。
 
 ## 2026-10-14 学习通作业
