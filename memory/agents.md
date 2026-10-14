@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-14 INI 模板变量报错
+
+- Codex 单代理；使用 systematic-debugging、ponytail 与 verification-before-completion，复用 curl、Python 标准库和官方 Subconverter 0.9.0。
+- 真实节点输入与转换输出仅在已忽略的 .agent/happa-subconverter/ 中使用；不发送至远程转换服务，不重载客户端。
+
 ## 2026-10-14 学习通作业
 
 - Codex 单代理；使用 ego-browser 操作已登录学习通，TaskSpace 1；按 using-superpowers 与 verification-before-completion 核对实际页面结果。

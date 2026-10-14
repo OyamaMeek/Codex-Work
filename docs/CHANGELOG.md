@@ -1206,3 +1206,19 @@
 - **Git 提交**：`adc126f docs: record Chaoxing assignment completion`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-14 22:30] 排查 INI 模板变量缺失
+
+- **需求/问题描述**：
+  > ini文件好像有问题。截图显示 local.china_happa_rule 未找到。
+- **实际实现的功能与改动**：
+  - 确认 document.happanetwork.com/HappaConfig/HappaConfig.ini 为旧版，缺少 china_happa_rule；其 surge_rule_base 引用的 GitHub 最新 CONF 已使用此变量。
+  - GitHub 最新 INI、CONF 与本地逐字节一致，变量定义和引用完整；提供 GitHub INI 作为转换 config，原托管服务器需要同步最新 INI。
+  - [测试/验证]：官方 Subconverter 0.9.0 使用本地已有真实节点输入，读取托管 INI 返回 HTTP 400 并复现截图错误，读取 GitHub INI 返回 HTTP 200，71条规则内容与顺序一致、24个策略定义完整、节点导入成功；China、SiriAI、策略组默认项检查通过。
+  - [验证范围]：未修改 INI、CONF 或托管服务器，未请求 scapi 原始完整转换链接，未重载客户端或测试实际流量。诊断脚本和含节点的结果保存在已忽略目录，未提交。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/14/22-30-08/对话.md`
+- **Git 提交**：待提交。
+
+---

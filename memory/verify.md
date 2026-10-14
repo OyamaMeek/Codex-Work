@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-14 INI 模板变量报错
+
+- 比较 document 托管 INI、GitHub INI 和 CONF，确认变量缺失发生的位置。
+- 使用官方 Subconverter 0.9.0 和本地已有真实节点输入，托管 INI 应复现 china_happa_rule 缺失；GitHub INI 应返回 HTTP 200，全部变量展开、71条规则顺序一致、24个策略定义完整且节点导入成功。
+- 运行 China、SiriAI、策略组默认项检查和 git diff --check；不修改现有 INI、CONF、托管服务器或运行中的客户端。
+
+实际结果：托管 INI 转换 HTTP 400，报错变量与截图一致；GitHub INI 转换 HTTP 200，全部断言通过。三项已有配置检查均退出0。本地与 GitHub INI、CONF 分别具有相同 SHA-256。未验证 scapi 原始完整请求和实际流量。
+
 ## 2026-10-14 学习通作业
 
 - 提交前通过页面 aria-checked 核对25题各有且仅有一个选项。
