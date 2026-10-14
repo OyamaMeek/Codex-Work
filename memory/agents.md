@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-14 学习通作业
+
+- Codex 单代理；使用 ego-browser 操作已登录学习通，TaskSpace 1；按 using-superpowers 与 verification-before-completion 核对实际页面结果。
+- 不保存登录信息、页面访问标识或截图；完成后保留作业结果页，浏览器任务空间已结束。
+
 ## 2026-10-14 职业规划表达调整
 
 - Codex 单代理；按用户明确指定的 human-writing 调整正文，复用 documents 的 bundled Python、lxml 与 python-docx。修改现有已填写文档的文字，另存润色版，保留旧文件与所有格式。
