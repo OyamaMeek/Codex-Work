@@ -6,7 +6,7 @@
 - [x] 填写后按题核对 aria-checked，每题恰有一项；完成提交确认。
 - [x] 实际结果页显示100分，提交时间10-15 10:04；页面注明提交后不允许查看或修改答案。
 - [x] ego TaskSpace 1 已调用 finish({keep:["p2"]})，保留结果页；未截图。
-- [x] 保存任务记录与截至归档时的可见对话；待提交与普通推送 origin/main。
+- [x] 保存任务记录与截至归档时的可见对话；`4deb84a docs: record Java introduction assignment completion` 已普通推送 origin/main。
 
 ## 2026-10-14 INI 模板变量报错
 
