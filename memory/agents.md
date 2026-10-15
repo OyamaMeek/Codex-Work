@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-15 学习通 Java 作业
+
+- Codex 单代理；使用 ego-browser、using-superpowers 与 verification-before-completion，在用户指定的已打开作业页面完成13题并核对提交结果。
+- TaskSpace 1 已调用 finish，保留 p2 结果页；不保存登录信息、访问标识或截图。
+
 ## 2026-10-14 INI 模板变量报错
 
 - Codex 单代理；使用 systematic-debugging、ponytail 与 verification-before-completion，复用 curl、Python 标准库和官方 Subconverter 0.9.0。

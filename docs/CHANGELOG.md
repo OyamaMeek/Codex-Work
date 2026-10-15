@@ -1222,3 +1222,18 @@
 - **Git 提交**：`324b5f0 docs: diagnose mismatched hosted HappaConfig templates`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-15 10:05] 完成学习通 Java 简介作业
+
+- **需求/问题描述**：
+  > 在 ego 里完成学习通答题，用户指定已经打开的作业。
+- **实际实现的功能与改动**：
+  - 完成“第一章作业：java简介”的13道单选题并提交。
+  - [验证]：提交前逐题检查选项，每题恰有一个已选项；提交后的真实结果页显示100分，提交时间10-15 10:04。已调用 ego finish 并保留结果页。
+  - [验证范围]：未截图、未操作其他作业；页面注明提交后不允许查看或修改答案。记录不包含登录信息和访问标识。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/15/10-05-11/对话.md`
+- **Git 提交**：待提交。
+
+---
