@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-16 数学分析模拟卷
+
+- Codex 单代理；使用 using-superpowers、brainstorming、PDF、ponytail 和 verification-before-completion。
+- 用 pypdf 检查文本层，macOS PDFKit/Vision 在内存中执行扫描PDF的文字提取；中间材料位于已忽略的 .agent/math-analysis/。
+- 两份 LaTeX 已尝试内置编译，均因缺少缓存且无法下载TeX资源包终止；Python标准库完成76项结构及代表性数值核验。未截图或检查图片，未向编译器上传原卷。
+
 ## 2026-10-16 Microsoft 与 PayPal 独立规则
 
 - Codex 单代理，沿用 ponytail 和 verification-before-completion；Python 标准库转换和覆盖检查、Surge CLI 语法验证。
