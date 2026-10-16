@@ -1316,6 +1316,6 @@
   - `HDU/大一上数学分析备考/模拟试卷.tex`、`参考解析.tex`、`出题依据与使用说明.md`
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/20-20-21/对话.md`
-- **Git 提交**：待提交；仅包含本次源文件与记录，不包含原始真题及用户其他修改或删除。
+- **Git 提交**：`fce72e3 docs: add six first-semester mathematical analysis mock exams`，已普通推送 origin/main；本条通过后续文档提交补记。仅包含本次源文件与记录，不包含原始真题及用户其他修改或删除。
 
 ---

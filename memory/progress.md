@@ -7,7 +7,7 @@
 - [x] 编写期中3套、期末3套，72题和72条解析，每套100分、120分钟，包含分步给分建议。
 - [x] 完成76项结构与代表性数值交叉核验；一般性证明逐题核对。
 - 编译限制：两份文件均因内置编译器无法下载尚未缓存的TeX资源包终止；未确认编译、分页或视觉效果。
-- [ ] 保存归档与日志，提交并普通推送 origin/main。
+- [x] 保存归档与日志；`fce72e3 docs: add six first-semester mathematical analysis mock exams` 已普通推送 origin/main，编译限制已在交付说明中记录。
 
 ## 2026-10-16 Microsoft 与 PayPal 独立规则
 
