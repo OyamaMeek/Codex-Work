@@ -1384,6 +1384,6 @@
 - **涉及文件**：
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/22-17-23/对话.md`
-- **Git 提交**：待提交；原书版式PDF仍待获取。
+- **Git 提交**：`83cf78a docs: require original page layout for C Primer Plus PDF`，已推送 origin/main；本条通过后续文档提交补记。原书版式PDF仍待获取。
 
 ---
