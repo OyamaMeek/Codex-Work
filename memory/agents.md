@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 REA 安装核验
+
+- Codex 单代理，参考 using-superpowers、skill-installer、reverse-engineer-anything、ponytail 与 verification-before-completion；使用现有 REA CLI、doctor 和已连接 MCP。
+- 保留现有 rea-agents 6.3.0、技能34与 Codex 配置；诊断输出位于已忽略的 .agent/rea-install/doctor-20261016.json。
+
 ## 2026-10-15 学习通 Java 作业
 
 - Codex 单代理；使用 ego-browser、using-superpowers 与 verification-before-completion，在用户指定的已打开作业页面完成13题并核对提交结果。

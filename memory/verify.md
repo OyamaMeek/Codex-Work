@@ -1,5 +1,11 @@
 # 当前任务验证标准
 
+## 2026-10-16 REA 安装核验
+
+- rea --version、doctor 的 Codex 范围检查、技能版本及实时 MCP 身份必须相符。
+- 实际结果：CLI 6.3.0；doctor 退出0、healthy=true、Codex 与技能 aligned；实时 MCP 使用预期版本6.3.0、路径 /opt/homebrew/bin/rea 与目录摘要核验成功，alignment=aligned，139项工具。
+- 其他客户端及未配置引擎使 environment_healthy=false，不影响已通过的 Codex 范围检查。未执行目标分析，未核实 npm 最新版（ECONNRESET），无视觉检查。
+
 ## 2026-10-15 学习通 Java 作业
 
 - 提交前检查13个题目容器，每题恰有一个 aria-checked=true 的选项。

@@ -1237,3 +1237,18 @@
 - **Git 提交**：`4deb84a docs: record Java introduction assignment completion`，已推送至 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-16 10:20] 核验 REA 安装与 Codex 连接
+
+- **需求/问题描述**：
+  > 安装 https://github.com/morluto/rea 。
+- **实际实现的功能与改动**：
+  - 读取官方 README，确认本机已有 rea-agents 6.3.0、匹配技能34与 Codex MCP 配置；保留可用安装。
+  - [验证]：rea --version 返回6.3.0；doctor --client codex --json 退出0、healthy=true，Codex 注册和技能状态 aligned；当前会话 binary_session 以预期版本、启动路径和目录摘要核验返回 aligned，服务提供139项 MCP 工具。
+  - [验证范围]：Hopper 路径检测可用，未启动目标分析、未安装额外引擎；npm 最新版查询发生 ECONNRESET，未确认最新版本。完整 doctor 输出保存在已忽略目录。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/10-20-15/对话.md`
+- **Git 提交**：待提交。
+
+---
