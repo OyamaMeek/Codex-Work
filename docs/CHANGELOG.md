@@ -1352,6 +1352,6 @@
   - `HDU/大一上数学分析备考/分节课后练习.tex`、`分节练习答案.tex`、`分节练习使用说明.md`
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/21-02-28/对话.md`
-- **Git 提交**：待提交；只提交本次源文件、使用说明与记录。
+- **Git 提交**：`4a47675 docs: add 425 textbook section practice exercises and answers`，已普通推送 origin/main；本条通过后续文档提交补记。只包含本次源文件、使用说明与记录。
 
 ---
