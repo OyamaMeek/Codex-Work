@@ -1418,7 +1418,7 @@
   - `HDU/大一上数学分析备考/分节练习/分节课后练习-iPad横屏草稿版.tex`、同名PDF
   - `tests/check_ipad_practice.py`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/23-22-34/对话.md`
-- **Git 提交**：待与分数排版一并提交。
+- **Git 提交**：与分数排版共同提交为`cd47523 fix: stack practice fractions and remove right header`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
 
@@ -1436,6 +1436,6 @@
   - 同目录`分节课后练习-iPad横屏草稿版.pdf`及此前删除页眉的同名LaTeX入口
   - `tests/check_ipad_practice.py`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/23-29-18/对话.md`，及此前页眉修改归档
-- **Git 提交**：待提交，包含本次分数排版与此前已验证的页眉删除。
+- **Git 提交**：`cd47523 fix: stack practice fractions and remove right header`，已普通推送origin/main；包含本次分数排版与此前已验证的页眉删除，本条通过后续文档提交补记。
 
 ---
