@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 Taste Skill 安装
+
+- Codex 单代理，使用 skill-installer；固定提交 f624f37a8c650b9cc550253104925efe4c8de246，14个技能安装到 ~/.codex/skills。
+- 中间文件使用已忽略的 .agent/taste-install/；Node 26.5.1 与 Chrome 可用。
+
 ## 2026-10-16 REA 安装核验
 
 - Codex 单代理，参考 using-superpowers、skill-installer、reverse-engineer-anything、ponytail 与 verification-before-completion；使用现有 REA CLI、doctor 和已连接 MCP。

@@ -1252,3 +1252,18 @@
 - **Git 提交**：`878ff37 docs: verify existing REA installation`，已普通推送 origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-16 12:46] 安装 Taste Skill
+
+- **需求/问题描述**：
+  > 安装 https://github.com/leonxlnx/taste-skill 。
+- **实际实现的功能与改动**：
+  - 官方 skill-installer 从提交 f624f37a8c650b9cc550253104925efe4c8de246 安装全部14个技能到 ~/.codex/skills，保留已有技能。
+  - [测试/验证]：安装器退出0；14份 SKILL.md 非空，主技能29个文件与 scripts 目录存在；Node v26.5.1 与 Google Chrome 可用，git diff --check 通过。
+  - [验证范围]：未执行设计生成或视觉检查；技能下次对话可用。
+- **涉及文件**：
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/12-46-12/对话.md`
+- **Git 提交**：待提交。
+
+---
