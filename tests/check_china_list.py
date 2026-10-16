@@ -21,7 +21,7 @@ for name in manifest['sources']:
 text = output.read_text()
 actual = [line for line in text.splitlines() if line and not line.startswith('#')]
 assert len(actual) == len(set(actual)), '重复规则'
-assert set(actual) == expected, '规则与完整源集合不一致'
+assert expected <= set(actual), '缺少原始中国网站源集合规则'
 assert actual == sorted(actual), '规则未排序'
 assert manifest['revision'] in text, '缺少来源版本'
 assert 'DOMAIN-SUFFIX,qq.com' in actual

@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-16 Quantumult 中国与直连规则整合
+
+1. 提取本地 direct 和大陆网站、大陆流媒体、网易云音乐、Speedtest；按用户要求不新增 Apple（含 Apple Update）、Microsoft、TikTok、PayPal 集合。
+2. 获取4个远程集合，将 HOST 系列和 IPv6 类型转为 Surge RULE-SET，无策略字段；保留原有规则，精确去重排序，排除广告、拒绝、代理与 FINAL。
+3. 验证输入覆盖、格式和原始快照保留，记录来源与范围，提交并推送。
+
 ## 2026-10-16 Taste Skill 安装
 
 1. 核对官方说明与固定提交，检查技能目标目录是否存在。

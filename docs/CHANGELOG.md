@@ -1,5 +1,23 @@
 # 开发记录
 
+## [2026-10-16 16:02] 整合 Quantumult 中国与直连规则
+
+- **需求/问题描述**：
+  > 整理 quantumult_20261016155506.conf 中中国网站/直连分流至 China.list；Apple、Microsoft、TikTok、PayPal 暂不新增。
+- **实际实现的功能与改动**：
+  - 合并大陆网站 ASN、大陆流媒体、网易云音乐、Speedtest 的4个远程集合和14条本地 direct；保留原始114137条，新增5277条，合计119414条唯一规则。
+  - 转换为 Surge RULE-SET，保留域名、关键词、通配符、IP、GEOIP、ASN、USER-AGENT；去除策略字段，去重排序，记录来源。
+  - 排除 Apple（含 Apple Update）、Microsoft、TikTok、PayPal 新增集合，以及广告、拒绝、代理和 FINAL；原始列表已有条目保持原样。
+  - [测试/验证]：覆盖检查在合并前失败，最终4个集合完整覆盖、原始202个集合保留、排序唯一性通过；Surge 原生检查最终提取规则内联配置和完整列表引用配置均返回 OK，git diff --check 通过。
+  - [验证范围]：未修改源 Quantumult 配置或 HappaConfig 模板，未重载客户端、未测试实际流量；源配置含订阅信息，不提交。
+- **涉及文件**：
+  - `China.list`、`tests/check_china_list.py`、`tests/check_quantumult_china.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/16-02-12/对话.md`
+- **Git 提交**：待提交。
+
+---
+
 ## [2026-09-21 13:08] 移除导航中的两个百度条目
 
 - **需求/问题描述**：

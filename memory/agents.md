@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 Quantumult 规则整合
+
+- Codex 单代理，ponytail、using-superpowers、verification-before-completion；Python 标准库读取规则，Surge CLI 验证。
+- 远程快照仅保存在已忽略的 .agent/china-rules/；不提交含订阅信息的原始 Quantumult 配置。
+
 ## 2026-10-16 Taste Skill 安装
 
 - Codex 单代理，使用 skill-installer；固定提交 f624f37a8c650b9cc550253104925efe4c8de246，14个技能安装到 ~/.codex/skills。
