@@ -1,5 +1,12 @@
 # 当前任务验证标准
 
+## 2026-10-16 Microsoft 与 PayPal 独立规则
+
+- 覆盖检查在列表生成前因缺少目标文件失败，生成后逐项等于转换后的完整来源集合。
+- 无重复、无策略字段，匹配类型和 USER-AGENT 保留；Surge 原生语法检查通过。
+- China.list 与模板无改动，不重载客户端或测试实际流量。
+- 实际结果：生成前检查因缺少目标文件退出1；生成后两份列表覆盖、格式与排序检查通过，Surge 原生内联规则检查返回 OK，git diff --check 通过。China.list、HappaConfig.ini 和 HappaConfig.conf 与 HEAD 一致。
+
 ## 2026-10-16 Quantumult 中国与直连规则整合
 
 - 新增覆盖检查修改前失败；合并后4个远程集合和14条本地 direct 完整覆盖；不新增 Apple（含 Apple Update）、Microsoft、TikTok、PayPal 集合。

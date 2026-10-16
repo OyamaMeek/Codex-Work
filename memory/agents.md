@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 Microsoft 与 PayPal 独立规则
+
+- Codex 单代理，沿用 ponytail 和 verification-before-completion；Python 标准库转换和覆盖检查、Surge CLI 语法验证。
+- 来源使用 .agent/china-rules/ 中本次已下载快照，不提交原 Quantumult 配置或下载缓存。
+
 ## 2026-10-16 Quantumult 规则整合
 
 - Codex 单代理，ponytail、using-superpowers、verification-before-completion；Python 标准库读取规则，Surge CLI 验证。

@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-16 Microsoft 与 PayPal 独立规则
+
+1. 使用 Quantumult 配置引用的两个远程集合的本次已有下载快照，分别生成 Microsoft.list、PayPal.list。
+2. 转换为无策略的 Surge RULE-SET，保留匹配语义、USER-AGENT，去重排序；不修改 China.list 或模板。
+3. 验证完整来源覆盖、Surge 原生语法，记录并提交推送。
+
 ## 2026-10-16 Quantumult 中国与直连规则整合
 
 1. 提取本地 direct 和大陆网站、大陆流媒体、网易云音乐、Speedtest；按用户要求不新增 Apple（含 Apple Update）、Microsoft、TikTok、PayPal 集合。

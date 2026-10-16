@@ -1,5 +1,22 @@
 # 开发记录
 
+## [2026-10-16 16:13] 创建 Microsoft 和 PayPal 独立规则列表
+
+- **需求/问题描述**：
+  > Microsoft和PayPal做成单独的list。
+- **实际实现的功能与改动**：
+  - 使用原 Quantumult 配置引用的两个远程规则的本次下载快照，分别生成无策略字段的 Surge RULE-SET：Microsoft.list 712条、PayPal.list 248条。
+  - 保留域名及 USER-AGENT 的匹配语义，去重排序，记录来源 URL、日期和来源 SHA-256。
+  - [测试/验证]：生成前覆盖检查因缺少目标文件失败，生成后两份列表完整来源覆盖、格式与排序检查通过；Surge 原生内联规则检查返回 OK，git diff --check 通过。
+  - [验证范围]：China.list、HappaConfig.ini 和 HappaConfig.conf 与 HEAD 一致；未接入模板、重载客户端或测试实际流量。
+- **涉及文件**：
+  - `Microsoft.list`、`PayPal.list`、`tests/check_service_lists.py`
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/16-13-14/对话.md`
+- **Git 提交**：待提交。
+
+---
+
 ## [2026-10-16 16:02] 整合 Quantumult 中国与直连规则
 
 - **需求/问题描述**：
