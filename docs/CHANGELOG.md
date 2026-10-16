@@ -1264,6 +1264,6 @@
 - **涉及文件**：
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/12-46-12/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`cdefef9 docs: record Taste Skill installation`，已普通推送 origin/main；本条通过后续文档提交补记。
 
 ---
