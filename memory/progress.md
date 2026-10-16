@@ -4,7 +4,7 @@
 
 - [x] 核对两份来源快照和目标文件状态，沿用 Surge RULE-SET 格式。
 - [x] Microsoft.list 712条、PayPal.list 248条，逐项来源覆盖、去重排序和 Surge 原生语法检查通过。
-- [ ] 保存记录、归档并提交推送。
+- [x] 保存记录与归档，提交 `a7057b5 feat: add separate Microsoft and PayPal rule lists` 并普通推送 origin/main。
 
 ## 2026-10-16 Quantumult 中国与直连规则整合
 
