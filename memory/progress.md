@@ -1,5 +1,13 @@
 # 当前任务进度
 
+## 2026-10-16 TeXstudio 接入移动硬盘 TeX Live
+
+- [x] 定位 /Volumes/SamsungSSD990PRO/Application/texlive/2025/bin/universal-darwin；XeTeX 版本与 texmf.cnf 查找正常。
+- [x] 确认 TeXstudio 原编译命令和程序搜索路径为空；正常退出应用。
+- [x] 完整备份原配置至 .agent/texstudio/texstudio.ini.before，只增加程序搜索路径；重新启动后9个常用命令已自动识别，原默认 pdfLaTeX 保留。
+- [x] 从 TeXstudio 菜单实际编译英文与中文测试文档，分别生成1页 PDF，39371与12145字节，日志没有错误；关闭测试文档并重新打开应用。
+- [x] 保存日志和截至归档时的可见消息；待提交并普通推送已有 origin/main。
+
 ## 2026-10-16 数学分析模拟卷
 
 - [x] 定位本地2022—2026年601真题；用户确认期中与期末范围。

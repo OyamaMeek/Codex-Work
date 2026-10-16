@@ -1319,3 +1319,20 @@
 - **Git 提交**：`fce72e3 docs: add six first-semester mathematical analysis mock exams`，已普通推送 origin/main；本条通过后续文档提交补记。仅包含本次源文件与记录，不包含原始真题及用户其他修改或删除。
 
 ---
+
+## [2026-10-16 20:31] TeXstudio 配置移动硬盘 TeX Live
+
+- **需求/问题描述**：
+  > 我的texlive在移动硬盘的Application/texlive 帮我配置到texstudio里
+- **实际实现的功能与改动**：
+  - 正常退出 TeXstudio 并完整备份 ~/.config/texstudio/texstudio.ini；只增加 Tools/Search Paths 为 /Volumes/SamsungSSD990PRO/Application/texlive/2025/bin/universal-darwin，应用重新启动后自动识别编译与辅助命令，原默认 pdfLaTeX 保留。
+  - [测试/验证]：通过 TeXstudio 的“工具→编译”实际编译英文及带 XeLaTeX 声明的中文测试文档，均生成1页 PDF（39371、12145字节），日志无错误；保存后9项常用命令、搜索路径、默认编译器和成功启动状态检查通过。关闭测试文档并重新打开应用。
+  - [验证范围]：未运行 LuaLaTeX、参考文献和索引的完整流程，未截图或检查排版；使用时需要连接移动硬盘并保持卷名和目录不变。恢复点及测试产出仅留在已忽略的 .agent/texstudio/。
+  - [依据]：[TeXstudio 官方命令搜索与配置实现](https://github.com/texstudio-org/texstudio/blob/master/src/buildmanager.cpp)。
+- **涉及文件**：
+  - 本机 ~/.config/texstudio/texstudio.ini（不上传）
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/20-31-00/对话.md`
+- **Git 提交**：待提交。
+
+---

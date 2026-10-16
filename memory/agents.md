@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 TeXstudio 接入移动硬盘 TeX Live
+
+- Codex 单代理，using-superpowers、ponytail 与 verification-before-completion；复用现有 TeXstudio、TeX Live 2025 和原生程序搜索路径设置。
+- 只修改 TeXstudio 配置；恢复点与编译材料保存在已忽略的 .agent/texstudio/，不截图或检查图片。
+
 ## 2026-10-16 数学分析模拟卷
 
 - Codex 单代理；使用 using-superpowers、brainstorming、PDF、ponytail 和 verification-before-completion。
