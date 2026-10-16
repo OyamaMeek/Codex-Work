@@ -1333,6 +1333,6 @@
   - 本机 ~/.config/texstudio/texstudio.ini（不上传）
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/20-31-00/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`9d90ef9 docs: record external TeX Live configuration for TeXstudio`，已普通推送 origin/main；本条通过后续文档提交补记。
 
 ---
