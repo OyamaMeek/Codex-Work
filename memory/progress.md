@@ -4,7 +4,7 @@
 
 - [x] 按最终范围合并4个远程集合及14条本地 direct；原配置保持原样。
 - [x] 新增5277条，合计119414条；输入覆盖、原始202个集合保留、唯一性排序及 Surge 原生检查通过。
-- [ ] 保存记录与归档，提交并普通推送 origin/main。
+- [x] 保存记录与归档，提交 `3b2e321 feat: merge Quantumult China and direct routing rules` 并普通推送 origin/main。
 
 ## 2026-10-16 Taste Skill 安装
 
