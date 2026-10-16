@@ -1402,6 +1402,6 @@
   - 同目录`分节课后练习.tex`（原内容，作为编译依赖纳入当前路径）、`分节练习使用说明.md`
   - `tests/check_ipad_practice.py`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/23-19-07/对话.md`
-- **Git 提交**：待提交；只包含本次交付及必要依赖，不暂存用户清理造成的旧路径删除。
+- **Git 提交**：`0dda6ed docs: add iPad landscape practice and section knowledge`，已普通推送origin/main；本条通过后续文档提交补记。只包含本次交付及必要依赖，用户无关修改与旧路径删除保持原样。
 
 ---
