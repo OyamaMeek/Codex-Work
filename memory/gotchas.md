@@ -1,5 +1,7 @@
 # 注意事项
 
+- 获取书籍PDF时区分原书版式与电子书转换排版；本次用户明确要求原书版式，calibre转换版不符合要求。元数据、ISBN和PDF结构检查不能证明分页、版式或正文与目标版本一致。
+
 - 本次 Quantumult 整合按用户指定排除 Apple（含 Apple Update）、Microsoft、TikTok、PayPal 新增集合；原始 China.list 已有条目保留，不能把策略候选中出现 direct 当作整组应合并的依据。
 
 - 用户要求在 ego 答题时，先定位已打开的作答页面，不依据历史作业推断课程；使用现有 TaskSpace 核对当前标签页。
