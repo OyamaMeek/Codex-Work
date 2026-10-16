@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 iPad 横屏分节练习
+
+- Codex 单代理，使用 PDF、ponytail 与 verification-before-completion；沿用原425题和移动硬盘 XeLaTeX，新增4:3横屏排版与85小节知识清单。
+- Python、pypdf、pdfplumber 核对实际PDF的一题一页、文字及草稿区；中间文件位于已忽略的 .agent/math-analysis/ipad-build/，不截图或检查图片。
+
 ## 2026-10-16 C Primer Plus PDF 获取
 
 - Codex 单代理，ego-browser、PDF 技能；使用 curl 下载第三方公开文件，bundled Python 与 pypdf 核对结构、版次及页数。
