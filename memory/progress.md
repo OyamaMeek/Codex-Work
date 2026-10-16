@@ -5,7 +5,7 @@
 - [x] 读取官方 README；本机已有 rea-agents 6.3.0、匹配技能34和 Codex MCP 注册，无需重复安装。
 - [x] doctor --client codex --json 退出0、healthy=true；实时 binary_session 对包版本、启动路径、目录摘要核验返回 aligned，139项 MCP 工具。
 - [x] Hopper 路径可用；未启动目标分析或安装额外引擎。npm 版本查询遇到 ECONNRESET，未核实最新版。
-- [ ] 保存记录与可见对话，提交并推送 origin/main。
+- [x] 保存记录与截至归档时的可见对话；`878ff37 docs: verify existing REA installation` 已普通推送 origin/main。
 
 ## 2026-10-15 学习通 Java 作业
 

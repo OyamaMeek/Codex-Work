@@ -1249,6 +1249,6 @@
 - **涉及文件**：
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/10-20-15/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`878ff37 docs: verify existing REA installation`，已普通推送 origin/main；本条通过后续文档提交补记。
 
 ---
