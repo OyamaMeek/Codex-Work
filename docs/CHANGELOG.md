@@ -1355,3 +1355,19 @@
 - **Git 提交**：`4a47675 docs: add 425 textbook section practice exercises and answers`，已普通推送 origin/main；本条通过后续文档提交补记。只包含本次源文件、使用说明与记录。
 
 ---
+
+## [2026-10-16 22:11] 获取 C Primer Plus 第6版中文版 PDF
+
+- **需求/问题描述**：
+  > 获取用户提供的异步社区《C Primer Plus 第6版 中文版》阅读器对应的 PDF。
+- **实际实现的功能与改动**：
+  - 原阅读器未登录，无 PDF 下载入口；从第三方 img.anfulai.cn 公开链接下载同书同版 PDF 至 output/pdf/C-Primer-Plus-第6版-中文版.pdf，加入忽略规则，仅保留本地。
+  - [测试/验证]：curl HTTP 200；文件22725649字节、1635页，PDF签名有效、未加密、全部页面尺寸有效。pypdf核对书名、第6版、Stephen Prata、姜佑译及版权页ISBN9787115390592。
+  - [验证范围]：文件由calibre转换排版；未从异步社区导出，未核验原站登录后下载权限，未截图、检查排版或逐页比对正文。
+  - SHA-256：b1829667f79d15948a21a1520eaeea6bea1c46443cad622874fd8d9d36acac94。
+- **涉及文件**：
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/16/22-11-47/对话.md`
+- **Git 提交**：待提交；书籍PDF不提交。
+
+---

@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-16 C Primer Plus PDF 获取
+
+- Codex 单代理，ego-browser、PDF 技能；使用 curl 下载第三方公开文件，bundled Python 与 pypdf 核对结构、版次及页数。
+- 异步社区 TaskSpace 1 原页未登录；仅检查语义页面，不截图。书籍文件仅保留本地。
+
 ## 2026-10-16 教材逐小节课后练习
 
 - Codex单代理，沿用brainstorming、ponytail和verification-before-completion；按高教社官方第四版上册目录编写原创练习。
