@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-16 教材逐小节课后练习
+
+- Codex单代理，沿用brainstorming、ponytail和verification-before-completion；按高教社官方第四版上册目录编写原创练习。
+- 使用独立LaTeX题册与答案册，TeXstudio magic comment声明XeLaTeX；移动硬盘TeX Live2025两轮编译通过。Python标准库、pypdf书签和pdfplumber文字用于结构、数值和产出核验；内置编译调用未返回后停止等待。
+- 中间检查和编译结果位于已忽略的 .agent/math-analysis/；不修改模拟卷，不截图。
+
 ## 2026-10-16 TeXstudio 接入移动硬盘 TeX Live
 
 - Codex 单代理，using-superpowers、ponytail 与 verification-before-completion；复用现有 TeXstudio、TeX Live 2025 和原生程序搜索路径设置。
