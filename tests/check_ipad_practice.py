@@ -12,6 +12,8 @@ source = (root / "分节课后练习.tex").read_text()
 assert pdf_path.is_file(), "缺少iPad横屏PDF"
 assert knowledge_path.is_file(), "缺少分节知识清单"
 knowledge = knowledge_path.read_text()
+for name, content in [("题目", source), ("知识点", knowledge)]:
+    assert not any("/" in formula for formula in re.findall(r"\$([^$]*)\$", content)), (name, "数学比值仍使用斜杠")
 entries = re.findall(r"\\knowledge\{([\d.]+)\}", knowledge)
 assert len(entries) == len(set(entries)) == 85
 
@@ -47,10 +49,14 @@ with pdfplumber.open(pdf_path) as document:
         assert abs(page.height - 180 * 72 / 25.4) < 0.1
         text = page.extract_text() or ""
         compact = re.sub(r"\s+", "", text)
+        assert "iPad横屏练习" not in compact, (page_number, "右上角页眉尚未删除")
         ids = re.findall(r"题号\s*(\d+\.\d+\.\d+-[1-5])", text)
         assert len(ids) <= 1, (page_number, ids)
         if ids:
             assert "重要知识点" not in compact
+            if ids == ["1.2.1-3"]:
+                assert "/" not in text
+                assert any(line["width"] > 20 and 95 < line["top"] < 180 for line in page.lines), "示例题未生成横向分数线"
             chinese = "".join(re.findall(r"[\u4e00-\u9fff]", text))
             assert all(fragment in chinese for fragment in expected_prompts[len(question_pages)]), (page_number, ids)
             body = [c for c in page.chars if 28 < c["top"] < page.height - 25]
