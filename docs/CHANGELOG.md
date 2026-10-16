@@ -1368,6 +1368,6 @@
 - **涉及文件**：
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/16/22-11-47/对话.md`
-- **Git 提交**：待提交；书籍PDF不提交。
+- **Git 提交**：`323d346 docs: record C Primer Plus PDF retrieval`，已普通推送 origin/main；本条通过后续文档提交补记。书籍PDF未上传。
 
 ---
