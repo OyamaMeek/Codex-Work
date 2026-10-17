@@ -1454,6 +1454,6 @@
   - 同目录`分节课后练习-标准极限横屏版.tex`及同名PDF
   - `tests/check_ipad_practice.py`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/17/21-24-05/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`038e4e9 fix: use explicit limit notation in practice workbook`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
