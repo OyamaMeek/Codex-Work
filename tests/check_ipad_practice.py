@@ -6,14 +6,19 @@ import pdfplumber
 from pypdf import PdfReader
 
 root = Path("HDU/大一上数学分析备考/分节练习")
-pdf_path = root / "分节课后练习-iPad横屏草稿版.pdf"
+pdf_path = root / "分节课后练习-标准极限横屏版.pdf"
 knowledge_path = root / "分节知识点.tex"
 source = (root / "分节课后练习.tex").read_text()
-assert pdf_path.is_file(), "缺少iPad横屏PDF"
 assert knowledge_path.is_file(), "缺少分节知识清单"
 knowledge = knowledge_path.read_text()
+assert r"\lim_{n\to\infty}\dfrac{2n+1}{n+3}=2" in source, "示例题缺少完整极限记号"
 for name, content in [("题目", source), ("知识点", knowledge)]:
     assert not any("/" in formula for formula in re.findall(r"\$([^$]*)\$", content)), (name, "数学比值仍使用斜杠")
+    for formula in re.findall(r"\$([^$]*)\$", content):
+        remaining = re.sub(r"\s+", "", re.sub(r"\\lim_\{[^{}]*\}", "", formula))
+        if r"\to" in remaining and ":" not in remaining and r"\mathbb" not in remaining:
+            assert re.fullmatch(r"[xuntah]\\to(?:0|a|[+-]?\\infty)(?:\^\+|\^-)?", remaining), (name, "仍有极限结果箭头简写", formula)
+assert pdf_path.is_file(), "缺少标准极限横屏PDF"
 entries = re.findall(r"\\knowledge\{([\d.]+)\}", knowledge)
 assert len(entries) == len(set(entries)) == 85
 
@@ -21,6 +26,8 @@ reader = PdfReader(pdf_path)
 expected_ids = []
 expected_titles = []
 expected_prompts = []
+expected_limit_counts = []
+knowledge_limit_counts = [block.count(r"\lim") for block in re.split(r"\\knowledge\{[\d.]+\}", knowledge)[1:]]
 chapter = section = subsection = 0
 for line in source.splitlines():
     if line.startswith(r"\chapter{"):
@@ -36,6 +43,7 @@ for line in source.splitlines():
         expected_ids.extend(f"题号 {key}-{i}" for i in range(1, 6))
     elif line.startswith(r"\item "):
         expected_prompts.append(re.findall(r"[\u4e00-\u9fff]{2,}", line))
+        expected_limit_counts.append(line.count(r"\lim"))
 assert entries == [key for key, _ in expected_titles]
 assert len(expected_prompts) == 425
 
@@ -54,7 +62,9 @@ with pdfplumber.open(pdf_path) as document:
         assert len(ids) <= 1, (page_number, ids)
         if ids:
             assert "重要知识点" not in compact
+            assert compact.count("lim") == expected_limit_counts[len(question_pages)], (page_number, "lim显示数量不符")
             if ids == ["1.2.1-3"]:
+                assert "lim" in text, "示例题PDF缺少lim符号"
                 assert "/" not in text
                 assert any(line["width"] > 20 and 95 < line["top"] < 180 for line in page.lines), "示例题未生成横向分数线"
             chinese = "".join(re.findall(r"[\u4e00-\u9fff]", text))
@@ -68,6 +78,7 @@ with pdfplumber.open(pdf_path) as document:
             assert all(line["top"] < page.height - 25 - blank or line["top"] >= page.height - 25 for line in page.lines)
             question_pages.append((page_number, f"题号 {ids[0]}"))
         if "重要知识点" in compact and "需要掌握" in compact:
+            assert compact.count("lim") == knowledge_limit_counts[len(knowledge_pages)], (page_number, "知识页lim显示数量不符")
             knowledge_pages.append((page_number, compact))
 assert [key for _, key in question_pages] == expected_ids
 assert len(knowledge_pages) == 85
@@ -105,6 +116,7 @@ for title in destinations:
         assert destination_pages[normalized_title(title)] == first_pages[f"{section_match[1]}.1"]
 assert len(reader.pages) == 1 + 85 + 425
 result = {"status": "passed", "pages": len(reader.pages), "questions": 425,
+          "limit_operators": sum(expected_limit_counts) + sum(knowledge_limit_counts),
           "knowledge_pages": 85, "bookmarks": len(destinations),
           "size_mm": [240, 180], "minimum_blank_mm": round(minimum_blank, 1),
           "bytes": pdf_path.stat().st_size,

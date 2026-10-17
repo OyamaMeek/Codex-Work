@@ -95,20 +95,20 @@
 \subsection{数列极限的定义}
 \goal{使用$\varepsilon$--$N$语言。}
 \begin{enumerate}
-\item 用定义证明$3+\dfrac{2}{n}\to3$，写出一个可用的$N(\varepsilon)$。
+\item 用定义证明$\lim_{n\to\infty}\left(3+\dfrac{2}{n}\right)=3$，写出一个可用的$N(\varepsilon)$。
 \item 利用奇、偶子列证明$(-1)^n$不收敛。
-\item 用定义证明$\dfrac{2n+1}{n+3}\to2$。
-\item 用定义证明$\dfrac{1+(-1)^n}{n}\to0$。
+\item 用定义证明$\lim_{n\to\infty}\dfrac{2n+1}{n+3}=2$。
+\item 用定义证明$\lim_{n\to\infty}\dfrac{1+(-1)^n}{n}=0$。
 \item 判断$(-1)^n\dfrac{n}{n+1}$是否收敛，并用子列说明。
 \end{enumerate}
 \subsection{收敛数列的性质}
 \goal{有界性、保序性与四则运算。}
 \begin{enumerate}
 \item 证明收敛数列必有界，并给出有界但不收敛的数列。
-\item 已知$a_n\to2$，用估计$|a_n^2-4|$的方法证明$a_n^2\to4$。
-\item 若所有$a_n>0$且$a_n\to a$，能否断言$a>0$？写出正确结论并证明。
-\item 若$a_n\le b_n$最终成立，且$a_n\to a$、$b_n\to b$，证明$a\le b$。
-\item 若$|a_n|\le M$，证明$\dfrac{a_n}{n}\to0$，并说明是否需要$a_n$收敛。
+\item 已知$\lim_{n\to\infty}a_n=2$，用估计$|a_n^2-4|$的方法证明$\lim_{n\to\infty}a_n^2=4$。
+\item 若所有$a_n>0$且$\lim_{n\to\infty}a_n=a$，能否断言$a>0$？写出正确结论并证明。
+\item 若$a_n\le b_n$最终成立，且$\lim_{n\to\infty}a_n=a$、$\lim_{n\to\infty}b_n=b$，证明$a\le b$。
+\item 若$|a_n|\le M$，证明$\lim_{n\to\infty}\dfrac{a_n}{n}=0$，并说明是否需要$a_n$收敛。
 \end{enumerate}
 \subsection{数列收敛判别}
 \goal{单调有界、夹逼与Cauchy准则。}
@@ -126,17 +126,17 @@
 \item 用$\varepsilon$--$\delta$定义证明$\lim_{x\to1}(3x-2)=1$。
 \item 求$\dfrac{|x|}{x}$在$0$的左右极限，并判断双侧极限。
 \item 构造两列趋于$0$的非零自变量，证明$\sin\dfrac{1}{x}$在$0$没有极限。
-\item 按无穷极限的定义证明$\dfrac{1}{x^2}\to+\infty$（$x\to0$）。
+\item 按无穷极限的定义证明$\lim_{x\to0}\dfrac{1}{x^2}=+\infty$。
 \item 对整数$m$，求取整函数$\lfloor x\rfloor$在$x=m$的左右极限。
 \end{enumerate}
 \subsection{函数极限的运算性质}
-\goal{运算规则的适用条件。}
+\goal{运算规则的适用条件。涉及$f,g$的命题中，$a$表示公共定义域的聚点。}
 \begin{enumerate}
 \item 求$\lim_{x\to2}\dfrac{x^2-4}{x-2}$。
-\item 若$fg\to0$，能否推出$f\to0$或$g\to0$？给出一个两者均不趋于$0$的反例。
-\item 若$f+g\to A$、$f-g\to B$，证明$f,g$各有极限并求出。
+\item 若$\lim_{x\to a}f(x)g(x)=0$，能否推出$\lim_{x\to a}f(x)=0$或$\lim_{x\to a}g(x)=0$？给出一个两者均不趋于$0$的反例。
+\item 若$\lim_{x\to a}[f(x)+g(x)]=A$、$\lim_{x\to a}[f(x)-g(x)]=B$，证明$f,g$各有极限并求出。
 \item 求$\lim_{x\to1}\dfrac{x^3-1}{x^2-1}$。
-\item 证明$f\to0$当且仅当$|f|\to0$。
+\item 证明$\lim_{x\to a}f(x)=0$当且仅当$\lim_{x\to a}|f(x)|=0$。
 \end{enumerate}
 \subsection{两个重要极限}
 \goal{三角极限与指数型极限。}
@@ -158,10 +158,10 @@
 \end{enumerate}
 \section{无穷小与无穷大}
 \subsection{无穷小的基本性质}
-\goal{无穷小的加法、乘法与有界因子。}
+\goal{无穷小的加法、乘法与有界因子。本小节的$\alpha,\beta$表示同一趋近过程$x\to a$中的函数。}
 \begin{enumerate}
-\item 设$\alpha,\beta\to0$，证明$\alpha+\beta\to0$与$\alpha\beta\to0$。
-\item 证明$x\sin\dfrac{1}{x}$在$x\to0$时为无穷小。
+\item 设$\lim_{x\to a}\alpha(x)=\lim_{x\to a}\beta(x)=0$，证明$\lim_{x\to a}[\alpha(x)+\beta(x)]=0$与$\lim_{x\to a}\alpha(x)\beta(x)=0$。
+\item 证明$\lim_{x\to0}x\sin\dfrac{1}{x}=0$。
 \item 举例说明“乘积趋于0”并不要求其中一个指定因子有界。
 \item 证明有限个无穷小之和仍为无穷小，并说明“有限个”不能任意换为“项数随自变量变化”。
 \item 设$\alpha,\beta$均为最终非零的无穷小，证明$\alpha\beta=o(\alpha)$且$\alpha\beta=o(\beta)$。
@@ -187,11 +187,11 @@
 \subsection{无穷大量}
 \goal{区分无界与趋于无穷大。}
 \begin{enumerate}
-\item 描述$\dfrac{1}{x^2}$与$\dfrac{1}{x}$在$x\to0$时的行为，分别写出左右极限。
-\item 对最终为正的$f$，证明$f\to+\infty$当且仅当$\dfrac{1}{f}\to0$。
+\item 分别判断$\lim_{x\to0}\dfrac{1}{x^2}$与$\lim_{x\to0}\dfrac{1}{x}$，并分别写出左右极限。
+\item 在同一趋近过程$x\to a$中，对最终为正的$f$，证明$\lim_{x\to a}f(x)=+\infty$当且仅当$\lim_{x\to a}\dfrac{1}{f(x)}=0$。
 \item 构造一个正数列，它无界但不趋于$+\infty$。
-\item 用定义或夹逼证明$n^2+\cos n\to+\infty$。
-\item 判断$x\sin x$在$x\to+\infty$时是否为无穷大量；区分无界与绝对值趋于无穷。
+\item 用定义或夹逼证明$\lim_{n\to\infty}(n^2+\cos n)=+\infty$。
+\item 判断$\lim_{x\to+\infty}|x\sin x|$是否等于$+\infty$；区分无界与绝对值趋于无穷。
 \end{enumerate}
 \section{连续函数}
 \subsection{连续性与间断点}
@@ -275,7 +275,7 @@
 \item 圆的半径$r(t)=2+0.1t$厘米，$t$以秒计，求$t=0$时面积变化率。
 \item 浓度$c(t)=100e^{-0.2t}$毫克/升，$t$以分钟计，求初始浓度变化率。
 \item 单价$p(q)=100-2q$元，销量$q$，求收入$R(q)=qp(q)$在$q=10$的边际收入。
-\item 位移$s(t)=\sqrt{1+t}$，求区间$[0,h]$的平均速度及$h\to0^+$的极限。
+\item 位移$s(t)=\sqrt{1+t}$，求区间$[0,h]$的平均速度，并求$\lim_{h\to0^+}\dfrac{s(h)-s(0)}{h}$。
 \end{enumerate}
 \section{求导法则}
 \subsection{和差积商法则}
@@ -412,7 +412,7 @@
 \item 求$\lim_{x\to0}\dfrac{\sin x-x}{x^3}$。
 \item 求$\lim_{x\to+\infty}\dfrac{\ln x}{x}$。
 \item 求$\lim_{x\to0^+}x\ln x$。
-\item 对$\left(1+\dfrac{1}{x}\right)^x$，$x\to+\infty$，取对数后用本法则求极限。
+\item 取对数后用本法则求$\lim_{x\to+\infty}\left(1+\dfrac{1}{x}\right)^x$。
 \item 原比$\dfrac{x+\sin x}{x}$在$+\infty$的极限存在，但导数比$1+\cos x$无极限。这说明本法则的哪一方向不能反用？
 \end{enumerate}
 \section{Taylor公式及应用}
@@ -795,7 +795,7 @@
 \item 解$x'=y$、$y'=x$。
 \item 解$x'=-y$、$y'=x$。
 \item 解$x'=x+y$、$y'=y$。
-\item 解$x'=-x$、$y'=-2y$、$x(0)=y(0)=1$，讨论$t\to+\infty$的行为。
+\item 解$x'=-x$、$y'=-2y$、$x(0)=y(0)=1$，并求$\lim_{t\to+\infty}x(t)$与$\lim_{t\to+\infty}y(t)$。
 \end{enumerate}
 \subsection{常系数非齐次系统}
 \goal{特解、共振与常数变易。}

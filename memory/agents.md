@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-17 标准极限记号
+
+- Codex单代理，沿用PDF与verification-before-completion；使用现存题源及知识清单，新增标准极限横屏入口，移动硬盘XeLaTeX两轮编译。
+- pypdf、pdfplumber逐页核对76个lim、425题、85知识页、534书签及空白坐标；中间结果位于已忽略的.agent/math-analysis/ipad-build/，不截图。
+
 ## 2026-10-16 iPad 横屏分节练习
 
 - Codex 单代理，使用 PDF、ponytail 与 verification-before-completion；沿用原425题和移动硬盘 XeLaTeX，新增4:3横屏排版与85小节知识清单。
