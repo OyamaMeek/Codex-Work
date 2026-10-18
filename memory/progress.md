@@ -4,7 +4,7 @@
 
 - [x] 找到工作区根目录的奶龙.mov；没有已有同名M4A，系统没有FFmpeg。
 - [x] AVFoundation无重编码导出奶龙.m4a；单音轨、无视频，5.016644秒，约36KB；afinfo及沙箱外afconvert完整解码通过，原视频哈希保持不变。
-- [x] 保存日志与对话归档；媒体仅保留本地，记录待提交推送。
+- [x] 保存日志与对话归档；媒体仅保留本地，`7bfa50c docs: record Nailong audio extraction`已普通推送origin/main。
 
 ## 2026-10-17 标准极限记号
 

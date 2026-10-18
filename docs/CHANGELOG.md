@@ -1469,6 +1469,6 @@
   - `奶龙.m4a`（本地成品，不上传）、`.agent/audio/`（已忽略的导出脚本与解码材料）
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/18/23-30-18/对话.md`
-- **Git 提交**：待提交；仅提交记录与忽略规则，保留用户已有修改和删除。
+- **Git 提交**：`7bfa50c docs: record Nailong audio extraction`，已普通推送origin/main；本条通过后续文档提交补记。仅提交记录与忽略规则，保留用户已有修改和删除。
 
 ---
