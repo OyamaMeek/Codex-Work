@@ -1457,3 +1457,18 @@
 - **Git 提交**：`038e4e9 fix: use explicit limit notation in practice workbook`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-18 23:30] 提取奶龙视频音频
+
+- **需求/问题描述**：
+  > 把奶龙.mov的音频提取出来。
+- **实际实现的功能与改动**：
+  - 使用macOS AVFoundation无重编码提取音轨为根目录奶龙.m4a，时长5.016644秒，约36KB；原视频保持不变。媒体文件仅保留本地。
+  - [测试/验证]：AVFoundation确认只有一条音轨、没有视频、时长匹配；afinfo确认AAC、22050Hz、双声道。沙箱外afconvert完整解码成功，源文件SHA-256前后一致；未试听。
+- **涉及文件**：
+  - `奶龙.m4a`（本地成品，不上传）、`.agent/audio/`（已忽略的导出脚本与解码材料）
+  - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/18/23-30-18/对话.md`
+- **Git 提交**：待提交；仅提交记录与忽略规则，保留用户已有修改和删除。
+
+---

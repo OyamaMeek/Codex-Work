@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-18 奶龙音频提取
+
+- Codex单代理，using-superpowers、ponytail与verification-before-completion；使用macOS AVFoundation无重编码导出M4A，afinfo与afconvert验证。
+- 辅助脚本与解码检查文件位于已忽略的.agent/audio/；原视频与音频成品仅保留本地。
+
 ## 2026-10-17 标准极限记号
 
 - Codex单代理，沿用PDF与verification-before-completion；使用现存题源及知识清单，新增标准极限横屏入口，移动硬盘XeLaTeX两轮编译。
