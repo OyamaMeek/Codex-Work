@@ -1504,6 +1504,6 @@
   - `.gitignore`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/19/20-04-00/对话.md`
   - `memory/gotchas.md`记录本任务不再编译或重新下载编译器的要求；OCR模型、缓存、识别原稿和检查脚本位于已忽略的`.agent/hdu-ocr/`，不上传。
-- **Git 提交**：待提交；内容及格式检查已完成。
+- **Git 提交**：`0542787 feat: transcribe HDU exams and supplement missing solutions`，已普通推送origin/main；此前积压的两次Python实训记录提交亦随此次推送上传。本条通过后续文档提交补记。
 
 ---
