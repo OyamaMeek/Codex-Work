@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-19 Python实训
+
+- Codex单代理；using-superpowers、ego-browser、ponytail与verification-before-completion，使用CUA操作用户指定Chrome的实训页面；Python标准库subprocess执行补充输入输出检查。
+- 只通过页面正常编辑、运行、提交；不读取隐藏状态或接口，不截图。
+
 ## 2026-10-18 奶龙音频提取
 
 - Codex单代理，using-superpowers、ponytail与verification-before-completion；使用macOS AVFoundation无重编码导出M4A，afinfo与afconvert验证。
