@@ -1,0 +1,263 @@
+\documentclass[11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm,mathrsfs,esint}
+\usepackage{graphicx,longtable,booktabs,array,calc}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,hyperref}
+\hypersetup{hidelinks}
+\setcounter{secnumdepth}{-1}
+\newcounter{none}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\usepackage{amssymb,mathrsfs,esint,bm,newunicodechar}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{3em}
+\providecommand{\llangle}{\langle\!\langle}
+\providecommand{\rrangle}{\rangle\!\rangle}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{→}{\ensuremath{\to}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+\newunicodechar{Ω}{\ensuremath{\Omega}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\begin{document}
+\section{2015年杭州电子科技大学601数学分析考研真题参考答案}\label{ux5e74ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b66601ux6570ux5b66ux5206ux6790ux8003ux7814ux771fux9898ux53c2ux8003ux7b54ux6848}
+
+来源：\texttt{HDU/601数学分析/2015/2015年杭州电子科技大学601数学分析考研真题参考答案.pdf}。原
+PDF 页序：1, 2, 3, 4, 5, 6, 7, 8。
+
+\section{杭州电子科技大学2015年数学分析真题解析}\label{ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b662015ux5e74ux6570ux5b66ux5206ux6790ux771fux9898ux89e3ux6790}
+
+\begin{quote}
+助手整理：依据同题真题、答案正文中的重复公式和直接计算恢复 OCR
+受损内容。推导经重新核算，非原参考答案逐字转录；原题中确有条件或不等号问题的地方保留原意并给出辨析。
+\end{quote}
+
+\subsection{一、填空题}\label{ux4e00ux586bux7a7aux9898}
+
+\subsubsection{1. 极限}\label{ux6781ux9650}
+
+\[
+(4x+4)\ln\frac{x+3}{x+1}=4(x+1)\ln\left(1+\frac2{x+1}\right)\longrightarrow8.
+\] 故原极限为 \(\boxed{e^8}\)。
+
+\subsubsection{2. 连续性}\label{ux8fdeux7eedux6027}
+
+由同题答案的两侧极限可恢复分段函数为 \[
+f(x)=\begin{cases}\dfrac{\ln(1+x)}x,&x>0,\\a,&x=0,\\\dfrac{\sqrt{1+x}-\sqrt{1-x}}x,&-1<x<0.\end{cases}
+\] 右极限为 1；左侧有 \[
+\frac{\sqrt{1+x}-\sqrt{1-x}}x=\frac2{\sqrt{1+x}+\sqrt{1-x}}\longrightarrow1.
+\] 所以连续要求 \(\boxed{a=1}\)。
+
+\subsubsection{3. 隐函数导数}\label{ux9690ux51fdux6570ux5bfcux6570}
+
+在 \(e^x-e^y=\sin(xy)\) 中，\(x=0\) 时 \(y=0\)。两边对 \(x\) 求导，得 \[
+e^x-e^yy'=\cos(xy)(y+xy').
+\] 代入原点得 \(1-y'(0)=0\)，所以 \(\boxed{y'(0)=1}\)。
+
+\subsubsection{4.
+高阶导数的不定积分}\label{ux9ad8ux9636ux5bfcux6570ux7684ux4e0dux5b9aux79efux5206}
+
+由 \(\int f(x)\,dx=\sin x+C\) 得 \(f(x)=\cos x\)。对正整数 \(n\)， \[
+\boxed{\int f^{(n)}(x)\,dx=f^{(n-1)}(x)+C=\cos\left(x+\frac{(n-1)\pi}{2}\right)+C.}
+\]
+
+\subsubsection{5. 积分方程}\label{ux79efux5206ux65b9ux7a0b}
+
+对 \(\int_0^xf(t)\,dt=f(x)/2-1/2\) 求导，得 \(f'=2f\)。由 \(f(0)=1\)，有
+\(\boxed{f(x)=e^{2x}}\)。
+
+\subsubsection{6. 换序积分}\label{ux6362ux5e8fux79efux5206}
+
+区域为 \(0\leq y\leq1\)、\(\sqrt y\leq x\leq\sqrt{2-y^2}\)，所以 \[
+\boxed{\int_0^1dy\int_{\sqrt y}^{\sqrt{2-y^2}}f(x,y)\,dx
+=\int_0^1dx\int_0^{x^2}f(x,y)\,dy
++\int_1^{\sqrt2}dx\int_0^{\sqrt{2-x^2}}f(x,y)\,dy.}
+\]
+
+\subsubsection{7. 全微分}\label{ux5168ux5faeux5206}
+
+对 \(z=\arctan[(x+y)/(x-y)]\)，在定义域内， \[
+dz=\frac{(x-y)(dx+dy)-(x+y)(dx-dy)}{(x-y)^2+(x+y)^2}=\boxed{\frac{x\,dy-y\,dx}{x^2+y^2}}.
+\]
+
+\subsubsection{8. 收敛半径}\label{ux6536ux655bux534aux5f84}
+
+令 \(a_n=[5^n+(-3)^n]/n\)。有 \(\sqrt[n]{|a_n|}\to5\)，故幂级数
+\(\sum_{n\geq1}a_nx^n\) 的收敛半径为 \(\boxed{R=1/5}\)。
+
+\subsection{二、计算题}\label{ux4e8cux8ba1ux7b97ux9898}
+
+\subsubsection{1. 极限}\label{ux6781ux9650-1}
+
+由 \(\tan x-x\sim x^3/3\)、\(x-\sin x\sim x^3/6\)， \[
+\boxed{\lim_{x\to0}\frac{\tan x-x}{x-\sin x}=2.}
+\]
+
+\subsubsection{2. 定积分}\label{ux5b9aux79efux5206}
+
+令 \(x=a\sin t\)，其中 \(a>0\)，则 \[
+I=a^{2n+2}\int_0^{\pi/2}\sin^{2n}t\cos^2t\,dt=a^{2n+2}(J_{2n}-J_{2n+2}),
+\] 其中 \(J_{2n}=\frac{(2n-1)!!}{(2n)!!}\frac\pi2\)，且
+\(J_{2n+2}=\frac{2n+1}{2n+2}J_{2n}\)。所以 \[
+\boxed{I=\frac{(2n-1)!!}{(2n+2)!!}\frac\pi2\,a^{2n+2}.}
+\]
+
+\subsubsection{3. 混合偏导数}\label{ux6df7ux5408ux504fux5bfcux6570}
+
+令 \(u=xy^2\)、\(v=\sin(xy)\)，所有 \(f_i,f_{ij}\) 均在 \((u,v)\)
+取值。由 \[
+z_x=3x^2f+x^3y^2f_1+x^3y\cos(xy)f_2
+\] 对 \(y\) 求导并使用 \(f_{12}=f_{21}\)，得 \[
+\boxed{\begin{aligned}
+z_{xy}={}&8x^3yf_1+x^3[4\cos(xy)-xy\sin(xy)]f_2\\
+&+2x^4y^3f_{11}+3x^4y^2\cos(xy)f_{12}+x^4y\cos^2(xy)f_{22}.
+\end{aligned}}
+\]
+
+\subsubsection{4. 曲面积分}\label{ux66f2ux9762ux79efux5206}
+
+曲面 \(z=x^2+y^2\)、\(0\leq z\leq1\) 取向上法向量，投影为单位圆盘
+\(D\)，故 \[
+\begin{aligned}
+I&=\iint_D[-(2x+z)z_x+z]\,dx\,dy\\
+&=\iint_D[-3x^2+y^2-2x(x^2+y^2)]\,dx\,dy.
+\end{aligned}
+\] 最后一项关于 \(x\) 为奇函数，积分为零；又
+\(\iint_Dx^2=\iint_Dy^2=\pi/4\)，所以 \(\boxed{I=-\pi/2}\)。
+
+\subsection{三、综合题}\label{ux4e09ux7efcux5408ux9898}
+
+\subsubsection{1.
+含参积分的一致收敛}\label{ux542bux53c2ux79efux5206ux7684ux4e00ux81f4ux6536ux655b}
+
+记 \(F(x)=\int_0^{\infty}xe^{-xy}\,dy\)。当 \(x>0\) 时 \(F(x)=1\)，而
+\(F(0)=0\)。
+
+在 \(x\in[a,b]\)、\(a>0\) 时，尾积分为 \(e^{-xY}\)，且 \[
+\sup_{x\in[a,b]}\left|\int_Y^{\infty}xe^{-xy}\,dy\right|=e^{-aY}\longrightarrow0,
+\] 因此一致收敛。在 \([0,b]\)、\(b>0\) 上，对每个 \(Y>0\)， \[
+\sup_{x\in[0,b]}\left|\int_Y^{\infty}xe^{-xy}\,dy\right|=\sup_{0<x\leq b}e^{-xY}=1,
+\] 所以非一致收敛。若退化为 \(b=0\)
+的单点区间则不存在这一非一致收敛结论。
+
+\subsubsection{2.
+椭球的切平面和距离}\label{ux692dux7403ux7684ux5207ux5e73ux9762ux548cux8dddux79bb}
+
+曲面 \(x^2/2+y^2+z^2/4=1\) 在 \((x_0,y_0,z_0)\) 的切平面为 \[
+\frac{x_0x}{2}+y_0y+\frac{z_0z}{4}=1.
+\] 若与 \(2x+2y+z+5=0\) 平行，则 \(x_0=z_0=2y_0\)。代入椭球方程得接触点
+\(\pm(1,1/2,1)\)，切平面为 \(\boxed{2x+2y+z=\pm4}\)。
+
+由 Cauchy--Schwarz 不等式，椭球上 \[
+|2x+2y+z|=\left|(2\sqrt2,2,2)\cdot(x/\sqrt2,y,z/2)\right|\leq4.
+\] 所以到给定平面的距离为 \(|2x+2y+z+5|/3\geq1/3\)，并在
+\((-1,-1/2,-1)\) 处达到。因此最短距离为 \(\boxed{1/3}\)。
+
+\subsubsection{3.
+原点连续性及实值定义域问题}\label{ux539fux70b9ux8fdeux7eedux6027ux53caux5b9eux503cux5b9aux4e49ux57dfux95eeux9898}
+
+原题识读为 \[
+f(x,y)=\begin{cases}\dfrac{x^\alpha}{x^2+y^2},&(x,y)\neq(0,0),\\0,&(x,y)=(0,0),\end{cases}\qquad\alpha>0.
+\] 当 \(\alpha\) 为任意实数时，\(x<0\) 上的 \(x^\alpha\)
+未必有实数意义，因而原题缺少完整的实值定义域说明。不能不加说明地认定它在原点某个完整开邻域都有定义。
+
+在 \(x\geq0\) 的自然定义域上讨论相对连续性，或在 \(x^\alpha\)
+对两侧均有实值定义的参数范围内讨论，沿 \(y=0,x\to0^+\) 有
+\(f(x,0)=x^{\alpha-2}\)，所以连续必须满足 \(\alpha>2\)。反之，对
+\(\alpha>2\)， \[
+|f(x,y)|\leq(x^2+y^2)^{(\alpha-2)/2}\longrightarrow0,
+\] 故该条件充分。
+
+原参考答案建议的修正版是将分子改成
+\(|x|^\alpha\)，此时函数在整个实平面上有定义，原点连续的充要条件为
+\(\boxed{\alpha>2}\)。这里明确区分原题与修正版。
+
+\subsection{四、证明题}\label{ux56dbux8bc1ux660eux9898}
+
+\subsubsection{1. 指数不等式}\label{ux6307ux6570ux4e0dux7b49ux5f0f}
+
+设 \(h(t)=\ln t/t\)，则 \(t>e\) 时 \(h'(t)=(1-\ln t)/t^2<0\)。由
+\(a+x>a>e\)， \[
+\frac{\ln(a+x)}{a+x}<\frac{\ln a}{a}.
+\] 乘以正数 \(a(a+x)\) 再取指数，得到 \((a+x)^a<a^{a+x}\)。
+
+\subsubsection{2.
+两曲面面积相等}\label{ux4e24ux66f2ux9762ux9762ux79efux76f8ux7b49}
+
+两曲面分别写成 \(z=(x^2+y^2)/(2a)\) 与 \(z=(x^2-y^2)/(2a)\)。它们的
+\(z_x\) 均为 \(x/a\)，而 \(z_y\) 分别为 \(y/a\) 与
+\(-y/a\)，故面积元都等于 \[
+\sqrt{1+\frac{x^2+y^2}{a^2}}\,dx\,dy.
+\] 两个曲面部分在 \(xy\) 平面的投影均为
+\(x^2+y^2\leq R^2\)，因此面积相等。该证明只要求 \(a\neq0\)，无需假定
+\(a>0\)。
+
+\subsubsection{3.
+对数导数取任意实值}\label{ux5bf9ux6570ux5bfcux6570ux53d6ux4efbux610fux5b9eux503c}
+
+给定 \(K\in\mathbb R\)，令 \(F(x)=e^{-Kx}f(x)\)。由端点条件
+\(F(a)=F(b)=0\)，Rolle 定理给出 \(\xi\in(a,b)\) 使 \[
+0=F'(\xi)=e^{-K\xi}[f'(\xi)-Kf(\xi)].
+\] 因 \(f(\xi)\neq0\)，可得 \(f'(\xi)/f(\xi)=K\)。
+
+\subsubsection{4.
+闭区间与无界区间上的一致连续性}\label{ux95edux533aux95f4ux4e0eux65e0ux754cux533aux95f4ux4e0aux7684ux4e00ux81f4ux8fdeux7eedux6027}
+
+\(x^3\) 连续，因此由 Heine--Cantor
+定理，它在每个有限闭区间上一致连续。取 \[
+x_n=n^{1/3},\qquad y_n=(n+1)^{1/3},
+\] 则 \(|x_n-y_n|\to0\)，而 \(|x_n^3-y_n^3|=1\)，所以在 \([0,+\infty)\)
+上不一致连续。
+
+\subsubsection{5.
+原题严格不等号的反例与正确不等式}\label{ux539fux9898ux4e25ux683cux4e0dux7b49ux53f7ux7684ux53cdux4f8bux4e0eux6b63ux786eux4e0dux7b49ux5f0f}
+
+原真题 OCR 使用严格不等号``\(<\)''，该命题不成立。例如 \(f(x)=x\)
+满足全部条件，但 \[
+\left(\max_{[0,1]}f\right)^2=1=\int_0^1[f'(x)]^2\,dx.
+\] 原参考答案已经指出应改为``\(\leq\)''。其正确证明如下：由
+\(f(0)=0\)，对任意 \(x\in[0,1]\)， \[
+f(x)^2=\left(\int_0^xf'(t)\,dt\right)^2\leq x\int_0^x[f'(t)]^2\,dt\leq\int_0^1[f'(t)]^2\,dt.
+\] 取使 \(f\) 达到最大值的点，便得 \[
+\boxed{\left(\max_{0\leq x\leq1}f(x)\right)^2\leq\int_0^1[f'(t)]^2\,dt.}
+\]
+这里给出原命题的反例并证明明确的修正版，不把修正后的不等号假称为原题原文。
+\end{document}

@@ -1,0 +1,182 @@
+\documentclass[11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm,mathrsfs,esint}
+\usepackage{graphicx,longtable,booktabs,array,calc}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,hyperref}
+\hypersetup{hidelinks}
+\setcounter{secnumdepth}{-1}
+\newcounter{none}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\usepackage{amssymb,mathrsfs,esint,bm,newunicodechar}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{3em}
+\providecommand{\llangle}{\langle\!\langle}
+\providecommand{\rrangle}{\rangle\!\rangle}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{→}{\ensuremath{\to}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+\newunicodechar{Ω}{\ensuremath{\Omega}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\begin{document}
+\section{2023年高等代数真题（手写异文版）}\label{ux5e74ux9ad8ux7b49ux4ee3ux6570ux771fux9898ux624bux5199ux5f02ux6587ux7248}
+
+来源：\texttt{HDU/601数学分析/2023/2023年杭州电子科技大学数分高代(高代不含答案双科版).pdf}。原
+PDF 页序：7, 8。
+
+\section{2023年杭州电子科技大学高等代数手写异文题}\label{ux5e74ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b66ux9ad8ux7b49ux4ee3ux6570ux624bux5199ux5f02ux6587ux9898}
+
+\begin{quote}
+识读说明：这是手写题面异文，不含答案。依据本地逐页OCR与同年打印卷恢复可靠部分。第七题假设、第八题若干附加公式在两次OCR中均有明显冲突，无法可靠确认，保留识读限制并指向同年打印卷，不把乱码整理成确定题设。以下矩阵、第三题方程组已和打印卷交叉核对。
+\end{quote}
+
+\subsection{一、计算行列式}\label{ux4e00ux8ba1ux7b97ux884cux5217ux5f0f}
+
+\[
+\begin{vmatrix}
+1&2&3&4&5\\2&3&4&5&1\\3&4&5&1&2\\4&5&1&2&3\\5&1&2&3&4
+\end{vmatrix}.
+\]
+
+\subsection{二、矩阵方程}\label{ux4e8cux77e9ux9635ux65b9ux7a0b}
+
+设 \[
+A=\begin{pmatrix}1&1&0&-3\\4&-2&6&3\end{pmatrix}.
+\]
+
+（1）求 \(4\times2\) 矩阵 \(B\)，使 \(AB=0\) 且 \(r(B)=2\)。
+
+（2）求矩阵 \(X\)，使 \(AX=E\)，其中 \(E\) 为单位矩阵。
+
+\subsection{三、线性方程组}\label{ux4e09ux7ebfux6027ux65b9ux7a0bux7ec4}
+
+\[
+\begin{cases}
+\lambda x_1+x_2+x_3+x_4=1,\\
+x_1+\lambda x_2+x_3+x_4=1,\\
+x_1+x_2+\lambda x_3+x_4=\lambda,\\
+x_1+x_2+x_3+\lambda x_4=\lambda.
+\end{cases}
+\]
+
+（1）\(\lambda\) 为何值时有唯一解？求唯一解。
+
+（2）\(\lambda\) 为何值时有无穷多解？求通解。
+
+\subsection{四、二次型}\label{ux56dbux4e8cux6b21ux578b}
+
+设 \[
+f(x_1,x_2,x_3)=2x_1^2+5x_2^2+5x_3^2+4x_1x_2-4x_1x_3-8x_2x_3.
+\] 用正交变换 \(X=TY\) 将其化为标准形，求正交矩阵 \(T\)。
+
+\subsection{五、线性变换}\label{ux4e94ux7ebfux6027ux53d8ux6362}
+
+设 \(\varepsilon_1,\varepsilon_2,\varepsilon_3\) 是三维线性空间 \(V\)
+的一组基，线性变换 \(\mathcal A\) 在该基下的矩阵为 \[
+A=\begin{pmatrix}1&0&2\\-1&2&1\\1&2&5\end{pmatrix}.
+\]
+
+（1）求在基
+\(\eta_1=\varepsilon_1-2\varepsilon_2\)、\(\eta_2=3\varepsilon_2-\varepsilon_3\)、\(\eta_3=\varepsilon_3\)
+下的矩阵 \(B\)。
+
+（2）第二个待求对象在手写OCR中损坏；同年打印卷清楚写为求 \(\mathcal AV\)
+与 \(\mathcal A^{-1}(\theta)\)，\(\theta\)
+为零向量。这里采用该可核对的版本。
+
+\subsection{六、矩阵求逆}\label{ux516dux77e9ux9635ux6c42ux9006}
+
+已知 \(A,B,C\) 均为 \(n\) 阶方阵，\(E\)
+为单位矩阵，\(D=E+BCA\)，\(C=(E-AB)^{-1}\)。证明：
+
+（1）\(E-BA\) 可逆，且 \(D=(E-BA)^{-1}\)。
+
+（2）\(C=E+ADB\)。
+
+手写远程OCR曾把定义中的 \(E\) 识作 \(C\)，本地OCR与打印卷均支持上述
+\(D=E+BCA\)。
+
+\subsection{七、公共特征向量，手写假设未能确认}\label{ux4e03ux516cux5171ux7279ux5f81ux5411ux91cfux624bux5199ux5047ux8bbeux672aux80fdux786eux8ba4}
+
+可辨识的结论为：
+
+（1）\(A\) 的所有特征值为零。
+
+（2）两个复向量空间上的线性变换有公共特征向量。
+
+手写假设和第二个变换的字母在两份OCR中均损坏，不能确定原字迹。供交叉阅读，同年打印卷题面是``\(A,B\)
+为复 \(n\) 维线性空间 \(V\) 上的线性变换，且
+\(AB-BA=A\)''，结论为上述两条。此处引用打印题面，未将其宣称为已经可靠读出的手写文字。
+
+\subsection{八、实根多项式与附加异文}\label{ux516bux5b9eux6839ux591aux9879ux5f0fux4e0eux9644ux52a0ux5f02ux6587}
+
+可可靠读出的共同题设为 \[
+f(x)=(x-a_1)\cdots(x-a_n),
+\] 其中 \(a_1,\ldots,a_n\) 为两两互异的实数；第一条结论为多项式 \[
+[f'(x)]^2-f(x)f''(x)
+\] 没有实根。
+
+关于固定整数参数 \(k\ge2\)
+的公式，手写OCR的求和号和下标损坏。打印卷对应公式可清楚整理为 \[
+f'(x)=\sum_{i=1}^n\left[\frac1{x-a_i}\left(\frac{a_i}{x}\right)^{k+1}
++\frac1x\sum_{r=0}^k\left(\frac{a_i}{x}\right)^r\right]f(x),\qquad k\in\mathbb Z,\quad k\ge2.
+\] 该式先在 \(x\ne0,a_1,\ldots,a_n\)
+处理解。它是引用的打印卷公式，手写原式未能逐项确认。
+
+手写稿还存在打印卷未出现的附加片段：一个含 \(F(x)/[(x-a_i)F'(a_i)]\)
+的恒等式，以及``任意多项式用 \(F(x)\)
+除得余式''的结论。可辨识的余式候选项含 \[
+\frac{f(a_i)F(x)}{(x-a_i)F'(a_i)}.
+\] 但 \(F\)
+的定义、完整求和符号、各题的小问编号和条件没有得到可靠识读。上述仅记录片段结构，不能据此确定完整原题，也不将其作为可直接使用的题干。共同题目的完整解答见同年打印卷；这些附加异文仍需原件复核。
+
+\subsection{九、根子空间分解}\label{ux4e5dux6839ux5b50ux7a7aux95f4ux5206ux89e3}
+
+按打印卷与手写本地OCR可核对的共同内容，设 \(A\) 是数域 \(P\) 上 \(n\)
+维线性空间 \(V\) 上的线性变换，其特征多项式为 \[
+f(\lambda)=(\lambda-\lambda_1)^{r_1}\cdots(\lambda-\lambda_s)^{r_s},
+\] 其中 \(\lambda_1,\ldots,\lambda_s\) 两两互异。证明 \[
+V=V_1\oplus\cdots\oplus V_s,\qquad
+V_i=\{\xi\in V:(\lambda_iE-A)^{r_i}\xi=\theta\},\quad i=1,\ldots,s,
+\] \(E\) 为恒等变换、\(\theta\) 为零向量。手写稿中 \(V_i\)
+的具体定义在OCR中损坏，上式采用同年打印卷的可确认版本。
+\end{document}

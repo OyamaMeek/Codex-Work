@@ -1,0 +1,534 @@
+\documentclass[11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm,mathrsfs,esint}
+\usepackage{graphicx,longtable,booktabs,array,calc}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,hyperref}
+\hypersetup{hidelinks}
+\setcounter{secnumdepth}{-1}
+\newcounter{none}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\usepackage{amssymb,mathrsfs,esint,bm,newunicodechar}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{3em}
+\providecommand{\llangle}{\langle\!\langle}
+\providecommand{\rrangle}{\rangle\!\rangle}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{→}{\ensuremath{\to}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+\newunicodechar{Ω}{\ensuremath{\Omega}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\begin{document}
+\section{2026
+年杭州电子科技大学高等代数补充解析}\label{ux5e74ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b66ux9ad8ux7b49ux4ee3ux6570ux8865ux5145ux89e3ux6790}
+
+本文对应原卷一至八，共 8 道大题、17 个小问。题面依据本地 OCR 第 003、004
+页，并与另一份 OCR 文本交叉核对。两份 OCR
+均不能替代原卷：以下明确区分可直接证明的结论、原文字面存在的问题，以及补全条件后成立的命题。
+
+\subsection{一、不可约多项式与代数数的倒数}\label{ux4e00ux4e0dux53efux7ea6ux591aux9879ux5f0fux4e0eux4ee3ux6570ux6570ux7684ux5012ux6570}
+
+\subsubsection{\texorpdfstring{（1）证明 \(x^n-p\) 在 \(\mathbb Q\)
+上不可约}{（1）证明 x\^{}n-p 在 \textbackslash mathbb Q 上不可约}}\label{ux8bc1ux660e-xn-p-ux5728-mathbb-q-ux4e0aux4e0dux53efux7ea6}
+
+其中 \(p\) 为素数，\(n\geq1\)。对 \[
+g(x)=x^n-p
+\] 使用 Eisenstein 判别法：首项系数 1 不被 \(p\) 整除，其余系数均被
+\(p\) 整除，常数项 \(-p\) 不被 \(p^2\) 整除。因此 \(g(x)\) 在
+\(\mathbb Q[x]\) 中不可约。
+
+故 \(r=\sqrt[n]{p}\) 的最小多项式为 \(x^n-p\)，并且 \[
+1,r,\ldots,r^{n-1}
+\] 在 \(\mathbb Q\) 上线性无关。
+
+\subsubsection{\texorpdfstring{（2）求
+\(a,b,c\)}{（2）求 a,b,c}}\label{ux6c42-abc}
+
+令 \(u=\sqrt[3]{3}\)，则 \(u^2=\sqrt[3]{9}\)、\(u^3=3\)。利用 \[
+(u-1)(1+u+u^2)=u^3-1=2
+\] 得到 \[
+\frac1{1+\sqrt[3]{3}+\sqrt[3]{9}}
+=\frac{u-1}{2}
+=-\frac12+\frac12\sqrt[3]{3}+0\sqrt[3]{9}.
+\] 所以 \[
+\boxed{a=-\frac12,\qquad b=\frac12,\qquad c=0.}
+\] 由（1）中 \(x^3-3\) 的不可约性，这组有理数解唯一。
+
+\subsubsection{（3）行列式形式的倒数公式及题面辨析}\label{ux884cux5217ux5f0fux5f62ux5f0fux7684ux5012ux6570ux516cux5f0fux53caux9898ux9762ux8fa8ux6790}
+
+\textbf{题面问题。} 本地 OCR 将根式记成 \(\sqrt[p]{p}\)，另一份 OCR 记为
+\(\sqrt[n]{p}\)；后者与多项式次数及后续公式相符。两份 OCR 都把
+\(D,D(r)\) 排成矩阵，并将 \(D(r)\) 的第一列记为
+\(1,p,p^2,\ldots\)。矩阵之间的商不能直接作为这里的标量公式。可证明的版本需要明确：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(r=\sqrt[n]{p}\)，满足 \(r^n=p\)；
+\item
+  \(f\) 为非零多项式，\(\deg f<n\)；
+\item
+  \(D,D(r)\) 都表示\textbf{行列式}，且 \(D(r)\) 的第一列为
+  \(1,r,r^2,\ldots,r^{n-1}\)。
+\end{enumerate}
+
+这属于对公式成立条件的说明，不能据此断言原卷一定如此印刷。
+
+事实上，即使把 OCR 中的括号理解成行列式，保留第一列 \(1,p,p^2,\ldots\)
+仍会使公式失效。例如取 \(n=2,p=2,f(x)=x\)，则 \[
+M=\begin{pmatrix}0&1\\2&0\end{pmatrix},\quad
+\det M=-2,\quad
+\det\begin{pmatrix}1&1\\2&0\end{pmatrix}=-2.
+\] OCR 公式右端为 1，左端为 \(1/\sqrt2\)，两者不相等。
+
+\textbf{成立版本及证明。} 令 \(M\) 为题中 \(D\) 所写的矩阵，并令 \[
+v=(1,r,\ldots,r^{n-1})^T,\qquad
+D=\det M,
+\] \[
+D(r)=\det\begin{pmatrix}
+1&a_1&\cdots&a_{n-1}\\
+r&a_0&\cdots&a_{n-2}\\
+r^2&pa_{n-1}&\cdots&a_{n-3}\\
+\vdots&\vdots&\ddots&\vdots\\
+r^{n-1}&pa_2&\cdots&a_0
+\end{pmatrix}.
+\] 在域 \[
+K=\mathbb Q[x]/(x^n-p)
+\] 中，乘以 \(f(x)\) 的线性变换在基 \(1,x,\ldots,x^{n-1}\) 下的矩阵正是
+\(M^T\)。由（1），\(K\) 是域；又因 \(f\neq0,\deg f<n\)，\(f\) 在 \(K\)
+中非零，因此这个乘法变换可逆，故 \(D\neq0\)。同时 \(f(r)\neq0\)。
+
+利用 \(r^n=p\)，逐行计算可得 \[
+Mv=f(r)v.
+\] 于是 \[
+M\left(\frac{v}{f(r)}\right)=v.
+\] 对这一线性方程组应用 Cramer 法则，解向量的第一分量为 \[
+\boxed{\frac1{f(r)}=\frac{D(r)}D.}
+\]
+
+\subsection{\texorpdfstring{二、满足 \(ABA=A\)
+的矩阵与线性方程组}{二、满足 ABA=A 的矩阵与线性方程组}}\label{ux4e8cux6ee1ux8db3-abaa-ux7684ux77e9ux9635ux4e0eux7ebfux6027ux65b9ux7a0bux7ec4}
+
+设 \(A\in\mathbb F^{m\times n}\)、\(B\in\mathbb F^{n\times m}\)，且
+\(ABA=A\)。
+
+\subsubsection{（1）有解的充要条件}\label{ux6709ux89e3ux7684ux5145ux8981ux6761ux4ef6}
+
+若 \(AX=\beta\) 有解 \(X_0\)，则 \[
+AB\beta=ABAX_0=AX_0=\beta.
+\] 反之，若 \(AB\beta=\beta\)，取 \(X_0=B\beta\)，便有 \[
+AX_0=AB\beta=\beta.
+\] 因此 \[
+\boxed{AX=\beta\text{ 有解}\iff AB\beta=\beta.}
+\]
+
+\subsubsection{（2）全部解的表达式}\label{ux5168ux90e8ux89e3ux7684ux8868ux8fbeux5f0f}
+
+在有解的条件下，对任意 \(\alpha\in\mathbb F^n\)， \[
+A\bigl[B\beta+(I_n-BA)\alpha\bigr]
+=AB\beta+(A-ABA)\alpha=\beta.
+\] 所以给出的表达式中每个向量都是解。
+
+若 \(X\) 是任意一个解，取 \(\alpha=X\)，则 \[
+B\beta+(I_n-BA)X
+=BAX+X-BAX=X.
+\] 因此所有解恰为 \[
+\boxed{X=B\beta+(I_n-BA)\alpha,\qquad\alpha\in\mathbb F^n.}
+\] 这里不需要增加 \(BAB=B\) 之类的条件。
+
+\subsection{三、不变子空间与特征向量}\label{ux4e09ux4e0dux53d8ux5b50ux7a7aux95f4ux4e0eux7279ux5f81ux5411ux91cf}
+
+\subsubsection{原命题的条件问题与反例}\label{ux539fux547dux9898ux7684ux6761ux4ef6ux95eeux9898ux4e0eux53cdux4f8b}
+
+OCR 题面只说 \(\lambda_1,\ldots,\lambda_s\)
+是特征值，没有说明它们两两不同、均非零。按此表述，由 \[
+\lambda_1\alpha_1+\cdots+\lambda_s\alpha_s\in W
+\] 不能推出 \(\dim W\geq s\)。
+
+\textbf{零特征值的反例。} 在 \(V=\mathbb R^2\) 上取 \[
+[\varphi]=\operatorname{diag}(0,1),\quad
+\alpha_1=e_1,\quad\alpha_2=e_2,\quad W=\operatorname{span}\{e_2\}.
+\] 两个特征值已经互异，\(W\) 也是不变子空间，但 \[
+0\alpha_1+1\alpha_2=e_2\in W,\qquad\dim W=1<2.
+\]
+
+\textbf{重复特征值的反例。} 取
+\(\varphi=I_2\)、\(\lambda_1=\lambda_2=1\)、\(\alpha_1=e_1,\alpha_2=e_2\)，并令
+\[
+W=\operatorname{span}\{e_1+e_2\}.
+\] 仍有 \(\lambda_1\alpha_1+\lambda_2\alpha_2\in W\)，但
+\(\dim W=1<2\)。
+
+\subsubsection{补全条件后的证明}\label{ux8865ux5168ux6761ux4ef6ux540eux7684ux8bc1ux660e}
+
+若额外规定 \(\lambda_1,\ldots,\lambda_s\)
+\textbf{两两不同且均非零}，原式可以推出结论。
+
+记 \[
+w=\sum_{i=1}^s\lambda_i\alpha_i\in W.
+\] 由于 \(W\) 是 \(\varphi\)-不变子空间， \[
+\varphi^jw=\sum_{i=1}^s\lambda_i^{j+1}\alpha_i\in W,
+\qquad j=0,1,\ldots,s-1.
+\] 这些等式的系数矩阵为 \[
+C=\begin{pmatrix}
+\lambda_1&\lambda_2&\cdots&\lambda_s\\
+\lambda_1^2&\lambda_2^2&\cdots&\lambda_s^2\\
+\vdots&\vdots&&\vdots\\
+\lambda_1^s&\lambda_2^s&\cdots&\lambda_s^s
+\end{pmatrix},
+\] 其行列式为 \[
+\det C=\left(\prod_{i=1}^s\lambda_i\right)
+\prod_{1\leq i<j\leq s}(\lambda_j-\lambda_i)\neq0.
+\] 因此每个 \(\alpha_i\) 都是 \(w,\varphi w,\ldots,\varphi^{s-1}w\)
+的线性组合，故 \(\alpha_i\in W\)。不同特征值对应的特征向量线性无关，从而
+\[
+\boxed{\dim W\geq s.}
+\]
+
+另一种独立成立的常见命题是：当特征值两两不同时，若
+\(\alpha_1+\cdots+\alpha_s\in W\)，也有
+\(\dim W\geq s\)，此时允许出现零特征值。更一般地，\(\sum c_i\alpha_i\in W\)
+配合两两不同的特征值及每个 \(c_i\neq0\)
+即可。现有文本不能确定原卷遗漏的是哪一项。
+
+\subsection{四、单特征谱线性变换的交换变换}\label{ux56dbux5355ux7279ux5f81ux8c31ux7ebfux6027ux53d8ux6362ux7684ux4ea4ux6362ux53d8ux6362}
+
+设所有特征值属于底域，\(f\) 有 \(n\) 个互异特征值
+\(\lambda_1,\ldots,\lambda_n\)，取对应特征向量基
+\(v_1,\ldots,v_n\)。于是 \[
+E_{\lambda_i}(f)=\operatorname{span}\{v_i\}.
+\]
+
+\subsubsection{（1）``是特征子空间''与``包含于特征子空间''}\label{ux662fux7279ux5f81ux5b50ux7a7aux95f4ux4e0eux5305ux542bux4e8eux7279ux5f81ux5b50ux7a7aux95f4}
+
+若``特征子空间''采用通常的完整定义 \[
+E_\mu(g)=\ker(g-\mu I),
+\] OCR 中``\(f\) 的特征子空间均为 \(g\)
+的特征子空间''的充要条件表述不成立。例如 \[
+f=\operatorname{diag}(1,2),\qquad g=I_2
+\] 满足 \(fg=gf\)，但 \(g\) 唯一的特征子空间是 \(V\)，\(f\)
+的两个一维特征子空间均不等于 \(V\)。
+
+成立的精确版本为： \[
+\boxed{fg=gf\iff
+\text{每个 }E_{\lambda_i}(f)\text{ 包含于 }g\text{ 的某个特征子空间}.}
+\] 这也等价于``\(f\) 的每个特征向量都是 \(g\) 的特征向量''，或``\(f\)
+的各特征子空间都是 \(g\)-不变子空间''。
+
+\textbf{必要性。} 若 \(fg=gf\)，则 \[
+f(gv_i)=g(fv_i)=\lambda_i gv_i,
+\] 故 \(gv_i\in E_{\lambda_i}(f)=\operatorname{span}\{v_i\}\)。存在标量
+\(\mu_i\)，使 \[
+gv_i=\mu_i v_i.
+\] 于是 \(E_{\lambda_i}(f)\subseteq E_{\mu_i}(g)\)。\(\mu_i=0\) 也允许。
+
+\textbf{充分性。} 设 \(gv_i=\mu_i v_i\)，则 \[
+fgv_i=\lambda_i\mu_i v_i=gfv_i.
+\] 两变换在一组基上相等，因此 \(fg=gf\)。
+
+若坚持用``等于完整特征子空间''的字面含义，则在交换条件下还需要
+\(\mu_1,\ldots,\mu_n\) 两两不同；否则多个 \(f\)
+的特征子空间会合并到同一个 \(g\) 的特征子空间中。
+
+\subsubsection{\texorpdfstring{（2）证明 \(g\) 是 \(I,f,\ldots,f^{n-1}\)
+的线性组合}{（2）证明 g 是 I,f,\textbackslash ldots,f\^{}\{n-1\} 的线性组合}}\label{ux8bc1ux660e-g-ux662f-ifldotsfn-1-ux7684ux7ebfux6027ux7ec4ux5408}
+
+由（1）中对交换性的证明，存在 \(\mu_i\) 使 \(gv_i=\mu_i v_i\)。构造
+Lagrange 插值多项式 \[
+q(x)=\sum_{i=1}^n\mu_i
+\prod_{j\ne i}\frac{x-\lambda_j}{\lambda_i-\lambda_j}.
+\] 它的次数不超过 \(n-1\)，且 \(q(\lambda_i)=\mu_i\)。所以 \[
+q(f)v_i=q(\lambda_i)v_i=\mu_i v_i=gv_i.
+\] 由于 \(v_1,\ldots,v_n\) 构成基，\(g=q(f)\)。展开 \(q\) 得 \[
+\boxed{g=c_0I+c_1f+\cdots+c_{n-1}f^{n-1}.}
+\] 此结论不要求 \(g\) 的特征值互异。
+
+\subsection{五、矩阵空间的内积与交换子的值域}\label{ux4e94ux77e9ux9635ux7a7aux95f4ux7684ux5185ux79efux4e0eux4ea4ux6362ux5b50ux7684ux503cux57df}
+
+设 \[
+A=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad
+f(X)=AX-XA,\qquad
+\langle X,Y\rangle=\operatorname{tr}(X^TAY).
+\]
+
+\subsubsection{（1）证明是内积}\label{ux8bc1ux660eux662fux5185ux79ef}
+
+由矩阵乘法和迹的线性性，\(\langle\cdot,\cdot\rangle\)
+对两个变量分别线性。因为 \(A^T=A\)， \[
+\langle X,Y\rangle
+=\operatorname{tr}\bigl((X^TAY)^T\bigr)
+=\operatorname{tr}(Y^TAX)=\langle Y,X\rangle.
+\] 又因为 \(A\) 的顺序主子式为 \(1,1\)，故 \(A\) 正定。将 \(X\)
+的两列记为 \(x^{(1)},x^{(2)}\)，有 \[
+\langle X,X\rangle
+=\sum_{j=1}^2(x^{(j)})^TAx^{(j)}\geq0,
+\] 等号当且仅当 \(X=0\)。因此给定形式满足实内积的全部公理。
+
+\subsubsection{（2）求值域的一组标准正交基}\label{ux6c42ux503cux57dfux7684ux4e00ux7ec4ux6807ux51c6ux6b63ux4ea4ux57fa}
+
+令 \[
+X=\begin{pmatrix}p&q\\r&s\end{pmatrix}.
+\] 直接计算 \[
+f(X)=\begin{pmatrix}
+r-q&s-p-q\\
+p+r-s&q-r
+\end{pmatrix}.
+\] 若记右上角为 \(b=s-p-q\)、左下角为 \(c=p+r-s\)，则左上角为
+\(b+c\)，因此 \[
+\operatorname{Im}f
+=\left\{\begin{pmatrix}b+c&b\\c&-b-c\end{pmatrix}:b,c\in\mathbb R\right\}
+=\operatorname{span}\{U,V\},
+\] 其中 \[
+U=\begin{pmatrix}1&1\\0&-1\end{pmatrix},\qquad
+V=\begin{pmatrix}1&0\\1&-1\end{pmatrix}.
+\] 这里 \(f(-E_{12})=U\)、\(f(E_{21})=V\)，且 \(U,V\)
+线性无关，所以上式确实给出完整值域。
+
+按题目指定的内积计算： \[
+\langle U,U\rangle=2,\qquad
+\langle U,V\rangle=3,\qquad
+\langle V,V\rangle=7.
+\] Gram--Schmidt 正交化给出 \[
+V-\frac32U,\qquad
+\left\|V-\frac32U\right\|^2=7-\frac92=\frac52.
+\] 因此所求一组标准正交基为 \[
+\boxed{\left\{
+\frac1{\sqrt2}\begin{pmatrix}1&1\\0&-1\end{pmatrix},\quad
+\frac1{\sqrt{10}}\begin{pmatrix}-1&-3\\2&1\end{pmatrix}
+\right\}.}
+\] 这里的``标准''指在给定内积下各向量长度为 1，不能改用 Frobenius
+内积计算长度。
+
+\subsection{六、秩一条件、相似对角化与二次型的正交标准形}\label{ux516dux79e9ux4e00ux6761ux4ef6ux76f8ux4f3cux5bf9ux89d2ux5316ux4e0eux4e8cux6b21ux578bux7684ux6b63ux4ea4ux6807ux51c6ux5f62}
+
+题目仅写 \(f(X)=X^TAX\)，并未明确规定 \(A\)
+对称。任意实矩阵都可产生二次型，真正决定二次型的是 \[
+S=\frac{A+A^T}{2},\qquad X^TAX=X^TSX.
+\] 下面严格按题目给出的矩阵及秩条件求解。若另行强加 \(A\)
+对称，则条件反而无解，不能这样补充假设。
+
+\subsubsection{由秩条件确定全部参数}\label{ux7531ux79e9ux6761ux4ef6ux786eux5b9aux5168ux90e8ux53c2ux6570}
+
+令 \[
+N=2I_4-A
+=\begin{pmatrix}
+0&-t&-2&2\\
+-a&2&-b&-c\\
+-d&-e&2&-f\\
+-g&-h&-k&-2
+\end{pmatrix}.
+\] 其第一行非零。因为
+\(\operatorname{rank}N=1\)，其他每行均为第一行的倍数。第二行的第二个元素为
+2，所以 \(t\neq0\)，且第二行倍数为 \(-2/t\)。第三行的第三个元素为
+2，所以第三行倍数为 \(-1\)；第四行的第四个元素为
+\(-2\)，所以第四行倍数也为 \(-1\)。因此 \[
+\boxed{
+A(t)=\begin{pmatrix}
+2&t&2&-2\\
+0&0&-4/t&4/t\\
+0&-t&0&2\\
+0&-t&-2&4
+\end{pmatrix},\qquad t\neq0.}
+\] 也即 \[
+a=d=g=0,\quad b=-4/t,\quad c=4/t,\quad
+e=h=-t,\quad f=2,\quad k=-2.
+\] 在这个矩阵族中 \(A_{13}=2,A_{31}=0\)，所以它们均不对称。
+
+\subsubsection{（1）判断是否相似于对角矩阵}\label{ux5224ux65adux662fux5426ux76f8ux4f3cux4e8eux5bf9ux89d2ux77e9ux9635}
+
+答案为\textbf{相似}。由于 \[
+\operatorname{tr}A=2+0+0+4=6,\qquad
+\operatorname{tr}N=8-6=2,
+\] 对秩一矩阵 \(N=uv^T\)，有 \[
+N^2=u(v^Tu)v^T=(\operatorname{tr}N)N=2N.
+\] 将 \(N=2I-A\) 代入可得 \[
+A(A-2I)=0.
+\] 所以 \(A\) 的最小多项式整除 \(x(x-2)\)，没有重根，\(A\)
+可相似对角化。又由 \[
+\dim\ker(A-2I)=4-1=3
+\] 可知特征值 2 的特征子空间维数为 3，另一个特征值为 0。因此 \[
+\boxed{A\sim\operatorname{diag}(2,2,2,0).}
+\] 这里``\(A\) 有特征值
+2''已由给定秩条件推出，无须单独使用。相似对角化本身不能用于确定
+\(X^TAX\) 的正交标准形。
+
+\subsubsection{\texorpdfstring{（2）\(t=2\)
+时的正交标准形}{（2）t=2 时的正交标准形}}\label{t2-ux65f6ux7684ux6b63ux4ea4ux6807ux51c6ux5f62}
+
+由已求出的全部参数，\(t=2\) 时矩阵确实唯一： \[
+A=\begin{pmatrix}
+2&2&2&-2\\
+0&0&-2&2\\
+0&-2&0&2\\
+0&-2&-2&4
+\end{pmatrix}.
+\] 其对称部分为 \[
+S=\frac{A+A^T}{2}
+=\begin{pmatrix}
+2&1&1&-1\\
+1&0&-2&0\\
+1&-2&0&0\\
+-1&0&0&4
+\end{pmatrix}.
+\] 为了直接求特征值，写成 \[
+N=uv^T,\qquad
+u=(1,-1,-1,-1)^T,\quad v=(0,-2,-2,2)^T.
+\] 则 \[
+S=2I-\frac{uv^T+vu^T}{2},\quad
+u^Tv=2,\quad\|u\|=2,\quad\|v\|=2\sqrt3.
+\] 在 \(\operatorname{span}\{u,v\}^\perp\) 上，\(S=2I\)，故有两个特征值
+2。另两个方向为 \[
+u+\frac{v}{\sqrt3},\qquad u-\frac{v}{\sqrt3},
+\] 它们互相垂直，分别对应 \(S\) 的特征值 \[
+1-2\sqrt3,\qquad1+2\sqrt3.
+\] 因此存在正交变换 \(X=QY\)，使 \[
+\boxed{f=2y_1^2+2y_2^2+(1-2\sqrt3)y_3^2+(1+2\sqrt3)y_4^2.}
+\] 例如可取 \(Q\) 的列向量为 \[
+q_1=\frac{(0,1,-1,0)^T}{\sqrt2},\qquad
+q_2=\frac{(4,1,1,2)^T}{\sqrt{22}},
+\] \[
+q_3=\frac{u+v/\sqrt3}{\sqrt{8+4/\sqrt3}},\qquad
+q_4=\frac{u-v/\sqrt3}{\sqrt{8-4/\sqrt3}}.
+\] 直接验证 \(Q^TQ=I\)，且 \[
+Q^TSQ=\operatorname{diag}(2,2,1-2\sqrt3,1+2\sqrt3).
+\] 正交标准形的系数集合由 \(S\) 的特征值唯一确定，允许调换顺序；正交矩阵
+\(Q\) 不唯一。二次型有 3 个正系数、1 个负系数，秩为 4。第（1）问中 \(A\)
+的零特征值不能据此判定二次型的秩。
+
+\subsection{七、正定矩阵与广义特征值}\label{ux4e03ux6b63ux5b9aux77e9ux9635ux4e0eux5e7fux4e49ux7279ux5f81ux503c}
+
+按高等代数的通常约定，``正定矩阵''指实对称正定矩阵。设 \[
+P^TAP=I,\qquad P^TBP=D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).
+\] 由于 \(B\) 正定，合同变换后的 \(D\) 正定，故每个 \(\lambda_i>0\)。
+
+\subsubsection{\texorpdfstring{（1）证明 \(\lambda_i\) 是 \(BA^{-1}\)
+的全部特征值}{（1）证明 \textbackslash lambda\_i 是 BA\^{}\{-1\} 的全部特征值}}\label{ux8bc1ux660e-lambda_i-ux662f-ba-1-ux7684ux5168ux90e8ux7279ux5f81ux503c}
+
+由两个合同关系， \[
+A=P^{-T}P^{-1},\qquad A^{-1}=PP^T,\qquad
+B=P^{-T}DP^{-1}.
+\] 所以 \[
+BA^{-1}=P^{-T}DP^T,
+\] 即 \[
+\boxed{P^T(BA^{-1})P^{-T}=D.}
+\] 因此 \(BA^{-1}\) 与 \(D\) 相似，其全部特征值正是
+\(\lambda_1,\ldots,\lambda_n\)，包括代数重数。这里没有假定 \(BA^{-1}\)
+本身对称。
+
+\subsubsection{（2）证明正定性与特征值条件等价}\label{ux8bc1ux660eux6b63ux5b9aux6027ux4e0eux7279ux5f81ux503cux6761ux4ef6ux7b49ux4ef7}
+
+因为 \[
+P^T(A-B)P=I-D,
+\] 且可逆合同变换保持正定性，故 \[
+A-B>0\iff I-D>0
+\iff1-\lambda_i>0\quad(i=1,\ldots,n).
+\] 结合 \(\lambda_i>0\)，得到 \[
+\boxed{A-B>0\iff\text{每个 }\lambda_i\text{ 满足 }|\lambda_i|<1.}
+\]
+
+\subsubsection{\texorpdfstring{（3）由 \(A^2-B^2>0\) 证明
+\(A-B>0\)}{（3）由 A\^{}2-B\^{}2\textgreater0 证明 A-B\textgreater0}}\label{ux7531-a2-b20-ux8bc1ux660e-a-b0}
+
+令 \(C=A-B\)。它是实对称矩阵，取任意特征值 \(\mu\) 及相应非零实特征向量
+\(x\)，则 \(Cx=\mu x\)，且 \(x^TC=\mu x^T\)。利用恒等式 \[
+A^2-B^2=A(A-B)+(A-B)B=AC+CB,
+\] 得到 \[
+0<x^T(A^2-B^2)x
+=\mu x^TAx+\mu x^TBx
+=\mu x^T(A+B)x.
+\] 由于 \(A+B\) 正定，\(x^T(A+B)x>0\)，故 \(\mu>0\)。\(C\)
+的每个特征值均为正，从而 \[
+\boxed{A-B>0.}
+\] 此证明不要求 \(AB=BA\)，也没有使用一般不成立的因式分解
+\(A^2-B^2=(A-B)(A+B)\)。
+
+\subsection{八、零化链与矩阵幂的秩稳定}\label{ux516bux96f6ux5316ux94feux4e0eux77e9ux9635ux5e42ux7684ux79e9ux7a33ux5b9a}
+
+\subsubsection{\texorpdfstring{（1）证明
+\(\alpha,A\alpha,\ldots,A^k\alpha\)
+线性无关}{（1）证明 \textbackslash alpha,A\textbackslash alpha,\textbackslash ldots,A\^{}k\textbackslash alpha 线性无关}}\label{ux8bc1ux660e-alphaaalphaldotsakalpha-ux7ebfux6027ux65e0ux5173}
+
+设存在关系 \[
+c_0\alpha+c_1A\alpha+\cdots+c_kA^k\alpha=0.
+\] 若系数不全为零，取最小的 \(j\) 使 \(c_j\neq0\)。在上式两端乘
+\(A^{k-j}\)，由于 \(A^{k+1}\alpha=0\)，高于 \(k\) 次的各项全部为零，得到
+\[
+c_jA^k\alpha=0.
+\] 这与 \(c_j\neq0\) 及 \(A^k\alpha\neq0\) 矛盾。因此所有 \(c_i\)
+都为零，原向量组线性无关。
+
+\(k=0\) 时，该结论就是单个非零向量线性无关，证明同样适用。
+
+\subsubsection{\texorpdfstring{（2）证明从第 \(n\)
+次幂起秩稳定}{（2）证明从第 n 次幂起秩稳定}}\label{ux8bc1ux660eux4eceux7b2c-n-ux6b21ux5e42ux8d77ux79e9ux7a33ux5b9a}
+
+此处需要 \(A\) 为 \(n\) 阶方阵，指数中的 \(n\) 是空间维数。
+
+首先总有 \[
+\ker A^j\subseteq\ker A^{j+1}.
+\] 如果 \(\ker A^n\neq\ker A^{n+1}\)，可取 \[
+\alpha\in\ker A^{n+1}\setminus\ker A^n.
+\] 于是 \(A^n\alpha\neq0,A^{n+1}\alpha=0\)。由（1）， \[
+\alpha,A\alpha,\ldots,A^n\alpha
+\] 这 \(n+1\) 个向量线性无关，与空间维数为 \(n\) 矛盾。因此 \[
+\ker A^n=\ker A^{n+1}.
+\] 再证明一旦相邻两次的核相等，后面便一直相等。若
+\(\ker A^j=\ker A^{j+1}\)，且 \(x\in\ker A^{j+2}\)，则 \[
+Ax\in\ker A^{j+1}=\ker A^j,
+\] 故 \(A^{j+1}x=0\)，即 \(x\in\ker A^{j+1}\)。与反向包含关系合并，得到
+\[
+\ker A^{j+1}=\ker A^{j+2}.
+\] 归纳可得 \(\ker A^n=\ker A^{n+1}=\cdots\)。最后由秩与零度定理， \[
+\boxed{\operatorname{rank}(A^n)=\operatorname{rank}(A^{n+1})
+=\operatorname{rank}(A^{n+2})=\cdots.}
+\]
+
+\subsection{计算核验范围}\label{ux8ba1ux7b97ux6838ux9a8cux8303ux56f4}
+
+配套脚本 \texttt{check\_algebra2026.py} 使用 SymPy 精确计算核验：第一题
+OCR
+公式的反例及修正后公式的具体实例、第三题和第四题反例、第五题值域与内积正交归一结果、第六题一般参数矩阵的秩与特征多项式，以及
+\(t=2\)
+时的正交变换和标准形。上述一般性结论仍以本文的代数证明为依据，有限实例核验不替代证明。未查看原卷图片，OCR
+中的条件遗漏及符号差异尚不能断定来自原卷还是识别过程。
+\end{document}

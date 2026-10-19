@@ -1,0 +1,716 @@
+\documentclass[11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm,mathrsfs,esint}
+\usepackage{graphicx,longtable,booktabs,array,calc}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,hyperref}
+\hypersetup{hidelinks}
+\setcounter{secnumdepth}{-1}
+\newcounter{none}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\usepackage{amssymb,mathrsfs,esint,bm,newunicodechar}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{3em}
+\providecommand{\llangle}{\langle\!\langle}
+\providecommand{\rrangle}{\rangle\!\rangle}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{→}{\ensuremath{\to}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+\newunicodechar{Ω}{\ensuremath{\Omega}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\begin{document}
+\section{2026年杭州电子科技大学601数学分析真题补充解析}\label{ux5e74ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b66601ux6570ux5b66ux5206ux6790ux771fux9898ux8865ux5145ux89e3ux6790}
+
+\begin{quote}
+本文由助手依据已识别的原题逐题推导编写，共20题，不是原卷附带答案。题号沿用原卷。涉及题面条件不足或曲线选择不明确之处，保留原题，并分别说明适用条件与结果。
+\end{quote}
+
+\subsection{一、填空题}\label{ux4e00ux586bux7a7aux9898}
+
+\subsubsection{1. 幂指极限}\label{ux5e42ux6307ux6781ux9650}
+
+原题为
+\(\displaystyle\lim_{n\to\infty}\tan^n\left(\frac\pi4+\frac1n\right)\)。
+
+令 \(g(t)=\ln\tan(\pi/4+t)\)，则 \(g(0)=0\)，且
+
+\[
+g'(0)=\left.\frac{\sec^2(\pi/4+t)}{\tan(\pi/4+t)}\right|_{t=0}=2.
+\]
+
+因此
+
+\[
+n\ln\tan\left(\frac\pi4+\frac1n\right)
+=\frac{g(1/n)-g(0)}{1/n}\longrightarrow2.
+\]
+
+取指数，答案为 \(\boxed{e^2}\)。
+
+\subsubsection{2.
+二元无穷远极限}\label{ux4e8cux5143ux65e0ux7a77ux8fdcux6781ux9650}
+
+原题为
+\(\displaystyle\lim_{(x,y)\to(+\infty,+\infty)}(x^2+y^2)e^{-(x+y)}\)。
+
+当 \(x,y>0\) 时，
+
+\[
+0\le(x^2+y^2)e^{-(x+y)}
+=x^2e^{-x}e^{-y}+y^2e^{-y}e^{-x}
+\le x^2e^{-x}+y^2e^{-y}.
+\]
+
+右端趋于零，由夹逼定理，答案为 \(\boxed0\)。
+
+\subsubsection{3. 定积分}\label{ux5b9aux79efux5206}
+
+令 \(t=\sqrt{e^x-1}\)，则 \(e^x=1+t^2\)，\(dx=2t(1+t^2)^{-1}dt\)。当
+\(x=0,\ln2\) 时，分别有 \(t=0,1\)。故
+
+\[
+\int_0^{\ln2}\sqrt{e^x-1}\,dx
+=2\int_0^1\frac{t^2}{1+t^2}\,dt
+=2[t-\arctan t]_0^1
+=\boxed{2-\frac\pi2}.
+\]
+
+\subsubsection{4.
+含函数比值的幂指极限}\label{ux542bux51fdux6570ux6bd4ux503cux7684ux5e42ux6307ux6781ux9650}
+
+原题为
+
+\[
+\lim_{n\to\infty}\left[\frac{f(2026+1/n)}{f(2026)}\right]^n.
+\]
+
+\textbf{条件说明：} 题面未给出 \(f(2026)\ne0\)
+及相应的局部正则性，按原有条件不能确定答案。如果
+\(f(2026)=0\)，式子甚至没有定义。
+
+若补充 \(f(2026)\ne0\) 且 \(f\) 在 \(2026\) 处右可微，则
+
+\[
+\frac{f(2026+h)}{f(2026)}
+=1+\frac{f'_+(2026)}{f(2026)}h+o(h),\qquad h\to0^+.
+\]
+
+比值在充分小的正 \(h\) 下为正，从而
+
+\[
+\lim_{n\to\infty}n\ln\frac{f(2026+1/n)}{f(2026)}
+=\frac{f'_+(2026)}{f(2026)}.
+\]
+
+在这些条件下，答案为
+
+\[
+\boxed{\exp\!\left(\frac{f'_+(2026)}{f(2026)}\right)}.
+\]
+
+通常以双侧可微为条件时，将 \(f'_+\) 写成 \(f'\)
+即可。仅有连续性也不足以保证有限极限，例如
+\(f(x)=1+\sqrt{|x-2026|}\)，对应幂指式趋于 \(+\infty\)。
+
+\subsubsection{5.
+隐函数参与的偏导数}\label{ux9690ux51fdux6570ux53c2ux4e0eux7684ux504fux5bfcux6570}
+
+题面给出 \(f(x,y,z)=xy^2z^3e^{xyz}\)，\(z=z(x,y)\) 由 \(x+y+z+xyz=0\)
+确定，求 \(f_x(1,1,-1)\)。
+
+令 \(G(x,y,z)=x+y+z+xyz\)。在 \((1,1,-1)\)
+处，\(G_z=1+xy=2\ne0\)，故局部存在可微隐函数，而且
+
+\[
+z_x=-\frac{1+yz}{1+xy},\qquad z_x(1,1)=0.
+\]
+
+若 \(f_x\) 指三元函数对第一变量的偏导，则
+
+\[
+f_x=y^2z^3e^{xyz}(1+xyz),\qquad f_x(1,1,-1)=0.
+\]
+
+若题意是复合函数 \(H(x,y)=f(x,y,z(x,y))\) 的偏导，则
+
+\[
+H_x=f_x+f_z z_x,
+\]
+
+同一点上两项均为零。因此两种理解的填空结果均为 \(\boxed0\)。
+
+\subsubsection{6.
+圆柱体上的三重积分极限}\label{ux5706ux67f1ux4f53ux4e0aux7684ux4e09ux91cdux79efux5206ux6781ux9650}
+
+原题仅给出 \(f(0)=0\)，积分区域为 \(V:\ x^2+y^2\le t^2,\ 0\le z\le1\)。
+
+在相关积分存在的前提下，用柱坐标及 \(s=r^2\) 得
+
+\[
+\begin{aligned}
+F(t)
+&=2\pi\int_0^t\int_0^1[z^2+f(r^2)]r\,dz\,dr\\
+&=\frac{\pi t^2}{3}+\pi\int_0^{t^2}f(s)\,ds.
+\end{aligned}
+\]
+
+因此
+
+\[
+\frac{F(t)}{t^2}=\frac\pi3+
+\pi\frac1{t^2}\int_0^{t^2}f(s)\,ds.
+\]
+
+\textbf{条件说明：} \(f(0)=0\) 不能保证右侧积分平均值趋于零。例如取
+\(f(0)=0\)、\(f(s)=1\)（\(s>0\)），则极限为 \(4\pi/3\)；取
+\(f\equiv0\)，则极限为 \(\pi/3\)。所以原题条件不足。
+
+若补充 \(\lim_{s\to0^+}f(s)=f(0)=0\)，则
+
+\[
+\left|\frac1{t^2}\int_0^{t^2}f(s)\,ds\right|
+\le\sup_{0\le s\le t^2}|f(s)|\longrightarrow0,
+\]
+
+从而答案为 \(\boxed{\pi/3}\)。
+
+\subsubsection{7.
+两段圆弧上的第二类曲线积分}\label{ux4e24ux6bb5ux5706ux5f27ux4e0aux7684ux7b2cux4e8cux7c7bux66f2ux7ebfux79efux5206}
+
+原积分为
+
+\[
+\int_L3x^2y\,dx+(x^3+x-2y)\,dy,
+\]
+
+其中先沿 \(x^2+y^2=2x\) 从 \((0,0)\) 到 \((2,0)\)，再沿 \(x^2+y^2=4\) 从
+\((2,0)\) 到 \((0,2)\)。
+
+注意
+
+\[
+3x^2y\,dx+(x^3+x-2y)\,dy=d(x^3y-y^2)+x\,dy.
+\]
+
+故原积分等于 \(-4+\int_Lx\,dy\)。
+
+第一段圆的参数为
+\(x=1+\cos\theta\)、\(y=\sin\theta\)。若走上半圆，\(\theta:\pi\to0\)，则
+
+\[
+\int_{L_1}x\,dy=\int_\pi^0(1+\cos\theta)\cos\theta\,d\theta=-\frac\pi2.
+\]
+
+若走下半圆，\(\theta:\pi\to2\pi\)，则结果为 \(\pi/2\)。
+
+第二段圆取
+\(x=2\cos\theta\)、\(y=2\sin\theta\)。若沿第一象限短弧，\(\theta:0\to\pi/2\)，则
+
+\[
+\int_{L_2}x\,dy=4\int_0^{\pi/2}\cos^2\theta\,d\theta=\pi.
+\]
+
+\textbf{条件说明：}
+题面未指定圆弧，不能唯一确定结果。第二段取第一象限短弧时，第一段走上半圆的答案为
+\(\boxed{\pi/2-4}\)，走下半圆则为 \(\boxed{3\pi/2-4}\)。
+
+第二段也可以取顺时针的长弧，此时 \(\theta:0\to-3\pi/2\)，其
+\(\int x\,dy=-3\pi\)。不额外绕圈时，全部四种组合如下。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+第一段 & 第二段 & 原积分 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+上半圆 & 第一象限短弧 & \(\pi/2-4\) \\
+下半圆 & 第一象限短弧 & \(3\pi/2-4\) \\
+上半圆 & 顺时针长弧 & \(-7\pi/2-4\) \\
+下半圆 & 顺时针长弧 & \(-5\pi/2-4\) \\
+\end{longtable}
+}
+
+\subsubsection{8.
+含参数的无穷积分}\label{ux542bux53c2ux6570ux7684ux65e0ux7a77ux79efux5206}
+
+原题为
+\(\displaystyle J(a)=\int_0^\infty\frac{\ln x}{x^2+a}\,dx\)，题面未限定实参数
+\(a\)。
+
+\textbf{当 \(a>0\) 时：} 令 \(x=\sqrt a\,t\)，得
+
+\[
+J(a)=\frac1{\sqrt a}\left[
+\frac{\ln a}{2}\int_0^\infty\frac{dt}{1+t^2}
++\int_0^\infty\frac{\ln t}{1+t^2}\,dt\right].
+\]
+
+第二个积分绝对收敛，用 \(t=1/u\) 可知它等于其相反数，故为零。因此
+
+\[
+\boxed{J(a)=\frac{\pi\ln a}{4\sqrt a}\quad(a>0)}.
+\]
+
+\textbf{当 \(a=0\) 时：} \(\ln x/x^2\) 在 \(0\)
+端积分发散，故原积分发散。
+
+\textbf{当 \(a<0\) 时：} 令 \(c=\sqrt{-a}>0\)。若 \(c\ne1\)，则 \(x=c\)
+处的分子不为零，存在不可积的简单极点，普通反常积分发散。
+
+但 \(a=-1\) 是例外，此时
+
+\[
+\lim_{x\to1}\frac{\ln x}{x^2-1}=\frac12,
+\]
+
+内点奇点可去，且两端均可积。令 \(x=1/t\) 可得
+
+\[
+J(-1)=2\int_0^1\frac{-\ln t}{1-t^2}\,dt
+=2\sum_{k=0}^\infty\int_0^1(-\ln t)t^{2k}\,dt
+=2\sum_{k=0}^\infty\frac1{(2k+1)^2}
+=\boxed{\frac{\pi^2}{4}}.
+\]
+
+级数与积分交换由非负项的单调收敛定理保证。因此，实参数下普通反常积分恰在
+\(a>0\) 或 \(a=-1\) 时收敛。
+
+\subsection{二、计算题}\label{ux4e8cux8ba1ux7b97ux9898}
+
+\subsubsection{1.
+含指数参数的幂指极限}\label{ux542bux6307ux6570ux53c2ux6570ux7684ux5e42ux6307ux6781ux9650}
+
+设
+
+\[
+L=\lim_{x\to+\infty}\left(\frac{a^x-1}{(a-1)x}\right)^{1/x},
+\qquad a>0,\ a\ne1.
+\]
+
+当 \(a>1\) 时，底数为正，且
+
+\[
+\frac1x\ln\frac{a^x-1}{(a-1)x}
+=\ln a+\frac{\ln(1-a^{-x})-\ln(a-1)-\ln x}{x}
+\longrightarrow\ln a.
+\]
+
+所以 \(L=a\)。
+
+当 \(0<a<1\) 时，底数为 \((1-a^x)/[(1-a)x]>0\)，故
+
+\[
+\frac1x\ln\frac{1-a^x}{(1-a)x}
+=\frac{\ln(1-a^x)-\ln(1-a)-\ln x}{x}\longrightarrow0,
+\]
+
+所以 \(L=1\)。答案为
+
+\[
+\boxed{L=\begin{cases}a,&a>1,\\1,&0<a<1.\end{cases}}
+\]
+
+\subsubsection{2.
+反三角函数定积分}\label{ux53cdux4e09ux89d2ux51fdux6570ux5b9aux79efux5206}
+
+令 \(t=\arcsin\sqrt x\)，则
+\(x=\sin^2t\)，\(dx=2\sin t\cos t\,dt\)，而积分区间对应
+\(\pi/4\le t\le\pi/3\)。因此
+
+\[
+\int_{1/2}^{3/4}\frac{\arcsin\sqrt x}{\sqrt{x(1-x)}}\,dx
+=2\int_{\pi/4}^{\pi/3}t\,dt
+=\left[t^2\right]_{\pi/4}^{\pi/3}
+=\boxed{\frac{7\pi^2}{144}}.
+\]
+
+\subsubsection{\texorpdfstring{3. \(\sin x/x\)
+在原点的高阶导数}{3. \textbackslash sin x/x 在原点的高阶导数}}\label{sin-xx-ux5728ux539fux70b9ux7684ux9ad8ux9636ux5bfcux6570}
+
+补定义 \(f(0)=1\) 后，函数可展开为处处收敛的幂级数
+
+\[
+f(x)=\sum_{m=0}^\infty\frac{(-1)^m x^{2m}}{(2m+1)!}.
+\]
+
+比较 Taylor 系数得
+
+\[
+\boxed{f^{(k)}(0)=
+\begin{cases}
+0,&k\text{ 为奇数},\\[2pt]
+\dfrac{(-1)^m}{2m+1},&k=2m\text{ 为偶数}.
+\end{cases}}
+\]
+
+其中偶数公式也包含 \(k=0\) 时的 \(f(0)=1\)。
+
+\subsubsection{4.
+单位球面上的第一类曲面积分}\label{ux5355ux4f4dux7403ux9762ux4e0aux7684ux7b2cux4e00ux7c7bux66f2ux9762ux79efux5206}
+
+用球坐标
+
+\[
+x=\sin\theta\cos\phi,\quad y=\sin\theta\sin\phi,\quad
+z=\cos\theta,\quad dS=\sin\theta\,d\theta\,d\phi.
+\]
+
+被积函数非零的条件 \(0\le z\le\sqrt{x^2+y^2}\) 化为
+\(0\le\cos\theta\le\sin\theta\)，即 \(\pi/4\le\theta\le\pi/2\)。于是
+
+\[
+\begin{aligned}
+I&=\int_0^{2\pi}\int_{\pi/4}^{\pi/2}\sin^2\theta\,d\theta\,d\phi\\
+&=2\pi\left[\frac\theta2-\frac{\sin2\theta}{4}\right]_{\pi/4}^{\pi/2}
+=\boxed{\frac{\pi^2}{4}+\frac\pi2}.
+\end{aligned}
+\]
+
+\subsection{三、综合题}\label{ux4e09ux7efcux5408ux9898}
+
+\subsubsection{1.
+积分确定的隐函数二阶极限}\label{ux79efux5206ux786eux5b9aux7684ux9690ux51fdux6570ux4e8cux9636ux6781ux9650}
+
+由 \(\displaystyle x=\int_1^{y-x}e^{-u^2}\,du\)，在 \(x=0\) 时可得
+\(y(0)=1\)，因为被积函数严格为正，积分为零当且仅当上限为 \(1\)。
+
+对等式求导：
+
+\[
+1=e^{-(y-x)^2}(y'-1).
+\]
+
+代入 \(x=0\)，得 \(y'(0)=1+e\)。再求导：
+
+\[
+0=e^{-(y-x)^2}\left[y''-2(y-x)(y'-1)^2\right],
+\]
+
+故 \(y''(0)=2e^2\)。由二阶 Taylor 展开，
+
+\[
+y(x)=1+(1+e)x+e^2x^2+o(x^2).
+\]
+
+所以
+
+\[
+\boxed{\lim_{x\to0}\frac{y-(1+e)x-1}{x^2}=e^2}.
+\]
+
+\subsubsection{2.
+数列的收敛性}\label{ux6570ux5217ux7684ux6536ux655bux6027}
+
+设 \(h(x)=1/(x\ln x)\)，则 \(h\) 在 \([2,\infty)\)
+上为正且严格递减。题设数列为
+
+\[
+a_n=\sum_{k=2}^nh(k)-\ln\ln n.
+\]
+
+首先，
+
+\[
+a_{n+1}-a_n
+=h(n+1)-\int_n^{n+1}h(x)\,dx<0,
+\]
+
+故 \(a_n\) 严格递减。其次，由 \(h\) 递减，
+
+\[
+\sum_{k=2}^nh(k)\ge\int_2^{n+1}h(x)\,dx
+=\ln\ln(n+1)-\ln\ln2.
+\]
+
+因此
+
+\[
+a_n\ge\ln\ln(n+1)-\ln\ln n-\ln\ln2>-\ln\ln2.
+\]
+
+数列单调且有下界，所以 \(\boxed{a_n\text{ 收敛于有限实数}}\)。
+
+\subsubsection{3.
+隐函数的高阶偏导恒等式}\label{ux9690ux51fdux6570ux7684ux9ad8ux9636ux504fux5bfcux6052ux7b49ux5f0f}
+
+题设为 \(u=f(z)\)、\(z=x+y\varphi(z)\)，证明
+
+\[
+\partial_y^n u=\partial_x^{n-1}\left[\varphi(z)^n\partial_xu\right].
+\]
+
+\textbf{条件说明：}
+该恒等式在所需阶数的偏导连续且隐函数分支存在的区域内成立。一个充分条件是
+\(f,\varphi\) 具有足够的连续导数，且
+\(1-y\varphi'(z)\ne0\)。原题省略了这些常规微分条件；没有相应条件时，式中的偏导可能不存在。
+
+对隐函数关系分别求导，有
+
+\[
+z_x=\frac1{1-y\varphi'(z)},\qquad
+z_y=\frac{\varphi(z)}{1-y\varphi'(z)}=\varphi(z)z_x.
+\]
+
+记 \(p=\varphi(z)\)、\(q=u_x\)，则
+
+\[
+u_y=pq,\qquad p_y=pp_x,\qquad
+q_y=(u_y)_x=(pq)_x=p_xq+pq_x.
+\]
+
+对任意正整数 \(m\)，
+
+\[
+\begin{aligned}
+\partial_y(p^mq)
+&=mp^{m-1}p_yq+p^mq_y\\
+&=(m+1)p^mp_xq+p^{m+1}q_x
+=\partial_x(p^{m+1}q).
+\end{aligned}
+\]
+
+当 \(n=1\) 时，结论就是 \(u_y=pq\)。若 \(n\)
+阶公式成立，利用混合偏导可交换及上式，得
+
+\[
+\partial_y^{n+1}u
+=\partial_x^{n-1}\partial_y(p^nq)
+=\partial_x^n(p^{n+1}q).
+\]
+
+由数学归纳法，原恒等式得证。
+
+\subsubsection{4.
+含无限多个奇点的积分一致收敛}\label{ux542bux65e0ux9650ux591aux4e2aux5947ux70b9ux7684ux79efux5206ux4e00ux81f4ux6536ux655b}
+
+对 \(0\le\alpha\le b<1\)，在 \(\sin x\ne0\) 处有
+
+\[
+0\le\frac{e^{-x}}{|\sin x|^\alpha}
+\le\frac{e^{-x}}{|\sin x|^b}=:g(x).
+\]
+
+先证明 \(g\) 在 \([0,\infty)\) 上可积。对
+\(0\le t\le\pi/2\)，\(\sin t\ge2t/\pi\)；对后半区间利用
+\(\sin t=\sin(\pi-t)\)。于是
+
+\[
+C_b:=\int_0^\pi\frac{e^{-t}}{\sin^b t}\,dt
+\le2\left(\frac\pi2\right)^b\int_0^{\pi/2}t^{-b}\,dt<\infty.
+\]
+
+按长度为 \(\pi\) 的区间分段，得
+
+\[
+\int_0^\infty g(x)\,dx
+=\sum_{k=0}^\infty e^{-k\pi}C_b
+=\frac{C_b}{1-e^{-\pi}}<\infty.
+\]
+
+因此不依赖 \(\alpha\) 的可积函数 \(g\)
+控制了全部被积函数。具体地，对无穷远尾部，
+
+\[
+\sup_{\alpha\in[0,b]}\int_{N\pi}^\infty
+\frac{e^{-x}}{|\sin x|^\alpha}\,dx
+\le\frac{C_be^{-N\pi}}{1-e^{-\pi}}\longrightarrow0.
+\]
+
+对任何有限区间内各奇点附近的小区间，同样由 \(g\)
+的可积性，积分可一致地控制为任意小；局部量级为
+\(\delta^{1-b}\)。这同时处理了 \(0,\pi,2\pi,\ldots\)
+处的反常积分和无穷远尾部。故
+\(\boxed{I(\alpha)\text{ 在 }[0,b]\text{ 上一致收敛}}\)。
+
+\subsection{四、证明题}\label{ux56dbux8bc1ux660eux9898}
+
+\subsubsection{1.
+渐近接近一致连续函数}\label{ux6e10ux8fd1ux63a5ux8fd1ux4e00ux81f4ux8fdeux7eedux51fdux6570}
+
+按题意，\(f\) 在 \([a,\infty)\) 上一致连续，\(\varphi\) 在该区间连续，且
+\(f(x)-\varphi(x)\to0\)。
+
+任取 \(\varepsilon>0\)。选取 \(A\ge a\)，使 \(x\ge A\) 时有
+\(|f(x)-\varphi(x)|<\varepsilon/3\)。由 \(f\) 一致连续，存在
+\(\delta_1>0\)，使
+
+\[
+|x-y|<\delta_1\ \Longrightarrow\ |f(x)-f(y)|<\varepsilon/3.
+\]
+
+当 \(x,y\ge A\) 且 \(|x-y|<\delta_1\) 时，
+
+\[
+|\varphi(x)-\varphi(y)|
+\le|\varphi(x)-f(x)|+|f(x)-f(y)|+|f(y)-\varphi(y)|<\varepsilon.
+\]
+
+此外，\(\varphi\) 在紧区间 \([a,A+1]\) 上连续，因而一致连续。存在
+\(\delta_2>0\)，使该区间内 \(|x-y|<\delta_2\) 时有
+\(|\varphi(x)-\varphi(y)|<\varepsilon\)。
+
+取 \(\delta=\min\{\delta_1,\delta_2,1\}\)。任意 \(x,y\ge a\) 且
+\(|x-y|<\delta\)：若 \(\min\{x,y\}\ge A\)，使用尾部估计；否则两点均在
+\([a,A+1]\) 内，使用紧区间估计。两种情况均满足所需不等式，故 \(\varphi\)
+在 \([a,\infty)\) 上一致连续。
+
+\subsubsection{2.
+两点导数关系及原命题的条件问题}\label{ux4e24ux70b9ux5bfcux6570ux5173ux7cfbux53caux539fux547dux9898ux7684ux6761ux4ef6ux95eeux9898}
+
+原题声称：\(f\) 在 \([a,b]\) 连续、在 \((a,b)\) 可微，且
+\(f(a)\ne f(b)\)，则存在 \(\xi,\eta\in(a,b)\)，满足
+
+\[
+f'(\xi)=\frac{a+b}{2\eta}f'(\eta).
+\]
+
+\textbf{当 \(a+b\ne0\) 时，命题成立。} 题面没有要求
+\(\xi\ne\eta\)，直接取
+
+\[
+\xi=\eta=\frac{a+b}{2}\in(a,b).
+\]
+
+此时 \(\eta\ne0\)，且
+\((a+b)/(2\eta)=1\)，故等式成立。这个证明表明，在这一情形下，\(f(a)\ne f(b)\)
+并非必要条件。
+
+\textbf{当 \(a+b=0\) 时，原命题一般不成立。} 取
+\([a,b]=[-1,1]\)、\(f(x)=x\)，满足全部已给条件，但任何 \(\eta\ne0\)
+都会使右端等于 \(0\)，左端恒为 \(1\)；\(\eta=0\)
+时原式没有定义。因此无法证明原题的无条件表述。
+
+更精确地，在 \(a+b=0\) 时，题设等式能成立当且仅当 \((a,b)\) 内存在一点
+\(\xi\) 满足 \(f'(\xi)=0\)。一旦存在这样的点，任取非零的
+\(\eta\in(a,b)\) 即可。补充 \(a+b\ne0\) 是保证原结论成立的一个简单条件。
+
+\subsubsection{3.
+迭代积分函数级数一致收敛}\label{ux8fedux4ee3ux79efux5206ux51fdux6570ux7ea7ux6570ux4e00ux81f4ux6536ux655b}
+
+由 \(f\) 在 \([0,1]\) 连续，存在有限常数 \(M=\max_{[0,1]}|f|\)。证明
+
+\[
+|f_n(x)|\le M\frac{(1-x)^{n-1}}{(n-1)!},\qquad 0\le x\le1.
+\]
+
+当 \(n=1\) 时显然成立。若 \(n\) 时成立，则
+
+\[
+|f_{n+1}(x)|
+\le\int_x^1|f_n(t)|\,dt
+\le\frac{M}{(n-1)!}\int_x^1(1-t)^{n-1}\,dt
+=M\frac{(1-x)^n}{n!}.
+\]
+
+故归纳成立。特别地，
+
+\[
+\sup_{0\le x\le1}|f_n(x)|\le\frac{M}{(n-1)!},
+\qquad \sum_{n=1}^\infty\frac{M}{(n-1)!}=Me<\infty.
+\]
+
+由 Weierstrass
+判别法，\(\boxed{\sum_{n=1}^\infty f_n(x)\text{ 在 }[0,1]\text{ 上绝对且一致收敛}}\)。
+
+\subsubsection{4.
+零均值周期函数产生的平方可和系数}\label{ux96f6ux5747ux503cux5468ux671fux51fdux6570ux4ea7ux751fux7684ux5e73ux65b9ux53efux548cux7cfbux6570}
+
+将题面的 \(\int_0^1\varphi=0\) 理解为通常的有限可积性条件。Riemann
+可积或 Lebesgue
+可积均足够；仅以某种主值积分代替通常积分不能直接套用本证明。
+
+定义
+
+\[
+\Phi(t)=\int_0^t\varphi(s)\,ds.
+\]
+
+由 \(\varphi\) 的周期性和零均值，
+
+\[
+\Phi(t+1)-\Phi(t)=\int_t^{t+1}\varphi(s)\,ds=0.
+\]
+
+因此 \(\Phi\) 也具有周期 \(1\)。又因为 \(\Phi\) 连续，所以有界，记
+\(B=\sup_{t\in\mathbb R}|\Phi(t)|<\infty\)。特别地，\(\Phi(0)=\Phi(n)=0\)。
+
+注意 \(\Phi(nx)/n\) 是 \(\varphi(nx)\) 的一个原函数；对于 Lebesgue
+可积情形，这一等式及分部积分按绝对连续函数理解。由分部积分，
+
+\[
+\begin{aligned}
+a_n&=\int_0^1 f(x)\varphi(nx)\,dx\\
+&=\left[\frac{f(x)\Phi(nx)}n\right]_0^1
+-\frac1n\int_0^1f'(x)\Phi(nx)\,dx\\
+&=-\frac1n\int_0^1f'(x)\Phi(nx)\,dx.
+\end{aligned}
+\]
+
+故
+
+\[
+|a_n|\le\frac Bn\int_0^1|f'(x)|\,dx=:\frac Cn.
+\]
+
+于是
+
+\[
+\sum_{n=1}^\infty a_n^2
+\le C^2\sum_{n=1}^\infty\frac1{n^2}<\infty.
+\]
+
+因此题设级数收敛。若允许复值函数，同一估计还证明
+\(\sum|a_n|^2<\infty\)。
+
+\subsection{计算交叉核对}\label{ux8ba1ux7b97ux4ea4ux53c9ux6838ux5bf9}
+
+使用项目现有 Python 环境中的 SymPy
+对一3的换元积分、二2的端点差、二4的球面积分及一7的三段基本圆弧积分进行符号核对，所得结果分别为
+\(2-\pi/2\)、\(7\pi^2/144\)、\(\pi^2/4+\pi/2\) 以及
+\(-\pi/2,\pi/2,\pi\)，与上述推导一致。
+
+另使用 mpmath 分段数值积分核对一8的特殊参数 \(a=-1\)，得到
+\(2.46740110027234\)，与 \(\pi^2/4=2.46740110027234\)
+一致。数值核对仅作计算交叉检查，证明以各题推导为依据。
+\end{document}

@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-19 HDU试卷识别
+
+- Codex主代理与按dispatching-parallel-agents技能分派的独立数学推导/语法审查代理；PDF、using-superpowers、ponytail、verification-before-completion技能。
+- MinerU官方Agent接口完成公式OCR；GLM-OCR-4bit+mlx-vlm在Apple M4上交叉核对，模型和独立Python环境仅在.agent/hdu-ocr/。pypdf去重，Pandoc转换，SymPy/mpmath核对计算。用户要求停止编译后，已停止进程，并删除本次下载的Tectonic程序、安装包及资源缓存。
+- 中间材料保存于.agent/hdu-ocr/；成品位于output/HDU/，不修改源PDF。
+
 ## 2026-10-19 Python实训
 
 - Codex单代理；using-superpowers、ego-browser、ponytail与verification-before-completion，使用CUA操作用户指定Chrome的实训页面；Python标准库subprocess执行补充输入输出检查。

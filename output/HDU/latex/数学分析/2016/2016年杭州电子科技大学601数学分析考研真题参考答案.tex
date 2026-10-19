@@ -1,0 +1,334 @@
+\documentclass[11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm,mathrsfs,esint}
+\usepackage{graphicx,longtable,booktabs,array,calc}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,hyperref}
+\hypersetup{hidelinks}
+\setcounter{secnumdepth}{-1}
+\newcounter{none}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\usepackage{amssymb,mathrsfs,esint,bm,newunicodechar}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{3em}
+\providecommand{\llangle}{\langle\!\langle}
+\providecommand{\rrangle}{\rangle\!\rangle}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{→}{\ensuremath{\to}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+\newunicodechar{Ω}{\ensuremath{\Omega}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb{Z}}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\begin{document}
+\section{2016年杭州电子科技大学601数学分析考研真题参考答案}\label{ux5e74ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b66601ux6570ux5b66ux5206ux6790ux8003ux7814ux771fux9898ux53c2ux8003ux7b54ux6848}
+
+来源：\texttt{HDU/601数学分析/2016/2016年杭州电子科技大学601数学分析考研真题参考答案.pdf}。原
+PDF 页序：1, 2, 3, 4, 5, 6, 7, 8。
+
+\section{杭州电子科技大学2016年数学分析真题解析}\label{ux676dux5ddeux7535ux5b50ux79d1ux6280ux5927ux5b662016ux5e74ux6570ux5b66ux5206ux6790ux771fux9898ux89e3ux6790}
+
+\begin{quote}
+助手整理依据：按打印题面、原参考答案中可辨认的前后等式及可直接复核的运算，恢复被水印破坏的公式，保留全部题号、解答和原编者的题面勘误。公式的推导性恢复仅用于修正识读，不将新增条件冒充原题。二4与四1按原编者修正条件作答，均明确区分原题。
+\end{quote}
+
+\subsection{一、填空题（8题，每题5分，共40分）}\label{ux4e00ux586bux7a7aux98988ux9898ux6bcfux98985ux5206ux517140ux5206}
+
+\subsubsection{1. 极限}\label{ux6781ux9650}
+
+\[
+\begin{aligned}
+\lim_{x\to0}\frac{\sqrt{1+\sin^2x}-1}{x\ln(1+x)}
+&=\lim_{x\to0}\frac{\tfrac12\sin^2x}{x^2}\\
+&=\lim_{x\to0}\frac{x^2/2}{x^2}=\frac12.
+\end{aligned}
+\]
+
+\subsubsection{\texorpdfstring{2. \(x^\alpha\sin(1/x)\)
+的连续与可导}{2. x\^{}\textbackslash alpha\textbackslash sin(1/x) 的连续与可导}}\label{xalphasin1x-ux7684ux8fdeux7eedux4e0eux53efux5bfc}
+
+原题写 \(x^\alpha\)，并要求在零点作双侧讨论。为使负数 \(x\)
+的幂在实数范围有定义，原答案引入 \[
+\mathcal A=\mathbb Z\cup\left\{\frac pq:p,q\in\mathbb Z,\ q>0,\ (p,q)=1,\ q\text{ 为奇数}\right\}.
+\] 对 \(\alpha\in\mathcal A\)，有
+\(\alpha+m\in\mathcal A\)（\(m\in\mathbb Z\)）。取 \[
+x_n=\frac1{n\pi},\qquad y_n=\frac1{(n+1/2)\pi},
+\] 则两序列趋于零，且 \[
+x_n^\alpha\sin(1/x_n)=0,\qquad
+y_n^\alpha\sin(1/y_n)=\frac{(-1)^n}{[(n+1/2)\pi]^\alpha}.
+\] 若零点极限存在，只能为零，第二个序列也必须趋于零，等价于
+\(\alpha>0\)。反之，\(\alpha>0\) 时 \[
+|x^\alpha\sin(1/x)|\le|x|^\alpha\to0.
+\] 所以按实幂双侧定义，连续当且仅当 \(\alpha\in\mathcal A\) 且
+\(\alpha>0\)。又 \[
+\frac{f(x)-f(0)}x=x^{\alpha-1}\sin(1/x),
+\] 故可导当且仅当 \(\alpha\in\mathcal A\) 且 \(\alpha>1\)，此时
+\(f'(0)=0\)。若将题目另解释为 \(|x|^\alpha\sin(1/x)\)
+或只讨论右侧，则阈值仍是 \(0,1\)，但这是另一种定义约定，原题未写绝对值。
+
+\subsubsection{3.
+变上限积分求导}\label{ux53d8ux4e0aux9650ux79efux5206ux6c42ux5bfc}
+
+\[
+f(x)=\frac d{dx}\int_0^x\cos(t+x)\,dt
+=\frac d{dx}\int_x^{2x}\cos t\,dt=2\cos2x-\cos x.
+\]
+
+\subsubsection{4. 周期积分}\label{ux5468ux671fux79efux5206}
+
+\[
+\begin{aligned}
+\int_0^{80\pi}\sqrt{1-\cos2x}\,dx
+&=80\int_0^\pi\sqrt{2\sin^2x}\,dx\\
+&=80\sqrt2\int_0^\pi\sin x\,dx=160\sqrt2.
+\end{aligned}
+\] 原OCR将 \(2\sin^2x\) 混入了其他字符，以上由恒等式
+\(1-\cos2x=2\sin^2x\) 恢复。
+
+\subsubsection{5. 高阶导数}\label{ux9ad8ux9636ux5bfcux6570}
+
+\[
+y=\frac{x-2}{3x+1}=\frac13-\frac7{3(3x+1)}.
+\] 故对整数 \(n\ge1\)， \[
+y^{(n)}(x)=-\frac73\frac{(-1)^nn!3^n}{(3x+1)^{n+1}}
+=\frac{7(-1)^{n-1}n!3^{n-1}}{(3x+1)^{n+1}}.
+\]
+
+\subsubsection{6.
+交换积分次序}\label{ux4ea4ux6362ux79efux5206ux6b21ux5e8f}
+
+通常按 \(a>0\) 理解，区域为 \(0\le y\le x\le a\)，所以 \[
+\int_0^a dx\int_0^xf(x,y)\,dy
+=\int_0^a dy\int_y^af(x,y)\,dx.
+\] 原题未明写 \(a>0\)；若 \(a<0\)，有向积分应改写为
+\(\int_a^0dy\int_a^yf(x,y)\,dx\)，不能直接沿用上式。\(a=0\)
+时两侧均为零。
+
+\subsubsection{7.
+幂级数收敛域}\label{ux5e42ux7ea7ux6570ux6536ux655bux57df}
+
+题面分母为 \(n4^n\)。以 \((x-2)^2\) 为变量的收敛半径为 \[
+\lim_{n\to\infty}\frac{1/(n4^n)}{1/((n+1)4^{n+1})}=4,
+\] 所以以 \(x-2\) 为变量的半径为 \(2\)。\(x=0,4\)
+时均化为发散的调和级数，故收敛域为 \((0,4)\)。原OCR的 \(n^{2^n}\)
+与题面不符，已按题面恢复。
+
+\subsubsection{8. 隐函数导数}\label{ux9690ux51fdux6570ux5bfcux6570}
+
+令 \(F(x,y)=e^{x+y}+\cos(xy)\)。在 \(F_y=e^{x+y}-x\sin(xy)\ne0\) 的点，
+\[
+\frac{dy}{dx}=-\frac{F_x}{F_y}
+=-\frac{e^{x+y}-y\sin(xy)}{e^{x+y}-x\sin(xy)}.
+\]
+
+\subsection{二、计算题（4题，共30分）}\label{ux4e8cux8ba1ux7b97ux98984ux9898ux517130ux5206}
+
+\subsubsection{1.
+指数函数极限}\label{ux6307ux6570ux51fdux6570ux6781ux9650}
+
+两次使用 l'Hôpital 法则， \[
+\begin{aligned}
+\lim_{x\to0}\frac{3^x+3^{-x}-2}{x^2}
+&=\lim_{x\to0}\frac{3^x\ln3-3^{-x}\ln3}{2x}\\
+&=\lim_{x\to0}\frac{3^x(\ln3)^2+3^{-x}(\ln3)^2}{2}
+=(\ln3)^2.
+\end{aligned}
+\]
+
+\subsubsection{2. 不定积分}\label{ux4e0dux5b9aux79efux5206}
+
+\[
+\begin{aligned}
+\int e^{\sin x}\sin2x\,dx
+&=2\int e^{\sin x}\sin x\cos x\,dx\\
+&=2\int e^u u\,du=2(\sin x-1)e^{\sin x}+C.
+\end{aligned}
+\]
+
+\subsubsection{3.
+幂级数与数项级数求和}\label{ux5e42ux7ea7ux6570ux4e0eux6570ux9879ux7ea7ux6570ux6c42ux548c}
+
+当 \(|x|<1\) 时，原答案由几何级数逐项求两次导数的推导可恢复为 \[
+\begin{aligned}
+\frac{1+x}{(1-x)^3}
+&=\frac{1+x}{2}\left(\frac1{1-x}\right)''
+=\frac{1+x}{2}\left(\sum_{n=0}^\infty x^n\right)''\\
+&=\frac{1+x}{2}\sum_{n=2}^\infty n(n-1)x^{n-2}\\
+&=\frac12\left[\sum_{n=2}^\infty n(n-1)x^{n-2}
++\sum_{n=2}^\infty n(n-1)x^{n-1}\right]\\
+&=\sum_{m=0}^\infty(m+1)^2x^m
+=\sum_{n=1}^\infty n^2x^{n-1}.
+\end{aligned}
+\] 其收敛半径为 \(\lim n^2/(n+1)^2=1\)，两个端点通项均不趋于零。代入
+\(x=1/2\)， \[
+\sum_{n=1}^\infty\frac{n^2}{2^{n-1}}=f(1/2)
+=\frac{1+1/2}{(1-1/2)^3}=12.
+\]
+
+\subsubsection{4.
+曲线积分与原题终点勘误}\label{ux66f2ux7ebfux79efux5206ux4e0eux539fux9898ux7ec8ux70b9ux52d8ux8bef}
+
+原题写 \(B=(2,0)\)，它不在 \(x=\sqrt{2y-y^2}\)
+上，原题给定路径不存在。原编者将终点改为 \(B=(0,2)\)
+后解答。以下仅针对该明确修正版。
+
+先分离全微分： \[
+\begin{aligned}
+\int_L-e^x\sin y\,dy+e^x\cos y\,dx
+&=\int_Ld(e^x\cos y)\\
+&=[e^x\cos y]_{(0,0)}^{(0,2)}=\cos2-1.
+\end{aligned}
+\] 令 \(L_1\) 为从 \(B\) 到 \(A\) 的有向线段，则
+\(\int_{L_1}xy\,dy=0\)。\(L\cup L_1\) 为右半圆盘 \(D\) 的正向边界，由
+Green 公式， \[
+\begin{aligned}
+\int_Lxy\,dy
+&=\oint_{L\cup L_1}xy\,dy-\int_{L_1}xy\,dy\\
+&=\iint_Dy\,dx\,dy
+=\int_0^2y\sqrt{2y-y^2}\,dy\\
+&=\int_{-1}^1(u+1)\sqrt{1-u^2}\,du\\
+&=\int_{-1}^1\sqrt{1-u^2}\,du=\frac\pi2.
+\end{aligned}
+\] 所以修正版积分为 \(I=5\pi/2+\cos2-1\)。原OCR将有限区间上限 \(1\)
+识作无穷远，并混入多重积分符号，以上按圆域与同一积分的计算恢复。
+
+\subsection{三、综合题（3题，共30分）}\label{ux4e09ux7efcux5408ux98983ux9898ux517130ux5206}
+
+\subsubsection{1.
+函数项级数的一致收敛}\label{ux51fdux6570ux9879ux7ea7ux6570ux7684ux4e00ux81f4ux6536ux655b}
+
+\[
+\left|\frac{(-1)^{n-1}\sin(nx)}{\sqrt[3]{n^5+x^4}}\right|
+\le\frac1{n^{5/3}},\qquad x\in\mathbb R.
+\] 由于 \(\sum n^{-5/3}\) 收敛，由 Weierstrass 判别法，原函数项级数在
+\(\mathbb R\) 一致且绝对收敛。
+
+\subsubsection{2.
+球域积分的极限}\label{ux7403ux57dfux79efux5206ux7684ux6781ux9650}
+
+按半径参数 \(t\) 整理题意，记 \(B_t=\{x^2+y^2+z^2\le t^2\}\)。积分只依赖
+\(t^2\)，分母也是偶函数，故双侧极限存在与右极限存在等价。用球坐标并应用
+l'Hôpital 法则， \[
+\begin{aligned}
+\lim_{t\to0^+}\frac1{\pi t^4}\iiint_{B_t}f(\sqrt{x^2+y^2+z^2})\,dx\,dy\,dz
+&=\lim_{t\to0^+}\frac{\int_0^tr^2f(r)\,dr\int_0^\pi\sin\varphi\,d\varphi\int_0^{2\pi}d\theta}{\pi t^4}\\
+&=\lim_{t\to0^+}\frac{4\pi\int_0^tr^2f(r)\,dr}{\pi t^4}\\
+&=\lim_{t\to0^+}\frac{4t^2f(t)}{4t^3}
+=\lim_{t\to0^+}\frac{f(t)-f(0)}t=f'(0).
+\end{aligned}
+\] 因此所求双侧极限为 \(f'(0)\)。原OCR多处把三重积分识作连乘号、把
+\(r^2f(r)\,dr\) 识作 \(r^2\,df(r)\,dr\)，此处按球坐标变换恢复。
+
+\subsubsection{3.
+反常积分的绝对与条件收敛}\label{ux53cdux5e38ux79efux5206ux7684ux7eddux5bf9ux4e0eux6761ux4ef6ux6536ux655b}
+
+因为 \(|\int_A^B\sin x\,dx|\le2\)，\(x^{-p}\) 单调趋于零，Dirichlet
+判别法保证对所有 \(p>0\) 原积分收敛。又 \[
+\frac1{x^p}\ge\frac{|\sin x|}{x^p}\ge\frac{\sin^2x}{x^p}
+=\frac{1-\cos2x}{2x^p}.
+\] 由 \(|\int_A^B\cos2x\,dx|\le1\)，同理
+\(\int_1^\infty x^{-p}\cos2x\,dx\) 对所有 \(p>0\) 收敛。故 \(p>1\)
+时由左侧比较知绝对收敛；\(0<p\le1\) 时，\(\int_1^R x^{-p}\,dx\)
+发散，右侧的积分也趋于正无穷，故绝对值积分发散。答案为 \(p>1\)
+绝对收敛，\(0<p\le1\) 条件收敛。
+
+\subsection{四、证明题（5题，共50分）}\label{ux56dbux8bc1ux660eux98985ux9898ux517150ux5206}
+
+\subsubsection{1.
+对数不等式的原题勘误}\label{ux5bf9ux6570ux4e0dux7b49ux5f0fux7684ux539fux9898ux52d8ux8bef}
+
+原题左端 \(1/(1+x)<\ln(1+x)\) 对全部 \(x>0\) 不成立，例如 \(x=1/10\)
+时左侧为 \(10/11\)，而 \(\ln(11/10)<1/10\)。原编者明确将其改为 \[
+\frac{x}{1+x}<\ln(1+x)<x.
+\] 以下证明该修正版。对 \(F(x)=\ln(1+x)\) 使用中值定理，存在
+\(\xi\in(0,x)\) 使 \[
+\ln(1+x)-\ln1=F'(\xi)x=\frac{x}{1+\xi}.
+\] 由 \(0<\xi<x\)，即得 \(x/(1+x)<x/(1+\xi)<x\)。
+
+\subsubsection{2.
+切平面通过原点}\label{ux5207ux5e73ux9762ux901aux8fc7ux539fux70b9}
+
+在 \(x\ne0\) 的点， \[
+z_x=f(y/x)-\frac yx f'(y/x),\qquad z_y=f'(y/x).
+\] 设曲面点为
+\((x_0,y_0,z_0)\)，\(x_0\ne0\)，\(z_0=x_0f(y_0/x_0)\)。切平面为 \[
+\left[f(y_0/x_0)-\frac{y_0}{x_0}f'(y_0/x_0)\right](x-x_0)
++f'(y_0/x_0)(y-y_0)-(z-z_0)=0.
+\] 化简为 \[
+\left[f(y_0/x_0)-\frac{y_0}{x_0}f'(y_0/x_0)\right]x+f'(y_0/x_0)y-z=0,
+\] 所以通过原点。
+
+关于原题 \(x=0\) 时的延拓：仅由 \(f\)
+可导无法保证延拓曲面在这些点可微，例如 \(f(u)=u^2\) 给出 \(z=y^2/x\)，在
+\((0,y_0)\)、\(y_0\ne0\) 处不连续。因而上述普通导数计算只适用于
+\(x_0\ne0\)。若在 \(x_0=0\)
+的点确实存在由图函数可微性定义的切平面，图函数的一次齐次性给出
+\(x_0z_x+y_0z_y=z_0\)，仍可推出切平面通过原点；原题不能保证每个延拓点都存在这种切平面。
+
+\subsubsection{3. Rolle 定理}\label{rolle-ux5b9aux7406}
+
+目标等价于寻找 \((x-1)f'(x)+2f(x)\) 在 \((0,1)\) 的零点。令
+\(F(x)=(x-1)^2f(x)\)，则 \(F\) 在闭区间连续、开区间可导，且
+\(F(0)=F(1)=0\)。由 Rolle 定理，存在 \(\xi\in(0,1)\) 使 \[
+0=F'(\xi)=(\xi-1)^2f'(\xi)+2(\xi-1)f(\xi).
+\] 因 \(\xi-1\ne0\)，除去该因子得到
+\(\xi f'(\xi)+2f(\xi)=f'(\xi)\)。原OCR的导数展开中加号损坏，以上按乘法求导恢复。
+
+\subsubsection{\texorpdfstring{4. \(\sin(1/x)\)
+不一致连续}{4. \textbackslash sin(1/x) 不一致连续}}\label{sin1x-ux4e0dux4e00ux81f4ux8fdeux7eed}
+
+原函数在 \((0,1)\) 为连续初等函数；但在 \(x\downarrow0\)
+时无极限。一致连续函数在有限端点具有有限单侧极限，所以它不一致连续。也可直接取
+\[
+x_n=\frac1{2\pi n+\pi/2},\qquad y_n=\frac1{2\pi n+3\pi/2},
+\] 则 \(|x_n-y_n|\to0\)，而 \(|f(x_n)-f(y_n)|=2\)。
+
+\subsubsection{5.
+严格递减函数的积分不等式}\label{ux4e25ux683cux9012ux51cfux51fdux6570ux7684ux79efux5206ux4e0dux7b49ux5f0f}
+
+由严格递减及连续性， \[
+\int_q^1f(x)\,dx<(1-q)f(q)
+=\frac{1-q}{q}\int_0^qf(q)\,dx
+<\frac{1-q}{q}\int_0^qf(x)\,dx.
+\] 即 \[
+\int_0^1f(x)\,dx-\int_0^qf(x)\,dx
+<\frac{1-q}{q}\int_0^qf(x)\,dx,
+\] 整理得 \(\int_0^qf(x)\,dx>q\int_0^1f(x)\,dx\)。
+\end{document}
