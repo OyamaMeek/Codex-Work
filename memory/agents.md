@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-20 上册分数与极限排版
+
+- Codex单代理；using-superpowers、ponytail及verification-before-completion。使用apply_patch逐项编辑题面，复用pylatexenc严格解析及标准库JSON/ZIP检查。
+- 仅调整上册共享题面及两入口的数学排版，保留用户已有PDF和编译文件；继续不编译、不下载TeX、不截图。
+
 ## 2026-10-20 上下册大一期末难度调整
 
 - 用户指出现版偏难，授权调整上下册为大一期末复习；使用dispatching-parallel-agents分担独立章文件，full-output-enforcement保证1648题全量处理，主代理审查数学条件与难度。

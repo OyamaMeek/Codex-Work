@@ -38,7 +38,7 @@
       "direction": "基础·换元求函数",
       "file": "chapters/ch01.tex",
       "line": 9,
-      "body_sha256": "cb5bc939628bb8801b717b4f77b0649e107d682b929c9bf0053969add5c576e4"
+      "body_sha256": "235cf86b8441c476315d149a0c0eebd2d496378def9d820232e3d0b9a8823a2d"
     },
     {
       "number": 4,
@@ -49,7 +49,7 @@
       "direction": "基础·反三角函数",
       "file": "chapters/ch01.tex",
       "line": 12,
-      "body_sha256": "1380c99d49fb5b1e1ca92b506264e1923f502e9d5737d67f4bef9f59e36b4c38"
+      "body_sha256": "3c7a4dd38b1923f63f9e5b74a8d15013d31807988ac3a78ac2dbe75e928aacb1"
     },
     {
       "number": 5,
@@ -60,7 +60,7 @@
       "direction": "常规·函数值域",
       "file": "chapters/ch01.tex",
       "line": 15,
-      "body_sha256": "741ec3f7c3d0619d34295343e1bb93da34427bb25968811d6a0324e636279163"
+      "body_sha256": "29db080d111c594fc870224b77e6f67115f571a9caa5e877e75951c9c012f9fd"
     },
     {
       "number": 6,
@@ -71,7 +71,7 @@
       "direction": "基础·反三角函数值",
       "file": "chapters/ch01.tex",
       "line": 18,
-      "body_sha256": "54d3dc3b555f9195bf4aff14bda530ab8a068c915e43aa443f9406021f07b3b3"
+      "body_sha256": "633a47827a54e62d4b8be406ed921540038e93c31cb1c1cf6763a559017b3ba5"
     },
     {
       "number": 7,
@@ -82,7 +82,7 @@
       "direction": "常规·换元求函数",
       "file": "chapters/ch01.tex",
       "line": 21,
-      "body_sha256": "cae5b7c10011b17164d096499f7f1c89de5da349c240c75f687078bac455de3f"
+      "body_sha256": "779df31b867d2b2f95876ed27f7f8c1b182627af54490008028eba5f954893a9"
     },
     {
       "number": 8,
@@ -93,7 +93,7 @@
       "direction": "基础·分段函数",
       "file": "chapters/ch01.tex",
       "line": 24,
-      "body_sha256": "c48b12dca5e48ce6a4b0114caacaca664a9f9b4b4c115c1a449f04786f0a4d0e"
+      "body_sha256": "8b346da8b1facb54d64ac45b73fb6dcccd0d52865c98e472fae03268461d437f"
     },
     {
       "number": 9,
@@ -104,7 +104,7 @@
       "direction": "常规·反解复合函数",
       "file": "chapters/ch01.tex",
       "line": 27,
-      "body_sha256": "b0549efccff56475f94102e45cd24657cdceba6ac8b0a990f35fe854799d7cc4"
+      "body_sha256": "0257825a9beeba34862dc615e538fe5b30f12b7c366d10529fd023b2ffb6edd8"
     },
     {
       "number": 10,
@@ -203,7 +203,7 @@
       "direction": "基础·有界性",
       "file": "chapters/ch01.tex",
       "line": 54,
-      "body_sha256": "e424c765669973bc339ac0b5cdadce97c9d8f52b49257ee64a27abc58b7b26db"
+      "body_sha256": "c060ca7d3ef6e7493efd70c1955d6b9812bf1056d62dc00b7ed925a29db7cf26"
     },
     {
       "number": 19,
@@ -236,7 +236,7 @@
       "direction": "基础·函数关系",
       "file": "chapters/ch01.tex",
       "line": 63,
-      "body_sha256": "c96f5e7ca73a1ab61299216179ee5055d0b21d9deb6945ee7930866062ae8706"
+      "body_sha256": "64485d8c4086752c9d62426aadad911549468e549a9d26a5a185ca60c6360c8c"
     },
     {
       "number": 22,
@@ -247,7 +247,7 @@
       "direction": "常规·函数综合",
       "file": "chapters/ch01.tex",
       "line": 66,
-      "body_sha256": "adc81a0f0dd4a2bb12d22fd78004264b2e85447baa88c7c121dd02978a75cf9b"
+      "body_sha256": "15f348b60d98665e2d30b5e658505e1b7beaadafb94533b83d08898ec321aff3"
     },
     {
       "number": 23,
@@ -258,7 +258,7 @@
       "direction": "常规·极限定义",
       "file": "chapters/ch01.tex",
       "line": 70,
-      "body_sha256": "906e0333da1008e822af6869447d4ce87ba0c6c9850d48078183998ad70488eb"
+      "body_sha256": "309aaa7267d29b6e2073d8aa1cfe42247d5a5759c064b666a6d20b7280b50d14"
     },
     {
       "number": 24,
@@ -269,7 +269,7 @@
       "direction": "基础·幂数列",
       "file": "chapters/ch01.tex",
       "line": 73,
-      "body_sha256": "34a11f4ba354ccbdeb7215b4e2d0c7fbb25775a6d2a30cc8d763484bc1a11b11"
+      "body_sha256": "ddf48b0274bd5782d1a0ceeac3225e85ede94bec6a7caeba8bf2603f5f7a1ade"
     },
     {
       "number": 25,
@@ -280,7 +280,7 @@
       "direction": "基础·幂数列极限",
       "file": "chapters/ch01.tex",
       "line": 76,
-      "body_sha256": "6248d93ed9f8642845def5ce447b930d09b9fc336f2ad014c74d1e171037602e"
+      "body_sha256": "815c07de4a57612d928aef1fe33aa21a802db4948711e6c0f317adca8fae0215"
     },
     {
       "number": 26,
@@ -291,7 +291,7 @@
       "direction": "基础·奇偶项极限",
       "file": "chapters/ch01.tex",
       "line": 79,
-      "body_sha256": "369e7e0ac80038d375e5e5bf58eeab68b956df530e6cc59ded01fde054c4908e"
+      "body_sha256": "955e9b6dde9ef8bb1aa5f8eec453ec28b567b591e96a1c7157282a5ddf4f57a9"
     },
     {
       "number": 27,
@@ -302,7 +302,7 @@
       "direction": "基础·分段数列",
       "file": "chapters/ch01.tex",
       "line": 82,
-      "body_sha256": "c73a9a609cd2a2e349b5abee56f1717bddf9c29d86dd7b8cf77c75c6932cb494"
+      "body_sha256": "914610beca2d42e7b1a3d8ee37ba179e5df028896eb6df2ed2acdaa0981eb500"
     },
     {
       "number": 28,
@@ -324,7 +324,7 @@
       "direction": "基础·极限运算",
       "file": "chapters/ch01.tex",
       "line": 88,
-      "body_sha256": "a60d9c521b10e5542704e693fce92b65b43b76941b0471ce6f3524b02de7a4af"
+      "body_sha256": "fa539f394bbaa5a7d1ebd397ddf6e960164bb1b34211d0e5dee25615baaff7a0"
     },
     {
       "number": 30,
@@ -335,7 +335,7 @@
       "direction": "常规·振荡数列",
       "file": "chapters/ch01.tex",
       "line": 91,
-      "body_sha256": "5251e62b98cc44a4cd4d80b652cfa82cf6e6766f16b51f7838efe6a370ea0d04"
+      "body_sha256": "4807e2bbabdfb8ea97ac6bb5ce3426c17e957de1262ade61fe66672cc00f49e4"
     },
     {
       "number": 31,
@@ -346,7 +346,7 @@
       "direction": "基础·绝对值极限",
       "file": "chapters/ch01.tex",
       "line": 94,
-      "body_sha256": "96617b0e575ed37830b7c91998349b05f6f1c8f1dea26070351ff54aa34f77d1"
+      "body_sha256": "51d485246308070928d64ad174e5283fdb5766d7ef7d40bd3adde1bd954ee4bf"
     },
     {
       "number": 32,
@@ -357,7 +357,7 @@
       "direction": "常规·数列极限综合",
       "file": "chapters/ch01.tex",
       "line": 97,
-      "body_sha256": "b38955ab700fb55bd2f861139823cfe47616f1f5911278686964c4f1025f9f7f"
+      "body_sha256": "82d78a1970bcfb9745a4de1e9cfa0250e4fc725030e26b934b1251f6cb664756"
     },
     {
       "number": 33,
@@ -368,7 +368,7 @@
       "direction": "常规·极限定义",
       "file": "chapters/ch01.tex",
       "line": 101,
-      "body_sha256": "ebaaba233d9ed1c7683e39beac4865da6df8d111cefc6bcc9213efac291615ec"
+      "body_sha256": "d68d613d647f7d37c8ad3cafe70a4f7ce05ba05af6eb9fe16e2133f80fbbac95"
     },
     {
       "number": 34,
@@ -401,7 +401,7 @@
       "direction": "基础·分段极限",
       "file": "chapters/ch01.tex",
       "line": 110,
-      "body_sha256": "f6597fe934c84ab2f30d7f9f0012bfd4dbce8db6225c672fc22388a52d614de4"
+      "body_sha256": "ba93d0aa20c4fde72f5b1cedb5d0b07f7fe24a1a38f5dfad011c22398875af79"
     },
     {
       "number": 37,
@@ -423,7 +423,7 @@
       "direction": "常规·局部保号性",
       "file": "chapters/ch01.tex",
       "line": 116,
-      "body_sha256": "90a60a4b97afcb893fe962a24f1cea19477ea7fe4da27e6b8ae2ad6cd8b2e40f"
+      "body_sha256": "9cea7956918723d931bea6cfef4945579a46df0800da84d197ca4698122d4d6e"
     },
     {
       "number": 39,
@@ -445,7 +445,7 @@
       "direction": "基础·振荡与夹逼",
       "file": "chapters/ch01.tex",
       "line": 122,
-      "body_sha256": "a86286dec94f50d8dbbb9b8267a64ebdf4f3ec37abc1c6171dfeed324d0dac7a"
+      "body_sha256": "d0592a2aeb4c057a6f5d3f19b5596adcaae4fb295c8c2f6093bb0aa481f40c51"
     },
     {
       "number": 41,
@@ -478,7 +478,7 @@
       "direction": "常规·函数极限综合",
       "file": "chapters/ch01.tex",
       "line": 131,
-      "body_sha256": "d8bf74d2956d6ada391d5b31afad14d4cf1940f6a54eaf09172ae4738d994e4a"
+      "body_sha256": "f5a64313fbaa7205c7f24c210e5b177051fe0570b659ddb652fd783ebf887a9c"
     },
     {
       "number": 44,
@@ -489,7 +489,7 @@
       "direction": "基础·有界因子与无穷小",
       "file": "chapters/ch01.tex",
       "line": 135,
-      "body_sha256": "3787583247e7aa58355be12f73f6b8b297ff01e0a94c3f63546e53fd6739303e"
+      "body_sha256": "a11ed6ec6a33011021690561c2b0368e90e03dbc41ab52e03769c6defc560355"
     },
     {
       "number": 45,
@@ -500,7 +500,7 @@
       "direction": "基础·无穷大判定",
       "file": "chapters/ch01.tex",
       "line": 138,
-      "body_sha256": "23adea29f9218c364e3582a46809379c2404bc9efd3d24d915b3158c599fc242"
+      "body_sha256": "1490cf35c4db6e74368a5f9d4ab6cd7b6c5e7e0bf17a4b75b19b73620ba1db3e"
     },
     {
       "number": 46,
@@ -511,7 +511,7 @@
       "direction": "基础·单侧极限",
       "file": "chapters/ch01.tex",
       "line": 141,
-      "body_sha256": "5dd91c3521b71a2cf3391fb800a571e155ceadfd70ce4cfa1126efe419ad7ff1"
+      "body_sha256": "694d4e6d92f907cbc5d35596b1afe83c08ab969aaf4b17efb2b264d21dd7205c"
     },
     {
       "number": 47,
@@ -522,7 +522,7 @@
       "direction": "基础·无穷小与无穷大",
       "file": "chapters/ch01.tex",
       "line": 144,
-      "body_sha256": "2826b11bc4282217b7443e04cde8413e1d3562ae13b2e761b87a3939b04bb045"
+      "body_sha256": "32e11a62ba781ea97e353b4c8ec81a5d87bf541ea85911201ce744d5679059f5"
     },
     {
       "number": 48,
@@ -544,7 +544,7 @@
       "direction": "基础·有界因子估计",
       "file": "chapters/ch01.tex",
       "line": 150,
-      "body_sha256": "e9b720a0b6f3ea5429dcebacfa9cf1a2a7d514cf69bb2794ab07ce04efcd7318"
+      "body_sha256": "cb533444fc54a2719cfa4d146394011e8f888f89e506f879bff749e8cf9a4ba3"
     },
     {
       "number": 50,
@@ -555,7 +555,7 @@
       "direction": "基础·无穷小判定",
       "file": "chapters/ch01.tex",
       "line": 153,
-      "body_sha256": "c9188fe09b16dd5390ecd6260711d4c0edd71e6fc55958d0a4b075fc1a5a8b0a"
+      "body_sha256": "4252d1288f6e2f7414b4940cc7a764f3855bf73d9ae8af29dd232055f8ea278c"
     },
     {
       "number": 51,
@@ -566,7 +566,7 @@
       "direction": "常规·极限保序性",
       "file": "chapters/ch01.tex",
       "line": 156,
-      "body_sha256": "6194ccd21d6cb56c3597518e4aac1e82ad770fde4f0c1f541697c9a929487681"
+      "body_sha256": "0d8ffa1576c4e832bea4b75ff0bde05237dbe48e8fa67628f10f584a72611c96"
     },
     {
       "number": 52,
@@ -577,7 +577,7 @@
       "direction": "基础·由组合极限求极限",
       "file": "chapters/ch01.tex",
       "line": 159,
-      "body_sha256": "47e7321638649f2a17a611fc46827037a2a251bbf1f0989aaaccb0e34feaf258"
+      "body_sha256": "39dd21119763eab8bae9d57d67feaafa34bc6e1139b6e20b4145798eea13d01f"
     },
     {
       "number": 53,
@@ -588,7 +588,7 @@
       "direction": "基础·无穷小运算",
       "file": "chapters/ch01.tex",
       "line": 162,
-      "body_sha256": "bedadf9b822ae7fbb0094ee98afd09f4416a0f5a689029e4da29673b30ddf592"
+      "body_sha256": "d73571c7f03418c108059e0ed405da05ceddee9cfe0f366e3bb9f9bb573008ca"
     },
     {
       "number": 54,
@@ -599,7 +599,7 @@
       "direction": "常规·倒数关系",
       "file": "chapters/ch01.tex",
       "line": 165,
-      "body_sha256": "396feac2c502d2b8431675fe3886883ab2377debae95fd789786746f9f6f9229"
+      "body_sha256": "459ea951b1d275d5b33db28645de637e9145cd4bf2be2ff37321ce1e06fb8afc"
     },
     {
       "number": 55,
@@ -610,7 +610,7 @@
       "direction": "基础·极限四则运算",
       "file": "chapters/ch01.tex",
       "line": 169,
-      "body_sha256": "e1c1dc44ef227d20152262e4209f95287c3175c0844af363822038b6fefc86e8"
+      "body_sha256": "f905e1b2d85c364064f9eceed3b323b6285676e6f2f4c3fe9885165aecfeb666"
     },
     {
       "number": 56,
@@ -621,7 +621,7 @@
       "direction": "基础·有限乘积极限",
       "file": "chapters/ch01.tex",
       "line": 172,
-      "body_sha256": "5b8487d77ae778a1a3897f4640aef14cc7224311d2ab5939c248a988fa85bb26"
+      "body_sha256": "6fdab17625b61b01660232d59c47bab3a16fb3980f612629d79974909780ee86"
     },
     {
       "number": 57,
@@ -632,7 +632,7 @@
       "direction": "基础·直接代入",
       "file": "chapters/ch01.tex",
       "line": 175,
-      "body_sha256": "9085a2edd2fa4ccb4b260d65edbfc1e848de9d10c3869e756076befa770b36f0"
+      "body_sha256": "9a09b13e3b18365dc4c6049cb2cea28d1a77d1ccf991db901d0121b6d42ada26"
     },
     {
       "number": 58,
@@ -643,7 +643,7 @@
       "direction": "基础·有理化",
       "file": "chapters/ch01.tex",
       "line": 178,
-      "body_sha256": "4a06734dd475e03e125213641099c2cd991ddc4d6a0b852b34bcef973742e401"
+      "body_sha256": "a2dfe8ae46af2575834a9ac324a796cfa0ce102db95faf5ff5448edcc0a61b8f"
     },
     {
       "number": 59,
@@ -720,7 +720,7 @@
       "direction": "常规·单侧极限",
       "file": "chapters/ch01.tex",
       "line": 199,
-      "body_sha256": "6e0c921afc09eb43f9c28830654585744a0ae2c52e84c2b5690820b151df6f3e"
+      "body_sha256": "8323da91d632056770ad8b359f0a431b17e3f61407b00c29c6b4ce70f6fb9646"
     },
     {
       "number": 66,
@@ -753,7 +753,7 @@
       "direction": "基础·幂指极限",
       "file": "chapters/ch01.tex",
       "line": 208,
-      "body_sha256": "ff8c707c553634fe3037b2850bef1b534b82b7d1f01caca20e1815e700dea977"
+      "body_sha256": "841ce1d08144e1d4386e08bf0ac4ac3daead60e2e10cf422ce4a56cf55706dd5"
     },
     {
       "number": 69,
@@ -830,7 +830,7 @@
       "direction": "常规·夹逼定理",
       "file": "chapters/ch01.tex",
       "line": 230,
-      "body_sha256": "14401bbe392c05a5d8eaee2aa68dfa8d028584a258423de8e0687e2c3aadbb98"
+      "body_sha256": "c29ac854c33c3ce8c09c23b16f32ed7d2f0f79895dda9806d59623b54cf78224"
     },
     {
       "number": 76,
@@ -863,7 +863,7 @@
       "direction": "常规·递推数列",
       "file": "chapters/ch01.tex",
       "line": 239,
-      "body_sha256": "502b5a36b59be51a4ae83d9daa66755ba1dc70b03417cfd4a6d4623a3f898844"
+      "body_sha256": "4305c9d8dab14f3616b8dd4820f26ac1b98a13909c01323595d607f382b1e3b5"
     },
     {
       "number": 79,
@@ -896,7 +896,7 @@
       "direction": "基础·重要极限",
       "file": "chapters/ch01.tex",
       "line": 248,
-      "body_sha256": "52663f5ae415b38e3558c53c4675b44f217b826fdf7f50116b39fbcbaacb6a13"
+      "body_sha256": "cfdd027d9ed06b8bb08b8bb9db55f48e8423810c7ec946d7067aa2ccbed4a5a2"
     },
     {
       "number": 82,
@@ -907,7 +907,7 @@
       "direction": "基础·三角极限",
       "file": "chapters/ch01.tex",
       "line": 251,
-      "body_sha256": "8d69ab63f3b1de19b9ede084a7dda5a56d0483441701b7f3525f49e82b6ce901"
+      "body_sha256": "f20fd51d707f2ec19e0b652326ad1c21f9d705e60535f427c9b60a30bb12f0a7"
     },
     {
       "number": 83,
@@ -918,7 +918,7 @@
       "direction": "基础·反三角极限",
       "file": "chapters/ch01.tex",
       "line": 254,
-      "body_sha256": "0e2f1d7a5353c06a7434668c105d5e4500e0dfb9fe4098c9535bc7e49648d76e"
+      "body_sha256": "5b9dea0ddcd287e832186fd32f6f5ba37bf31ad633ceb239ae46419358d1dc94"
     },
     {
       "number": 84,
@@ -951,7 +951,7 @@
       "direction": "基础·余弦极限",
       "file": "chapters/ch01.tex",
       "line": 263,
-      "body_sha256": "250712f2b9fb7ba88535c2ae91e66963aa276243db6bbc9731e75ebc47cae36e"
+      "body_sha256": "7cc6269e37df44d83d3e99b420b332f3d7851bf54a876d03be207c5822ca6039"
     },
     {
       "number": 87,
@@ -962,7 +962,7 @@
       "direction": "基础·数列重要极限",
       "file": "chapters/ch01.tex",
       "line": 266,
-      "body_sha256": "662fdc19379c957e491488fbc059b72b70502e34f34f3da03d8fc93258c56777"
+      "body_sha256": "8bd87e5080fd53c27835f46f25a315d44e62293625e99e1a40a6205470007e6b"
     },
     {
       "number": 88,
@@ -973,7 +973,7 @@
       "direction": "基础·第二重要极限",
       "file": "chapters/ch01.tex",
       "line": 269,
-      "body_sha256": "fdfad682746231c2635d7d2488fac74ed9d431f57561793b36124545b0526354"
+      "body_sha256": "cfe899d2df5c478b11a2facf8be0c08a02b203e589be30bf3a15d0c43e2503a1"
     },
     {
       "number": 89,
@@ -1006,7 +1006,7 @@
       "direction": "基础·对数等价量",
       "file": "chapters/ch01.tex",
       "line": 278,
-      "body_sha256": "6abc9ef3aa55fa363595cb6951ac50acb3a785cd24d6fbe00e86d9ee3a48e0a7"
+      "body_sha256": "5aa6b099107972584cf8e4b34bb7b8115dbe3562ed175e2c0ccba68c03437bc5"
     },
     {
       "number": 92,
@@ -1017,7 +1017,7 @@
       "direction": "常规·取对数求极限",
       "file": "chapters/ch01.tex",
       "line": 281,
-      "body_sha256": "6526fa9411d6197c84a91123681b3b1b630fd8ad5ecf5cc70a7e248d44af707f"
+      "body_sha256": "433bcabb1d414f26e9feb8da99f43fd2be3a58b433c18aad632b1490caae43d1"
     },
     {
       "number": 93,
@@ -1028,7 +1028,7 @@
       "direction": "常规·幂指极限",
       "file": "chapters/ch01.tex",
       "line": 284,
-      "body_sha256": "d2010cdedad64a162de8223b3e77c947f7b4ffa88c4e9e45557c2d42b392c9a6"
+      "body_sha256": "fa0892f01a1e7e9393afc2e2d67ca7a090aa12ccc0b8821c312ed95f49a8c7e6"
     },
     {
       "number": 94,
@@ -1039,7 +1039,7 @@
       "direction": "常规·指数和的极限",
       "file": "chapters/ch01.tex",
       "line": 287,
-      "body_sha256": "3db4321616ded85a7d8fe24c2d73c5081a2f02ad19702cdc64934f24a72434cd"
+      "body_sha256": "39fafc16e14954c87bbfeff105d22737c131b6a390e653866b7b3d22b3f98bd0"
     },
     {
       "number": 95,
@@ -1050,7 +1050,7 @@
       "direction": "基础·对数与重要极限",
       "file": "chapters/ch01.tex",
       "line": 290,
-      "body_sha256": "c470da31248c23b853008fdcb92a12dfc481d5147954584aee620b84dcda0ad2"
+      "body_sha256": "85787753f2381de161eadf8473b99831efecc9576ea7e2204cb571b648499594"
     },
     {
       "number": 96,
@@ -1061,7 +1061,7 @@
       "direction": "常规·幂指极限反求参数",
       "file": "chapters/ch01.tex",
       "line": 293,
-      "body_sha256": "d809374dacb8c8817bfd18af76b1837b47dc7b6fd9023c043c226e6b0ebfc578"
+      "body_sha256": "3db2619e5786461a035300e1bf3f7ebd05ffb712c7ce3915ec7a869613c92465"
     },
     {
       "number": 97,
@@ -1072,7 +1072,7 @@
       "direction": "基础·夹逼变式",
       "file": "chapters/ch01.tex",
       "line": 296,
-      "body_sha256": "239ef44f912edad3e0d00a709854af1a93dbc5bf3d5db764b7a9827e2143911e"
+      "body_sha256": "438253cec8df30daa3e6d7ef5fc3425479029f5ddc20234821e4cbdba85cd44f"
     },
     {
       "number": 98,
@@ -1083,7 +1083,7 @@
       "direction": "常规·重要极限综合",
       "file": "chapters/ch01.tex",
       "line": 299,
-      "body_sha256": "8c93d6f44aadc7248d061fce08feddaa4aa70510f67bba8ca035fb764c551e77"
+      "body_sha256": "344acb359d2f8e012dca6abfb662882361e48c3088a471dffda695479ee7dd0b"
     },
     {
       "number": 99,
@@ -1127,7 +1127,7 @@
       "direction": "基础·指数等价量",
       "file": "chapters/ch01.tex",
       "line": 312,
-      "body_sha256": "dbc838b73f4395bb40b31ff359a4269ec7de381e7ecc970edf460675753e3869"
+      "body_sha256": "16cc42d1d2eb41b898ed3c2d6d38be79b548201bd7362d5d09b492a885c51686"
     },
     {
       "number": 103,
@@ -1138,7 +1138,7 @@
       "direction": "常规·三阶等价量",
       "file": "chapters/ch01.tex",
       "line": 315,
-      "body_sha256": "95aa96b98246b414574514dfd43990e3cb835aa95f50007b3000fbbd1ba5e166"
+      "body_sha256": "ae8f5378384a835bc27e4acb5105607a932000d167df58bdfeca235b04088fd8"
     },
     {
       "number": 104,
@@ -1160,7 +1160,7 @@
       "direction": "基础·等价关系反求参数",
       "file": "chapters/ch01.tex",
       "line": 321,
-      "body_sha256": "0c85ca6c3f6b768aa1fb831d3bad397cb637aa81b72727835362d491daf6ed27"
+      "body_sha256": "698237e413b428771df8417d68bf56f95fe999c4ebaafac991548cbfbb10c68a"
     },
     {
       "number": 106,
@@ -1204,7 +1204,7 @@
       "direction": "常规·对数极限反推",
       "file": "chapters/ch01.tex",
       "line": 333,
-      "body_sha256": "06186c0ea1cfd2884d9a33b13e181520c74a97fa0293be57a650924de02eba58"
+      "body_sha256": "0fe8e74fe1447eb4dd8a469f59d785182bd700dc69c75f3ce86e56bdca341fa5"
     },
     {
       "number": 110,
@@ -1215,7 +1215,7 @@
       "direction": "基础·已知极限运算",
       "file": "chapters/ch01.tex",
       "line": 336,
-      "body_sha256": "8c3bce73475ffbc587eea68d82631b8505cf2c2afe4ad3eec64b443f51c7b5c2"
+      "body_sha256": "fb51337a7ffa8de3a35cf0ce6a185b5854b641e1f05be5e91c30ae06a157ab64"
     },
     {
       "number": 111,
@@ -1226,7 +1226,7 @@
       "direction": "常规·振荡项与等价量",
       "file": "chapters/ch01.tex",
       "line": 339,
-      "body_sha256": "9aeaea3c22eceaeda08d3912152b82075c8ea5c5e099d69e475bf88b66f733ec"
+      "body_sha256": "69fa67b18fe976789b2288113587b7958442145fd294a753b71289ec39375c7d"
     },
     {
       "number": 112,
@@ -1237,7 +1237,7 @@
       "direction": "基础·根式等价量",
       "file": "chapters/ch01.tex",
       "line": 342,
-      "body_sha256": "d4aad295457d50e5f4eb3d6c15b91e4180937641fd1d5b1776fd7df80ef81145"
+      "body_sha256": "8142dc0770fa59ba0e1a4a03987eec40ce5550afe4a64a96db9e8326f2f91052"
     },
     {
       "number": 113,
@@ -1248,7 +1248,7 @@
       "direction": "基础·指数复合等价量",
       "file": "chapters/ch01.tex",
       "line": 345,
-      "body_sha256": "efdd258dae5ae6b48348321897b720a3f7d480520d4c74c6cc72a303d064b3f1"
+      "body_sha256": "204276ba7230351889d503c98a3b357e75131ff8cb45cc20e7c7d15740ccc35e"
     },
     {
       "number": 114,
@@ -1270,7 +1270,7 @@
       "direction": "常规·无穷远换元",
       "file": "chapters/ch01.tex",
       "line": 351,
-      "body_sha256": "d1e505522de52a68412bcb7137c764daf2999f3f4a4bebe384c3837184024a2e"
+      "body_sha256": "cc4eefe2fc260e60e020f355b41041f2a7cab684c3ca198cd22bfe81fd64b4a6"
     },
     {
       "number": 116,
@@ -1281,7 +1281,7 @@
       "direction": "常规·积分无穷小",
       "file": "chapters/ch01.tex",
       "line": 354,
-      "body_sha256": "d41b41b920e2ddc57ca0cb752f99e3335494bf7f9c9f0bd64e96e55b51035b65"
+      "body_sha256": "930b27fec4606795024dc54c520feefcd70b0e7322a4ac11dbbb715a436a6edd"
     },
     {
       "number": 117,
@@ -1292,7 +1292,7 @@
       "direction": "常规·相消后的极限",
       "file": "chapters/ch01.tex",
       "line": 357,
-      "body_sha256": "62cc90dbd5a6e4280fd7abbadd1525be26576fb5694642c26db5d2337c827317"
+      "body_sha256": "662e19dfc7a33f90872fc436f796aef0fd93dc84bbf837fb527186ad0d3e0d4b"
     },
     {
       "number": 118,
@@ -1325,7 +1325,7 @@
       "direction": "常规·二阶等价量综合",
       "file": "chapters/ch01.tex",
       "line": 366,
-      "body_sha256": "00ff0ba9ab6c913a46ade1a24f0f4a8644e566f96587c71b1afa94607f77c3ad"
+      "body_sha256": "bdd386898d0f171c2456c52febb51bf32efd1a23a18efcbeb44891d6f77cec96"
     },
     {
       "number": 121,
@@ -1336,7 +1336,7 @@
       "direction": "基础·连续函数值",
       "file": "chapters/ch01.tex",
       "line": 370,
-      "body_sha256": "724463d76c3114b8a2e446640f8798cbe784b727528ba9594ff3eddf5801ef57"
+      "body_sha256": "7ec89498ceb7d2ba492769d8b8cdcc0b9bc0e797aed33dd2e5f8a07a9b2cf585"
     },
     {
       "number": 122,
@@ -1358,7 +1358,7 @@
       "direction": "基础·连续补定义",
       "file": "chapters/ch01.tex",
       "line": 376,
-      "body_sha256": "0a069f63030adad01a04f3d50c611f55718ca741d246e361418f224338571dd2"
+      "body_sha256": "5cb7a47859fc3c17dd3e14abcb6538a4ec23984954ce2d6f86120952edc08754"
     },
     {
       "number": 124,
@@ -1369,7 +1369,7 @@
       "direction": "基础·分段连续性",
       "file": "chapters/ch01.tex",
       "line": 379,
-      "body_sha256": "ff896de061771a9c4f3df0f8171bd3281e63554f2d6d38423f56f216b2257099"
+      "body_sha256": "e70ccb4b28e67b4e49a5761435d61d0e302a7714cfc6ab66079e758e9021532a"
     },
     {
       "number": 125,
@@ -1380,7 +1380,7 @@
       "direction": "常规·振荡因子的连续性",
       "file": "chapters/ch01.tex",
       "line": 382,
-      "body_sha256": "3feedc3d9e3ecb5e3746b7f7ae8425b2cc2dea7b5f8b54b54a73110aae87c5e9"
+      "body_sha256": "92e86b25aed653799d4e7fccb0abb447ec87289521e0bf79897b465e1de85d78"
     },
     {
       "number": 126,
@@ -1424,7 +1424,7 @@
       "direction": "基础·有理函数间断点",
       "file": "chapters/ch01.tex",
       "line": 394,
-      "body_sha256": "0fb8d6335fb1c8f25b6413f9e07f5c65e55b6aa8b9aada24ab05a556cc34c3c7"
+      "body_sha256": "22f811e9a2b9171aecd5538164954e79afcbfd45e2d277c204bea058a7d70f50"
     },
     {
       "number": 130,
@@ -1435,7 +1435,7 @@
       "direction": "常规·指数函数间断点",
       "file": "chapters/ch01.tex",
       "line": 397,
-      "body_sha256": "f6845271fe7489478bcabe9876cd0330b6c58eddf94b7003c277e1bdf8b16712"
+      "body_sha256": "aa63731c6fbc193bc05caa3eeeca9004ebd4c9098a562b079d9bf0d315042c22"
     },
     {
       "number": 131,
@@ -1446,7 +1446,7 @@
       "direction": "常规·连续性反求参数",
       "file": "chapters/ch01.tex",
       "line": 400,
-      "body_sha256": "50b8990391b0ebd5f7c46127a4b180bdf39a1bd2a25a185569ff37d32b795d08"
+      "body_sha256": "3e113c1291b42853fc828fb159d0f096c6f6a528fa6b01e6e4465124484bb318"
     },
     {
       "number": 132,
@@ -1457,7 +1457,7 @@
       "direction": "常规·点态极限函数",
       "file": "chapters/ch01.tex",
       "line": 403,
-      "body_sha256": "733b6b34528d31f809b848779b0c01d6acef47b8345c422e0f78203b146392a5"
+      "body_sha256": "09d4b04cd32fa9734d1066bfa2c7eedb45459c02072fd2662aee8f4447c84421"
     },
     {
       "number": 133,
@@ -1468,7 +1468,7 @@
       "direction": "常规·夹逼生成函数",
       "file": "chapters/ch01.tex",
       "line": 406,
-      "body_sha256": "11ec0f503da32f0a3ac419aee2610c13bda35e7352f291297b5e2bae622eec1e"
+      "body_sha256": "19e8da3362c6a1dfc20b2506194c9d67057cb99931059ddd11181ac51ae5b8fa"
     },
     {
       "number": 134,
@@ -1479,7 +1479,7 @@
       "direction": "常规·分段连续性参数",
       "file": "chapters/ch01.tex",
       "line": 409,
-      "body_sha256": "4397b666fab1ff67373c59554560720be3046539c12f3a56f3963517b5c61cca"
+      "body_sha256": "206f1bee2054d5bbd2a0b06fc309d5d471807e4ac2a5fd9ae2ce7832eff674bb"
     },
     {
       "number": 135,
@@ -1490,7 +1490,7 @@
       "direction": "基础·连续函数运算",
       "file": "chapters/ch01.tex",
       "line": 412,
-      "body_sha256": "2610441f3298b581b4f87ae94ecba2551b0518323095a11c202fdaf9517db254"
+      "body_sha256": "3365e07b1286468260c029feff61111b6c3c75733299d73beecc920b985697b6"
     },
     {
       "number": 136,
@@ -1512,7 +1512,7 @@
       "direction": "常规·振荡函数连续补定义",
       "file": "chapters/ch01.tex",
       "line": 418,
-      "body_sha256": "5263f45008b662aa6f3dac66a9eda182db84571918e973adc6ce5d5a72aae11c"
+      "body_sha256": "7605676f600e76d7495dd2fe221a3ed4bef67dd9adc74308222a45cfced08005"
     },
     {
       "number": 138,
@@ -1523,7 +1523,7 @@
       "direction": "基础·连续函数商",
       "file": "chapters/ch01.tex",
       "line": 422,
-      "body_sha256": "15e5add05d945efcd16a5eb359210f89a3fd56d919e1c46f05e1134dd51a8022"
+      "body_sha256": "31f10b9fd679a6a073ff2489ad3b180bff27a4a6419ea5ba1f89a53d7b618c3d"
     },
     {
       "number": 139,
@@ -1556,7 +1556,7 @@
       "direction": "常规·连续运算综合",
       "file": "chapters/ch01.tex",
       "line": 431,
-      "body_sha256": "06e8afe768b2550a6e54940b8928bf25342d0ad270ca055b13c78185e1ffad02"
+      "body_sha256": "64614a923373d6ad54211e79dd5f63e5dcf0e72ba309626204ce7731049a9751"
     },
     {
       "number": 142,
@@ -1589,7 +1589,7 @@
       "direction": "常规·平移差与零点",
       "file": "chapters/ch01.tex",
       "line": 441,
-      "body_sha256": "adde9812165c5c241c37030a1bfc825bb4ae78dfe605fcb411bb1d12d85e5d2f"
+      "body_sha256": "dcfe4347cab6a7df9936529d2f4e7f613c8992cb897380ed8172bc5a8f887117"
     },
     {
       "number": 145,
@@ -1611,7 +1611,7 @@
       "direction": "常规·介值定理",
       "file": "chapters/ch01.tex",
       "line": 447,
-      "body_sha256": "b5b6fcaafcab48c84280e6fb52431c917e30c4be656e1aa4e4d60160116d343c"
+      "body_sha256": "d7aa99a448ef82696e88f109c5a3a1f821b15cb25f093301ccedc9dc16a69a28"
     },
     {
       "number": 147,
@@ -1655,7 +1655,7 @@
       "direction": "常规·闭区间性质综合",
       "file": "chapters/ch01.tex",
       "line": 459,
-      "body_sha256": "2e1d68b95f0a18d1b13cd0f28cf8a1dc158f1084e8ffb095ec98a3b3027df082"
+      "body_sha256": "d9fc9ced42129ae3cad2416959bcbf53ceca0e2d66df14c0d7ad4236b444cfb5"
     },
     {
       "number": 151,
@@ -1688,7 +1688,7 @@
       "direction": "常规·定义求导与切线",
       "file": "chapters/ch02.tex",
       "line": 9,
-      "body_sha256": "0dcf89a5135884eac7201901b51efd2503ec7d4affdae0ba6f1986758116988e"
+      "body_sha256": "13af24414c23df76e4d260889db8ae1aeac92b8779d6c27ba6dbdfe854d39ce0"
     },
     {
       "number": 154,
@@ -1699,7 +1699,7 @@
       "direction": "基础·补定义函数的导数",
       "file": "chapters/ch02.tex",
       "line": 12,
-      "body_sha256": "8aa2a1bdce01f4c1b9343eb042f6b0ef45cc99af4672f0a879b10d1fb8db025e"
+      "body_sha256": "8721d0ca15db7217fbbf456cdf2002133d4000b8a3d0a74f911bdc3c2e535ca3"
     },
     {
       "number": 155,
@@ -1721,7 +1721,7 @@
       "direction": "常规·平移差商",
       "file": "chapters/ch02.tex",
       "line": 18,
-      "body_sha256": "d9bf651329a554d1988e71ffb130136e97558bfa13d6e202b5285f8c64e7fde9"
+      "body_sha256": "a2bcbfaefd2155b1bebe44f5804deca27d0d149c1863c9d37086195ada8c60ca"
     },
     {
       "number": 157,
@@ -1732,7 +1732,7 @@
       "direction": "基础·差商极限",
       "file": "chapters/ch02.tex",
       "line": 21,
-      "body_sha256": "96f3a3c9745166c6bc8aa71307680f8c7b92b55fedce4af14894170e5b062837"
+      "body_sha256": "32f6de47c179b018ac61a2cc3ecc9f41c32b76264108cbd6314fb688498c8a74"
     },
     {
       "number": 158,
@@ -1743,7 +1743,7 @@
       "direction": "基础·增量缩放",
       "file": "chapters/ch02.tex",
       "line": 24,
-      "body_sha256": "438999291f6298ee2f78ca53c77c391d714629f87d8b9fcfd3c28fd78a946f0f"
+      "body_sha256": "628cbf614773b054bf9eb3c024b7c8aebf5deb05e09ef29f041408b8010bffcd"
     },
     {
       "number": 159,
@@ -1754,7 +1754,7 @@
       "direction": "常规·双移位差商",
       "file": "chapters/ch02.tex",
       "line": 27,
-      "body_sha256": "00d35727e98b22a2dec0194218532a9e41400db183b9f6e5ef15eb7d87728c32"
+      "body_sha256": "04b7c6ea5fbdf5d221be41dc1b9126125e300defb70f76a784153bd67eab709e"
     },
     {
       "number": 160,
@@ -1776,7 +1776,7 @@
       "direction": "基础·已知导数求极限",
       "file": "chapters/ch02.tex",
       "line": 33,
-      "body_sha256": "443d88052d1506dff348f57df87b820491d44164918bd4e418b8b55eac7b31ef"
+      "body_sha256": "cada565acd8b7b7110f4ca8442ad27a484fb59ba58e1a222bf0e986e6e039adf"
     },
     {
       "number": 162,
@@ -1787,7 +1787,7 @@
       "direction": "基础·导数定义换元",
       "file": "chapters/ch02.tex",
       "line": 36,
-      "body_sha256": "d3b96c495c2d5d1de2a00750b7c03901705c676fd661d1542034a5e2c49be435"
+      "body_sha256": "17b258817e9d405aa93c857ff0bab864dde15f23f6c4a41177157df18b79682b"
     },
     {
       "number": 163,
@@ -1798,7 +1798,7 @@
       "direction": "常规·复合增量极限",
       "file": "chapters/ch02.tex",
       "line": 39,
-      "body_sha256": "76eef652c08b40af4c565dc3d0d46df45e836745e0d8249ea28d3572fb90d43d"
+      "body_sha256": "65b078f29b7a6d00933519978cd06062810a1f709c815d7280a9e1dedfe9b92b"
     },
     {
       "number": 164,
@@ -1831,7 +1831,7 @@
       "direction": "常规·指数分段函数",
       "file": "chapters/ch02.tex",
       "line": 48,
-      "body_sha256": "4070411ffe8834e8bbcd9f847da71e722c51c1d9723c6b1939bfa1ab4dd1e4c0"
+      "body_sha256": "c8642114772340419363b0c2a29f56a540f1715c30553622463b52d71d802fce"
     },
     {
       "number": 167,
@@ -1941,7 +1941,7 @@
       "direction": "常规·偶函数导数",
       "file": "chapters/ch02.tex",
       "line": 78,
-      "body_sha256": "33b1526907b430f6d55787f952b8ab4aeb8185ea13ac642d5460612dac0b02e4"
+      "body_sha256": "5050d394251091a9f8e082aeed064b972c3b4d65979cb4b5ab01dee8679f7222"
     },
     {
       "number": 177,
@@ -1963,7 +1963,7 @@
       "direction": "常规·振荡函数可导性",
       "file": "chapters/ch02.tex",
       "line": 84,
-      "body_sha256": "5a34fa1b8de32180aff3ac8da94c90bf6bb610721fb1259a8d2509754b17c77a"
+      "body_sha256": "b2351fc9d639664cf29dd530dc49c9304d5c8e7a2bed43f5757ca105356bea05"
     },
     {
       "number": 179,
@@ -2051,7 +2051,7 @@
       "direction": "基础·乘积法则",
       "file": "chapters/ch02.tex",
       "line": 109,
-      "body_sha256": "10e1c02e14448fa32461a757d3559f5cdb52c8c5b3da2087a1ba8fbbc3254d2f"
+      "body_sha256": "7cc090e5e99d39d16da28535c3c06ee51c7d14b7c5953ba7950676a846c702fe"
     },
     {
       "number": 187,
@@ -2084,7 +2084,7 @@
       "direction": "基础·商式求导",
       "file": "chapters/ch02.tex",
       "line": 118,
-      "body_sha256": "8a13c884a82958e210904ac17e6c3776d50e8fbac8c6eb087cfdef2c11fb8382"
+      "body_sha256": "ba4e5786265d9e59fe1db6716206001f7cb5333a5cafde2c5bc286ee328322f5"
     },
     {
       "number": 190,
@@ -2095,7 +2095,7 @@
       "direction": "基础·商法则",
       "file": "chapters/ch02.tex",
       "line": 121,
-      "body_sha256": "e4c61cb596ca040ee92353a3d1a17197bf5441cd071a13438baf72e8ede4ba33"
+      "body_sha256": "328cb4c6519e81591594435722637c1d777bd2d5510f7869b3ebd509043ef62d"
     },
     {
       "number": 191,
@@ -2106,7 +2106,7 @@
       "direction": "基础·对数有理式",
       "file": "chapters/ch02.tex",
       "line": 124,
-      "body_sha256": "8a0ba113a4dcd65a593023191d76172f890ce3d81095dd8c8fd85dfab994427a"
+      "body_sha256": "dcd4b4689154a6ca9eb59c2405d8442082aca4bab2dbafebc017ab97df000734"
     },
     {
       "number": 192,
@@ -2117,7 +2117,7 @@
       "direction": "基础·乘商求导",
       "file": "chapters/ch02.tex",
       "line": 127,
-      "body_sha256": "0ab9560b90ffea2b8bcb74c8f28976fc1cb96a201ca93089c122b3a7e42d66b3"
+      "body_sha256": "38d895968f14ec48a99bdbf7bb9adfd576c7ecbf1be6d85164a0de4ca820cbeb"
     },
     {
       "number": 193,
@@ -2139,7 +2139,7 @@
       "direction": "常规·分段导函数",
       "file": "chapters/ch02.tex",
       "line": 133,
-      "body_sha256": "88f4ce7870534a34e69dc152519fb88e49b09e2c0b6ee41abff67e2390518198"
+      "body_sha256": "458f7313c2667c8dd6445c001f034b124a0f9e0383aaba09c23176ead374b4e7"
     },
     {
       "number": 195,
@@ -2194,7 +2194,7 @@
       "direction": "常规·反三角复合求导",
       "file": "chapters/ch02.tex",
       "line": 148,
-      "body_sha256": "292de4a7602a5534632eda8c92229053dd973dd2c47106a4fe5712961a7fed6f"
+      "body_sha256": "5919a006685a5f251be259ee86b9e136e88840a1094a0aec743514d1fa407a9d"
     },
     {
       "number": 200,
@@ -2227,7 +2227,7 @@
       "direction": "基础·三角复合求导",
       "file": "chapters/ch02.tex",
       "line": 157,
-      "body_sha256": "800f129d93e8800c997b17aaec9c75f4decdf8257ccd020828fb09ccf3367a25"
+      "body_sha256": "737dd74a59b906dd1f4d791b69a64cab3b2a0c184cadaf7b08f0fb9344de24a7"
     },
     {
       "number": 203,
@@ -2282,7 +2282,7 @@
       "direction": "常规·先求极限再求导",
       "file": "chapters/ch02.tex",
       "line": 172,
-      "body_sha256": "898f5c08e8f12cdc4562a28a4bb229b9ad061ad6ed92a7bd54cd84a80697a922"
+      "body_sha256": "e4327315cb2f4403de1add69bf8790a2b3bd3e5c8b8118f4b3d1145bc331a24b"
     },
     {
       "number": 208,
@@ -2348,7 +2348,7 @@
       "direction": "基础·指数三角二阶导数",
       "file": "chapters/ch02.tex",
       "line": 191,
-      "body_sha256": "5c873811beef08269995c085bd0f157bfce5444c46968fe32e386a56c4537f34"
+      "body_sha256": "29a44bc365a7d0e81223ebf000c82255d4c657b083a6fafc131c238a22c96e63"
     },
     {
       "number": 214,
@@ -2370,7 +2370,7 @@
       "direction": "基础·反正弦二阶导数",
       "file": "chapters/ch02.tex",
       "line": 197,
-      "body_sha256": "a5c6515939c4e03a99164721438dc1d67c0102704d7ff828ff5b6207ee92e19d"
+      "body_sha256": "705951e1f73ae69c87a080c4cce2a07849f92fa9ee6241ed22c9dc47222f68ca"
     },
     {
       "number": 216,
@@ -2392,7 +2392,7 @@
       "direction": "基础·三角高阶导数",
       "file": "chapters/ch02.tex",
       "line": 203,
-      "body_sha256": "f4e99925367d85e0ef5b62b4d1c2ef7ea5fa9d46a2940701391a77cbef22d387"
+      "body_sha256": "a62d1c88c843008311d026179ec0255b0384cd4ef12997bfa0b88370480ef0c5"
     },
     {
       "number": 218,
@@ -2436,7 +2436,7 @@
       "direction": "常规·对数高阶导数",
       "file": "chapters/ch02.tex",
       "line": 215,
-      "body_sha256": "5f49ce7ea0cfdb08b48834a0782bb2b65c1eb81da310c55491cdebc443e1a726"
+      "body_sha256": "22d7b172c93fe8847e542a6434db5296b6efeb5f2dc0b50d7295d7cad2739e2d"
     },
     {
       "number": 222,
@@ -2480,7 +2480,7 @@
       "direction": "基础·隐函数求导",
       "file": "chapters/ch02.tex",
       "line": 228,
-      "body_sha256": "ff350153803b1e9616f1d33172e7affb64f9bc5416f882950ac1aa946e68c421"
+      "body_sha256": "73320d3153acd53444aae226a929634f7932a9e614ecbfcd6155ccbf10c2c3b0"
     },
     {
       "number": 226,
@@ -2502,7 +2502,7 @@
       "direction": "常规·隐曲线切线",
       "file": "chapters/ch02.tex",
       "line": 234,
-      "body_sha256": "7e979567a1ff97a0e19c04d3051998e3a75cee1ac1da811e11b26f72f98220ab"
+      "body_sha256": "db300975c8ef4ea00be2d2c3a47e97440cf5946e2e2667b775cfd67a93d3f350"
     },
     {
       "number": 228,
@@ -2612,7 +2612,7 @@
       "direction": "常规·复合幂指函数",
       "file": "chapters/ch02.tex",
       "line": 264,
-      "body_sha256": "7a2a3f6be7d03d29420218a177db8228fe53761ea3c3521b0783d613fc488ae3"
+      "body_sha256": "2f6a6ad462cf060571abc7b964c82b70e3c3550604982135c3f3a850aeef8417"
     },
     {
       "number": 238,
@@ -2623,7 +2623,7 @@
       "direction": "常规·多因子对数求导",
       "file": "chapters/ch02.tex",
       "line": 267,
-      "body_sha256": "6478cb2ca2adba7acfd01e98379e0d5387cda751ff5cad18ca81fda2b13b4a34"
+      "body_sha256": "5bbfbed291c5e9f6a17bd5ca81a717491b32cd311f607777d3e35b42c067b144"
     },
     {
       "number": 239,
@@ -2656,7 +2656,7 @@
       "direction": "常规·对数化隐函数",
       "file": "chapters/ch02.tex",
       "line": 276,
-      "body_sha256": "ba26b2e1887d65a6347ffb28d45905199dc7f2a0ef4b76ae4328f4099ab5d6d1"
+      "body_sha256": "469b11d6da8781e3fd48cf2b7f174a990834572ecbb8c2d4f29fe6c732337d4e"
     },
     {
       "number": 242,
@@ -2667,7 +2667,7 @@
       "direction": "基础·参数方程求导",
       "file": "chapters/ch02.tex",
       "line": 279,
-      "body_sha256": "c4c62c19c981a41e41b5158d6d4da422147601b2cd7bb6f15701017aec70a349"
+      "body_sha256": "c647ffa172998d634035e179ebb039b1abe41fd8ad0c8ae5e14e8e55d410c0b9"
     },
     {
       "number": 243,
@@ -2678,7 +2678,7 @@
       "direction": "基础·参数定点导数",
       "file": "chapters/ch02.tex",
       "line": 282,
-      "body_sha256": "668e37f86b84fcd1284e4fbde59f1c67b7345b50c0b633a93e39420ff005941b"
+      "body_sha256": "af6fbc5d46b2f19e7db0cac9e4737633e46055b4d20b32396e647411b08720a4"
     },
     {
       "number": 244,
@@ -2711,7 +2711,7 @@
       "direction": "常规·参数二阶导数",
       "file": "chapters/ch02.tex",
       "line": 291,
-      "body_sha256": "e8df5dcda04053433a8701133f5513532124e135d55000d944d859f51410eb4b"
+      "body_sha256": "612afea024867c60f96465efe7615d3fc009ffc663c2ec70a486a0a257677364"
     },
     {
       "number": 247,
@@ -2722,7 +2722,7 @@
       "direction": "常规·参数二阶导数取值",
       "file": "chapters/ch02.tex",
       "line": 294,
-      "body_sha256": "0e1c5cbf018ed4f5467984987db43a2f6077374e03b0c9eba1171afaf145e87f"
+      "body_sha256": "60d73d02a37f430cf63635eada6f2cbdfb469979ac460703bd16726c1da1b5a5"
     },
     {
       "number": 248,
@@ -2733,7 +2733,7 @@
       "direction": "常规·参数导数综合",
       "file": "chapters/ch02.tex",
       "line": 297,
-      "body_sha256": "10fe80bf2a19832de7ceb062d96c4e0d4b24e97c255d0843c934a61951793169"
+      "body_sha256": "5ced54d0800f5da2806dfef7f9b119d8cdb556b421ff11096702c03350cca0dc"
     },
     {
       "number": 249,
@@ -2777,7 +2777,7 @@
       "direction": "基础·由增量求微分",
       "file": "chapters/ch02.tex",
       "line": 310,
-      "body_sha256": "b93e6b6f1409d6804360d3c33f5b16c4c72aa1a31d78683ae6de24d184f7f88e"
+      "body_sha256": "a3e25fc6efd6c693dc792a3cce942d01a88d308475edd027bbbf4846f9e4a9bf"
     },
     {
       "number": 253,
@@ -2788,7 +2788,7 @@
       "direction": "常规·微分的线性主部",
       "file": "chapters/ch02.tex",
       "line": 313,
-      "body_sha256": "38755d00b37e47caf92cd15fbf90f785ec8c9dd481c8e4bd6fa2ba5c44fa0f78"
+      "body_sha256": "e47d2d331745ce0997ce8e3655bf5c810b613376c4440492c0db27ad2cffe553"
     },
     {
       "number": 254,
@@ -2799,7 +2799,7 @@
       "direction": "基础·复合函数微分",
       "file": "chapters/ch02.tex",
       "line": 316,
-      "body_sha256": "7d41488cb6d9885a870ea3d908982d0c0cadc8f689ad266b019a1a9d0ef38e13"
+      "body_sha256": "40bc461578630b411a4b16e662338766a5b17636a4a3542cdc93ae69c9bb8fa7"
     },
     {
       "number": 255,
@@ -2843,7 +2843,7 @@
       "direction": "常规·补定义点微分",
       "file": "chapters/ch02.tex",
       "line": 328,
-      "body_sha256": "094ee6f420051fc7827736ad9ac78857d4496f23165e5788dee92772de57a66a"
+      "body_sha256": "8a3ac1bb680f5c0856285dfd2d5d7264df529d12e80618186705ba96ec6e1be4"
     },
     {
       "number": 259,
@@ -2887,7 +2887,7 @@
       "direction": "常规·定点导数计算",
       "file": "chapters/ch02.tex",
       "line": 340,
-      "body_sha256": "c8e8c5846607f1260f8721f0e254428f805a6880f89cee29aca228f87e318e7b"
+      "body_sha256": "84f4e356767998ef0a3ad28a9e745a5a86b26328b87cf5e4443308f70ffb6b51"
     },
     {
       "number": 263,
@@ -2898,7 +2898,7 @@
       "direction": "常规·差商反求导数",
       "file": "chapters/ch02.tex",
       "line": 343,
-      "body_sha256": "4c03e3551720ac8519fb94236c27ce4e641dab39f08dce37e068a9d63295c25a"
+      "body_sha256": "65141a04e4e103b7119fbe80f0fca29fd992902bdb065213ba07eb84e98cb0f6"
     },
     {
       "number": 264,
@@ -2909,7 +2909,7 @@
       "direction": "常规·可导信息与幂指极限",
       "file": "chapters/ch02.tex",
       "line": 346,
-      "body_sha256": "d297f1fc673287a47ea7b64b52ee5e8385e628ede315f961275d57d62593fa62"
+      "body_sha256": "ef98850ac9ea817653221e5e053c4ddd6abade915532a4ad28a29ea30548a1a0"
     },
     {
       "number": 265,
@@ -2920,7 +2920,7 @@
       "direction": "常规·切线截距",
       "file": "chapters/ch02.tex",
       "line": 349,
-      "body_sha256": "e458a1e11f4bc3a5368168754ab6f865ad1243841e9eb0f81f69f76c75b03ae5"
+      "body_sha256": "7552cc23728f8d25bf437ca12e9f5d81f8f68b4874bdb934bd49bb3eb75df704"
     },
     {
       "number": 266,
@@ -2931,7 +2931,7 @@
       "direction": "常规·复合差商与法线",
       "file": "chapters/ch02.tex",
       "line": 352,
-      "body_sha256": "0dc9faf83c7355563432e09320d988f6e67ebbcc27ff5dc5a71c35d1d788fd72"
+      "body_sha256": "5358245dc422dcce43e8c85008571787d48f920022eba0159ca62bcaa9b21af2"
     },
     {
       "number": 267,
@@ -2953,7 +2953,7 @@
       "direction": "常规·连续补值",
       "file": "chapters/ch02.tex",
       "line": 358,
-      "body_sha256": "f88a11cbc9f83d32633a736234b2af2f0cc4f212ef88ca9102dd3a1131a1a525"
+      "body_sha256": "389354a1c389d470bbc47bde1bbc8201d32c39f55799111086d11f801a5ffdae"
     },
     {
       "number": 269,
@@ -2997,7 +2997,7 @@
       "direction": "常规·公共切线与复合导数",
       "file": "chapters/ch02.tex",
       "line": 370,
-      "body_sha256": "122254b20ff4a191e9eee3faa34aae8e4ae51f273c899738d5acabc1a9d0fe00"
+      "body_sha256": "b1a08ba979e06a2903bbade50fdbd9f7fd8c75d8fae12949129f036b70577443"
     },
     {
       "number": 273,
@@ -3008,7 +3008,7 @@
       "direction": "常规·二阶导数与极限",
       "file": "chapters/ch02.tex",
       "line": 373,
-      "body_sha256": "680b730c8c0ae01c4b2a340df22f12c7651b65b63145c8223e03869e68d949a9"
+      "body_sha256": "7a5f27a42b054088729c67757dc08c2f6aa3c1361400aa0b261a4f86f268dcdb"
     },
     {
       "number": 274,
@@ -3052,7 +3052,7 @@
       "direction": "常规·反函数二阶导数",
       "file": "chapters/ch02.tex",
       "line": 385,
-      "body_sha256": "31f090f48370b59aca84f49da24d988cc7296c53805aac84cc66ef078e4ff5fa"
+      "body_sha256": "55946314c78a3d00260a88ddf37a79fb79a8a80d12b43919d084c22e6573d35a"
     },
     {
       "number": 278,
@@ -3063,7 +3063,7 @@
       "direction": "常规·振荡函数定点求导",
       "file": "chapters/ch02.tex",
       "line": 388,
-      "body_sha256": "3cea5adb2b8220c99952bf8720089693f67969b2a578d17ac1b169a3e73043db"
+      "body_sha256": "50bd9ca8ac44b99979aa39571fbcf5fae42687069f9bc3ccfd10fc927f066114"
     },
     {
       "number": 279,
@@ -3074,7 +3074,7 @@
       "direction": "常规·隐函数与局部极限",
       "file": "chapters/ch02.tex",
       "line": 391,
-      "body_sha256": "ae667693b023cee17ec9807675b5d906d2caf61e4067ffde65e9e2f06773b563"
+      "body_sha256": "3037c99606a5de139f801df3a55cc6d5e03faec12d133bbda0b7ada2d2f73175"
     },
     {
       "number": 280,
@@ -3096,7 +3096,7 @@
       "direction": "基础·参数定点微分",
       "file": "chapters/ch02.tex",
       "line": 397,
-      "body_sha256": "d4c26697d6d06c55ad33f0fb67c913e82a7568aa0ef5c6b5d55ca628adbf067b"
+      "body_sha256": "aef1df51bccd166f1ff774c265a44f9896afc9ac2f10b097c8ce21db58532a93"
     },
     {
       "number": 282,
@@ -3107,7 +3107,7 @@
       "direction": "常规·复合参数求导",
       "file": "chapters/ch02.tex",
       "line": 400,
-      "body_sha256": "bc3fd045819e6c5d5949cfa8318c15f3d0fb149c487ed36b293022850862cf69"
+      "body_sha256": "7c1e6006d11d2cdbc1c7c01a14d90e428bc89a40f6a5b01f07b29abb478ab0f6"
     },
     {
       "number": 283,
@@ -3118,7 +3118,7 @@
       "direction": "常规·极坐标曲线切线",
       "file": "chapters/ch02.tex",
       "line": 403,
-      "body_sha256": "166e2ef015be7f9f9bb9203024348b2ba507d44cbf672ad7ea346cdec1943ee4"
+      "body_sha256": "ca422fd9e28f6e6b76f50d5740300f1bb5ff525472ea28f6c26b0cb3ebf73a62"
     },
     {
       "number": 284,
@@ -3140,7 +3140,7 @@
       "direction": "常规·复合定点微分",
       "file": "chapters/ch02.tex",
       "line": 409,
-      "body_sha256": "63ded5804276eaaf637be16a43c8be830264aaf61acb1d6d2c252c7c553b6843"
+      "body_sha256": "d6736bb41787fc301e6fbfea9b174a61d4992455a1da47ef0b446b2b5fe2d3ee"
     },
     {
       "number": 286,
@@ -3195,7 +3195,7 @@
       "direction": "基础·罗尔点计算",
       "file": "chapters/ch03.tex",
       "line": 6,
-      "body_sha256": "0150098c3ee5f50b75fa69fd4b2edecd8930174d236613da023ce8405052f6ce"
+      "body_sha256": "ef8e15a975b2ba86d9f10f8f39557ea876da7464cfbe2924f4d90ee077fa6ae4"
     },
     {
       "number": 291,
@@ -3206,7 +3206,7 @@
       "direction": "常规·辅助函数与罗尔定理",
       "file": "chapters/ch03.tex",
       "line": 9,
-      "body_sha256": "627636e0d14ad99721c201de2e03db5fbdf7dda58d78dcc88dd31ced3e8d13e3"
+      "body_sha256": "abe9e514233e74650e401cd64853c3e1fb71af5ccb8c8c2db26904e469258d7d"
     },
     {
       "number": 292,
@@ -3217,7 +3217,7 @@
       "direction": "常规·多项式与罗尔定理",
       "file": "chapters/ch03.tex",
       "line": 12,
-      "body_sha256": "4a10a5113cab7aa0cc97f9ded9ce29b8ef6cb02441d8b0e6d908dda681893cd7"
+      "body_sha256": "42aa81648fc19278731b483ac32bd256f546fe89811d65ede796e2e8e65e96e4"
     },
     {
       "number": 293,
@@ -3283,7 +3283,7 @@
       "direction": "基础·对称导数等式",
       "file": "chapters/ch03.tex",
       "line": 30,
-      "body_sha256": "b5d7595ce217bba729c950ca8b59f964181b8f063b03bc3ed8a64985acb54eb1"
+      "body_sha256": "bd98f8ef335a7bd6036cabf6e657dff046532573625fe03b3533539c0dc927a6"
     },
     {
       "number": 299,
@@ -3316,7 +3316,7 @@
       "direction": "常规·介值与中值定理",
       "file": "chapters/ch03.tex",
       "line": 39,
-      "body_sha256": "135e4f49a7c4197714fbad1c9c1cc88c395e6f34a150dea8e3143bfeefecc0a4"
+      "body_sha256": "0c0ea837ea0ec7335a30aeacd22568aac66890a300102ce4c8a8e6ce4672a9f3"
     },
     {
       "number": 302,
@@ -3327,7 +3327,7 @@
       "direction": "常规·三零点与二阶导数",
       "file": "chapters/ch03.tex",
       "line": 42,
-      "body_sha256": "d48f3be9a2821a747bf6d978424e95da53a2b2f1768cb11de513c8bcc9f72a47"
+      "body_sha256": "cf9cea207cc62b5c31759e105fb0bf2776aeed95327cd50be5cbb2154e5297af"
     },
     {
       "number": 303,
@@ -3360,7 +3360,7 @@
       "direction": "常规·三角函数不等式",
       "file": "chapters/ch03.tex",
       "line": 51,
-      "body_sha256": "cf6d4eb8266ebcc1511cd0c2008bc71a5574fb8a017bac18b4138469ef2fd5b2"
+      "body_sha256": "1c88e2b61a1d75a653521dd48c452eeb46c15c9277d72254e5a6c5494fc80002"
     },
     {
       "number": 306,
@@ -3371,7 +3371,7 @@
       "direction": "常规·对数增量估计",
       "file": "chapters/ch03.tex",
       "line": 54,
-      "body_sha256": "bb16ccc0e4487fbdec5013325f3ccb47cb52687decd187380fdefed8d9c57e72"
+      "body_sha256": "02dc2595e93b6630d63a724fbaa4133bf13e1ab1315f545dbe993e936c99378f"
     },
     {
       "number": 307,
@@ -3382,7 +3382,7 @@
       "direction": "常规·对数不等式",
       "file": "chapters/ch03.tex",
       "line": 57,
-      "body_sha256": "81477546bef1c50a15aa7e757f05aaac425a118f83d31c64b97942e8274cf13c"
+      "body_sha256": "762c83f30c4616611f9f53f7d3e6dac436819271dfca416adffc1e37b38d2ed3"
     },
     {
       "number": 308,
@@ -3404,7 +3404,7 @@
       "direction": "常规·导数为零的函数",
       "file": "chapters/ch03.tex",
       "line": 63,
-      "body_sha256": "115bc3f371eee98696cab5f1bfb65a2711a53f95d9976748ddf8935e27576416"
+      "body_sha256": "64db60f814bd845d2093f1f3215168ab3441a28873dd0a7fa619faa110e3258c"
     },
     {
       "number": 310,
@@ -3415,7 +3415,7 @@
       "direction": "常规·反三角恒等式",
       "file": "chapters/ch03.tex",
       "line": 66,
-      "body_sha256": "c598aa2ebe5b01da1e77404fb4db2c2bc50034d055f423a38e3d0d1bd4757e87"
+      "body_sha256": "3369eaa9476423bef25a438c4e0d249a291ffafb01a94636e02ee5aca631b857"
     },
     {
       "number": 311,
@@ -3448,7 +3448,7 @@
       "direction": "基础·柯西中值点",
       "file": "chapters/ch03.tex",
       "line": 75,
-      "body_sha256": "b3d6d2cb084b3ee808892de5e1534f75f6d3dfb56a425f41414c9e8b5c3892d6"
+      "body_sha256": "3846335ba4f944541ba046eb3657ce10db5b16df026851e14c567859fd2be56b"
     },
     {
       "number": 314,
@@ -3459,7 +3459,7 @@
       "direction": "常规·柯西中值定理",
       "file": "chapters/ch03.tex",
       "line": 78,
-      "body_sha256": "03fe034e0d02d242163053859820f0874c5856a5a9aa5a081087c05cfc2267d6"
+      "body_sha256": "215a17691dacf7e74352d9b8511c6739982bca480a58e5b77c98cbfbb13c5a33"
     },
     {
       "number": 315,
@@ -3470,7 +3470,7 @@
       "direction": "常规·幂函数参照",
       "file": "chapters/ch03.tex",
       "line": 81,
-      "body_sha256": "5f3c58d5e4c4ad828801a4e95acd0b36db8d880a56490bbd2521633f367ea718"
+      "body_sha256": "8d0e6054ebb307e999e6e9455b8244fcd212cb759bfbd73fa913d2eccd97d2ab"
     },
     {
       "number": 316,
@@ -3514,7 +3514,7 @@
       "direction": "基础·零比零型极限",
       "file": "chapters/ch03.tex",
       "line": 94,
-      "body_sha256": "6d0dc88ad5e4ab356965ad24bd9e9b9c3197d5c87ea692999b30a0161846e62e"
+      "body_sha256": "d846aea53f83e49a8c387e4f61dda5300421d10bd0bc91258c1885f1b4b804c2"
     },
     {
       "number": 320,
@@ -3525,7 +3525,7 @@
       "direction": "基础·对数极限",
       "file": "chapters/ch03.tex",
       "line": 97,
-      "body_sha256": "6d0aa060498dcf7114a7c6e92541e07f9b7eb66957179eac63a6e085e8d87613"
+      "body_sha256": "e02ffa5a89aea1e7114612ad69e9a148e825f897684a5b9f01f21f0579ae1d86"
     },
     {
       "number": 321,
@@ -3536,7 +3536,7 @@
       "direction": "基础·混合函数极限",
       "file": "chapters/ch03.tex",
       "line": 100,
-      "body_sha256": "28bf028419d52bf96b77caee26923fe8498d25281158ea0d10949e4049969ba3"
+      "body_sha256": "506adfb7fc6e18c82b919018f1d38719b0be81582befefe0ce3eddb4c6a92079"
     },
     {
       "number": 322,
@@ -3547,7 +3547,7 @@
       "direction": "基础·无穷比无穷型",
       "file": "chapters/ch03.tex",
       "line": 103,
-      "body_sha256": "5f57d723d2a12983fcb410dec4c7d600f4adeb0a1c380213cdb3658d12d266cd"
+      "body_sha256": "1f09df0b7d30c675541622a04ef12dfa0e6067da414125434680849fdbd82ac9"
     },
     {
       "number": 323,
@@ -3558,7 +3558,7 @@
       "direction": "常规·连续使用洛必达法则",
       "file": "chapters/ch03.tex",
       "line": 106,
-      "body_sha256": "39d6a775e2a4a613e3dedff242b320222503568ef01e0bec9541faed5cc8b8f3"
+      "body_sha256": "08bf6dfb124476a5b61a9c9d717ddca1ab3b6a1dc9d4e945a310a24add7f44d4"
     },
     {
       "number": 324,
@@ -3569,7 +3569,7 @@
       "direction": "基础·对数与幂比较",
       "file": "chapters/ch03.tex",
       "line": 109,
-      "body_sha256": "df1e66519ee68cd1adedb838b672eda4822c63c1dff308e58c9f801ac805ad87"
+      "body_sha256": "b9ca8e784aa9bf5ed3e07b35d7c50200061025f76cede3f5d06dd7fad0b9e8d6"
     },
     {
       "number": 325,
@@ -3580,7 +3580,7 @@
       "direction": "常规·二阶不定式",
       "file": "chapters/ch03.tex",
       "line": 112,
-      "body_sha256": "034e947e6fe5ab65c71b7dd41195e9c3136707c74d0c9f62680bbd98107c2bfa"
+      "body_sha256": "0a505cb24b09f60c7206e25c9478406a912a8ef964bf16b45fe32340a5d9099a"
     },
     {
       "number": 326,
@@ -3591,7 +3591,7 @@
       "direction": "常规·反正切差极限",
       "file": "chapters/ch03.tex",
       "line": 115,
-      "body_sha256": "6f9d1b9c3d449a8a33c895ef65471405dd8c29644f92801b11394527181a46f6"
+      "body_sha256": "b45c32c74140a9ac87d0147a435a35650daf4028c5f9eb63f7501eb09b591958"
     },
     {
       "number": 327,
@@ -3613,7 +3613,7 @@
       "direction": "常规·极限反求参数",
       "file": "chapters/ch03.tex",
       "line": 121,
-      "body_sha256": "335465f37e83cca846dc0ad3f157b0b94d820fd815cd4c281b21a1eb6db3eaec"
+      "body_sha256": "f7e78fc32836cdb2f77b4c1a4852c9a2467c9da0a95957ceb8a0ac4662d56a94"
     },
     {
       "number": 329,
@@ -3624,7 +3624,7 @@
       "direction": "常规·二阶对数极限",
       "file": "chapters/ch03.tex",
       "line": 124,
-      "body_sha256": "2f6fa79281631de86aa636bac34aab7e5a11925a7598e9fe5a419c0e7c0a310e"
+      "body_sha256": "e20286a84730b1c019edb9de20ecb9b2da6e6af1cf26f1a329c7c7da1ed69a50"
     },
     {
       "number": 330,
@@ -3635,7 +3635,7 @@
       "direction": "常规·嵌套三角极限",
       "file": "chapters/ch03.tex",
       "line": 127,
-      "body_sha256": "4ee5a95ad31650f6eeba32ebe2d9cb3a6ff81b987fb5eb63d31e2c8c696ecf4b"
+      "body_sha256": "7766692e8f40accaa7d2a4efbb7e1497dd983d73fa66206c61a9591f0cb74bdf"
     },
     {
       "number": 331,
@@ -3646,7 +3646,7 @@
       "direction": "常规·无穷量相减",
       "file": "chapters/ch03.tex",
       "line": 130,
-      "body_sha256": "4e2ee25e3a8c4c0832e9978922d64ffd134b8814dfbd7822e416592f9a40a72f"
+      "body_sha256": "c34684b84fc239bad37de6c0a6e98d940dabebe0769539ba1fb58638790f4d3c"
     },
     {
       "number": 332,
@@ -3668,7 +3668,7 @@
       "direction": "常规·零乘无穷型",
       "file": "chapters/ch03.tex",
       "line": 136,
-      "body_sha256": "fb188d03b23d5f39a81972c4de4ed3dffbddcbc6e8a5066541baf6760ef4064d"
+      "body_sha256": "10ae0812e04c37eef9251674125d87b5ceeda5b1eeb951182b5bedd2d013b70d"
     },
     {
       "number": 334,
@@ -3679,7 +3679,7 @@
       "direction": "常规·三角无穷量之差",
       "file": "chapters/ch03.tex",
       "line": 139,
-      "body_sha256": "5adcd52db89a85232c7164551ea3ed0ab6410f3fdd209db5d95b7859e23fef63"
+      "body_sha256": "1587f2e52558bb79717e84003a92a52eda6b57a99757581e4d5579916c6284be"
     },
     {
       "number": 335,
@@ -3690,7 +3690,7 @@
       "direction": "常规·倒数差极限",
       "file": "chapters/ch03.tex",
       "line": 142,
-      "body_sha256": "d4e8847f237c12c242c50a569cfd06d5ec67bef2fe9bbe2b7516d8595cfcdbbb"
+      "body_sha256": "f22d2afe2081f8ef502d87025ea34eea38b5cc4b41eecb5caaf08576b1eb2b7d"
     },
     {
       "number": 336,
@@ -3701,7 +3701,7 @@
       "direction": "常规·二阶相消",
       "file": "chapters/ch03.tex",
       "line": 145,
-      "body_sha256": "3048670e0d6816f54ba14b78e2654fb488e86bf920f1ea099754c52c6523e47d"
+      "body_sha256": "9bbc6d940500bfd98d777d253f0cbcb96eb6073a90bbe545815f2d6ffa202e1a"
     },
     {
       "number": 337,
@@ -3723,7 +3723,7 @@
       "direction": "基础·幂指极限",
       "file": "chapters/ch03.tex",
       "line": 151,
-      "body_sha256": "35f7c248f8a8745a471f8e106c8763534627f3752610ef30dd4eac144caf749a"
+      "body_sha256": "07eafb693187b171e14324a1ecfd2f480803cc218324f314dd81f37bb0611cb6"
     },
     {
       "number": 339,
@@ -3734,7 +3734,7 @@
       "direction": "基础·一的无穷次幂型",
       "file": "chapters/ch03.tex",
       "line": 154,
-      "body_sha256": "df34a72a511532519a3ace80880b62e46d5ae2a6a627d9896a42796554c04779"
+      "body_sha256": "094659e168363c0b63272514b277bc4985662332170380883c16e3ecc6a91785"
     },
     {
       "number": 340,
@@ -3745,7 +3745,7 @@
       "direction": "常规·二阶幂指极限",
       "file": "chapters/ch03.tex",
       "line": 157,
-      "body_sha256": "0951397638f3f7029a4d89dc68f7524053e2e7d5311cef4a16c2be8066ffbf13"
+      "body_sha256": "63a04985ea0f5f095744411f83560f8a365b995100fbcc0bd9353eb9e893d4e2"
     },
     {
       "number": 341,
@@ -3756,7 +3756,7 @@
       "direction": "基础·无穷的零次幂型",
       "file": "chapters/ch03.tex",
       "line": 160,
-      "body_sha256": "b301db281af3a0730ef10aeb190e7cca15de05fbbbe790cade952f61dcb81298"
+      "body_sha256": "cfe83fdac84a647baf0109518026ca69ec99c4026bcd37a0c62d546f87a91329"
     },
     {
       "number": 342,
@@ -3767,7 +3767,7 @@
       "direction": "常规·指数平均的幂极限",
       "file": "chapters/ch03.tex",
       "line": 163,
-      "body_sha256": "6bb779fa7d190b7f3a4eb5f4f2c7f7cac42f3f347e5c92db266dd7ef3a0c1242"
+      "body_sha256": "e43e1d76c8b4070b64e4cf4c3ab642017809515971577b205bcd9eda58f1f206"
     },
     {
       "number": 343,
@@ -3778,7 +3778,7 @@
       "direction": "常规·指数差极限",
       "file": "chapters/ch03.tex",
       "line": 166,
-      "body_sha256": "93d81726624a660449c6d23b1abb7f56c030c52f35454804fd71c62f776ec778"
+      "body_sha256": "1a262f03cc162cc852d5bcc0743a62a09a32c1ff0de92bb04832b0ff34094e99"
     },
     {
       "number": 344,
@@ -3789,7 +3789,7 @@
       "direction": "常规·连续补值参数",
       "file": "chapters/ch03.tex",
       "line": 169,
-      "body_sha256": "440d650c634dfbbca5db6b8f850ba683ae61c54173727cd0d4d7ef8c74636bf0"
+      "body_sha256": "f378bc880a19bfc70c4e6116b2983ca8bc46f5b309c27846f26f8b4201ffef92"
     },
     {
       "number": 345,
@@ -3800,7 +3800,7 @@
       "direction": "基础·幂函数连续补值",
       "file": "chapters/ch03.tex",
       "line": 172,
-      "body_sha256": "94df0b8f0e2e22110b0b8075a604851288822407778dd1310047a2925d254950"
+      "body_sha256": "79bb35a805f46af1d34827cecfc5cc92ca85d41c444cabd2eaede999ab6ab30d"
     },
     {
       "number": 346,
@@ -3811,7 +3811,7 @@
       "direction": "常规·端点相消极限",
       "file": "chapters/ch03.tex",
       "line": 175,
-      "body_sha256": "5de1fec555a28a94bb1a92ec1407d87b741da41bd104a1894fde883e14fae660"
+      "body_sha256": "6be92e5217f31342e0b945e5d3b279d0068b7381ff864a8b8c44621d68f42941"
     },
     {
       "number": 347,
@@ -3822,7 +3822,7 @@
       "direction": "常规·递推极限",
       "file": "chapters/ch03.tex",
       "line": 178,
-      "body_sha256": "39d24bb75e1a9930bd5cb25fdbbcc0ced501615ddab440943127ae660ad0d51e"
+      "body_sha256": "2d4f19a807dad6ea70daec87f97d7c36194a5686e0dca3c93bf07a703233c009"
     },
     {
       "number": 348,
@@ -3833,7 +3833,7 @@
       "direction": "基础·无穷远极限变式",
       "file": "chapters/ch03.tex",
       "line": 181,
-      "body_sha256": "d7e8787380d4c45d378dac1eb6846fb9310218f37d240e642919bc171492b46a"
+      "body_sha256": "2967bf8fa18cf4d4278260e978e16d586a74e7eff985fca833199b922ad7e9f5"
     },
     {
       "number": 349,
@@ -3844,7 +3844,7 @@
       "direction": "常规·对数化极限综合",
       "file": "chapters/ch03.tex",
       "line": 184,
-      "body_sha256": "d1ade4b593ef0cbec98fa1d2e78f02eab4324ea06d6c11a47c6002b25d58ba51"
+      "body_sha256": "51060b95272b1db63f79309534a21ad2e203956e1aedb478e47e36a33b0fbd04"
     },
     {
       "number": 350,
@@ -3866,7 +3866,7 @@
       "direction": "常规·泰勒公式求极限",
       "file": "chapters/ch03.tex",
       "line": 191,
-      "body_sha256": "495e4f4d2baec1af036f951e97f3810850c464819cf2aec27d5a638476d32e27"
+      "body_sha256": "485981682df0a5018dfff206bae066885edc700e2da73c536ed6b963dd0ccb9a"
     },
     {
       "number": 352,
@@ -3877,7 +3877,7 @@
       "direction": "常规·三阶相消",
       "file": "chapters/ch03.tex",
       "line": 194,
-      "body_sha256": "382d29873ed612463ee955a4184aba64a8cba3016951a99ebe5f146a1295b70d"
+      "body_sha256": "cfacc67ae9b795b70e457c36b60d05a43722df83bdfd5d50a7a95dbb27bad17b"
     },
     {
       "number": 353,
@@ -3888,7 +3888,7 @@
       "direction": "常规·对称根式展开",
       "file": "chapters/ch03.tex",
       "line": 197,
-      "body_sha256": "08f33ba44f930049c053023542e03f9aae0fd5a66de449dbccafd3e6bc30f98f"
+      "body_sha256": "ce236498f9585be070eddf80e1650ede5b16579218b96b2ef3e0eaa611bf943e"
     },
     {
       "number": 354,
@@ -3899,7 +3899,7 @@
       "direction": "常规·泰勒系数反求参数",
       "file": "chapters/ch03.tex",
       "line": 200,
-      "body_sha256": "f378148b784dc4f5fef2d3d18990fa0ed5e127e6b7ea9c4d776a2e6807a98795"
+      "body_sha256": "6ed83849b83a0aa0b646c57976e03bea0a3dad7eb78f5e3d38ffec87fc38166f"
     },
     {
       "number": 355,
@@ -3910,7 +3910,7 @@
       "direction": "基础·根式二阶展开",
       "file": "chapters/ch03.tex",
       "line": 203,
-      "body_sha256": "3b1fc963618915ee3fb91cd9bbff94597748beb33051f093cd8fda79223d004f"
+      "body_sha256": "dcac9365584b3b5730bc3f7b4aeb192ad500da4a4b0f2406d75fc0de63c922a9"
     },
     {
       "number": 356,
@@ -3921,7 +3921,7 @@
       "direction": "常规·指数与余弦比较",
       "file": "chapters/ch03.tex",
       "line": 206,
-      "body_sha256": "a532e10c84f2083048dbbdb7b24bc2f0d5f9f03dee6f488a80258471aeb680b5"
+      "body_sha256": "7db673ee69b2bed02bd0bb438738f0a26906442c35ccb54a54828c5cd60b7a78"
     },
     {
       "number": 357,
@@ -3932,7 +3932,7 @@
       "direction": "常规·已知余项求极限",
       "file": "chapters/ch03.tex",
       "line": 209,
-      "body_sha256": "9af081955e6e5b516c46972c563ce4ab62119a8b1060b8eedf6d8d924a7cfdf8"
+      "body_sha256": "d30efc2136dd747843e971b030a8338489048d889b097ca757f18ad9e7ad094f"
     },
     {
       "number": 358,
@@ -3954,7 +3954,7 @@
       "direction": "常规·根式差主项",
       "file": "chapters/ch03.tex",
       "line": 215,
-      "body_sha256": "27de0c3a8d5992f104eff78b3aee5a76ed8b7610fd2c07c420cc4abca98e16ef"
+      "body_sha256": "7c2766e1b769ccc7e37d9b727d1f8d94fe5d2b8812f4d4f868adf76fd9e5d1c4"
     },
     {
       "number": 360,
@@ -3976,7 +3976,7 @@
       "direction": "常规·拉格朗日余项",
       "file": "chapters/ch03.tex",
       "line": 221,
-      "body_sha256": "e66513fcf776fe9cfe5d03a923c537c3bea28555af6272c213aafa96259836ba"
+      "body_sha256": "b4494261d8ec07a25df3191736e6b080332ddf9a4358062e5ab6fb3e7b51b2e0"
     },
     {
       "number": 362,
@@ -4020,7 +4020,7 @@
       "direction": "常规·展开求极限综合",
       "file": "chapters/ch03.tex",
       "line": 233,
-      "body_sha256": "6ae206e7cc4b35021c3b02254ef62e70a47e4e923275bd3ea56c320049c3eb83"
+      "body_sha256": "0eae84edc86a7c02c6a43698eff0e298013cdcadfc8bc123a1eea1a89e13af69"
     },
     {
       "number": 366,
@@ -4031,7 +4031,7 @@
       "direction": "基础·单调区间",
       "file": "chapters/ch03.tex",
       "line": 237,
-      "body_sha256": "649e13613076d3b0d69e4038a022b2d64aee9a5f52729906fea56061cbc1d9be"
+      "body_sha256": "52f79abf1165f56dc5ad53c20ccd1e5c50b37bc921fc4e328a9accf97cabccf7"
     },
     {
       "number": 367,
@@ -4042,7 +4042,7 @@
       "direction": "常规·导数证明不等式",
       "file": "chapters/ch03.tex",
       "line": 240,
-      "body_sha256": "ba16b018f6992806d53d87e69112cce3d3edcdad0e9f2351336b3ea3a77f558b"
+      "body_sha256": "f0f3e975ad2a4ed6fa68cc5bc5496335f857b401a162387618378021d543ca71"
     },
     {
       "number": 368,
@@ -4053,7 +4053,7 @@
       "direction": "常规·对数函数比较",
       "file": "chapters/ch03.tex",
       "line": 243,
-      "body_sha256": "0ee01477773b2be38514a0aca1a3b080f21d9f23062623bd9b2048ba36b31625"
+      "body_sha256": "6d80336493cd9ec263f8310c78b5dd2620ed84cc89e8303db91b83624de76684"
     },
     {
       "number": 369,
@@ -4108,7 +4108,7 @@
       "direction": "常规·商函数单调性",
       "file": "chapters/ch03.tex",
       "line": 258,
-      "body_sha256": "df3516710941e44f50efda55d5540e0493d5331c6694d099b6228594ffbb8932"
+      "body_sha256": "bc2f049fab2bdd49023c671e08558026afa2a233bfe8a79c9d5dec4c8d092f99"
     },
     {
       "number": 374,
@@ -4130,7 +4130,7 @@
       "direction": "常规·中值定理与导数下界",
       "file": "chapters/ch03.tex",
       "line": 264,
-      "body_sha256": "75aeef5ef95667c24225075f844e006c60c456a4c31a31666e71121cc19ba306"
+      "body_sha256": "5d7ac8bcb163668fc0b2d608ea0f808db6e000db80e7a4ba6342197c0428a405"
     },
     {
       "number": 376,
@@ -4152,7 +4152,7 @@
       "direction": "基础·三角函数凹凸性",
       "file": "chapters/ch03.tex",
       "line": 270,
-      "body_sha256": "18179fa7d271e44fcb8d39a383e3fbd7678005320d60eaf71874c3767ee80f08"
+      "body_sha256": "00fd334d0c6d782324013f6738f7f85b4d62b932edcf2ad8c22a88e24f5efc32"
     },
     {
       "number": 378,
@@ -4163,7 +4163,7 @@
       "direction": "常规·指数中点不等式",
       "file": "chapters/ch03.tex",
       "line": 273,
-      "body_sha256": "31c1a53a3548a2e2558589acf9af5cc0964b47cf90bde09ef56f1b2abbd49c68"
+      "body_sha256": "342413f65ff594fb4b1ec0aef3c91fb5c471b10e30e257339d595b35313d3d18"
     },
     {
       "number": 379,
@@ -4273,7 +4273,7 @@
       "direction": "常规·不可导点与极值",
       "file": "chapters/ch03.tex",
       "line": 304,
-      "body_sha256": "a8c6f9e5c1ce9335cf3581635ca0b092ae6454d7df405a02575693be9c584400"
+      "body_sha256": "2c7bf55667a90d548aceafcc39d53d3db9da16f529c7dcc25385a3ee1670c802"
     },
     {
       "number": 389,
@@ -4317,7 +4317,7 @@
       "direction": "常规·导数极限与极值",
       "file": "chapters/ch03.tex",
       "line": 316,
-      "body_sha256": "0be5dfa8fe7465a588d6fd39179b31e12a033ca5bbe10f27572ecd9def5a4f6b"
+      "body_sha256": "1d507a6958a6ce47517cca0b76ba3c5d7457e7ac52aee9636015dc6c73f314db"
     },
     {
       "number": 393,
@@ -4328,7 +4328,7 @@
       "direction": "常规·增量符号与极值",
       "file": "chapters/ch03.tex",
       "line": 319,
-      "body_sha256": "535323cbe6f62173347746e4515e60774e6bf69cc6e9d7b88979d267e9cb60b1"
+      "body_sha256": "db0575caa8ba387cf23c997fbc2e680a1a49ca8e9590be33ee0e9fd088ed7f24"
     },
     {
       "number": 394,
@@ -4383,7 +4383,7 @@
       "direction": "常规·圆柱体积最值",
       "file": "chapters/ch03.tex",
       "line": 334,
-      "body_sha256": "2d2c1bec1472bd16925636c8294c0a6d607ed92c52cbaad135f87c39ae8ced80"
+      "body_sha256": "bdeaa6d129fdf7d0d76f9ab737fbbec3c2859a7ea27601947733c5f0f7d45f10"
     },
     {
       "number": 399,
@@ -4416,7 +4416,7 @@
       "direction": "常规·最值证明不等式",
       "file": "chapters/ch03.tex",
       "line": 343,
-      "body_sha256": "6e1b12401971ce0422add2ce65be609e401c1193c9413c8fac1f5b58ac0d8d30"
+      "body_sha256": "503443490cd0d9bd5847d08dfeba47de15426fc088c50457493bfa33124944e4"
     },
     {
       "number": 402,
@@ -4460,7 +4460,7 @@
       "direction": "基础·水平与铅直渐近线",
       "file": "chapters/ch03.tex",
       "line": 356,
-      "body_sha256": "eb8c14268e8b6a26b7bc8c9d55766ba91a8d50fc0eac775637d7ac5095cbd980"
+      "body_sha256": "5d0f3059d342b9be9a7c1055d145eae95dd9739ca27122fac873c8932c1b1e45"
     },
     {
       "number": 406,
@@ -4471,7 +4471,7 @@
       "direction": "基础·有理函数渐近线",
       "file": "chapters/ch03.tex",
       "line": 359,
-      "body_sha256": "511f23a05db54f5c230efbd58630d7b18a4ad131d71b3a3cc38480415eed88d9"
+      "body_sha256": "fd4234777caf2ecac4f1cb54fffae149727f87c224dea5c94a316d79f5c3c764"
     },
     {
       "number": 407,
@@ -4482,7 +4482,7 @@
       "direction": "常规·可去间断与渐近线",
       "file": "chapters/ch03.tex",
       "line": 362,
-      "body_sha256": "56cc0e4acff8c5d7516cafe9c027cbe49d534784d214b9f13a11c976faa4f995"
+      "body_sha256": "382ef5df34667df8b70c254aee5fbc91eee624984926881b1c9ec5575b5f5b22"
     },
     {
       "number": 408,
@@ -4493,7 +4493,7 @@
       "direction": "基础·斜渐近线",
       "file": "chapters/ch03.tex",
       "line": 365,
-      "body_sha256": "8358b99b0db35331cb5a488abcb8154f557bae90e5df97401c23ca857365244b"
+      "body_sha256": "f3f82be325cdbe3e0f2f2b42e2ea20b01a30a3ee03d89139f58df00a16b2f591"
     },
     {
       "number": 409,
@@ -4504,7 +4504,7 @@
       "direction": "常规·指数复合渐近线",
       "file": "chapters/ch03.tex",
       "line": 368,
-      "body_sha256": "15c4091dfc1bb1f9e9ad4a02eff9c219558063ef943f2ee0bd7d55183bc7ba53"
+      "body_sha256": "a4bda03f68e2bcbfbbe6feec9caabcb99da1da722748f5d0b4c104a0371040e3"
     },
     {
       "number": 410,
@@ -4515,7 +4515,7 @@
       "direction": "基础·振荡因子与渐近线",
       "file": "chapters/ch03.tex",
       "line": 371,
-      "body_sha256": "9b02fc7174a050889d0b813a9e9a5d844b94bee8dccc39e834f79c4bea1e02db"
+      "body_sha256": "8439fd26ae6c152ea41f831c9a0050db877ff7a21ade82f1072e180f1f3e7a11"
     },
     {
       "number": 411,
@@ -4526,7 +4526,7 @@
       "direction": "常规·指数曲线渐近线",
       "file": "chapters/ch03.tex",
       "line": 374,
-      "body_sha256": "dd469a7fff61de18a7155f0fac5201589e98fda4e92fe7f9dd04ae7b25f68055"
+      "body_sha256": "e42c7a6783eaa2345a77c13495644df0fb1a6814fd248dc7257ca9effa55048f"
     },
     {
       "number": 412,
@@ -4537,7 +4537,7 @@
       "direction": "常规·对数函数水平渐近线",
       "file": "chapters/ch03.tex",
       "line": 377,
-      "body_sha256": "a3c83cb0809a2218edd0296e15506238ddab575a2e39082b4e266516bc383574"
+      "body_sha256": "9401d4c45be665cec38a7ba23dda3505770838cc4967f9409fd2c16a52de7ef6"
     },
     {
       "number": 413,
@@ -4559,7 +4559,7 @@
       "direction": "常规·有理函数图形分析",
       "file": "chapters/ch03.tex",
       "line": 383,
-      "body_sha256": "73fa6196eee02c1db08101a703511c63b743c2a4741cd2ac3677a11381ffbf3c"
+      "body_sha256": "cc670a56f5b9dc6f7d2333570a6b04dca39c9eb2c126d63d6005a0a91cf743f4"
     },
     {
       "number": 415,
@@ -4581,7 +4581,7 @@
       "direction": "基础·斜渐近线变式",
       "file": "chapters/ch03.tex",
       "line": 389,
-      "body_sha256": "08a84ff988a267705ec2a568342a1099c3e7b6f462b5b8c4369fd86af8430665"
+      "body_sha256": "cd3fa088e74e3989fa7396fd2297e8330339c017e74cbadc7a0459e703c8a5f6"
     },
     {
       "number": 417,
@@ -4592,7 +4592,7 @@
       "direction": "常规·渐近线与单调性综合",
       "file": "chapters/ch03.tex",
       "line": 392,
-      "body_sha256": "eb77a1172598dd74a5fe371bcb71d05fa050a09abf15313a7e9fb43105f1a12a"
+      "body_sha256": "5b1acb71d6488cc3600ed901526500ef5c326a0db3735d1afbfab78804c2e1ec"
     },
     {
       "number": 418,
@@ -4603,7 +4603,7 @@
       "direction": "基础·显函数曲率",
       "file": "chapters/ch03.tex",
       "line": 396,
-      "body_sha256": "8c3bb3e9ca72d49e6a82eb148aca0a58d8663c6b40a9446d848147165bc06fe3"
+      "body_sha256": "d3961cea56950826b0dc548048734768cd71895587f8234821ba2ea01ca2a4d8"
     },
     {
       "number": 419,
@@ -4614,7 +4614,7 @@
       "direction": "常规·参数曲线曲率",
       "file": "chapters/ch03.tex",
       "line": 399,
-      "body_sha256": "7d9ec59573595d063a1e87532a8bac613685f75356a40382a941b5ed558b6589"
+      "body_sha256": "6e6681d3e594fea34994c0474b4185b1c9794f7d2fcb5c0302154c7fbfa7de51"
     },
     {
       "number": 420,
@@ -4658,7 +4658,7 @@
       "direction": "常规·椭圆曲率综合",
       "file": "chapters/ch03.tex",
       "line": 411,
-      "body_sha256": "8d4eb87e2d583d38b79b3251b28535966589a831b83aa59308d6b3d490d3592d"
+      "body_sha256": "e35b4644ccc6a669f43f0b7a824b0dc09dc3794fcc65d726cdc95228c5b6d9c4"
     },
     {
       "number": 424,
@@ -4713,7 +4713,7 @@
       "direction": "基础·连续函数的原函数",
       "file": "chapters/ch04.tex",
       "line": 15,
-      "body_sha256": "7eaa7e87eb91fd9173e988e78cf7406afff669610030391394d4d44e63218278"
+      "body_sha256": "2801d1826df10c7fc4bf9c159d08540fdd00e5eccc671879ee1c12e3594f10a6"
     },
     {
       "number": 429,
@@ -4746,7 +4746,7 @@
       "direction": "常规·斜率与初值",
       "file": "chapters/ch04.tex",
       "line": 24,
-      "body_sha256": "90b3c07d1286addf4866676ebfbdcd0ada120f5cb44fd259efd8914716681bed"
+      "body_sha256": "a399985af8bc2291c8fc2c788735dd418d0e51fb86fce85df21c07413d0cbea8"
     },
     {
       "number": 432,
@@ -4801,7 +4801,7 @@
       "direction": "常规·换元恢复导函数",
       "file": "chapters/ch04.tex",
       "line": 39,
-      "body_sha256": "77d6ad2d289517a7ea4efb07392b8264b505ea0895384844d7c9c4fc6271e336"
+      "body_sha256": "5d26b9605c473d67cf99bdbf37d5a6919fa3087a20bd03e3d47dc3c5be4b84fc"
     },
     {
       "number": 437,
@@ -4812,7 +4812,7 @@
       "direction": "基础·拆项积分",
       "file": "chapters/ch04.tex",
       "line": 42,
-      "body_sha256": "f1e6f4ecff8927dfeefc440ae58804222fc1487926164ffb4b38c5a8dda637de"
+      "body_sha256": "e02cc475af245a2627dd518019ccc7fcf51112df03f4b4225905cd6deb53e389"
     },
     {
       "number": 438,
@@ -4823,7 +4823,7 @@
       "direction": "基础·三角恒等变形",
       "file": "chapters/ch04.tex",
       "line": 45,
-      "body_sha256": "f036fa4aeae8fd42dc438a4382411b8149f68192287d090240fca8b810923bf7"
+      "body_sha256": "c2f795ead25c4eb3e76720c10359dd2aafb23506368f360ac55a73375b936e18"
     },
     {
       "number": 439,
@@ -4834,7 +4834,7 @@
       "direction": "基础·三角基本积分",
       "file": "chapters/ch04.tex",
       "line": 48,
-      "body_sha256": "25dfe514f2d98f8180ca027c670f4f8e38097e595b0ad7399d039c557005764d"
+      "body_sha256": "9d503c9ede3ac44391be55592af698b916debc003006aa80217276e6aeaad184"
     },
     {
       "number": 440,
@@ -4856,7 +4856,7 @@
       "direction": "基础·降幂积分",
       "file": "chapters/ch04.tex",
       "line": 54,
-      "body_sha256": "f6fbcc0df6f592c7038f4f37634b5fdd13c5631e1e3bf022910edcf5c874769c"
+      "body_sha256": "e8db1f851815e3c7ee0388e7b0a86c9ef3947a6bd0ed4f0aaf902ab65d22c63c"
     },
     {
       "number": 442,
@@ -4867,7 +4867,7 @@
       "direction": "常规·多项式除法积分",
       "file": "chapters/ch04.tex",
       "line": 57,
-      "body_sha256": "f32ab7a646bc186f6ed84e54caa36d83c97bc7934d8f480c4a02cec918edfe45"
+      "body_sha256": "3974c696341a7967d508763b32ad0fcaf317308c021be6b85fb321ca1f59f212"
     },
     {
       "number": 443,
@@ -4878,7 +4878,7 @@
       "direction": "基础·对数原函数",
       "file": "chapters/ch04.tex",
       "line": 60,
-      "body_sha256": "f3323cf213da916417f072640d9fa011edaa17f28c3f65a1ef23e1091c18a203"
+      "body_sha256": "36201155c0bc8a418b691dc470d23937ad5ecaddee416b68893aa6a749989dd2"
     },
     {
       "number": 444,
@@ -4900,7 +4900,7 @@
       "direction": "基础·凑微分",
       "file": "chapters/ch04.tex",
       "line": 67,
-      "body_sha256": "903b683b1f1736bb611b6c0af458f41052e02e46f363acbca3d10ae9b55b9ab3"
+      "body_sha256": "be541b7ef813cdc373a7f91a2c64065a114f03efa76f223dd23eb44eeb9acfd7"
     },
     {
       "number": 446,
@@ -4911,7 +4911,7 @@
       "direction": "基础·根式换元",
       "file": "chapters/ch04.tex",
       "line": 70,
-      "body_sha256": "9acd11edb41e2f462dbf4f759788cf94d88dca0dbd270ac64a8f2776852eaac3"
+      "body_sha256": "15a2be27e8af6712ecb3c7c3560922d8f74704b9205964baf046ad3f0d2641a4"
     },
     {
       "number": 447,
@@ -4922,7 +4922,7 @@
       "direction": "基础·复合函数换元",
       "file": "chapters/ch04.tex",
       "line": 73,
-      "body_sha256": "a67f45ed92c543ebba4efb1d7e33d82a15f19936f5ac0ef757fe780a7ceb118c"
+      "body_sha256": "e1ca742b292f20d4c6a207105c07a589f10288b4d2dd2d8de98ca0c782260b85"
     },
     {
       "number": 448,
@@ -4944,7 +4944,7 @@
       "direction": "基础·平方和与平方差积分",
       "file": "chapters/ch04.tex",
       "line": 79,
-      "body_sha256": "50e5539b0b10a7a60a919da36bec5773216af2a40a862476fe1570af270260af"
+      "body_sha256": "7f00d409b966b341d498da015c5c7a6efdfa692d7d4a997bd5979c74b14a0aea"
     },
     {
       "number": 450,
@@ -4955,7 +4955,7 @@
       "direction": "基础·指数复合换元",
       "file": "chapters/ch04.tex",
       "line": 82,
-      "body_sha256": "087889591ed7e23c90caa4f0c04b789a32c2ff277d6046ba3b70a5e443e7a4f4"
+      "body_sha256": "848c049d6d0c3efbeb9666e7c0a5d019b5690e20d0b5d09a689e5e532613d20b"
     },
     {
       "number": 451,
@@ -4966,7 +4966,7 @@
       "direction": "基础·对数换元",
       "file": "chapters/ch04.tex",
       "line": 85,
-      "body_sha256": "b22ad21e0a3660eb325354ef1c509470ecf39c62b974b8afe40f7aa833e4f636"
+      "body_sha256": "f1aecb65a3a78d76066c618937f17e657d6394d370548339cfc7526350fffb76"
     },
     {
       "number": 452,
@@ -4977,7 +4977,7 @@
       "direction": "基础·反三角函数换元",
       "file": "chapters/ch04.tex",
       "line": 88,
-      "body_sha256": "e60a6276467537d12e932cc70cd274033763009f864ec0375ae3f6cf57f7cc90"
+      "body_sha256": "3f5818954aff8559d0cd462619fcb16ef2bcaf6fe0b76be39001e75ad5dd2840"
     },
     {
       "number": 453,
@@ -4988,7 +4988,7 @@
       "direction": "常规·配方换元",
       "file": "chapters/ch04.tex",
       "line": 91,
-      "body_sha256": "428a0f72f69df83c22042b95dc4af8affba0682785211e9016de807e53698c99"
+      "body_sha256": "3e3a703c05ed465828076313c23483928c456de55cb1cd1b999d6e23c0b62e9b"
     },
     {
       "number": 454,
@@ -4999,7 +4999,7 @@
       "direction": "基础·三角内函数",
       "file": "chapters/ch04.tex",
       "line": 94,
-      "body_sha256": "ba776906910548a3d5861b67665eb12480e193c5c57712e7c33fa2c13760c1f2"
+      "body_sha256": "4632f61670665be3008305fb38813bc69983c550b4897e948e329bb6a244f0c3"
     },
     {
       "number": 455,
@@ -5010,7 +5010,7 @@
       "direction": "基础·根式拆项积分",
       "file": "chapters/ch04.tex",
       "line": 97,
-      "body_sha256": "ff0aed4c66d75732f161f7262df9ad647b561e80db10df5f93bad9c28d0c204b"
+      "body_sha256": "9837696caa7983a94e643489f5370f6c4dc08c783824d6ca58a33af86c9cd7b8"
     },
     {
       "number": 456,
@@ -5021,7 +5021,7 @@
       "direction": "常规·立方根换元",
       "file": "chapters/ch04.tex",
       "line": 100,
-      "body_sha256": "9f245be81ae2fbde1d919bcd157fe42322b04005b5cbe3aa8c8ef175802d8d5a"
+      "body_sha256": "4b18e1d555e89081d41b84cbcc0625905a970415e4940d64b177aad3ad7dca7e"
     },
     {
       "number": 457,
@@ -5032,7 +5032,7 @@
       "direction": "常规·根式三角复合",
       "file": "chapters/ch04.tex",
       "line": 103,
-      "body_sha256": "a7384252ce8d41a57d84576b0d43867d34684cb0b5e13bca99583d61618a35fa"
+      "body_sha256": "1ab96e827bc5f3ddd327e8c69074a6d6168bb9c9b3e5f8358977b9733b7097f0"
     },
     {
       "number": 458,
@@ -5043,7 +5043,7 @@
       "direction": "常规·对数根式换元",
       "file": "chapters/ch04.tex",
       "line": 106,
-      "body_sha256": "61d9011ba4aee600511c5e004bbd72e04a33248f9a3b523a3fd69f0a6ec71c07"
+      "body_sha256": "811d87d6d593d8f4c293fb6e9ceda4059d1623d1c05ac9a0202ad1167c9097fe"
     },
     {
       "number": 459,
@@ -5054,7 +5054,7 @@
       "direction": "常规·指数根式换元",
       "file": "chapters/ch04.tex",
       "line": 109,
-      "body_sha256": "4127fcfedb44671d0f8136d19e509c4fa17d6b1c549e86c9f5eed06a2f6d0237"
+      "body_sha256": "8638034dcede68ae8ecf0767171253d8e7e7c34cd25a5fd930a4c2f6e3cdb777"
     },
     {
       "number": 460,
@@ -5065,7 +5065,7 @@
       "direction": "基础·拆项与反正切换元",
       "file": "chapters/ch04.tex",
       "line": 112,
-      "body_sha256": "8cbd5144ff15e821afd86d3b2d2faab3aa21dc108341bc36c81bdf01bc37582c"
+      "body_sha256": "210bc3d97a8f3c5b39fbeda2e8cce288a3c647bc9f81adfe2f99280a86b584ce"
     },
     {
       "number": 461,
@@ -5076,7 +5076,7 @@
       "direction": "常规·三角幂有理化",
       "file": "chapters/ch04.tex",
       "line": 115,
-      "body_sha256": "ddfe89d4840e3641ad844d111154b048228ce269966c581448178e90320d06cf"
+      "body_sha256": "3bc83aa4472758bdad6a6a60bd8b4f6064ddcd5f1b01887cc436013564914daf"
     },
     {
       "number": 462,
@@ -5087,7 +5087,7 @@
       "direction": "常规·正切换元",
       "file": "chapters/ch04.tex",
       "line": 118,
-      "body_sha256": "2a564bdfe330df8d387de9b1cd570c51d82718090e5cab548eacf4ca448bccef"
+      "body_sha256": "55165f6dab47594b93282cd0efc3a59e22f4844387b66d496de535aa117bf541"
     },
     {
       "number": 463,
@@ -5098,7 +5098,7 @@
       "direction": "基础·指数换元",
       "file": "chapters/ch04.tex",
       "line": 121,
-      "body_sha256": "338c06f2af06e3a6764edb1fad3aba6d798363b567e51083c3d32a7fc52411a9"
+      "body_sha256": "8a42e94f77cbd7555a2b17428e4962269a0d61d358b41ebe9d21a063646847e6"
     },
     {
       "number": 464,
@@ -5109,7 +5109,7 @@
       "direction": "常规·对数差整体换元",
       "file": "chapters/ch04.tex",
       "line": 124,
-      "body_sha256": "5f0ce9766dabd1db7ac92690bb92bb7a559a2a4d7b0408fc38a0323d7bcf35f7"
+      "body_sha256": "1fdc7a51b731a1f724545b611576ab12349103e2fe3db7db5509b9dd503c3cb3"
     },
     {
       "number": 465,
@@ -5120,7 +5120,7 @@
       "direction": "基础·对数换元与拆分",
       "file": "chapters/ch04.tex",
       "line": 127,
-      "body_sha256": "c8cf863348fd614761a9d948c1e5d75aeac36bd2f88a704652d1b495c3f348bd"
+      "body_sha256": "7fada88c5acd8d4951e17da6c34ed378ffd2e9731f71353d0dd9bae8d95a5355"
     },
     {
       "number": 466,
@@ -5131,7 +5131,7 @@
       "direction": "常规·根式有理化",
       "file": "chapters/ch04.tex",
       "line": 130,
-      "body_sha256": "1bcf8e43f1e55250c52476eda4a634a7b742af6ed8ef3df696df3aba70f8174b"
+      "body_sha256": "3b85249584d32421a37baa204653fb77f0a3bf7ea4af75374fa15f2428ba9ce1"
     },
     {
       "number": 467,
@@ -5153,7 +5153,7 @@
       "direction": "常规·对数正切换元",
       "file": "chapters/ch04.tex",
       "line": 136,
-      "body_sha256": "b6adfe182b5a51be759461041ffcf3b0dc98c0f7650484de05e98dae2c5e2422"
+      "body_sha256": "42fa1db9403932e67f0a0a1378a04ea7d63749d60ac5b3adbb5770b1bbf6491c"
     },
     {
       "number": 469,
@@ -5164,7 +5164,7 @@
       "direction": "常规·商函数导数识别",
       "file": "chapters/ch04.tex",
       "line": 139,
-      "body_sha256": "2b49177acdabee7d55b4809becca5638b7bc29e25b2320bf78619364ad4c9b30"
+      "body_sha256": "0f31eb97cfc0eac660cebce779d30e1011b38d90a947066cdf8131ca5c71410b"
     },
     {
       "number": 470,
@@ -5175,7 +5175,7 @@
       "direction": "常规·三角指数整体换元",
       "file": "chapters/ch04.tex",
       "line": 142,
-      "body_sha256": "e400e7dd938a580ced97952d2a727c3e4f4d2480590408c0f80e415e621ec2f8"
+      "body_sha256": "ff43fd1c029932a73fb1c67136593b7de8962cdcf72c6cc8ba684fef62b52640"
     },
     {
       "number": 471,
@@ -5186,7 +5186,7 @@
       "direction": "基础·半角积分",
       "file": "chapters/ch04.tex",
       "line": 145,
-      "body_sha256": "30d53297536b8cfe973757bdd1c9a9c228e112528288d6e0fddf295f66847f27"
+      "body_sha256": "d805a5b7be0c2b713d6a38b652833a4ffafce3dee03f14044a46b4861bd61bb7"
     },
     {
       "number": 472,
@@ -5208,7 +5208,7 @@
       "direction": "常规·抽象函数商的积分",
       "file": "chapters/ch04.tex",
       "line": 151,
-      "body_sha256": "ab11177f6fc228eee5e343c57c06315826c76bd523ba39154788e1f13eb7f7c4"
+      "body_sha256": "8dc4084197ec329cc3cbfe2dfc92cf86466a9402d50ca25fe7aec36c3ea3a48f"
     },
     {
       "number": 474,
@@ -5230,7 +5230,7 @@
       "direction": "常规·平方和根式积分",
       "file": "chapters/ch04.tex",
       "line": 157,
-      "body_sha256": "d461fb5af9c1194d5b0af142ca98bf9063cef6bd5468cf9667878121451e96c7"
+      "body_sha256": "231516458bd4e8a74573d106484f735907080e2175e1df24bba059c70ea7876e"
     },
     {
       "number": 476,
@@ -5241,7 +5241,7 @@
       "direction": "常规·平方差根式积分",
       "file": "chapters/ch04.tex",
       "line": 160,
-      "body_sha256": "2a5bdb812d0add01d93d7f0581dc8ae586147a1f45f27c17c0382a4530f9d30a"
+      "body_sha256": "4416cf8640dbb86bf5faa8201347a54a5245386fa565ea3126f9e370b566e5c3"
     },
     {
       "number": 477,
@@ -5252,7 +5252,7 @@
       "direction": "常规·立方根有理化",
       "file": "chapters/ch04.tex",
       "line": 163,
-      "body_sha256": "7d6569f6e2bd4cf9bac229a9990aaea1bfacd8d5fd536774599bb91becde2051"
+      "body_sha256": "06649cd20a5dbf0da860e64254b724415586fe7abd6a2cd0e93caf22af156cca"
     },
     {
       "number": 478,
@@ -5263,7 +5263,7 @@
       "direction": "常规·不同根指数换元",
       "file": "chapters/ch04.tex",
       "line": 166,
-      "body_sha256": "39473c71f012bfc7536eae710e3256dc8a0da2aeb69dfc37be067da1a91d32a5"
+      "body_sha256": "d2ef7d5e1685a56ef0e31d1f5b62e59505d1f620dcc746a3e1105ba3509f34df"
     },
     {
       "number": 479,
@@ -5274,7 +5274,7 @@
       "direction": "常规·根式分式换元",
       "file": "chapters/ch04.tex",
       "line": 169,
-      "body_sha256": "6b7777ca6bacf5b1c9614bb0504132715cd6faeeaa2d48df52fc04c9a1506ae2"
+      "body_sha256": "d170bf24fc326bdb02787b47d793c7b8b529f350134532b9210bae6ca467f21d"
     },
     {
       "number": 480,
@@ -5285,7 +5285,7 @@
       "direction": "基础·指数有理积分",
       "file": "chapters/ch04.tex",
       "line": 172,
-      "body_sha256": "b949d249429576e560e94b110f57d1c076ea194f0a36a6fa2a3c64dd1fefd659"
+      "body_sha256": "272cc3c508b5acc2a40b95f46f74ab3b9e17b1f0fcc2618f54ff2af88ed5ae13"
     },
     {
       "number": 481,
@@ -5296,7 +5296,7 @@
       "direction": "常规·指数根式换元",
       "file": "chapters/ch04.tex",
       "line": 175,
-      "body_sha256": "f3b3d25541c4d4c1f6e86e720284dcfa4ed26feda3ce423687f72e960f2e54d5"
+      "body_sha256": "46771e82ffb4277422ba3ba8254e9bc95fc29d77924becd98e80289777579523"
     },
     {
       "number": 482,
@@ -5307,7 +5307,7 @@
       "direction": "常规·幂换元与拆分",
       "file": "chapters/ch04.tex",
       "line": 178,
-      "body_sha256": "627e5ba6fc13f6dd8e3550573a344c70cd67196c02fff97efe73598080da1db3"
+      "body_sha256": "09fd143f624e4c712ec5d69d76b1a9696358242cdf928ff2cff1dd08621b8557"
     },
     {
       "number": 483,
@@ -5318,7 +5318,7 @@
       "direction": "基础·倒数换元",
       "file": "chapters/ch04.tex",
       "line": 181,
-      "body_sha256": "8c713efaf68071470a6cfba04f6cddbb3f9f04c8118d001123a31cefdbe3e76a"
+      "body_sha256": "abbf0a10e411dfa3a650688d932a098486d48b48a4762a85b4c8394f83f8dc14"
     },
     {
       "number": 484,
@@ -5329,7 +5329,7 @@
       "direction": "常规·混合内函数换元",
       "file": "chapters/ch04.tex",
       "line": 184,
-      "body_sha256": "2d2eac3008ea6b3e3334c3fc145b4296a3af088df250ae669482a1f466f35124"
+      "body_sha256": "20c17caa2b2e630a7be6e39d743e43634a0c304f7bc0aa24912bc91704476d69"
     },
     {
       "number": 485,
@@ -5351,7 +5351,7 @@
       "direction": "常规·指数根式复合",
       "file": "chapters/ch04.tex",
       "line": 190,
-      "body_sha256": "dc221e110a2abec62ae9f15b5b22b0863178990ddae89291dacbd4d67e0ad9f0"
+      "body_sha256": "015c45196755cefaec9ede505e2b4e485915d8041a2a1ac09c275be80714ac0a"
     },
     {
       "number": 487,
@@ -5362,7 +5362,7 @@
       "direction": "常规·三角代换",
       "file": "chapters/ch04.tex",
       "line": 193,
-      "body_sha256": "06afaeaa8c75cfd82070b70c0b7f37a3668889269b7759c256e4d10a7a2d4996"
+      "body_sha256": "bc688c3cef02d9f314b6a765e0dca7810729b69bc5c480ae172b563f8c0192d3"
     },
     {
       "number": 488,
@@ -5373,7 +5373,7 @@
       "direction": "基础·换元积分变式",
       "file": "chapters/ch04.tex",
       "line": 196,
-      "body_sha256": "67e3e28b0916e8a8fe36433cc7c467aa501db166cd5bf5e60d68b14a2816edbd"
+      "body_sha256": "1a821ea84c9be5f92b021cb452875a4bc3e51957a8a08f65debbae23cba38ed4"
     },
     {
       "number": 489,
@@ -5384,7 +5384,7 @@
       "direction": "常规·换元与初值综合",
       "file": "chapters/ch04.tex",
       "line": 199,
-      "body_sha256": "546835fdcc3420bfd18c58561695e539abc4db2b447db69383a91c3684f0dc57"
+      "body_sha256": "9afc6a8beb8d14373b617493236dae87997b6a3941a027eb9bb1bd53ffff8bab"
     },
     {
       "number": 490,
@@ -5450,7 +5450,7 @@
       "direction": "常规·凑微分与分部配合",
       "file": "chapters/ch04.tex",
       "line": 218,
-      "body_sha256": "850773e664f6278e47a28894f7012a8ad617041d723d62a6616d188f81fcd65b"
+      "body_sha256": "16622a60c7dd4b7b1acf33cf81600a1ee561f1c2d9eaf469f3dca085dfcc9b5a"
     },
     {
       "number": 496,
@@ -5461,7 +5461,7 @@
       "direction": "基础·三角函数分部积分",
       "file": "chapters/ch04.tex",
       "line": 221,
-      "body_sha256": "1c86d81bbcb419a99b546a0321d3b4d128c92d10ba44885e83155b31c2652457"
+      "body_sha256": "1adda19acc6b97556daa590e6531b81b6582c7689fad7cd877bc1a42f90ba54f"
     },
     {
       "number": 497,
@@ -5472,7 +5472,7 @@
       "direction": "常规·对数三角分部积分",
       "file": "chapters/ch04.tex",
       "line": 224,
-      "body_sha256": "ce2e5847709a9d3560b8bfb0537a8e3d185d24a686615fe9c7386f837eb4f3c0"
+      "body_sha256": "c814ae5add220fe9734202e624adacfe5b81f8fa1ab8ab1e54cfdb9eb7658e54"
     },
     {
       "number": 498,
@@ -5483,7 +5483,7 @@
       "direction": "常规·根式分部积分",
       "file": "chapters/ch04.tex",
       "line": 227,
-      "body_sha256": "8f58d6bfc9ff132f4076daa4f17aea8315667187f12c1632704321eabb4e35f9"
+      "body_sha256": "fa40bb9cb0d2b8af8136147fb55b0914db7fe8f70d7cfc1428f744122baabbdf"
     },
     {
       "number": 499,
@@ -5538,7 +5538,7 @@
       "direction": "常规·反正切乘负幂",
       "file": "chapters/ch04.tex",
       "line": 242,
-      "body_sha256": "b24ec706b9059d7f015ccb6ed8af67bd5b09ddea9ccaec977ea5d3b52bc817c3"
+      "body_sha256": "2cbfaf03166e224261819c88aa8a24cd9bf6923db81bd9334af2a9b320b581e9"
     },
     {
       "number": 504,
@@ -5549,7 +5549,7 @@
       "direction": "基础·对数乘有理因子",
       "file": "chapters/ch04.tex",
       "line": 245,
-      "body_sha256": "9b7d5e27b273370ec7a51cf0e0abe3a9ce26014225d656e43ac24f1fcbcab5c2"
+      "body_sha256": "59d9f37808ea5251d45535f0e253aec659f301369b0096f202d2802671d50bfd"
     },
     {
       "number": 505,
@@ -5560,7 +5560,7 @@
       "direction": "常规·指数换元与分部积分",
       "file": "chapters/ch04.tex",
       "line": 248,
-      "body_sha256": "6bd58cc35f443ada5576036c1ca224fd9281625deb25e3567422fc5f40a738f9"
+      "body_sha256": "6a3c84f077ba7c925a4d9014765ef164c88072ff72e177c6dd0e9ea8e5b2285f"
     },
     {
       "number": 506,
@@ -5571,7 +5571,7 @@
       "direction": "常规·对数与根式分部积分",
       "file": "chapters/ch04.tex",
       "line": 251,
-      "body_sha256": "af7c6bc20060f92327fbfc8b397490f4709790bf360d8cc584ae9325fb04640e"
+      "body_sha256": "23811544de5c33bcb1568a4c135898fb4e94674fa29b7f004573fc483e1bff64"
     },
     {
       "number": 507,
@@ -5593,7 +5593,7 @@
       "direction": "常规·指数有理导数识别",
       "file": "chapters/ch04.tex",
       "line": 257,
-      "body_sha256": "310a2670af87701c9e472722595bdbb1bd86bd37e3bc19adaac1765a909ad8f2"
+      "body_sha256": "8baa7c1a1a2134a2f9108812e78b07458abc9b2458730b8220021e0e1095e3dd"
     },
     {
       "number": 509,
@@ -5604,7 +5604,7 @@
       "direction": "常规·三角商的逆向求导",
       "file": "chapters/ch04.tex",
       "line": 260,
-      "body_sha256": "db003a11f7c97e985236d30faeaddf77b43805c330f599f11acd09cb7aac1815"
+      "body_sha256": "8cb1a9de120f480a0a90a24984d82bedec292f08043dc3e3f6af796ff8894de6"
     },
     {
       "number": 510,
@@ -5626,7 +5626,7 @@
       "direction": "常规·正割三次积分",
       "file": "chapters/ch04.tex",
       "line": 266,
-      "body_sha256": "c096f8ff45c46a77b53761fda8511f37b74a3be20e7c935f0ada03f81d4668db"
+      "body_sha256": "b09ccbe8085073d003144e510b9322caa27bfdf6373de32a1898d4269f32ae3c"
     },
     {
       "number": 512,
@@ -5659,7 +5659,7 @@
       "direction": "基础·假分式积分",
       "file": "chapters/ch04.tex",
       "line": 276,
-      "body_sha256": "c4a1cd56b4396e77a348c138136cb6d0ed18956f48821c4a5e8403676a67ad84"
+      "body_sha256": "defc537ee3b5f9c99e107ab4cb3d886c32e1dfa741297ba39c3a75ce019d8e57"
     },
     {
       "number": 515,
@@ -5670,7 +5670,7 @@
       "direction": "基础·两个一次因子",
       "file": "chapters/ch04.tex",
       "line": 279,
-      "body_sha256": "667eb65c5ee7e8556e2c6c3e5dfa55c0ed419954f40fe9f20f0b8d6e1eda6584"
+      "body_sha256": "309edbe754ed93e0aa90bf86f41740f765d5b7fc24fecf84c7cc49e7e9ebd151"
     },
     {
       "number": 516,
@@ -5681,7 +5681,7 @@
       "direction": "常规·三个一次因子",
       "file": "chapters/ch04.tex",
       "line": 282,
-      "body_sha256": "409d3643f0c5fc2ad6fdd534665a893465dd838d29f97224f772954a1c60fa90"
+      "body_sha256": "81c5433c7f9c77962de1b63f06f3b67e37a2d32a175f2f462d4e31ad9ec1c6a8"
     },
     {
       "number": 517,
@@ -5692,7 +5692,7 @@
       "direction": "基础·简单部分分式",
       "file": "chapters/ch04.tex",
       "line": 285,
-      "body_sha256": "4d4c94fe057abd2480ed6246024052fa6a6476a0158a0a222acc6ecc5af6dec2"
+      "body_sha256": "44a92b6aad09a86565acf1af73b28eca06fcee5f9cafc4f8fb846c292bccad49"
     },
     {
       "number": 518,
@@ -5703,7 +5703,7 @@
       "direction": "常规·重一次因子",
       "file": "chapters/ch04.tex",
       "line": 288,
-      "body_sha256": "04d5de346dcfe945ed78b2b540416727dfafbc47cc4ee9e6b8a0cffa0ebee3bc"
+      "body_sha256": "49a760558d56a8e871488a93979231fc2717d90021e75dd4da5c7f831d8542f1"
     },
     {
       "number": 519,
@@ -5714,7 +5714,7 @@
       "direction": "常规·一次与二次因子",
       "file": "chapters/ch04.tex",
       "line": 291,
-      "body_sha256": "08bea457890adbcf3eea1992f1ccb503ce582e97f3f2cfcf546a41062e8ee066"
+      "body_sha256": "f0a69bffe5743e0852a25c72ed212e29e764f866e5a403766cc518f12d37c109"
     },
     {
       "number": 520,
@@ -5725,7 +5725,7 @@
       "direction": "基础·配方与分子拆分",
       "file": "chapters/ch04.tex",
       "line": 294,
-      "body_sha256": "d9319bb7b61c36c74f2fc3213363e660657ba6fb9966be5c091de82a668631fc"
+      "body_sha256": "7a271332b958f7ef0288d11f041d29ac7ce34bc92d345ae5b49247efffb4404e"
     },
     {
       "number": 521,
@@ -5736,7 +5736,7 @@
       "direction": "常规·重二次分母",
       "file": "chapters/ch04.tex",
       "line": 297,
-      "body_sha256": "432f732d295e5fbfab840389f0cf2119d9a0038ce793d36494e7de08d6e41fb6"
+      "body_sha256": "ccb5dc35eef771a53186ddbe5bb19e37a6df2bafadfa8f54f8b74b533b872314"
     },
     {
       "number": 522,
@@ -5747,7 +5747,7 @@
       "direction": "常规·四次分母分解",
       "file": "chapters/ch04.tex",
       "line": 300,
-      "body_sha256": "7a6fc532dad8f57511a64690d13d9476e79403eb49251572b1a6bf876b8408d2"
+      "body_sha256": "61637b9cccac21b2bb611b0a358f16c06887c1ca044f13deb8f0c4e3ab7fe6b4"
     },
     {
       "number": 523,
@@ -5758,7 +5758,7 @@
       "direction": "常规·平移后重二次积分",
       "file": "chapters/ch04.tex",
       "line": 303,
-      "body_sha256": "b22586a30a07ba1bc87b648a59f3cd0c00fcdeea443e2282ed33ac78c8e3d7a1"
+      "body_sha256": "bb8420c73717bad19403dc31c0fd62f76d5f73cf54a83794def1f75d54966520"
     },
     {
       "number": 524,
@@ -5769,7 +5769,7 @@
       "direction": "基础·高次式换元",
       "file": "chapters/ch04.tex",
       "line": 306,
-      "body_sha256": "fdd5c460cf76a3e3851793c29a2af6cd0013ac3749380196bdbc6dd989f2ff95"
+      "body_sha256": "b29ac1bd13272ab2e4d6458645ef7fd908b0e36de19b90319ba60dbabf89a2b7"
     },
     {
       "number": 525,
@@ -5780,7 +5780,7 @@
       "direction": "常规·重零点分解",
       "file": "chapters/ch04.tex",
       "line": 309,
-      "body_sha256": "e30643ec7d938fcd7e2dd5c0885c556b448219ec739f99816885c630e851e55e"
+      "body_sha256": "eb00455a723d14068c5aec6d0b383270dce8488594fd84f8f9f681c38feb27af"
     },
     {
       "number": 526,
@@ -5791,7 +5791,7 @@
       "direction": "基础·重因子换元",
       "file": "chapters/ch04.tex",
       "line": 312,
-      "body_sha256": "bb1a161452a8b004180dab53275e01774363e16afc8597f301e4cab8c5dc6e24"
+      "body_sha256": "86551ed044139c89f56477792b14f8317e14d0338f987536decd6f2b4e604616"
     },
     {
       "number": 527,
@@ -5802,7 +5802,7 @@
       "direction": "常规·四次分母典型模型",
       "file": "chapters/ch04.tex",
       "line": 315,
-      "body_sha256": "e2940bfeff9827adfa3f17630c2c33d405ac1759aa911f113b602175686cb266"
+      "body_sha256": "51197628c2ff8d3e537f0ccb6c766af9f33a09900cd96d78b6ad6ce8a7413613"
     },
     {
       "number": 528,
@@ -5857,7 +5857,7 @@
       "direction": "基础·反正切整体换元",
       "file": "chapters/ch04.tex",
       "line": 330,
-      "body_sha256": "c8e90615e79123df6bf9ed29dd8a3d5419ceaa57ecc10e8ff764233e23bf2061"
+      "body_sha256": "f05b1e91eb3f87a1608ebcc5a050488cffe8fcb4b5e754cec11bd41a86c7cafd"
     },
     {
       "number": 533,
@@ -5868,7 +5868,7 @@
       "direction": "常规·指数有理对数导数",
       "file": "chapters/ch04.tex",
       "line": 333,
-      "body_sha256": "49610ebc52cb991bb6705a0894c749a38b0645e4184cc7a7ceae3c0400d6a5ce"
+      "body_sha256": "2ad61d9589bde9fb2dfa260e9cde84e790bc49f7bb8589fde1e47b3a97a699a5"
     },
     {
       "number": 534,
@@ -5879,7 +5879,7 @@
       "direction": "常规·对数商逆向求导",
       "file": "chapters/ch04.tex",
       "line": 336,
-      "body_sha256": "87cfc47b08a54f3cb531d1608989df4d99f82808ee8263baaf87ad89e7cb2767"
+      "body_sha256": "da66667e987da22e3f5d62bab55c5dc1af36372785eb12af15257b70011d85a3"
     },
     {
       "number": 535,
@@ -5890,7 +5890,7 @@
       "direction": "常规·根式反正切换元",
       "file": "chapters/ch04.tex",
       "line": 339,
-      "body_sha256": "7868e06607b49a858f67c69e7659807347e3315674beffa7cbda3acded377b0e"
+      "body_sha256": "3551794dc0ffaf5e850b4f11cd2e4a89fed2c4f07b7091bd90bbf9d8f5d740e9"
     },
     {
       "number": 536,
@@ -5901,7 +5901,7 @@
       "direction": "常规·商函数导数结构",
       "file": "chapters/ch04.tex",
       "line": 342,
-      "body_sha256": "1374149de62ebe05169947a9498ac405f2006b9c18905c7c57f21db393dcf7a0"
+      "body_sha256": "f5bc98117e03fd07cf91981e38770fced930a55b96c130e7b77aaf88ae37c07f"
     },
     {
       "number": 537,
@@ -5912,7 +5912,7 @@
       "direction": "基础·三角有理换元",
       "file": "chapters/ch04.tex",
       "line": 345,
-      "body_sha256": "2ed567048053c700c724445fea39d568a55a8257b7cb1f08f3f2026fe92c92fc"
+      "body_sha256": "6c21af58b9a61f1ece728540398374a91048b634b432eeb775fd1725528a11e3"
     },
     {
       "number": 538,
@@ -5923,7 +5923,7 @@
       "direction": "常规·万能代换",
       "file": "chapters/ch04.tex",
       "line": 348,
-      "body_sha256": "67e45c91520bc3f59d279a48ecb0aed9872890c55349622e9159c33336a52616"
+      "body_sha256": "4c12b1dc7acf8ec6d33ce30a7c43f229773d54c56cc69ac8ff3e4b10ee236f65"
     },
     {
       "number": 539,
@@ -5934,7 +5934,7 @@
       "direction": "常规·万能代换与反正切",
       "file": "chapters/ch04.tex",
       "line": 351,
-      "body_sha256": "2d4eb2bef5dbefeefd52f09a77f37b8dc681ac8c306f6a31e84f2e7333cce8ae"
+      "body_sha256": "ece5a0bb805cfac64b11f394895294bdf5f1c684da5cf5682f460b1bf0f4e6c8"
     },
     {
       "number": 540,
@@ -5945,7 +5945,7 @@
       "direction": "基础·分母及其导数拆分",
       "file": "chapters/ch04.tex",
       "line": 354,
-      "body_sha256": "fe8f71b4c4513bd9872e14aa7ed936b8b8010205342ab89233b3dfc32cb6a72a"
+      "body_sha256": "6fcdd248368d58ae4a3c0730fedb280585a5ea41fe84de7bfe69ead7aaded0da"
     },
     {
       "number": 541,
@@ -5956,7 +5956,7 @@
       "direction": "基础·对称拆分三角积分",
       "file": "chapters/ch04.tex",
       "line": 357,
-      "body_sha256": "991b70f0524ffdceb4f07fcba98db0b54490fd4934e479cabdcf93e8be656dba"
+      "body_sha256": "589775e4a8d2fc824f8e7f0f73dc33b4b322b893b572e00678ae9f2c076ccfe4"
     },
     {
       "number": 542,
@@ -5967,7 +5967,7 @@
       "direction": "常规·根式三角代换",
       "file": "chapters/ch04.tex",
       "line": 360,
-      "body_sha256": "033b89d75eb0d623e5b23ac6f7366a1a7212fae963a6ef27d3ab7668e5882daa"
+      "body_sha256": "b31fd049b465a75b113772bd65c6f6988a2409858c6a0ddb232cef4f6ce6ed4c"
     },
     {
       "number": 543,
@@ -5978,7 +5978,7 @@
       "direction": "常规·拆项与重二次分母",
       "file": "chapters/ch04.tex",
       "line": 363,
-      "body_sha256": "f8740e0e0a76d8761e586073727c927ca0b32cc50fab1bfb57f0e7d87087e079"
+      "body_sha256": "86bc9b5f283a4c09ee1565929ab2993ac5b302ecbec5409887b2187a903b1b7f"
     },
     {
       "number": 544,
@@ -5989,7 +5989,7 @@
       "direction": "基础·反正切指数换元",
       "file": "chapters/ch04.tex",
       "line": 366,
-      "body_sha256": "33f1f190972687013968937f55701c4cbd36e5d4963414bc2ff3a74320683610"
+      "body_sha256": "2611f0297e8119914128897277fa73541de457edfc4c3e3bf7acdf3df386f9ff"
     },
     {
       "number": 545,
@@ -6000,7 +6000,7 @@
       "direction": "常规·指数有理换元",
       "file": "chapters/ch04.tex",
       "line": 369,
-      "body_sha256": "c63955c57aebd108349580b6f15f9fb52c4459d8d9a27c98f31c65a23dd0289b"
+      "body_sha256": "b1d1f775a7d0cdd065e33b3d95c28977e90f60bf15de9b43cc50bb85a9374e1d"
     },
     {
       "number": 546,
@@ -6011,7 +6011,7 @@
       "direction": "常规·三角因子有理换元",
       "file": "chapters/ch04.tex",
       "line": 372,
-      "body_sha256": "f1f3378d6808d9d8e5380763bcf21972994d3fd43c6b9b4810dacdd0ccdbf449"
+      "body_sha256": "b6fcc8a86656d9d7549acd3d1b11b7933785a680abefe6164d311b1c2bf89d44"
     },
     {
       "number": 547,
@@ -6022,7 +6022,7 @@
       "direction": "基础·反正弦整体换元",
       "file": "chapters/ch04.tex",
       "line": 375,
-      "body_sha256": "2ac6af355ff4a07e7086300714e51a0fee7ac4b61a39a2e6c5bee071412d8cea"
+      "body_sha256": "bf5d55246d1eb18afc1c49e7fec91cb94330ce83fff2aedb7c8f52fa1a860c03"
     },
     {
       "number": 548,
@@ -6033,7 +6033,7 @@
       "direction": "常规·已知函数关系的积分",
       "file": "chapters/ch04.tex",
       "line": 378,
-      "body_sha256": "92c7b203890429f377a53b4e07c00650e44400799a6351f6ee1a0b7d94aa6bde"
+      "body_sha256": "af44861240a9141e3477fc53dfc96163af75ebe192c45511820984596f273981"
     },
     {
       "number": 549,
@@ -6044,7 +6044,7 @@
       "direction": "常规·函数关系与换元",
       "file": "chapters/ch04.tex",
       "line": 381,
-      "body_sha256": "6a6c8693670f3fb32e9435308b35dc1fafd140bc83d19c09273ae9eadecba2a0"
+      "body_sha256": "5b603172798ee7861d463d391c9d03544906562cfa7f85fd7cd0b0893ca848af"
     },
     {
       "number": 550,
@@ -6088,7 +6088,7 @@
       "direction": "常规·抽象函数平方导数",
       "file": "chapters/ch04.tex",
       "line": 393,
-      "body_sha256": "d0b2431614ee80083c3d27091cbf9fadf3ca4c45db6231b7108c7e93cbbdfd00"
+      "body_sha256": "bf86d65379bde3f24ce137df6edad51b2f6ca9572e521710341cd24d5816df4f"
     },
     {
       "number": 554,
@@ -6099,7 +6099,7 @@
       "direction": "常规·线性三角组合平方",
       "file": "chapters/ch04.tex",
       "line": 396,
-      "body_sha256": "ee882902dd1752df2b5ca3b543ee7f368b8006a0359b5829ddf687a6eb2755de"
+      "body_sha256": "eb7b1705bf2126c3d22a5d54d5e08248a143830a72c630a78e0deb9e01ec931e"
     },
     {
       "number": 555,
@@ -6110,7 +6110,7 @@
       "direction": "基础·部分分式变式",
       "file": "chapters/ch04.tex",
       "line": 399,
-      "body_sha256": "020f1027c280f1a3642e0e8d5b8705121c692506e069e33ffe70a55eed504e40"
+      "body_sha256": "5da1eb192f6ff30991edc6aab6d04d59d826c43a14251d47901ca6e9997ba5d1"
     },
     {
       "number": 556,
@@ -6121,7 +6121,7 @@
       "direction": "常规·有理积分小综合",
       "file": "chapters/ch04.tex",
       "line": 402,
-      "body_sha256": "34d58a8e0ca20ea7abebc4b555c55e273aabea6da43d5c5adf2dcb156d2dcbcd"
+      "body_sha256": "3f065e49f2d96ae81cc7b28880de0b51c287788d46d742580d2d58f99946ff6e"
     },
     {
       "number": 557,
@@ -6209,7 +6209,7 @@
       "direction": "基础·积分估值",
       "file": "chapters/ch05.tex",
       "line": 24,
-      "body_sha256": "146f5dda3e4e7ec2bbf7ba9e2cac33a2106b224093286df7394785ef85232a27"
+      "body_sha256": "7c1690fd2b8a41b18a894268b64fa5c148abe319e0c3820e4029ab2ce134905f"
     },
     {
       "number": 565,
@@ -6220,7 +6220,7 @@
       "direction": "基础·带权积分估值",
       "file": "chapters/ch05.tex",
       "line": 27,
-      "body_sha256": "1a072f7e20f68d565714cf7fdc0af6cbaffdcae1185a08d10b596a3e81adacb6"
+      "body_sha256": "28dceb8a41641c509242e757abb84489059b58630e6d8df393bdba673bb7a7f1"
     },
     {
       "number": 566,
@@ -6231,7 +6231,7 @@
       "direction": "基础·三角积分估值",
       "file": "chapters/ch05.tex",
       "line": 30,
-      "body_sha256": "521fad6148f735f785c6f3cd63d0328c56287cd2baa9556c6e03c38fa66828cb"
+      "body_sha256": "4ab8b9160b16571e1da58d58d30884d0aa5303777c052015009e975fb933ac1b"
     },
     {
       "number": 567,
@@ -6396,7 +6396,7 @@
       "direction": "基础·变限函数单调性",
       "file": "chapters/ch05.tex",
       "line": 76,
-      "body_sha256": "69604764eb9160f4d80389bd4e0186c8a0d7bd489dbc85e3c210f4a915173dde"
+      "body_sha256": "9253015eff1f1122dfab9cda2ab71ce5063394ca3e49de124d207463072cd737"
     },
     {
       "number": 582,
@@ -6429,7 +6429,7 @@
       "direction": "基础·牛顿莱布尼茨公式",
       "file": "chapters/ch05.tex",
       "line": 85,
-      "body_sha256": "2763b0e9617efe25d1cd3da11ca6b8a59a539854d1bd3525c627916d6c0115ee"
+      "body_sha256": "fa6d73dbe05943e4cdd2acb26ee5d851677247a74da857e3980de20a55b7279b"
     },
     {
       "number": 585,
@@ -6594,7 +6594,7 @@
       "direction": "基础·三角换元",
       "file": "chapters/ch05.tex",
       "line": 131,
-      "body_sha256": "8e468fe0c26263c2572b4387af946c740c20cc168bdc05f24b68204c5539d4ee"
+      "body_sha256": "e3199a1b2df4309071d344479abde5051b5edf614b74820108c64b549d07d627"
     },
     {
       "number": 600,
@@ -6704,7 +6704,7 @@
       "direction": "基础·奇函数积分",
       "file": "chapters/ch05.tex",
       "line": 161,
-      "body_sha256": "beb3ced1a1225557b609587e715533bea541be9499eba2cb0e16a33b603b6ff4"
+      "body_sha256": "b953080e6c1d451ef0262c04645b48242ab37309560aee8c295da103714daf71"
     },
     {
       "number": 610,
@@ -6770,7 +6770,7 @@
       "direction": "基础·三角积分",
       "file": "chapters/ch05.tex",
       "line": 179,
-      "body_sha256": "177d86315170475d84c95988c889c8cc3946f968fe46f980196c6064710495a7"
+      "body_sha256": "90e50965fd349720f207ba3a3f45e8fe17f24b45d9609dc25d9befbc96afcd4d"
     },
     {
       "number": 616,
@@ -6781,7 +6781,7 @@
       "direction": "常规·对称换元",
       "file": "chapters/ch05.tex",
       "line": 182,
-      "body_sha256": "e39535faef46bbd93307b6f79ff16b0565e0f4756ef51ebda17af7d25e030fca"
+      "body_sha256": "551ad89d33a5c654656cb5633592c427233d9d19133d083e68e5e5d045d26a9b"
     },
     {
       "number": 617,
@@ -6803,7 +6803,7 @@
       "direction": "基础·反三角分部积分",
       "file": "chapters/ch05.tex",
       "line": 188,
-      "body_sha256": "0f0b59d9e550f50d0ddaee699c900001db048b3cdfdcc4a1d4b7d4c8b689f386"
+      "body_sha256": "751edf4a9ef942232f8b6985b9d04246ae61c78b51c434a505d7f7abf2d2ca38"
     },
     {
       "number": 619,
@@ -6836,7 +6836,7 @@
       "direction": "常规·循环分部积分",
       "file": "chapters/ch05.tex",
       "line": 197,
-      "body_sha256": "915a2c9e2cefd1cc1b7849e6f2daaece1dba027e98eb56739cf1a028e8123283"
+      "body_sha256": "bb4f796a75c212ea3fbec2ed7d3f4db8199b225b1cd819d111f5fad3f8293645"
     },
     {
       "number": 622,
@@ -6880,7 +6880,7 @@
       "direction": "基础·倒数换元",
       "file": "chapters/ch05.tex",
       "line": 209,
-      "body_sha256": "a30eac5abee501ab61509cae06069a425cfccf0af8f929b1eae0931991161d04"
+      "body_sha256": "a3ff40648b039e9adf88fcc4413e1be0624d3e9ddabb03392c6356c14c7e343e"
     },
     {
       "number": 626,
@@ -6979,7 +6979,7 @@
       "direction": "基础·对称换元变式",
       "file": "chapters/ch05.tex",
       "line": 236,
-      "body_sha256": "95103b9a4c1d6b7b0825a71a33e455f82d6b00444b513ea505087584b82ff341"
+      "body_sha256": "6ee49e1b736062ae2e0fe39163af0f338e432f0aecbaec7b09936acf3061307d"
     },
     {
       "number": 635,
@@ -7001,7 +7001,7 @@
       "direction": "基础·无穷积分判敛",
       "file": "chapters/ch05.tex",
       "line": 243,
-      "body_sha256": "9847d908c73bd4f2b240a0028c433a3e91f1a150436c83c4d1a2867361905a12"
+      "body_sha256": "dc1899c42b2d5a407c1804d1cea2acffe7c6c6ab93d2c1660b4c53ec8f99b12f"
     },
     {
       "number": 637,
@@ -7045,7 +7045,7 @@
       "direction": "基础·根式反常积分",
       "file": "chapters/ch05.tex",
       "line": 255,
-      "body_sha256": "717158bcaa94354ff6a84d00afef95b05c7864cc3f35bf05ddf410a37e07ae3d"
+      "body_sha256": "21ae79223fbdb45ff33127e1bc9e52ff8ecfcfe1b60540226acaead176f41f4d"
     },
     {
       "number": 641,
@@ -7166,7 +7166,7 @@
       "direction": "基础·瑕积分判敛",
       "file": "chapters/ch05.tex",
       "line": 288,
-      "body_sha256": "ac7d375745f50bf046d59927d17e55769c562c7f647fb2111989245ed58093d6"
+      "body_sha256": "91dc65c9802ba8befdfa75d64a5cdf43ea7f6091893373b5bf5f6000232ff986"
     },
     {
       "number": 652,
@@ -7221,7 +7221,7 @@
       "direction": "常规·倒数换元",
       "file": "chapters/ch05.tex",
       "line": 303,
-      "body_sha256": "f2c4e5d6e2bea37ff063d44ac81f66af30668fecfefe1dc89bcb64d78eb0405b"
+      "body_sha256": "211ff05aa961d5758b1a399a1d5f8a1d0522d359619934640747318fe2c346bf"
     },
     {
       "number": 657,
@@ -7232,7 +7232,7 @@
       "direction": "基础·分段反常积分",
       "file": "chapters/ch05.tex",
       "line": 306,
-      "body_sha256": "751d15930793c04ad948ef5da948d166199a873be24fa085ceaca8702503ba22"
+      "body_sha256": "62d24f565741c65a79998618081597c07be42acac822fcfc28e3207c94f7d4f8"
     },
     {
       "number": 658,
@@ -7408,7 +7408,7 @@
       "direction": "常规·两三角曲线间面积",
       "file": "chapters/ch06.tex",
       "line": 39,
-      "body_sha256": "3193538cd52366aa164d481b488acf5762e565fa4c394f5c3f0ba1a225e159f7"
+      "body_sha256": "d0f24f5c38efe40bae95ebe60af79a1a1bf442531507c597ba1900b8efed71ec"
     },
     {
       "number": 674,
@@ -7441,7 +7441,7 @@
       "direction": "基础·椭圆面积",
       "file": "chapters/ch06.tex",
       "line": 48,
-      "body_sha256": "1cad18da8058cbc22524fcd3b6ce81ec29dda5d9df6b3ca9b071aba5f350afa4"
+      "body_sha256": "826382e7da0661ae626f4beb1e5222de914efadb1631fa1dfca3e0f1ef30aa52"
     },
     {
       "number": 677,
@@ -7463,7 +7463,7 @@
       "direction": "常规·分段面积",
       "file": "chapters/ch06.tex",
       "line": 54,
-      "body_sha256": "14ed2f79c6e2e1f633c3cfe362d980aa8f3d0cdaa88e0122ca61fe0536c44fa1"
+      "body_sha256": "df7a38212326942d909ea8700052cadf35cf3e3167792852af4fd18a8f6b9125"
     },
     {
       "number": 679,
@@ -7485,7 +7485,7 @@
       "direction": "常规·面积随参数变化",
       "file": "chapters/ch06.tex",
       "line": 60,
-      "body_sha256": "684c1122a09285db96637f196312c70bf4b34b5adbb077a86b247ebe23f98bfb"
+      "body_sha256": "89654a76d753b78866a25f04c9fb4f729fd4b808f377dfe15762bea3d7748151"
     },
     {
       "number": 681,
@@ -7496,7 +7496,7 @@
       "direction": "基础·极坐标面积",
       "file": "chapters/ch06.tex",
       "line": 63,
-      "body_sha256": "aae27750f1438abbdbbbce06e8abda537e37ff9825375c693208c23cffd154b9"
+      "body_sha256": "a7c1f5f5ae074280e683c4bad197023cc024cbec7a2e205f0f10195d02bf2fb1"
     },
     {
       "number": 682,
@@ -7650,7 +7650,7 @@
       "direction": "常规·累积体积",
       "file": "chapters/ch06.tex",
       "line": 105,
-      "body_sha256": "baa69fbc910baaa677e5c53a5946c779eb56607297787657b340d89cecc444fb"
+      "body_sha256": "88c858aa7691c904bb51f93f0e6b75bb214cd4e6972997e8b15af82bad1eaa61"
     },
     {
       "number": 696,
@@ -7683,7 +7683,7 @@
       "direction": "基础·直角坐标弧长",
       "file": "chapters/ch06.tex",
       "line": 114,
-      "body_sha256": "1d3bbbcbed9eeeca3b191505c7c7a46507888d78cd78c22f205f8397024ed4e3"
+      "body_sha256": "77acefb709892306d2998e9b68e13f4b6c67f620da727ac95217c36be9f503d1"
     },
     {
       "number": 699,
@@ -7694,7 +7694,7 @@
       "direction": "基础·三角对数弧长",
       "file": "chapters/ch06.tex",
       "line": 117,
-      "body_sha256": "6f848f3d694809bce7faf2cce43931921125bd6c54e806b1be1ef53f8313ed38"
+      "body_sha256": "0198ffacf8bc7c869e9262cb5a44a7b3850cbf36faeb5d4bfe83b9298ce0730b"
     },
     {
       "number": 700,
@@ -7705,7 +7705,7 @@
       "direction": "常规·变限函数弧长",
       "file": "chapters/ch06.tex",
       "line": 120,
-      "body_sha256": "feb6260d3ba268d1077ba69085bc9b5213eb6b1d5a535cb6754e60887ca721fc"
+      "body_sha256": "7677c16de7edd118b7f36f8891d28abd7a8a8582480ecf30ada7f1411bcc57f5"
     },
     {
       "number": 701,
@@ -7716,7 +7716,7 @@
       "direction": "基础·参数曲线弧长",
       "file": "chapters/ch06.tex",
       "line": 123,
-      "body_sha256": "81f8cb63a96fc9456f63d12fd3414d0d55cc814da17800322cd443cf6bf0f395"
+      "body_sha256": "a69bf39c85aa50a3887908063b19e651e84763d5d3212e756afabe9de9a4ae64"
     },
     {
       "number": 702,
@@ -7760,7 +7760,7 @@
       "direction": "基础·曲率半径",
       "file": "chapters/ch06.tex",
       "line": 135,
-      "body_sha256": "94ead40a0e848656b712f76ce0ec1b1cb2bd1b76a8c015ebd13b2b946cecf8d4"
+      "body_sha256": "1f81d3e5efd04dba5e35757415c2efabb35ad271b68875ae2ac6517fed5d2161"
     },
     {
       "number": 706,
@@ -7826,7 +7826,7 @@
       "direction": "常规·有限旋转体积",
       "file": "chapters/ch06.tex",
       "line": 153,
-      "body_sha256": "be62d3cdfc17937ea3f39eeac756e8388f0515bc857c79eee1e8d69e0ac0df4f"
+      "body_sha256": "5aef6b6bc372c2b0485f4d5940da00488d519fa88f24b256d7f34adf9c9c3074"
     },
     {
       "number": 712,
@@ -7925,7 +7925,7 @@
       "direction": "常规·三角形水压小综合",
       "file": "chapters/ch06.tex",
       "line": 181,
-      "body_sha256": "6dc3475244aff6981f7e448dc144552759f6b89092202b13d22740f9f7a7c73b"
+      "body_sha256": "170825a3c202ed3a144e3b7f0b610a965e5d98ce59bfef8e8ace02c0c39945ee"
     },
     {
       "number": 721,
@@ -8002,7 +8002,7 @@
       "direction": "基础·隐式解验证",
       "file": "chapters/ch07.tex",
       "line": 21,
-      "body_sha256": "22eaf6aff70041592223d6c78ecfe7dd236df838dd3f517fee65e4d8639c152a"
+      "body_sha256": "beb7f8b34f740213700fab29574f51db6ac242a7a077917b87eb9572a001ccca"
     },
     {
       "number": 728,
@@ -8035,7 +8035,7 @@
       "direction": "基础·分离变量辨识",
       "file": "chapters/ch07.tex",
       "line": 31,
-      "body_sha256": "fe5fac4fa0cff03f38a92803517579fb00d6496298dacc25a0c81b0bcfea4fb3"
+      "body_sha256": "0b5e008ab4fa108f1f8641c420a1fa5ce2214d3b78c7f536f0c60539d67fd8e8"
     },
     {
       "number": 731,
@@ -8046,7 +8046,7 @@
       "direction": "基础·可分离变量方程",
       "file": "chapters/ch07.tex",
       "line": 34,
-      "body_sha256": "89621c923030573e14bd3b507147e3055e3387764d78ff01129930b04b11ca3a"
+      "body_sha256": "1f7fac313cbf04d9db2c70d62ccd399e3e35696ff0dcf262144930c4466ea625"
     },
     {
       "number": 732,
@@ -8057,7 +8057,7 @@
       "direction": "基础·分离变量初值",
       "file": "chapters/ch07.tex",
       "line": 37,
-      "body_sha256": "42f56e2e35602f0c6412810a54b273ad869f2cefbbcae0d6f03b4547327bc6d2"
+      "body_sha256": "9e5b5e455f71d33c25238d4bcabc46088aae463d6f71619d73f024b9fbd9f2e7"
     },
     {
       "number": 733,
@@ -8079,7 +8079,7 @@
       "direction": "基础·根式初值解",
       "file": "chapters/ch07.tex",
       "line": 43,
-      "body_sha256": "552497fcdd21196d489221ed52ab632d35c775e1bed332b3ee7df05dcce75f18"
+      "body_sha256": "40f731580c9a795ef6d7019272e4e2e96a75bb72d5ff93f08d3efeab7bdd4090"
     },
     {
       "number": 735,
@@ -8101,7 +8101,7 @@
       "direction": "常规·斜率恢复曲线",
       "file": "chapters/ch07.tex",
       "line": 49,
-      "body_sha256": "ec96df11e4b7cf021e31c1925c1a15c3734d2f8e4b680ba29ed32310a915bab2"
+      "body_sha256": "a1a50e8397c16899968520d9a57c8904b3d8346b481a9ceacbcb4f7d7cec75ee"
     },
     {
       "number": 737,
@@ -8156,7 +8156,7 @@
       "direction": "常规·积分条件定常数",
       "file": "chapters/ch07.tex",
       "line": 64,
-      "body_sha256": "697d92c0b3d6265127ede473b14b5236b1adcdacc8877c7069a278507b4688f7"
+      "body_sha256": "8adb4f7ce9a3705127a21bec169d5f239df0a702be726009051f4225fcbf8cb7"
     },
     {
       "number": 742,
@@ -8200,7 +8200,7 @@
       "direction": "常规·增长模型",
       "file": "chapters/ch07.tex",
       "line": 76,
-      "body_sha256": "5b79a479fc176c35535804dda064303aba3fab5509655def088fc47784204e78"
+      "body_sha256": "8848cb33cfa4799f64792e3da50e77076d407e681ad7dcc0d326486f25e8ecb0"
     },
     {
       "number": 746,
@@ -8211,7 +8211,7 @@
       "direction": "基础·齐次方程代换",
       "file": "chapters/ch07.tex",
       "line": 80,
-      "body_sha256": "d4e2c389325c5d736e7984f1796af9014b53108d1db552d1a22e274d58335d21"
+      "body_sha256": "48e6030f49694a5f22dec5ecdd7b22fb84d529c1baca93837d980c7200727357"
     },
     {
       "number": 747,
@@ -8222,7 +8222,7 @@
       "direction": "基础·根式齐次方程",
       "file": "chapters/ch07.tex",
       "line": 83,
-      "body_sha256": "bdd3a786781c024908fcc61d01fda4848961c644c92d05ba0f377e2e64374b42"
+      "body_sha256": "14b00685f1a05dadb5f984edcd67467b93b3ae3404b898f1ba9a4f1eaa4e7c54"
     },
     {
       "number": 748,
@@ -8233,7 +8233,7 @@
       "direction": "基础·齐次代换",
       "file": "chapters/ch07.tex",
       "line": 86,
-      "body_sha256": "74a1a8421fa496f6d0a2bbfacfb5009e83f611ceff15f70ef0265af182d26fae"
+      "body_sha256": "eee9a875e31c93a8254cc4c702b5bdb36737d4bbcf7734bca66d6d7dc096b154"
     },
     {
       "number": 749,
@@ -8244,7 +8244,7 @@
       "direction": "常规·齐次初值问题",
       "file": "chapters/ch07.tex",
       "line": 89,
-      "body_sha256": "8523515e5f8c72d068fe5f3bf6cb9f5fcf31620abe87802ecc83066db459051d"
+      "body_sha256": "05c58da31b042cc7da3023a5e2bbf40bea7401be876df6c3da86c91caa423eab"
     },
     {
       "number": 750,
@@ -8255,7 +8255,7 @@
       "direction": "基础·切线斜率模型",
       "file": "chapters/ch07.tex",
       "line": 92,
-      "body_sha256": "dc0cfd0f18fcebdcf21daae2f8d5c92410f16ffc5e4a192330c9b339081b6c70"
+      "body_sha256": "2206921279f34ce81ac6cbc2d2ee936504ac7b5d95ee44ae8e87bdb6b6d451d4"
     },
     {
       "number": 751,
@@ -8266,7 +8266,7 @@
       "direction": "基础·常比例解",
       "file": "chapters/ch07.tex",
       "line": 95,
-      "body_sha256": "253d1f43ea0e807a5e77853b39560a574c02079894fc4a72a6b9cebc277e25b6"
+      "body_sha256": "3c564e30675e3879e8f3bb3aebf31c96bb38a0e43738367c66617faea3abc471"
     },
     {
       "number": 752,
@@ -8277,7 +8277,7 @@
       "direction": "常规·对数齐次方程",
       "file": "chapters/ch07.tex",
       "line": 98,
-      "body_sha256": "39158c593a01dc4ca1ceb5f212f6ead6d1a93fd46e2912a7e8de6861c613d5fb"
+      "body_sha256": "53707d7d98a078793fe8a6916674d1aa572fe03ab52edef7e86db6690ee981f2"
     },
     {
       "number": 753,
@@ -8299,7 +8299,7 @@
       "direction": "常规·齐次方程隐式解",
       "file": "chapters/ch07.tex",
       "line": 104,
-      "body_sha256": "45b6d031eea85428921ac2c8caab1d3d4e848ab4368c130b8be147350a7b21cf"
+      "body_sha256": "8b4a70c10a2ac1574f8cc13011af955b4bd8064b95c8d4410e529d1c05272c3a"
     },
     {
       "number": 755,
@@ -8321,7 +8321,7 @@
       "direction": "常规·齐次求解与核验",
       "file": "chapters/ch07.tex",
       "line": 110,
-      "body_sha256": "3c0848bb9263ea9adb174db780e4571d3b8baeb9c399269ed8252297de1de02c"
+      "body_sha256": "97b5ddcb34903a54af175a900f323b0eaeb3fda6ecec940be321fa7aa8ad6764"
     },
     {
       "number": 757,
@@ -8343,7 +8343,7 @@
       "direction": "基础·三角系数初值",
       "file": "chapters/ch07.tex",
       "line": 117,
-      "body_sha256": "6c54c3c251ce18a58bb5a066277c45e94350f5acab3204897b390150e5f85aa7"
+      "body_sha256": "1c716d5ee434852a139123d4f07db80a5d3b1c48d71ac3cb366eea9063ea1994"
     },
     {
       "number": 759,
@@ -8398,7 +8398,7 @@
       "direction": "基础·对数外力",
       "file": "chapters/ch07.tex",
       "line": 132,
-      "body_sha256": "2e8c999e6386e46c5e838725b752bba8d2392e640bbcd855e716fc539c3ff626"
+      "body_sha256": "b298b1789d052be68f0d2f3db264f7f94ae106c2869662d73b7370c7fc40e313"
     },
     {
       "number": 764,
@@ -8442,7 +8442,7 @@
       "direction": "常规·逆函数求解",
       "file": "chapters/ch07.tex",
       "line": 144,
-      "body_sha256": "909512408a0e42be4a3a0987d9a343fc777383da4ca73bbe5c7a5322c27cc763"
+      "body_sha256": "ab98013fe8e6bd916c6cc852da18a92b05ae3d0ab31faaea71fadaeaceaf18b3"
     },
     {
       "number": 768,
@@ -8453,7 +8453,7 @@
       "direction": "基础·全微分识别",
       "file": "chapters/ch07.tex",
       "line": 147,
-      "body_sha256": "8fe519188b744e436bb8ca5e52335870d7cab8d4b80a4c4f0d40d86876aba4c2"
+      "body_sha256": "b45fb9a16e31e9b37cccb67683a8ab2fb70d03b2ff857ad05f4a6f06d821b5fb"
     },
     {
       "number": 769,
@@ -8464,7 +8464,7 @@
       "direction": "常规·切线斜率与线性方程",
       "file": "chapters/ch07.tex",
       "line": 150,
-      "body_sha256": "c864d0679561ca283dad6ce2c51e5b2263e47021d22972f5a2acbb8d49f10ad0"
+      "body_sha256": "6db3486e9d534872dfa7aa2db59eb8d66ddb4f7f233fc1a470d99284cab1a842"
     },
     {
       "number": 770,
@@ -8552,7 +8552,7 @@
       "direction": "基础·反三角函数积分",
       "file": "chapters/ch07.tex",
       "line": 175,
-      "body_sha256": "21451e06d711846c41263b7bfc19deccd2a0ce0203a32d4ae69b26aa1387715a"
+      "body_sha256": "510952ce11bb5400a11b80b2e2b140ec4a8810ee4bdf649cea5d60ee57879822"
     },
     {
       "number": 778,
@@ -8574,7 +8574,7 @@
       "direction": "常规·几何条件恢复初值",
       "file": "chapters/ch07.tex",
       "line": 181,
-      "body_sha256": "3aa1c399d515d3d30489b5ad314e83eeeafc5389bf5efd78f02a1781a4c2bb80"
+      "body_sha256": "464a773bab45c5c542bf665a1927a908bac160e390a9bdeb70642b6ce8e2d37e"
     },
     {
       "number": 780,
@@ -8651,7 +8651,7 @@
       "direction": "常规·乘积求导降阶",
       "file": "chapters/ch07.tex",
       "line": 202,
-      "body_sha256": "7c4fd01ba42059fe14bf50d9a24a3556a4637650be57ba849016182392c2cde5"
+      "body_sha256": "d15d132cdab702aa8cc267038bc82587d20940105c7da1cc00b9f5f5b8a54edc"
     },
     {
       "number": 787,
@@ -8706,7 +8706,7 @@
       "direction": "基础·线性相关性",
       "file": "chapters/ch07.tex",
       "line": 218,
-      "body_sha256": "06965f1ef8368a20050e34853ad0ce1f395ba342a7fd71301ac129c196efa975"
+      "body_sha256": "bd464cee92045f75b5c6bcce00a755205d9637efaaf4150e629e10cba9d94459"
     },
     {
       "number": 792,
@@ -8981,7 +8981,7 @@
       "direction": "常规·常系数初值小综合",
       "file": "chapters/ch07.tex",
       "line": 294,
-      "body_sha256": "6db8ff3b086f29cdd2355be5b9f89c66aec4f19ec748944acc90a7dc31f127c9"
+      "body_sha256": "c4722cbb0012127a4e3b30ad8ac193d3b3191c1f1962798b3d952b842eb11101"
     },
     {
       "number": 817,
@@ -9091,7 +9091,7 @@
       "direction": "常规·外力分解",
       "file": "chapters/ch07.tex",
       "line": 325,
-      "body_sha256": "57eb0b44cdb7517a336ade404135f48ea5c72ce1316518a0eac0f6650a9e0599"
+      "body_sha256": "ce848652c117ce63e3b6b7bc02c4546d265718f2b410592dc2d2c4367424596b"
     },
     {
       "number": 827,
