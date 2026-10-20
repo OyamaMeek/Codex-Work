@@ -1542,6 +1542,6 @@
   - `output/工科数学分析逐题训练-上册/`中的7个章文件、`main.tex`、`ipad.tex`、`题目清单.json`、`使用说明.md`、`验证说明.md`及LaTeX源码ZIP
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/20/10-51-18/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`e2e0cff feat: add 830 upper analysis exercise sources`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
