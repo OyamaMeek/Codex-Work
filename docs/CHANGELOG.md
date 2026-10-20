@@ -1522,6 +1522,6 @@
   - `output/工科数学分析逐题训练/`中的六个章文件、`main.tex`、`ipad.tex`、两版PDF、`题目清单.json`、`使用说明.md`、`验证说明.md`与LaTeX源码ZIP
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/20/08-25-50/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`321f3c1 feat: add 818 engineering analysis exercises and iPad edition`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
