@@ -1598,6 +1598,19 @@
   - `AGENTS.md`（仅本地）
   - `memory/gotchas.md`、`memory/progress.md`、`docs/CHANGELOG.md`
   - `context/2026/10/20/15-59-58/对话.md`
-- **Git 提交**：`1c7389e docs: record logs and memory only git policy`，已本地提交。包含普通推送的操作被自动审批拒绝，理由为未确认向当前远端发送日志与记忆内容的授权；本次未推送。实际状态通过后续本地文档提交补记。
+- **Git 提交**：`1c7389e docs: record logs and memory only git policy`、`329c36a docs: record policy verification and push restriction`。用户明确回复“推送”后，已普通推送至 `origin/main`；远端分支哈希与本地一致，同步检查0/0。本条通过后续日志提交补记。
+
+---
+
+## [2026-10-20 16:03] 推送日志与记忆提交
+
+- **需求/问题描述**：
+  > 用户明确授权推送本次日志与记忆文档。
+- **实际实现的功能与改动**：
+  - 核对两个待推送提交，仅包含 `docs/CHANGELOG.md`、`memory/` 与 `context/` 下的日志和记忆文档；普通推送至既有 `origin/main`。
+  - [测试/验证]：`git push` 退出0；同步检查0/0，`git ls-remote` 确认远端为 `329c36aa1236f80169157a60c3b5755dce91088e`，与本地一致。任务文件及 `AGENTS.md` 修改未上传；本次未运行应用测试。
+- **涉及文件**：
+  - `docs/CHANGELOG.md`、`memory/progress.md`、`context/2026/10/20/15-59-58/对话.md`
+- **Git 提交**：已推送 `1c7389e`、`329c36a`；本次结果补记待提交。
 
 ---
