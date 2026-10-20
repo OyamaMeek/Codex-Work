@@ -1,0 +1,41 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,bm,enumitem,hyperref}
+\hypersetup{hidelinks,pdftitle={工科数学分析逐题训练}}
+\setlist[enumerate]{label=（\arabic*）,leftmargin=2.6em,itemsep=0.25em}
+\newcommand{\dd}{\,\mathrm{d}}
+\newenvironment{exercise}[2]{%
+  \par\medskip\noindent\textbf{第#1题}\quad\textit{#2}\par\smallskip
+}{\par\medskip}
+\allowdisplaybreaks
+\setcounter{secnumdepth}{-1}
+\sloppy
+\setlength{\emergencystretch}{4em}
+\title{工科数学分析逐题训练\\[0.4em]\large 计算、论证与条件辨析}
+\author{}
+\date{2026年10月20日}
+\begin{document}
+\maketitle
+\section*{使用说明}
+本题册覆盖向量与空间几何、多元微分、重积分、曲线积分、曲面积分及无穷级数，难度按工科数学分析期末考试控制。练习既要求完成计算，也关注条件是否充分、定理能否使用、参数变化对结论的影响。
+
+全册共818道题，按阅读顺序统一编号为1至818。34节各设两道递进题，纳入连续编号；每节先完成基本训练，再练习条件辨析与参数综合。
+
+题目所需函数、区域、参数与方向均在题干中给出，可独立使用。常规版与iPad横屏版共用同一份题目；iPad版每页一道题，下方留白用于草稿。未给出本校考试大纲，具体章目仍以授课要求为准。
+
+本册仅包含改编题目，未附答案；按章节练习使用，不代表某一套试卷的题量或时间安排。证明题可使用工科数学分析课堂已学定理，使用时应说明关键条件。
+\tableofcontents
+\clearpage
+\input{chapters/ch08.tex}
+\clearpage
+\input{chapters/ch09.tex}
+\clearpage
+\input{chapters/ch10.tex}
+\clearpage
+\input{chapters/ch11.tex}
+\clearpage
+\input{chapters/ch12.tex}
+\clearpage
+\input{chapters/ch13.tex}
+\end{document}

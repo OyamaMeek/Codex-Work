@@ -1,0 +1,462 @@
+\section{第12章\quad 曲面积分}
+\subsection{第一类曲面积分}
+\begin{exercise}{520}{上半球的对称分解}
+设 $a>0$，$S$ 为球面 $x^2+y^2+z^2=a^2$ 的上半球面，$S_1$ 为其在第一卦限的部分。分别判断 $\iint_Sx\,\dd S,\iint_Sy\,\dd S,\iint_Sz\,\dd S,\iint_Sxyz\,\dd S$ 中哪些等于相应 $S_1$ 上积分的四倍；计算这四个全上半球积分，并说明每一次使用对称性的依据。
+\end{exercise}
+\begin{exercise}{521}{切平面与奇函数消去}
+先求抛物面 $z=x^2+y^2$ 在 $(0,1,1)$ 处的切平面，令 $\Sigma$ 为该平面被柱面 $x^2+(y-1)^2=1$ 截出的部分。求
+\[I(\lambda)=\iint_{\Sigma}(x^3yz^2+\lambda z)\,\dd S\quad(\lambda\in\mathbb R),\]
+并给出 $I(1)$。说明能否仅因投影圆盘关于 $y=1$ 对称，就将含 $z$ 的积分判为零。
+\end{exercise}
+\begin{exercise}{522}{曲面上的恒等变换}
+设 $\Sigma$ 为平面 $\frac x2+\frac y3+\frac z4=1$ 在第一卦限中的部分。先证明 $2x+\frac43y+z$ 在 $\Sigma$ 上为常数，再计算 $\iint_{\Sigma}(2x+\frac43y+z)\,\dd S$；利用这一结果及对称或重心性质，分别求 $\iint_{\Sigma}x\,\dd S$、$\iint_{\Sigma}y\,\dd S$。
+\end{exercise}
+\begin{exercise}{523}{平面三角形的二阶矩}
+设 $t>0$，$\Sigma_t=\{(x,y,z):x+y+z=t,\ x,y,z\ge0\}$。求 $\iint_{\Sigma_t}y^2\,\dd S$，并给出 $t=1$ 时的值；利用变量轮换与 $(x+y+z)^2=t^2$，求 $\iint_{\Sigma_t}xy\,\dd S$。
+\end{exercise}
+\begin{exercise}{524}{球面约束与函数信息}
+设 $R>0$，$f$ 在 $\mathbb R$ 上连续，$\Sigma_R$ 为上半球面 $z=\sqrt{R^2-x^2-y^2}$。求
+\[I(R)=\iint_{\Sigma_R}\left[xy\sqrt{x^4+y^4}+zf(x^2+y^2+z^2+1)\right]\,\dd S.\]
+若对所有 $R>0$ 都有 $I(R)=0$，确定 $f$ 在 $[1,\infty)$ 上的取值，并说明能否由此确定 $f$ 在 $(-\infty,1)$ 上的值。
+\end{exercise}
+\begin{exercise}{525}{球冠与截取参数}
+设 $k>0$，$\Sigma_k$ 为单位球面上满足 $z\ge k\sqrt{x^2+y^2}$ 的顶部。求 $I(k)=\iint_{\Sigma_k}z\,\dd S$，给出原截面参数 $k=1$ 时的值；判断 $I(k)$ 的单调性，并用曲面包含关系解释结果。
+\end{exercise}
+\begin{exercise}{526}{八面体的分片与对称性}
+设 $\Sigma:|x|+|y|+|z|=1$。计算曲面面积 $A$ 与 $\iint_{\Sigma}(x+|y|)\,\dd S$，进而求均匀曲面上 $|y|$ 的平均值；说明为何不能把含 $|y|$ 的积分也按奇函数消去。
+\end{exercise}
+\begin{exercise}{527}{球面的二阶矩}
+设 $R>0$，$\Sigma:x^2+y^2+z^2=R^2$。利用变量对称性求 $\iint_{\Sigma}z^2\,\dd S$，再求 $\iint_{\Sigma}(a x^2+b y^2+c z^2)\,\dd S$，并给出该积分为零的参数条件，其中 $a,b,c\in\mathbb R$。
+\end{exercise}
+\begin{exercise}{528}{偏心投影域与奇偶性}
+设 $a>0$，$\Sigma$ 为锥面 $z=\sqrt{x^2+y^2}$ 在柱体 $x^2+y^2\le2ax$ 内的部分。说明 $xy,yz,zx$ 三项中哪些积分由奇偶性为零，计算 $\iint_{\Sigma}(xy+yz+zx)\,\dd S$；再说明把柱体改为 $x^2+y^2\le-2ax$ 时积分怎样改变。
+\end{exercise}
+\begin{exercise}{529}{锥面积分与体积比较}
+设 $\Sigma$ 为锥面 $z=\sqrt{x^2+y^2}$ 在柱体 $x^2+y^2\le2x$ 内的部分。求 $\iint_{\Sigma}z\,\dd S$；再设 $\Omega$ 为该曲面与其在 $xOy$ 平面上的投影之间的立体，求 $\Omega$ 的体积，说明二者的比例为何为常数。
+\end{exercise}
+\begin{exercise}{530}{半球的线性函数平均值}
+设 $a>0$，$\Sigma$ 为上半球面 $z=\sqrt{a^2-x^2-y^2}$。求 $\iint_{\Sigma}(x+y+z)\,\dd S$ 及被积函数在该曲面上的平均值；若将上半球改为下半球，分别说明积分值与平均值怎样改变。
+\end{exercise}
+\begin{exercise}{531}{锥体边界的分片面积积分}
+设 $\Sigma$ 为立体 $\sqrt{x^2+y^2}\le z\le1$ 的整个边界。分别求锥面与顶圆盘上的 $\iint(x^2+y^2)\,\dd S$ 并求总和；再将上界 $1$ 改为 $h>0$，用缩放关系求总积分，说明这类积分是否依赖法向选择。
+\end{exercise}
+\begin{exercise}{532}{平面曲面的三阶矩}
+设 $\Sigma$ 为平面 $x+y+z=1$ 在第一卦限中的部分。计算 $\iint_{\Sigma}xyz\,\dd S$；再将平面常数 $1$ 改为 $t>0$，不重新积分，利用缩放关系求相应积分并说明缩放次数。
+\end{exercise}
+\begin{exercise}{533}{投影积分与截面换元}
+设 $\Sigma$ 为平面 $x+y+z=1$ 在第一卦限中的部分。令 $c>0$，求
+\[J(c)=\iint_{\Sigma}\frac{\dd S}{(c+x+y)^2},\]
+并给出 $J(1)$；将二重积分化为以 $u=x+y$ 为变量的一元积分，进而判断 $J(c)$ 随 $c$ 的单调性。
+\end{exercise}
+\begin{exercise}{534}{圆柱面的参数与缩放}
+设 $R,H>0$，$\Sigma$ 为圆柱面 $x^2+y^2=R^2$ 夹在 $z=0,z=H$ 之间的侧面。求 $\iint_{\Sigma}\frac1{x^2+y^2}\,\dd S$；进一步把被积函数改为 $(x^2+y^2)^{-p/2}$，求积分关于实参数 $p$ 的表达式，并讨论同时将 $R,H$ 放大 $k>0$ 倍时的变化。
+\end{exercise}
+\begin{exercise}{535}{锥面的参数化与尺度}
+设 $\Sigma_h$ 是锥面 $z^2=3(x^2+y^2)$ 被 $z=0,z=h$ 截出的部分，$h>0$。写出其参数表示及面积元素，求 $I(h)=\iint_{\Sigma_h}(x^2+y^2)\,\dd S$；给出 $h=3$ 时的值，并说明高度扩大为原来两倍时积分变为原来的几倍。
+\end{exercise}
+\begin{exercise}{536}{抛物面面积元素与比较}
+设 $\Sigma$ 为抛物面 $z=2-x^2-y^2$ 在 $xOy$ 平面上方的部分。将 $\iint_{\Sigma}(x^2+y^2)\,\dd S$ 化为一元定积分并计算；再求其在 $xOy$ 平面上的投影区域 $D$ 上的二重积分 $\iint_D(x^2+y^2)\,\dd x\,\dd y$，比较两者大小并解释原因。
+\end{exercise}
+\begin{exercise}{537}{曲面质量与平均高度}
+设 $\Sigma$ 为抛物面 $z=2-x^2-y^2$ 在 $xOy$ 平面上方的部分。求曲面面积 $A$ 与 $I=\iint_{\Sigma}3z\,\dd S$，进而求该均匀曲面的平均高度 $\bar z=I/(3A)$；验证结果应满足的几何范围。
+\end{exercise}
+\begin{exercise}{538}{平面投影与积分线性性}
+设 $\Sigma$ 为平面 $2x+2y+z=6$ 在第一卦限中的部分，$\lambda\in\mathbb R$。求
+\[I(\lambda)=\iint_{\Sigma}(2xy-2x^2-\lambda x+z)\,\dd S,\]
+给出 $I(1)$，并求使 $I(\lambda)=0$ 的参数。须写明投影区域和面积元素。
+\end{exercise}
+\begin{exercise}{539}{球冠的对称性与参数}
+设 $a>0,0<h<a$，$\Sigma_h$ 为球面 $x^2+y^2+z^2=a^2$ 上满足 $z\ge h$ 的部分。说明哪些被积项可由对称性消去，求 $I(h)=\iint_{\Sigma_h}(x+y+z)\,\dd S$；再求满足 $I(h)=I(0)/2$ 的 $h$，其中 $I(0)$ 表示上半球面上的同一积分。
+\end{exercise}
+\begin{exercise}{540}{面积元素与投影元素辨析}
+设 $S$ 为单位上半球面，取上侧。分别计算 $\iint_Sz\,\dd S$ 与 $\iint_Sz\,\dd x\,\dd y$；从两种面积元素的关系解释它们为何不同。反向后两个积分各怎样变化？在一般图像曲面 $z=g(x,y)$ 上写出二者相等所需的积分条件。
+\end{exercise}
+\begin{exercise}{541}{锥面奇异密度与重心}
+设 $h>0$，锥面 $S_h:z=\sqrt{x^2+y^2},0<z\le h$ 的面密度为 $\rho=z^{-p}$，$p\in\mathbb R$。把质量定义为从 $z=\varepsilon$ 截起后令 $\varepsilon\to0^+$ 的极限。求质量有限的参数范围；在此范围内求总质量及重心高度，并讨论 $p$ 趋近临界值时重心高度的极限。
+\end{exercise}
+\subsection{第二类曲面积分}
+\begin{exercise}{542}{球面内侧与投影定向}
+设 $\Sigma$ 为单位球面在第一卦限的部分，取内侧。将 $\iint_{\Sigma}xyz\,\dd x\,\dd y$ 化为平面二重积分并计算；再说明取外侧时的结果。若将积分面扩为整个上半球面的内侧，该积分又是多少？分别说明定向与对称性的作用。
+\end{exercise}
+\begin{exercise}{543}{平面定向与反常积分}
+设 $\Sigma$ 为单位圆盘 $z=0,\ x^2+y^2\le1$ 的下侧。先求 $\iint_{\Sigma}(x^2+y^2)\,\dd x\,\dd y$，再讨论
+\[I(p)=\lim_{\varepsilon\to0^+}\iint_{\Sigma\cap\{x^2+y^2\ge\varepsilon^2\}}(x^2+y^2)^{p/2}\,\dd x\,\dd y\]
+何时存在有限值，并在存在时求出 $I(p)$，其中 $p\in\mathbb R$。
+\end{exercise}
+\begin{exercise}{544}{球面投影与齐次缩放}
+设 $R>0$，$\Sigma_-$ 为球面 $x^2+y^2+z^2=R^2$ 的下半部分，取下侧。计算 $\iint_{\Sigma_-}x^2y^2\,\dd x\,\dd y$；再求同一被积式在上半球面上侧及整球面外侧的积分，说明两者的符号关系。用缩放关系核验结果关于 $R$ 的次数。
+\end{exercise}
+\begin{exercise}{545}{偏心圆域上的球面通量}
+设 $a>0$，$\Sigma$ 为上半球面 $z=\sqrt{a^2-x^2-y^2}$ 在柱体 $x^2+y^2\le ax$ 内的部分，取上侧。求 $\iint_{\Sigma}z^2\,\dd x\,\dd y$，并分别计算投影区域的面积与其关于原点的极惯性矩 $\iint_D(x^2+y^2)\,\dd x\,\dd y$，核验它们与所求积分的关系。
+\end{exercise}
+\begin{exercise}{546}{闭曲面与可积奇点}
+设 $\Omega=\{(x,y,z):1\le y\le2,\ x^2+z^2\le y^2\}$，$\Sigma=\partial\Omega$ 取外侧。把
+\[\iint_{\Sigma}\frac{2y}{\sqrt{x^2+z^2}}\,\dd z\,\dd x\]
+解释为先从积分面中删去 $x^2+z^2<\varepsilon^2$ 的部分、再令 $\varepsilon\to0^+$ 的极限。分别求侧面、上底面和下底面的贡献，证明该极限存在并计算总值；说明不能未经处理就直接在整个 $\Omega$ 上套用高斯公式的原因。
+\end{exercise}
+\begin{exercise}{547}{柱面定向与切向分量}
+设 $\Sigma$ 为圆柱面 $x^2+y^2=1$ 在第一卦限且 $0\le z\le3$ 的部分，取法向量的 $x$ 分量非负的一侧。计算 $\iint_{\Sigma}x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y$；再说明把末项系数 $z$ 换成任意连续函数 $R(x,y,z)$，结果是否改变，并从法向量解释原因。
+\end{exercise}
+\begin{exercise}{548}{两类曲面积分的转换}
+设 $\Sigma$ 为平面 $3x+2y+2\sqrt3z=6$ 在第一卦限的部分，取上侧，$P,Q,R$ 在 $\Sigma$ 上连续。求单位法向量，将 $\iint_{\Sigma}P\,\dd y\,\dd z+Q\,\dd z\,\dd x+R\,\dd x\,\dd y$ 化为第一类曲面积分；应用所得公式计算 $P=3,Q=2,R=2\sqrt3$ 时的通量，并解释其与曲面面积的关系。
+\end{exercise}
+\begin{exercise}{549}{变法向量与转换公式}
+设 $\Sigma$ 为抛物面 $z=8-x^2-y^2$ 在 $xOy$ 平面上方的部分，取上侧。将连续向量场 $(P,Q,R)$ 通过 $\Sigma$ 的通量写成第一类曲面积分及投影平面上的二重积分两种形式；再取 $(P,Q,R)=(2x,2y,1)$，计算通量并说明该向量场与曲面法向的关系。
+\end{exercise}
+\begin{exercise}{550}{法向正交与任意函数消去}
+设 $\Sigma=\{x-y+z=1:x\ge0,\ y\le0,\ z\ge0\}$，取上侧，$f$ 在 $\Sigma$ 上连续。计算
+\[\iint_{\Sigma}(f+x)\,\dd y\,\dd z+(2f+y)\,\dd z\,\dd x+(f+z)\,\dd x\,\dd y.\]
+再将三个系数中的 $f,2f,f$ 分别改为 $af,bf,cf$，求使积分对任意连续函数 $f$ 都不变的实参数条件，并给出必要性证明。
+\end{exercise}
+\begin{exercise}{551}{闭柱面分片与奇点条件}
+设 $R>0$，$\Sigma$ 为圆柱体 $x^2+y^2\le R^2,\ |z|\le R$ 的整个边界，取外侧。分片计算
+\[\iint_{\Sigma}\frac{x\,\dd y\,\dd z+z^2\,\dd x\,\dd y}{x^2+y^2+z^2}.\]
+说明两个底面上的积分为何抵消，并指出直接在整个柱体上使用高斯公式时缺少哪项条件。
+\end{exercise}
+\begin{exercise}{552}{柱面通量与无效分量}
+设 $\Sigma$ 为圆柱面 $x^2+y^2=4$ 被 $z=0$ 与 $x+z=2$ 截出的侧面，取外侧。对实参数 $c$ 求
+\[I(c)=\iint_{\Sigma}(-y)\,\dd z\,\dd x+(z+c)\,\dd x\,\dd y,\]
+并给出 $c=1$ 时的值；解释结果与 $c$ 是否有关，再利用补上两个底面后的高斯公式核验。
+\end{exercise}
+\begin{exercise}{553}{抛物面定向与补面核验}
+设 $\Sigma$ 为 $z=\frac12(x^2+y^2)$ 介于 $z=0,z=2$ 之间的曲面，取下侧。直接计算 $\iint_{\Sigma}(z^2+x)\,\dd y\,\dd z-z\,\dd x\,\dd y$；再补上 $z=2$ 处圆盘，用高斯公式核验结果，明确两块曲面的定向。
+\end{exercise}
+\begin{exercise}{554}{半球面的法向与两种算法}
+设 $R>0$，$\Sigma$ 为上半球面 $z=\sqrt{R^2-x^2-y^2}$ 的上侧。求向量场 $(xz,yz,z^2)$ 通过 $\Sigma$ 的通量；分别利用球面的单位法向量和补面高斯公式计算，并说明补面上的通量为何为零。
+\end{exercise}
+\begin{exercise}{555}{柱面参数化与高度参数}
+设 $h>0$，$\Sigma_h$ 为柱面 $x^2+y^2=1,\ 0\le z\le h$ 的外侧。求
+\[I(h)=\iint_{\Sigma_h}x(y-z)\,\dd y\,\dd z+(x-y)\,\dd x\,\dd y,\]
+给出 $h=2$ 时的值，并说明柱面上哪一个坐标面积元素恒为零。
+\end{exercise}
+\begin{exercise}{556}{抛物面的高度与方向}
+设 $h>0$，$\Sigma_h$ 为抛物面 $z=x^2+y^2$ 介于 $z=0,z=h$ 之间的部分，取下侧。求 $I(h)=\iint_{\Sigma_h}x^2\,\dd y\,\dd z+z\,\dd x\,\dd y$，给出 $h=1$ 时的结果；说明其中一项为何因对称性消失，并判断反向后结果如何变化。
+\end{exercise}
+\begin{exercise}{557}{四分之一柱面的通量}
+设 $a,h>0$，$\Sigma$ 为柱面 $x^2+y^2=a^2$ 在第一卦限且 $0\le z\le h$ 的部分，取外侧。计算 $\iint_{\Sigma}x\,\dd y\,\dd z+z\,\dd x\,\dd y$；再将首项系数 $x$ 改为 $y$，求新的积分，并解释两者为何不能仅凭 $x,y$ 对称就判为相等。
+\end{exercise}
+\begin{exercise}{558}{平面下侧与参数零点}
+设 $\Sigma=\{x+y-z=1:x\ge0,\ y\ge0,\ z\le0\}$，取下侧。求 $I(c)=\iint_{\Sigma}c\,\dd y\,\dd z+z\,\dd x\,\dd y$，其中 $c\in\mathbb R$；给出 $I(1)$ 并求使 $I(c)=0$ 的参数，写明投影区域和定向符号。
+\end{exercise}
+\begin{exercise}{559}{无散场与参数扰动}
+设 $h>0$，$\Sigma$ 为圆锥体 $\{0\le y\le h,\ x^2+z^2\le y^2\}$ 的边界外侧。先计算向量场 $(y-z,z-x,x-y)$ 通过 $\Sigma$ 的通量，再求向量场 $(y-z,z-x,x-y)+\lambda(x,y,z)$ 的通量，其中 $\lambda\in\mathbb R$；分别说明散度计算及体积计算的依据。
+\end{exercise}
+\begin{exercise}{560}{球面对称性与线性向量场}
+设 $R>0$，$\Sigma$ 为球面 $x^2+y^2+z^2=R^2$ 的外侧。先利用球面法向量直接计算 $\iint_{\Sigma}x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y$，再推广到向量场 $(\lambda x,\mu y,\nu z)$，并求通量为零的参数条件。
+\end{exercise}
+\begin{exercise}{561}{无散场与四面体分面通量}
+设 $a>0$，$\Omega=\{x,y,z\ge0:x+y+z\le a\}$，$S=\partial\Omega$ 取外侧。求向量场 $(yz,zx,xy)$ 的总通量，再分别计算三个坐标面上的通量，由此求斜面 $x+y+z=a$ 上的通量；说明总通量为零并不要求各面通量为零。
+\end{exercise}
+\begin{exercise}{562}{径向场与内部奇点}
+设 $R>0$，$\Sigma_R$ 为球面 $x^2+y^2+z^2=R^2$ 的外侧，$p\in\mathbb R$。计算
+\[I_p(R)=\iint_{\Sigma_R}\frac{x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y}{(x^2+y^2+z^2)^{p/2}},\]
+求使通量与 $R$ 无关的 $p$，并给出 $p=3$ 时的值；解释此时在原点外散度为零却不能推出球面通量为零的原因。
+\end{exercise}
+\begin{exercise}{563}{下半球的奇偶消去}
+设 $R>0$，$\Sigma_-$ 为下半球面 $z=-\sqrt{R^2-x^2-y^2}$，取下侧。计算 $\iint_{\Sigma_-}x^2\,\dd y\,\dd z+y^2\,\dd z\,\dd x+z^2\,\dd x\,\dd y$；再求整个球面外侧的同一通量，并用上、下半球分解核验结论。
+\end{exercise}
+\begin{exercise}{564}{柱面通量的算法选择}
+设 $\Sigma$ 为柱面 $x^2+y^2=1,\ 0\le z\le2$ 的外侧。用补面高斯公式计算 $\iint_{\Sigma}x(y-z)\,\dd y\,\dd z+(x-y)\,\dd x\,\dd y$；分别求上下底面通量，并与直接参数化所得结果核对。
+\end{exercise}
+\begin{exercise}{565}{锥面通量与对称项}
+设 $\Sigma$ 为锥面 $z=1-\sqrt{x^2+y^2}$（$0\le z\le1$）的上侧。求向量场 $(x^2-yz,y^2-xz,2z)$ 通过 $\Sigma$ 的通量，指出直接投影计算中哪些项因对称性消去；再用补面法计算并说明底面通量是否为零。
+\end{exercise}
+\begin{exercise}{566}{闭曲面通量与尺度}
+设 $a>0$，$\Sigma_a$ 为立方体 $[0,a]^3$ 的边界，取外侧。利用高斯公式计算
+\[\iint_{\Sigma_a}y(x-z)\,\dd y\,\dd z+x^2\,\dd z\,\dd x+(y^2+xz)\,\dd x\,\dd y.\]
+分别计算面 $x=a$ 与 $x=0$ 对通量的贡献，核对二者之和与对应散度项的体积分一致，并说明该通量随 $a$ 的尺度变化规律。
+\end{exercise}
+\begin{exercise}{567}{定向面积与切向场}
+设 $S$ 为锥面 $z=\sqrt{x^2+y^2},1\le z\le2$ 的下侧。证明向量场 $F=(x,y,z)$ 与 $S$ 相切，因而通量为零；再计算 $\iint_S|F|\,\dd S$。据此判断能否用向量场的模直接代替法向分量计算通量。
+\end{exercise}
+\begin{exercise}{568}{抛物面上的参数通量}
+设 $S$ 为抛物面 $z=1-x^2-y^2,z\ge0$ 的上侧。对 $F_{a,b}=(ax,ay,bz)$ 求通量 $\Phi(a,b)$，确定使通量为零的全部实参数对；再计算 $\iint_SF_{a,b}\cdot n\,\dd S$ 中法向分量逐点为零的参数条件，比较两种条件。
+\end{exercise}
+\subsection{高斯公式}
+\begin{exercise}{569}{球锥区域与通量分解}
+设 $R>0$，$\Omega$ 为锥面 $z=\sqrt{x^2+y^2}$ 与上半球面 $z=\sqrt{R^2-x^2-y^2}$ 围成的区域。令 $\Sigma=\partial\Omega$ 取外侧，求
+\[\iint_{\Sigma}x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y.\]
+再直接判断锥面部分的通量，进而求球面部分的通量；说明高斯公式的光滑性条件在此处是否满足。
+\end{exercise}
+\begin{exercise}{570}{补面与定向}
+设 $\Sigma$ 为锥面 $z=\sqrt{x^2+y^2}$（$0\le z\le1$）的下侧，$c\in\mathbb R$。通过补上 $z=1$ 处的圆盘求
+\[I(c)=\iint_{\Sigma}x\,\dd y\,\dd z+2y\,\dd z\,\dd x+3(z-c)\,\dd x\,\dd y.\]
+明确补面法向的方向，给出 $c=1$ 时的积分值，并求使锥面通量为零的 $c$。
+\end{exercise}
+\begin{exercise}{571}{半球补面与缩放}
+设 $R>0$，$\Sigma_R$ 为上半球面 $z=\sqrt{R^2-x^2-y^2}$ 的上侧。求 $\iint_{\Sigma_R}xy\,\dd y\,\dd z+x\,\dd z\,\dd x+x^2\,\dd x\,\dd y$，给出 $R=2$ 时的值；指出闭半球的总通量及补面通量各是多少。
+\end{exercise}
+\begin{exercise}{572}{散度恒等式与区域对称}
+设 $a>0$，$\Omega=\{0\le z\le a^2-x^2-y^2\}$，$S=\partial\Omega$ 取外侧，体积为 $V$。证明
+\[\iint_Sx^2yz^2\,\dd y\,\dd z-xy^2z^2\,\dd z\,\dd x+z(1+xyz)\,\dd x\,\dd y=V,\]
+并求 $V$。若将区域改为 $\Omega\cap\{x\ge0,y\ge0\}$，上述通量是否仍等于新区域体积？用散度积分说明。
+\end{exercise}
+\begin{exercise}{573}{径向散度与曲面分解}
+设 $a>0$，$S$ 为上半球体 $x^2+y^2+z^2\le a^2,\ z\ge0$ 的整个边界外侧。求向量场 $(xz^2,x^2y-z^3,2xy+y^2z)$ 的总通量，分别说明平底面与弯曲球面的贡献；用球坐标写出散度体积分的计算过程。
+\end{exercise}
+\begin{exercise}{574}{全边界与侧面的区别}
+设 $S$ 为柱体 $x^2+y^2\le1,\ 0\le z\le3$ 的全边界外侧。求 $\iint_Sx(y-z)\,\dd y\,\dd z+(x-y)\,\dd x\,\dd y$，再分别求上下底面贡献，并据此恢复侧面通量。说明仅改变积分面的范围可能怎样改变结果。
+\end{exercise}
+\begin{exercise}{575}{立方体平移与奇函数}
+设 $a>0$，$S$ 为 $[0,a]^3$ 的边界外侧，求向量场 $(x^2,y^2,z^2)$ 的通量；再将立方体改为 $[-a,a]^3$，求同一向量场的通量，并解释差异来自散度的哪种性质。
+\end{exercise}
+\begin{exercise}{576}{通量与高阶球面矩}
+设 $a>0$，$S$ 为半径 $a$、球心在原点的球面外侧。利用高斯公式求向量场 $(x^3,y^3,z^3)$ 的通量，再由单位法向量推得 $\iint_S(x^4+y^4+z^4)\,\dd S$，进而求 $\iint_Sz^4\,\dd S$。
+\end{exercise}
+\begin{exercise}{577}{径向通量与体积恢复}
+设 $S$ 为柱体 $x^2+y^2\le9,\ 0\le z\le3$ 的整个边界外侧。求向量场 $(x,y,z)$ 的通量，并直接分侧面和两底面核验；若某个分片光滑闭曲面上该场的外通量为 $M$，求它围成区域的体积并说明适用条件。
+\end{exercise}
+\begin{exercise}{578}{单位立方体的参数通量}
+设 $S=\partial[0,1]^3$ 取外侧。求 $I(c)=\iint_Scxz\,\dd y\,\dd z-y^2\,\dd z\,\dd x+yz\,\dd x\,\dd y$，给出 $I(4)$；求使总通量为零的实数 $c$，并解释总通量为零能否推出向量场处处为零。
+\end{exercise}
+\begin{exercise}{579}{斜顶柱体与散度对称}
+设 $\Omega=\{x^2+y^2\le1,\ 0\le z\le1-x\}$，$S=\partial\Omega$ 取外侧。求向量场 $(2xz,xz\cos y,3yz\sin x)$ 的总通量，写明消失项对应的区域对称性；再计算 $\Omega$ 的体积及 $z$ 坐标的体积平均值。
+\end{exercise}
+\begin{exercise}{580}{旋转曲面与指定法向}
+将 $x=0,z=\sqrt{y-1}$（$1\le y\le3$）绕 $y$ 轴旋转得到 $\Sigma$，取法向量与 $y$ 轴正向成钝角的一侧。先写出曲面方程，再求向量场 $(x(8y+1),2(1-y^2),-4yz)$ 的通量；用补上 $y=3$ 圆盘的方法核验定向与结果。
+\end{exercise}
+\begin{exercise}{581}{非零补面通量}
+设 $\Sigma$ 为球面 $x^2+y^2+z^2=4,z\ge0$ 的外侧。求 $\iint_{\Sigma}yz\,\dd z\,\dd x+2\,\dd x\,\dd y$，并分别列出下底面通量与闭半球总通量。若把常数 $2$ 换为 $c$，求所得结果关于 $c$ 的表达式。
+\end{exercise}
+\begin{exercise}{582}{方向余弦与通量表达}
+设 $\Sigma$ 为半径 $R>0$ 的原点球面外侧，$(\cos\alpha,\cos\beta,\cos\gamma)$ 为单位法向量。把 $\iint_{\Sigma}(x^3\cos\alpha+y^3\cos\beta+z^3\cos\gamma)\,\dd S$ 改写为第二类曲面积分并计算；再求其中单独一项 $\iint_{\Sigma}z^3\cos\gamma\,\dd S$。
+\end{exercise}
+\begin{exercise}{583}{锥面方向余弦与高度}
+设 $h>0$，$\Sigma$ 为锥面 $x^2+y^2=z^2,\ 0\le z\le h$ 的下侧。求方向余弦，计算 $\iint_{\Sigma}(x^2\cos\alpha+y^2\cos\beta+z^2\cos\gamma)\,\dd S$；说明前两项分别为何为零，并用缩放关系核验高度次数。
+\end{exercise}
+\begin{exercise}{584}{抛物面补面与常数项}
+设 $\Sigma$ 为 $z=1-x^2-y^2,z\ge0$ 的上侧。对实参数 $c$，求向量场 $(2x^3,2y^3,3(z^2-c))$ 通过 $\Sigma$ 的通量；给出 $c=1$ 时的值，并指出为何散度虽与 $c$ 无关，开曲面通量仍可能依赖 $c$。
+\end{exercise}
+\begin{exercise}{585}{椭圆投影与换元}
+设 $\Sigma$ 为 $z=1-x^2-\frac{y^2}{4},\ 0\le z\le1$ 的上侧。计算向量场 $(xz,2yz,3xy)$ 的通量；将椭圆投影化为单位圆盘，明确雅可比因子，并解释底面通量是否为零。
+\end{exercise}
+\begin{exercise}{586}{平移多项式与区域奇偶}
+设 $\Sigma$ 为抛物面 $z=x^2+y^2,z\le1$ 的上侧。求向量场 $((x-1)^3,(y-1)^3,z-1)$ 的通量，写出投影后的偶函数部分；再求只把第三分量改为 $z$ 时通量的增量。
+\end{exercise}
+\begin{exercise}{587}{四面体的散度矩}
+设 $\Omega=\{x,y,z\ge0:2x+y+2z\le2\}$，$S=\partial\Omega$ 取外侧。求向量场 $(x^2+1,-2y,3z)$ 的通量，并计算 $\Omega$ 的体积及 $\iiint_{\Omega}x\,\dd V$，说明它们如何组成总通量。
+\end{exercise}
+\begin{exercise}{588}{开曲面通量与非零底面}
+设 $\Sigma$ 为抛物面 $z=1-x^2-y^2,z\ge0$ 的上侧。计算向量场 $(y^2-x,z^2-y,x^2-z)$ 通过 $\Sigma$ 的通量；另求闭合抛物面体的总通量和底面通量，验证补面时的减号。
+\end{exercise}
+\begin{exercise}{589}{抛物面体的高阶矩通量}
+设 $\Omega=\{x^2+y^2\le z\le4\}$，$S=\partial\Omega$ 取外侧。求向量场 $(x^3,y^3,z^3)$ 的通量，将散度积分化为柱坐标积分；再分别求顶面与抛物面部分的通量，核验二者之和。
+\end{exercise}
+\begin{exercise}{590}{四面体的坐标矩}
+设 $S$ 为四面体 $x,y,z\ge0,\ x+y+z\le1$ 的边界外侧。计算 $\iint_Sxy\,\dd y\,\dd z+yz\,\dd z\,\dd x+xz\,\dd x\,\dd y$；再将右端常数 $1$ 改为 $t>0$，用缩放关系求相应通量。
+\end{exercise}
+\begin{exercise}{591}{球锥区域的柱坐标积分}
+设 $S$ 为 $\sqrt{x^2+y^2}\le z\le\sqrt{2-x^2-y^2}$ 围成区域的边界外侧。求向量场 $(2xz,yz,-x^2)$ 的通量，写明柱坐标积分限；再单独求锥面部分的通量，并由总通量求球面部分的贡献。
+\end{exercise}
+\begin{exercise}{592}{锥顶的反常通量}
+设 $\Sigma$ 为圆锥体 $0\le z\le1,\ x^2+y^2\le z^2$ 的侧面外侧。将 $\iint_{\Sigma}x^2\,\dd y\,\dd z+\dd z\,\dd x+\frac{e^z}{\sqrt{x^2+y^2}}\,\dd x\,\dd y$ 定义为删去 $z<\varepsilon$ 后的极限，证明极限存在并计算；说明面积元素中的因子如何抵消锥顶附近的奇性。
+\end{exercise}
+\begin{exercise}{593}{球壳锥域上的任意函数项}
+设 $\Omega=\{1\le x^2+y^2+z^2\le4,\ x\ge\sqrt{y^2+z^2}\}$，$S=\partial\Omega$ 取外侧，$f\in C^1(\mathbb R)$。求向量场 $(x^3,y^3-zf(x),z^3+yf(x))$ 的总通量。证明结果与 $f$ 无关，并从球面与锥面的法向说明附加场 $(0,-zf(x),yf(x))$ 在每块边界上都相切。
+\end{exercise}
+\begin{exercise}{594}{高斯公式的内部光滑性}
+在 $r=\sqrt{x^2+y^2+z^2}>0$ 上设 $F=(x,y,z)/r^3$。求其散度，分别计算它通过球壳 $1\le r\le2$ 全边界及外球面 $r=2$ 的外通量；写明内球面作为球壳边界时的方向，解释为何不能把外球面单独视为零通量面。
+\end{exercise}
+\begin{exercise}{595}{任意区域零通量的参数识别}
+设 $F=(ax^2+yz,by^2+xz,cz^2+xy)$。若任意有界分片光滑区域边界的外通量均为零，求 $a,b,c$，并证明必要性。若只要求每个以原点为球心的球面外通量为零，参数条件如何改变？说明这种检验的信息差别。
+\end{exercise}
+\subsection{斯托克斯公式}
+\begin{exercise}{596}{旋度与平面法向的正交}
+设 $L$ 为第一卦限内平面三角形 $x+y+z=1$ 的边界，从 $z$ 轴正向看为逆时针。计算 $\oint_L(y^2+z^2)\,\dd x+(z^2+x^2)\,\dd y+(x^2+y^2)\,\dd z$；再将第三项系数增加 $\lambda x$，求环量的增量，并解释为何原积分无需逐边计算。
+\end{exercise}
+\begin{exercise}{597}{曲面选择与恰当微分}
+设 $L$ 为 $y^2+z^2=1,x=y$ 的交线，从 $x$ 轴正向看为逆时针。用斯托克斯公式求 $\oint_Lx^2y^3\,\dd x+\dd y+z\,\dd z$；再利用 $x=y$ 将曲线上的微分式写为某个单变量函数的全微分，独立验证结果。
+\end{exercise}
+\begin{exercise}{598}{边界方向与逐边核验}
+设 $L$ 为第一卦限平面三角形 $x+y+z=1$ 的边界，方向与上侧法向符合右手定则。用斯托克斯公式计算 $\oint_Lz\,\dd x+x\,\dd y+y\,\dd z$，写出三个顶点的正向顺序，再沿三条边直接积分核验。
+\end{exercise}
+\begin{exercise}{599}{六边形截面与旋度通量}
+设 $L$ 为平面 $x+y+z=\frac32$ 与单位立方体 $[0,1]^3$ 表面的截痕，从 $x$ 轴正向看为逆时针。计算 $\oint_L(y^2-z^2)\,\dd x+(z^2-x^2)\,\dd y+(x^2-y^2)\,\dd z$；列出平面六边形的顶点及其面积，说明旋度与法向的内积为何在该截面上为常数。
+\end{exercise}
+\begin{exercise}{600}{球面截圆与参数}
+设 $a>0,|c|<\sqrt3a$，$L_c$ 为 $x^2+y^2+z^2=a^2,x+y+z=c$ 的交圆，从 $x$ 轴正向看为逆时针。求 $\oint_{L_c}y\,\dd x+z\,\dd y+x\,\dd z$，给出 $c=0$ 时的值，并求其绝对值最大时的 $c$。
+\end{exercise}
+\begin{exercise}{601}{水平截圆的旋度积分}
+设 $h>0$，$L_h$ 为 $x^2+y^2=2z,z=h$ 的交圆，从 $z$ 轴正向看为逆时针。求 $\oint_{L_h}3y\,\dd x-xz\,\dd y+yz^2\,\dd z$，给出 $h=2$ 时的值，并说明沿水平曲线为何第三项对环量没有贡献。
+\end{exercise}
+\begin{exercise}{602}{精确项与环量}
+设 $L$ 为 $x^2+y^2=9,z=0$ 的圆周，从 $z$ 轴正向看为逆时针。计算 $\oint_L2y\,\dd x+3x\,\dd y-z^2\,\dd z$；若将 $-z^2\,\dd z$ 换成 $\dd\varphi$，其中 $\varphi\in C^1(\mathbb R^3)$，证明积分值不变，并指出闭曲线条件的作用。
+\end{exercise}
+\begin{exercise}{603}{旋度通量的换面}
+设 $A=(y^2,xy,xz)$，$\Sigma$ 为单位上半球面上侧。将 $\iint_{\Sigma}(\nabla\times A)\cdot n\,\dd S$ 化为边界曲线积分并计算；再直接在单位圆盘上计算同一旋度通量，解释换面成立所需的方向与光滑性条件。
+\end{exercise}
+\begin{exercise}{604}{去底立方体的边界方向}
+设 $A=(y-z,yz,-xz)$，$\Sigma$ 为 $[0,2]^3$ 的表面外侧去掉 $z=0$ 底面后的五个面。求 $\iint_{\Sigma}(\nabla\times A)\cdot n\,\dd S$，明确其边界从 $z$ 轴正向看是顺时针还是逆时针；利用闭曲面上旋度通量为零核验结果。
+\end{exercise}
+\begin{exercise}{605}{三角形环量与缩放}
+设 $a>0$，$L$ 沿 $A(a,0,0)\to B(0,a,0)\to C(0,0,a)\to A$。求 $\oint_L(z-y)\,\dd x+(x-z)\,\dd y+(y-x)\,\dd z$；将三角形各点整体平移同一向量后，证明环量不变，并说明环量关于 $a$ 的次数。
+\end{exercise}
+\begin{exercise}{606}{斜椭圆的投影面积}
+设 $a,b>0$，$L$ 为 $x^2+y^2=a^2,\ \frac xa+\frac zb=1$ 的交线，从 $x$ 轴正向看为逆时针。求 $\oint_L(y-z)\,\dd x+(z-x)\,\dd y+(x-y)\,\dd z$；写出与给定方向相容的单位法向量及椭圆面积，核验用投影面积计算的结果。
+\end{exercise}
+\begin{exercise}{607}{球柱交线与投影区域}
+设 $L$ 为 $x^2+y^2+z^2=1,x^2+y^2=x,z\ge0$ 的闭交线，从 $x$ 轴正向看为逆时针。计算 $\oint_Ly^2\,\dd x+z^2\,\dd y+x^2\,\dd z$；以 $x=1-z^2$ 为所选曲面，写出其在 $yOz$ 面上的投影区域，说明该曲面与 $L$ 的边界方向相容。
+\end{exercise}
+\begin{exercise}{608}{力场做功与反向路径}
+设 $F=(y,z,x)$，$L$ 为第一卦限内平面三角形 $x+y+z=1$ 的整个边界，从 $z$ 轴正向看为顺时针。求 $F$ 沿 $L$ 做的功；再沿反向边界计算，并说明若在 $F$ 上增加任意 $C^1$ 标量场的梯度，闭路功是否改变。
+\end{exercise}
+\begin{exercise}{609}{同边界曲面的定向与换面}
+设 $A\in C^1(\mathbb R^3)$，$S_1$ 为单位上半球面上侧，$S_2$ 为单位圆盘 $z=0$ 上侧。证明 $\iint_{S_1}(\nabla\times A)\cdot n\,\dd S=\iint_{S_2}(\nabla\times A)\cdot n\,\dd S$；再说明把圆盘改取下侧时的等式，并用闭曲面边界方向核验符号。
+\end{exercise}
+\begin{exercise}{610}{截圆环量与参数优化}
+设 $a>0,|h|<a$，$L_h:x^2+y^2+z^2=a^2,z=h$ 从 $z$ 轴正向看为逆时针。对 $A=(-yz,xz,0)$ 求环量 $I(h)$，求 $|I(h)|$ 的最大值及对应的 $h$；分别用圆盘旋度积分和曲线参数化核验。
+\end{exercise}
+\subsection{曲面积分的应用}
+\begin{exercise}{611}{零散度与局部通量}
+设 $a,h>0$，$A=(yz,xz,xy)$，$S$ 为圆柱体 $x^2+y^2\le a^2,0\le z\le h$ 的全表面外侧。求总通量及上底面通量；判断总通量为零能否推出每一块曲面上的通量均为零，并以该向量场在某个小平面片上的通量说明。
+\end{exercise}
+\begin{exercise}{612}{立方体通量与参数次数}
+设 $a>0$，$A=(2x-z,x^2y,-xz^2)$。求它通过 $[0,a]^3$ 边界外侧的通量，整理为 $a$ 的多项式，并求使总通量为零的全部正数 $a$。
+\end{exercise}
+\begin{exercise}{613}{平移球面的常散度}
+设 $A=(2x+3z,-xz-y,y^2+2z)$。求该场通过球心 $(3,-1,2)$、半径 $3$ 的球面外侧的通量；推广到任意球心、半径 $R>0$，说明哪些几何参数会影响结果。
+\end{exercise}
+\begin{exercise}{614}{半圆柱曲面的上侧}
+设 $A=(0,yz,z^2)$，$\Sigma$ 为 $y^2+z^2=1,z\ge0,0\le x\le1$ 的上侧。直接求通量，并补齐半圆柱体的其余边界面核验；再将 $0\le x\le1$ 改为 $0\le x\le h$，求通量随 $h>0$ 的变化。
+\end{exercise}
+\begin{exercise}{615}{通量与边界分配}
+设 $A=(x,y,z)$，求其通过单位立方体 $[0,1]^3$ 边界外侧的总通量及六个面的各自贡献；再对以原点为中心的单位边长立方体求各面通量，解释总量与分配的差别。
+\end{exercise}
+\begin{exercise}{616}{散度与闭曲面条件}
+求 $A=(x^2+yz,y^2+xz,z^2+xy)$ 的散度，并求其散度为零的点集；若 $S$ 为以原点为球心的任意球面，判断 $A$ 的外通量是否为零，说明局部散度不恒为零为何不妨碍该结论。
+\end{exercise}
+\begin{exercise}{617}{复合函数偏导与散度}
+求 $A=(e^{xy},\cos(xy),\cos(xz^2))$ 的散度及其在 $(0,1,0)$ 处的值；利用散度连续性，判断足够小且以该点为中心的球面外通量的符号，并说明理由。
+\end{exercise}
+\begin{exercise}{618}{散度与旋度的区分}
+对 $A=(y^2,xy,xz)$ 分别求 $\nabla\cdot A$ 与 $\nabla\times A$，求二者同时为零的点集；再计算 $\nabla\cdot(\nabla\times A)$，解释这是标量还是向量。
+\end{exercise}
+\begin{exercise}{619}{散度与半球柱体通量}
+对 $A=(0,yz,z^2)$ 求散度；利用所得结果求它通过半圆柱体 $0\le x\le1,y^2+z^2\le1,z\ge0$ 全边界的外通量，并说明为何该结果等于弯曲侧面的上侧通量。
+\end{exercise}
+\begin{exercise}{620}{点散度与小球通量极限}
+设 $A=(xy^2,ye^z,x\ln(1+z^2))$，求其散度及在 $P(1,1,0)$ 处的值。以 $S_r$ 表示中心为 $P$、半径 $r$ 的球面外侧，求 $\lim_{r\to0^+}\frac{\iint_{S_r}A\cdot n\,\dd S}{4\pi r^3/3}$，并利用散度连续性证明。
+\end{exercise}
+\begin{exercise}{621}{旋度与环量的局部关系}
+求 $A=(x^2-y,4z,x^2)$ 的旋度。设 $L$ 为 $z=0$ 平面上以原点为圆心、半径 $r>0$ 的圆周，从 $z$ 轴正向看为逆时针，利用旋度求 $\oint_L A\cdot\dd\boldsymbol r$，并直接参数化验证。
+\end{exercise}
+\begin{exercise}{622}{旋度消去与势函数}
+求 $A=(z+\sin y,x\cos y-z,0)$ 的旋度，判断该场是否为梯度场；若增加第三分量 $x-y$，判断新场是否为梯度场，成立时求一个势函数。
+\end{exercise}
+\begin{exercise}{623}{复合函数的旋度}
+求 $A=(x^2\sin y,y^2\sin(xz),xy\sin(\cos z))$ 的旋度及其在原点的值；再验证该场在整个平面 $z=0$ 上的旋度是否恒为零，须写出各分量。
+\end{exercise}
+\begin{exercise}{624}{点旋度与平面环量}
+设 $A=(xy,-yz,xz)$。求 $\nabla\times A$ 在 $(1,1,0)$ 处的值；令 $L_r$ 为平面 $z=0$ 上以 $(1,1,0)$ 为圆心、半径 $r$ 的正向圆周，求 $\oint_{L_r}A\cdot\dd\boldsymbol r$，并解释其与该点旋度第三分量的关系。
+\end{exercise}
+\begin{exercise}{625}{径向函数的拉普拉斯算子}
+在 $r=\sqrt{x^2+y^2+z^2}>0$ 上令 $u=\ln r$。直接计算 $\nabla u$ 与 $\nabla\cdot\nabla u$，求后者在 $(1,1,1)$ 处的值；判断 $u$ 在原点外是否为调和函数。
+\end{exercise}
+\begin{exercise}{626}{径向调和函数与边值}
+设 $f\in C^2((0,\infty))$，$r=\sqrt{x^2+y^2+z^2}>0$。推导 $\nabla\cdot\nabla f(r)$ 的表达式，求满足其恒为零的全部 $f$；进一步确定满足 $f(1)=0,f(2)=1$ 的唯一解，并讨论它在 $r\to0^+$ 时是否有有限极限。
+\end{exercise}
+\begin{exercise}{627}{梯度场无旋的条件}
+设 $u$ 在开集 $D\subset\mathbb R^3$ 上具有连续二阶偏导数，逐分量证明 $\nabla\times\nabla u=0$。若 $L$ 是 $D$ 内分段光滑闭曲线，证明 $\oint_L\nabla u\cdot\dd\boldsymbol r=0$，并说明此结论是否需要 $D$ 单连通。
+\end{exercise}
+\begin{exercise}{628}{散度旋度恒等式的正则条件}
+设 $A=(P,Q,R)$ 在开集上具有连续二阶偏导数。逐项证明 $\nabla\cdot(\nabla\times A)=0$。若 $S$ 为一个有界区域的分片光滑边界，且闭区域也包含于该开集，证明旋度通过 $S$ 的外通量为零，指出此处需要哪些高斯公式条件。
+\end{exercise}
+\begin{exercise}{629}{径向调和函数与通量定常}
+设 $u=f(r)$，$f\in C^2((1,2))\cap C^1([1,2])$，满足 $\nabla\cdot\nabla u=0$、$f(1)=1,f(2)=0$。求 $f$，计算 $\nabla u$ 通过任意球面 $r=\rho$（$1<\rho<2$）外侧的通量；解释该通量为何与 $\rho$ 无关，并核验球壳全边界的总通量。
+\end{exercise}
+\subsubsection{综合提高题}
+\begin{exercise}{630}{切平面距离与投影约化}
+设 $S$ 为椭球面 $\frac{x^2}2+\frac{y^2}2+z^2=1,z\ge0$。对 $P\in S$，记原点到该点切平面的距离为 $\rho(P)$。求 $\rho$ 的表达式，将 $\iint_S\frac z\rho\,\dd S$ 化为圆盘上的多项式二重积分并计算；说明赤道处用图像曲面面积公式时应怎样理解。
+\end{exercise}
+\begin{exercise}{631}{有限柱面与无界极限}
+设 $R,H>0$，$\Sigma_H$ 为柱面 $x^2+y^2=R^2,0\le z\le H$ 的侧面。求 $I(H)=\iint_{\Sigma_H}\frac{\dd S}{x^2+y^2+z^2}$，再求 $H\to\infty$ 的极限；解释曲面面积趋于无穷是否必然导致该积分发散。
+\end{exercise}
+\begin{exercise}{632}{球面二次型与最小值}
+设 $R>0$，$S$ 为原点球面 $x^2+y^2+z^2=R^2$。求 $\iint_S(ax+by+cz+d)^2\,\dd S$；当 $a^2+b^2+c^2=1$ 时，求该积分关于 $a,b,c,d$ 的最小值及全部等号条件。
+\end{exercise}
+\begin{exercise}{633}{偏心球面的坐标平移}
+设 $a>0$，$S:x^2+y^2+z^2=2az$。确定球心及半径，利用平移和对称性求 $\iint_S(x^2+y^2+z^2)\,\dd S$；再求 $\iint_Sz\,\dd S$ 并用球面方程核验二者关系。
+\end{exercise}
+\begin{exercise}{634}{相交球面的球冠优化}
+设 $a>0$，半径 $R>0$ 的球面 $S$ 的球心在定球面 $x^2+y^2+z^2=a^2$ 上。求 $S$ 位于定球内部部分的面积 $A(R)$，明确有交圆的 $R$ 范围及无交圆时的取值；求 $A(R)$ 的最大值及取到最大值的 $R$。
+\end{exercise}
+\begin{exercise}{635}{分段曲面函数与尺度}
+设 $t>0$，$S_t:x^2+y^2+z^2=t^2$，在 $z\ge\sqrt{x^2+y^2}$ 时令 $f=x^2+y$，其余点令 $f=0$。求 $F(t)=\iint_{S_t}f\,\dd S$，并证明 $F(t)/t^4$ 为常数；说明分段边界对曲面积分是否有影响。
+\end{exercise}
+\begin{exercise}{636}{下半球取上侧的通量}
+设 $a>0$，$S$ 为下半球面 $z=-\sqrt{a^2-x^2-y^2}$，取上侧。求 $\iint_S\frac{ax\,\dd y\,\dd z+(z+a)^2\,\dd x\,\dd y}{\sqrt{x^2+y^2+z^2}}$，分别写出两项的贡献；再说明该侧与球体外侧的关系，并给出外侧积分。
+\end{exercise}
+\begin{exercise}{637}{挖球法与径向通量}
+设 $S$ 为椭球面 $2x^2+2y^2+z^2=4$ 的外侧。通过在内部挖去以原点为中心的小球，计算 $\iint_S\frac{x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y}{(x^2+y^2+z^2)^{3/2}}$；说明小球半径的允许范围，以及为何结果与椭球三个半轴的具体数值无关。
+\end{exercise}
+\begin{exercise}{638}{切平面垂直条件与曲面换元}
+设 $S:x^2+y^2+z^2-yz=1$。求使切平面垂直于 $xOy$ 面的切点轨迹 $C$，将 $S$ 位于 $C$ 上方的部分明确写为 $z\ge y/2$，记为 $\Sigma$。计算
+\[\iint_{\Sigma}\frac{(x+\sqrt3)|y-2z|}{\sqrt{4+y^2+z^2-4yz}}\,\dd S.\]
+在投影计算中说明绝对值的处理及积分区域的椭圆换元。
+\end{exercise}
+\begin{exercise}{639}{抛物面补面与方向校验}
+设 $\Sigma$ 为 $z=x^2+y^2,z\le1$ 的上侧。用高斯公式求向量场 $((x-1)^3,(y-1)^3,z-1)$ 的通量；明确曲面在闭合区域边界中应取何方向，再以散度积分与顶面通量解释最终符号。
+\end{exercise}
+\begin{exercise}{640}{任意闭曲面条件与微分方程}
+设 $f\in C^1((0,\infty))$ 且 $\lim_{x\to0^+}f(x)=1$。已知半空间 $x>0$ 内任意有界分片光滑区域的边界外侧均满足
+\[\iint_Sxf(x)\,\dd y\,\dd z-xyf(x)\,\dd z\,\dd x-ze^{2x}\,\dd x\,\dd y=0.\]
+先由小球区域和散度连续性证明相应散度逐点为零，再求 $f$，并核验所求函数满足全部条件。
+\end{exercise}
+\begin{exercise}{641}{锥台侧面与切向场}
+设 $S$ 为锥面 $z=\sqrt{x^2+y^2},1\le z\le2$ 的侧面外侧。求向量场 $(y,-x,z^2)$ 的通量；说明水平向量场 $(y,-x,0)$ 为何处处与锥面相切，再用补上两个圆盘的方法核验。
+\end{exercise}
+\begin{exercise}{642}{斜截柱面的环量}
+设 $L$ 为 $x^2+y^2=1,x-y+z=2$ 的交线，从 $z$ 轴正向看为逆时针。求 $\oint_L(z-y)\,\dd x+(x-z)\,\dd y+(x-y)\,\dd z$；将平面常数 $2$ 改为 $c$，证明环量与 $c$ 无关并说明原因。
+\end{exercise}
+\begin{exercise}{643}{水平圆周与高度讨论}
+设 $h>0$，$L_h$ 为 $z=x^2+y^2,z=h$ 的交圆，从 $z$ 轴正向看为逆时针。求 $\oint_{L_h}2y\,\dd x+xz\,\dd y-yz^2\,\dd z$，给出 $h=4$ 时的值，并求环量为零的全部正数 $h$。
+\end{exercise}
+\begin{exercise}{644}{平面约束化简微分式}
+设 $L$ 为 $x^2+y^2=1,y+z=0$ 的交线，从 $z$ 轴正向看为逆时针。先利用 $z=-y$ 将 $\oint_Lz\,\dd x+y\,\dd z$ 化为平面曲线积分并求值，再以斯托克斯公式核验法向与符号。
+\end{exercise}
+\begin{exercise}{645}{斜圆盘上的旋度积分}
+设 $L$ 为 $x^2+y^2=1,z=x+y$ 的交线，从 $z$ 轴正向看为逆时针。求 $\oint_Lxz\,\dd x+x\,\dd y+\frac{y^2}2\,\dd z$；把平面改为 $z=x+y+c$ 后，求环量关于 $c\in\mathbb R$ 的表达式。
+\end{exercise}
+\begin{exercise}{646}{菱形边界与分片光滑条件}
+设 $L$ 为 $x+y+z=2,|x|+|y|=1$ 的交线，从 $z$ 轴正向看为逆时针。用斯托克斯公式求 $\oint_L(y^2-z^2)\,\dd x+(2z^2-x^2)\,\dd y+(3x^2-y^2)\,\dd z$，明确菱形投影区域；说明边界四个角点为何不妨碍公式使用。
+\end{exercise}
+\begin{exercise}{647}{开曲线补闭合与定向}
+设 $L$ 为上半球面 $z=\sqrt{2-x^2-y^2}$ 与平面 $z=x$ 的交线，从 $A(0,\sqrt2,0)$ 沿 $x\ge0$ 的半椭圆到 $B(0,-\sqrt2,0)$。计算
+\[\int_L(y+z)\,\dd x+(z^2-x^2+y)\,\dd y+x^2y^2\,\dd z.\]
+补上 $B$ 到 $A$ 的直线段以使用斯托克斯公式，分别计算补线贡献，并明确闭路方向。
+\end{exercise}
+\begin{exercise}{648}{半椭球面与法向投影}
+设 $\Sigma:x=\sqrt{1-3y^2-3z^2}$，取前侧，即法向的 $x$ 分量非负。求向量场 $(x,y^3+z,z^3)$ 的通量；利用补面法核验，并说明在 $x=0$ 圆盘上哪一项可能贡献通量。
+\end{exercise}
+\begin{exercise}{649}{零通量条件与旋转抛物面}
+设 $f\in C^1((0,\infty))$ 且在 $0^+$ 有有限极限，定义
+\[A=(xy-x^2y-xz^2,\ xy^2+2yf(z),\ zf(z)-yz).\]
+已知上半空间内任意有界分片光滑区域边界的外通量为零。
+\begin{enumerate}
+\item 由此推导 $f$ 的微分方程，求 $f$ 并验证 $0^+$ 条件排除哪些解。
+\item 将 $x=0,z=1+y^2,0\le y\le1$ 绕 $z$ 轴旋转所得曲面取上侧，求 $A$ 通过该曲面的通量，明确曲面方程与投影域。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{650}{闭曲面是否包围奇点}
+设 $0<a<1$，$S$ 为 $x^2+y^2-a\le z\le1$ 围成区域的整个边界外侧。计算 $\iint_S\frac{x\,\dd y\,\dd z+y\,\dd z\,\dd x+z\,\dd x\,\dd y}{(x^2+y^2+z^2)^{3/2}}$，说明原点的位置及挖球法的定向；再讨论将参数改为 $-1<a<0$ 时结果如何变化。
+\end{exercise}
+\begin{exercise}{651}{曲面约束下的分母替换}
+将 $x=0,z=\sqrt{y+1},-1\le y\le1$ 绕 $y$ 轴旋转得到 $\Sigma$，取法向量与 $y$ 轴正向成钝角的一侧。先求曲面方程，利用该约束计算
+\[\iint_{\Sigma}\frac{x^2\,\dd y\,\dd z+(1-y^3)\,\dd z\,\dd x+(2y^2z-z^2)\,\dd x\,\dd y}{y-x^2-z^2}.\]
+说明能否在曲面上先用约束替换分母，再选取一个光滑向量场计算通量。
+\end{exercise}
+\begin{exercise}{652}{旋转双曲面与任意函数抵消}
+将过 $A(1,0,0),B(1,1,1)$ 的直线绕 $z$ 轴旋转，截取 $0\le z\le1$ 的侧面并取外侧，记为 $\Sigma$。
+\begin{enumerate}
+\item 求曲面方程及一个外法向量。
+\item 设 $f\in C^1(\mathbb R)$，求向量场 $(xf(xy)-2x,y^2-yf(xy),(z+1)^2)$ 通过 $\Sigma$ 的通量；指出含 $f$ 的部分为何不贡献总通量，并用补面计算核验。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{653}{锥面上的径向相切项}
+设 $\Sigma$ 为 $z=\sqrt{x^2+y^2},1\le x^2+y^2\le4$ 的下侧，$f\in C(\mathbb R)$。计算向量场 $(xf(xy)+2x-y,yf(xy)+2y+x,zf(xy)+z)$ 的通量；先从法向证明含 $f$ 的向量场与锥面相切，再解释连续而未必可导的条件为何足够。
+\end{exercise}
+\begin{exercise}{654}{椭球面边界与旋度消去}
+设 $\Sigma$ 为 $4x^2+y^2+z^2=1$ 在第一卦限的部分，取上侧，边界 $L$ 按右手定则定向。求
+\[\oint_L(yz^2-\cos z)\,\dd x+2xz^2\,\dd y+(2xyz+x\sin z)\,\dd z.\]
+先把含三角函数的部分识别为恰当微分，计算其余部分的旋度，再将通量化为坐标平面上的积分。
+\end{exercise}

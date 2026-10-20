@@ -1,0 +1,324 @@
+\section{第8章 向量代数与空间解析几何}
+\subsection{向量及其线性运算}
+\begin{exercise}{1}{线性组合与线性无关}
+设 $\vec u=\vec a-\vec b+\vec c$，$\vec v=\vec a+3\vec b-2\vec c$，其中 $\vec a,\vec b,\vec c$ 线性无关。用它们表示 $2\vec u-\vec v$，并判断是否存在实数 $s,t$ 使 $s\vec u+t\vec v=\vec c$，说明理由。
+\end{exercise}
+\begin{exercise}{2}{坐标运算与正交条件}
+设 $\vec a=(0,-1,1)$，$\vec b=(1,2,0)$，$\vec c=(2,0,1)$。求 $\vec p=\vec a-\vec b+\vec c$、$\vec q=\vec a+2\vec b-3\vec c$ 的坐标，并求使 $\vec p+\lambda\vec q$ 与 $\vec c$ 垂直的实数 $\lambda$。
+\end{exercise}
+\begin{exercise}{3}{三等分点与端点恢复}
+线段 $AB$ 的两个三等分点为 $C(2,0,2)$、$D(5,-2,0)$。求无序端点集 $\{A,B\}$ 及线段长度，并说明交换 $C,D$ 的先后次序对结果有何影响。
+\end{exercise}
+\begin{exercise}{4}{内外分点与参数范围}
+设 $A(x_1,y_1,z_1)\ne B(x_2,y_2,z_2)$。对实数 $\lambda$，讨论线段 $AB$ 上满足距离关系 $|AM|=\lambda|MB|$ 的点 $M$ 是否存在、是否唯一；存在时求其坐标。再讨论将 $M$ 的范围改为整条直线 $AB$ 时，正参数 $\lambda$ 对解的个数有何影响。
+\end{exercise}
+\begin{exercise}{5}{平行条件与投影}
+设 $A(1,2,3)$、$B(3,5,t)$，$\vec a=(2,3,-2)$。求使 $\overrightarrow{AB}$ 与 $\vec a$ 平行的 $t$，并求此时 $\overrightarrow{AB}$ 在 $\vec a$ 方向上的标量投影。
+\end{exercise}
+\begin{exercise}{6}{向量平行的参数判定}
+设 $\vec a=(1,2,3)$、$\vec b=(2,k,t)$。求使两向量平行的所有 $(k,t)$，并判断是否可能反向。若仅要求 $\vec b-\vec a$ 与 $\vec a$ 平行，参数条件是否改变？证明你的结论。
+\end{exercise}
+\begin{exercise}{7}{反向单位向量与定长向量}
+设 $A(-1,2,2)$、$B(1,2,0)$。求与 $\overrightarrow{AB}$ 反向的单位向量 $\vec e$，并求满足 $\vec v\parallel\overrightarrow{AB}$、$|\vec v|=3$ 的全部向量。
+\end{exercise}
+\begin{exercise}{8}{方向角及其约束}
+设 $A(1,1,-\sqrt2)$、$B(2,2,0)$。求 $\overrightarrow{AB}$ 的模、方向余弦与方向角，并由本题数据验证方向余弦的平方和为 $1$。能否存在方向角均为锐角且三者相等的非零向量？若能，求共同方向角。
+\end{exercise}
+\begin{exercise}{9}{标量投影与垂直分解}
+向量 $\vec a$ 的模为 $9$，与有向 $u$ 轴的夹角为 $\frac\pi4$。求其在该轴上的标量投影及垂直于该轴的分量的模。若将轴的正方向反转，这两个结果如何改变？
+\end{exercise}
+\begin{exercise}{10}{等模条件与正交}
+设 $\vec a=(3,-5,8)$、$\vec b=(-1,1,p)$。求满足 $|\vec a+\vec b|=|\vec a-\vec b|$ 的 $p$，并证明一般向量的这一等式与 $\vec a\cdot\vec b=0$ 等价。
+\end{exercise}
+\begin{exercise}{11}{距离比轨迹与退化情形}
+设 $A(2,0,-3)$、$B(4,-6,6)$。求满足 $|MA|=3|MB|$ 的动点 $M$ 的轨迹方程、球心与半径。再将距离比 $3$ 改为 $1$，求轨迹并说明其几何类型。
+\end{exercise}
+\begin{exercise}{12}{向量证明与比例推广}
+在非退化三角形 $ABC$ 中，$M,N$ 分别为 $AB,AC$ 的中点。用向量证明 $MN\parallel BC$ 且 $|MN|=\frac12|BC|$。进一步，若 $\overrightarrow{AM}=t\overrightarrow{AB}$、$\overrightarrow{AN}=t\overrightarrow{AC}$，其中 $0<t<1$，求 $\overrightarrow{MN}$ 并证明相应的长度关系。
+\end{exercise}
+\begin{exercise}{13}{点的线性组合与原点选择}
+设 $A,B$ 的位置向量为 $\vec a,\vec b$，以 $\alpha\vec a+\beta\vec b$ 作为点 $P$ 的位置向量。证明这一构造在任意平移坐标原点后仍表示同一几何点的充要条件是 $\alpha+\beta=1$。在此条件下，说明 $P$ 在线段 $AB$ 上的充要条件，其中 $A\ne B$。
+\end{exercise}
+\begin{exercise}{14}{线段参数与交点条件}
+设 $A(0,0,0)$、$B(2,1,1)$、$C(1,0,a)$、$D(1,2,a-2)$。用线性组合分别表示直线 $AB,CD$ 上的点，求两直线相交的参数 $a$；相交时判断交点是否同时在线段 $AB,CD$ 上，并求其对两条线段的分比。
+\end{exercise}
+\subsection{内积、向量积与混合积}
+\begin{exercise}{15}{三种乘积与体积}
+设 $\vec a=(1,-2,-3)$，$\vec b=(2,2,-3)$，$\vec c=(2,1,-3)$。计算 $(2\vec a)\cdot\vec b$、$(3\vec a)\times(2\vec b)$ 及 $[(3\vec a)\times(2\vec b)]\cdot\vec c$，并求以 $\vec a,\vec b,\vec c$ 为棱的四面体体积。
+\end{exercise}
+\begin{exercise}{16}{混合积的线性性质}
+设 $(\vec a\times\vec b)\cdot\vec c=2$。计算 $[(\vec a+\vec b)\times(\vec b+\vec c)]\cdot(\vec c+\vec a)$，并求使 $\vec a+\vec b,\vec b+\vec c,\vec c+t\vec a$ 共面的全部实数 $t$。
+\end{exercise}
+\begin{exercise}{17}{向量积展开与恒等式}
+化简 $(2\vec a+\vec b)\times(\vec c-\vec a)+(\vec b+\vec c)\times(\vec a+\vec b)$。若 $\vec a,\vec b,\vec c$ 线性无关，判断该式是否可能为零向量，并证明。
+\end{exercise}
+\begin{exercise}{18}{内积消去与充要条件}
+设 $\vec c\ne\vec0$ 且 $\vec a\cdot\vec c=\vec b\cdot\vec c$。证明 $(\vec a-\vec b)\cdot\vec c=0$，并举例说明能否由此推出 $\vec a=\vec b$。若另有 $\vec a-\vec b$ 与 $\vec c$ 平行，结论如何？
+\end{exercise}
+\begin{exercise}{19}{共线条件与方向判定}
+设 $\vec a,\vec b$ 不共线。求使 $k\vec a+\vec b$ 与 $\vec a+k\vec b$ 共线的全部实数 $k$，并分别判断这两个向量同向还是反向。
+\end{exercise}
+\begin{exercise}{20}{三角形面积与高}
+设 $A(2,-1,2)$、$B(1,1,3)$、$C(1,2,-1)$。用向量积求三角形 $ABC$ 的面积及从 $A$ 到直线 $BC$ 的距离，并说明三个点为何不共线。
+\end{exercise}
+\begin{exercise}{21}{面积与等面积轨迹}
+设 $A(2,-1,3)$、$B(1,2,3)$、$C(0,1,4)$。求三角形 $ABC$ 的面积。保持 $A,B$ 固定，令 $C_t=C+t\overrightarrow{AB}$，证明三角形 $ABC_t$ 的面积与 $t$ 无关。
+\end{exercise}
+\begin{exercise}{22}{平行约束与最小模}
+设 $\vec m=(2,-3,1)$。求与 $\vec m$ 共线且满足 $\vec r\cdot\vec m=14$ 的 $\vec r$。若去掉共线条件，证明所有满足该内积条件的向量中，刚求得的向量的模最小。
+\end{exercise}
+\begin{exercise}{23}{正交参数与投影系数}
+设 $|\vec a|=2$，$|\vec b|=5$，夹角为 $\frac{2\pi}3$，$\vec p=3\vec a-\vec b$、$\vec q=\lambda\vec a+17\vec b$。求使 $\vec p\perp\vec q$ 的 $\lambda$，并求此时 $\vec q$ 在 $\vec a$ 方向上的标量投影。
+\end{exercise}
+\begin{exercise}{24}{内外积关系与信息充分性}
+设 $|\vec a|=3$，$|\vec b|=26$，$|\vec a\times\vec b|=72$。求 $\vec a\cdot\vec b$ 的所有可能值，并说明还需知道夹角的什么信息才能唯一确定内积。
+\end{exercise}
+\begin{exercise}{25}{正交关系联立与夹角}
+非零向量 $\vec a,\vec b$ 满足 $(\vec a+3\vec b)\perp(7\vec a-5\vec b)$ 及 $(\vec a-4\vec b)\perp(7\vec a-2\vec b)$。求 $|\vec a|:|\vec b|$ 与两向量夹角，并核验所得数据满足 $|\cos\theta|\le1$。
+\end{exercise}
+\begin{exercise}{26}{共面判定与有向体积}
+设 $\vec a=(3,0,-1)$，$\vec b=(2,-4,3)$，$\vec c=(-1,-2,2)$。判断三向量是否共面，求它们所张成的平行六面体体积；再求使 $\vec a,\vec b,\vec c+t\vec a$ 共面的实数 $t$，或证明不存在。
+\end{exercise}
+\begin{exercise}{27}{拉格朗日恒等式与等号}
+证明 $|\vec a\times\vec b|^2+(\vec a\cdot\vec b)^2=|\vec a|^2|\vec b|^2$，并由此证明 $|\vec a\cdot\vec b|\le |\vec a||\vec b|$，完整讨论等号成立条件，包括零向量情形。
+\end{exercise}
+\begin{exercise}{28}{余弦定理及逆命题}
+设三角形 $ABC$ 的对边长为 $a,b,c$。用向量内积证明三条余弦定理 $a^2=b^2+c^2-2bc\cos A$、$b^2=a^2+c^2-2ac\cos B$、$c^2=a^2+b^2-2ab\cos C$，再据此证明 $A$ 为锐角的充要条件是 $a^2<b^2+c^2$。
+\end{exercise}
+\begin{exercise}{29}{三高共点的向量证明}
+用向量证明非退化三角形的三条高所在直线共点。证明中说明两条高为何必有唯一交点，并证明该交点也在第三条高上。
+\end{exercise}
+\begin{exercise}{30}{正交分解与最小距离原理}
+设 $\vec b\ne\vec0$。证明函数 $|\vec a-t\vec b|^2$ 在实数 $t$ 上有唯一最小值，求极小点并证明此时 $\vec a-t\vec b$ 与 $\vec b$ 垂直。由最小值非负推导内积不等式，并完整讨论等号条件。
+\end{exercise}
+\begin{exercise}{31}{混合积的参数讨论}
+设 $\vec a=(1,1,0)$、$\vec b=(0,1,1)$、$\vec c_t=(1,t,1)$。求三向量共面的全部 $t$，共面时将 $\vec c_t$ 表为 $\vec a,\vec b$ 的线性组合；再求以这三向量为棱的平行六面体体积不超过 $2$ 的参数范围，并求对应四面体的最大体积。
+\end{exercise}
+\subsection{平面方程}
+\begin{exercise}{32}{点法式与垂足}
+求过 $A(1,2,3)$ 且垂直于直线 $\frac{x-2}{2}=\frac{y+1}{4}=\frac{z+2}{5}$ 的平面，并求该直线与平面的交点以及 $A$ 到直线的距离。
+\end{exercise}
+\begin{exercise}{33}{三点确定平面}
+设 $A(2,2,1)$、$B(1,0,3)$、$C(0,3,-2)$。先证明三点不共线，再求所确定的平面方程，并求原点到该平面的距离。
+\end{exercise}
+\begin{exercise}{34}{平面平行于坐标轴}
+求平行于 $y$ 轴且过 $A(1,0,1)$、$B(2,-1,3)$ 的平面方程，说明唯一性；再求该平面与 $xOz$ 坐标面的交线。
+\end{exercise}
+\begin{exercise}{35}{特殊平面的几何解释}
+分别说明平面 $3y-1=0$、$4x+3y-12=0$、$x-3y=0$ 与各坐标轴、坐标面的相对位置；对每个平面给出一个法向量，并判断能否写成三个非零有限截距的截距式。
+\end{exercise}
+\begin{exercise}{36}{过两点的垂直平面}
+求过 $A(2,-1,-1)$、$B(1,3,-4)$ 且垂直于 $x+2y-4z+8=0$ 的平面。证明所求平面唯一，并求这两个平面的交线方向向量。
+\end{exercise}
+\begin{exercise}{37}{双重垂直条件}
+求过 $A(1,2,-1)$ 且同时垂直于 $2x+2y-z+1=0$、$3x-y-z-3=0$ 的平面，并说明其法向量与这两个已知平面的交线方向有何关系。
+\end{exercise}
+\begin{exercise}{38}{垂直平分面与等距轨迹}
+求线段 $A(1,2,3)$、$B(2,-1,4)$ 的垂直平分面，并从距离相等条件证明该平面恰为所有满足 $|MA|=|MB|$ 的点的轨迹。
+\end{exercise}
+\begin{exercise}{39}{由两方向确定平面}
+求过原点且方向平行于直线 $x=1,\ y=-1+t,\ z=2+t$ 与直线 $\frac{x+1}{1}=\frac{y+2}{2}=\frac{z-1}{1}$ 的平面。分别判断两已知直线是否位于所求平面内。
+\end{exercise}
+\begin{exercise}{40}{截距比例与多解}
+求三个有向截距之比为 $1:3:2$ 且到原点距离为 $6$ 的全部平面，并求各平面在第一卦限是否围成有界四面体；能围成时求其体积。
+\end{exercise}
+\begin{exercise}{41}{过坐标轴的夹角约束}
+求通过 $y$ 轴且与 $2x-\sqrt5y+z-7=0$ 成 $\frac\pi3$ 角的全部平面，说明求解时能否遗漏法向量某个分量为零的情形。
+\end{exercise}
+\begin{exercise}{42}{过两点的平面夹角}
+求过 $M_1(0,0,1)$、$M_2(3,0,0)$ 且与 $xOy$ 面成 $60^\circ$ 角的全部平面，并说明两解之间的对称关系。
+\end{exercise}
+\begin{exercise}{43}{等距平行平面}
+已知 $\Pi_1:2x+6y-3z+12=0$，$P(0,2,-1)$。求与 $\Pi_1$ 平行且不重合，并使 $P$ 到两个平面的距离相等的 $\Pi_2$；说明 $P$ 与两个平面的相对位置。
+\end{exercise}
+\begin{exercise}{44}{平面位置关系与定量计算}
+逐组判定两平面的位置关系；相交时求夹角，平行且不重合时求距离：
+\begin{enumerate}
+\item $2x+y-z+1=0$ 与 $6x+3y-3z+3=0$；
+\item $x-y-z+7=0$ 与 $-2x+4y-6z+11=0$；
+\item $5x+3y-z+1=0$ 与 $x-6y-3z+2=0$；
+\item $2x+y-z+1=0$ 与 $6x+3y-3z+5=0$。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{45}{平面夹角与交线}
+求平面 $x+y-11=0$ 与 $3x+8=0$ 的夹角及交线方程，并解释交线为何平行于 $z$ 轴。
+\end{exercise}
+\begin{exercise}{46}{坐标面夹角与法向量}
+求 $2x+y-4z+5=0$ 与三个坐标面的夹角的余弦，证明这三个余弦的平方和为 $1$，并说明它们与法向量的方向余弦有何联系。
+\end{exercise}
+\begin{exercise}{47}{点面距离与正交投影}
+求 $P(2,0,3)$ 到 $\Pi:4x-5y+3z-1=0$ 的距离、垂足坐标及 $P$ 关于 $\Pi$ 的对称点。
+\end{exercise}
+\begin{exercise}{48}{平行平面的双侧距离}
+设 $A(0,-7,0)$、$B(2,-1,1)$、$C(2,2,2)$。求平行于三角形 $ABC$ 所在平面且与之相距 $2$ 的全部平面，并判定它们分居原平面的哪一侧。
+\end{exercise}
+\begin{exercise}{49}{切平面与线性近似}
+求曲面 $z=x^2(1-\sin y)+y^2(1-\sin x)$ 在 $(1,0,1)$ 处的切平面，并用该切平面给出 $f(1+h,k)$ 的一阶近似，写明误差相对于 $\sqrt{h^2+k^2}$ 的阶。
+\end{exercise}
+\begin{exercise}{50}{有向截距与四面体体积}
+平面 $\frac x2+\frac y4-\frac z3=1$ 与三个坐标面围成四面体。求各轴截距及四面体体积，并说明负截距为何不导致负体积。
+\end{exercise}
+\begin{exercise}{51}{平行平面距离与中间平面}
+求 $3x+6y-2z-7=0$ 与 $3x+6y-2z+14=0$ 的距离，并求与两平面等距且位于两者之间的平面。
+\end{exercise}
+\begin{exercise}{52}{球面相切与切点}
+球心为 $O(3,-5,-2)$ 的球面与 $2x-y-3z+11=0$ 相切。求球面方程与切点，并验证切点到球心的连线垂直于切平面。
+\end{exercise}
+\begin{exercise}{53}{过直线的平面约束}
+设 $A(5,1,3)$、$B(1,6,2)$、$C(5,0,4)$、$D(4,0,6)$。
+\begin{enumerate}
+\item 求通过 $AB$ 且方向平行于 $CD$ 的平面，判断 $CD$ 是否在该平面内。
+\item 求通过 $AB$ 且垂直于三角形 $ABC$ 所在平面的平面，并说明唯一性。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{54}{平面夹角与角平分面}
+对平面 $2x-y+z-7=0$ 与 $x+y+2z-11=0$，求夹角及两个角平分面方程。证明这两个角平分面互相垂直，并说明使用未经单位化的平面方程直接作和差为何需要条件。
+\end{exercise}
+\begin{exercise}{55}{平面束与唯一性}
+设 $L$ 为平面 $x+y+z=0$ 与 $x-y=0$ 的交线。证明通过 $L$ 的全部平面可写成 $\alpha(x+y+z)+\beta(x-y)=0$，其中 $(\alpha,\beta)\ne(0,0)$。讨论另给一点 $P$ 时，通过 $L,P$ 的平面何时唯一，何时有无穷多个。
+\end{exercise}
+\begin{exercise}{56}{截距平面与体积极值}
+一个平面在三个正半轴上截距分别为 $a,b,c>0$，且通过 $P(1,2,3)$。求它与三个坐标面围成的四面体体积的最小值及取得最小值的平面方程，并证明最小值确实能够取得。
+\end{exercise}
+\subsection{空间直线}
+\begin{exercise}{57}{直线参数式与零分量}
+求过 $M_1(5,2,-3)$、$M_2(-1,2,3)$ 的直线的参数方程与一般方程，并说明其对称式中应如何处理方向向量的零分量。
+\end{exercise}
+\begin{exercise}{58}{法线与点面距离}
+求过 $P(2,-1,5)$ 且垂直于 $x-5y+3z+1=0$ 的直线，求其与平面的交点，并由此计算 $P$ 到平面的距离。
+\end{exercise}
+\begin{exercise}{59}{直线方程转换与点的判定}
+将直线 $x-y+z-1=0,\ 2x+y+z-4=0$ 写为参数式和对称式，求它与 $xOy$ 面的交点，并验证该点满足原方程组。
+\end{exercise}
+\begin{exercise}{60}{两平面的公共平行方向}
+求过 $P(-1,-3,4)$ 且方向同时平行于 $3x+2y+z+7=0$ 和 $x+2y-z-4=0$ 的直线，分别判定它与两个平面是平行还是包含关系。
+\end{exercise}
+\begin{exercise}{61}{公共垂直方向与空间位置}
+求过 $P(-5,1,8)$ 且方向同时垂直于 $L_1:x-y+3z+2=0,\ 4x+y-2z+3=0$ 和 $L_2:(x,y,z)=(5-2t,4-t,3t+5)$ 的直线。判断所得直线是否分别与 $L_1,L_2$ 相交。
+\end{exercise}
+\begin{exercise}{62}{直线夹角与交点参数}
+求过 $(2,-3,-1)$、与 $x$ 轴成 $\frac\pi3$ 角且与 $L_1:\frac{x-7}{1}=\frac{y-3}{2}=\frac{z-5}{2}$ 相交的全部直线。以交点在 $L_1$ 上的参数建立方程，并说明无增根、无漏解。
+\end{exercise}
+\begin{exercise}{63}{点到直线的垂足}
+求过 $P(2,1,3)$ 且与 $\frac{x+1}{3}=\frac{y-1}{2}=\frac z{-1}$ 垂直相交的直线，并求垂足及 $P$ 到已知直线的距离。
+\end{exercise}
+\begin{exercise}{64}{垂线与最短距离}
+过 $P(0,-1,1)$ 向直线 $L:y+1=0,\ x+2z-7=0$ 作垂线。求垂线方程和垂线段长度，并用一元二次函数的最小值验证该长度。
+\end{exercise}
+\begin{exercise}{65}{直线夹角与异面判定}
+求直线 $\frac{x-1}{1}=\frac y{-4}=\frac{z+3}{1}$ 与 $\frac x2=\frac{y+2}{-2}=\frac z{-1}$ 的夹角，并判定两者相交还是异面。
+\end{exercise}
+\begin{exercise}{66}{一般式直线的方向}
+求 $L_1:x-y+z-1=0,\ 2x+y+z-4=0$ 和 $L_2:x+y-4z+3=0,\ x-y-3z-2=0$ 的夹角，并求同时垂直于两条直线方向的单位向量。
+\end{exercise}
+\begin{exercise}{67}{线面夹角与平行判定}
+求直线 $x+y+3z=0,\ x-y-z=0$ 与平面 $x-y-z+1=0$ 的夹角和距离。解释夹角为零是否足以推出直线位于平面内。
+\end{exercise}
+\begin{exercise}{68}{方向正交与实际相交}
+设 $L_1:(x,y,z)=(-1,1,-3)+s(1,t,2)$，$L_2:\frac{x-2}{4}=\frac{y+1}{2}=\frac{z-2}{-1}$。求使两直线方向垂直的 $t$，再判断此时两直线是否垂直相交。
+\end{exercise}
+\begin{exercise}{69}{线面位置与交点}
+判定 $L:\frac{x-2}{1}=\frac{y-1}{2}=\frac{z+1}{2}$ 与 $\Pi:x-5y+3z+1=0$ 的位置关系；相交时求交点，并求 $L$ 与 $\Pi$ 的夹角。
+\end{exercise}
+\begin{exercise}{70}{包含关系的充分证据}
+判定 $L:\frac{x-3}{2}=\frac{y+1}{-1}=\frac{z-1}{2}$ 与 $\Pi:2x-2y-3z-5=0$ 的位置关系。分别核验方向条件及基点条件，并说明缺少任一条件会造成什么不确定性。
+\end{exercise}
+\begin{exercise}{71}{参数代入与交点唯一性}
+求 $L:\frac{x+2}{2}=\frac{y-3}{-3}=\frac{z-5}{-1}$ 与 $\Pi:3x+y-2z-7=0$ 的交点。再将常数项 $-7$ 改为 $c$，讨论交点个数是否随 $c$ 改变。
+\end{exercise}
+\begin{exercise}{72}{一般式直线与法向量}
+判定 $L:x+3y+2z+1=0,\ 2x-y-10z+3=0$ 与 $\Pi:4x-2y+z-2=0$ 的位置关系，并求其交点或证明无交点。要求用方向向量给出判定依据。
+\end{exercise}
+\begin{exercise}{73}{平面内的垂直直线族}
+求平面 $\Pi:x+y+z+1=0$ 内方向垂直于 $L:y-z+1=0,\ x+2z=0$ 的全部直线，可用一个参数表示直线族；判定这些直线是否都与 $L$ 垂直相交，并说明理由。
+\end{exercise}
+\begin{exercise}{74}{两类线面位置关系}
+逐项判定位置关系，并计算线面距离；相交时还须给出交点：
+\begin{enumerate}
+\item $L:\frac{x-2}{3}=\frac{y+2}{1}=\frac{z-3}{-4}$，$\Pi:x+y+z-3=0$；
+\item $L:x+3y+2z+5=0,\ 2x-y-10z-3=0$，$\Pi:-x+\frac12y-\frac14z+1=0$。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{75}{线面距离与等距性}
+求 $L:\frac{x-1}{-2}=\frac{y+4}{-7}=\frac z3$ 与 $\Pi:4x-2y-2z-3=0$ 的距离，并证明 $L$ 上每个点到 $\Pi$ 的距离相同。
+\end{exercise}
+\begin{exercise}{76}{直线间距与位置关系}
+判定 $L_1:\frac{x-2}{2}=\frac{y+3}{-3}=\frac z1$ 与 $L_2:x=-2y+1,\ z=y-3$ 的位置关系，并求两直线距离及一对实现最短距离的点。
+\end{exercise}
+\begin{exercise}{77}{点的平面投影与反射}
+求 $P(-1,2,0)$ 在 $x+2y-z+1=0$ 上的投影点及点面距离，再求 $P$ 关于该平面的对称点。
+\end{exercise}
+\begin{exercise}{78}{点的直线投影与极小值}
+求 $P(3,-1,2)$ 在 $L:x+y-z+1=0,\ 2x-y+z-4=0$ 上的投影点及点线距离，并证明该投影点是 $L$ 上距 $P$ 最近的唯一点。
+\end{exercise}
+\begin{exercise}{79}{平行与包含的参数区别}
+设 $L:2x+y-1=0,\ 3x+z-2=0$，$\Pi_c:x+2y-z=c$。讨论所有实数 $c$ 下的线面位置关系、交点情况及距离，并特别给出 $c=1$ 时的结果。
+\end{exercise}
+\begin{exercise}{80}{异面直线公垂线}
+设 $L_1:\frac{x-1}{1}=\frac y2=\frac{z+1}{1}$，$L_2:\frac{x+2}{-2}=\frac{y-1}{1}=\frac z1$。先验证两直线异面，再求公垂线方程、两个垂足以及两直线距离，并说明公垂线唯一的原因。
+\end{exercise}
+\begin{exercise}{81}{直线共面与距离公式的条件}
+设 $L_1:P+t\vec u$、$L_2:Q+s\vec v$，其中 $\vec u,\vec v$ 非零且不平行。证明两直线相交的充要条件为 $(Q-P)\cdot(\vec u\times\vec v)=0$，并推导异面时的距离公式。再举例说明去掉不平行假设后，混合积为零为什么不能保证相交。
+\end{exercise}
+\begin{exercise}{82}{异面距离与参数退化}
+设 $L_1:(x,y,z)=(t,0,0)$，$L_2:(x,y,z)=(0,1,a)+s(0,1,1)$。按 $a$ 分类两直线的位置关系，求它们的距离及一对实现此距离的点；异面时求公垂线方程，并核验其两个方向正交条件。
+\end{exercise}
+\subsection{曲面及其方程}
+\begin{exercise}{83}{配方与球面位置}
+求球面 $x^2+y^2+z^2-6x+8y+2z+10=0$ 的球心、半径，并判定三个坐标面分别与球面相交、相切还是相离。
+\end{exercise}
+\begin{exercise}{84}{直径端点与球面方程}
+球面一条直径的端点为 $A(2,-3,5)$、$B(4,1,-3)$。求球面方程，并用 $(\overrightarrow{MA}\cdot\overrightarrow{MB})=0$ 说明该球面的几何刻画。
+\end{exercise}
+\begin{exercise}{85}{四点确定球面}
+求过原点及 $A(1,3,0)$、$B(4,0,0)$、$C(0,0,-4)$ 的球面方程。证明这四点不共面，并说明所求球面唯一。
+\end{exercise}
+\begin{exercise}{86}{斜圆柱面与点线距离}
+圆柱面以 $\frac x1=\frac{y-2}{-2}=\frac{z+1}{-2}$ 为轴，且过 $M(1,-2,1)$。求其半径和方程，可保留向量积的等价形式；证明沿轴向平移任意柱面上的点仍在柱面上。
+\end{exercise}
+\begin{exercise}{87}{二次曲面与截面辨析}
+分别识别下列曲面的类型，指出中心或顶点、主要轴向，并写出一个能体现其类型的坐标面截线方程：
+\begin{enumerate}
+\item $x^2+y^2+z^2-2x+4y+2z=0$；
+\item $4x^2+y^2-z^2=4$；
+\item $4x^2-y^2-z^2=4$；
+\item $x^2-y^2=9$；
+\item $\frac{x^2}2+\frac{y^2}3-2z=0$；
+\item $\frac{x^2}3-\frac{y^2}2-2z=0$。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{88}{旋转曲面与参数表示}
+将 $xOz$ 面内的圆 $x^2+z^2=9$ 绕 $z$ 轴旋转一周。求所得曲面方程，并给出覆盖整个曲面的双参数表示及参数范围。
+\end{exercise}
+\begin{exercise}{89}{旋转轴与母线}
+说明 $x^2-y^2+z^2=1$ 可由哪个坐标面内的哪条曲线绕哪条坐标轴旋转得到，并给出一组参数方程；再用截面说明它的单叶性质。
+\end{exercise}
+\begin{exercise}{90}{柱面与缺失变量}
+分别说明 $y^2=x$、$x^2+y^2=1$、$\frac{y^2}4+\frac{z^2}9=1$ 在空间中的几何类型、母线方向及一条准线，并给出每个柱面的参数表示。
+\end{exercise}
+\begin{exercise}{91}{标准化与曲面分类}
+将下列方程化为标准形式，识别曲面类型及主要轴向，并判断是否有中心：
+\begin{enumerate}
+\item $x^2-2y^2+3z^2+6=0$；
+\item $x^2+2y^2+3z^2-6=0$；
+\item $x^2-y^2-z^2+2=0$；
+\item $x^2+4y^2-8z=0$；
+\item $z^2-6x^2-24y=0$。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{92}{给定切点的球面多解}
+求半径为 $4$ 且与平面 $x-2y+2z-3=0$ 相切于 $P(3,2,2)$ 的全部球面。先核验 $P$ 在已知平面上，再说明为何恰有两个球心。
+\end{exercise}
+\begin{exercise}{93}{旋转椭球与切锥体积}
+将椭圆 $\frac{x^2}4+\frac{y^2}3=1$ 绕 $x$ 轴旋转得椭球面 $S_1$；将从 $(4,0)$ 向椭圆所作的切线绕 $x$ 轴旋转得圆锥面 $S_2$。
+\begin{enumerate}
+\item 求 $S_1,S_2$ 的方程及它们的相切圆所在平面。
+\item 求由 $S_2$ 从相切圆至顶点的锥面部分及 $S_1$ 在相切圆右侧的曲面部分围成的有界区域的体积。列积分时明确积分区间，并说明为什么要扣除椭球右端的部分。
+\end{enumerate}
+\end{exercise}
+\begin{exercise}{94}{斜圆柱面与坐标缺项}
+证明曲面 $(x-z)^2+2y^2=2$ 是圆柱面，求其轴线与半径。说明沿 $(1,0,1)$ 平移为何保持曲面不变，并据此判断“圆柱面的直角坐标方程必缺少一个变量”这一说法是否成立。
+\end{exercise}
+\begin{exercise}{95}{含交叉项的曲面分类}
+对实数 $\lambda$，讨论曲面 $x^2+y^2+z^2+2\lambda xz=1$ 的类型及有界性。可用正交坐标 $u=\frac{x+z}{\sqrt2}$、$v=\frac{x-z}{\sqrt2}$ 化为标准形式；须单独讨论 $\lambda=\pm1$，并给出无界曲面的主要轴向或母线方向。
+\end{exercise}

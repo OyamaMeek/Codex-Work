@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-20 工科数学分析逐题训练
+
+- 主代理采用PDF、brainstorming、ponytail、dispatching-parallel-agents与verification-before-completion；独立章节按技能要求并行编写，统一核对题号与数学条件。
+- 复用本地GLM-OCR、Python、pypdf、pylatexenc及SymPy；原书不修改、不上传。中间材料位于已忽略的.agent/math-analysis/及.agent/hdu-ocr/。为新增iPad版PDF独立使用校验官方SHA-256的Tectonic 0.17.0，程序及缓存仅在本项目忽略目录，不全局安装。内置编译另行检查正常版与iPad版。
+
 ## 2026-10-19 HDU试卷识别
 
 - Codex主代理与按dispatching-parallel-agents技能分派的独立数学推导/语法审查代理；PDF、using-superpowers、ponytail、verification-before-completion技能。

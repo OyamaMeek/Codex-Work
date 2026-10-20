@@ -1,0 +1,108 @@
+% !TeX program = xelatex
+\documentclass[12pt,fontset=fandol]{ctexart}
+\usepackage{geometry,amsmath,amssymb,bm,enumitem,xcolor,hyperref,xparse}
+\geometry{paperwidth=240mm,paperheight=180mm,left=14mm,right=14mm,top=12mm,bottom=12mm,noheadfoot}
+\hypersetup{hidelinks,pdftitle={工科数学分析逐题训练·横屏手写版},pdfauthor={},bookmarksopen=false,bookmarksdepth=2,pdfdisplaydoctitle=true}
+\pdfstringdefDisableCommands{\def\quad{ }\def\qquad{ }}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\topskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlist[enumerate]{label=（\arabic*）,leftmargin=2.6em,itemsep=2pt,topsep=3pt,parsep=0pt}
+\newcommand{\dd}{\,\mathrm{d}}
+\definecolor{ipadmuted}{gray}{0.40}
+
+\ExplSyntaxOn
+\msg_new:nnn {ipad} {validation-failed} {#1}
+\NewDocumentCommand{\ipadFail}{m}{\msg_fatal:nnn {ipad}{validation-failed}{#1}}
+\ExplSyntaxOff
+
+\newcounter{ipadexercise}
+\newcounter{ipadchapterid}
+\newcounter{ipadsectionid}
+\newcounter{ipadshippedpages}
+\newif\ifipadchapterpending
+\newif\ifipadsectionpending
+\newcommand{\ipadchapter}{}
+\newcommand{\ipadsection}{}
+\newcommand{\ipadtopic}{}
+\renewcommand{\section}[1]{%
+  \stepcounter{ipadchapterid}\setcounter{ipadsectionid}{0}%
+  \gdef\ipadchapter{#1}\gdef\ipadsection{}\gdef\ipadtopic{}%
+  \global\ipadchapterpendingtrue\global\ipadsectionpendingfalse}
+\renewcommand{\subsection}[1]{%
+  \stepcounter{ipadsectionid}\gdef\ipadsection{#1}\gdef\ipadtopic{}%
+  \global\ipadsectionpendingtrue}
+\renewcommand{\subsubsection}[1]{\gdef\ipadtopic{#1}}
+\newcommand{\ipadbookmarks}[2]{%
+  \ifipadchapterpending
+    \pdfbookmark[0]{\ipadchapter}{ipad.chapter.\arabic{ipadchapterid}}%
+    \global\ipadchapterpendingfalse
+  \fi
+  \ifipadsectionpending
+    \pdfbookmark[1]{\ipadsection}{ipad.section.\arabic{ipadchapterid}.\arabic{ipadsectionid}}%
+    \global\ipadsectionpendingfalse
+  \fi
+  \pdfbookmark[2]{第#1题\space #2}{ipad.exercise.#1}}
+
+\newsavebox{\ipadquestionbox}
+\newlength{\ipadquestionheight}
+\newlength{\ipadminblank}
+\newlength{\ipadmaxquestionheight}
+\newlength{\ipadremainingblank}
+\setlength{\ipadminblank}{70mm}
+\setlength{\ipadmaxquestionheight}{\dimexpr\textheight-\ipadminblank\relax}
+
+\NewDocumentEnvironment{exercise}{m m +b}{%
+  \clearpage
+  \stepcounter{ipadexercise}%
+  \ifnum#1=\value{ipadexercise}\relax\else
+    \ipadFail{Exercise\space #1\space is\space out\space of\space sequence.}%
+  \fi
+  \begin{lrbox}{\ipadquestionbox}%
+    \begin{minipage}[t]{\linewidth}
+      \fontsize{12.5}{18}\selectfont
+      \setlength{\abovedisplayskip}{5pt}%
+      \setlength{\belowdisplayskip}{5pt}%
+      \setlength{\abovedisplayshortskip}{3pt}%
+      \setlength{\belowdisplayshortskip}{3pt}%
+      {\fontsize{9}{12}\selectfont\color{ipadmuted}%
+        \ipadbookmarks{#1}{#2}%
+        \ipadchapter\quad /\quad\ipadsection
+        \ifx\ipadtopic\empty\else\quad /\quad\ipadtopic\fi\par}
+      \vspace{2mm}%
+      {\fontsize{14}{19}\selectfont\bfseries 第#1题\quad #2\par}
+      \vspace{1mm}%
+      #3\par
+    \end{minipage}%
+  \end{lrbox}%
+  \setlength{\ipadquestionheight}{\dimexpr\ht\ipadquestionbox+\dp\ipadquestionbox\relax}%
+  \setlength{\ipadremainingblank}{\dimexpr\textheight-\ipadquestionheight\relax}%
+  \typeout{IPAD-EXERCISE id=#1 height=\the\ipadquestionheight blank=\the\ipadremainingblank limit=\the\ipadmaxquestionheight}%
+  \ifdim\ipadquestionheight>\ipadmaxquestionheight
+    \ipadFail{Exercise\space #1\space exceeds\space the\space question\space height\space limit;\space at\space least\space 70mm\space blank\space space\space is\space required.}%
+  \fi
+  \nointerlineskip\box\ipadquestionbox
+  \vfill\null
+}{}
+
+\AddToHook{shipout/after}{\stepcounter{ipadshippedpages}}
+\AtEndDocument{%
+  \ifnum\value{ipadexercise}=818\relax\else
+    \ipadFail{Expected\space 818\space exercises;\space found\space \arabic{ipadexercise}.}%
+  \fi}
+\AddToHook{enddocument/afterlastpage}{%
+  \typeout{IPAD-TOTAL exercises=\arabic{ipadexercise} pages=\arabic{ipadshippedpages}}%
+  \ifnum\value{ipadshippedpages}=818\relax\else
+    \ipadFail{Expected\space 818\space pages;\space found\space \arabic{ipadshippedpages}.}%
+  \fi}
+
+\begin{document}
+\input{chapters/ch08.tex}
+\input{chapters/ch09.tex}
+\input{chapters/ch10.tex}
+\input{chapters/ch11.tex}
+\input{chapters/ch12.tex}
+\input{chapters/ch13.tex}
+\end{document}
