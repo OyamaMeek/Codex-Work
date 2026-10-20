@@ -1,0 +1,501 @@
+\section{第13章\quad 无穷级数}
+\subsection{常数项级数的概念与性质}
+\begin{exercise}{655}{基础·部分和与通项}
+已知 $\sum_{k=1}^nu_k=2n/(n+2)$。求 $u_n$ 及 $\sum_{n=1}^{\infty}u_n$ 的和，注意单独核验 $n=1$。
+\end{exercise}
+\begin{exercise}{656}{基础·裂项求和}
+求 $\sum_{n=1}^{\infty}\frac3{(3n-1)(3n+2)}$ 的前 $N$ 项和及总和。
+\end{exercise}
+\begin{exercise}{657}{基础·对数部分和}
+求 $\sum_{n=1}^N\ln\frac{n+1}{n}$，据此判定相应无穷级数的敛散性。
+\end{exercise}
+\begin{exercise}{658}{基础·根式相消}
+求 $\sum_{n=0}^N(\sqrt{n+1}-\sqrt n)$，据此判定无穷级数的敛散性。
+\end{exercise}
+\begin{exercise}{659}{基础·相邻项裂项}
+求 $\sum_{n=1}^{\infty}(2^{1/(n+1)}-2^{1/n})$ 的和。
+\end{exercise}
+\begin{exercise}{660}{基础·三角数倒数}
+利用 $1+\cdots+n=n(n+1)/2$ 求 $\sum_{n=1}^{\infty}(1+2+\cdots+n)^{-1}$ 的和。
+\end{exercise}
+\begin{exercise}{661}{基础·有理化裂项}
+把 $\frac1{\sqrt{n+1}\sqrt n(\sqrt{n+1}+\sqrt n)}$ 化为两个相邻项之差，求从 $n=1$ 开始的级数和。
+\end{exercise}
+\begin{exercise}{662}{基础·等比级数参数}
+求实数 $q$ 的范围，使 $\sum_{n=0}^{\infty}(2-q)^n$ 收敛，并求收敛时的和。
+\end{exercise}
+\begin{exercise}{663}{基础·对数公比}
+求 $\sum_{n=1}^{\infty}(\ln2/2)^n$ 的和，写明公比绝对值小于 $1$。
+\end{exercise}
+\begin{exercise}{664}{基础·三角函数公比}
+分别判定 $\sum_{n=0}^{\infty}\tan^n(\pi/6)$ 与 $\sum_{n=0}^{\infty}\tan^n(\pi/4)$ 的敛散性，收敛者求和。
+\end{exercise}
+\begin{exercise}{665}{基础·负公比}
+求 $\sum_{n=1}^{\infty}\cos(n\pi)/3^n$ 的和，判断是否绝对收敛。
+\end{exercise}
+\begin{exercise}{666}{基础·正项级数幂次判别}
+求使 $\sum_{n=1}^{\infty}n^{-2p}$ 与 $\sum_{n=1}^{\infty}n^{-(3-p)}$ 同时收敛的 $p$。
+\end{exercise}
+\begin{exercise}{667}{基础·收敛必要条件}
+证明级数 $\sum_{n=1}^{\infty}u_n$ 收敛时必有 $u_n\to0$。提示：$u_n=S_n-S_{n-1}$。
+\end{exercise}
+\begin{exercise}{668}{基础·有限项与常数倍}
+已知 $\sum_{n=1}^{\infty}u_n=S$。求 $\sum_{n=1}^{\infty}3u_n$ 与 $\sum_{n=2}^{\infty}u_n$ 的和。
+\end{exercise}
+\begin{exercise}{669}{基础·通项必要条件}
+分别判定 $\sum_{n=1}^{\infty}\cos(1/n^2)$ 与 $\sum_{n=1}^{\infty}(-1)^ne^{-n}$ 的敛散性，给出依据。
+\end{exercise}
+\begin{exercise}{670}{基础·混合裂项求和}
+求 $\sum_{n=1}^{\infty}(3^{-n}+1/(n(n+1)))$ 的和。
+\end{exercise}
+\begin{exercise}{671}{基础·通项条件确定参数}
+求使 $\sum_{n=1}^{\infty}(an/(6n+1)+(-1)^n/6^n)$ 收敛的 $a$，并在收敛时求和。
+\end{exercise}
+\begin{exercise}{672}{基础·级数线性运算}
+已知 $\sum_{n=1}^{\infty}u_n=2$。求 $\sum_{n=1}^{\infty}(u_n+3/2^n)$ 的和。
+\end{exercise}
+\begin{exercise}{673}{基础·正项幂次判定}
+求使 $\sum_{n=1}^{\infty}(n^{1-p}+3\cdot2^{-n})$ 收敛的实数 $p$，说明临界值的情况。
+\end{exercise}
+\begin{exercise}{674}{基础·部分和线性组合}
+已知 $\sum_{n=1}^{\infty}u_n=2$，$\sum_{k=1}^nv_k=2n/(3n+1)$。求 $\sum_{n=1}^{\infty}(2u_n-3v_n)$ 的和。
+\end{exercise}
+\begin{exercise}{675}{常规·奇偶项分离}
+已知 $\sum_{n=1}^{\infty}n^{-2}=\pi^2/6$。求 $\sum_{n=1}^{\infty}(2n-1)^{-2}$ 与 $\sum_{n=1}^{\infty}(-1)^{n-1}n^{-2}$ 的和。
+\end{exercise}
+\begin{exercise}{676}{基础·收敛级数之和}
+设 $\sum u_n$ 与 $\sum v_n$ 收敛。利用部分和证明 $\sum(u_n+v_n)$ 收敛且其和等于两级数和之和。
+\end{exercise}
+\begin{exercise}{677}{基础·抵消后的级数}
+设 $u_n=1/n$，$v_n=-1/n+1/n^2$。判定 $\sum_{n=1}^{\infty}(u_n+v_n)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{678}{基础·裂项求和变式}
+求 $\sum_{n=1}^{\infty}\frac1{(n+1)(n+2)}$ 的和。
+\end{exercise}
+\begin{exercise}{679}{常规·裂项与余项小综合}
+求 $\sum_{n=1}^{\infty}\frac1{n(n+1)}$ 的和及前 $N$ 项余项，求使余项小于 $10^{-2}$ 的最小正整数 $N$。
+\end{exercise}
+\subsection{正项级数}
+\begin{exercise}{680}{基础·几何比较}
+利用 $0<3+(-1)^n\leq4$ 判定 $\sum_{n=1}^{\infty}(3+(-1)^n)/5^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{681}{基础·比值判别}
+用比值判别法判定 $\sum_{n=1}^{\infty}3^n/n!$ 的敛散性。
+\end{exercise}
+\begin{exercise}{682}{基础·极限比较}
+分别判定 $\sum_{n=1}^{\infty}1/(3n-1)$ 与 $\sum_{n=1}^{\infty}(n+3)/(n(n+1)(n+2))$ 的敛散性，写出比较对象。
+\end{exercise}
+\begin{exercise}{683}{基础·有理式比较}
+用极限比较法判定 $\sum_{n=1}^{\infty}(3n^2+4)/(n^4+1)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{684}{基础·三角函数通项}
+比较 $\sum_{n=1}^{\infty}\sin(\pi/(6n))$ 与 $\sum_{n=1}^{\infty}(\sin(\pi/6))^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{685}{基础·对数等价}
+判定 $\sum_{n=1}^{\infty}\ln(1+n^{-3})$ 与 $\sum_{n=1}^{\infty}\ln(1+n^{-1/2})$ 的敛散性。
+\end{exercise}
+\begin{exercise}{686}{基础·三角函数比较}
+用极限比较法判定 $\sum_{n=1}^{\infty}n^{-1}\tan(1/n)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{687}{基础·已知上界}
+设 $0\leq u_n\leq n^{-3}$。用比较判别法证明 $\sum_{n=1}^{\infty}(u_n+3^{-n})$ 收敛。
+\end{exercise}
+\begin{exercise}{688}{基础·渐近等价}
+设 $u_n>0$ 且 $n^2u_n\to3$。分别判定 $\sum_{n=1}^{\infty}u_n$ 与 $\sum_{n=1}^{\infty}nu_n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{689}{常规·平方改变敛散性}
+设 $u_n=1-\cos(1/\sqrt n)$。用等价无穷小判定 $\sum_{n=1}^{\infty}u_n$ 与 $\sum_{n=1}^{\infty}u_n^2$ 的敛散性。
+\end{exercise}
+\begin{exercise}{690}{基础·阶乘比值}
+用比值法分别判定 $\sum_{n=1}^{\infty}1/(2n+1)!$ 与 $\sum_{n=1}^{\infty}n!/2^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{691}{基础·指数与阶乘}
+用比值法判定 $\sum_{n=1}^{\infty}2^n/n^2$ 与 $\sum_{n=1}^{\infty}2^nn!/n^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{692}{基础·奇数连乘}
+用比值法判定 $\sum_{n=1}^{\infty}\frac{1\cdot3\cdots(2n-1)}{5^nn!}$ 的敛散性。
+\end{exercise}
+\begin{exercise}{693}{基础·指数衰减比较}
+利用几何级数判定 $\sum_{n=1}^{\infty}1/((n+1)e^n)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{694}{基础·指数主导项}
+用比值法或极限比较法判定 $\sum_{n=1}^{\infty}5^n/(7^n-2^n)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{695}{基础·多项式乘几何项}
+用比值法判定 $\sum_{n=1}^{\infty}(2n+1)/2^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{696}{基础·有界振荡项}
+利用 $0\leq\sin^2(n\pi/3)\leq1$ 判定 $\sum_{n=1}^{\infty}(3n+\sin^2(n\pi/3))/3^n$ 的敛散性，无需求和。
+\end{exercise}
+\begin{exercise}{697}{基础·递推项比值}
+设 $a_1=1,a_{n+1}=\frac13(1+1/n)^n a_n$。用比值法判定 $\sum_{n=1}^{\infty}a_n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{698}{基础·混合正项级数}
+分别判定两部分，进而判定 $\sum_{n=1}^{\infty}(n^{-4}+4^n/(n+1)!)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{699}{常规·阶乘商}
+用比值法判定 $\sum_{n=1}^{\infty}(n!)^2/(2n+1)!$ 的敛散性，并由此求通项极限。
+\end{exercise}
+\begin{exercise}{700}{基础·根值判别}
+用根值法判定 $\sum_{n=1}^{\infty}(2n/(4n+1))^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{701}{基础·指数项通项条件}
+判定 $\sum_{n=1}^{\infty}3^n/(2^n(3n+1))$ 的敛散性，说明通项是否趋于零。
+\end{exercise}
+\begin{exercise}{702}{基础·根值法两例}
+用根值法判定 $\sum_{n=1}^{\infty}((4n-3)/(3n+2))^{2n}$ 与 $\sum_{n=2}^{\infty}(1-1/n)^{n^2}$ 的敛散性。
+\end{exercise}
+\begin{exercise}{703}{基础·有界底数幂}
+用根值法判定 $\sum_{n=1}^{\infty}(\arctan n)^n/2^n$ 的敛散性。
+\end{exercise}
+\begin{exercise}{704}{常规·根值法临界值}
+判定 $\sum_{n=1}^{\infty}(n/(n+1))^n$ 的敛散性；若根值极限为 $1$，继续检查通项极限。
+\end{exercise}
+\begin{exercise}{705}{基础·比较法变式}
+用极限比较法判定 $\sum_{n=1}^{\infty}1/(n^2+3n+1)$ 的敛散性。
+\end{exercise}
+\begin{exercise}{706}{常规·相消后比较小综合}
+用 $\ln(1+t)=t-t^2/2+o(t^2)$ 判定 $\sum_{n=1}^{\infty}(1/n-\ln(1+1/n))$ 的敛散性，写出比较极限。
+\end{exercise}
+\subsection{任意项级数}
+\begin{exercise}{707}{基础·绝对收敛}
+判定 $\sum_{n=1}^{\infty}(-1)^n/(2n)!$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{708}{基础·交错与通项条件}
+分别判定 $\sum_{n=1}^{\infty}(-1)^n\sin(1/\sqrt n)$ 与 $\sum_{n=1}^{\infty}(-1)^n\cos(1/\sqrt n)$ 的收敛类型或发散，写出依据。
+\end{exercise}
+\begin{exercise}{709}{基础·对数交错级数}
+判定 $\sum_{n=1}^{\infty}(-1)^n\ln(1+1/n)$ 的收敛类型，验证绝对值通项单调趋零。
+\end{exercise}
+\begin{exercise}{710}{基础·绝对收敛与拆分}
+判定 $\sum_{n=1}^{\infty}(-1)^n(2+(-1)^n)/4^n$ 是否绝对收敛，并拆成几何级数求和。
+\end{exercise}
+\begin{exercise}{711}{常规·成对分组}
+按所给顺序判定 $1-1/2+1/2-1/3+1/3-1/4+\cdots$ 的敛散性并求和。提示：先求前 $2N$ 项和，再检查奇数项部分和。
+\end{exercise}
+\begin{exercise}{712}{基础·交错幂次}
+分别判定 $\sum_{n=1}^{\infty}(-1)^n/\sqrt n$ 与 $\sum_{n=1}^{\infty}(-1)^n/n^{3/2}$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{713}{常规·周期符号}
+把 $\sum_{n=1}^{\infty}\sin(n\pi/2)/n$ 去掉零项后写成通常的交错级数，判定其收敛类型。
+\end{exercise}
+\begin{exercise}{714}{常规·最终单调性}
+判定 $\sum_{n=1}^{\infty}(-1)^n/(n-\ln n)$ 的收敛类型。提示：考察 $x-\ln x$ 在 $x>1$ 上的单调性。
+\end{exercise}
+\begin{exercise}{715}{基础·绝对值比较}
+设 $|u_n|\leq1/n$。用比较法证明 $\sum_{n=1}^{\infty}u_n/n$ 绝对收敛。
+\end{exercise}
+\begin{exercise}{716}{基础·交错余项估计}
+对 $\sum_{n=1}^{\infty}(-1)^{n-1}/(n+1)$ 判定收敛类型，并给出取前 $N$ 项后的莱布尼茨余项界。
+\end{exercise}
+\begin{exercise}{717}{基础·有界振荡系数}
+用绝对值比较判定 $\sum_{n=1}^{\infty}(-1)^n\cos n/\pi^{n+1}$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{718}{常规·谐波项分离}
+求使 $\sum_{n=1}^{\infty}(((-1)^n+kn)/n^2)$ 收敛的 $k$，判断收敛时是否绝对收敛。
+\end{exercise}
+\begin{exercise}{719}{基础·交错与几何型}
+判定 $\sum_{n=1}^{\infty}(-1)^{n-1}n^{-2/3}$ 与 $\sum_{n=1}^{\infty}(-1)^{n-1}(2/3)^n$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{720}{基础·有界系数比较}
+用绝对值比较判定 $\sum_{n=1}^{\infty}\frac{(-1)^n(3+(-1)^n)}{(3n+1)\sqrt{n+3}}$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{721}{基础·交错符号与必要条件}
+分别判定 $\sum_{n=1}^{\infty}(-1)^n(n/(n+1))^n$ 与 $\sum_{n=1}^{\infty}(-1)^n3^n\sin(\pi/5^n)$ 的敛散性，收敛者判断是否绝对收敛。
+\end{exercise}
+\begin{exercise}{722}{常规·绝对值与比值法}
+用比较法及比值法判定 $\sum_{n=1}^{\infty}n^n\cos n/(3^nn!)$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{723}{常规·平方可和}
+设 $\sum_{n=1}^{\infty}u_n^2$ 收敛。利用 $2|u_n|/n\leq u_n^2+1/n^2$ 证明 $\sum_{n=1}^{\infty}u_n/n$ 绝对收敛。
+\end{exercise}
+\begin{exercise}{724}{常规·交错级数与平方级数}
+设 $u_n=(-1)^n\tan(1/\sqrt n)$。判定 $\sum_{n=1}^{\infty}u_n$ 的收敛类型及 $\sum_{n=1}^{\infty}u_n^2$ 的敛散性。
+\end{exercise}
+\begin{exercise}{725}{基础·条件收敛拆分}
+判定 $\sum_{n=1}^{\infty}(n+1)(-1)^n/n^2$ 的收敛类型；可用已知的交错调和级数和交错平方倒数级数作比较。
+\end{exercise}
+\begin{exercise}{726}{基础·绝对收敛比较}
+判定 $\sum_{n=1}^{\infty}\sin n/n^2$ 的收敛类型，写出绝对值上界。
+\end{exercise}
+\begin{exercise}{727}{基础·莱布尼茨判别变式}
+判定 $\sum_{n=2}^{\infty}(-1)^n/\ln n$ 的收敛类型，验证判别法条件。
+\end{exercise}
+\begin{exercise}{728}{常规·交错加正项小综合}
+判定 $\sum_{n=1}^{\infty}((-1)^{n-1}/\sqrt n+1/n^2)$ 的收敛类型。提示：利用通项绝对值不小于 $1/\sqrt n-1/n^2$ 检查绝对收敛性。
+\end{exercise}
+\subsection{幂级数}
+\begin{exercise}{729}{基础·半径与端点}
+求 $\sum_{n=0}^{\infty}(3n+1)x^n/3^n$ 的收敛半径及收敛域，分别检查两个端点。
+\end{exercise}
+\begin{exercise}{730}{常规·两种指数系数}
+求 $\sum_{n=1}^{\infty}(3^n+2^n)x^n/n^2$ 的收敛半径及收敛域，判断两个端点是否绝对收敛。
+\end{exercise}
+\begin{exercise}{731}{基础·稀疏幂次}
+求 $\sum_{n=1}^{\infty}4^nx^{2n+1}$ 的收敛半径及收敛域。
+\end{exercise}
+\begin{exercise}{732}{基础·平移交错幂级数}
+求 $\sum_{n=1}^{\infty}(-1)^{n-1}(x+1)^n/n$ 的收敛半径及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{733}{基础·阶乘系数}
+求 $\sum_{n=0}^{\infty}x^n/(2n)!$ 的收敛半径及收敛域，无需求和。
+\end{exercise}
+\begin{exercise}{734}{基础·阶乘与指数系数}
+求 $\sum_{n=0}^{\infty}n!x^n/3^n$ 的收敛半径及收敛域。
+\end{exercise}
+\begin{exercise}{735}{基础·端点条件收敛}
+求 $\sum_{n=1}^{\infty}(-1)^nx^n/(2^n\sqrt n)$ 的收敛域，明确两个端点的情况。
+\end{exercise}
+\begin{exercise}{736}{基础·平移中心}
+求 $\sum_{n=1}^{\infty}(x-2)^n/(n^2+1)$ 的收敛半径及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{737}{基础·内点绝对收敛}
+已知 $\sum_{n=0}^{\infty}a_nx^n$ 在 $x=-3$ 收敛。说明它在 $x=2$ 是否绝对收敛，写出所用幂级数性质。
+\end{exercise}
+\begin{exercise}{738}{基础·中心与距离}
+已知 $\sum_{n=0}^{\infty}a_n(x-1)^n$ 的收敛半径为 $1$。判断它在 $x=1/2$ 与 $x=3$ 处的敛散性。
+\end{exercise}
+\begin{exercise}{739}{基础·端点直接检验}
+求 $\sum_{n=1}^{\infty}(-1)^{n-1}(x+1/2)^n/n$ 的收敛域，分别检查 $x=-3/2,1/2$。
+\end{exercise}
+\begin{exercise}{740}{基础·已知半径判断点}
+已知 $\sum_{n=0}^{\infty}a_n(x-2)^n$ 的收敛半径为 $3$。判断它在 $x=-1/2$ 与 $x=6$ 处的敛散性。
+\end{exercise}
+\begin{exercise}{741}{基础·导数级数半径}
+已知 $\sum_{n=0}^{\infty}a_nx^n$ 的收敛半径为 $3$。求其逐项求导后的收敛半径，并写出保证逐项求导成立的开区间。
+\end{exercise}
+\begin{exercise}{742}{基础·几何幂级数求和}
+求 $\sum_{n=1}^{\infty}x^{n+1}/3^n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{743}{常规·望远镜幂级数}
+求 $\sum_{n=1}^N(x^n/n-x^{n+1}/(n+1))$，据此求相应无穷级数在 $[-1,1]$ 上的和。
+\end{exercise}
+\begin{exercise}{744}{基础·对数和函数}
+求 $\sum_{n=1}^{\infty}5^nx^n/n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{745}{基础·幂次平移求和}
+求 $\sum_{n=1}^{\infty}(-1)^{n-1}x^{n+1}/n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{746}{常规·反正切和函数}
+求 $S(x)=\sum_{n=0}^{\infty}(-1)^nx^{2n}/(2n+1)$ 的收敛域及和函数，单独写明 $S(0)$，检查两个端点。
+\end{exercise}
+\begin{exercise}{747}{基础·几何级数求导}
+从几何级数出发求 $\sum_{n=1}^{\infty}nx^{2n-1}$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{748}{基础·平移级数求和}
+求 $\sum_{n=1}^{\infty}n(x+2)^n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{749}{基础·平方倒数系数变式}
+求 $\sum_{n=1}^{\infty}x^n/n^2$ 的收敛半径及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{750}{常规·求导与端点小综合}
+对 $F(x)=\sum_{n=1}^{\infty}(x-1)^n/n^2$，分别求原级数与逐项求导后的级数的收敛域，检查各自两个端点。
+\end{exercise}
+\subsection{函数展开成幂级数}
+\begin{exercise}{751}{基础·复合指数展开}
+将 $e^{-x^2}$ 展开为 $x$ 的幂级数，写出前四个非零项及收敛域。
+\end{exercise}
+\begin{exercise}{752}{基础·正弦展开}
+写出 $\sin2x$ 的麦克劳林级数及收敛域，求 $x^5$ 的系数。
+\end{exercise}
+\begin{exercise}{753}{基础·几何展开}
+将 $1/(3-x)$ 展开成 $x$ 的幂级数，写出通项及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{754}{常规·倍角公式展开}
+利用 $\sin^2x=(1-\cos2x)/2$ 写出其麦克劳林级数的前四个非零项及通项，注明收敛域。
+\end{exercise}
+\begin{exercise}{755}{基础·识别正弦级数}
+求 $\sum_{n=0}^{\infty}(-1)^nx^{2n+1}/(2n+1)!$ 的和函数及收敛域。
+\end{exercise}
+\begin{exercise}{756}{基础·对数展开}
+由几何级数逐项积分推导 $\ln(1+x)$ 的麦克劳林展开，写出收敛域并检查两个端点。
+\end{exercise}
+\begin{exercise}{757}{基础·反正切展开}
+由 $1/(1+x^2)$ 的几何级数推导 $\arctan x$ 的麦克劳林展开，写出收敛域并检查两个端点。
+\end{exercise}
+\begin{exercise}{758}{基础·有理函数展开}
+将 $1/(3-x)^2$ 展开成 $x$ 的幂级数，写出通项及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{759}{常规·部分分式展开}
+将 $1/((1-x)(2-x))$ 展开成 $x$ 的幂级数，写出通项及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{760}{基础·平移指数展开}
+将 $e^{3x}$ 展开成 $(x-1)$ 的幂级数，写出前三项及收敛域。
+\end{exercise}
+\begin{exercise}{761}{基础·平移几何展开}
+将 $1/(3-x)$ 展开成 $(x+1)$ 的幂级数，求收敛域并检查两个端点。
+\end{exercise}
+\begin{exercise}{762}{基础·对数平移展开}
+将 $\ln x$ 展开成 $(x-2)$ 的幂级数，求收敛域，分别检查 $x=0,4$。
+\end{exercise}
+\begin{exercise}{763}{基础·负中心展开}
+将 $x^{-2}$ 展开成 $(x+1)$ 的幂级数，写出通项及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{764}{常规·部分分式中心平移}
+将 $1/(x(x+1))$ 展开成 $(x-1)$ 的幂级数，写出通项及收敛域，检查两个端点。
+\end{exercise}
+\begin{exercise}{765}{基础·指数展开变式}
+写出 $e^{2x}$ 的麦克劳林级数及收敛域，并求 $x^4$ 的系数。
+\end{exercise}
+\begin{exercise}{766}{常规·有理函数展开小综合}
+将 $x/(1-x)^2$ 展开成 $x$ 的幂级数，写出收敛域并检查端点；再求其在原点的四阶导数。
+\end{exercise}
+\subsection{幂级数的应用}
+\begin{exercise}{767}{基础·系数求导数}
+设 $f(x)=2x^2/(1+x)$。利用原点附近的幂级数求 $f^{(5)}(0)$。
+\end{exercise}
+\begin{exercise}{768}{常规·乘积有限阶导数}
+设 $f(x)=(1+x)\arctan x$。展开到 $x^5$，求 $f^{(4)}(0)$ 与 $f^{(5)}(0)$。
+\end{exercise}
+\begin{exercise}{769}{基础·指数乘积导数}
+设 $f(x)=xe^{-x}$。用麦克劳林系数求 $f^{(4)}(0)$。
+\end{exercise}
+\begin{exercise}{770}{基础·平移对数导数}
+设 $f(x)=\ln(x^2+4x+5)$。利用 $x^2+4x+5=1+(x+2)^2$ 的展开求 $f^{(4)}(-2)$。
+\end{exercise}
+\begin{exercise}{771}{基础·平移分式导数}
+将 $f(x)=(x-1)/(2x+1)$ 在 $x=1$ 附近展开到 $(x-1)^3$，求 $f'''(1)$。
+\end{exercise}
+\begin{exercise}{772}{常规·逐项积分求和}
+由 $-\ln(1-t)=\sum_{n=1}^{\infty}t^n/n$（$|t|<1$）求 $\sum_{n=1}^{\infty}1/(2^n(n+1))$ 的和。
+\end{exercise}
+\begin{exercise}{773}{基础·线性加权几何和}
+由几何级数逐项求导，求 $\sum_{n=0}^{\infty}(n+1)/3^n$ 的和。
+\end{exercise}
+\begin{exercise}{774}{常规·逐项积分和函数}
+在 $|x|<1$ 内求 $F(x)=\sum_{n=0}^{\infty}(-1)^nx^{2n+1}/(2n+1)$ 的和函数，再计算 $F(1/2)$。
+\end{exercise}
+\begin{exercise}{775}{常规·三角级数加权}
+利用 $\cos x$ 的展开及其导数求 $\sum_{n=0}^{\infty}(-1)^n(2n+1)x^{2n}/(2n)!$ 的和函数。
+\end{exercise}
+\begin{exercise}{776}{常规·二次加权几何和}
+由几何级数求导，求 $\sum_{n=1}^{\infty}n(n+1)/2^n$ 的和。
+\end{exercise}
+\begin{exercise}{777}{基础·对数数项和变式}
+由 $\ln(1+x)$ 的幂级数求 $\sum_{n=1}^{\infty}(-1)^{n-1}/(n2^n)$ 的和。
+\end{exercise}
+\begin{exercise}{778}{常规·系数与求和小综合}
+写出 $\ln(1+x^2)$ 在原点的幂级数，求其四阶原点导数，并利用该展开求 $\sum_{n=1}^{\infty}(-1)^{n-1}/(n4^n)$ 的和。
+\end{exercise}
+\subsection{傅里叶级数}
+\begin{exercise}{779}{基础·傅里叶常数项}
+设 $f$ 以 $2\pi$ 为周期，在 $0<x\leq2\pi$ 上为 $f(x)=x$。按 $f\sim a_0/2+\sum_{n\geq1}(a_n\cos nx+b_n\sin nx)$ 的约定，求 $a_0$ 及级数在 $x=0$ 处的和。
+\end{exercise}
+\begin{exercise}{780}{基础·周期归约与跳跃平均}
+将 $f(x)=x+1$（$-\pi\leq x<\pi$）作 $2\pi$ 周期延拓。求其傅里叶级数在 $x=7\pi/2,\pi,0$ 处的和，无需计算系数。
+\end{exercise}
+\begin{exercise}{781}{基础·分段函数的傅里叶和}
+设 $2\pi$ 周期函数在 $-\pi\leq x<0$ 时为 $f(x)=x$，在 $0\leq x<\pi$ 时为零。求傅里叶级数在 $x=-\pi/2,0,\pi$ 处的和。
+\end{exercise}
+\begin{exercise}{782}{基础·正弦级数奇延拓}
+设 $f(x)=1$（$0<x<\pi$），$b_n=\frac2\pi\int_0^\pi f(x)\sin(nx)\,\dd x$。求 $S(x)=\sum_{n=1}^{\infty}b_n\sin(nx)$ 在 $x=0,\pi/2,\pi$ 处的和，并说明相应奇延拓的周期。
+\end{exercise}
+\begin{exercise}{783}{常规·锯齿函数展开}
+将 $f(x)=x$（$-\pi<x<\pi$）作 $2\pi$ 周期延拓，并令 $f(\pm\pi)=0$。利用奇性求傅里叶级数，写出它在周期端点处的和。
+\end{exercise}
+\begin{exercise}{784}{基础·周期端点平均}
+设 $f$ 以 $2$ 为周期，在 $[-1,0)$ 为 $1-3x$，在 $[0,1)$ 为 $x^2+1$。不计算系数，求傅里叶级数在 $x=-7,0,1/2$ 处的和。
+\end{exercise}
+\begin{exercise}{785}{基础·余弦级数偶延拓}
+设 $f(x)=x$（$0\leq x\leq1$），将其作偶延拓再作周期 $2$ 延拓。求对应余弦级数在 $x=-1/2,1,2$ 处的和，无需计算系数。
+\end{exercise}
+\begin{exercise}{786}{基础·正弦延拓端点}
+设 $f(x)=x$（$0<x<1$），$b_n=2\int_0^1x\sin(n\pi x)\,\dd x$。求 $\sum_{n=1}^{\infty}b_n\sin(n\pi x)$ 在 $x=-1/2,0,1$ 处的和。
+\end{exercise}
+\begin{exercise}{787}{基础·取点求级数和}
+已知 $x^2=\pi^2/3+4\sum_{n=1}^{\infty}(-1)^n\cos(nx)/n^2$ 在 $[-\pi,\pi]$ 成立。取 $x=\pi$ 求 $\sum_{n=1}^{\infty}n^{-2}$。
+\end{exercise}
+\begin{exercise}{788}{常规·余弦系数计算}
+将 $f(x)=x$（$0\leq x\leq1$）展开成周期 $2$ 的余弦级数，采用 $a_0/2+\sum_{n=1}^{\infty}a_n\cos(n\pi x)$ 的约定，求 $a_0,a_n$。
+\end{exercise}
+\begin{exercise}{789}{基础·方波跳跃平均}
+设周期 $2$ 的函数在 $(-1,0)$ 等于 $-1$，在 $(0,1)$ 等于 $1$，在整数处取零。求其傅里叶级数在 $x=0,1,1/2$ 处的和。
+\end{exercise}
+\begin{exercise}{790}{常规·平方函数傅里叶展开}
+将 $f(x)=x^2$（$-\pi\leq x\leq\pi$）作 $2\pi$ 周期延拓。求傅里叶级数，并利用 $x=0$ 的取值求 $\sum_{n=1}^{\infty}(-1)^{n-1}/n^2$。
+\end{exercise}
+\subsubsection{常规综合练习}
+\begin{exercise}{791}{基础·必要条件与极限}
+已知 $\sum_{n=1}^{\infty}(u_n-3n/(n+1))$ 收敛。求 $\lim_{n\to\infty}u_n$ 及 $\lim_{n\to\infty}(u_n^2-2u_n+3)$。
+\end{exercise}
+\begin{exercise}{792}{常规·错位级数求和}
+已知 $\sum_{k=1}^nu_k=n/(2n+1)$。求 $u_n$ 及 $\sum_{n=1}^{\infty}(u_n+u_{n+1})$ 的和。
+\end{exercise}
+\begin{exercise}{793}{常规·三重分母裂项}
+用 $\frac1{n(n+1)(n+2)}=\frac12(\frac1{n(n+1)}-\frac1{(n+1)(n+2)})$ 求从 $n=1$ 开始的级数和。
+\end{exercise}
+\begin{exercise}{794}{基础·幂和代入}
+已知 $1^3+\cdots+n^3=(n(n+1)/2)^2$。求 $\sum_{n=1}^{\infty}(1^3+2^3+\cdots+n^3)^{-1/2}$ 的和。
+\end{exercise}
+\begin{exercise}{795}{基础·正项级数部分和}
+设 $u_n\geq0$。利用单调有界定理说明 $\sum u_n$ 收敛当且仅当部分和数列有上界。
+\end{exercise}
+\begin{exercise}{796}{基础·相邻倒数比较}
+利用 $1/(n+1)^2\leq1/n-1/(n+1)$，证明 $\sum_{n=1}^{\infty}1/(n+1)^2$ 收敛。
+\end{exercise}
+\begin{exercise}{797}{常规·有理化与比较}
+判定 $\sum_{n=1}^{\infty}(1/\sqrt n-1/\sqrt{n+1})$ 的敛散性并求和。
+\end{exercise}
+\begin{exercise}{798}{基础·积分定义的通项}
+设 $u_n=\int_n^{n+1}e^{-x}\,\dd x$。求 $\sum_{n=1}^{\infty}u_n$ 的和。
+\end{exercise}
+\begin{exercise}{799}{基础·无穷小阶比较}
+用等价无穷小分别判定 $\sum_{n=1}^{\infty}\sin(1/n)$ 与 $\sum_{n=1}^{\infty}(1-\cos(1/n))$ 的敛散性。
+\end{exercise}
+\begin{exercise}{800}{常规·极限指数比较}
+用极限比较法判定 $\sum_{n=1}^{\infty}(n+2)^n/n^{n+2}$ 的敛散性。
+\end{exercise}
+\begin{exercise}{801}{基础·交错分母}
+判定 $\sum_{n=1}^{\infty}(-1)^{n+1}/(\sqrt n+1)$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{802}{基础·平移交错分母}
+判定 $\sum_{n=1}^{\infty}(-1)^n/(\sqrt{2n}+1)$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{803}{常规·整数相位化简}
+利用 $\sin(n\pi+t)=(-1)^n\sin t$ 判定 $\sum_{n=1}^{\infty}\sin(n\pi+1/n)$ 的收敛类型。
+\end{exercise}
+\begin{exercise}{804}{基础·奇偶子级数}
+分别判定 $\sum_{n=1}^{\infty}1/(2n-1)$、$\sum_{n=1}^{\infty}1/(2n)$ 与 $\sum_{n=1}^{\infty}(1/(2n-1)-1/(2n))$ 的敛散性。
+\end{exercise}
+\begin{exercise}{805}{常规·分式变量收敛域}
+求 $\sum_{n=1}^{\infty}\frac1n((1-x)/(1+x))^n$ 的实收敛域，明确排除 $x=-1$ 并检查比值等于 $\pm1$ 的情况。
+\end{exercise}
+\begin{exercise}{806}{基础·平移对数和函数}
+求 $\sum_{n=1}^{\infty}(-1)^{n-1}(x+1)^n/n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{807}{基础·平移调和系数}
+求 $\sum_{n=1}^{\infty}(x-2)^n/n$ 的收敛域，分别判断两个端点。
+\end{exercise}
+\begin{exercise}{808}{常规·裂项数项求和}
+利用部分分式求 $\sum_{n=2}^{\infty}1/(n^2-1)$ 的和。
+\end{exercise}
+\begin{exercise}{809}{常规·阶乘加权数项和}
+利用 $n/(n+1)!=1/n!-1/(n+1)!$，求 $\sum_{n=1}^{\infty}n/(n+1)!$ 的和。
+\end{exercise}
+\begin{exercise}{810}{基础·偶数幂与对数}
+求 $\sum_{n=1}^{\infty}(-1)^{n-1}x^{2n}/n$ 的收敛域及和函数，检查两个端点。
+\end{exercise}
+\begin{exercise}{811}{常规·反常面积与求和}
+设 $D_n=\{x\geq e^2,0\leq y\leq1/(x(\ln x)^{n+1})\}$，$n\geq1$。求面积 $A_n$，再利用对数展开求 $\sum_{n=1}^{\infty}(-1)^{n-1}A_n$ 的和。
+\end{exercise}
+\begin{exercise}{812}{基础·两个对数展开}
+将 $\ln((1+x)/(1-x))$ 展开成 $x$ 的幂级数，给出收敛域并检查两个端点。
+\end{exercise}
+\begin{exercise}{813}{基础·反正切复合展开}
+将 $x\arctan(x/2)$ 展开成 $x$ 的幂级数，求收敛域并检查两个端点。
+\end{exercise}
+\begin{exercise}{814}{常规·乘积系数提取}
+设 $f(x)=xe^{-x^2}\sin2x$。将两个因子展开到所需阶，求 $f^{(4)}(0)$。
+\end{exercise}
+\begin{exercise}{815}{常规·幂级数乘积}
+设 $|x|<1$。求 $(\sum_{n=1}^{\infty}x^n)^2$ 展开式中 $x^n$（$n\geq2$）的系数，并求四阶原点导数。
+\end{exercise}
+\begin{exercise}{816}{基础·方波傅里叶和}
+设 $f(x)=\operatorname{sgn}(\cos x)$，规定 $\operatorname{sgn}(0)=0$。不计算系数，求其傅里叶级数在 $x=-\pi/2,0,3\pi$ 处的和。
+\end{exercise}
+\begin{exercise}{817}{基础·余弦常数项变式}
+将 $f(x)=1-x$（$0\leq x\leq1$）作偶延拓并以 $2$ 为周期延拓。按 $a_0/2+\sum_{n=1}^{\infty}a_n\cos(n\pi x)$ 的约定，求 $a_0$ 与 $a_1$。
+\end{exercise}
+\begin{exercise}{818}{常规·周期分段函数小综合}
+设周期 $2$ 的函数在 $-1<x\leq0$ 时为 $x^2$，在 $0<x\leq1$ 时为 $x-1$。求其傅里叶级数在 $x=0,1,1/2$ 处的和，并求常数项 $a_0/2$，其中 $a_0=\int_{-1}^1f(x)\,\dd x$。
+\end{exercise}

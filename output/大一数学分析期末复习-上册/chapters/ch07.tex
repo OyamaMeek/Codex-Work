@@ -1,0 +1,339 @@
+\section{第7章 微分方程}
+\subsection{微分方程的基本概念}
+\begin{exercise}{721}{基础·微分方程辨识}
+判断 $x^2+y^2=1$、$y'+y=x$、$y''+y=0$ 中哪些为微分方程，并指出其阶数。
+\end{exercise}
+\begin{exercise}{722}{基础·阶数与线性}
+判断 $y''+(y')^2+y=0$ 的阶数及是否为线性方程。
+\end{exercise}
+\begin{exercise}{723}{基础·标准形式}
+将 $x\dd y+(x+y)\dd x=0$ 在 $x>0$ 上写成一阶线性方程的标准形式。
+\end{exercise}
+\begin{exercise}{724}{基础·解的验证}
+验证 $y=5x^2$ 是 $xy'-2y=0$ 的解，并求它在 $x=1$ 处的函数值。
+\end{exercise}
+\begin{exercise}{725}{基础·初值确定常数}
+已知 $y=C_1\cos x+C_2\sin x$ 是 $y''+y=0$ 的通解，求满足 $y(0)=2$、$y'(0)=3$ 的解。
+\end{exercise}
+\begin{exercise}{726}{基础·通解与特解}
+验证 $y=x+C$ 是 $y'=1$ 的通解，并求经过 $(0,2)$ 的特解。
+\end{exercise}
+\begin{exercise}{727}{基础·隐式解验证}
+在 $y>0$ 的分支上，验证 $x^2+y^2=4$ 满足 $y'=-x/y$。
+\end{exercise}
+\begin{exercise}{728}{基础·常值解变式}
+分别检验 $y\equiv0$ 与 $y\equiv1$ 是否为 $y'=y(1-y)$ 的解。
+\end{exercise}
+\begin{exercise}{729}{常规·消去任意常数}
+消去 $y=C_1e^x+C_2e^{-x}$ 中的任意常数，建立二阶微分方程，并求满足 $y(0)=1$、$y'(0)=0$ 的解。
+\end{exercise}
+\subsection{可分离变量的微分方程}
+\begin{exercise}{730}{基础·分离变量辨识}
+分别将 $y'=xy$ 与 $y'=x/(1+y^2)$ 分离变量；对第一个方程另外检查零解。
+\end{exercise}
+\begin{exercise}{731}{基础·可分离变量方程}
+求 $y'=y(1-x)/x$ 在 $x>0$ 上满足 $y(1)=e^{-1}$ 的解。
+\end{exercise}
+\begin{exercise}{732}{基础·分离变量初值}
+求 $y'=\sin x\cos x/y^2$、$y(0)=1$ 的解，取包含初始点的 $y>0$ 分支。
+\end{exercise}
+\begin{exercise}{733}{基础·指数分离变量}
+求 $(1+e^x)y'-ye^x=0$、$y(0)=2$ 的解。
+\end{exercise}
+\begin{exercise}{734}{基础·根式初值解}
+求 $y'=x/y$、$y(0)=1$ 的正值解。
+\end{exercise}
+\begin{exercise}{735}{基础·隐式分离变量}
+求 $e^{x-y}+yy'=0$、$y(0)=1$ 在初始点附近的隐式解。
+\end{exercise}
+\begin{exercise}{736}{常规·斜率恢复曲线}
+曲线经过 $(0,-1)$，其在 $(x,y)$ 处的切线斜率为 $y^2/(1+x^2)$。求初始点附近的曲线方程。
+\end{exercise}
+\begin{exercise}{737}{常规·积分方程求导}
+设连续函数 $f$ 满足 $f(x)=\int_0^xf(t)\dd t+2$。求 $f(x)$，先由等式恢复初值。
+\end{exercise}
+\begin{exercise}{738}{基础·可分离变量初值}
+求 $y'=2xy$、$y(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{739}{常规·积分形式初值}
+设连续函数 $f$ 满足 $f(x)=1+2\int_0^xf(t)\dd t$。求 $f(x)$ 并代回核验。
+\end{exercise}
+\begin{exercise}{740}{基础·常值解与分离变量}
+求 $y'=-2y$ 的通解，包括零解。
+\end{exercise}
+\begin{exercise}{741}{常规·积分条件定常数}
+设 $f'=xf/(1+x^2)$、$f(0)=a$，且 $\int_0^{\sqrt3}xf(x)\dd x=7$。求 $a$ 与 $f(x)$。
+\end{exercise}
+\begin{exercise}{742}{基础·平移后分离变量}
+求 $y'=(y+1)^2$、$y(0)=0$ 在原点附近的解，提示：令 $u=y+1$。
+\end{exercise}
+\begin{exercise}{743}{基础·分离变量隐式解}
+求 $(1+y^2)y'=x$ 的通解。
+\end{exercise}
+\begin{exercise}{744}{基础·可分离变量变式}
+求 $y'=y^2$、$y(0)=1$ 在原点附近的解。
+\end{exercise}
+\begin{exercise}{745}{常规·增长模型}
+种群数量满足 $N'=N(1-N/100)$、$N(0)=20$，$t\ge0$。求 $N(t)$，并计算 $N(t)=50$ 时的 $t$。
+\end{exercise}
+\subsection{齐次方程}
+\begin{exercise}{746}{基础·齐次方程代换}
+将 $y'=1+y/x$（$x>0$）用 $u=y/x$ 化为可分离变量方程，并求通解。
+\end{exercise}
+\begin{exercise}{747}{基础·根式齐次方程}
+求 $y'=2\sqrt{y/x}+y/x$ 满足 $y(1)=1$ 的解，只考虑初始点附近的 $x>0,y>0$ 分支。
+\end{exercise}
+\begin{exercise}{748}{基础·齐次代换}
+求 $y'=y/x+(y/x)^2$ 满足 $y(1)=1$ 的解，取初始点附近 $x>0$ 的分支。
+\end{exercise}
+\begin{exercise}{749}{常规·齐次初值问题}
+求 $y'=(x^2+y^2)/(xy)$、$y(1)=2$ 的正值解，其中 $x>0$，只需给出初始点附近的表达式。
+\end{exercise}
+\begin{exercise}{750}{基础·切线斜率模型}
+曲线经过 $(1,0)$，切线斜率为 $1+y/x$。求曲线在 $x>0$ 上的方程。
+\end{exercise}
+\begin{exercise}{751}{基础·常比例解}
+检验 $y=x$ 是否为 $y'=2y/x-(y/x)^2$（$x>0$）的解，并写出其满足的初值 $y(1)$。
+\end{exercise}
+\begin{exercise}{752}{常规·对数齐次方程}
+求 $xy'+y(\ln x-\ln y)=0$、$y(1)=e$ 的正值解，$x>0$。提示：令 $u=y/x$。
+\end{exercise}
+\begin{exercise}{753}{基础·齐次微分形式}
+求 $(x-y)\dd x+x\dd y=0$ 在 $x>0$ 上的通解。
+\end{exercise}
+\begin{exercise}{754}{常规·齐次方程隐式解}
+求 $y'=y/x+x/y$、$y(1)=1$ 的正值解，$x>0$。
+\end{exercise}
+\begin{exercise}{755}{基础·指数齐次变式}
+求 $xy'=y+x$（$x>0$）满足 $y(1)=0$ 的解。
+\end{exercise}
+\begin{exercise}{756}{常规·齐次求解与核验}
+求 $xy'=y+y^2/x$（$x>0$）、$y(1)=-1$ 的解，并代入原方程核验。
+\end{exercise}
+\subsection{一阶线性微分方程}
+\begin{exercise}{757}{基础·齐次线性方程}
+求 $y'+2xy=0$ 的通解及满足 $y(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{758}{基础·三角系数初值}
+求 $y'=y\tan x$、$y(0)=1$ 在 $(-\pi/2,\pi/2)$ 上的解。
+\end{exercise}
+\begin{exercise}{759}{基础·线性方程辨识}
+判断 $y'+y^2=x$、$y'+xy=x^2$、$(y')^2+y=0$ 中哪些是一阶线性方程，并对符合者写出积分因子。
+\end{exercise}
+\begin{exercise}{760}{基础·一阶线性初值}
+求 $y'+2xy=4x$、$y(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{761}{基础·积分因子}
+求 $y'+y\cos x=e^{-\sin x}$ 的通解。
+\end{exercise}
+\begin{exercise}{762}{常规·非恒定系数线性方程}
+求 $(x+1)y'-y=e^x(x+1)^2$、$y(0)=2$ 在 $x>-1$ 上的解。
+\end{exercise}
+\begin{exercise}{763}{基础·对数外力}
+求 $y'+y/x=\ln x$、$y(1)=0$ 在 $x>0$ 上的解。
+\end{exercise}
+\begin{exercise}{764}{常规·交换自因变量}
+把 $x$ 看作 $y$ 的函数，求 $\frac{\dd x}{\dd y}+x=y$ 的通解，并求经过 $(x,y)=(0,0)$ 的隐式特解。
+\end{exercise}
+\begin{exercise}{765}{常规·逆函数线性方程}
+求 $y\dd x+(2x-y)\dd y=0$ 在 $y>0$ 上的隐式通解，提示：以 $x$ 为 $y$ 的函数。
+\end{exercise}
+\begin{exercise}{766}{基础·隐式线性初值}
+求 $y\dd x+(x-3y^2)\dd y=0$、$y(1)=1$ 在初始点附近的隐式解。
+\end{exercise}
+\begin{exercise}{767}{常规·逆函数求解}
+把 $x$ 看作 $y$ 的函数，求 $y'=1/(x+y)$ 经过 $(0,1)$ 的隐式解。
+\end{exercise}
+\begin{exercise}{768}{基础·全微分识别}
+求 $y\dd x+(x+y)\dd y=0$ 的隐式通解，提示：识别 $\dd(xy+y^2/2)$。
+\end{exercise}
+\begin{exercise}{769}{常规·切线斜率与线性方程}
+曲线 $y=f(x)$ 经过 $(0,1)$，切线斜率为 $\sec x-f(x)\tan x$。求它在 $(-\pi/2,\pi/2)$ 上的方程。
+\end{exercise}
+\begin{exercise}{770}{常规·积分方程求解}
+设连续函数 $f$ 满足 $f(x)=\int_0^xf(t)\dd t-x^2$。求 $f(x)$，先写出微分方程与初值。
+\end{exercise}
+\begin{exercise}{771}{基础·线性初值方程}
+求 $y'+y=e^{-x}$、$y(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{772}{基础·一阶线性变式}
+求 $y'+2y=1+e^{-x}$ 的通解。
+\end{exercise}
+\begin{exercise}{773}{常规·分段外力小综合}
+系统满足 $y'+y=u(x)$、$y(0)=0$，其中 $u(x)=1$（$0\le x<1$）、$u(x)=0$（$x>1$）。分段求解，并令 $y$ 在 $x=1$ 连续。
+\end{exercise}
+\subsection{可降阶的高阶微分方程}
+\begin{exercise}{774}{基础·二次积分}
+求 $y''=x$ 的通解及满足 $y(0)=0$、$y'(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{775}{基础·三角指数积分}
+求 $y''=e^{3x}+\sin2x$ 的通解。
+\end{exercise}
+\begin{exercise}{776}{基础·二阶初值方程}
+求 $y''=xe^x$、$y(0)=y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{777}{基础·反三角函数积分}
+求 $y''=1/(1+x^2)$、$y(0)=y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{778}{基础·指数积分初值}
+求 $y''=e^{2x}$、$y(0)=y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{779}{常规·几何条件恢复初值}
+曲线经过 $(0,1)$，在该点与 $y=x/2+1$ 相切，且满足 $y''=x$。求曲线方程。
+\end{exercise}
+\begin{exercise}{780}{基础·导数代换降阶}
+求 $y''=y'+x$ 的通解，提示：令 $p=y'$。
+\end{exercise}
+\begin{exercise}{781}{基础·导数代换初值}
+求 $y''+y'=0$、$y(0)=0$、$y'(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{782}{基础·变系数降阶}
+求 $xy''+3y'=0$ 在 $x>0$ 上的通解，提示：令 $p=y'$。
+\end{exercise}
+\begin{exercise}{783}{基础·导数线性方程}
+求 $y''-2y'=0$、$y(0)=0$、$y'(0)=-1$ 的解。
+\end{exercise}
+\begin{exercise}{784}{常规·速度方程降阶}
+求 $(1+x^2)y''=2xy'$、$y(0)=1$、$y'(0)=3$ 的解，提示：先求 $p=y'$。
+\end{exercise}
+\begin{exercise}{785}{基础·二阶常系数降阶}
+求 $y''=2y'$ 的通解。
+\end{exercise}
+\begin{exercise}{786}{常规·乘积求导降阶}
+求 $yy''+(y')^2=0$、$y(0)=1$、$y'(0)=1/2$ 在原点附近的正值解，提示：$(yy')'=0$。
+\end{exercise}
+\begin{exercise}{787}{基础·简单二阶方程}
+求 $y''=2$、$y(0)=1$、$y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{788}{基础·降阶线性初值}
+求 $y''+2y'=2$、$y(0)=y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{789}{基础·乘积导数变式}
+求 $xy''+y'=x$、$y(1)=0$、$y'(1)=1$ 在 $x>0$ 上的解，提示：$(xy')'=x$。
+\end{exercise}
+\begin{exercise}{790}{常规·降阶求解小综合}
+求 $y''+y'=e^x$、$y(0)=0$、$y'(0)=1$ 的解，并核验两个初值。
+\end{exercise}
+\subsection{高阶线性微分方程}
+\begin{exercise}{791}{基础·线性相关性}
+判断函数组 $\{x^2,2x^2\}$ 与 $\{\sin x,\cos x\}$ 在实轴上的线性相关性。对第二组可在 $x=0,\pi/2$ 处取值。
+\end{exercise}
+\begin{exercise}{792}{基础·基本解组}
+验证 $e^x,e^{-x}$ 是 $y''-y=0$ 的线性无关解，并写出通解。
+\end{exercise}
+\begin{exercise}{793}{常规·非齐次解结构}
+验证 $y_p=x-1$ 是 $y'+y=x$ 的一个特解。求对应齐次方程的通解，进而写出原方程通解。
+\end{exercise}
+\begin{exercise}{794}{基础·冗余常数辨识}
+将 $y=C_1e^x+2C_2e^x$ 化为只含一个任意常数的形式，并说明它满足哪个一阶齐次方程。
+\end{exercise}
+\begin{exercise}{795}{基础·朗斯基行列式}
+计算 $f_1=e^x$、$f_2=e^{2x}$ 的朗斯基行列式 $W=f_1f_2'-f_2f_1'$，判断两函数是否线性无关。
+\end{exercise}
+\begin{exercise}{796}{基础·三角基本解}
+写出 $y''+4y=0$ 的通解，并求满足 $y(0)=0$、$y'(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{797}{常规·通解验证}
+验证 $y=C_1e^x+C_2e^{2x}+\frac1{12}e^{5x}$ 满足 $y''-3y'+2y=e^{5x}$。
+\end{exercise}
+\begin{exercise}{798}{常规·解的差}
+设 $y_1,y_2$ 均满足 $y''+y=x$。证明 $y_1-y_2$ 满足 $y''+y=0$，提示：将两个方程相减。
+\end{exercise}
+\begin{exercise}{799}{基础·解的叠加变式}
+验证 $y_1=\cos x$、$y_2=\sin x$ 均满足 $y''+y=0$，并求 $2y_1+3y_2$ 在 $x=0$ 处的函数值与导数值。
+\end{exercise}
+\begin{exercise}{800}{常规·已知解降阶}
+已知 $y_1=x$ 是 $x^2y''-2xy'+2y=0$（$x>0$）的解。令 $y=xv$ 求通解，再由 $y(1)=0$、$y'(1)=1$ 确定常数。
+\end{exercise}
+\subsection{常系数齐次线性微分方程}
+\begin{exercise}{801}{基础·常系数方程}
+求 $y''+2y'=0$ 的通解。
+\end{exercise}
+\begin{exercise}{802}{基础·由特征根写方程}
+求以 $y=C_1e^{2x}+C_2e^{-x}$ 为通解且 $y''$ 系数为 $1$ 的二阶常系数齐次方程。
+\end{exercise}
+\begin{exercise}{803}{基础·复特征根}
+求 $y''-4y'+13y=0$ 的通解。
+\end{exercise}
+\begin{exercise}{804}{基础·重根恢复方程}
+已知 $e^{2x}$ 与 $xe^{2x}$ 是 $y''+py'+qy=0$ 的基本解。求 $p,q$ 及通解。
+\end{exercise}
+\begin{exercise}{805}{基础·不同实根初值}
+求 $y''+5y'+4y=0$、$y(0)=1$、$y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{806}{基础·不同实根初值}
+求 $y''+4y'+3y=0$、$y(0)=2$、$y'(0)=6$ 的解。
+\end{exercise}
+\begin{exercise}{807}{基础·重复特征根}
+求 $4y''-12y'+9y=0$ 的通解。
+\end{exercise}
+\begin{exercise}{808}{基础·重根初值问题}
+求 $s''+2s'+s=0$、$s(0)=2$、$s'(0)=-1$ 的解，自变量为 $t$。
+\end{exercise}
+\begin{exercise}{809}{基础·复根通解}
+求 $y''+8y'+17y=0$ 的通解。
+\end{exercise}
+\begin{exercise}{810}{常规·复根初值问题}
+求 $y''+10y'+29y=0$、$y(0)=1$、$y'(0)=-1$ 的解。
+\end{exercise}
+\begin{exercise}{811}{基础·二阶特征方程}
+求 $y''-y=0$ 的通解及满足 $y(0)=1$、$y'(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{812}{基础·二阶复根方程}
+求 $y''+y=0$ 的通解及满足 $y(0)=0$、$y'(0)=2$ 的解。
+\end{exercise}
+\begin{exercise}{813}{常规·微分关系恢复初值}
+已知 $f''+f=0$、$f(0)=1$、$f'(0)=1$。求 $f(x)$，并核验它满足 $f'(x)=f(-x)$。
+\end{exercise}
+\begin{exercise}{814}{基础·已知解验证}
+验证 $f(x)=e^x$ 同时满足 $f''+f'-2f=0$ 与 $f''+f=2e^x$。
+\end{exercise}
+\begin{exercise}{815}{基础·重根方程变式}
+求 $y''+4y'+4y=0$、$y(0)=0$、$y'(0)=1$ 的解。
+\end{exercise}
+\begin{exercise}{816}{常规·常系数初值小综合}
+求 $y''+2y'+2y=0$、$y(0)=1$、$y'(0)=0$ 的解，并计算 $y(\pi/2)$。
+\end{exercise}
+\subsection{常系数非齐次线性微分方程}
+\begin{exercise}{817}{基础·多项式特解}
+求 $y''-4y'+3y=x$ 的通解，提示：可设特解 $y_p=Ax+B$。
+\end{exercise}
+\begin{exercise}{818}{基础·多项式外力}
+求 $y''+5y'+4y=3-2x$ 的通解。
+\end{exercise}
+\begin{exercise}{819}{基础·零特征根}
+求 $y''+y'=x$ 的通解，提示：可设特解 $y_p=Ax^2+Bx$。
+\end{exercise}
+\begin{exercise}{820}{常规·恢复系数与求解}
+已知 $y''+ay'+by=0$ 的通解为 $(C_1+C_2x)e^x$。求 $a,b$，再求对应非齐次方程 $y''+ay'+by=x$ 的通解。
+\end{exercise}
+\begin{exercise}{821}{常规·单根共振}
+求 $y''-5y'+6y=2e^{2x}$ 的通解，提示：设特解 $y_p=Axe^{2x}$。
+\end{exercise}
+\begin{exercise}{822}{基础·非共振指数外力}
+求 $y''-3y'+2y=e^{3x}$ 的通解。
+\end{exercise}
+\begin{exercise}{823}{基础·特解系数}
+对 $y''-y=3e^{2x}$，设特解 $y_p=Ae^{2x}$。求 $A$ 并写出通解。
+\end{exercise}
+\begin{exercise}{824}{常规·给定特解求通解}
+验证 $y_p=x$ 是 $y''-y=-x$ 的特解，并求满足 $y(0)=1$、$y'(0)=0$ 的解。
+\end{exercise}
+\begin{exercise}{825}{常规·三角共振}
+求 $y''+4y=\cos2x$ 的通解，提示：可设特解 $y_p=Ax\sin2x$。
+\end{exercise}
+\begin{exercise}{826}{常规·外力分解}
+求 $y''+4y=\cos^2x$ 的通解，先使用 $\cos^2x=(1+\cos2x)/2$。
+\end{exercise}
+\begin{exercise}{827}{基础·三角非共振}
+求 $y''+4y=\cos x$ 的通解。
+\end{exercise}
+\begin{exercise}{828}{常规·外力叠加}
+求 $y''-y=e^x+4\cos x$ 的通解，分别为两项外力求特解。
+\end{exercise}
+\begin{exercise}{829}{基础·非共振变式}
+求 $y''+y=\cos2x$ 的通解。
+\end{exercise}
+\begin{exercise}{830}{常规·重根共振小综合}
+求 $y''-2y'+y=e^x$、$y(0)=y'(0)=0$ 的解，提示：令 $y=e^xv$。
+\end{exercise}

@@ -1,0 +1,577 @@
+\section{第9章 多元函数微分法及其应用}
+\subsection{多元函数的基本概念}
+\begin{exercise}{96}{基础·二元函数定义域}
+求 $z=\ln(x-y)+\sqrt y$ 的定义域，并分别写出对数与根式的约束。
+\end{exercise}
+\begin{exercise}{97}{基础·根式分母定义域}
+求 $z=\frac{\sqrt x}{\sqrt{1-x^2-y^2}}$ 的定义域，注意分母必须非零。
+\end{exercise}
+\begin{exercise}{98}{基础·三元函数定义域}
+求 $u=\sqrt{4-x^2-y^2-z^2}$ 的定义域，并说明其几何意义。
+\end{exercise}
+\begin{exercise}{99}{基础·函数复合}
+设 $f(u,v)=u^2+uv$，求 $f(x+y,x-y)$ 并化简。
+\end{exercise}
+\begin{exercise}{100}{常规·变量代换恢复函数}
+已知对所有实数 $x,y$ 有 $f(x+y,x-y)=x^2+y^2$。令 $u=x+y$、$v=x-y$，求 $f(u,v)$。
+\end{exercise}
+\begin{exercise}{101}{基础·对数复合}
+设 $f(u,v)=u+e^v$。求 $f(x-y,\ln x)$ 的表达式及定义域。
+\end{exercise}
+\begin{exercise}{102}{基础·有界因子极限}
+用夹逼定理求 $\lim_{(x,y)\to(0,0)}(x^2+y^2)\sin\frac1{\sqrt{x^2+y^2}}$。
+\end{exercise}
+\begin{exercise}{103}{常规·路径判别}
+沿 $y=0$ 与 $y=x$ 两条路径，说明 $\lim_{(x,y)\to(0,0)}\frac{xy}{x^2+y^2}$ 不存在。
+\end{exercise}
+\begin{exercise}{104}{基础·等价无穷小}
+求 $\lim_{(x,y)\to(0,0)}\frac{\sin(x^2+y^2)}{x^2+y^2}$。
+\end{exercise}
+\begin{exercise}{105}{基础·径向极限}
+求 $\lim_{(x,y)\to(0,0)}\frac{\ln(1+x^2+y^2)}{x^2+y^2}$。
+\end{exercise}
+\begin{exercise}{106}{基础·无穷远二重极限}
+求 $x,y$ 同时趋于 $+\infty$ 时 $\frac1{x+y}$ 的极限。
+\end{exercise}
+\begin{exercise}{107}{基础·指数衰减}
+求 $x,y$ 同时趋于 $+\infty$ 时 $e^{-x}+e^{-y}$ 的极限。
+\end{exercise}
+\begin{exercise}{108}{常规·幂指型极限}
+求 $\lim_{(x,y)\to(0,0)}(1+x^2+y^2)^{1/(x^2+y^2)}$。
+\end{exercise}
+\begin{exercise}{109}{基础·连续函数代入}
+求 $f(x,y)=\frac{\sqrt{4-x^2-y^2}}{1+x^2+y^2}$ 的定义域及 $\lim_{(x,y)\to(1,0)}f(x,y)$。
+\end{exercise}
+\begin{exercise}{110}{常规·连续延拓}
+设非原点处 $f(x,y)=\frac{xy}{\sqrt{x^2+y^2}}$，$f(0,0)=a$。求使 $f$ 在原点连续的 $a$。提示：$|xy|\le(x^2+y^2)/2$。
+\end{exercise}
+\begin{exercise}{111}{基础·对数径向连续性}
+设非原点处 $f(x,y)=(x^2+y^2)\ln(x^2+y^2)$，$f(0,0)=0$。判断 $f$ 在原点是否连续。
+\end{exercise}
+\begin{exercise}{112}{基础·极限估计变式}
+求 $\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^2+y^2}$，提示：绝对值不超过 $|y|$。
+\end{exercise}
+\begin{exercise}{113}{常规·连续性小综合}
+设非原点处 $f(x,y)=\frac{x^2y^2}{x^2+y^2}$，$f(0,0)=a$。用 $x^2y^2\le(x^2+y^2)^2/4$ 求使 $f$ 在原点连续的 $a$。
+\end{exercise}
+\subsection{偏导数}
+\begin{exercise}{114}{基础·偏导数定义}
+已知 $f(x,0)=2x^2+3x+1$。用定义求 $f_x(0,0)$。
+\end{exercise}
+\begin{exercise}{115}{基础·原点偏导数}
+设 $f(x,y)=\sqrt{x^2+y^4}$。用定义判断原点两个偏导数是否存在。
+\end{exercise}
+\begin{exercise}{116}{基础·差商换元}
+设 $f_x(x_0,y_0)=3$。求 $\lim_{h\to0}\frac{f(x_0+2h,y_0)-f(x_0,y_0)}h$。
+\end{exercise}
+\begin{exercise}{117}{常规·不对称差商}
+设 $f_x(x_0,y_0)=2$。求 $\lim_{h\to0}\frac{f(x_0+2h,y_0)-f(x_0-3h,y_0)}h$。
+\end{exercise}
+\begin{exercise}{118}{基础·绝对值函数偏导}
+设 $f(x,y)=|x|y$。用定义求 $f_x(0,0)$、$f_y(0,0)$。
+\end{exercise}
+\begin{exercise}{119}{基础·根式偏导数}
+设 $f(x,y)=\sqrt{|x|}+y^2$。用定义判断原点两个偏导数是否存在。
+\end{exercise}
+\begin{exercise}{120}{基础·多项式偏导数}
+设 $f(x,y)=x^3+3xy+4y-1$。求 $f_x(1,2)$、$f_y(1,2)$。
+\end{exercise}
+\begin{exercise}{121}{基础·反三角函数偏导}
+设 $f(x,y)=x+2y+(y-1)\arcsin x$，$|x|<1$。求 $f_x(0,1)$、$f_y(0,1)$。
+\end{exercise}
+\begin{exercise}{122}{基础·立方根偏导定义}
+设 $f(x,y)=\sqrt[3]{x^3-y^3}$，立方根取实值。用定义求原点的两个偏导数。
+\end{exercise}
+\begin{exercise}{123}{基础·指数三角偏导}
+求 $z=e^x\sin(x^2+y)$ 的两个一阶偏导数。
+\end{exercise}
+\begin{exercise}{124}{基础·三元幂函数偏导}
+设 $u=(x/y)^z$，其中 $x>0,y>0,z\in\mathbb R$。求三个一阶偏导数。
+\end{exercise}
+\begin{exercise}{125}{常规·变底变指数}
+在 $x+y>0$ 上设 $z=(x+y)^x$。求 $z_x,z_y$ 及它们在 $(1,1)$ 处的值。
+\end{exercise}
+\begin{exercise}{126}{常规·对数求导}
+设 $z=(y/x)^{x/y}$，$x,y>0$。求 $z_x(1,1)$、$z_y(1,1)$。
+\end{exercise}
+\begin{exercise}{127}{基础·分段函数偏导}
+设非原点处 $f(x,y)=(x^2+y^2)\ln(x^2+y^2)$，原点处取零。用定义求 $f_x(0,0)$、$f_y(0,0)$。
+\end{exercise}
+\begin{exercise}{128}{常规·由偏导恢复函数}
+设 $x>0$，$f_x=x+y^2/x$，$f(1,y)=\sin y$。求 $f(x,y)$。
+\end{exercise}
+\begin{exercise}{129}{基础·截线斜率}
+设曲面 $z=\sqrt{1+x^2+y^2}$。求固定 $x=1$ 的截线在 $(1,1,\sqrt3)$ 处关于 $y$ 的导数。
+\end{exercise}
+\begin{exercise}{130}{基础·截线切线}
+求曲线 $z=(x^2+y^2)/4$、$y=4$ 在 $(2,4,5)$ 处的切线参数方程。
+\end{exercise}
+\begin{exercise}{131}{常规·偏导与单调性}
+设 $f(x,y)=e^x-y$。利用两个偏导数的符号，比较 $f(0,2)$ 与 $f(1,1)$ 的大小。
+\end{exercise}
+\begin{exercise}{132}{基础·连续与偏导变式}
+设 $f(x,y)=\sqrt{x^2+y^2}$。判断它在原点的连续性及两个偏导数是否存在。
+\end{exercise}
+\begin{exercise}{133}{常规·偏导与连续性辨析}
+设原点处 $f=0$，非原点处 $f(x,y)=\frac{2xy}{x^2+y^2}$。求原点两个偏导数，并沿 $y=x$ 判断原点连续性。
+\end{exercise}
+\subsubsection{高阶偏导数}
+\begin{exercise}{134}{基础·二阶偏导}
+设 $z=x^3y+xy^2$。求 $z_{xx},z_{xy},z_{yy}$。
+\end{exercise}
+\begin{exercise}{135}{常规·积分上限二阶偏导}
+设 $g(x,y)=\int_0^{xy}\sin t\dd t$。求 $g_x$ 和 $g_{xx}(0,2)$。
+\end{exercise}
+\begin{exercise}{136}{基础·混合高阶偏导}
+设 $z=e^{x+y}$。求 $z_{xxy}$ 及其在原点的值。
+\end{exercise}
+\begin{exercise}{137}{常规·径向二阶偏导}
+在 $r=\sqrt{x^2+y^2}>0$ 上设 $u=r$。求 $u_{xx},u_{yy}$，并验证 $u_{xx}+u_{yy}=1/r$。
+\end{exercise}
+\begin{exercise}{138}{基础·混合偏导交换}
+设 $f(x,y)=x^2y^3$。分别计算 $f_{xy},f_{yx}$，核验二者相等。
+\end{exercise}
+\begin{exercise}{139}{基础·二阶偏导变式}
+设 $f(x,y)=\sin(x+y)$。求原点的三个二阶偏导数 $f_{xx},f_{xy},f_{yy}$。
+\end{exercise}
+\begin{exercise}{140}{常规·二阶偏导小综合}
+设 $f(x,y)=e^{xy}$。求 $f_{xx},f_{xy},f_{yy}$ 及它们在原点的值。
+\end{exercise}
+\subsection{全微分}
+\begin{exercise}{141}{基础·全增量与全微分}
+设 $f(x,y)=x^2+y^2$。求在 $(1,2)$ 处当 $\Delta x=0.1$、$\Delta y=-0.1$ 时的全增量和全微分。
+\end{exercise}
+\begin{exercise}{142}{基础·全微分计算}
+求 $z=(x^2+y^2)e^x$ 的全微分。
+\end{exercise}
+\begin{exercise}{143}{基础·三元函数全微分}
+设 $u=\ln(x+y+z)$，$x+y+z>0$。求 $\dd u$。
+\end{exercise}
+\begin{exercise}{144}{常规·隐式全微分}
+设 $z-x-y+xe^z=0$ 在原点附近确定 $z=z(x,y)$。求 $\dd z|_{(0,0)}$。
+\end{exercise}
+\begin{exercise}{145}{基础·原点可微性}
+设 $f(x,y)=\frac{2x+3y}{1+x^2+y^2}$。求原点的全微分。
+\end{exercise}
+\begin{exercise}{146}{常规·渐近式与全微分}
+设 $f$ 在原点连续，且 $f(x,y)=1+x+2y+o(\sqrt{x^2+y^2})$。求 $f(0,0)$ 及原点全微分。
+\end{exercise}
+\begin{exercise}{147}{常规·全微分恢复数据}
+设 $u\in C^2$ 且 $u_x=3x^2y$，$u(0,y)=y^2$。求 $u(x,y)$ 与 $u_y$。
+\end{exercise}
+\begin{exercise}{148}{常规·由全微分恢复函数}
+已知 $\dd f=2xy\dd x+(x^2+2y)\dd y$，$f(0,0)=2$。求 $f(x,y)$。
+\end{exercise}
+\begin{exercise}{149}{基础·可微定义}
+设 $f(x,y)=3x-2y+x^2+y^2$。用可微定义求原点全微分，提示：令 $r=\sqrt{x^2+y^2}$，考察余项与 $r$ 的比值。
+\end{exercise}
+\begin{exercise}{150}{常规·不连续与不可微}
+设原点处 $f=0$，非原点处 $f(x,y)=\frac{3x^2y}{x^4+y^2}$。沿 $y=x^2$ 判断连续性，从而判断原点可微性。
+\end{exercise}
+\begin{exercise}{151}{基础·根式函数可微性}
+判断 $f(x,y)=\sqrt{x^2+y^2}$ 在原点是否可微，提示：先检查偏导数。
+\end{exercise}
+\begin{exercise}{152}{常规·振荡函数可微性}
+设原点处 $f=0$，非原点处 $f(x,y)=xy\sin\frac1{\sqrt{x^2+y^2}}$。用 $|xy|\le(x^2+y^2)/2$ 证明它在原点可微并求全微分。
+\end{exercise}
+\begin{exercise}{153}{基础·可微充分条件}
+设 $f(x,y)=\ln(1+x^2+y^2)$。说明它在原点附近的一阶偏导数连续，并求原点全微分。
+\end{exercise}
+\begin{exercise}{154}{常规·连续但不可微}
+设原点处 $f=0$，非原点处 $f(x,y)=\frac{x^2y}{x^2+y^2}$。求原点两个偏导数，并沿 $y=x$ 检查可微定义中的归一化余项。
+\end{exercise}
+\begin{exercise}{155}{常规·可微性辨析}
+设原点处 $f=0$，非原点处 $f(x,y)=\frac{xy}{\sqrt{x^2+y^2}}$。求原点两个偏导数，并沿 $y=x$ 判断可微性。
+\end{exercise}
+\begin{exercise}{156}{常规·径向余项估计}
+设原点处 $f=0$，非原点处 $f(x,y)=(x^2+y^2)\sin\frac1{x^2+y^2}$。用可微定义求原点全微分。
+\end{exercise}
+\begin{exercise}{157}{基础·可微性变式}
+设 $f(x,y)=1+2x-y+(x^2+y^2)^{3/2}$。用可微定义求原点全微分。
+\end{exercise}
+\begin{exercise}{158}{常规·绝对值小综合}
+设 $f(x,y)=|xy|$。用定义求原点两个偏导数，并利用 $|xy|\le(x^2+y^2)/2$ 判断可微性。
+\end{exercise}
+\subsection{多元复合函数的求导法则}
+\begin{exercise}{159}{基础·一元链式法则}
+设 $z=u^2+v^2$，$u=e^x$、$v=x^2$。用链式法则求 $\dd z/\dd x$。
+\end{exercise}
+\begin{exercise}{160}{基础·全导数}
+设 $f(x,y)=xy$，$z(x)=f(x,\ln x)$，$x>0$。求 $z'(x)$ 及 $z'(1)$。
+\end{exercise}
+\begin{exercise}{161}{基础·抽象函数链式法则}
+设 $z=f(x^2,\sin x)$，$f\in C^1$。求 $z'(x)$，写明 $f_1,f_2$ 的取值点。
+\end{exercise}
+\begin{exercise}{162}{常规·二阶链式法则}
+设 $z=f(x,x^2)$，$f\in C^2$。求 $z''(0)$，结果用 $f$ 在原点的一、二阶偏导数表示。
+\end{exercise}
+\begin{exercise}{163}{常规·驻点内函数}
+设 $f\in C^2$，$f_1(1,1)=3$、$f_2(1,1)=4$，$z=f(\cos x,1+x^2)$。求 $z'(0),z''(0)$。
+\end{exercise}
+\begin{exercise}{164}{基础·两个中间变量}
+设 $z=e^u\sin v$，$u=x-y$、$v=x+y$。求 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{165}{基础·径向复合求导}
+设 $z=\ln(1+\sqrt{x^2+y^2})$。求原点外的 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{166}{基础·显含变量链式法则}
+设 $z=x^2+y^2+u^2$，$u=xy$。求 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{167}{基础·抽象复合偏导}
+设 $z=f(x+y,xy)$，$f\in C^1$。求 $z_x,z_y$ 及它们在原点的表达式。
+\end{exercise}
+\begin{exercise}{168}{常规·线性变换二阶偏导}
+设 $z=f(x+y,x-y)$，$f\in C^2$。求 $z_{xx},z_{yy}$，明确外函数偏导数的取值点。
+\end{exercise}
+\begin{exercise}{169}{常规·混合偏导特殊点}
+设 $z=f(e^{xy},x^2+y^2)$，$f\in C^2$。求 $z_{xy}(0,0)$，结果用 $f$ 在 $(1,0)$ 的偏导数表示。
+\end{exercise}
+\begin{exercise}{170}{常规·截面条件恢复函数}
+设 $z=e^{x-y}+f(x-2y)$，且 $z(x,0)=x^2$。求 $f$ 及 $z_y$。
+\end{exercise}
+\begin{exercise}{171}{基础·特殊点全微分}
+设 $z=yf(x^2-y^2)$，$f$ 可导，$f(0)=1$、$f'(0)=1/2$。求 $\dd z|_{(1,1)}$。
+\end{exercise}
+\begin{exercise}{172}{基础·变限积分偏导}
+设 $z=\int_0^{x^2+y}e^{-t^2}\dd t$。求 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{173}{常规·齐次恒等式}
+设 $z=xf(y/x)$，$x\ne0$，$f$ 可导。直接求 $z_x,z_y$，验证 $xz_x+yz_y=z$。
+\end{exercise}
+\begin{exercise}{174}{基础·复合函数偏导}
+设 $z=xf(x/y)$，$y>0$，$f$ 可导。求 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{175}{常规·混合偏导计算}
+设 $z=f(2x-y)+x^2y$，$f$ 二阶可导。求 $z_{xx},z_{xy}$。
+\end{exercise}
+\begin{exercise}{176}{基础·三元外函数复合}
+设 $u=f(x,y,xe^y)$，$f\in C^1(\mathbb R^3)$。求 $u_x,u_y$。
+\end{exercise}
+\begin{exercise}{177}{常规·多层链式法则}
+设 $u=f(x,y,z)$，其中 $y=x+t$、$t=xz$，$x,z$ 为独立变量，$f\in C^1$。求复合函数的 $u_x,u_z$。
+\end{exercise}
+\begin{exercise}{178}{常规·线性代换混合偏导}
+设 $z=g(x+y,x-y)$，$g\in C^2$。求 $z_{xy}$，结果用 $g$ 的二阶偏导数表示。
+\end{exercise}
+\begin{exercise}{179}{基础·齐次公式核验}
+设 $f(x,y)=x^2+xy+y^2$。验证 $xf_x+yf_y=2f$。
+\end{exercise}
+\begin{exercise}{180}{基础·全微分形式不变性}
+设 $z=\arctan(u+v)$，$u=2x-y^2$、$v=x^2y$。求 $(1,0)$ 处的全微分。
+\end{exercise}
+\begin{exercise}{181}{基础·复合全微分}
+设 $z=f(2x+3y,e^{xy})$，$f\in C^1$。求原点处的全微分，结果用 $f_1(0,1),f_2(0,1)$ 表示。
+\end{exercise}
+\begin{exercise}{182}{基础·链式法则变式}
+设 $F(u,v)=u^2+v^2$，$u=t$、$v=2t$。用链式法则求 $\dd F/\dd t$。
+\end{exercise}
+\begin{exercise}{183}{常规·极坐标求导小综合}
+设 $x=r\cos\theta$、$y=r\sin\theta$、$z=x^2+2y^2$。求 $z_r,z_\theta$，并计算它们在 $(r,\theta)=(1,\pi/4)$ 处的值。
+\end{exercise}
+\subsection{隐函数的求导法则}
+\begin{exercise}{184}{基础·隐函数一阶导数}
+设 $e^x+y^2=2$ 在 $(0,1)$ 附近确定 $y=y(x)$。求 $y'$ 及 $y'(0)$。
+\end{exercise}
+\begin{exercise}{185}{基础·隐函数初值}
+设 $2^{xy}=x+y$ 在 $x=0$ 附近确定 $y=y(x)$，所需隐函数条件已满足。求 $y(0),y'(0)$。
+\end{exercise}
+\begin{exercise}{186}{基础·二阶隐式求导}
+设 $x^2+y^2=1$ 在 $(0,1)$ 附近确定正值分支 $y=y(x)$。求 $y'(0),y''(0)$。
+\end{exercise}
+\begin{exercise}{187}{常规·含未知函数的隐式求导}
+设 $f\in C^1$，$xf(x+y)=\ln y$ 在 $(0,1)$ 附近确定 $y=y(x)$。求 $y'(0)$，结果可含 $f(1)$。
+\end{exercise}
+\begin{exercise}{188}{常规·隐函数复合求导}
+设 $y+xe^y=1$ 在 $x=0$ 附近确定 $y=y(x)$，$z=y^2+x$。求 $z'(0)$。
+\end{exercise}
+\begin{exercise}{189}{基础·隐函数两个偏导}
+设 $x^2+y^2+z^2=1$ 在 $(0,0,1)$ 附近确定 $z=z(x,y)$。求 $z_x,z_y$ 及原点处的值。
+\end{exercise}
+\begin{exercise}{190}{基础·指数隐函数}
+设 $z+e^z=x+y+1$ 在原点附近确定 $z=z(x,y)$。求 $z_x(0,0),z_y(0,0)$。
+\end{exercise}
+\begin{exercise}{191}{基础·分式隐函数偏导}
+设 $z+xz+yz=1$ 在 $1+x+y\ne0$ 的区域上确定 $z=z(x,y)$。求 $z_x,z_y$。
+\end{exercise}
+\begin{exercise}{192}{常规·共同平移结构}
+设 $(x-y)^3+z+\tan z=0$ 在 $\tan z$ 有定义的点附近确定 $z=z(x,y)$。求 $z_x+z_y$。
+\end{exercise}
+\begin{exercise}{193}{基础·隐式全微分}
+设 $e^z-xy^2+\sin(y+z)=0$ 确定 $z=z(x,y)$，已知 $e^z+\cos(y+z)\ne0$。求 $\dd z$。
+\end{exercise}
+\begin{exercise}{194}{常规·隐函数全微分}
+设 $xyz+\sqrt{x^2+y^2+z^2}=\sqrt2$ 在 $(1,0,1)$ 附近确定 $z=z(x,y)$。求 $\dd z|_{(1,0)}$，所需隐函数条件已满足。
+\end{exercise}
+\begin{exercise}{195}{常规·隐函数二阶偏导}
+设 $z^3-3xyz=1$ 在 $(0,0,1)$ 附近确定 $z=z(x,y)$。求 $z_{xy}(0,0)$。
+\end{exercise}
+\begin{exercise}{196}{基础·隐函数特殊点偏导}
+设 $z+e^x-y\ln(1+z^2)=0$ 在 $(x,y)=(0,0)$ 附近确定 $z=z(x,y)$。求对应 $z$ 值及 $z_x(0,0),z_y(0,0)$。
+\end{exercise}
+\begin{exercise}{197}{常规·隐式中间变量}
+设 $z+x+y=0$，$F(x,y)=yz^2e^x$。用链式法则求 $F_x(0,1)$。
+\end{exercise}
+\begin{exercise}{198}{基础·隐式全微分变式}
+设 $z^2+x^2+y^2=4$ 在 $(0,0,2)$ 附近确定 $z=z(x,y)$。求原点处的全微分。
+\end{exercise}
+\begin{exercise}{199}{常规·隐函数微分小综合}
+设 $z+xyz=1$ 在 $(0,0,1)$ 附近确定 $z=z(x,y)$。求 $\dd z|_{(0,0)}$ 及 $z_{xy}(0,0)$。
+\end{exercise}
+\subsubsection{方程组确定的隐函数}
+\begin{exercise}{200}{基础·隐式方程组求导}
+设 $x+y+z=1$、$y-z=x^2$ 确定 $y=y(x),z=z(x)$。对两式求导，求 $y'(0),z'(0)$。
+\end{exercise}
+\begin{exercise}{201}{常规·非线性方程组偏导}
+设 $u^2+v=x$、$u+v^2=y$ 在 $(x,y,u,v)=(2,2,1,1)$ 附近确定 $u(x,y),v(x,y)$，雅可比条件已满足。求 $u_x(2,2),v_x(2,2)$。
+\end{exercise}
+\begin{exercise}{202}{常规·初值方程组}
+设 $f\in C^1$、$f(-1)=1$，$z=xf(x-y)$、$x+y+z=1$ 在 $x=0$ 附近确定 $y(x),z(x)$。求 $y(0),z(0)$ 及 $y'(0),z'(0)$。
+\end{exercise}
+\begin{exercise}{203}{基础·隐式复合全导数}
+设 $y+x^2=1$、$z+xz=1$，$u=x+y+z$。求 $u'(0)$。
+\end{exercise}
+\begin{exercise}{204}{基础·隐函数求导变式}
+设 $z+z^3=x+y$ 在原点附近确定 $z=z(x,y)$。求 $z_x(0,0),z_y(0,0)$。
+\end{exercise}
+\begin{exercise}{205}{常规·隐式二阶微分小综合}
+设 $z+\sin z=x+y$ 在原点附近确定 $z=z(x,y)$。求 $z_x(0,0)$ 与 $z_{xx}(0,0)$。
+\end{exercise}
+\subsection{多元函数微分法在几何上的应用}
+\begin{exercise}{206}{基础·参数曲线切线}
+设 $x=t+1$、$y=t^2-1$、$z=t^3$。求曲线在 $t=1$ 处的切线与法平面。
+\end{exercise}
+\begin{exercise}{207}{基础·交曲线切线}
+求曲线 $y=x$、$z=x^2-2y$ 在原点的切线，提示：以 $x$ 为参数。
+\end{exercise}
+\begin{exercise}{208}{常规·平行切线反求点}
+对曲线 $y=x^2$、$z=x^3$，求与平面 $x+y=0$ 平行的切线的切点及切线方程。
+\end{exercise}
+\begin{exercise}{209}{常规·交面曲线切线}
+求曲线 $x^2+y^2+z^2=6$、$x+y+z=0$ 在 $(1,-2,1)$ 处的切线，提示：取两个曲面法向量的向量积。
+\end{exercise}
+\begin{exercise}{210}{基础·隐式曲面切平面}
+求曲面 $x^2+\cos(xy)+yz+x=0$ 在 $(0,1,-1)$ 处的切平面与法线。
+\end{exercise}
+\begin{exercise}{211}{基础·椭球切平面}
+求椭球面 $x^2+2y^2+3z^2=9$ 在 $(2,1,1)$ 处的切平面与法线。
+\end{exercise}
+\begin{exercise}{212}{基础·隐式曲面法线}
+求曲面 $e^z-z+xy=3$ 在 $(2,1,0)$ 处的切平面与法线。
+\end{exercise}
+\begin{exercise}{213}{基础·以不同变量显式表示的曲面}
+求曲面 $y=x^2+3z^2-15$ 在 $(1,-2,2)$ 处的切平面。
+\end{exercise}
+\begin{exercise}{214}{常规·平行切平面}
+求抛物面 $z=4-x^2-y^2$ 上切平面平行于 $2x+2y+z=1$ 的点及对应切平面。
+\end{exercise}
+\begin{exercise}{215}{常规·切平面与点的判定}
+求曲面 $z=x^2+y^2$ 在 $(1,-2,5)$ 处的切平面，并判断原点是否在此切平面内。
+\end{exercise}
+\begin{exercise}{216}{基础·球面切平面变式}
+求球面 $x^2+y^2+z^2=9$ 在 $(1,2,2)$ 处的切平面。
+\end{exercise}
+\begin{exercise}{217}{常规·指定法向小综合}
+求单位球面上切平面平行于 $x+2y+z=0$ 的两个点及对应切平面。
+\end{exercise}
+\subsection{方向导数和梯度}
+\begin{exercise}{218}{基础·方向单位化}
+求 $f(x,y)=3x^2y-y^2$ 在 $(1,1)$ 处沿向量 $(1,\sqrt3)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{219}{常规·曲线切向方向导数}
+曲线 $y=x^2-5$ 的正向为 $x$ 增大方向。求 $f(x,y)=x^2-xy+y^2$ 在 $(2,-1)$ 沿该曲线切线正向的方向导数。
+\end{exercise}
+\begin{exercise}{220}{基础·空间方向导数}
+设 $f(x,y,z)=x^2+y^2+z^2$。求 $(1,0,1)$ 处沿 $(1,1,1)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{221}{基础·方向导数定义}
+设 $f(x,y)=x^2+y^2$。用定义 $D_{\vec e}f(0)=\lim_{t\to0^+}[f(t\vec e)-f(0)]/t$，求原点沿单位向量 $\vec e=(3/5,4/5)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{222}{常规·法向方向导数}
+设 $P(1,1,1)$，求 $u=x+y+z$ 在 $P$ 处沿球面 $x^2+y^2+z^2=3$ 外单位法向的方向导数。
+\end{exercise}
+\begin{exercise}{223}{基础·零方向导数}
+设 $f(x,y)=x^2+y^2$。求 $(1,1)$ 处使方向导数为零的两个单位方向。
+\end{exercise}
+\begin{exercise}{224}{基础·最快增长方向}
+设 $f(x,y,z)=x^3-xy^2-z$。求 $(1,1,0)$ 处增长最快的单位方向及最大变化率。
+\end{exercise}
+\begin{exercise}{225}{基础·梯度与方向导数}
+求 $f(x,y,z)=x^2+y^2+xz$ 在 $(1,0,1)$ 处的梯度及沿 $(3,-1,6)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{226}{常规·另一函数梯度方向}
+设 $u=\sqrt{x^2+y^2+z^2}$、$g=x^2/2+yz$。求 $(1,1,-1)$ 处沿 $g$ 的梯度方向的 $u$ 的方向导数。
+\end{exercise}
+\begin{exercise}{227}{常规·隐函数梯度}
+设 $x+y^2+z^3=3$ 在 $(1,1,1)$ 附近确定 $z=z(x,y)$。求 $(1,1)$ 处方向导数的最大值及取得该值的单位方向。
+\end{exercise}
+\begin{exercise}{228}{基础·梯度计算变式}
+设 $F(x,y)=e^{x+y}$。求原点处的梯度及沿 $(1,-1)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{229}{常规·方向导数小综合}
+设温度 $T(x,y)=x^2+2y^2$。求 $(1,1)$ 处沿 $(1,1)$ 的方向导数，并求该点下降最快的单位方向。
+\end{exercise}
+\subsection{多元函数的极值及其应用}
+\begin{exercise}{230}{基础·极值必要条件}
+设 $f$ 在内点 $(x_0,y_0)$ 可微并取得局部极小值。利用两条坐标截线的一元极值必要条件，说明 $f_x(x_0,y_0)=f_y(x_0,y_0)=0$。
+\end{exercise}
+\begin{exercise}{231}{基础·驻点与鞍点}
+求 $f(x,y)=x^2-y^2$ 的驻点，并沿坐标轴判断原点是否为极值点。
+\end{exercise}
+\begin{exercise}{232}{基础·平方和极值}
+求 $f(x,y)=x^2+2y^2$ 的极值及极值点。
+\end{exercise}
+\begin{exercise}{233}{基础·四次函数极值}
+求 $f(x,y)=-x^4-y^4$ 的极值及极值点。
+\end{exercise}
+\begin{exercise}{234}{基础·二阶极值判别}
+求 $z=x^2+y^2-2x-4y$ 的驻点并判定极值。
+\end{exercise}
+\begin{exercise}{235}{常规·指数函数局部极值}
+求 $f(x,y)=e^{-x}(x-y^2)$ 的驻点及局部极值，使用二阶判别法。
+\end{exercise}
+\begin{exercise}{236}{常规·指数函数极值}
+求 $f(x,y)=e^{-x^2-y^2}$ 的驻点及极值。
+\end{exercise}
+\begin{exercise}{237}{常规·截面数据与极值}
+设 $f(x,y)=2y^2+g(x-y)$，且 $f(x,0)=x^2$。求 $f$，并用配方法求其最小值。
+\end{exercise}
+\begin{exercise}{238}{基础·退化二阶判别}
+用配方法求 $f(x,y)=(x+y)^2-2(x+y)+5$ 的最小值及取值点。
+\end{exercise}
+\begin{exercise}{239}{常规·隐函数极值}
+设 $\ln z+x^2+y^2=0$，$z>0$。先显式写出 $z(x,y)$，再求其极值。
+\end{exercise}
+\begin{exercise}{240}{常规·水箱材料最省}
+无盖长方体水箱的容积为 $4$ 立方米，底面边长为 $x,y>0$。写出用料面积 $S(x,y)$，求使面积最小的长、宽、高。提示：由 $xyh=4$ 消去 $h$，也可用基本不等式核验最小值。
+\end{exercise}
+\begin{exercise}{241}{常规·闭区域最值}
+求 $f(x,y)=x^2+y^2-2x$ 在 $x^2+y^2\le4$ 上的最大值、最小值及取值点。
+\end{exercise}
+\begin{exercise}{242}{基础·简单条件极值}
+在约束 $x+y=2$ 下求 $f(x,y)=x^2+y^2$ 的最小值及取值点。
+\end{exercise}
+\begin{exercise}{243}{基础·拉格朗日乘数法}
+用拉格朗日乘数法求 $x^2+y^2$ 在 $x-y+1=0$ 下的最小值。
+\end{exercise}
+\begin{exercise}{244}{常规·球内接长方体}
+长方体的中心为原点，各面平行于坐标面，八个顶点位于单位球面上。求其最大体积及三个边长。提示：第一卦限顶点满足 $x^2+y^2+z^2=1$。
+\end{exercise}
+\begin{exercise}{245}{常规·恢复函数再求最值}
+设 $f_x=2x$、$f_y=2y$、$f(0,0)=1$。求 $f$，并求它在 $x^2+y^2\le1$ 上的最大值、最小值。
+\end{exercise}
+\begin{exercise}{246}{基础·退化驻点变式}
+判断 $f(x,y)=x^4+y^4$ 在原点的极值类型，并求极值。
+\end{exercise}
+\begin{exercise}{247}{常规·圆上最值小综合}
+求 $F(x,y)=x^4+y^4$ 在单位圆 $x^2+y^2=1$ 上的最大值、最小值及取值点，提示：利用 $F=1-2x^2y^2$。
+\end{exercise}
+\subsection{二元函数的泰勒公式}
+\begin{exercise}{248}{基础·二阶泰勒多项式}
+求 $f(x,y)=2x^2-xy-y^2+3x+5y-1$ 在原点的二阶泰勒多项式。
+\end{exercise}
+\begin{exercise}{249}{常规·非原点二阶展开}
+求 $f(x,y)=x^2y$ 在 $(1,1)$ 处的二阶泰勒公式，余项用 $o(h^2+k^2)$ 表示，其中 $h=x-1,k=y-1$。
+\end{exercise}
+\begin{exercise}{250}{基础·麦克劳林展开}
+求 $f(x,y)=e^{x+y}$ 的二阶麦克劳林公式，余项用 $o(x^2+y^2)$ 表示。
+\end{exercise}
+\begin{exercise}{251}{常规·泰勒展开求极限}
+先写出 $\ln(1+x+y)$ 的二阶麦克劳林公式，再求 $\lim_{(x,y)\to(0,0)}\frac{\ln(1+x+y)-x-y+xy}{x^2+y^2}$。
+\end{exercise}
+\begin{exercise}{252}{基础·三角函数展开}
+求 $f(x,y)=\cos x\cos y$ 的二阶麦克劳林公式。
+\end{exercise}
+\begin{exercise}{253}{基础·二阶展开变式}
+求 $f(x,y)=\ln(1+x^2+y^2)$ 的二阶麦克劳林公式。
+\end{exercise}
+\begin{exercise}{254}{常规·展开与极值小综合}
+求 $F(x,y)=e^{x+y}-1-x-y+\frac12(x-y)^2$ 的二阶麦克劳林公式，并据二次主项判定原点的极值类型。
+\end{exercise}
+\subsubsection{常规综合练习}
+\begin{exercise}{255}{基础·偏导符号比较}
+设 $f(x,y)=e^x-y$。比较 $f(0,1)$、$f(0,0)$、$f(1,0)$ 的大小，并用偏导数符号说明依据。
+\end{exercise}
+\begin{exercise}{256}{常规·渐近式与可微性}
+设 $f$ 在原点连续，且 $\lim_{(x,y)\to(0,0)}\frac{f(x,y)-1-2x+y}{x^2+y^2}=3$。求 $f(0,0)$ 及原点全微分。
+\end{exercise}
+\begin{exercise}{257}{常规·有界振荡可微性}
+设 $xy\ne0$ 时 $f(x,y)=(x^2+y^2)\sin(1/(xy))$，$xy=0$ 时取零。用可微定义求原点全微分。
+\end{exercise}
+\begin{exercise}{258}{常规·二阶渐近与极值}
+设 $f$ 在原点连续，且 $\lim_{(x,y)\to(0,0)}\frac{f(x,y)-f(0,0)}{x^2+y^2}=2$。求原点两个偏导数，并判定原点的极值类型。
+\end{exercise}
+\begin{exercise}{259}{基础·全微分与方向导数}
+已知 $f$ 在原点可微，$f_x(0,0)=1$、$f_y(0,0)=2$。求原点全微分及沿向量 $(3,4)$ 的方向导数。
+\end{exercise}
+\begin{exercise}{260}{常规·复合数据求导}
+设 $h(x,y)=f(x-y,x+y)$，$f\in C^1$，$f_1(1,3)=2$、$f_2(1,3)=3$。求 $h_x(2,1),h_y(2,1)$。
+\end{exercise}
+\begin{exercise}{261}{常规·二阶偏导恢复函数}
+已知 $f_{yy}=2$、$f(x,0)=1$、$f_y(x,0)=x$。求 $f(x,y)$，并判断原点是否为极值点。
+\end{exercise}
+\begin{exercise}{262}{常规·沿曲线求导}
+设 $f\in C^2$，$f_{xx}=f_{yy}$，且 $f(x,3x)=x$、$f_x(x,3x)=0$。分别对给定关系求导，求 $f_{xx}(x,3x),f_{xy}(x,3x)$。
+\end{exercise}
+\begin{exercise}{263}{基础·三元外函数全微分}
+设 $z=f(x,x+y,x/y)$，$f\in C^1$、$y\ne0$。求 $(0,1)$ 处的全微分，写明外函数偏导数的取值点。
+\end{exercise}
+\begin{exercise}{264}{常规·三元复合混合偏导}
+设 $u=f(x,xy,xyz)$，$f\in C^2$。只求 $u_{xy}(0,1,1)$，结果用 $f$ 在原点的一、二阶偏导数表示。
+\end{exercise}
+\begin{exercise}{265}{基础·零全微分}
+设 $\lim_{(x,y)\to(0,0)}\frac{f(x,y)-f(0,0)}{\sqrt{x^2+y^2}}=0$。直接根据可微定义求原点全微分。
+\end{exercise}
+\begin{exercise}{266}{基础·二重极限}
+求 $\lim_{(x,y)\to(0,0)}\frac{\sin(x^2+y^2)}{\sqrt{1+x^2+y^2}+1}$。
+\end{exercise}
+\begin{exercise}{267}{常规·有理化与可微性}
+设原点处 $f=0$，非原点处 $f(x,y)=\frac{\sqrt{1+x^2y^2}-1}{x^2+y^2}$。先有理化，判断原点连续性并求全微分。
+\end{exercise}
+\begin{exercise}{268}{常规·隐式约束全导数}
+设 $u=f(x,y,z)$、$y=\sin x$、$z^2+x^2+y^2=1$，取原点附近 $z>0$ 的分支，$f\in C^1$。求 $\dd u/\dd x|_{x=0}$，结果用 $f$ 在 $(0,0,1)$ 的偏导数表示。
+\end{exercise}
+\begin{exercise}{269}{常规·径向函数二阶偏导}
+设 $z=\ln\sqrt{x^2+y^2}$，$(x,y)\ne(0,0)$。计算 $z_{xx},z_{yy}$ 并验证 $z_{xx}+z_{yy}=0$。
+\end{exercise}
+\begin{exercise}{270}{常规·线性变量变换}
+设 $u=x+y$、$v=x-y$、$z=g(u,v)$，$g\in C^2$。证明 $z_{xx}-z_{yy}=4g_{uv}$，提示：分别应用两次链式法则。
+\end{exercise}
+\begin{exercise}{271}{基础·隐式齐次关系}
+设 $z=\sqrt{x^2+y^2}$，$(x,y)\ne(0,0)$。计算并验证 $xz_x+yz_y=z$。
+\end{exercise}
+\begin{exercise}{272}{常规·交曲线二阶导数}
+设 $z=x^2+y^2$、$x+y=1$ 确定 $y=y(x),z=z(x)$。求 $y'',z''$。
+\end{exercise}
+\begin{exercise}{273}{常规·极值点复合二阶导数}
+设 $z=f(xy,y)$，$f\in C^2$，$(1,1)$ 是 $f$ 的极值点。将 $z_{xy}(1,1)$ 用 $f$ 在 $(1,1)$ 的二阶偏导数表示。
+\end{exercise}
+\begin{exercise}{274}{常规·曲线数据确定切平面}
+设 $f$ 可微，$f(t^2,t+1)=t^2(t-1)$，且 $f_1(1,2)=1$。求 $f_2(1,2)$ 及曲面 $z=f(x,y)$ 在对应点的切平面。
+\end{exercise}
+\begin{exercise}{275}{基础·指定点切平面}
+求椭球面 $x^2+2y^2+3z^2=21$ 在 $(3,0,2)$ 处的切平面与法线。
+\end{exercise}
+\begin{exercise}{276}{常规·全微分恢复与梯度}
+已知 $\dd z=(2x+y)\dd x+(x+2y)\dd y$，$z(0,0)=1$。求 $z$，并求 $(1,0)$ 处方向导数的最大值。
+\end{exercise}
+\begin{exercise}{277}{常规·隐函数分支极值}
+方程 $z^2=1+x^2+y^2$ 确定正、负两个分支。分别求两个分支的极值及极值点。
+\end{exercise}
+\begin{exercise}{278}{常规·正变量约束极值}
+设 $x,y,z>0$、$x+y+z=3$。求 $xyz$ 的最大值及取值点，可用拉格朗日乘数法或基本不等式。
+\end{exercise}
+\begin{exercise}{279}{常规·双约束最值}
+在 $x+y+z=2$、$z=0$ 的约束下，求 $u=x^2+y^2+z^2$ 的最小值及取值点。
+\end{exercise}
+\begin{exercise}{280}{常规·方向导数与约束最值}
+设空间函数 $f(x,y,z)=x^2+y^2+z^2$。在单位球面 $x^2+y^2+z^2=1$ 上的所有点中，求它沿固定方向 $(1,0,0)$ 的方向导数的最大值及取值点。
+\end{exercise}
+\begin{exercise}{281}{常规·切平面截体}
+求单位球面在 $P(1/\sqrt3,1/\sqrt3,1/\sqrt3)$ 处的切平面，以及该平面与三个坐标面围成四面体的体积。
+\end{exercise}
+\begin{exercise}{282}{基础·闭区域最值变式}
+求 $f(x,y)=x+y$ 在三角形 $x\ge0,y\ge0,x+y\le1$ 上的最大值、最小值及取值点。
+\end{exercise}
+\begin{exercise}{283}{常规·成本恢复与约束优化}
+某企业总成本满足 $C_x=20+x/2$、$C_y=6+y$、$C(0,0)=10000$，$x,y\ge0$。求 $C(x,y)$，并在 $x+y=50$ 下按实数产量求最省成本的 $x,y$。
+\end{exercise}

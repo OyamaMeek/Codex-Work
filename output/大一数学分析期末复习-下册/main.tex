@@ -1,0 +1,39 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,bm,enumitem,hyperref}
+\hypersetup{hidelinks,pdftitle={大一数学分析期末复习·下册}}
+\setlist[enumerate]{label=（\arabic*）,leftmargin=2.6em,itemsep=0.25em}
+\newcommand{\dd}{\,\mathrm{d}}
+\newenvironment{exercise}[2]{%
+  \par\medskip\noindent\textbf{第#1题}\quad\textit{#2}\par\smallskip
+}{\par\medskip}
+\allowdisplaybreaks
+\setcounter{secnumdepth}{-1}
+\sloppy
+\setlength{\emergencystretch}{4em}
+\title{大一数学分析期末复习·下册\\[0.4em]\large 基础计算与常见题型}
+\author{}
+\date{2026年10月20日}
+\begin{document}
+\maketitle
+\section*{使用说明}
+本册用于大一期末分章复习，覆盖向量与空间几何、多元微分、重积分、曲线积分、曲面积分及无穷级数。题目以基础计算、常见应用和课堂短证明为主，证明题使用已学定理并说明关键条件。
+
+全册共818题，按阅读顺序统一编号1至818。34节各保留两道补充练习，用于基础变式与常规小综合，均纳入连续编号。本版设“基础”“常规”两档：“基础”表示直接运用概念、公式或标准方法，“常规”表示期末常见的两步计算、应用或短证明。建议先做基础题，再做常规题。
+
+常规版与iPad横屏版共用同一份题面，后者按每页一道题设计，下方纯空白用于草稿。本次仅交付LaTeX源文件，按要求未编译，未附答案。未获得本校期末试卷，难度按通用的大一期末复习要求调整；具体范围以课堂教学为准，傅里叶级数等内容按课程实际教学选用。
+\tableofcontents
+\clearpage
+\input{chapters/ch08.tex}
+\clearpage
+\input{chapters/ch09.tex}
+\clearpage
+\input{chapters/ch10.tex}
+\clearpage
+\input{chapters/ch11.tex}
+\clearpage
+\input{chapters/ch12.tex}
+\clearpage
+\input{chapters/ch13.tex}
+\end{document}

@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-20 上下册大一期末难度调整
+
+- 用户指出现版偏难，授权调整上下册为大一期末复习；使用dispatching-parallel-agents分担独立章文件，full-output-enforcement保证1648题全量处理，主代理审查数学条件与难度。
+- 沿用已有LaTeX源文件、pylatexenc、SymPy与Python，无需再次OCR。另存为output/大一数学分析期末复习-上册/、下册/，不覆盖用户已生成的PDF；不编译、不下载TeX、不打开会自动编译的预览。
+
 ## 2026-10-20 工科数学分析上册逐题训练
 
 - 沿用PDF读取、brainstorming、full-output-enforcement、ponytail及dispatching-parallel-agents；按独立章节分工，统一核验原750题覆盖、新编号与数学条件。
