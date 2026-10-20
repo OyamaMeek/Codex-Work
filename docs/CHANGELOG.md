@@ -1563,6 +1563,6 @@
   - `output/大一数学分析期末复习-下册/`中的6个章文件、两个入口、题目清单、使用与验证说明、源码ZIP
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/20/14-50-49/对话.md`
-- **Git 提交**：待提交；当前分支main，推送目标origin/main。
+- **Git 提交**：`bd226ad feat: adapt analysis workbooks for freshman finals`，已普通推送origin/main；本条通过后续文档提交补记。
 
 ---
