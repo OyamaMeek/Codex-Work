@@ -1581,6 +1581,6 @@
   - `output/大一数学分析期末复习-上册/`中的七章题面、`main.tex`、`ipad.tex`、题目清单、说明及源码ZIP
   - `tests/check_freshman_upper_typography.py`、`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/20/15-46-49/对话.md`
-- **Git 提交**：待提交；提交完成后通过后续文档提交补记实际哈希与推送结果。
+- **Git 提交**：`c0669b5 fix: format upper workbook fractions and limits`，已普通推送origin/main，同步检查0/0。已通过GitHub连接器确认远端归属与push权限；本条通过后续文档提交补记。
 
 ---
