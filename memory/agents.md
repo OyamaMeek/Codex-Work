@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-20 工科数学分析上册逐题训练
+
+- 沿用PDF读取、brainstorming、full-output-enforcement、ponytail及dispatching-parallel-agents；按独立章节分工，统一核验原750题覆盖、新编号与数学条件。
+- 用户明确禁止本次编译；上次下册下载的Tectonic程序、安装包及资源缓存（约135MB）已删除，删除路径检查通过，不重新下载或调用内置编译。保留交付用.tex源文件及已有成品。
+- 上册PDF109页且无可用文字层，复用本地GLM-OCR、pylatexenc、pypdf、SymPy；原书不上传、不修改。中间材料放在忽略目录.agent/math-analysis/upper/与.agent/hdu-ocr/。
+
 ## 2026-10-20 工科数学分析逐题训练
 
 - 主代理采用PDF、brainstorming、ponytail、dispatching-parallel-agents与verification-before-completion；独立章节按技能要求并行编写，统一核对题号与数学条件。
