@@ -1657,6 +1657,6 @@
   - 本地 `awesome-design-md/`，不提交、不推送。
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`docs/CHANGELOG.md`
   - `context/2026/10/21/13-22-54/对话.md`
-- **Git 提交**：待提交。
+- **Git 提交**：`91082d5 docs: record Awesome DESIGN.md library installation`；通过后续文档提交补记。
 
 ---

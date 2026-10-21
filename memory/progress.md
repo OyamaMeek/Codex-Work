@@ -4,7 +4,7 @@
 
 - [x] 完整读取上游README；该仓库提供设计模板，无Codex技能。
 - [x] 本地 awesome-design-md/ 已包含84份非空DESIGN.md；Git完整性、干净状态与父仓库忽略检查通过，来源3b605329240ce735b510037cca322f1831fdd7f8。
-- [x] 保存开发记录与对话归档；协作文档待提交并普通推送，模板仅留本地。
+- [x] 开发记录与对话归档已提交为 `91082d5 docs: record Awesome DESIGN.md library installation`，模板仅留本地。
 
 ## 2026-10-21 Matt Pocock 技能安装
 
