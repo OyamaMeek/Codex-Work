@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-21 Matt Pocock 技能安装
+
+- Codex单代理，使用 skill-installer、using-superpowers 与 verification-before-completion；官方安装辅助脚本安装到 ~/.codex/skills，下载缓存位于忽略目录 .agent/mattpocock-install/。
+- 固定上游 5beb35b040e3de97e54fa9e386d7e42d15c295c2，安装 engineering/productivity 共27个技能，teach 使用 mattpocock-teach 目录保留原技能；未运行项目配置向导。
+
 ## 2026-10-20 上册分数与极限排版
 
 - Codex单代理；using-superpowers、ponytail及verification-before-completion。使用apply_patch逐项编辑题面，复用pylatexenc严格解析及标准库JSON/ZIP检查。

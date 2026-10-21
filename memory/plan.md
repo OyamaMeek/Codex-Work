@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-10-21 Matt Pocock 技能安装
+
+1. 固定上游提交，安装 README 列出的 engineering/productivity 共27个正式技能；使用 skill-installer，保留已有技能，同名 teach 使用独立安装目录。
+2. 检查安装文件与上游一致、已有 teach 未改变；记录结果与对话，仅提交并推送协作文档。
+
 ## 2026-10-20 远端仅保留协作文档
 
 1. 以用户截图为准，仅保留 `context/`、`docs/`、`memory/` 与 `AGENTS.md` 的跟踪，调整现行规则与本地忽略配置。

@@ -1630,3 +1630,18 @@
 - **Git 提交**：`a0ae59a chore: keep only collaboration documents in repository`，已普通推送至 `origin/main`；本条通过后续日志提交补记。
 
 ---
+
+## [2026-10-21 13:21] 安装 Matt Pocock 正式技能
+
+- **需求/问题描述**：
+  > 安装 https://github.com/mattpocock/skills。
+- **实际实现的功能与改动**：
+  - 使用 skill-installer 固定上游提交5beb35b040e3de97e54fa9e386d7e42d15c295c2，将 engineering/productivity 的27个正式技能安装到 ~/.codex/skills；teach 安装到 mattpocock-teach 目录，保留原 teach。
+  - [测试/验证]：安装命令退出0；27个技能的79个文件与上游逐字节一致、文件集合一致、SKILL.md非空，原 teach 的SKILL.md哈希不变。未安装开发中及杂项技能，未运行项目配置向导或实际技能工作流。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/21/13-21-11/对话.md`
+  - 本地技能及 `.agent/mattpocock-install/` 不提交、不推送。
+- **Git 提交**：待提交。
+
+---
