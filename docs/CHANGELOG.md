@@ -1691,6 +1691,6 @@
   - Notion「项目池」，本地备份及核验位于忽略目录 `.agent/notion-project-pool/`，不提交正文。
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/21/13-49-00/对话.md`
-- **Git 提交**：待提交；仅提交协作记录。
+- **Git 提交**：`acb4c37 docs: record Notion project pool organization`；通过后续文档提交补记，仅含协作记录。
 
 ---
