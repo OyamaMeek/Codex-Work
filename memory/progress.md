@@ -5,7 +5,7 @@
 - [x] 读取最新项目池与ReArk中文README；指定X推文原页403，公开FxTwitter接口成功返回同ID推文及长文正文。
 - [x] ReArk写入逆向工具与技能，照片修图12种玩法写入AI创作与提示词；每项首行原链接、用途与4步使用方法。
 - [x] 14:48:12回读断言退出0：8大类、29小类、73项目；原71项目全文、其他正文、26个unknown块和4张图片引用保持。
-- [ ] 日志及可见对话归档待提交推送；本地资料和验证仅留在忽略目录 .agent/notion-project-additions-2/。
+- [x] 日志及对话归档提交为 `2fbbfee docs: record ReArk and photo editing resources`，已普通推送origin/main；本地资料和验证仅留在忽略目录 .agent/notion-project-additions-2/。
 
 ## 2026-10-21 Notion 追加3个资源
 

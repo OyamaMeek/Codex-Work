@@ -1739,6 +1739,6 @@
   - Notion「项目池」；本地 `.agent/notion-project-additions-2/` 不提交、不推送。
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/21/14-48-15/对话.md`
-- **Git 提交**：待提交；仅提交协作记录。
+- **Git 提交**：`2fbbfee docs: record ReArk and photo editing resources`，已普通推送至 `origin/main`；通过后续文档提交补记。
 
 ---
