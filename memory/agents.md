@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-21 Notion 项目池分类
+
+- Codex单代理，通过Notion MCP分批更新项目池；使用using-superpowers、ponytail与verification-before-completion；原生应用CUA无截图完成版本历史恢复，ego-browser只读检查后关闭任务空间。
+- 本次只整理分类，不执行笔记命令，不读取外部收藏链接，不截图；Notion正文不写入远端协作文档。
+
 ## 2026-10-21 五个仓库安装
 
 - Codex单代理，沿用 skill-installer、using-superpowers 与 verification-before-completion；使用原生 codex plugin 安装11个 Anthropic 官方插件，市场来源为GitHub，不依赖工作区克隆。
