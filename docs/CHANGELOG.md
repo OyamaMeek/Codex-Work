@@ -1752,6 +1752,6 @@
   - [验证]：首次导航等待 load 超时，随后在同一页面读取到目标 URL 和标题“作业作答”；快照正文为空。finish({keep:["p1"]}) 成功。未填写或提交作业，未截图。
 - **涉及文件**：
   - `docs/CHANGELOG.md`、`context/2026/10/21/19-41-22/对话.md`；链接访问参数不写入远端记录。
-- **Git 提交**：待提交。
+- **Git 提交**：`b8c76e2 docs: record opening Chaoxing assignment in ego`；通过后续文档提交补记。
 
 ---
