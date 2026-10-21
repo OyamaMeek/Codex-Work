@@ -5,7 +5,7 @@
 - [x] 找到项目池，读取实际折叠结构与Notion规范，下载11份上游README。
 - [x] 核实使用入口与步骤，分批补充11项；首项REA写入后回读确认原内容不变，再补充其余条目。
 - [x] 最终回读及HTMLParser结构断言通过：8大类、29小类、68项目；新增11项链接首行、步骤与目标内容一致，原57个条目全文、26个嵌入块和4张图片引用保留。
-- [ ] 协作记录与对话归档待提交推送；本地备份、上游README、条目及验证脚本位于忽略目录 .agent/notion-project-additions/。
+- [x] 协作记录与对话归档提交为 `edc6a47 docs: record eleven Notion project additions`，已普通推送至origin/main；本地备份、上游README、条目及验证脚本位于忽略目录 .agent/notion-project-additions/。
 - 页面读取标记truncated=true，对应26个不支持内部读取的原生嵌入块；本次仅保留其引用，不修改其内容。
 
 ## 2026-10-21 Notion 项目池分类

@@ -1707,6 +1707,6 @@
   - Notion「项目池」；本地材料 `.agent/notion-project-additions/` 不提交、不推送。
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/21/14-34-31/对话.md`
-- **Git 提交**：待提交；仅提交协作记录。
+- **Git 提交**：`edc6a47 docs: record eleven Notion project additions`，已普通推送至 `origin/main`；通过后续文档提交补记，仅含协作记录。
 
 ---
