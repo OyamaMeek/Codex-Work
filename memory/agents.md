@@ -1,5 +1,11 @@
 # 当前协作环境
 
+## 2026-10-21 五个仓库安装
+
+- Codex单代理，沿用 skill-installer、using-superpowers 与 verification-before-completion；使用原生 codex plugin 安装11个 Anthropic 官方插件，市场来源为GitHub，不依赖工作区克隆。
+- GSAP的8个技能、CLI-Anything及CLI-Hub元技能、Graphify技能位于 ~/.codex/skills/；Graphify 0.9.93与CLI-Hub 0.4.1分别安装在 ~/.local/share/graphify/venv 与 ~/.local/share/cli-anything-hub/venv，命令链接位于 ~/.local/bin/。
+- 五个源码仓库和Galaxy的3802个HTML组件保留本地；验证材料位于忽略目录 .agent/five-repo-install/。未新增账号连接、未运行模型任务或视觉检查。
+
 ## 2026-10-21 Awesome DESIGN.md 模板库
 
 - Codex单代理，沿用 using-superpowers 与 verification-before-completion；完整读取上游README后使用 Git浅克隆，将84份设计模板保存至本地 awesome-design-md/。

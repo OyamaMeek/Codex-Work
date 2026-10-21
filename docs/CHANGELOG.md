@@ -1660,3 +1660,20 @@
 - **Git 提交**：`91082d5 docs: record Awesome DESIGN.md library installation`；通过后续文档提交补记。
 
 ---
+
+## [2026-10-21 13:31] 安装五个工作与设计工具仓库
+
+- **需求/问题描述**：
+  > 安装 anthropics/knowledge-work-plugins、uiverse-io/galaxy、greensock/gsap-skills、Graphify-Labs/graphify 和 HKUDS/CLI-Anything。
+- **实际实现的功能与改动**：
+  - 安装11个Anthropic官方插件、8个GSAP技能、Graphify 0.9.93及技能、CLI-Anything及CLI-Hub元技能和CLI-Hub 0.4.1；Galaxy作为3802份HTML组件资源保留本地。
+  - Graphify和CLI-Hub采用独立用户Python环境及命令入口，插件市场使用GitHub来源；不覆盖已有技能、不新增账号连接。
+  - [测试/验证]：五仓库Git完整性、忽略规则、插件installed/enabled及233文件核对通过；技能字节比较、CLI-Anything官方安装器测试和两个工具pip check通过。Graphify真实解析14文件得到87节点/90关系、查询成功；CLI-Hub真实目录103项。未运行模型任务、各应用后端或视觉检查。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/installations/2026-10-21-five-repositories.md`、`docs/CHANGELOG.md`
+  - `context/2026/10/21/13-31-36/对话.md`
+  - 五个源码目录、用户安装环境和 `.agent/five-repo-install/` 仅保留本地。
+- **Git 提交**：待提交。
+
+---

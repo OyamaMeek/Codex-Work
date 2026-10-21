@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-10-21 五个仓库安装
+
+- 五个克隆的实际提交、Git完整性和本地忽略规则通过；已有技能和配置保持完整。
+- 技能目录、元数据及配套资源存在；运行Graphify与CLI-Anything适用的官方检查或CLI帮助，不把源代码下载等同于工具可用。
+- 不运行付费模型任务、不连接新的外部账号、不执行UI视觉检查；运行条件不足时记录具体限制。
+- 实际结果：五个Git仓库fsck通过，父仓库忽略检查通过；11个插件均installed/enabled，233个插件文件与来源一致；GSAP8文件、CLI-Hub元技能及Graphify8份参考文件字节比较通过。
+- CLI-Anything官方 test_install.sh通过，含拒绝覆盖、完整资源同步及脚本编译；Graphify与CLI-Hub各自pip check通过。Graphify以GRAPHIFY_BACKEND=none解析GSAP官方示例14个代码文件，生成87节点/90关系，explain查询成功；CLI-Hub真实list --json取得103项。
+- Graphify首次依赖下载超时，延长下载等待后安装成功；验证不含外部账号工作流、各应用后端、文档语义分析和视觉检查。所有验证材料仅在 .agent/five-repo-install/。
+
 ## 2026-10-21 Awesome DESIGN.md 模板库
 
 - Git浅克隆退出0，提交为3b605329240ce735b510037cca322f1831fdd7f8；Git状态干净、fsck退出0。
