@@ -5,7 +5,7 @@
 - [x] 检查五个仓库安装入口，按各自资源类型安装；保留已有技能，Anthropic仅安装README明确列出的11个官方插件。
 - [x] 原生插件状态与缓存文件核验、8个GSAP技能字节比较、Galaxy 3802个非空HTML、CLI-Anything官方安装器检查通过。
 - [x] Graphify 0.9.93与CLI-Hub 0.4.1隔离安装、依赖检查通过；Graphify解析14个真实代码文件生成87节点/90关系并查询成功，CLI-Hub读取103项目录。
-- [x] 保存安装说明、开发记录与对话；协作文档待提交及普通推送。未执行账号授权、模型语义分析或各应用后端测试。
+- [x] 安装说明、开发记录与对话已提交为 `2725ff9 docs: record five repository installations and verification`。未执行账号授权、模型语义分析或各应用后端测试。
 
 ## 2026-10-21 Awesome DESIGN.md 模板库
 

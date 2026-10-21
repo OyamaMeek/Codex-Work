@@ -1674,6 +1674,6 @@
   - `docs/installations/2026-10-21-five-repositories.md`、`docs/CHANGELOG.md`
   - `context/2026/10/21/13-31-36/对话.md`
   - 五个源码目录、用户安装环境和 `.agent/five-repo-install/` 仅保留本地。
-- **Git 提交**：待提交。
+- **Git 提交**：`2725ff9 docs: record five repository installations and verification`；通过后续文档提交补记。
 
 ---
