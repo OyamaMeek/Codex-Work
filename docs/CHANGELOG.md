@@ -1642,6 +1642,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/21/13-21-11/对话.md`
   - 本地技能及 `.agent/mattpocock-install/` 不提交、不推送。
-- **Git 提交**：待提交。
+- **Git 提交**：`39b7a2b docs: record Matt Pocock skills installation`；通过后续文档提交补记。
 
 ---
