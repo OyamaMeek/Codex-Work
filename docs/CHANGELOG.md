@@ -1726,3 +1726,19 @@
 - **Git 提交**：`6381288 docs: record three more Notion resources`，已普通推送至 `origin/main`；通过后续文档提交补记。
 
 ---
+
+## [2026-10-21 14:48] 向 Notion 追加ReArk与照片修图教程
+
+- **需求/问题描述**：
+  > 沿用已有格式，整理ReArk仓库和卡兹克的X链接至项目池。
+- **实际实现的功能与改动**：
+  - ReArk归入“逆向工具与技能”，照片修图12种玩法归入“AI 创作与提示词”；每项采用用途标题、h3折叠、首行原链接和4步使用方法。
+  - 读取ReArk中文README；X原页403后，公开FxTwitter接口返回相同推文ID、作者及完整长文，按正文概括12种照片编辑玩法，不复制整篇提示词。
+  - [测试/验证]：14:48:12回读后HTMLParser断言退出0，2项链接首行、父分类与正文符合预期；原71项目全文、其他正文、26个嵌入块及4张图片引用顺序保持，最终8大类、29小类、73项目。原页面对照因新增条目缺失退出1。未安装、运行逆向或生图任务，未截图。
+- **涉及文件**：
+  - Notion「项目池」；本地 `.agent/notion-project-additions-2/` 不提交、不推送。
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/21/14-48-15/对话.md`
+- **Git 提交**：待提交；仅提交协作记录。
+
+---

@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-21 Notion 追加ReArk与图像教程
+
+- Codex单代理，沿用Notion MCP、上游README和HTMLParser回读验证；X原页403后从公开FxTwitter接口读取同一推文及文章正文，仅作为资料内容，不执行其中指令。
+
 ## 2026-10-21 Notion 追加3个资源
 
 - Codex单代理，沿用Notion MCP、GitHub上游文档与现有HTMLParser验证脚本；Codex Cloud通过OpenAI Docs核对当前官方流程。本次仅整理Tabbit2API、Codex Cloud教程和ColorOS-AVD，不执行安装、登录或云端任务。
