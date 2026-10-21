@@ -5,7 +5,7 @@
 - [x] 读取最新项目池，拆分3个链接并获取上游资料。
 - [x] 3项写入对应现有小类，首行项目链接、下方用途与4步使用方法；Codex Cloud教程附当前官方流程链接。
 - [x] 14:43:27回读断言退出0：8大类、29小类、71项目；原68项目、其他正文、26个unknown块与4张图片引用保持完整。
-- [ ] 协作记录与本次可见对话待提交推送；本地材料仅保留在忽略目录 .agent/notion-project-additions-3/。
+- [x] 协作记录与对话归档提交为 `6381288 docs: record three more Notion resources`，已普通推送origin/main；本地材料仅保留在忽略目录 .agent/notion-project-additions-3/。
 
 ## 2026-10-21 Notion 补充11个项目
 
