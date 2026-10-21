@@ -1765,6 +1765,6 @@
   - [验证]：结果页显示100分、提交时间10-21 19:46，允许重做1次且已重做0次；保留结果页。未截图、未重做。
 - **涉及文件**：
   - `docs/CHANGELOG.md`、`context/2026/10/21/19-46-07/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`798d934 docs: record completed assembly assignment and score`；通过后续文档提交补记。
 
 ---
