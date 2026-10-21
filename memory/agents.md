@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-21 Notion 补充11个项目
+
+- Codex单代理，通过Notion MCP读取与定点更新「项目池」，通过GitHub上游README核对用途和入门步骤；使用using-superpowers、ponytail与verification-before-completion。
+- 沿用页面实际XML折叠块格式；新增条目首行放原始项目链接，保留既有正文、26个原生嵌入块及4张图片引用。不执行收藏项目的安装或账号操作。
+
 ## 2026-10-21 Notion 项目池分类
 
 - Codex单代理，通过Notion MCP分批更新项目池；使用using-superpowers、ponytail与verification-before-completion；原生应用CUA无截图完成版本历史恢复，ego-browser只读检查后关闭任务空间。
