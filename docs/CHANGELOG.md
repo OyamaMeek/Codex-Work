@@ -1710,3 +1710,19 @@
 - **Git 提交**：`edc6a47 docs: record eleven Notion project additions`，已普通推送至 `origin/main`；通过后续文档提交补记，仅含协作记录。
 
 ---
+
+## [2026-10-21 14:43] 向 Notion 项目池追加3个资源
+
+- **需求/问题描述**：
+  > 沿用上一轮格式，将Tabbit2API、Codex Cloud教程和ColorOS-AVD继续整理到项目池。
+- **实际实现的功能与改动**：
+  - 3项分别归入AI账号与接口、Agent开发学习、跨系统运行与模拟器；使用用途标题、h3折叠、首行原链接和4步使用方法。
+  - 读取来源全文并核对Tabbit管理页；Codex Cloud教程补充当前OpenAI官方环境创建、发布和任务审查流程及链接。
+  - [测试/验证]：14:43:27回读后HTMLParser断言退出0；8大类、29小类、71项目。新增3项各一次，链接首行和新正文一致；原68项目全文、其他正文、26个嵌入块及4张图片引用顺序保持。原页面对照因新增条目缺失退出1。未安装、启动项目或执行云端任务，未截图。
+- **涉及文件**：
+  - Notion「项目池」；本地 `.agent/notion-project-additions-3/` 不提交、不推送。
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/21/14-43-30/对话.md`
+- **Git 提交**：待提交；仅提交协作记录。
+
+---

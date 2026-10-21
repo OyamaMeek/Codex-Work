@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-21 Notion 追加3个资源
+
+- Codex单代理，沿用Notion MCP、GitHub上游文档与现有HTMLParser验证脚本；Codex Cloud通过OpenAI Docs核对当前官方流程。本次仅整理Tabbit2API、Codex Cloud教程和ColorOS-AVD，不执行安装、登录或云端任务。
+
 ## 2026-10-21 Notion 补充11个项目
 
 - Codex单代理，通过Notion MCP读取与定点更新「项目池」，通过GitHub上游README核对用途和入门步骤；使用using-superpowers、ponytail与verification-before-completion。
