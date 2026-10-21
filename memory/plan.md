@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-10-21 Awesome DESIGN.md 模板库
+
+1. 读取上游完整说明，确认资源类型；完整下载模板库至本地 awesome-design-md/，保留上游Git来源供后续更新。
+2. 核验模板数量、非空内容、Git完整性及本地忽略规则；记录结果，仅提交和推送协作文档。
+
 ## 2026-10-21 Matt Pocock 技能安装
 
 1. 固定上游提交，安装 README 列出的 engineering/productivity 共27个正式技能；使用 skill-installer，保留已有技能，同名 teach 使用独立安装目录。

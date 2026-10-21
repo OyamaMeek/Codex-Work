@@ -1645,3 +1645,18 @@
 - **Git 提交**：`39b7a2b docs: record Matt Pocock skills installation`；通过后续文档提交补记。
 
 ---
+
+## [2026-10-21 13:22] 安装 Awesome DESIGN.md 模板库
+
+- **需求/问题描述**：
+  > 安装 https://github.com/voltagent/awesome-design-md。
+- **实际实现的功能与改动**：
+  - 完整读取README，确认仓库为设计模板集合，无SKILL.md；浅克隆至本地 awesome-design-md/，保留上游来源，不更改项目默认设计。
+  - [测试/验证]：提交3b605329240ce735b510037cca322f1831fdd7f8；84份DESIGN.md均非空，README和LICENSE存在，git fsck退出0、克隆目录状态干净，父仓库忽略检查通过。未运行HTML预览或视觉检查。
+- **涉及文件**：
+  - 本地 `awesome-design-md/`，不提交、不推送。
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`docs/CHANGELOG.md`
+  - `context/2026/10/21/13-22-54/对话.md`
+- **Git 提交**：待提交。
+
+---

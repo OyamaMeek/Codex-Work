@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-21 Awesome DESIGN.md 模板库
+
+- Codex单代理，沿用 using-superpowers 与 verification-before-completion；完整读取上游README后使用 Git浅克隆，将84份设计模板保存至本地 awesome-design-md/。
+- 来源提交3b605329240ce735b510037cca322f1831fdd7f8；该仓库没有SKILL.md，不注册技能，不选择项目默认设计。
+
 ## 2026-10-21 Matt Pocock 技能安装
 
 - Codex单代理，使用 skill-installer、using-superpowers 与 verification-before-completion；官方安装辅助脚本安装到 ~/.codex/skills，下载缓存位于忽略目录 .agent/mattpocock-install/。
