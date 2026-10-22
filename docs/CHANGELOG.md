@@ -1799,3 +1799,21 @@
 - **Git 提交**：`f521cef docs: record ego website test and submission result`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-22 18:35] 补齐课程随堂题并全量复核
+
+- **需求/问题描述**：
+  > 用户说明使用测试账号，要求在ego中逐题补完“已答数量小于总题数”的课程。
+- **实际实现的功能与改动**：
+  - 复用TaskSpace 0、课程详情p2，通过正常播放、播放器2倍速菜单、选择与提交控件逐题补答；登录超时后交还用户，收到继续指令再恢复。
+  - [测试/验证]：最终逐门回读55门课程，107题、已答107，未答缺口为空；结果保存在本地忽略目录`.agent/ego-course-audit/final-audit.json`。使用实际课程标题与计数校验导航结果。
+  - 7门仍有8条错题记录：JCSD13=1、JCYJ18=2、JCSB01=1、JCFW16=1、JCJC33=1、JCJC34=1、JCJD36=1；未清除或声称全部答对。
+  - 题库存在急救内容复核需求：误食强碱后自行服酸中和与CHOP中毒中心建议不符；来源：https://www.chop.edu/centers-programs/poison-control-center/irritating-chemicals-caustics。
+  - task.finish成功，保留p2结果页。未修改网站代码，未执行全站、后台接口、其他浏览器或移动端测试；结果仅覆盖当前账号随堂题补答与UI计数。
+- **涉及文件**：
+  - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
+  - `docs/CHANGELOG.md`、`context/2026/10/22/18-35-32/对话.md`
+  - `.agent/ego-course-audit/`仅本地保留，未暂存或推送。
+- **Git 提交**：待提交。
+
+---
