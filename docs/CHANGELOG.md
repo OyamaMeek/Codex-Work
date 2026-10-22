@@ -1796,6 +1796,6 @@
   - `memory/progress.md`、`memory/gotchas.md`
   - `docs/CHANGELOG.md`、`context/2026/10/22/16-19-32/对话.md`
   - `.agent/visual/ego-new-q41.png`至`ego-new-q45.png`及`ego-site-test.md`，仅本地保留。
-- **Git 提交**：待提交。
+- **Git 提交**：`f521cef docs: record ego website test and submission result`；本条通过后续文档提交补记。
 
 ---
