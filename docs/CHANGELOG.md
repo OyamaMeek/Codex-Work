@@ -26,7 +26,7 @@
   - [验证]：Chrome 课程目录的 54 条课程状态均显示“学完”。
 - **涉及文件**：
   - `docs/CHANGELOG.md`、`context/2026/10/22/15-06-19/对话.md`
-- **Git 提交**：`e2193e6 docs: record completed lab safety courses`；待补记提交。
+- **Git 提交**：`e2193e6 docs: record completed lab safety courses`、`59995aa docs: record course completion commit reference`；普通推送因连接 GitHub 时 TLS 错误及连接重置失败，暂未推送。
 
 ---
 
