@@ -13,7 +13,7 @@
 - 浏览器菜单已切到2倍速，时间进度条键盘操作未有效定位漏题，未继续尝试。基线.agent/ego-course-audit/baseline.json、旧completion.json；最新回读流水verified.jsonl（部分早期完成状态只在本记录与completion.json，最终须全量回读）。
 - [x] 按基线补齐缺口并最终逐门回读；navigation.mjs通过原生滚轮和点击选择课程，校验右侧实际课程标题与计数。点击已选课程会取消树选中样式，因此不能以该样式作为唯一标题验证。final-audit.json保存55门最终值，汇总断言通过。
 - [x] task.finish({keep:["p2"]})成功，课程结果页保留给用户。未修改网站代码、未检查其他端或后台接口，未清除错题记录。
-- [ ] 保存结果与对话，提交推送协作文档。
+- [x] 保存结果与对话，主记录已提交`8a68e16 docs: record completed course quizzes and full audit`；仅允许范围内协作文档，随本次补记一起普通推送。
 
 ## 2026-10-22 ego 网站完整答题流程测试
 

@@ -1814,6 +1814,6 @@
   - `memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`
   - `docs/CHANGELOG.md`、`context/2026/10/22/18-35-32/对话.md`
   - `.agent/ego-course-audit/`仅本地保留，未暂存或推送。
-- **Git 提交**：待提交。
+- **Git 提交**：`8a68e16 docs: record completed course quizzes and full audit`；本条通过后续文档提交补记。
 
 ---
