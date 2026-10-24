@@ -1853,3 +1853,17 @@
 - **Git 提交**：`69f10a7 docs: record C language notes and verified examples`，已普通推送origin/main；本条通过后续文档提交补记，仅提交本次协作文档，保留其他任务原有未提交修改。
 
 ---
+
+## [2026-10-24 18:31] 核对 Claude 规则列表覆盖
+
+- **需求/问题描述**：
+  > 将用户提供的21项 Claude 域名、第三方服务、IP 网段和 ASN 规则加入 Claude.list。
+- **实际实现的功能与改动**：
+  - 当前 Claude.list 已包含全部21项，无需重复追加；保留原有 claude.dev 与 claudemcpcontent.com，共23项，文件内容未修改。
+  - 沿用现有 RULE-SET 格式，不包含链接包装、[Rule] 节标题或 CLAUDE0409 策略字段，IP 与 ASN 保留 no-resolve。
+  - [测试/验证]：Python 标准库逐项覆盖及唯一性断言通过：请求21项、命中21项、总计23项、重复0项；未导入客户端或测试实时流量。
+- **涉及文件**：
+  - 核对本地 Claude.list；仅 docs/CHANGELOG.md 与 context/2026/10/24/18-31-28/对话.md 纳入本次提交。
+- **Git 提交**：待提交；保留其他任务原有未提交修改。
+
+---
