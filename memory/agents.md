@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-24 C语言课堂笔记
+
+- Codex单代理；使用using-superpowers、ponytail与verification-before-completion。使用macOS Vision在本地提取课堂照片文字，Clang编译运行案例；不上传原始材料。
+- 成品与检查材料位于被忽略的261024/与.agent/c-notes/；只提交本次协作记录，保留其他任务已有修改。
+
 ## 2026-10-22 补齐课程随堂题
 
 - Codex单代理，ego-browser沿用TaskSpace 0：p1课程列表，p2为用户当前课程详情。通过正常控件与渲染DOM读取课程计数、播放状态及题目，不读取隐藏数据或直接调用课程接口。
