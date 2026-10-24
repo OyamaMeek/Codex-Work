@@ -6,7 +6,7 @@
 - [x] 本地Vision识别19张图片，回看4张含模糊手写或缩略内容的原材料；17张C语言资料归入正文，2张非知识材料不编入。
 - [x] 新建261024/C语言程序设计笔记.md，47个知识点均配小案例；44个独立C程序、3个手算案例，保留原文件。
 - [x] Clang17以C17和严格警告、AddressSanitizer/UndefinedBehaviorSanitizer编译44个程序，80次运行检查通过；原始20个文件SHA-256核对通过。检查报告仅保存在.agent/c-notes/verification.json。
-- [ ] 本次协作记录与对话待提交推送；只暂存本次新增记录，保留Mobile MCP等其他任务已有修改。未验证Windows、旧版Dev-C++或排版截图。
+- [x] 本次协作记录与对话已提交69f10a7并普通推送origin/main；只提交本次新增记录，保留Mobile MCP等其他任务已有修改。未验证Windows、旧版Dev-C++或排版截图。
 
 ## 2026-10-22 补齐课程随堂题
 
