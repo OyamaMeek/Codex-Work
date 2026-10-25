@@ -1920,6 +1920,6 @@
   - [测试/验证]：本机OpenSSH通过实际令牌登录instabox-261025，命令退出0；id验证普通用户，sudo -n id返回uid=0(root)。独立会话读取root密码状态为P，确认用户已设置本地密码；未读取密码内容，未改写SSH安全设置。
   - [验证范围]：已验证系统SSH与root提权，未在Termius客户端实际连接，未截图；令牌到期后需要续建，机器暂停或停止会中断连接。
 - **涉及文件**：本次memory/progress.md、memory/gotchas.md、docs/CHANGELOG.md与context/对话归档；主机公钥仅保存在被忽略的.agent/vps-keepalive/ssh-known-hosts，未将令牌或密码写入文件与Git。
-- **Git 提交**：待提交；只提交本次协作文档，保留其他任务原有修改。
+- **Git 提交**：`0b0f548 docs: record verified SSH gateway access and root elevation`；本条通过后续文档提交补记，只提交本次协作文档，保留其他任务原有修改。
 
 ---
