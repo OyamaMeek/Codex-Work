@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-25 数学分析上册PDF大纲
+
+- Codex单代理；使用PDF、ponytail、using-superpowers与verification-before-completion。bundled Python/pypdf处理书签，macOS PDFKit/Vision仅在内存中提取扫描目录文字，不截图或进行视觉审阅。
+- 原书保留，另存带大纲PDF；脚本和验证结果位于已忽略的.agent/pdf-outline/，成品仅本地保留，仅提交本次协作文档。
+
 ## 2026-10-25 VPS 每15分钟保活
 
 - Codex单代理；Chrome通过cua_repl操作，遵循ego-browser、ponytail与verification-before-completion。复用VPS的Python3和systemd，不创建API密钥。
