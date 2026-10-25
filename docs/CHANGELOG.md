@@ -11,7 +11,7 @@
 - **涉及文件**：
   - `docs/crab-bike-animation.html`
   - `docs/CHANGELOG.md`
-- **Git 提交**：待提交
+- **Git 提交**：`be4d797 feat: add SVG crab bicycle animation page`
 
 ---
 
