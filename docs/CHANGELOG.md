@@ -1892,6 +1892,6 @@
   - 官方SSH文档明确使用平台网关与证书或SSH token；出口IPv4不等同于独立公网SSH入口。对机器IPv6执行ssh-keyscan，退出1且未返回主机密钥，未证明公网直连可用。
   - [交接]：浏览器操作规则要求用户亲自输入与保存新密码；root密码设置与公网root登录尚未完成，后续待用户操作和连接验证。
 - **涉及文件**：VPS /data/home/root-login-inspection.txt为只读命令输出；本次memory/progress.md、docs/CHANGELOG.md与context/对话归档。
-- **Git 提交**：待提交；归档不包含密码、密钥、token或IP地址。
+- **Git 提交**：`54f55da docs: record VPS root login checks and required handoff`；本条通过后续文档提交补记，归档不包含密码、密钥、token或IP地址。
 
 ---
