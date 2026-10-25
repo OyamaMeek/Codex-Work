@@ -1880,6 +1880,6 @@
 - **涉及文件**：
   - VPS：/data/home/vps-keepalive.py、/data/home/vps-keepalive.service、/etc/systemd/system/vps-keepalive.service、/data/home/keepalive-inspection.txt。
   - 本地.agent/vps-keepalive/脚本、配置和测试仅本地保留；本次memory/四份记录、docs/CHANGELOG.md与context/对话归档纳入提交。
-- **Git 提交**：待提交；仅提交本次允许范围内的协作文档，保留其他任务原有修改。
+- **Git 提交**：`5842205 docs: record VPS keepalive deployment and verification`；本条通过后续文档提交补记，仅提交本次允许范围内的协作文档，保留其他任务原有修改。
 
 ---
