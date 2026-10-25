@@ -1883,3 +1883,15 @@
 - **Git 提交**：`5842205 docs: record VPS keepalive deployment and verification`；本条通过后续文档提交补记，仅提交本次允许范围内的协作文档，保留其他任务原有修改。
 
 ---
+
+## [2026-10-25 23:07] 核对VPS的root密码登录条件
+
+- **需求/问题描述**：用户要求设置root密码登录，并告知IP与root密码。
+- **实际实现的功能与改动**：
+  - 通过Chrome终端只读检查网卡、当前IPv4出口、root账户状态、22端口监听与sshd实际配置。root密码锁定，SSH禁止root与密码认证；未更改认证配置或创建登录凭据。
+  - 官方SSH文档明确使用平台网关与证书或SSH token；出口IPv4不等同于独立公网SSH入口。对机器IPv6执行ssh-keyscan，退出1且未返回主机密钥，未证明公网直连可用。
+  - [交接]：浏览器操作规则要求用户亲自输入与保存新密码；root密码设置与公网root登录尚未完成，后续待用户操作和连接验证。
+- **涉及文件**：VPS /data/home/root-login-inspection.txt为只读命令输出；本次memory/progress.md、docs/CHANGELOG.md与context/对话归档。
+- **Git 提交**：待提交；归档不包含密码、密钥、token或IP地址。
+
+---
