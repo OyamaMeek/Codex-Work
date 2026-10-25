@@ -1,20 +1,5 @@
 # 开发记录
 
-## [2026-10-25 14:06] 创建 SVG 螃蟹骑行动画 HTML
-
-- **需求/问题描述**：
-  > 创建一个 HTML，内容是 SVG 绘制一个螃蟹悠闲地骑自行车的 2D 动画。
-- **实际实现的功能与改动**：
-  - 新增单文件页面 `docs/crab-bike-animation.html`，使用 SVG 绘制天空、云朵、道路、自行车与螃蟹。
-  - 通过 CSS 动画实现车轮旋转、云朵漂移、路面标线移动、车身轻微起伏和螃蟹摆动，形成“悠闲骑行”效果。
-  - [测试/验证]：已检查 HTML 结构与关键动画节点存在；仓库未提供该页面对应的自动化构建或测试脚本。
-- **涉及文件**：
-  - `docs/crab-bike-animation.html`
-  - `docs/CHANGELOG.md`
-- **Git 提交**：`be4d797 feat: add SVG crab bicycle animation page`
-
----
-
 ## [2026-10-16 16:13] 创建 Microsoft 和 PayPal 独立规则列表
 
 - **需求/问题描述**：
