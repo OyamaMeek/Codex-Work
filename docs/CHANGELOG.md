@@ -1867,3 +1867,19 @@
 - **Git 提交**：`c33f77e docs: verify existing Claude rule coverage`；本条通过后续文档提交补记，保留其他任务原有未提交修改。
 
 ---
+
+## [2026-10-25 17:15] 配置VPS每15分钟保活
+
+- **需求/问题描述**：
+  > 通过Chrome控制当前VPS，设置每15分钟保持活跃的脚本；用户明确同意公开仅返回ok的健康检查端口。
+- **实际实现的功能与改动**：
+  - VPS的/data/home/vps-keepalive.py使用Python标准库，只为/healthz返回固定ok，其他路径404；每900秒访问自身公网健康检查地址，失败明确写入journal。
+  - 18765端口已公开；vps-keepalive.service设为systemd开机自启与异常自动重启，以普通用户运行，配置只读系统与home以及内存、线程数量限制。未创建API密钥。
+  - [测试/验证]：本地真实HTTP测试先失败后通过；VPS语法与systemd配置检查通过，安装退出0，服务active/running与enabled、NRestarts=0；首次心跳成功并记录interval=900s。VPS公网curl返回ok、退出0，本机Chrome独立访问也返回ok。远端脚本与本地版本只差结尾空行，哈希已核对。
+  - [验证范围]：未等待第二轮15分钟心跳、30分钟闲置或8小时暂停；免费方案页面显示30分钟空闲或8小时运行暂停，内部脚本在机器暂停后不能主动唤醒，不保证永久在线。未截图。
+- **涉及文件**：
+  - VPS：/data/home/vps-keepalive.py、/data/home/vps-keepalive.service、/etc/systemd/system/vps-keepalive.service、/data/home/keepalive-inspection.txt。
+  - 本地.agent/vps-keepalive/脚本、配置和测试仅本地保留；本次memory/四份记录、docs/CHANGELOG.md与context/对话归档纳入提交。
+- **Git 提交**：待提交；仅提交本次允许范围内的协作文档，保留其他任务原有修改。
+
+---

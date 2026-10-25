@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-25 VPS 每15分钟保活
+
+- Codex单代理；Chrome通过cua_repl操作，遵循ego-browser、ponytail与verification-before-completion。复用VPS的Python3和systemd，不创建API密钥。
+- 用户已授权公开只返回ok的健康检查端口；不公开文件或终端，不截图。源码与检查材料仅本地保留在.agent/vps-keepalive/。
+
 ## 2026-10-24 C语言课堂笔记
 
 - Codex单代理；使用using-superpowers、ponytail与verification-before-completion。使用macOS Vision在本地提取课堂照片文字，Clang编译运行案例；不上传原始材料。

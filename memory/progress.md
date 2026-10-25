@@ -1,5 +1,15 @@
 # 当前任务进度
 
+## 2026-10-25 VPS 每15分钟保活
+
+- [x] Chrome核对机器261025；免费方案页面显示空闲30分钟或运行8小时暂停，没有已公开端口；用户已授权公开健康检查端口。
+- [x] VPS有Python3、curl、systemd、instabox-port与免密码sudo；未发现既有同名保活服务。
+- [x] 本地真实HTTP测试通过，覆盖健康响应、文件路径404与首次心跳；VPS脚本语法检查、systemd-analyze verify通过。
+- [x] VPS部署/data/home/vps-keepalive.py和vps-keepalive.service；服务active/running、enabled、NRestarts=0；首次心跳2026-10-25 17:12:36（Asia/Taipei）成功，日志interval=900s。
+- [x] 已授权的18765端口公开；VPS curl退出0，本机Chrome直接访问/healthz显示ok。远端脚本哈希与本地版本仅多一个结尾空行的哈希一致。
+- 未等待15分钟后第二次心跳或30分钟闲置，也未测试8小时暂停；机器暂停后内部脚本无法主动唤醒。未截图，未创建账号API密钥。
+- [ ] 保存日志与对话，仅提交推送允许范围内的本次协作文档。
+
 ## 2026-10-24 C语言课堂笔记
 
 - [x] 确认输入为261024内19张图片与printf scanf notes.md，原文件保持。
