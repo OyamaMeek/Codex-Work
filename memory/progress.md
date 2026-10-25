@@ -1,11 +1,19 @@
 # 当前任务进度
 
+## 2026-10-25 SSH连接故障跟进
+
+- [x] 用户Termius截图显示连接出口IPv4的22端口后停在Starting SSH session；尚无密码认证错误，不将其判定为密码错误。
+- [x] 用户明确允许创建SSH连接令牌；Chrome生成Termius-261025、7天有效期的机器专用令牌，实际网关ssh.instabox.sh:2222，token作为用户名，无需密码或密钥。
+- [x] 本机OpenSSH使用该令牌登录实际机器instabox-261025，命令退出0；id为user、sudo -n id为uid=0(root)，验证远程登录及root提权成功。
+- [x] 独立SSH会话读取passwd -S root显示P，确认用户已亲自完成root本地密码设置；未改写密码，未启用root远程密码认证，不向原passwd交接终端输入命令。
+- [x] 提供Termius对应主机、端口、用户名与密码留空的配置。未在Termius客户端实际连接；所有token、口令与包含凭据的命令不写入协作文档或Git。
+
 ## 2026-10-25 root密码与登录地址核对
 
-- [x] Chrome当前VPS读取网卡、出口地址、root密码状态与sshd有效配置；root处于L锁定状态，permitrootlogin和passwordauthentication均为no，22端口监听IPv4与IPv6。
+- [x] Chrome读取网卡、出口地址与sshd有效配置；permitrootlogin和passwordauthentication均为no，22端口监听IPv4与IPv6。
 - [x] 官方SSH文档确认平台通过网关和用户证书或SSH token连接；当前出口IPv4不能据此认定为机器的公网SSH入口。指定IPv6的本机ssh-keyscan检查退出1，无返回主机密钥，未证明公网直连可用。
-- [ ] 用户亲自完成root新密码输入与保存；浏览器密码变更规则要求交接。未修改SSH安全设置、未创建SSH token，不记录密码到本地归档或远端。
-- [ ] 有效公网SSH入口及root远程登录仍待验证；不把设置本地root密码当作公网登录完成。
+- [x] 用户亲自设置密码后，后续独立SSH检查确认root密码状态P；密码内容未知且不写入归档。未修改SSH安全设置。
+- [x] 后续经明确授权创建机器SSH token并验证网关远程登录与sudo root提权；root直接密码认证保持关闭。
 
 ## 2026-10-25 VPS 每15分钟保活
 
