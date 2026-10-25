@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>螃蟹悠闲骑自行车</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(#8ed0ff, #d6f3ff 60%, #d7f0bf);
+      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    }
+    .stage {
+      width: min(92vw, 980px);
+      aspect-ratio: 16 / 9;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+      background: #bfe8ff;
+    }
+    .scene {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .wheel {
+      animation: spin 1.3s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .bike {
+      animation: float 2.8s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .crab {
+      animation: sway 2.8s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .leg {
+      animation: pedal 1.3s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: top center;
+    }
+    .leg.delay {
+      animation-delay: .65s;
+    }
+    .cloud {
+      animation: drift 12s linear infinite;
+    }
+    .cloud.c2 {
+      animation-duration: 18s;
+      animation-delay: -5s;
+    }
+    .cloud.c3 {
+      animation-duration: 16s;
+      animation-delay: -10s;
+    }
+    .track {
+      animation: moveTrack 1.3s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pedal {
+      0%, 100% { transform: rotate(22deg); }
+      50% { transform: rotate(-24deg); }
+    }
+    @keyframes sway {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to { transform: translateX(-1240px); }
+    }
+    @keyframes moveTrack {
+      from { transform: translateX(0); }
+      to { transform: translateX(-90px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <svg class="scene" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" aria-label="螃蟹悠闲骑自行车动画">
+      <defs>
+        <linearGradient id="roadShade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#6f765e"/>
+          <stop offset="1" stop-color="#4e5645"/>
+        </linearGradient>
+      </defs>
+
+      <rect x="0" y="0" width="960" height="540" fill="#bfe8ff"/>
+      <circle cx="80" cy="90" r="40" fill="#fff9bc" opacity=".85"/>
+
+      <g class="cloud c1" transform="translate(1050 0)">
+        <ellipse cx="0" cy="120" rx="64" ry="26" fill="#ffffff" opacity=".9"/>
+        <ellipse cx="-42" cy="126" rx="40" ry="18" fill="#ffffff" opacity=".9"/>
+        <ellipse cx="40" cy="128" rx="35" ry="17" fill="#ffffff" opacity=".9"/>
+      </g>
+      <g class="cloud c2" transform="translate(1300 0)">
+        <ellipse cx="0" cy="85" rx="52" ry="22" fill="#ffffff" opacity=".85"/>
+        <ellipse cx="-33" cy="92" rx="30" ry="14" fill="#ffffff" opacity=".85"/>
+        <ellipse cx="34" cy="96" rx="28" ry="13" fill="#ffffff" opacity=".85"/>
+      </g>
+      <g class="cloud c3" transform="translate(1500 0)">
+        <ellipse cx="0" cy="155" rx="58" ry="24" fill="#ffffff" opacity=".84"/>
+        <ellipse cx="-36" cy="162" rx="33" ry="14" fill="#ffffff" opacity=".84"/>
+        <ellipse cx="38" cy="166" rx="31" ry="14" fill="#ffffff" opacity=".84"/>
+      </g>
+
+      <rect x="0" y="398" width="960" height="142" fill="#86c46f"/>
+      <rect x="0" y="410" width="960" height="130" fill="url(#roadShade)"/>
+
+      <g class="track">
+        <rect x="-30" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="60" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="150" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="240" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="330" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="420" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="510" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="600" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="690" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="780" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="870" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+        <rect x="960" y="468" width="54" height="8" rx="4" fill="#e9e7d9" opacity=".9"/>
+      </g>
+
+      <g class="bike" transform="translate(220 182)">
+        <g class="wheel">
+          <circle cx="170" cy="245" r="70" fill="#1f262f"/>
+          <circle cx="170" cy="245" r="58" fill="#edf2f7"/>
+          <circle cx="170" cy="245" r="6" fill="#1f262f"/>
+          <line x1="170" y1="187" x2="170" y2="303" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="112" y1="245" x2="228" y2="245" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="129" y1="204" x2="211" y2="286" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="211" y1="204" x2="129" y2="286" stroke="#4f5a6c" stroke-width="3"/>
+        </g>
+
+        <g class="wheel">
+          <circle cx="450" cy="245" r="70" fill="#1f262f"/>
+          <circle cx="450" cy="245" r="58" fill="#edf2f7"/>
+          <circle cx="450" cy="245" r="6" fill="#1f262f"/>
+          <line x1="450" y1="187" x2="450" y2="303" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="392" y1="245" x2="508" y2="245" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="409" y1="204" x2="491" y2="286" stroke="#4f5a6c" stroke-width="3"/>
+          <line x1="491" y1="204" x2="409" y2="286" stroke="#4f5a6c" stroke-width="3"/>
+        </g>
+
+        <g stroke="#d8892c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M170 245 L270 160 L350 245 Z"/>
+          <path d="M350 245 L450 245"/>
+          <path d="M270 160 L400 145"/>
+          <path d="M400 145 L450 245"/>
+          <path d="M270 160 L240 120"/>
+          <path d="M400 145 L430 114"/>
+        </g>
+        <rect x="223" y="107" width="52" height="12" rx="6" fill="#6b4f34"/>
+        <path d="M430 114 L470 94" stroke="#d8892c" stroke-width="8" stroke-linecap="round"/>
+        <path d="M468 92 L500 101" stroke="#d8892c" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="350" cy="245" r="16" fill="#444f5f"/>
+      </g>
+
+      <g class="crab" transform="translate(420 170)">
+        <ellipse cx="0" cy="0" rx="95" ry="58" fill="#f47652"/>
+        <ellipse cx="-38" cy="-12" rx="18" ry="14" fill="#f9ab8a"/>
+        <ellipse cx="38" cy="-12" rx="18" ry="14" fill="#f9ab8a"/>
+
+        <g fill="#ffffff">
+          <ellipse cx="-28" cy="-45" rx="16" ry="20"/>
+          <ellipse cx="28" cy="-45" rx="16" ry="20"/>
+        </g>
+        <g fill="#2f3033">
+          <circle cx="-28" cy="-41" r="6"/>
+          <circle cx="28" cy="-41" r="6"/>
+        </g>
+
+        <path d="M-18 10 Q0 22 18 10" fill="none" stroke="#8f2c2a" stroke-width="5" stroke-linecap="round"/>
+
+        <g fill="none" stroke="#f47652" stroke-width="11" stroke-linecap="round">
+          <path d="M-88 -8 Q-128 -42 -150 -20"/>
+          <path d="M88 -8 Q128 -42 150 -20"/>
+        </g>
+        <g fill="#f47652">
+          <path d="M-149 -21 L-186 -38 L-175 -5 Z"/>
+          <path d="M149 -21 L186 -38 L175 -5 Z"/>
+        </g>
+
+        <g class="leg" transform="translate(-32 44)">
+          <ellipse cx="0" cy="0" rx="13" ry="22" fill="#f66e4a"/>
+        </g>
+        <g class="leg delay" transform="translate(32 44)">
+          <ellipse cx="0" cy="0" rx="13" ry="22" fill="#f66e4a"/>
+        </g>
+
+        <g fill="#f47652">
+          <ellipse cx="-64" cy="45" rx="14" ry="18"/>
+          <ellipse cx="-88" cy="52" rx="14" ry="16"/>
+          <ellipse cx="64" cy="45" rx="14" ry="18"/>
+          <ellipse cx="88" cy="52" rx="14" ry="16"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
