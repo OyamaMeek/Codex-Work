@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-26 Notion Python列表笔记
+
+- Codex单代理，Notion MCP定位并定点更新原章节，原生Notion CUA按用户明确授权删除选中的原章节与图片；using-superpowers、ponytail、ego-browser与verification-before-completion。Python实际验证代码与输出。
+- 用户授权图片OCR与内容检查；原页和识别材料仅本地.agent/notion-list-notes/保留，不上传至Git，仅提交协作记录。
+
 ## 2026-10-25 数学分析上册PDF大纲
 
 - Codex单代理；使用PDF、ponytail、using-superpowers与verification-before-completion。bundled Python/pypdf处理书签，macOS PDFKit/Vision仅在内存中提取扫描目录文字，不截图或进行视觉审阅。
