@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-27 恢复报告前两页格式
+
+- 使用本机Microsoft Word只读另存原DOC并导出PDF；ZIP/XML定点合并原前两页、校徽和样式，正文沿用上一版。使用documents与ponytail；不截图或进行视觉检查。
+
 ## 2026-10-27 计算机组装实践报告
 
 - Codex单代理，documents与ponytail技能；bundled LibreOffice读取旧DOC，python-docx生成Word，网页核对ZOL榜单及厂商规格。
