@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-10-27 Quantumult X策略英文名称
+
+1. 将10个含中文的策略名改为CNMedia、Final、Mainland、Outside、DomesticMedia、GBMedia、Cryptocurrency、AdBlock、Auto、IPLC，并同步候选、force-policy与本地规则引用。
+2. 保留订阅说明、节点匹配正则、策略顺序与默认项；备份当前配置，检查名称唯一、引用有效，以及重命名前后语义一致。
+
 ## 2026-10-27 Quantumult X配置修复
 
 1. 完整比较目标与full.conf，检查B站域名分流、净化重写、DNS、策略引用及远程资源状态；不将文件日期直接视为失效证据。

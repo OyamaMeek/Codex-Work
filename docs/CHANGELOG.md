@@ -1988,3 +1988,17 @@
 - **Git 提交**：`b1c496c docs: record Quantumult Bilibili routing repair and audit`；本条通过后续文档提交补记，仅包含本次允许范围内的协作记录，保留其他任务已有修改。
 
 ---
+
+## [2026-10-27 14:54] 将Quantumult X策略中文名全部替换为英文
+
+- **需求/问题描述**：
+  > 把策略的中文名全部替换为英文。
+- **实际实现的功能与改动**：
+  - 将10个中文策略名改为CNMedia、Final、Mainland、Outside、DomesticMedia、GBMedia、Cryptocurrency、AdBlock、Auto、IPLC；同步策略候选、远程force-policy、本地分流及final的全部引用。
+  - 保留中文订阅说明、注释和节点筛选正则；规则、策略类型、候选及默认项顺序、DNS、远程URL及原MITM证书保持一致，配置与重命名前备份仅留本地。
+  - [测试/验证]：新增3项检查修改前有2项失败；修改后名称唯一、引用有效、仅重命名变化的逐条配置比较及原有6项检查全部通过，共9项。网络状态复用同日已有快照，未重新下载。
+  - [验证范围]：未执行Quantumult X手机端导入、既存策略选择迁移或截图验证。
+- **涉及文件**：本地quantumult_20261016155506.conf及.agent/quantumult-audit/；本次memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md与context/2026/10/27/14-54-25/对话.md；配置、测试及备份不提交。
+- **Git 提交**：待提交，仅暂存本次协作记录，保留其他任务原有修改。
+
+---
