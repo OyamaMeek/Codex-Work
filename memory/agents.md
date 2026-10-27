@@ -341,3 +341,8 @@
 - 执行代理：Codex；使用 human-writing、OpenAI Docs 和 verification-before-completion，无子代理。
 - 教程采用本地 CX-02 的工作流材料，并核对 OpenAI 官方开发实践、AGENTS.md 和 MDN 本地存储资料。
 - 交付单份 Markdown；不创建示例程序，不进行视觉检查，不改变学习确认数。
+
+## 2026-10-27 JetBrains Codex 重复安装
+
+- Codex 单代理；使用 OpenAI Docs、systematic-debugging 和 verification-before-completion。
+- 本机 IDE/npm 日志、ps/lsof、npm 离线缓存和 codesign；安装包及备份仅保留在已忽略的 `.agent/jetbrains-codex/`。
