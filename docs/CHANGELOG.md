@@ -2054,6 +2054,6 @@
   - [测试/验证]：独立目录prefix正确，1317文件哈希匹配，原生签名、CLI 0.164.0、CLion自带npx精确版本参数离线ACP初始化、app-server初始化全部通过；验证脚本退出0。
   - [验证范围]：未操作IDE聊天或重启IDE，未修改插件安装器；未来升级的空目录安装行为仍可能重现。
 - **涉及文件**：本地CLion2026.2/acp-agents/codex-acp/2.3.0及.agent/jetbrains-clion/验证材料；本次memory五份记录、docs/CHANGELOG.md和context/2026/10/27/23-35-00/对话.md。安装包、截图及测试材料不上传。
-- **Git 提交**：待提交，仅提交本次允许范围内的协作记录，保留其他任务修改。
+- **Git 提交**：`dc5d503 docs: record CLion Codex installation path repair`，已推送`origin/main`；本条通过后续文档提交补记，仅包含本次协作记录。
 
 ---
