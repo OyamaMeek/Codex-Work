@@ -2013,6 +2013,6 @@
   - 实际运行发现原生程序192825308字节，官方同版本应为260293200字节；签名失效、CLI退出137、IDE app-server报spawn -88。备份原目录后，从已校验的官方npm离线缓存恢复完整macOS ARM64包。
   - [测试/验证]：tarball SHA-512符合缓存元数据，43个恢复文件哈希匹配，codesign、CLI 0.164.0、ACP及app-server真实initialize均通过；三个原安装进程均已结束。未重启IDE、执行真实聊天或修改插件源码，未来取消或重启时是否遗留进程尚未验证。
 - **涉及文件**：本地PyCharm2026.2 Codex ACP 2.3.0原生包及`.agent/jetbrains-codex/`备份和验证脚本；本次五份memory记录、docs/CHANGELOG.md及context/2026/10/27/22-28-00/对话.md。安装文件、备份和截图不提交。
-- **Git 提交**：待提交；仅暂存本次协作文档，保留其他任务已有修改。
+- **Git 提交**：`9b0776c docs: record JetBrains Codex installation repair`，已推送至`origin/main`；本条通过后续文档提交补记。仅提交本次协作文档，保留其他任务已有修改。
 
 ---
