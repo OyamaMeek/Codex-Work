@@ -1,5 +1,13 @@
 # 当前任务进度
 
+## 2026-10-27 Quantumult X配置修复
+
+- [x] 读取两份配置；full.conf没有B站独立规则，目标依赖大陆媒体列表及旧净化重写。原始配置已备份至本地忽略目录.agent/quantumult-audit/before/。
+- [x] 检查初始87个URL及补充来源；旧国内媒体列表有含空格的错误域名且缺失B站主域名与视频CDN。full.conf无B站条目，使用其中blackmatrix7来源的ChinaMedia原生规则；毒奶域名403改为同作者GitHub同名源。
+- [x] 修复媒体分流、DNS、Apple通配符、Telegram空参数与BoxJS重复；补入full.conf网页去广告重写；停用WLOC失效资源及误填重写配置的抖音定时任务，清理原已停用的404和HTML代理条目。节点、策略组、证书及full.conf原文件保持一致。
+- [x] 修改前6项检查有15处失败，修改后6项通过，包含16个域名覆盖；新增重写唯一脚本200且node --check退出0。验证材料与检查说明仅保存在.agent/quantumult-audit/；未导入手机端，未验证播放或第三方脚本兼容性。
+- [x] 保存本次开发记录与截至归档时对话；仅暂存本次允许范围的协作记录，保留其他任务原有差异。
+
 ## 2026-10-26 Notion Python列表笔记
 
 - [x] 定位Note/Python/character5/section2列表，共10张图片；确认首张insert结果错误。

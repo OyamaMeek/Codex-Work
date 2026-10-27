@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-27 Quantumult X配置修复
+
+- Codex单代理；使用ponytail、using-superpowers、systematic-debugging与verification-before-completion；Python标准库读取配置并检查远程资源，参考Quantumult X官方示例及用户full.conf。
+- 原配置、MITM证书、远程快照与验证脚本仅保存在被忽略的.agent/quantumult-audit/，只提交context/docs/memory协作记录；不导入运行中的客户端，不截图。
+
 ## 2026-10-26 Notion Python列表笔记
 
 - Codex单代理，Notion MCP定位并定点更新原章节，原生Notion CUA按用户明确授权删除选中的原章节与图片；using-superpowers、ponytail、ego-browser与verification-before-completion。Python实际验证代码与输出。

@@ -1970,3 +1970,21 @@
 - **Git 提交**：`36072c7 docs: explain Purge installation in DSH`；本条通过后续文档提交补记，仅提交本次允许范围内记录，保留其他任务已有修改。
 
 ---
+
+## [2026-10-27 14:30] 修复Quantumult X哔哩哔哩分流并检查过时配置
+
+- **需求/问题描述**：
+  > 根据full.conf修复quantumult_20261016155506.conf中的哔哩哔哩分流，并检查过时配置，采用full.conf的可用对应项替换。
+- **实际实现的功能与改动**：
+  - 旧国内媒体订阅含Domestic Media.com等无效域名且遗漏B站主站和视频CDN；full.conf没有B站条目，改用其中blackmatrix7来源的ChinaMedia原生集合，保持大陆流媒体策略及默认直连。
+  - 采用full.conf的通用DNS及毒奶广告列表和网页重写；毒奶域名403，使用同作者GitHub同名源。修复Telegram空参数、Apple/iCloud通配符、BoxJS重复，移除固定mtalk IP和失效图标。
+  - 清理原已停用的404及HTML代理重复项；WLOC资源404、抖音任务误填重写配置，因无full.conf同类替代，保留条目并停用。B站净化及两项脚本可达，保留；其他策略、节点和原证书保持一致。
+  - [测试/验证]：初始检查87个不同URL；配置检查修改前6项有15处失败，修改后6项全部通过，覆盖16个媒体域名、远程状态与格式、策略引用、唯一final、重复项及保护内容。新增重写唯一脚本返回200、非空且node --check退出0。
+  - [验证范围]：未使用Quantumult X原生验证器，未实测手机端导入、DNS连通性、播放、地区解锁或第三方脚本兼容性；没有截图。
+- **涉及文件**：
+  - 本地quantumult_20261016155506.conf及.agent/quantumult-audit/；full.conf只读，任务配置、证书、备份与测试均不提交。
+  - 本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md新增记录。
+  - docs/CHANGELOG.md与context/2026/10/27/14-30-24/对话.md。
+- **Git 提交**：待提交，仅包含本次允许范围内的协作记录。
+
+---
