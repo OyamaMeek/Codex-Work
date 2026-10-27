@@ -2027,6 +2027,6 @@
   - 说明综合热度无法替代逐型号销量，台式机估价不代表成交价；三档台式机含显示器总计6797/8545/12748元。AI辅助过程明确披露，未虚构实体组装或性能测试。
   - [测试/验证]：DOCX结构及PDF逐页文本、预算、页数、字体检查退出0。DOCX正文声明12pt宋体与Times New Roman，标题14pt粗体；PDF中文采用本机Songti SC替代，英文嵌入Times New Roman。未进行截图、视觉审阅、硬件实测或超星提交。
 - **涉及文件**：本地261027/计算机组装实践调研报告.docx、同名PDF及.agent/report-261027/辅助材料；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md与context/2026/10/27/22-42-00/对话.md。报告和原材料不上传。
-- **Git 提交**：待提交；仅包含本次协作记录，保留已有未提交差异。
+- **Git 提交**：`8457cc7 docs: record computer assembly practice report`；本条通过后续文档提交补记，仅包含本次协作记录，保留已有未提交差异。
 
 ---
