@@ -634,3 +634,11 @@
 - 尚未重启 IDE 或执行真实聊天，不将完成标记及 npm 退出0视为运行验证。
 
 实际结果：npm tarball SHA-512与缓存元数据一致，恢复目录43个文件哈希全部匹配；codesign通过，CLI返回0.164.0；解除沙箱对正常状态目录访问的限制后，ACP和app-server真实initialize均通过，验证脚本退出0。三个原安装进程均已退出。未重启IDE或执行真实聊天，不能据此保证插件今后取消或重启时不再遗留进程。
+
+## 2026-10-27 CLion Codex 启动验证
+
+- 修改前：CLion的Node 24.13.0签名有效、npm 11.6.2可运行；2.3.0适配器不存在。日志先报300000ms超时，再报对主目录node_modules的ENOTEMPTY重命名失败；不能将通用损坏提示视为Node损坏证据。
+- 验证空目录npm prefix是否上溯用户主目录；修复后prefix应为CLion独立目录，并用其自带npx离线启动ACP、核验CLI及app-server初始化。
+- 不重启IDE，不执行真实聊天，不改动主目录package.json、node_modules或共享运行时。
+
+实际结果：空目录npm prefix返回用户主目录，CLion目标适配器初始不存在；建立独立安装后prefix准确指向CLion的2.3.0目录，1317文件SHA-256全部匹配，签名及CLI 0.164.0通过。复用CLion的Node、npm缓存和userconfig，按日志中的精确包版本参数并加offline启动npx，ACP initialize返回2.3.0，app-server initialize通过；验证脚本退出0。未在IDE新建聊天或重启IDE，未修改插件安装器，未来升级仍可能重现空目录安装问题。

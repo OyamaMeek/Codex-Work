@@ -2043,3 +2043,17 @@
 - **Git 提交**：`2573d2e docs: record preservation of report template pages`；本条通过后续文档提交补记，仅提交本次协作记录。
 
 ---
+
+## [2026-10-27 23:35] 修复CLion Codex适配器安装路径
+
+- **需求/问题描述**：
+  > 用户提供CLion截图，显示ACP运行时可能损坏及无法解析Codex智能体启动配置。
+- **实际实现的功能与改动**：
+  - 原始异常为npm安装300000ms超时，重试时在用户主目录node_modules重命名报ENOTEMPTY；CLion自带Node 24.13.0和npm 11.6.2正常，Node签名有效。
+  - 实测空目录npm prefix上溯用户主目录；复用已验证的完整同版本Codex ACP 2.3.0包，建立CLion独立安装目录，保留用户主目录依赖和共享运行时。
+  - [测试/验证]：独立目录prefix正确，1317文件哈希匹配，原生签名、CLI 0.164.0、CLion自带npx精确版本参数离线ACP初始化、app-server初始化全部通过；验证脚本退出0。
+  - [验证范围]：未操作IDE聊天或重启IDE，未修改插件安装器；未来升级的空目录安装行为仍可能重现。
+- **涉及文件**：本地CLion2026.2/acp-agents/codex-acp/2.3.0及.agent/jetbrains-clion/验证材料；本次memory五份记录、docs/CHANGELOG.md和context/2026/10/27/23-35-00/对话.md。安装包、截图及测试材料不上传。
+- **Git 提交**：待提交，仅提交本次允许范围内的协作记录，保留其他任务修改。
+
+---

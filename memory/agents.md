@@ -355,3 +355,8 @@
 
 - Codex 单代理；使用 OpenAI Docs、systematic-debugging 和 verification-before-completion。
 - 本机 IDE/npm 日志、ps/lsof、npm 离线缓存和 codesign；安装包及备份仅保留在已忽略的 `.agent/jetbrains-codex/`。
+
+## 2026-10-27 CLion Codex 启动修复
+
+- Codex单代理，继续使用systematic-debugging和verification-before-completion；读取CLion与npm原始日志，以本机运行结果诊断。
+- 复用已验证的本地同版本官方包，以CLion的Node 24.13.0/npm 11.6.2/npx验证；中间文件留在已忽略的`.agent/jetbrains-clion/`。
