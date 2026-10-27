@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-27 计算机组装实践报告
+
+1. 完整提取原DOC中的考核表、封面、正文及格式要求，核对市场榜单和厂商规格。
+2. 保留考核表与封面结构，编写两类设备各三档方案、芯片组选型原理、原创示意图与调研心得；身份信息未知时留空。
+3. 生成DOCX与便于阅读的PDF，检查正文页数、字体、预算、图片和引用；不进行未经授权的视觉检查。仅提交推送协作记录。
+
 ## 2026-10-27 Quantumult X策略英文名称
 
 1. 将10个含中文的策略名改为CNMedia、Final、Mainland、Outside、DomesticMedia、GBMedia、Cryptocurrency、AdBlock、Auto、IPLC，并同步候选、force-policy与本地规则引用。

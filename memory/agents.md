@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-27 计算机组装实践报告
+
+- Codex单代理，documents与ponytail技能；bundled LibreOffice读取旧DOC，python-docx生成Word，网页核对ZOL榜单及厂商规格。
+- 原材料及报告仅保存在261027/，辅助材料位于.agent/report-261027/；遵循用户限制，不截图或进行视觉检查，仅提交本次协作记录。
+
 ## 2026-10-27 Quantumult X配置修复
 
 - Codex单代理；使用ponytail、using-superpowers、systematic-debugging与verification-before-completion；Python标准库读取配置并检查远程资源，参考Quantumult X官方示例及用户full.conf。
