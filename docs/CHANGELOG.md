@@ -1999,6 +1999,6 @@
   - [测试/验证]：新增3项检查修改前有2项失败；修改后名称唯一、引用有效、仅重命名变化的逐条配置比较及原有6项检查全部通过，共9项。网络状态复用同日已有快照，未重新下载。
   - [验证范围]：未执行Quantumult X手机端导入、既存策略选择迁移或截图验证。
 - **涉及文件**：本地quantumult_20261016155506.conf及.agent/quantumult-audit/；本次memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md与context/2026/10/27/14-54-25/对话.md；配置、测试及备份不提交。
-- **Git 提交**：待提交，仅暂存本次协作记录，保留其他任务原有修改。
+- **Git 提交**：`617d4cc docs: record English Quantumult policy names`；本条通过后续文档提交补记，仅暂存本次协作记录，保留其他任务原有修改。
 
 ---
