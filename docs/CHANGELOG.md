@@ -1985,6 +1985,6 @@
   - 本地quantumult_20261016155506.conf及.agent/quantumult-audit/；full.conf只读，任务配置、证书、备份与测试均不提交。
   - 本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md新增记录。
   - docs/CHANGELOG.md与context/2026/10/27/14-30-24/对话.md。
-- **Git 提交**：待提交，仅包含本次允许范围内的协作记录。
+- **Git 提交**：`b1c496c docs: record Quantumult Bilibili routing repair and audit`；本条通过后续文档提交补记，仅包含本次允许范围内的协作记录，保留其他任务已有修改。
 
 ---
