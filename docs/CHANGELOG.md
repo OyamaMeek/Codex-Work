@@ -2068,6 +2068,6 @@
   - 按本次可访问页面更新来源与基础档CPU报价，台式机预算为6836/8545/12748元；区分榜单热度、参考报价与预算估算，不虚构逐型号销量或硬件实测。
   - [测试/验证]：生成及独立检查脚本退出0；输入DOC哈希不变，前两页格式结构及原9个包部件保留。Word导出PDF10页、正文7页，字体含SimSun与TimesNewRoman；修正正文表格列宽与单元格宽度，逐字页面边界检查通过。未截图、视觉检查、硬件实测或提交超星。
 - **涉及文件**：本地output/计算机组装实践/学号姓名计算机组装实践.docx及.agent/report-261028/；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md与context/2026/10/28/18-35-55/对话.md。任务文件仅本地保留。
-- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留其他任务已有差异。
+- **Git 提交**：`a3b6595 docs: record Lenovo computer assembly practice report`；本条通过后续文档提交补记，仅包含本次允许范围内的协作记录，保留其他任务已有差异。
 
 ---
