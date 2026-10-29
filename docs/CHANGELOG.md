@@ -2099,3 +2099,17 @@
 - **Git 提交**：`f416b44 docs: record CampusAD integration and validation`；本条通过后续文档提交补记，仅提交本次允许范围内的协作记录，保留其他任务已有修改。
 
 ---
+
+## [2026-10-30 00:02] 为CampusAD增加拦截与直连选择
+
+- **需求/问题描述**：
+  > 在ini中还是设置一个选项吧默认reject可以选direct。
+- **实际实现的功能与改动**：
+  - HappaConfig.ini新增CampusAD select组，默认REJECT，可选DIRECT；广告规则引用CampusAD组，规则优先级和MITM设置保留。
+  - 更新CampusAD.list使用说明、相关策略测试及本地原生验证配置。
+  - [测试/验证]：新增检查先因缺少选择组失败；修改后CampusAD、China、SiriAI及策略默认项四项检查通过。Surge CLI验证本地列表与选择组配置返回OK，git diff --check通过。
+  - [验证范围]：未发布网站、执行完整Subconverter转换、导入客户端或实测策略切换；已有客户端可能保留已保存的手动选择。
+- **涉及文件**：本地HappaConfig.ini、CampusAD.list、tests/check_happa_campus_ad.py、tests/check_happa_proxy_defaults.py及.agent/campus-ad/native.conf；本次memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/30/00-02-00/对话.md。任务文件仅本地保留。
+- **Git 提交**：待提交；仅提交本次协作文档，保留其他任务已有修改。
+
+---

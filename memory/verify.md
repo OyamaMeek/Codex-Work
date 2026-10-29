@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-30 CampusAD可选策略
+
+- CampusAD组唯一，select默认REJECT且仅另提供DIRECT；广告规则引用CampusAD，原规则优先级与MITM设置保留。
+- CampusAD匹配、China、SiriAI及策略默认项检查通过；Surge验证含真实本地规则集的选择组配置。
+- 未导入客户端、切换真实策略或发布网站时如实说明，不宣称已实测拦截。
+
+实际结果：新增选择组检查先失败，修改后CampusAD、China、SiriAI和策略默认项四个脚本全部通过；CampusAD候选严格为REJECT、DIRECT且默认REJECT，72条规则及14组广告/7组校园业务匹配检查保持。Surge CLI检查本地规则集与CampusAD选择组返回OK；未执行完整Subconverter转换、实际客户端切换或网站发布。
+
 ## 2026-10-29 CampusAD 规则接入
 
 - 规则集包含13条DOMAIN和1条URL-REGEX，无策略字段、重复或校园主域名整域拒绝。
