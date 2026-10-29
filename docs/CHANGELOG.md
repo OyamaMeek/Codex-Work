@@ -2096,6 +2096,6 @@
   - [测试/验证]：检查先因缺少CampusAD规则失败；修改后CampusAD、China、SiriAI、策略默认项4个脚本通过；14组广告请求覆盖、7组业务保留、URL边界与原变量顺序检查通过。Surge CLI使用本地规则集的独立配置检查返回OK。
   - [验证范围]：远程CampusAD.list访问15秒超时；未上传网站或配置、未执行完整Subconverter转换、手机导入或实际拦截。HTTPS路径需客户端启用MITM并信任自己的证书。
 - **涉及文件**：本地CampusAD.list、HappaConfig.ini、HappaConfig.conf、tests/check_happa_campus_ad.py、tests/check_happa_china.py、tests/check_happa_siriai.py及.agent/campus-ad/；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/29/20-31-06/对话.md。规则及配置仅本地保留。
-- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留其他任务已有修改。
+- **Git 提交**：`f416b44 docs: record CampusAD integration and validation`；本条通过后续文档提交补记，仅提交本次允许范围内的协作记录，保留其他任务已有修改。
 
 ---
