@@ -2110,6 +2110,6 @@
   - [测试/验证]：新增检查先因缺少选择组失败；修改后CampusAD、China、SiriAI及策略默认项四项检查通过。Surge CLI验证本地列表与选择组配置返回OK，git diff --check通过。
   - [验证范围]：未发布网站、执行完整Subconverter转换、导入客户端或实测策略切换；已有客户端可能保留已保存的手动选择。
 - **涉及文件**：本地HappaConfig.ini、CampusAD.list、tests/check_happa_campus_ad.py、tests/check_happa_proxy_defaults.py及.agent/campus-ad/native.conf；本次memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/30/00-02-00/对话.md。任务文件仅本地保留。
-- **Git 提交**：待提交；仅提交本次协作文档，保留其他任务已有修改。
+- **Git 提交**：`26a59a5 docs: record CampusAD selectable policy`；本条通过后续文档提交补记，仅提交本次协作文档，保留其他任务已有修改。
 
 ---
