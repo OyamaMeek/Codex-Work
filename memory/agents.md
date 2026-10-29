@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-29 CampusAD 规则接入
+
+- Codex单代理；ponytail、brainstorming的明确任务直接执行分支、test-driven-development与verification-before-completion；Python标准库读取ini和真实抓包，Surge CLI只做语法检查。
+- 沿用ini完整定义与conf引用，任务文件及备份保留本地；不上传抓包、证书或节点，不重载用户客户端，不执行视觉检查。
+
 ## 2026-10-28 联想高配计算机组装实践报告
 
 - Codex单代理，documents与ponytail；Microsoft Word只读转换当前DOC，python-docx与ZIP/XML保留原模板并编写正文，网页核对ZOL市场样本及厂商规格。

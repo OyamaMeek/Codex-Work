@@ -2084,3 +2084,18 @@
 - **Git 提交**：`1ec5a6d docs: record captured advertising domains`；本条通过后续文档提交补记，仅提交本次允许范围内的协作记录。
 
 ---
+
+## [2026-10-29 20:31] 将CampusAD广告规则接入HappaConfig
+
+- **需求/问题描述**：
+  > 写成CampusAD.list放到HappaConfig。
+- **实际实现的功能与改动**：
+  - 新建本地CampusAD.list，包含13个精确广告域名与1条校园开屏广告URL规则；保留同域登录及校园业务。
+  - HappaConfig.ini定义CampusAD远程REJECT规则及MITM hostname，HappaConfig.conf在腾讯直连前引用；原71条规则、DNS和策略组保留，总计72条分流。
+  - 新增真实抓包匹配检查，并更新两个受规则数量变化影响的既有检查。
+  - [测试/验证]：检查先因缺少CampusAD规则失败；修改后CampusAD、China、SiriAI、策略默认项4个脚本通过；14组广告请求覆盖、7组业务保留、URL边界与原变量顺序检查通过。Surge CLI使用本地规则集的独立配置检查返回OK。
+  - [验证范围]：远程CampusAD.list访问15秒超时；未上传网站或配置、未执行完整Subconverter转换、手机导入或实际拦截。HTTPS路径需客户端启用MITM并信任自己的证书。
+- **涉及文件**：本地CampusAD.list、HappaConfig.ini、HappaConfig.conf、tests/check_happa_campus_ad.py、tests/check_happa_china.py、tests/check_happa_siriai.py及.agent/campus-ad/；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/29/20-31-06/对话.md。规则及配置仅本地保留。
+- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留其他任务已有修改。
+
+---
