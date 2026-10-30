@@ -2180,3 +2180,16 @@
 - **Git 提交**：`a39e7c5 docs: record topic-based video note rewrite`；本条通过后续文档提交补记，视频与内容笔记仅本地保留。
 
 ---
+
+## [2026-10-30 21:25] 修复CLion Codex 2.5.0升级安装
+
+- **需求/问题描述**：
+  > 用户提供CLion截图，Codex提示运行时可能损坏且无法解析智能体启动配置。
+- **实际实现的功能与改动**：
+  - 最新日志确认2.5.0安装时npm上溯主目录，在重命名依赖时因ENOTEMPTY退出190；空目录prefix实测为用户主目录。
+  - 显式package.json与prefix安装官方npm包codex-acp 2.5.0，独立部署到CLion同版本缓存；保留2.3.0、Node运行时和主目录依赖。
+  - [测试/验证]：安装退出0，1341文件SHA-256一致、Codex 0.165.0签名有效，CLion Node/npx离线ACP及app-server真实initialize均通过。未重启IDE、进行真实聊天或修改安装器；未来升级仍可能复发。
+- **涉及文件**：本地CLion的acp-agents/codex-acp/2.5.0/和被忽略的.agent/jetbrains-clion-250/；仅提交本次memory五份记录、docs/CHANGELOG.md及context/2026/10/30/21-25-20/对话.md。
+- **Git 提交**：待提交；无关已有修改保留。
+
+---

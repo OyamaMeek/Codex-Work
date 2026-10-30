@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-30 CLion Codex 2.5.0启动排查
+
+- Codex单代理，OpenAI Docs、ponytail、systematic-debugging与verification-before-completion；CLion/npm原始日志、显式prefix独立npm安装、codesign与真实协议初始化。
+- 本地材料位于被忽略的.agent/jetbrains-clion-250/；只新增CLion的2.5.0版本缓存，保留2.3.0及Node，不重启IDE或发送真实聊天。
+
 ## 2026-10-30 视频内容笔记与Opus观看顺序
 
 - Codex单代理，ponytail与verification-before-completion；PyAV读取视频音轨，mlx-whisper与Apple GPU本地转写，结合既有Vision画面文字整理。

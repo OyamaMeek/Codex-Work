@@ -59,3 +59,4 @@
 - JetBrains 重复安装需同时核对 npm 子进程、PPID、工作目录与安装标记；IDE退出可能遗留写入同目录的安装进程。npm成功及完成标记不能证明程序完整，需验证签名与实际启动，不仅建议等待或重启。
 
 - CLion提示ACP运行时损坏时先读取异常cause；Node/npm可运行而npm报主目录ENOTEMPTY时，核对工作目录中的package.json及npm prefix。空目录会向父目录寻找项目，不能据通用提示删除整个.runtimes；PyCharm修复也不能代表CLion已修复。
+- JetBrains ACP按版本建立安装目录；修复旧版独立prefix不能覆盖未来版本升级。升级复发时核对日志要求的确切版本，显式prefix安装该版本并验证实际协议初始化，不把旧版通过当作新版证据。
