@@ -4,7 +4,7 @@
 
 - [x] 已读取上游README与SKILL.md，确认未安装；来源提交0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0，技能版本3.1.0。
 - [x] 安装至~/.codex/skills/humanizer；官方包验证退出0，SKILL.md与固定上游文件逐字节一致，Codex界面元数据与全部包文件存在。
-- [ ] 保存归档与日志，仅提交推送本次协作文档；不混入既有修改。
+- [x] 保存归档与日志，02900ab已推送origin/main；仅提交本次协作文档，既有修改保留。
 
 ## 2026-10-30 CampusAD可选策略
 

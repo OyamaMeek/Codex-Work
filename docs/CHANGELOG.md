@@ -2123,6 +2123,6 @@
   - 固定来源提交0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0；安装缓存只在本地.agent/humanizer-install/，未安装其他代理集成。
   - [测试/验证]：官方安装器及上游validate-package.py均退出0；SKILL.md与固定来源逐字节相同，元数据、Codex显示配置与包内引用资源存在。未评测实际润色效果。
 - **涉及文件**：本地~/.codex/skills/humanizer/和.agent/humanizer-install/；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/30/09-50-00/对话.md。技能及缓存不上传本项目远端。
-- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留已有修改。
+- **Git 提交**：`02900ab docs: record Humanizer skill installation`，已推送origin/main；本条通过后续文档提交补记，保留已有修改。
 
 ---
