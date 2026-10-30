@@ -2177,6 +2177,6 @@
   - 将“视频内容整理应交付主题讲解，识别材料仅供内部使用”记入gotchas。
   - [测试/验证]：生成及验证脚本退出0；43份覆盖、正文小节一致性、71个本地链接及76个现存媒体哈希检查通过；回读代表性正文。未实作视频教程或外部核实作者经验。
 - **涉及文件**：本地261030/中43份同名笔记与Opus学习顺序；本地.agent/media-261030/的正文资料、生成及检查脚本；本次memory/plan.md、memory/progress.md、memory/verify.md、memory/gotchas.md、docs/CHANGELOG.md与context/2026/10/30/17-33-21/对话.md。
-- **Git 提交**：待提交；视频与内容笔记仅本地保留。
+- **Git 提交**：`a39e7c5 docs: record topic-based video note rewrite`；本条通过后续文档提交补记，视频与内容笔记仅本地保留。
 
 ---
