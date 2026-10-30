@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-30 图片与视频内容分类
+
+- Codex单代理，ponytail与verification-before-completion；使用macOS ImageIO、AVFoundation与Vision读取40张HEIC、44段MP4的内容，Python标准库执行重命名和哈希核对。
+- 原媒体只在本地261030/整理，不转码、不上传；识别材料和原名映射位于已忽略的.agent/media-261030/。不操作其他目录中的任务产物。
+
 ## 2026-10-30 新生学业竞答参考文件整理
 
 - Codex单代理，使用PDF技能及内置Python的pypdf、pdfplumber；不使用子代理或视觉检查。
