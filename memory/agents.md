@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-30 Humanizer安装
+
+- Codex单代理，使用skill-installer；官方辅助脚本安装至~/.codex/skills/humanizer，下载缓存放在被忽略的.agent/humanizer-install/。
+- 核对上游README、技能正文与固定提交，不安装其他代理集成，不执行上游评测或视觉检查。
+
 ## 2026-10-29 CampusAD 规则接入
 
 - Codex单代理；ponytail、brainstorming的明确任务直接执行分支、test-driven-development与verification-before-completion；Python标准库读取ini和真实抓包，Surge CLI只做语法检查。

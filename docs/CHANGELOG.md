@@ -2113,3 +2113,16 @@
 - **Git 提交**：`26a59a5 docs: record CampusAD selectable policy`；本条通过后续文档提交补记，仅提交本次协作文档，保留其他任务已有修改。
 
 ---
+
+## [2026-10-30 09:50] 安装Humanizer技能
+
+- **需求/问题描述**：
+  > 安装https://github.com/blader/humanizer。
+- **实际实现的功能与改动**：
+  - 读取上游安装说明与技能正文，通过skill-installer安装Humanizer 3.1.0至Codex全局目录~/.codex/skills/humanizer。
+  - 固定来源提交0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0；安装缓存只在本地.agent/humanizer-install/，未安装其他代理集成。
+  - [测试/验证]：官方安装器及上游validate-package.py均退出0；SKILL.md与固定来源逐字节相同，元数据、Codex显示配置与包内引用资源存在。未评测实际润色效果。
+- **涉及文件**：本地~/.codex/skills/humanizer/和.agent/humanizer-install/；本次memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/10/30/09-50-00/对话.md。技能及缓存不上传本项目远端。
+- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留已有修改。
+
+---

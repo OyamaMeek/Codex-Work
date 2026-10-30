@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-30 Humanizer安装
+
+- 安装器退出0，~/.codex/skills/humanizer/SKILL.md非空；元数据name为humanizer，版本为3.1.0。
+- 安装内容与固定上游提交一致，核对技能引用文件；不将文件安装成功描述为实际润色效果通过。
+- 检查本次暂存差异与全部待推送提交仅包含context/docs/memory允许范围，不提交缓存或其他已有修改。
+
+实际结果：官方安装器与validate-package.py均退出0，版本3.1.0；固定提交的SKILL.md与安装文件cmp一致，SHA-256为0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad。agents/openai.yaml及包内文件存在；未执行实际润色效果评测或其他代理安装。
+
 ## 2026-10-30 CampusAD可选策略
 
 - CampusAD组唯一，select默认REJECT且仅另提供DIRECT；广告规则引用CampusAD，原规则优先级与MITM设置保留。
