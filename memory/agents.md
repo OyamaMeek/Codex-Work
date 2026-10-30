@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-30 新生学业竞答参考文件整理
+
+- Codex单代理，使用PDF技能及内置Python的pypdf、pdfplumber；不使用子代理或视觉检查。
+- 输入为根目录45页PDF，输出仅保存在本地261030/；按7份制度及PDF物理页建立Markdown、逐页JSONL和表格原始单元格索引。
+
 ## 2026-10-30 Humanizer安装
 
 - Codex单代理，使用skill-installer；官方辅助脚本安装至~/.codex/skills/humanizer，下载缓存放在被忽略的.agent/humanizer-install/。
