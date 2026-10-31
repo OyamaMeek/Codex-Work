@@ -2400,6 +2400,6 @@
   - npm全局安装hyperframes 0.8.223；复用Node 26.5.1、当前可用的FFmpeg/FFprobe 9.0.2及系统Chrome；未安装可选配音、转写、音乐模型或Docker。
   - [测试/验证]：220个技能文件与上游Git树哈希匹配；CLI版本、帮助、默认空白项目初始化及静态lint通过，零错误零警告；esbuild真实转换通过。doctor确认5项核心条件正常；未执行影片渲染或视觉检查。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/20-51-39/对话.md；技能、npm包与.agent/hyperframes-install/核验材料仅保留本地。
-- **Git 提交**：待提交；仅提交本次协作文档，保留其他已有修改。
+- **Git 提交**：`8ce74c4 docs: record Hyperframes CLI and core skills installation`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
