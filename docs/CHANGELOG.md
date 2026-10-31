@@ -2445,3 +2445,16 @@
 - **Git 提交**：`db27815 docs: record iphone-use installation and deferred device setup`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
+
+## [2026-10-31 21:44] 前端官方技能安装与资源索引
+
+- **需求/问题描述**：
+  > 安装shadcn/ui、Radix Colors、Fontsource、Simple Icons、Rough.js、Mermaid、README Stats与Markdown Badges；用户确认仅安装已有官方技能，其余保留为开发时按需使用的资源。
+- **实际实现的功能与改动**：
+  - 核对八个官方仓库完整文件树；使用官方skill-installer将shadcn核心技能安装至~/.codex/skills/shadcn，固定提交24a16429815cc4d691f38b49d0f4ffc11a9daef4。
+  - 其余七个仓库未发现SKILL.md，整理官方链接、用途和按需使用入口；未安装社区同名技能、迁移专用技能或项目依赖。
+  - [测试/验证]：安装器退出0；21个技能文件集合及Git blob哈希一致，11处正文相对文件引用有效，资源索引覆盖八项。未执行前端项目运行或视觉检查。
+- **涉及文件**：docs/前端技能与资源索引.md、memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/21-44-00/对话.md；技能与.agent/frontend-resources/检查材料仅保留本地。
+- **Git 提交**：待提交；仅暂存本次协作文档，保留其他任务已有差异。
+
+---

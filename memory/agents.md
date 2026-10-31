@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 前端技能与资源
+
+- Codex单代理，使用skill-installer与verification-before-completion；核对八项官方来源，仅安装已有官方技能，其余保存为按需资源。
+- 安装缓存与上游文件清单保存在被忽略的.agent/frontend-resources/；不创建前端项目或执行视觉检查，保留其他任务已有差异。
+
 ## 2026-10-31 iphone-use安装
 
 - Codex单代理，verification-before-completion；使用上游v0.27.20发布安装器，应用安装至~/Applications/iPhoneUse.app，CLI、配套技能及Codex MCP按发布版配置。
