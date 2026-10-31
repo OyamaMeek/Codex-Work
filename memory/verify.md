@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-31 Hyperframes安装
+
+- 安装器退出0，4个核心技能文件集合及Git blob哈希与固定上游树一致；不安装按需扩展技能。
+- npm全局CLI安装退出0，hyperframes版本与帮助可运行；核对诊断与静态项目验证命令，未执行视觉检查或影片制作时明确说明。
+- 仅提交本次context/docs/memory协作记录，保留其他任务已有修改。
+
+实际结果：官方安装器与npm全局安装退出0；4个技能分别77/13/13/117文件，共220文件与固定上游树一致。hyperframes --version返回0.8.223，帮助及默认空白项目init正常；lint JSON为ok:true、零错误零警告，esbuild TypeScript转换断言通过。doctor的Version、Node.js、FFmpeg、FFprobe、Chrome均ok:true，复用现有FFmpeg/FFprobe 9.0.2及系统Chrome；总ok:false来自可选的Docker、Whisper、Kokoro、MusicGen缺失，未扩大安装范围。未执行浏览器视觉检查或影片渲染。材料保存在本地.agent/hyperframes-install/。
+
 ## 2026-10-31 Cloudflare安全审计技能安装
 
 - 官方安装器退出0；安装文件集合与固定提交的非截断Git树一致，每个文件的Git blob哈希匹配，SKILL.md名称为security-audit。

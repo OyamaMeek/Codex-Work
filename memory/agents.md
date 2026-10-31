@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 Hyperframes安装
+
+- Codex单代理，skill-installer与verification-before-completion；4个核心技能安装到~/.codex/skills，npm全局安装Hyperframes CLI 0.8.223。
+- 安装缓存与核验材料位于已忽略的.agent/hyperframes-install/，不启动影片制作或视觉检查。
+
 ## 2026-10-31 Cloudflare安全审计技能安装
 
 - Codex单代理，沿用skill-installer与verification-before-completion；固定上游提交安装至~/.codex/skills/security-audit，缓存与安装核验放在已忽略的.agent/security-audit-install/。

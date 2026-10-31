@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-31 Hyperframes安装
+
+1. 核对上游README、技能生命周期与npm元数据；固定技能提交a04b45a6db0d1f724be9cf1985c3b13657195f0d和CLI 0.8.223。
+2. 安装hyperframes、hyperframes-cli、hyperframes-registry、media-use核心技能及CLI，核对文件完整性、CLI版本和帮助命令。
+3. 检查适用的运行条件与静态项目验证，记录限制，仅提交推送本次协作记录。
+
 ## 2026-10-31 Cloudflare安全审计技能安装
 
 1. 读取上游README、SKILL.md和文件树，确认目录未安装，固定提交c1c8a8c1471069fb0e188eeaff69b8e8db6564a8。
