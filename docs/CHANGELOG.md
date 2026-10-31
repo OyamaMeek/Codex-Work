@@ -2374,6 +2374,6 @@
   - 沿用首次使用时下载风格库的流程；未安装系统软件，未启动影片制作。Node 26.5.1满足要求，当前PATH中缺少ffmpeg 7+和Python 3.11+或uv。
   - [测试/验证]：安装器退出0，SKILL.md及scripts/setup.sh与固定上游文件cmp一致，sh -n退出0；未执行影片渲染或视觉检查。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/20-43-25/对话.md；安装文件和缓存仅本地保留。
-- **Git 提交**：待提交；仅提交本次协作文档，保留其他已有修改。
+- **Git 提交**：`38ce75e docs: record Lemo-Opuscar skill installation`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
