@@ -2428,6 +2428,6 @@
   - [测试/验证]：图片页码01—15、上传状态及字节长度、15个折叠的标题和文本字段、先文字后图片的结构断言全部通过；Notion定点更新成功，无警告。目标章节完整，原页后文被截断，未执行全页替换。
   - 未执行提示词中的影片制作；未回读或检查Notion页面视觉排版。原页、识别结果、提交稿及哈希记录仅本地.agent/notion-mg-prompts/保存。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/21-05-00/对话.md；261031原图与本地辅助材料不提交Git。
-- **Git 提交**：待提交，仅提交本次允许范围内协作记录；其他任务已有差异保持原样。
+- **Git 提交**：`bf6f783 docs: record Notion animation prompts and images`；本条通过后续文档提交补记，仅提交本次允许范围内协作记录，其他任务已有差异保持原样。
 
 ---
