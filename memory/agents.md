@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 iphone-use安装
+
+- Codex单代理，verification-before-completion；使用上游v0.27.20发布安装器，应用安装至~/Applications/iPhoneUse.app，CLI、配套技能及Codex MCP按发布版配置。
+- Xcode 16.4、go-ios 1.3.2，检测到一台连接设备与可用签名证书；安装材料和Codex配置恢复点仅本地.agent/iphone-use-install/保留，不上传设备或签名信息。
+
 ## 2026-10-31 Notion MG提示词与原图
 
 - Codex单代理，使用Notion技能与MCP读取、上传和定点更新；macOS Vision读取15张本地PNG的页码，Python标准库验证提交稿结构与上传长度。

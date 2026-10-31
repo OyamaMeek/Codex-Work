@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-10-31 iphone-use安装
+
+- 应用来自固定发布版，安装器校验发布资产SHA-256；应用签名、CLI版本、LaunchAgent及本地daemon接口通过实际检查。
+- Codex原MCP配置保留，iphone-use新增项命令正确；以实际MCP initialize和tools/list验证服务，不将配置写入视为可控制手机。
+- doctor/setup结果与真实设备状态一致；只有drivable:true并完成最小设备试用后才声明手机可控制，禁止截图或读取无关应用数据。
+- 设备标识、证书、配置恢复点、原始日志仅本地保留，协作文档明确未完成验证和实际阻碍。
+
+实际结果：固定v0.27.20及提交32c1282d3b05f6686c4950deb288b142715361bb，安装器退出0并验证发布资产SHA-256；codesign --verify --deep --strict和发布技能cmp均退出0。CLI版本0.27.20、LaunchAgent加载及127.0.0.1:44321监听通过；实际MCP initialize返回iphone-use-mcp 0.27.20，tools/list列出41工具，phone_status无MCP错误但drivable:false。TOML比较确认原设置保留，CLI仅省略原node_repl的空args数组。doctor在沙箱内外均报告缺少USB，原生device info确认手机为network连接；用户选择暂不连接USB，按要求保留安装并延后设备Runner初始化与实际试用，未截图或读屏。自动更新未启用，Cursor/Claude Desktop配置未接入；本地材料位于.agent/iphone-use-install/。
+
 ## 2026-10-31 Notion MG提示词与原图
 
 - 核对15张本地PNG实际页码，明确第05页情况，不自行编造缺失提示词。
