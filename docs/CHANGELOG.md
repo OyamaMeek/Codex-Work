@@ -2442,6 +2442,6 @@
   - [测试/验证]：发布资产SHA-256、应用严格签名、技能cmp、CLI版本和LaunchAgent检查通过；真实MCP initialize、41工具列表与phone_status调用通过，原配置TOML语义一致（CLI省略空args数组）。
   - [设备状态]：原生设备查询确认当前通过网络连接，doctor报告缺少首次初始化所需USB。用户明确选择暂不连接，保留安装；手机Runner尚未初始化，drivable:false，未执行实际手机操控、读屏或截图。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/21-41-13/对话.md；设备标识、签名信息、配置恢复点及安装原始材料仅本地.agent/iphone-use-install/保留。
-- **Git 提交**：待提交；仅提交本次协作文档，保留其他已有修改。
+- **Git 提交**：`db27815 docs: record iphone-use installation and deferred device setup`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
