@@ -2323,3 +2323,16 @@
 - **Git 提交**：`7ecbfbb docs: record Claude recent folder removal investigation`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-31 18:46] Adobe PDF创建失败初步排查
+
+- **需求/问题描述**：
+  > 用户提供Adobe无法从临时文件创建PDF的提示截图，设置为High Quality Print。
+- **实际实现的功能与改动**：
+  - 核对Adobe官方macOS打印转PDF流程及Apple系统存储PDF说明，区分两种菜单入口；截图不足以确定字体、文件或权限等具体根因。
+  - 只读检索本机Adobe日志、Acrobat支持目录及Distiller偏好中的日志线索，未找到本次转换错误日志；询问触发应用和具体操作。
+  - [测试/验证]：未修改Adobe设置、删除临时文件或重新执行转换，未确认恢复；Apple正文访问返回429，系统存储PDF步骤依据官方搜索摘要。
+- **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/18-46-44/对话.md；不上传原始截图、应用数据或日志，保留其他已有修改。
+- **Git 提交**：待提交。
+
+---
