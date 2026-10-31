@@ -2282,6 +2282,6 @@
   - 在gotchas补充面板开关不能替代底层防火墙规则验证、TUN存在不能直接认定根因的预防规则。
   - [测试/验证]：结论依据为用户反馈；未执行服务器抓包或配置变更，未额外验证恢复。协作文档diff --check通过。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/09-52-36/对话.md、memory/gotchas.md；仅暂存本次新增规则，保留既有修改。
-- **Git 提交**：待提交。
+- **Git 提交**：`f6630b5 docs: record user-confirmed BT firewall cause`；本条通过后续文档提交补记。
 
 ---
