@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 Remotion安装
+
+- Codex单代理，skill-installer与verification-before-completion；安装remotion-dev/skills的12个官方技能，使用create-video 4.0.539建立本地remotion-starter/。
+- npm缓存及文件核验位于已忽略的.agent/remotion-install/；项目依赖仅在项目内安装，不生成影片或进行视觉检查。
+
 ## 2026-10-31 Hyperframes安装
 
 - Codex单代理，skill-installer与verification-before-completion；4个核心技能安装到~/.codex/skills，npm全局安装Hyperframes CLI 0.8.223。

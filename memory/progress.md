@@ -1,5 +1,12 @@
 # 当前任务进度
 
+## 2026-10-31 Remotion安装
+
+- [x] 官方安装文档指向remotion-dev/skills；安装12个技能共285文件，全部匹配固定上游Git blob哈希。
+- [x] remotion-starter/空白项目与348个依赖安装完成；Remotion 4.0.539版本一致，ESLint/TypeScript及bundle通过。
+- [x] npm audit报告21项依赖告警（10 high、11 moderate）；部分建议将CLI降至4.0.277，部分无修复，保留官方模板版本并如实说明，未运行渲染或Studio。
+- [ ] 对话、日志与验证已保存，待仅提交推送本次协作记录，保留已有差异。
+
 ## 2026-10-31 Hyperframes安装
 
 - [x] 已读取上游说明，4个目标技能和hyperframes命令均未安装；Node 26.5.1满足Node 22+要求。

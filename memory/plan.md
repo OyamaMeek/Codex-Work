@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-31 Remotion安装
+
+1. 读取Remotion仓库、安装及Agent Skills文档；固定技能仓库30d4553ecd46fbc5212fd0ff006ae43af522158b和npm版本4.0.539。
+2. 使用skill-installer安装12个官方技能；create-video非交互建立remotion-starter空白项目并安装依赖。
+3. 核对技能文件哈希、Remotion版本一致性、模板检查及打包；不启动视觉验证或渲染，仅提交推送协作记录。
+
 ## 2026-10-31 Hyperframes安装
 
 1. 核对上游README、技能生命周期与npm元数据；固定技能提交a04b45a6db0d1f724be9cf1985c3b13657195f0d和CLI 0.8.223。

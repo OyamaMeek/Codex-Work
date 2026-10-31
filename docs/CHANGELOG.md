@@ -2403,3 +2403,17 @@
 - **Git 提交**：`8ce74c4 docs: record Hyperframes CLI and core skills installation`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
+
+## [2026-10-31 20:56] Remotion安装
+
+- **需求/问题描述**：
+  > 安装 https://github.com/remotion-dev/remotion。
+- **实际实现的功能与改动**：
+  - 沿官方文档指向remotion-dev/skills，固定提交30d4553ecd46fbc5212fd0ff006ae43af522158b，安装12个官方技能至~/.codex/skills。
+  - 使用create-video 4.0.539创建本地remotion-starter/空白项目，安装React、Remotion CLI及模板开发依赖；不启动Studio或制作影片。
+  - [测试/验证]：285个技能文件集合和Git blob哈希匹配；Remotion包版本4.0.539全部一致，ESLint、TypeScript检查和bundle构建通过。
+  - [依赖限制]：npm audit报告21项依赖告警（10 high、11 moderate），部分建议将CLI降级4.0.277，部分暂无修复；保留官方模板版本，未自动强制改版，未声明安全审计通过或视频渲染通过。
+- **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/20-56-00/对话.md；remotion-starter/及.agent/remotion-install/仅保留本地。
+- **Git 提交**：待提交；仅提交本次协作文档，保留其他已有修改。
+
+---

@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-10-31 Remotion安装
+
+- 12个官方技能安装器退出0，每个文件集合及Git blob哈希与固定上游树一致。
+- create-video空白项目及npm依赖安装成功，Remotion包版本一致，项目静态检查和bundle构建通过。
+- 项目和缓存仅本地保留，不启动Studio视觉检查或影片渲染；仅提交本次协作文档。
+
+实际结果：官方skill-installer退出0，12个技能285文件与提交30d4553ecd46fbc5212fd0ff006ae43af522158b的Git树一致。create-video 4.0.539非交互创建remotion-starter并安装348包，退出0；remotion versions确认全部Remotion包4.0.539一致，npm run lint（ESLint及tsc）与npm run build均退出0，生成build/。npm audit退出1，JSON报告10 high、11 moderate共21项依赖告警；存在CLI降级建议及暂无修复项目，不自动强制改版，报告保留在.agent/remotion-install/npm-audit.json。未启动Studio、进行视觉检查或导出视频。
+
 ## 2026-10-31 Hyperframes安装
 
 - 安装器退出0，4个核心技能文件集合及Git blob哈希与固定上游树一致；不安装按需扩展技能。
