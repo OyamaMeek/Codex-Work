@@ -2242,6 +2242,6 @@
   - 根因尚未确认，继续建议使用手机蜂窝网络复测并核对防火墙规则；不修改服务器、重装或关闭防火墙。
   - [测试/验证]：两次公网HTTPS检查均SSL connection timeout；第二次详细输出区分TCP连接成功和TLS超时。--noproxy未排除系统TUN影响，未验证真实登录。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/09-52-36/对话.md；不上传截图、账号和完整入口。
-- **Git 提交**：待提交。
+- **Git 提交**：`2ccf1a2 docs: record 3x-ui external TLS timeout evidence`；本条通过后续文档提交补记。
 
 ---
