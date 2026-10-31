@@ -2256,6 +2256,6 @@
   - 明确前次--noproxy未排除TUN，建议用户临时退出代理并停用TUN后复测；代理为待验证因素，不能认定为根因。
   - [测试/验证]：同IP宝塔端口TLS握手与HTTP响应通过；3x-ui此前TLS握手超时。路由首次读取受沙箱限制，获准只读重试后成功；未更改网络或服务器配置，尚未恢复访问。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/09-52-36/对话.md；保留其他既有修改。
-- **Git 提交**：待提交。
+- **Git 提交**：`81f4f6e docs: record firewall state and tunnel route evidence`；本条通过后续文档提交补记。
 
 ---
