@@ -2361,6 +2361,6 @@
   - 成品位于本地output/pdf/四级高频词汇-A4.pdf，转换脚本位于已忽略的.agent/pdf-a4/；原图不重新压缩，不新增文字层。
   - [测试/验证]：转换脚本断言、pypdf与pdfinfo检查通过；6页尺寸、原图字节及像素、显示比例、居中位置、页边距和源文件SHA-256均符合要求。未进行视觉检查或实体打印。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/19-11-04/对话.md；PDF和脚本仅本地保留。
-- **Git 提交**：待提交，仅暂存本次协作文档，保留其他任务已有修改。
+- **Git 提交**：`a3d347e docs: record CET4 vocabulary A4 PDF conversion`；本条通过后续文档提交补记，保留其他任务已有修改。
 
 ---
