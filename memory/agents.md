@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 Notion MG提示词与原图
+
+- Codex单代理，使用Notion技能与MCP读取、上传和定点更新；macOS Vision读取15张本地PNG的页码，Python标准库验证提交稿结构与上传长度。
+- 原页、识别文字、提交稿及核验结果仅保存在.agent/notion-mg-prompts/；不执行所整理提示词中的视频制作要求，不检查Notion页面视觉排版。
+
 ## 2026-10-31 Remotion安装
 
 - Codex单代理，skill-installer与verification-before-completion；安装remotion-dev/skills的12个官方技能，使用create-video 4.0.539建立本地remotion-starter/。
