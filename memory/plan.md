@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-10-31 Cloudflare安全审计技能安装
+
+1. 读取上游README、SKILL.md和文件树，确认目录未安装，固定提交c1c8a8c1471069fb0e188eeaff69b8e8db6564a8。
+2. 官方skill-installer安装skills/security-audit，核对完整文件集合和Git blob哈希，运行上游两个校验器测试。
+3. 保存验证、对话和日志，仅提交推送本次协作文档，保留其他已有修改。
+
 ## 2026-10-31 Lemo-Opuscar安装
 
 1. 读取上游说明和setup.sh，固定来源提交，核对Codex技能目录及系统工具。

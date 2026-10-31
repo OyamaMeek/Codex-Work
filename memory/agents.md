@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-10-31 Cloudflare安全审计技能安装
+
+- Codex单代理，沿用skill-installer与verification-before-completion；固定上游提交安装至~/.codex/skills/security-audit，缓存与安装核验放在已忽略的.agent/security-audit-install/。
+- 安装验证使用Python标准库核对Git blob哈希与Node原生测试；本次不启动代码库安全审计。
+
 ## 2026-10-31 Lemo-Opuscar安装
 
 - Codex单代理，skill-installer与verification-before-completion；官方安装脚本将技能安装至~/.codex/skills/lemo-opuscar，缓存放在已忽略的.agent/lemo-opuscar-install/。
