@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-10-31 四级高频词汇A4整理
+
+- Codex单代理，PDF与ponytail；PyMuPDF保留原图片，pypdf独立检查A4尺寸。输入、成品和脚本只保留本地，不进行视觉检查或实体打印。
+
 ## 2026-10-30 CLion Codex 2.5.0启动排查
 
 - Codex单代理，OpenAI Docs、ponytail、systematic-debugging与verification-before-completion；CLion/npm原始日志、显式prefix独立npm安装、codesign与真实协议初始化。

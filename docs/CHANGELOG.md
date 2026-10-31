@@ -2351,3 +2351,16 @@
 - **Git 提交**：`1a362ce docs: record Acrobat physical printing diagnosis`；本条通过后续文档提交补记。此前补充调查提交为`e33a582 docs: record Adobe background conversion checks`。
 
 ---
+
+## [2026-10-31 19:11] 四级高频词汇PDF整理为A4
+
+- **需求/问题描述**：
+  > 把四级高频词汇.pdf整理成正常A4大小的pdf。
+- **实际实现的功能与改动**：
+  - 将6页图片型PDF整理为210×297毫米竖向A4；按图片边界移除原页面外围空白，保持图片比例，居中并至少保留10毫米页边距，原文件保留。
+  - 成品位于本地output/pdf/四级高频词汇-A4.pdf，转换脚本位于已忽略的.agent/pdf-a4/；原图不重新压缩，不新增文字层。
+  - [测试/验证]：转换脚本断言、pypdf与pdfinfo检查通过；6页尺寸、原图字节及像素、显示比例、居中位置、页边距和源文件SHA-256均符合要求。未进行视觉检查或实体打印。
+- **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/19-11-04/对话.md；PDF和脚本仅本地保留。
+- **Git 提交**：待提交，仅暂存本次协作文档，保留其他任务已有修改。
+
+---
