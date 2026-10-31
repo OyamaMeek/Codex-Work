@@ -2414,6 +2414,6 @@
   - [测试/验证]：285个技能文件集合和Git blob哈希匹配；Remotion包版本4.0.539全部一致，ESLint、TypeScript检查和bundle构建通过。
   - [依赖限制]：npm audit报告21项依赖告警（10 high、11 moderate），部分建议将CLI降级4.0.277，部分暂无修复；保留官方模板版本，未自动强制改版，未声明安全审计通过或视频渲染通过。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/20-56-00/对话.md；remotion-starter/及.agent/remotion-install/仅保留本地。
-- **Git 提交**：待提交；仅提交本次协作文档，保留其他已有修改。
+- **Git 提交**：`e92a0ac docs: record Remotion skills and starter installation`，已推送origin/main；本条通过后续文档提交补记，保留其他已有修改。
 
 ---
