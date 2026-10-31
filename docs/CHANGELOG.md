@@ -2348,6 +2348,6 @@
   - 核对Adobe官方打印错误文档，提供确认实体打印机、启用高级设置中的“作为图像打印”、先试印1页的排查步骤。
   - [测试/验证]：只读命令完成，未修改打印设置、重启Acrobat、发送打印任务或确认恢复；没有进行视觉检查。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/18-46-44/对话.md；不上传应用数据、原始日志或截图。
-- **Git 提交**：待提交；此前补充调查提交为`e33a582 docs: record Adobe background conversion checks`。
+- **Git 提交**：`1a362ce docs: record Acrobat physical printing diagnosis`；本条通过后续文档提交补记。此前补充调查提交为`e33a582 docs: record Adobe background conversion checks`。
 
 ---
