@@ -2455,6 +2455,6 @@
   - 其余七个仓库未发现SKILL.md，整理官方链接、用途和按需使用入口；未安装社区同名技能、迁移专用技能或项目依赖。
   - [测试/验证]：安装器退出0；21个技能文件集合及Git blob哈希一致，11处正文相对文件引用有效，资源索引覆盖八项。未执行前端项目运行或视觉检查。
 - **涉及文件**：docs/前端技能与资源索引.md、memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/10/31/21-44-00/对话.md；技能与.agent/frontend-resources/检查材料仅保留本地。
-- **Git 提交**：待提交；仅暂存本次协作文档，保留其他任务已有差异。
+- **Git 提交**：`8f34218 docs: record shadcn skill and frontend resources`；本条通过后续文档提交补记，仅包含本次协作文档，保留其他任务已有差异。
 
 ---
