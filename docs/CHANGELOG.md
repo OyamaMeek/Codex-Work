@@ -2231,3 +2231,17 @@
 - **Git 提交**：`c45aec8 docs: record 3x-ui listener and HTTPS evidence`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-10-31 09:56] 验证3x-ui外部TLS连接超时
+
+- **需求/问题描述**：
+  > 浏览器依旧超时，服务器本机HTTPS检查已返回404。
+- **实际实现的功能与改动**：
+  - 用户截图证明服务器本机IPv4 HTTPS有响应；缺少管理路径的404不能判为服务崩溃。
+  - 在本地使用curl --noproxy直接测试同一公网端口；详细输出确认TCP Connected、发出TLS Client hello后等待超时，退出28。
+  - 根因尚未确认，继续建议使用手机蜂窝网络复测并核对防火墙规则；不修改服务器、重装或关闭防火墙。
+  - [测试/验证]：两次公网HTTPS检查均SSL connection timeout；第二次详细输出区分TCP连接成功和TLS超时。--noproxy未排除系统TUN影响，未验证真实登录。
+- **涉及文件**：docs/CHANGELOG.md、context/2026/10/31/09-52-36/对话.md；不上传截图、账号和完整入口。
+- **Git 提交**：待提交。
+
+---
