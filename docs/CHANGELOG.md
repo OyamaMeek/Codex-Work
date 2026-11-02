@@ -2539,3 +2539,17 @@
 - **Git 提交**：`2e75b4b docs: record Ubuntu Go installation guidance`，已推送origin/main；本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-02 19:54] Claude Opus 5.5官方价格查询
+
+- **需求/问题描述**：
+  > 查询Claude Opus 5.5的官方价格。
+- **实际实现的功能与改动**：
+  - 核对Anthropic官方发布页与Claude Platform定价文档：每百万token标准输入4美元、输出20美元、缓存读取0.20美元、5分钟缓存写入5美元、1小时缓存写入8美元。
+  - 官方发布页确认Fast mode每百万输入8美元、输出40美元。
+  - [验证范围]：查询官方网页，未进行付费API调用，未核对第三方平台加价或账户折扣；未修改业务文件。
+  - 来源：https://platform.claude.com/docs/en/about-claude/pricing 、https://www.anthropic.com/claude-opus-5-5 。
+- **涉及文件**：docs/CHANGELOG.md、context/2026/11/02/19-54-31/对话.md。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
