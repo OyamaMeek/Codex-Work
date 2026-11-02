@@ -2523,6 +2523,6 @@
   - [测试/验证]：转义公式断言修复前按预期失败；转换后44处数学表达式、14题编号及非公式文字一致，大括号配对通过。Notion更新返回isError:false且无警告。
   - [验证范围]：页面节外内容存在截断及1个unknown块，未参与替换；未执行客户端截图或视觉复查，未验证窄窗口长公式布局。
 - **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、memory/gotchas.md、docs/CHANGELOG.md、context/2026/11/02/15-37-00/对话.md。Notion节外正文未写入协作记录。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`5d441ae docs: record Notion math rendering repair`；本条通过后续文档提交补记，仅包含本次协作文档。
 
 ---
