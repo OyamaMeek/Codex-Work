@@ -2550,6 +2550,6 @@
   - [验证范围]：查询官方网页，未进行付费API调用，未核对第三方平台加价或账户折扣；未修改业务文件。
   - 来源：https://platform.claude.com/docs/en/about-claude/pricing 、https://www.anthropic.com/claude-opus-5-5 。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/11/02/19-54-31/对话.md。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`f342c04 docs: record official Claude Opus 5.5 pricing`；本条通过后续文档提交补记。
 
 ---
