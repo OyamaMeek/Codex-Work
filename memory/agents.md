@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-02 Notion公式显示修复
+
+- Codex单代理，ponytail、systematic-debugging与verification-before-completion；通过Notion MCP读取并定点修复Tmp的261102小节，遵循连接器原生公式语法。
+- 页面其他部分存在截断及unknown块，仅处理完整读取的目标小节，不保存或上传无关正文，不执行截图。
+
 ## 2026-10-31 前端技能与资源
 
 - Codex单代理，使用skill-installer与verification-before-completion；核对八项官方来源，仅安装已有官方技能，其余保存为按需资源。
