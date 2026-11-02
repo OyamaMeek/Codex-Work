@@ -1,5 +1,19 @@
 # 开发记录
 
+## [2026-11-02 10:54] PyCharm Codex启动错误只读诊断
+
+- **需求/问题描述**：
+  > 用户提供PyCharm中Codex ACP初始化失败的截图。
+- **实际实现的功能与改动**：
+  - 核对当前IDE日志，确认通过Homebrew npx启动codex-acp，并调用主目录node_modules中的Codex 0.164.0。
+  - [测试/验证]：直接运行JS入口复现Missing optional dependency；ARM64包缺少package.json，Node解析返回MODULE_NOT_FOUND。现存原生二进制版本命令退出137，codesign严格检查退出1。
+  - 结论为实际调用的安装不完整，需恢复对应安装及同版本平台依赖；全局重装不保证修改当前主目录安装。已读取OpenAI官方CLI安装文档。
+  - 仅执行只读诊断，未重装、删除缓存、修改IDE配置或重启IDE；故障尚未修复。
+- **涉及文件**：docs/CHANGELOG.md、context/2026/11/02/10-54-02/对话.md。保留memory中原有未提交修改。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
+
 ## [2026-10-30 15:35] 整理新生学业知识竞答参考文件
 
 - **需求/问题描述**：
