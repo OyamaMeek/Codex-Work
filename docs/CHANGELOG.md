@@ -2536,6 +2536,6 @@
   - 核对项目master分支go.mod要求Go 1.26；README仍标示1.25+，版本建议以go.mod为依据。
   - [验证范围]：仅依据截图和上游资料提供说明，未连接远程服务器、安装软件或验证服务启动；不保存截图中的服务器地址与登录来源。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/11/02/18-45-34/对话.md。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`2e75b4b docs: record Ubuntu Go installation guidance`，已推送origin/main；本条通过后续文档提交补记。
 
 ---
