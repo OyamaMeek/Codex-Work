@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-03 Notion Python图片笔记
+
+- Codex单代理，ponytail；Notion MCP读取原章节与定点插入，macOS Vision本地OCR，Python运行案例。原图、识别结果及稿件仅保存在被忽略的.agent/python-notes/。
+- 保留Python原图、已整理的列表正文和其他章节；仅提交本次协作记录，不进行页面截图。
+
 ## 2026-11-02 Notion公式显示修复
 
 - Codex单代理，ponytail、systematic-debugging与verification-before-completion；通过Notion MCP读取并定点修复Tmp的261102小节，遵循连接器原生公式语法。

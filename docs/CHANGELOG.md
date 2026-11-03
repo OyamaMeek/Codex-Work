@@ -2553,3 +2553,17 @@
 - **Git 提交**：`f342c04 docs: record official Claude Opus 5.5 pricing`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-03 17:21] Notion Python图片笔记OCR与案例
+
+- **需求/问题描述**：
+  > 将Note页Python笔记图片OCR为代码格式，结合知识完善，每个操作提供小案例。
+- **实际实现的功能与改动**：
+  - 读取格式化9图、字符串8图、列表切片1图及集合9图；在原小节补充可编辑说明与Python代码，保留27张原图和原列表正文。
+  - 新增39个独立案例代码块，覆盖格式化、字符串、切片及集合操作；补充返回值、参数、浮点舍入、空集合及异常边界，纠正f-string精度、strip字符清理、集合pop及while遍历的表述。
+  - [测试/验证]：macOS Vision对27张原图均提取非空文字；Python 3.9.6运行新增39块及原列表15块，193项输出逐项核对通过。4处唯一锚点插入，原图引用与顺序一致，Notion返回isError:false且无警告。
+  - [验证范围]：未执行Notion客户端排版或截图检查；按连接器规则成功后未额外回读。任务图片、识别结果及正文仅保存在本地.agent/python-notes/。
+- **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/03/17-21-03/对话.md。
+- **Git 提交**：待提交；仅提交本次协作文档，用户已有修改保持原样。
+
+---
