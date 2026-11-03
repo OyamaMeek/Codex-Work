@@ -2605,6 +2605,6 @@
   - [测试/验证]：官方包SHA-512匹配锁文件，43个文件SHA-256匹配，签名有效；CLI返回0.165.0，app-server与自带npx启动的ACP 2.5.0均成功响应initialize，verify.py退出0。
   - [验证范围]：未重启WebStorm、未发送聊天或执行截图；未修改课程源码、全局Codex及其他IDE。备份与验证仅本地.agent/webstorm-codex-repair/保留。
 - **涉及文件**：WebStorm ACP缓存中的缺失运行包（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/03/21-21-36/对话.md。
-- **Git 提交**：待提交，仅提交本次协作记录，保留既有其他修改。
+- **Git 提交**：`14288bf docs: record WebStorm Codex runtime dependency repair`，已推送origin/main；本条通过后续文档提交补记，仅包含本次协作记录，保留既有其他修改。
 
 ---
