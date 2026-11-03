@@ -1,5 +1,12 @@
 # 当前任务进度
 
+## 2026-11-03 WebStorm Codex缺失运行包修复
+
+- [x] 原日志与Node 24.19.0命令均复现Missing optional dependency；锁文件要求Codex 0.165.0的darwin-arm64包，实际不存在。
+- [x] 备份package.json与package-lock.json，显式prefix执行npm install --include=optional，仅新增缺失的一个包，两份清单字节不变。
+- [x] SHA-512与锁文件匹配，43个文件哈希匹配，codesign有效；WebStorm Node 24.19.0运行CLI 0.165.0，npx ACP 2.5.0及app-server真实初始化均通过。
+- [ ] 提交推送本次协作记录；保留其他既有修改，未重启IDE或发送聊天。
+
 ## 2026-11-03 导入f-string详细笔记
 
 - [x] 完整读取指定f-string笔记18节及Notion格式化小节，目标正文完整。

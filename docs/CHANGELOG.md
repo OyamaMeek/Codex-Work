@@ -2594,3 +2594,17 @@
 - **Git 提交**：`b92354d docs: record algorithm awareness video prompt guidance`；本条通过后续文档提交补记，只包含本次日志与对话归档，保留既有memory修改。
 
 ---
+
+## [2026-11-03 21:21] WebStorm Codex缺失运行包修复
+
+- **需求/问题描述**：
+  > 修复截图中WebStorm的Codex ACP初始化失败，错误为Missing optional dependency @openai/codex-darwin-arm64。
+- **实际实现的功能与改动**：
+  - 用WebStorm日志与自带Node 24.19.0复现退出1；确认ACP 2.5.0与Codex 0.165.0存在，缺失锁文件要求的Apple Silicon运行包。
+  - 备份安装清单，向当前ACP目录显式prefix安装optional依赖，仅新增缺失的一个包；package.json、package-lock.json字节不变。
+  - [测试/验证]：官方包SHA-512匹配锁文件，43个文件SHA-256匹配，签名有效；CLI返回0.165.0，app-server与自带npx启动的ACP 2.5.0均成功响应initialize，verify.py退出0。
+  - [验证范围]：未重启WebStorm、未发送聊天或执行截图；未修改课程源码、全局Codex及其他IDE。备份与验证仅本地.agent/webstorm-codex-repair/保留。
+- **涉及文件**：WebStorm ACP缓存中的缺失运行包（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/03/21-21-36/对话.md。
+- **Git 提交**：待提交，仅提交本次协作记录，保留既有其他修改。
+
+---

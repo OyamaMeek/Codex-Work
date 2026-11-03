@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-11-03 WebStorm Codex缺失运行包修复
+
+- 修复前使用WebStorm自带Node运行Codex入口应退出1，错误与截图一致；修复后同一命令应返回0.165.0。
+- 缺失包匹配锁文件的0.165.0-darwin-arm64，包文件及签名有效；ACP和Codex app-server响应真实initialize请求。
+- 保留安装清单备份、现有课程源码和全局配置；不以npm退出0或.installed标记替代启动验证，不重启IDE或发送真实聊天。
+
+实际结果：修复前原Node入口退出1；npm仅新增一个包，安装清单与锁文件字节不变。下载包SHA-512匹配锁文件，43个文件SHA-256全部匹配，codesign --verify --strict退出0，CLI返回codex-cli 0.165.0。verify.py退出0，app-server及WebStorm自带npx的ACP initialize均响应成功，ACP版本2.5.0、协议1；未在IDE发送实际聊天或重启IDE。
+
 ## 2026-11-03 导入f-string详细笔记
 
 - 原文18节、代码示例及6题自测完整保留；代码逐字一致，原Markdown不修改。

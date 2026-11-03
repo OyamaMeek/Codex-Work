@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-03 WebStorm Codex缺失运行包修复
+
+- Codex单代理，systematic-debugging、ponytail、OpenAI Docs与verification-before-completion；依据WebStorm日志、锁文件及自带Node 24.19.0复现，使用npm补齐现有版本依赖。
+- 仅修改WebStorm ACP 2.5.0依赖缓存；本地备份与验证材料位于已忽略的.agent/webstorm-codex-repair/，不修改课程源码、不重启IDE、不发送聊天。
+
 ## 2026-11-03 导入f-string详细笔记
 
 - Codex单代理，沿用ponytail与Notion MCP；Python 3.9.6标准库doctest验证用户提供的笔记，真实stdin运行商品输出程序。原Markdown只读，导入稿与验证仅本地.agent/python-notes/保留。
