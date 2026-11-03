@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-11-03 导入f-string详细笔记
+
+- Codex单代理，沿用ponytail与Notion MCP；Python 3.9.6标准库doctest验证用户提供的笔记，真实stdin运行商品输出程序。原Markdown只读，导入稿与验证仅本地.agent/python-notes/保留。
+
 ## 2026-11-03 Notion Python图片笔记
 
 - Codex单代理，ponytail；Notion MCP读取原章节与定点插入，macOS Vision本地OCR，Python运行案例。原图、识别结果及稿件仅保存在被忽略的.agent/python-notes/。

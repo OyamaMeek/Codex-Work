@@ -2567,3 +2567,17 @@
 - **Git 提交**：`b5c8931 docs: record Python notes OCR and runnable examples`；仅包含本次协作文档，本条通过后续文档提交补记，用户已有修改保持原样。
 
 ---
+
+## [2026-11-03 17:25] 导入f-string详细笔记到Notion
+
+- **需求/问题描述**：
+  > 将用户指定的f-string笔记.md也写入刚才的Notion Python笔记。
+- **实际实现的功能与改动**：
+  - 在Note → Python → character3 → format格式化中新增「f-string详细笔记（18节与自测）」折叠，完整保留18节、速查表、36个交互式代码块、商品程序及6题自测答案。
+  - 仅移除不适用于Notion的本地相对链接、调整标题层级；原Markdown只读，原图及既有笔记保持不变。
+  - [测试/验证]：Python 3.9.6运行126个doctest示例及1次真实stdin商品程序，全部通过；18节和代码块逐字完整性检查通过。Notion定点插入返回isError:false且无警告。
+  - [验证范围]：未执行客户端排版或截图检查；导入稿、原文哈希与验证保存在本地.agent/python-notes/。
+- **涉及文件**：memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/03/17-25-17/对话.md。
+- **Git 提交**：待提交；仅提交本次协作记录，用户已有修改保持原样。
+
+---
