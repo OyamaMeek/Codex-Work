@@ -2664,3 +2664,17 @@
 - **Git 提交**：`95f72c0 docs: record CLion shared Codex runtime repair`；本条通过后续文档提交补记，仅包含本次协作记录，保留其他已有差异。
 
 ---
+
+## [2026-11-04 20:10] 修复CLion注册表ACP独立安装
+
+- **需求/问题描述**：
+  > 用户追加截图，CLion提示运行时可能损坏及无法解析Codex的智能体启动配置，继续完成修复。
+- **实际实现的功能与改动**：
+  - 最新日志确认当前使用注册表ACP 2.5.0，版本目录缺失；Node 24.13.0已校验通过，npm从.incomplete目录上溯主目录后因ENOTEMPTY退出190。
+  - 使用CLion自带Node/npm显式prefix在独立2.5.0目录安装25个包；保留主目录依赖、Node、课程源码及IDE设置。当前安装器以版本目录存在判定缓存，无额外安装标记要求。
+  - [测试/验证]：修复前缺失目录检查退出1；修复后npm prefix正确，官方SHA-512、43文件哈希、codesign、CLI 0.165.0通过，自带Node/npx运行ACP 2.5.0协议1与app-server真实initialize成功，verify.py退出0、两份stderr为空。
+  - 主目录package.json、package-lock.json及Codex入口逐字不变；未重启IDE、截图或发送聊天，未验证IDE新会话。再次清除版本缓存仍可能触发安装器上溯问题。
+- **涉及文件**：CLion ACP 2.5.0独立依赖（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/04/20-10-18/对话.md。检查材料仅本地.agent/clion-registry-repair/保存。
+- **Git 提交**：待提交；仅包含本次协作记录，保留其他已有差异。
+
+---

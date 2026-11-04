@@ -1,5 +1,14 @@
 # 当前任务验证标准
 
+## 2026-11-04 CLion注册表ACP独立安装修复
+
+- 最新日志的npm退出190与目标缺失检查为修复前证据；确认自带Node校验已通过。
+- ACP 2.5.0独立目录包含安装清单、可用入口及所需运行包；npm prefix返回该目录，主目录清单与入口不变。
+- 官方运行包SHA-512、文件哈希和codesign通过；自带Node/npx实际完成ACP及app-server initialize，不以npm退出0或安装标记代替验证。
+- 不删除共享运行时、不截图、不发送聊天；区分协议验证与IDE界面验证，记录清除缓存后再次触发安装器问题的风险。
+
+实际结果：目标缺失检查退出1；显式prefix安装25个包后，npm prefix指向CLion独立2.5.0目录，SHA-512、43文件哈希、codesign及CLI 0.165.0通过。自带Node/npx启动ACP 2.5.0协议1及app-server真实initialize通过，verify.py退出0、stderr为空，主目录清单及入口逐字不变。读取当前安装器缓存判定逻辑，仅检查版本目录存在，无额外安装标记要求；IDE新会话与未来清理后行为未验证。
+
 ## 2026-11-04 CLion主目录Codex平台依赖修复
 
 - 修复前同一Node入口复现Missing optional dependency并退出1；修复后CLI返回0.164.0。

@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-11-04 CLion注册表ACP独立安装修复
+
+1. 核对最新错误cause与Node状态，确认ACP 2.5.0目录缺失及npm上溯主目录导致ENOTEMPTY；不重复原失败安装。
+2. 备份主目录清单状态，使用CLion自带Node/npm显式prefix安装ACP 2.5.0到独立目录，核对缓存判定条件及真实启动。
+3. 验证Codex原生签名、版本、独立prefix及ACP/app-server初始化；保留其他修改，归档并提交推送本次协作文档。
+
 ## 2026-11-04 CLion主目录Codex平台依赖修复
 
 1. 读取当前CLion日志与实际依赖，复现主目录Codex 0.164.0缺少darwin-arm64运行包导致退出1；确认原npx命令与工作目录。

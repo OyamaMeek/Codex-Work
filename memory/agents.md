@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-04 CLion注册表ACP独立安装修复
+
+- 沿用单代理及现有排查技能；当前CLion改用注册表ACP 2.5.0，自带Node 24.13.0正常，版本缓存缺失，安装器npm上溯主目录并ENOTEMPTY。
+- 使用显式prefix安装独立ACP目录，保留Node及主目录依赖；本地检查材料放在.agent/clion-registry-repair/，不执行截图或发送聊天。
+
 ## 2026-11-04 CLion主目录Codex平台依赖修复
 
 - Codex单代理，OpenAI Docs、systematic-debugging、ponytail与verification-before-completion；当前CLion通过Homebrew npx从项目.idea启动主目录ACP 2.3.0、Codex 0.164.0。
