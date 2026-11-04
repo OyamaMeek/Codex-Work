@@ -2636,3 +2636,17 @@
 - **Git 提交**：`9c84b1b docs: record PyCharm Codex cleanup diagnosis`；本条通过后续文档提交补记，仅包含本次日志与对话归档。
 
 ---
+
+## [2026-11-04 18:04] 设置CleanMyMac智能扫描与垃圾清理白名单
+
+- **需求/问题描述**：
+  > 设置先前建议的清理忽略目录；用户明确主要使用智能扫描，并要求垃圾清理也设置白名单。
+- **实际实现的功能与改动**：
+  - 使用CleanMyMac 5.3.0原生界面，在垃圾清理的用户缓存结果右键将JetBrains加入忽略列表；设置页确认路径为/Users/oyamahappa/Library/Caches/JetBrains。
+  - [测试/验证]：垃圾清理结果中的用户缓存由545 MB变为48.8 MB，JetBrains 497 MB被排除；新运行智能呵护扫描后，用户缓存结果不含JetBrains，确认智能扫描使用该忽略规则。
+  - 用户授权查看当前CleanMyMac窗口截图；未执行清理或删除文件，未升级应用、修改安全扫描设置或修复Codex依赖。
+  - [限制]：当前版本「其他」列表的手动添加按钮不可用；node_modules未出现在清理候选中，尚未加入白名单，不能保证其他清理方式会排除它。
+- **涉及文件**：CleanMyMac忽略列表（仅本地）；memory/gotchas.md、docs/CHANGELOG.md、context/2026/11/04/18-04-13/对话.md。
+- **Git 提交**：待提交。
+
+---

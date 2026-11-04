@@ -66,3 +66,4 @@
 
 - CLion提示ACP运行时损坏时先读取异常cause；Node/npm可运行而npm报主目录ENOTEMPTY时，核对工作目录中的package.json及npm prefix。空目录会向父目录寻找项目，不能据通用提示删除整个.runtimes；PyCharm修复也不能代表CLion已修复。
 - JetBrains ACP按版本建立安装目录；修复旧版独立prefix不能覆盖未来版本升级。升级复发时核对日志要求的确切版本，显式prefix安装该版本并验证实际协议初始化，不把旧版通过当作新版证据。
+- 用户所说的CleanMyMac智能扫描对应「智能呵护」；白名单需同时核对其清理结果与垃圾清理。5.3.0的「其他」分类不能从设置手动添加目录；JetBrains缓存可在垃圾清理结果右键加入忽略列表，再用新智能扫描确认排除，不将node_modules未出现在结果中等同于已加入白名单。
