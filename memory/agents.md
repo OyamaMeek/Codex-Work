@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-04 CLion主目录Codex平台依赖修复
+
+- Codex单代理，OpenAI Docs、systematic-debugging、ponytail与verification-before-completion；当前CLion通过Homebrew npx从项目.idea启动主目录ACP 2.3.0、Codex 0.164.0。
+- 仅补齐主目录同版本darwin-arm64运行包，安装材料、备份和协议检查放在已忽略的.agent/clion-home-codex-repair/；不改课程源码或IDE设置。
+
 ## 2026-11-04 CLion Codex启动缓存恢复
 
 - Codex单代理，systematic-debugging、ponytail、OpenAI Docs与verification-before-completion；依据CLion原日志复现前提，复用本机同版本WebStorm包并使用CLion Node 24.13.0验证。

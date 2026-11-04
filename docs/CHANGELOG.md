@@ -2650,3 +2650,17 @@
 - **Git 提交**：`9817588 docs: record CleanMyMac JetBrains ignore settings`；本条通过后续文档提交补记，仅包含本次协作记录，保留用户已有修改。
 
 ---
+
+## [2026-11-04 19:55] 修复CLion主目录Codex平台依赖
+
+- **需求/问题描述**：
+  > 修复截图中CLion Codex ACP初始化失败，错误为Missing optional dependency @openai/codex-darwin-arm64。
+- **实际实现的功能与改动**：
+  - 当前CLion原始日志及Node入口复现退出1；实际使用Homebrew npx、主目录ACP 2.3.0与Codex 0.164.0，平台依赖仅剩残留目录且缺少package.json。
+  - 项目内隔离安装同版本官方运行包，备份损坏目录后只补齐主目录darwin-arm64包；主目录package.json、package-lock.json与Codex入口字节不变。
+  - [测试/验证]：修复前verify.py因目标文件缺失退出1；修复后官方SHA-512、43文件哈希、codesign与CLI 0.164.0通过，原npx命令在日志中的.idea目录完成ACP 2.3.0协议1与app-server真实initialize，verify.py退出0、stderr为空。
+  - [验证范围]：未重启IDE、发送聊天或截图；未验证再次清理后的行为。主目录运行包若被再次移除可能复发，未认定具体清理工具是本次删除的原因。
+- **涉及文件**：主目录Codex平台依赖（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/04/19-55-25/对话.md。安装材料与备份仅本地.agent/clion-home-codex-repair/保存。
+- **Git 提交**：待提交；仅包含本次协作记录，保留其他已有差异。
+
+---

@@ -1,5 +1,12 @@
 # 当前任务进度
 
+## 2026-11-04 CLion主目录Codex平台依赖修复
+
+- [x] 当前CLion日志与直接运行均复现退出1；实际使用主目录ACP 2.3.0、Codex 0.164.0，平台包package.json缺失，主目录锁文件版本与实际安装不同。
+- [x] 在隔离目录安装同版本官方包，备份损坏目录后补齐主目录darwin-arm64依赖；主目录package.json、package-lock.json与Codex入口字节保持不变。
+- [x] SHA-512、43文件哈希、codesign与CLI 0.164.0通过；CLion原npx命令在原.idea目录成功完成ACP 2.3.0协议1与app-server初始化，verify.py退出0。
+- [ ] 保存本次归档与日志，仅提交推送本次协作记录；未重启IDE、发送聊天或截图，未来再次清除主目录运行包仍可能复发。
+
 ## 2026-11-04 CLion Codex启动缓存恢复
 
 - [x] 当前日志确认Codex ACP 2.5.0安装因主目录ENOTEMPTY退出190；Node 24.13.0可运行，目标版本目录缺失，无并发CLion npm安装。

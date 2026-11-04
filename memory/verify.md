@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-11-04 CLion主目录Codex平台依赖修复
+
+- 修复前同一Node入口复现Missing optional dependency并退出1；修复后CLI返回0.164.0。
+- 安装官方0.164.0-darwin-arm64包，完整性、全部文件及codesign有效；主目录package.json、package-lock.json与Codex入口保持不变。
+- 使用日志中的Homebrew npx与项目.idea工作目录，真实ACP initialize及Codex app-server initialize成功；不发送聊天、不重启IDE、不截图。
+
+实际结果：修复前原入口退出1，verify.py因平台包package.json缺失退出1；修复后SHA-512与43文件哈希一致、codesign有效、CLI 0.164.0，主目录两份清单与Codex入口逐字不变。原npx命令从日志中的.idea目录启动ACP 2.3.0，协议1与app-server真实initialize成功，verify.py退出0，两份stderr为空。界面聊天与未来清理后的状态未验证。
+
 ## 2026-11-04 CLion Codex启动缓存恢复
 
 - 修复前记录CLion原始npm退出190、工作目录及ENOTEMPTY路径，确认目标版本缺失；不重复执行会改写主目录的失败安装。
