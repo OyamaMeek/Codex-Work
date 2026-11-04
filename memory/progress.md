@@ -1,5 +1,11 @@
 # 当前任务进度
 
+## 2026-11-04 CLion Codex启动缓存恢复
+
+- [x] 当前日志确认Codex ACP 2.5.0安装因主目录ENOTEMPTY退出190；Node 24.13.0可运行，目标版本目录缺失，无并发CLion npm安装。
+- [x] 核验来源43个官方运行包文件与SHA-512；恢复CLion独立缓存，1341项文件及链接一致，签名、CLI 0.165.0、独立prefix和真实ACP/app-server初始化通过。
+- [ ] 保存对话与日志，仅提交推送本次协作记录，保留用户已有差异。
+
 ## 2026-11-03 WebStorm Codex缺失运行包修复
 
 - [x] 原日志与Node 24.19.0命令均复现Missing optional dependency；锁文件要求Codex 0.165.0的darwin-arm64包，实际不存在。

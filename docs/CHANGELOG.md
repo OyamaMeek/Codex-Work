@@ -2608,3 +2608,17 @@
 - **Git 提交**：`14288bf docs: record WebStorm Codex runtime dependency repair`，已推送origin/main；本条通过后续文档提交补记，仅包含本次协作记录，保留既有其他修改。
 
 ---
+
+## [2026-11-04 11:58] 恢复CLion Codex独立运行缓存
+
+- **需求/问题描述**：
+  > 修复截图中CLion的Codex无法解析智能体启动配置及运行时可能损坏提示。
+- **实际实现的功能与改动**：
+  - 原始日志确认ACP 2.5.0安装上溯用户主目录，因ENOTEMPTY退出190；Node 24.13.0正常，CLion目标版本目录缺失。
+  - 核验本机WebStorm同版本包，将完整包恢复到CLion独立缓存；保留主目录依赖、Node及其他IDE，无课程源码或全局配置改动。
+  - [测试/验证]：修复前目标缺失检查退出1；来源运行包SHA-512与43文件哈希通过，恢复后1341项文件及符号链接一致、签名有效、CLI 0.165.0、npm prefix正确。宿主环境真实ACP 2.5.0协议1与app-server initialize通过，verify.py退出0。
+  - [验证范围]：沙箱内app-server因Codex状态目录写入受限终止，宿主验证通过；未重启IDE、发送聊天或截图。未来清除缓存或升级仍可能触发原安装器路径问题。检查材料仅本地.agent/clion-codex-repair/保存。
+- **涉及文件**：CLion ACP 2.5.0缓存（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/04/11-58-56/对话.md。
+- **Git 提交**：待提交；仅暂存本次协作记录，保留用户已有修改。
+
+---

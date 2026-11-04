@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-04 CLion Codex启动缓存恢复
+
+- Codex单代理，systematic-debugging、ponytail、OpenAI Docs与verification-before-completion；依据CLion原日志复现前提，复用本机同版本WebStorm包并使用CLion Node 24.13.0验证。
+- 只恢复CLion缺失的ACP 2.5.0缓存；检查材料仅本地.agent/clion-codex-repair/保存，不修改课程源码或主目录依赖，不重启IDE、不发送聊天或截图。
+
 ## 2026-11-03 WebStorm Codex缺失运行包修复
 
 - Codex单代理，systematic-debugging、ponytail、OpenAI Docs与verification-before-completion；依据WebStorm日志、锁文件及自带Node 24.19.0复现，使用npm补齐现有版本依赖。
