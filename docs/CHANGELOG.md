@@ -2633,6 +2633,6 @@
   - 依据MacPaw官方忽略列表说明，建议排除JetBrains缓存与实际使用的npm运行目录；清理是疑似触发因素，尚无删除记录证明直接因果。
   - [验证范围]：未重新安装依赖、修改CleanMyMac设置、重启IDE或截图；未验证清理前后文件变化，未宣称故障修复。保留工作区其他已有差异。
 - **涉及文件**：docs/CHANGELOG.md、context/2026/11/04/17-45-35/对话.md。
-- **Git 提交**：待提交。
+- **Git 提交**：`9c84b1b docs: record PyCharm Codex cleanup diagnosis`；本条通过后续文档提交补记，仅包含本次日志与对话归档。
 
 ---
