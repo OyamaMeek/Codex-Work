@@ -2661,6 +2661,6 @@
   - [测试/验证]：修复前verify.py因目标文件缺失退出1；修复后官方SHA-512、43文件哈希、codesign与CLI 0.164.0通过，原npx命令在日志中的.idea目录完成ACP 2.3.0协议1与app-server真实initialize，verify.py退出0、stderr为空。
   - [验证范围]：未重启IDE、发送聊天或截图；未验证再次清理后的行为。主目录运行包若被再次移除可能复发，未认定具体清理工具是本次删除的原因。
 - **涉及文件**：主目录Codex平台依赖（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/04/19-55-25/对话.md。安装材料与备份仅本地.agent/clion-home-codex-repair/保存。
-- **Git 提交**：待提交；仅包含本次协作记录，保留其他已有差异。
+- **Git 提交**：`95f72c0 docs: record CLion shared Codex runtime repair`；本条通过后续文档提交补记，仅包含本次协作记录，保留其他已有差异。
 
 ---
