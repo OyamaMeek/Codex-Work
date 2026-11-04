@@ -2647,6 +2647,6 @@
   - 用户授权查看当前CleanMyMac窗口截图；未执行清理或删除文件，未升级应用、修改安全扫描设置或修复Codex依赖。
   - [限制]：当前版本「其他」列表的手动添加按钮不可用；node_modules未出现在清理候选中，尚未加入白名单，不能保证其他清理方式会排除它。
 - **涉及文件**：CleanMyMac忽略列表（仅本地）；memory/gotchas.md、docs/CHANGELOG.md、context/2026/11/04/18-04-13/对话.md。
-- **Git 提交**：待提交。
+- **Git 提交**：`9817588 docs: record CleanMyMac JetBrains ignore settings`；本条通过后续文档提交补记，仅包含本次协作记录，保留用户已有修改。
 
 ---
