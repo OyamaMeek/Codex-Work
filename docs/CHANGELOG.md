@@ -2622,3 +2622,17 @@
 - **Git 提交**：`babc819 docs: record CLion Codex cache recovery`，已推送origin/main；本条通过后续文档提交补记，仅包含本次协作记录，保留用户已有修改。
 
 ---
+
+## [2026-11-04 17:45] 排查清理后PyCharm Codex启动失败
+
+- **需求/问题描述**：
+  > 每次重启电脑并用CleanMyMac清理垃圾后，PyCharm Codex都会出现截图中的启动错误。
+- **实际实现的功能与改动**：
+  - 只读检查当前PyCharm日志及Codex安装；启动命令为npx -y @agentclientprotocol/codex-acp，实际加载主目录node_modules内的Codex 0.164.0。
+  - 确认darwin-arm64依赖目录残留但package.json缺失，PyCharm对应Codex缓存目录不存在；直接运行原Codex入口复现Missing optional dependency并退出1。
+  - 依据MacPaw官方忽略列表说明，建议排除JetBrains缓存与实际使用的npm运行目录；清理是疑似触发因素，尚无删除记录证明直接因果。
+  - [验证范围]：未重新安装依赖、修改CleanMyMac设置、重启IDE或截图；未验证清理前后文件变化，未宣称故障修复。保留工作区其他已有差异。
+- **涉及文件**：docs/CHANGELOG.md、context/2026/11/04/17-45-35/对话.md。
+- **Git 提交**：待提交。
+
+---
