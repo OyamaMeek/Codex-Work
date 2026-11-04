@@ -2675,6 +2675,6 @@
   - [测试/验证]：修复前缺失目录检查退出1；修复后npm prefix正确，官方SHA-512、43文件哈希、codesign、CLI 0.165.0通过，自带Node/npx运行ACP 2.5.0协议1与app-server真实initialize成功，verify.py退出0、两份stderr为空。
   - 主目录package.json、package-lock.json及Codex入口逐字不变；未重启IDE、截图或发送聊天，未验证IDE新会话。再次清除版本缓存仍可能触发安装器上溯问题。
 - **涉及文件**：CLion ACP 2.5.0独立依赖（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/04/20-10-18/对话.md。检查材料仅本地.agent/clion-registry-repair/保存。
-- **Git 提交**：待提交；仅包含本次协作记录，保留其他已有差异。
+- **Git 提交**：`f17b55d docs: record CLion registry ACP installation repair`；本条通过后续文档提交补记，仅包含本次协作记录，保留其他已有差异。
 
 ---
