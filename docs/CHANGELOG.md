@@ -2765,6 +2765,6 @@
   - [测试/验证]：ffprobe确认输出仅含MP3音轨、44100Hz双声道，时长160.589002秒，与源文件总时长一致，大小2293525字节；FFmpeg完整解码退出0，git check-ignore确认源文件与成品均被忽略。
   - 未试听，保留原始音轨中的所有声音，未进行人声分离。
 - **涉及文件**：bgm.mp3（仅本地）；docs/CHANGELOG.md、context/2026/11/05/21-42-54/对话.md。
-- **Git 提交**：待提交。
+- **Git 提交**：`3225fc9 docs: record MOV soundtrack extraction`；通过后续文档提交补记，仅提交本次日志和对话归档。
 
 ---
