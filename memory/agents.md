@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-05 Python字典截图笔记
+
+- Codex单代理，using-superpowers与verification-before-completion；读取用户附件可见代码，Web核对Python官方文档，Python 3.9.6标准库doctest验证。
+- 笔记仅本地Python字典笔记.md，验证脚本仅本地.agent/python-notes/verify_dictionary.py；不修改Notion页面，仅提交协作记录。
+
 ## 2026-11-05 经济思想课程第一次作业
 
 - Codex单代理，PDF与human-writing技能；使用内置Python/pypdf完整读取一页附件和链接，Web核对官方公报。
