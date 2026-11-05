@@ -2737,6 +2737,6 @@
   - 已有矢量模块Node语法及5项测试通过仅代表该原型可运行，用户未认可其造型，不作为V2验收；character.js待接入确认后的绘图资产，尚未制作MV镜头或验证双人接触。
   - 内置接口未提供型号选择，已明确不能指定或核实image2.6，未虚报模型。任务文件和图像均仅本地保存。
 - **涉及文件**：大肥鱼Claude装/角色设定图-v2.png、角色使用说明.md、已有character.js原型及.agent/visual/、.agent/character-design/生成记录（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、memory/gotchas.md、docs/CHANGELOG.md、context/2026/11/05/20-27-00/对话.md。
-- **Git 提交**：待提交；仅提交本次允许范围内协作文档，保留其他已有修改。
+- **Git 提交**：`9ada0fb docs: record reference-faithful MV character redraw`，已推送origin/main；本条通过后续文档提交补记，仅包含本次允许范围内协作记录，保留已有其他修改。
 
 ---
