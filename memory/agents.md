@@ -1,9 +1,14 @@
 # 当前协作环境
 
+## 2026-11-05 character.js素材接入
+
+- Codex单代理；沿用imagegen、ponytail及verification-before-completion，内置image_gen生成透明动作／表情图集，Node原生ES module引用JSON内嵌素材。
+- 运行模块无第三方依赖；素材构建、测试和预览复用本机sharp，65张素材支持80种参数组合。任务代码、资产和视觉记录仅本地，保留其他已有改动。
+
 ## 2026-11-05 MV主角设定
 
 - Codex单代理，using-superpowers、brainstorming、ponytail、imagegen与verification-before-completion；参考大肥鱼Claude装原图，通过内置image_gen保留原角色画风生成三视图与表情表。
-- 用户要求image2.6；内置接口未开放型号选择，已如实说明。当前设定图为角色设定图-v2.png，待用户确认后更新character.js绘制资产；源码、图片及视觉材料仅本地保存。
+- 用户要求image2.6；内置接口未开放型号选择，已如实说明。用户以“接入character.js”确认V2造型，已接入透明角色素材；源码、图片及视觉材料仅本地保存。
 
 ## 2026-11-05 Python字典截图笔记
 

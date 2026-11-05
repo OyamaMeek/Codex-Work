@@ -2740,3 +2740,18 @@
 - **Git 提交**：`9ada0fb docs: record reference-faithful MV character redraw`，已推送origin/main；本条通过后续文档提交补记，仅包含本次允许范围内协作记录，保留已有其他修改。
 
 ---
+
+## [2026-11-05 20:55] 将V2角色素材接入character.js
+
+- **需求/问题描述**：
+  > 用户确认新版角色造型，要求接入character.js，后续镜头共用角色绘制接口。
+- **实际实现的功能与改动**：
+  - 依据V2及原角色图生成4张透明动作／表情图集，打包65张角色PNG（背面5张共用），支持4朝向×4表情×5动作共80种组合。
+  - 删除旧矢量角色绘制，保留drawCharacter参数接口，使用内嵌PNG统一输出SVG；phase驱动确定性周期变换，手与麦克风作为同一素材共同移动。未知参数和未制作的道具明确失败。
+  - 更新预览生成脚本、测试及使用说明；生成1800×1500角色模块预览PNG／SVG，保留确认设定图不变。
+  - [测试/验证]：新测试先因旧V1矢量输出失败；替换后Node语法检查与5项测试通过。320次真实SVG渲染通过画布边界检查，循环首尾一致；65张PNG与图集区域逐像素一致，源图SHA-256正确，隔离目录复制后Node导入通过。完成主预览及4张组合矩阵的视觉检查。
+  - 当前动作为独立关键姿势加周期变换；未制作完整逐帧步态、双人接触或最终MV，未测试浏览器。单格约200×350像素，近景需要补充高分辨率素材。
+- **涉及文件**：大肥鱼Claude装/character.js、character.test.mjs、build-assets.mjs、render-sheet.mjs、角色使用说明.md、assets/及角色模块预览-v2.*（仅本地）；.agent/character-design/验证与提示词、.agent/visual/视觉记录（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/05/20-55-00/对话.md。
+- **Git 提交**：待提交；仅提交本次允许范围内协作文档，保留其他已有修改。
+
+---
