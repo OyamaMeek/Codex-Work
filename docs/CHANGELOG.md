@@ -2689,6 +2689,6 @@
   - [测试/验证]：正文含标点571字、含标题587字，字数与五段结构断言通过；中文写作检查退出0，成稿由git check-ignore确认仅在本地保留。
   - 未执行视觉检查、手写拍照或云班课提交。
 - **涉及文件**：261105/全面从严治党与党全面领导经济工作.md（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/05/10-32-57/对话.md。
-- **Git 提交**：待提交；仅提交本次允许范围内协作文档，保留其他已有差异。
+- **Git 提交**：`7ee708f docs: record economic thought course assignment`，已推送origin/main；本条通过后续文档提交补记，仅包含本次允许范围内协作文档，保留其他已有差异。
 
 ---
