@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-05 MV主角设定
+
+- Codex单代理，using-superpowers、brainstorming、ponytail、imagegen与verification-before-completion；参考大肥鱼Claude装原图，通过内置image_gen保留原角色画风生成三视图与表情表。
+- 用户要求image2.6；内置接口未开放型号选择，已如实说明。当前设定图为角色设定图-v2.png，待用户确认后更新character.js绘制资产；源码、图片及视觉材料仅本地保存。
+
 ## 2026-11-05 Python字典截图笔记
 
 - Codex单代理，using-superpowers与verification-before-completion；读取用户附件可见代码，Web核对Python官方文档，Python 3.9.6标准库doctest验证。
