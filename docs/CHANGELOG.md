@@ -2712,6 +2712,6 @@
   - 整理11节Markdown笔记，补充查询、删除、遍历、视图、键与顺序、批量更新、推导式、成绩统计和浅深拷贝，附复习速查与官方来源。
   - [测试/验证]：Python 3.9.6标准库doctest的81个示例全部通过，含预期异常；笔记和验证脚本由git check-ignore确认仅本地保留。
 - **涉及文件**：Python字典笔记.md、.agent/python-notes/verify_dictionary.py（仅本地）；memory/agents.md、memory/python-dictionary-20261105.md、docs/CHANGELOG.md、context/2026/11/05/14-52-04/对话.md。
-- **Git 提交**：待提交；仅提交本次协作记录，保留已有其他差异。
+- **Git 提交**：`ea9500f docs: record Python dictionary study notes`；通过后续文档提交补记，仅包含本次协作记录，保留已有其他差异。
 
 ---

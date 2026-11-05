@@ -6,4 +6,5 @@
 - 验证：Python 3.9.6运行标准库doctest，81个交互式示例全部通过，包括KeyError与TypeError预期异常；git check-ignore确认笔记和脚本仅本地保留。
 - 产物：根目录Python字典笔记.md；验证脚本.agent/python-notes/verify_dictionary.py。
 - 来源：Python官方教程、dict规范、copy文档；截图外知识在笔记中明确标为补充。
-- 剩余：仅提交并推送本次协作记录，保留memory中其他已有差异及.DS_Store。
+- Git：本次协作记录已提交ea9500f，提交说明为docs: record Python dictionary study notes；提交引用由后续文档提交保存，按现有origin/main推送。
+- 保留：memory中其他已有差异及.DS_Store；笔记与验证脚本不进入Git。
