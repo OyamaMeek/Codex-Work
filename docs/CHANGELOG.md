@@ -2832,6 +2832,6 @@
   - [测试/验证]：捆绑逐帧、单次边缘清理及v2图集验证通过；三份独立方向盲评14对全部匹配，十六方向语义和独立视觉检查通过；跳跃升高46像素，身体内部无透明破洞。最终文件1484562字节，安装、本地副本及验证文件SHA-256一致。
   - [验证范围]：保存九种动作GIF、全部状态GIF/MP4、待机跳跃过渡及方向循环；原画方向采用离散姿势，未测试应用内加载、实时播放或指针跟随。
 - **涉及文件**：吉伊-Codex伙伴/、.agent/chiikawa/及.agent/visual/chiikawa.md与图片（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/07/17-29-16/对话.md。
-- **Git 提交**：待提交，仅提交本次协作文档，保留已有其他修改。
+- **Git 提交**：`b773d30 docs: record Chiikawa Codex companion creation`，已推送origin/main；本条通过后续文档提交补记，仅提交本次协作文档。
 
 ---
