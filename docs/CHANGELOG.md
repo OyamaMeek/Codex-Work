@@ -2849,3 +2849,15 @@
 - **Git 提交**：`731f9e4 docs: record Clawd Codex companion creation`，已推送origin/main；本条通过后续文档提交补记，仅提交本次允许范围内协作记录，保留其他任务已有修改。
 
 ---
+
+## [2026-11-07 19:57] 新增 bilibili 拒绝规则列表
+
+- **需求/问题描述**：
+  > 新增 bilibilireject.list，写入用户指定的五条 REJECT 规则。
+- **实际实现的功能与改动**：
+  - 在工作空间根目录创建 bilibilireject.list，逐条保留用户提供的规则内容及顺序。
+  - [测试/验证]：创建前检查因文件不存在失败；创建后 Python 断言确认全部内容与预期完全一致，共五行且保留末尾换行。git check-ignore 确认规则文件仅保留本地。未测试客户端实际拦截效果。
+- **涉及文件**：bilibilireject.list（本地，+5行）；docs/CHANGELOG.md、context/2026/11/07/19-57-06/对话.md。
+- **Git 提交**：待提交，仅提交本次日志与对话记录，保留其他任务已有修改。
+
+---
