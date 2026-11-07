@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-11-07 CampusAD Surge模块
+
+1. 将CampusAD.list的14条规则原样保留匹配范围，逐条增加REJECT，生成独立CampusAD.sgmodule。
+2. 使用MITM hostname追加操作保留原配置，仅添加compus.xiaofubao.com；模块说明标明需启用MITM并信任证书。
+3. 检查规则完整性、业务路径边界和原生语法；归档对话与日志，仅提交推送本次协作文档。
+
 ## 2026-11-05 接入确认角色素材
 
 1. 以用户要求接入V2为造型确认，沿用drawCharacter接口，检查所有调用、测试和生成脚本。

@@ -2780,3 +2780,17 @@
 - **Git 提交**：`e35b07a docs: record Claude rule additions`，仅提交开发日志和对话归档。
 
 ---
+
+## [2026-11-07 14:15] 生成CampusAD Surge模块
+
+- **需求/问题描述**：
+  > 根据CampusAD.list做一个surge model。
+- **实际实现的功能与改动**：
+  - 新建本地CampusAD.sgmodule，保留原列表13个精确域名和1条开屏路径规则，全部使用REJECT；通过模块开关控制启用，MITM hostname仅追加compus.xiaofubao.com。
+  - 模块说明包含HTTPS路径拦截的MITM与证书要求；源列表及现有配置保持原样，不添加脚本依赖。
+  - [测试/验证]：Python检查先因模块不存在失败，生成后通过14条规则完整性、顺序、策略、MITM追加与URL边界检查；相同规则的独立完整配置经Surge CLI --check返回OK。
+  - [验证范围]：旧版CLI不直接支持独立模块检查；未安装、启用模块或实测易校园拦截效果。
+- **涉及文件**：CampusAD.sgmodule、tests/check_campus_ad_module.py、.agent/campus-ad-module/native.conf（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/11/07/14-15-06/对话.md。
+- **Git 提交**：待提交，仅提交本次协作文档。
+
+---

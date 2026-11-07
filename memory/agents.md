@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-07 CampusAD Surge模块
+
+- Codex单代理，采用ponytail和verification-before-completion；查阅Surge官方Module文档，使用Python标准库与本机surge-cli验证。
+- 模块和检查脚本仅本地保存；只提交本次协作记录，保留已有其他任务修改，不安装或启用模块。
+
 ## 2026-11-05 character.js素材接入
 
 - Codex单代理；沿用imagegen、ponytail及verification-before-completion，内置image_gen生成透明动作／表情图集，Node原生ES module引用JSON内嵌素材。
