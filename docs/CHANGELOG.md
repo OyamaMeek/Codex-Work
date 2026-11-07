@@ -2807,3 +2807,17 @@
 - **Git 提交**：`e56ca7e docs: record Document repository sync`，仅提交本次操作记录和对话归档；实际哈希通过后续文档提交补记。
 
 ---
+
+## [2026-11-07 14:32] 提交并上传 CampusAD 模块
+
+- **需求/问题描述**：
+  > 用户指出 CampusAD.sgmodule 未上传，明确要求执行 git add、git commit 和 push。
+- **实际实现的功能与改动**：
+  - 在 Document 仓库仅暂存 HappaConfig/CampusAD.sgmodule，以 feat: add CampusAD Surge module 创建提交 e1422e5，并普通推送 origin/main 成功。
+  - [测试/验证]：暂存内容检查及 git diff --cached --check 通过，提交仅包含模块的21行；拉取远端自动索引提交20ab11d后，通过祖先关系与对象检查确认远端main包含模块提交，模块785字节。
+  - 三个 .DS_Store 修改和 cert/iPad/261031.zip 保持原样，未提交。未修改模块内容，未重新验证Surge运行行为。
+  - 在 memory/gotchas.md 记录指定未跟踪文件需先暂存、提交再推送的规则，保留该文件其他任务已有修改。
+- **涉及文件**：Document/HappaConfig/CampusAD.sgmodule（+21，已上传）、Document/index.html（远端自动生成，拉取+8/-4）；docs/CHANGELOG.md、memory/gotchas.md、context/2026/11/07/14-32-19/对话.md。
+- **Git 提交**：Document仓库 `e1422e5 feat: add CampusAD Surge module`，已推送origin/main；Codex工作空间仅提交本次协作记录。
+
+---
