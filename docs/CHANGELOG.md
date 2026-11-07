@@ -2804,6 +2804,6 @@
   - [测试/验证]：git ls-remote 确认远端 main 与本地 HEAD 均为 0358dfa88167595c326cc7e3d5be0a9f9e8ddd43；3 个 .DS_Store 修改及 CampusAD.sgmodule、261031.zip 两个未跟踪文件保留，未暂存或提交。
   - 仅验证 Git 同步状态，未运行应用测试；本次日志与对话保存在 Codex 工作空间。
 - **涉及文件**：Document/index.html（由远端拉取，+2/-2）；docs/CHANGELOG.md、context/2026/11/07/14-22-18/对话.md。
-- **Git 提交**：待提交，仅提交本次操作记录和对话归档。
+- **Git 提交**：`e56ca7e docs: record Document repository sync`，仅提交本次操作记录和对话归档；实际哈希通过后续文档提交补记。
 
 ---
