@@ -2794,3 +2794,16 @@
 - **Git 提交**：`783487e docs: record CampusAD Surge module and validation`，已推送origin/main；本条通过后续文档提交补记，仅提交本次协作文档。
 
 ---
+
+## [2026-11-07 14:22] 同步 Document 仓库
+
+- **需求/问题描述**：
+  > 对 /Users/oyamahappa/Documents/GitHub/Document 执行 pull 和 push。
+- **实际实现的功能与改动**：
+  - 在 main 分支执行 git pull --ff-only，从 cd416cd 快进至 0358dfa，仅更新 index.html；随后执行普通 git push，返回 Everything up-to-date。
+  - [测试/验证]：git ls-remote 确认远端 main 与本地 HEAD 均为 0358dfa88167595c326cc7e3d5be0a9f9e8ddd43；3 个 .DS_Store 修改及 CampusAD.sgmodule、261031.zip 两个未跟踪文件保留，未暂存或提交。
+  - 仅验证 Git 同步状态，未运行应用测试；本次日志与对话保存在 Codex 工作空间。
+- **涉及文件**：Document/index.html（由远端拉取，+2/-2）；docs/CHANGELOG.md、context/2026/11/07/14-22-18/对话.md。
+- **Git 提交**：待提交，仅提交本次操作记录和对话归档。
+
+---
