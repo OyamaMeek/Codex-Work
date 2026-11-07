@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-11-07 吉伊 Codex伙伴
+
+1. 将吉伊.HEIF解码为PNG，按已有8×11单元格去除外部白底，保留角色白色身体及原始跳跃位移，统一转换为192×208单元格。
+2. 运行hatch-pet逐帧、透明度、图集、方向连续性与独立方向盲评，保存动作预览和视觉记录。
+3. 全部检查通过后，新增~/.codex/pets/chiikawa/pet.json及spritesheet.webp；记录安装状态，归档对话，仅提交本次协作文档。
+
 ## 2026-11-07 CampusAD Surge模块
 
 1. 将CampusAD.list的14条规则原样保留匹配范围，逐条增加REJECT，生成独立CampusAD.sgmodule。

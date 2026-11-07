@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-07 吉伊 Codex伙伴
+
+- 读取本地hatch-pet与imagegen技能；源HEIF已含8×11完整图集，复用原画，不重新生成角色、不使用ChatGPT Pets接口。
+- 使用宿主捆绑Python/Pillow转换现有图集、运行hatch-pet验证与动画预览；独立代理负责方向盲评和最终视觉检查，素材仅本地保存。
+
 ## 2026-11-07 CampusAD Surge模块
 
 - Codex单代理，采用ponytail和verification-before-completion；查阅Surge官方Module文档，使用Python标准库与本机surge-cli验证。
