@@ -2791,6 +2791,6 @@
   - [测试/验证]：Python检查先因模块不存在失败，生成后通过14条规则完整性、顺序、策略、MITM追加与URL边界检查；相同规则的独立完整配置经Surge CLI --check返回OK。
   - [验证范围]：旧版CLI不直接支持独立模块检查；未安装、启用模块或实测易校园拦截效果。
 - **涉及文件**：CampusAD.sgmodule、tests/check_campus_ad_module.py、.agent/campus-ad-module/native.conf（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md及context/2026/11/07/14-15-06/对话.md。
-- **Git 提交**：待提交，仅提交本次协作文档。
+- **Git 提交**：`783487e docs: record CampusAD Surge module and validation`，已推送origin/main；本条通过后续文档提交补记，仅提交本次协作文档。
 
 ---
