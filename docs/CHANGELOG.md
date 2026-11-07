@@ -2858,6 +2858,6 @@
   - 在工作空间根目录创建 bilibilireject.list，逐条保留用户提供的规则内容及顺序。
   - [测试/验证]：创建前检查因文件不存在失败；创建后 Python 断言确认全部内容与预期完全一致，共五行且保留末尾换行。git check-ignore 确认规则文件仅保留本地。未测试客户端实际拦截效果。
 - **涉及文件**：bilibilireject.list（本地，+5行）；docs/CHANGELOG.md、context/2026/11/07/19-57-06/对话.md。
-- **Git 提交**：待提交，仅提交本次日志与对话记录，保留其他任务已有修改。
+- **Git 提交**：`afd6a14 docs: record bilibili reject list creation`；本条通过后续文档提交补记，仅提交本次日志与对话记录，保留其他任务已有修改。
 
 ---
