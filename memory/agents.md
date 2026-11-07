@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-07 Clawd Codex伙伴
+
+- 使用本地hatch-pet及imagegen技能，捆绑Python/Pillow运行确定性检查；按技能要求委派单张素材生成及独立视觉评审。
+- 依据clawd现有像素角色，素材与安装包仅本地保存；用户已授权本次图像与动画检查，不使用ChatGPT Pets接口。
+
 ## 2026-11-07 吉伊 Codex伙伴
 
 - 读取本地hatch-pet与imagegen技能；源HEIF已含8×11完整图集，复用原画，不重新生成角色、不使用ChatGPT Pets接口。

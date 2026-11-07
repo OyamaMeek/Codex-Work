@@ -2835,3 +2835,17 @@
 - **Git 提交**：`b773d30 docs: record Chiikawa Codex companion creation`，已推送origin/main；本条通过后续文档提交补记，仅提交本次协作文档。
 
 ---
+
+## [2026-11-07 17:59] 制作Clawd Codex伙伴
+
+- **需求/问题描述**：
+  > 把clawd也做成codex伙伴；用户明确允许本次图像与动画检查。
+- **实际实现的功能与改动**：
+  - 依据clawd/角色設定圖.png，通过内置imagegen生成保留赤陶色矩形身体、暗色矩形眼与四脚的像素伙伴，包含九种动作、十六个注视方向及v2中立格。
+  - 统一动画整行尺度及基线，保留33px跳跃升空；打包1536×2288透明WebP并安装到~/.codex/pets/clawd，保存Clawd-Codex伙伴本地副本和说明，不改变当前选择。
+  - [测试/验证]：检查先因目标图集缺失失败，最终捆绑逐帧、单次边缘清理、v2图集验证和安装包断言通过；三份隔离盲评14对全部匹配，16方向语义及最终独立视觉检查通过。最终文件1180258字节，安装、本地副本与验证文件SHA-256一致。
+  - [验证范围]：保存九种动作GIF、全部状态、待机跳跃过渡及方向循环；部分相邻方向眼睛间距略不均匀，主象限正确。未测试Codex应用内加载、实时播放、事件调度或指针跟随。
+- **涉及文件**：Clawd-Codex伙伴/、.agent/clawd-pet/、.agent/visual/clawd.md与图片（仅本地）；memory/agents.md、memory/plan.md、memory/progress.md、memory/verify.md、docs/CHANGELOG.md、context/2026/11/07/17-59-08/对话.md。
+- **Git 提交**：待提交；仅提交本次允许范围内的协作记录，保留其他任务已有修改。
+
+---
