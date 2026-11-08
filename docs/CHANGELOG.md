@@ -2942,6 +2942,6 @@
   - [测试/验证]：提交稿13个代码块与本地原稿逐字一致，无本地文件链接；插入锚点全页唯一。Notion update_content返回目标page_id、isError=false且无警告；成功后遵循连接器要求未额外回读。未做截图或视觉检查。
   - 页面：https://app.notion.com/p/3c5867d026d980b7bae7c5d3520cbcdb 。仅定点增加一篇，不替换既有内容。
 - **涉及文件**：memory/ui-guide-notion-20261108.md、docs/CHANGELOG.md、context/2026/11/08/23-15-29/对话.md。指南本地原稿及其他任务已有修改保持原样。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`9063374 docs: record Notion UI guide import`，已推送origin/main；本条通过后续文档提交补记，仅提交本次协作记录与对话归档。
 
 ---
