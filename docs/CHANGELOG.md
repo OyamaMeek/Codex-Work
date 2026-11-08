@@ -2885,6 +2885,6 @@
   - [测试/验证]：逐段核对网页文本片段、全部标题与代码块；三份Markdown、25/26/27张JPEG及78条本地图片引用检查通过，Pillow文件完整性检查通过。未执行Markdown渲染或视觉检查。
   - 文稿、图片、采集与转换材料仅保留本地，不提交或推送。
 - **涉及文件**：网页动效词典/、.agent/x-adrian-articles/（本地）；docs/CHANGELOG.md、context/2026/11/08/21-07-44/对话.md。
-- **Git 提交**：待提交；仅提交本次日志与对话归档，保留其他任务已有修改。
+- **Git 提交**：`f2208f0 docs: record three animation dictionary archives`；本条通过后续文档提交补记，仅提交本次日志与对话归档，保留其他任务已有修改。
 
 ---
