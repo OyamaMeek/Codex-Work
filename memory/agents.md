@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-08 Vibe Coding UI设计指南
+
+- Codex单代理；使用human-writing与verification-before-completion，读取本地Markdown，Web核对W3C/MDN官方说明。
+- 仅编写本地指南，引用现有设计资料；不创建网站、不安装依赖、不执行截图或视觉检查，不修改Notion。
+
 ## 2026-11-07 Clawd Codex伙伴
 
 - 使用本地hatch-pet及imagegen技能，捆绑Python/Pillow运行确定性检查；按技能要求委派单张素材生成及独立视觉评审。
