@@ -3030,6 +3030,6 @@
   - [测试/验证] 两处各 47 个文件匹配两个官方包的归档内容，SHA-512、原生签名、CLI 0.166.0、两条启动路径的 ACP 2.6.0 握手及 app-server 初始化均通过。主目录 npm 清单哈希和自定义配置差异检查通过。
   - IDE 中实际对话及后续注册表自动更新未验证。自定义入口固定使用 2.6.0。
 - **涉及文件**：CLion 版本缓存、本地适配器及 `~/.jetbrains/acp.json`。本地恢复点在 `.agent/clion-acp-26/acp.json.before`。协作记录为本日志、`memory/` 本次条目和 `context/2026/11/09/21-38-37/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`bf20c82 docs: record CLion Codex ACP 2.6.0 repair`。本条通过后续文档提交补记。
 
 ---
