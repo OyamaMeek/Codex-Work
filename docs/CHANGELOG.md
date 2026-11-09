@@ -3043,6 +3043,6 @@
   - 以 macOS Vision 逐页文字结果核对正文覆盖，分区重跑第 293 页，恢复第 297 页通解表，补录候选页的页边注释、续接公式及分隔符。
   - 验证 390 页均有内容，369 页含公式。Markdown 解析器确认 390 个原页链接及 148 项大纲跳转，核对两份 PDF 各自的 SHA-256。公式仅抽查，图表和原版式通过原页链接查看。
 - **涉及文件**：本地同名 Markdown、`.agent/engineering-math-ocr/`，以及 `memory/engineering-math-ocr-20261109.md`、`context/2026/11/10/01-46-39/对话.md` 和本日志。原 PDF 和 OCR 内容仅保留本地。
-- **Git 提交**：待提交，实际哈希通过后续协作文档提交补记。
+- **Git 提交**：`6438670 docs: record engineering math OCR extraction`。本条通过后续协作文档提交补记。
 
 ---
