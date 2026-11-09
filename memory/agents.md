@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-09 CLion Codex 2.6.0 启动修复
+
+- 单代理。使用 CLion 日志、Node 24.13.0 与 npm 11.6.2 核对注册表启动，使用 Homebrew Node 检查自定义入口。
+- 本地 ACP 2.6.0 安装位于 `~/.local/share/jetbrains-codex-acp/2.6.0`，安装清单、旧配置备份及核验材料保存在已忽略的 `.agent/clion-acp-26/`。
+
 ## 2026-11-08 Vibe Coding UI设计指南
 
 - Codex单代理；使用human-writing与verification-before-completion，读取本地Markdown，Web核对W3C/MDN官方说明。
