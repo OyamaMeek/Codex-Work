@@ -3092,6 +3092,6 @@
   - 在 `AGENTS.md` 登记触发语，在 `memory/link-archive.md` 保存外文翻译、本地 Markdown 归档、Notion 定点追加和回读核验步骤。
   - [测试/验证]：检查触发语唯一、流程文件可读取、四个步骤与 Notion 目标完整，`git diff --check` 通过。
 - **涉及文件**：`AGENTS.md`、`memory/link-archive.md`、`context/2026/11/11/17-32-17/对话.md` 和本日志。
-- **Git 提交**：待提交。
+- **Git 提交**：`c6ad669 docs: remember the link archive workflow`。本条通过后续文档提交补记。
 
 ---
