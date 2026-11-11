@@ -3105,6 +3105,6 @@
   - 核对 IETF、Android、Apple、WebRTC 与 Cloudflare 的资料，读取哔哩哔哩公开视频详情接口；核验 RIPE Atlas 发往同一 DNS 地址的历史探针记录中存在两种服务端标识。
   - 互动数据覆盖可见样本。视频实验为制作构想，未制作样片，未验证后续传播效果。
 - **涉及文件**：本地 `Vibe知识大赏-网络底层选题补充.md`、`context/2026/11/11/17-42-44/对话.md` 与本日志。
-- **Git 提交**：待提交。实际哈希通过后续文档提交补记。
+- **Git 提交**：`4b66e42 docs: record network explainer topic research`。本条通过后续文档提交补记。
 
 ---
