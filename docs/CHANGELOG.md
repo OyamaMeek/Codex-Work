@@ -3226,6 +3226,6 @@
   - 官方通用安装脚本返回 HTTP 200，下载内容通过 `bash -n`。未连接服务器或运行安装程序。
   - 对话归档省略了截图和 Komari Agent 认证令牌。
 - **涉及文件** `context/2026/11/16/20-05-14/对话.md` 与本日志。
-- **Git 提交** 待提交。
+- **Git 提交** `30838f8 docs: record BT Panel installer troubleshooting`。
 
 ---
