@@ -3156,3 +3156,15 @@
 - **Git 提交**：`e15f845 docs: record thematic rules integration`。目标文件保留在本地。
 
 ---
+
+## [2026-11-16 12:04] 安装 Anthropic frontend-design 技能
+
+- **需求/问题描述**：
+  > 安装 `anthropics/skills` 仓库中的 `frontend-design`。
+- **实际实现的功能与改动**：
+  - 使用 Codex `skill-installer` 将上游提交 `1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064` 中的完整技能目录安装到 `~/.codex/skills/frontend-design`。
+  - 安装器退出码为 0。核验本地文件集合、技能名称，以及 `SKILL.md` 和 `LICENSE.txt` 的 Git blob 哈希。下一轮对话中的实际调用尚未验证。
+- **涉及文件**：本地 `~/.codex/skills/frontend-design/`、`context/2026/11/16/12-04-11/对话.md` 和本日志。
+- **Git 提交**：待提交。
+
+---
