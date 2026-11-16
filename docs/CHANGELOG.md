@@ -3168,3 +3168,15 @@
 - **Git 提交**：`17d84d3 docs: record Anthropic frontend design skill installation`。
 
 ---
+
+## [2026-11-16 12:17] 核实并保存 Karpathy 启发的 Claude 规则
+
+- **需求/问题描述**：
+  > 阅读微信公众号与两篇 X 内容，核实 `CLAUDE.md` 的写法和来源，保存上游原文。
+- **实际实现的功能与改动**：
+  - 读取微信公众号正文与 X 内容的镜像，核对 Karpathy 原帖和 Forrest Chang 的 GitHub 初始提交，确认上游 65 行文件包含四节，Movez 将其拆为六个动作，Codez 的教程讲解多代理工作流。
+  - 原文保存到现有 `AGENTS/` 目录下的 `Claude/Claude.md`。本地文件的 Git blob 哈希 `daced9bd64f25908ebedeb4701fb406985dc8366` 与上游初始提交一致。文件保留在本地，未验证 Claude Code 实际加载或准确率。
+- **涉及文件**：本地 `AGENTS/Claude/Claude.md`、`context/2026/11/16/12-17-39/对话.md` 和本日志。
+- **Git 提交**：待提交。
+
+---
