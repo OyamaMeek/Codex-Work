@@ -3263,6 +3263,6 @@
   - CLion 日志确认注册表 Codex 已启动并进入 ACP 会话。复查 GitHub 查询，两次均成功返回与本地缓存一致的提交。
   - 用 CLion 的 Codex 0.166.0 对该市场执行原生刷新。返回无错误，缓存已经是远端版本。未在 IDE 中发送消息。
 - **涉及文件**：`context/2026/11/17/23-35-32/对话.md` 和本日志。
-- **Git 提交**：待提交。
+- **Git 提交**：`e4c83d4 docs: record Codex marketplace refresh check`。
 
 ---
