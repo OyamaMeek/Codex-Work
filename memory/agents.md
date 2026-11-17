@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-17 CLion Codex 2.7.0 启动修复
+
+- 单代理。使用 CLion 原始日志、Node 官方校验表、PyCharm 中已有的 ACP 2.7.0 安装与官方 npm 包核对恢复材料。协议检查材料在本地忽略目录 `.agent/clion-acp-27/`。
+- CLion 注册表使用自带 Node 24.13.0 和 ACP 2.7.0；已有自定义 Codex 仍使用 Homebrew Node 和独立安装的 ACP 2.6.0。
+
 ## 2026-11-09 CLion Codex 2.6.0 启动修复
 
 - 单代理。使用 CLion 日志、Node 24.13.0 与 npm 11.6.2 核对注册表启动，使用 Homebrew Node 检查自定义入口。
