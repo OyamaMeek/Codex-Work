@@ -3254,3 +3254,15 @@
 - **Git 提交**：`e1bd173 docs: record CLion Codex ACP 2.7.0 recovery`。
 
 ---
+
+## [2026-11-17 23:35] 检查 CLion Codex 插件市场更新警告
+
+- **需求/问题描述**：
+  > CLion 的 Codex 提示更新 knowledge-work-plugins 时，GitHub HTTPS 连接超时。
+- **实际实现的功能与改动**：
+  - CLion 日志确认注册表 Codex 已启动并进入 ACP 会话。复查 GitHub 查询，两次均成功返回与本地缓存一致的提交。
+  - 用 CLion 的 Codex 0.166.0 对该市场执行原生刷新。返回无错误，缓存已经是远端版本。未在 IDE 中发送消息。
+- **涉及文件**：`context/2026/11/17/23-35-32/对话.md` 和本日志。
+- **Git 提交**：待提交。
+
+---
