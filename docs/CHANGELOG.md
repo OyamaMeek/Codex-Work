@@ -3251,6 +3251,6 @@
   - 确认 ACP 2.7.0 安装误用主目录 npm 项目，随后 CLion 自带 Node 下载连续两次超时。恢复经官方 SHA-256 核验的 Node 24.13.0 与经官方 npm 包和签名核验的 ACP 2.7.0 安装，保留已有自定义入口。
   - [验证]：CLion 注册表启动命令及现有自定义入口均通过 ACP 初始化，并在 cpp-labs 创建测试会话。未在 IDE 中发送聊天消息。
 - **涉及文件**：CLion 的 Node 24.13.0 和 ACP 2.7.0 本地缓存、`context/2026/11/17/23-25-34/对话.md`、本次协作记录。
-- **Git 提交**：待提交。
+- **Git 提交**：`e1bd173 docs: record CLion Codex ACP 2.7.0 recovery`。
 
 ---
