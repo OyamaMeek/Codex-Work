@@ -3315,3 +3315,15 @@
 - **Git 提交**：`ab43daf docs: record Notion GitHub profile resource lookup`。
 
 ---
+
+## [2026-11-20 22:57] GitHub 个人主页统计卡片使用说明
+
+- **需求/问题描述**：
+  > 如何使用 github-readme-stats 装饰 GitHub 个人主页。
+- **实际完成**：
+  - 核对原项目停止维护声明、后继 GitHub Stats Extended 的迁移说明，以及 GitHub 官方个人主页 README 的启用条件。说明同名公开仓库、README 图片代码和主题参数的使用方法。
+  - [验证]：使用上游示例账号请求后继服务的统计卡片与紧凑语言卡片，两者均返回 HTTP 200、image/svg+xml，XML 根节点为 SVG。未修改用户 GitHub 主页，未检查视觉效果或私有仓库统计。
+- **涉及文件**：`docs/CHANGELOG.md`、`context/2026/11/20/22-57-03/对话.md`。
+- **Git 提交**：待提交。
+
+---
