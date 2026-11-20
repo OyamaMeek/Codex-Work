@@ -3302,3 +3302,16 @@
 - **Git 提交** `accb499 docs: record expanded video course overview`。
 
 ---
+
+## [2026-11-20 22:49] 查找 Notion 的 GitHub 主页美化收藏
+
+- **需求/问题描述**：
+  > 查找曾在 Notion 保存的 GitHub 个人主页 README 美化项目。
+- **实际实现的功能与改动**：
+  - 通过 Notion 搜索和页面读取，定位「项目池 → 🤖 AI 与工作流 → Skill → 261031看到的skil → 一、界面审美 / 前端」中的 README Stats 条目，并由 10 月 31 日对话归档交叉核实。
+  - 核对上游 github-readme-stats 项目链接；此条为最符合的候选，尚未获用户确认。未修改 Notion，未读取无法解析的嵌入内部。
+  - [验证]：读取实际收藏文字、旧对话与上游搜索结果；未运行项目或检查图片。
+- **涉及文件**：`docs/CHANGELOG.md`、`context/2026/11/20/22-49-54/对话.md`。
+- **Git 提交**：待提交。
+
+---
