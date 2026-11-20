@@ -3338,3 +3338,15 @@
 - **Git 提交**：`8d5345f docs: record Claude domain list additions`；仅提交协作记录，规则文件按项目约定留在本地。
 
 ---
+
+## [2026-11-20 23:44] 核对 Siri AI 域名分流
+
+- **需求/问题描述**：查看 Erosion-CN，说明完整使用 Siri AI 所需的域名分流。
+- **实际实现的功能与改动**：
+  - 阅读项目 README、AppleFlow 三类规则和 Surge 模块，区分 Siri 直连、Apple PCC 美国出口及第三方 AI 扩展；说明优先级、真实 IP、UDP/QUIC 与 MitM 注意事项。
+  - 核对 Apple 2026-11-12 的 Siri AI 官方文档，指出 Beta 尚未列出中文支持、国区 Apple Account 不可用，项目的美区与美式英语要求不能当作当前官方唯一条件。
+  - [验证]：网页与实际规则正文交叉核对；未修改用户代理配置，未执行手机端连通、资格审核或功能测试。
+- **涉及文件**：`memory/siri-ai-official-check-20261120.md`、本记录、`context/2026/11/20/23-44-56/对话.md`。
+- **Git 提交**：待提交；仅提交本次协作记录，保留其他任务已有差异。
+
+---
