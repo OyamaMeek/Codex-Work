@@ -3358,6 +3358,6 @@
   - 本地新增 `HappaConfig/Siri-Direct.list`（5 条直连规则）和 `HappaConfig/SiriAI.list`（21 条美国节点规则），沿用项目现有不带策略字段的 RULE-SET 格式。
   - [验证]：Python 检查 26 条规则格式、唯一性及上一轮全部域名覆盖通过；未修改配置引用、DNS、客户端或手机。
 - **涉及文件**：上述两份规则文件（仅本地）、本记录、`context/2026/11/20/23-50-41/对话.md`。
-- **Git 提交**：待提交；仅提交本次协作记录。
+- **Git 提交**：`19c2239 docs: record Siri list file creation`；仅提交本次协作记录。
 
 ---
