@@ -3312,6 +3312,6 @@
   - 核对上游 github-readme-stats 项目链接；此条为最符合的候选，尚未获用户确认。未修改 Notion，未读取无法解析的嵌入内部。
   - [验证]：读取实际收藏文字、旧对话与上游搜索结果；未运行项目或检查图片。
 - **涉及文件**：`docs/CHANGELOG.md`、`context/2026/11/20/22-49-54/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`ab43daf docs: record Notion GitHub profile resource lookup`。
 
 ---
