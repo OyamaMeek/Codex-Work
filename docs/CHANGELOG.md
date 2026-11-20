@@ -3335,6 +3335,6 @@
   - 本地 `HappaConfig/Claude.list` 新增 10 条 DOMAIN-SUFFIX，已有的 8 个域名规则保留。
   - [验证]：Python 核对 18 个域名各有一条显式规则、无重复规则且格式检查通过。未重载客户端或验证实时流量。
 - **涉及文件**：`HappaConfig/Claude.list`（仅本地，+10 / -0）、本记录、`context/2026/11/20/23-36-41/对话.md`。
-- **Git 提交**：待提交；仅提交协作记录，规则文件按项目约定留在本地。
+- **Git 提交**：`8d5345f docs: record Claude domain list additions`；仅提交协作记录，规则文件按项目约定留在本地。
 
 ---
