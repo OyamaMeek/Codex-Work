@@ -3370,6 +3370,6 @@
   - 标明 seed.siri.apple.com、guzzoni.apple.com、smoot.apple.com 与现有直连策略冲突；未修改主配置或决定其优先级。
   - [验证]：Python 逐条比较 16 条输入转换结果，顺序、匹配类型、唯一性与无策略字段检查通过；未执行客户端或手机实测。
 - **涉及文件**：`HappaConfig/Siri-Proxy.list`（仅本地）、本记录、`context/2026/11/21/08-21-44/对话.md`。
-- **Git 提交**：待提交；仅提交本次协作记录。
+- **Git 提交**：`cfafbf2 docs: record supplied Siri proxy list conversion`；仅提交本次协作记录。
 
 ---
