@@ -3373,3 +3373,14 @@
 - **Git 提交**：`cfafbf2 docs: record supplied Siri proxy list conversion`；仅提交本次协作记录。
 
 ---
+
+## [2026-11-21 08:24] 保留冲突域名的旧直连策略
+
+- **需求/问题描述**：用户要求冲突的域名使用旧直连规则。
+- **实际实现的功能与改动**：
+  - 本地 `HappaConfig/Siri-Proxy.list` 移除 seed.siri.apple.com、guzzoni.apple.com、smoot.apple.com 三条冲突规则，保留 13 条代理规则并更新说明；旧直连清单保持 5 条。
+  - [验证]：Python 检查原直连规则完整保留、代理规则格式和唯一性，以及精确域名和后缀匹配均无交集，通过；未加载客户端或修改主配置。
+- **涉及文件**：`HappaConfig/Siri-Proxy.list`（仅本地，+2 / -5）、本记录、`context/2026/11/21/08-24-19/对话.md`。
+- **Git 提交**：待提交；仅提交本次协作记录。
+
+---
