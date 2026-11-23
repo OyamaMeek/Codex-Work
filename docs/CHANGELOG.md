@@ -3432,6 +3432,6 @@
   - 明确承认此前命令漏写一个 p，提供修改 systemd 服务 endpoint、重新加载及重启后检查日志的步骤；未改动远端服务，尚未确认上海 VPS 上报成功。
   - [验证]：上述三次 DNS 查询及正确地址 HTTPS 请求均退出 0；只读访问，无 token 请求。截图中的密钥不写入记录。
 - **涉及文件**：`memory/gotchas.md`、本记录、`context/2026/11/23/11-32-07/对话.md`。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`b69b25b docs: record verified Komari endpoint correction`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
