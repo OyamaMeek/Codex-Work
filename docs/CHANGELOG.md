@@ -3508,3 +3508,13 @@
 - **Git 提交**：`e51f2ac docs: record verified Chaoxing DNS fix for Surge`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-23 18:45] 将超星 DNS 修复写入 INI 模板
+
+- **需求/问题描述**：用户要求“写入ini”。
+- **实际实现的功能与改动**：在 HappaConfig/HappaConfig.ini 的 template 节定义完整 chaoxing_dns_host，在 HappaConfig.conf 的 Host 节引用，沿用已经验证有效的精确域名阿里 DoH 设置。
+- **测试/验证**：修改前缺失定义检查退出 1；修改后全部模板变量展开、Host 设置恰好一条及原推送地址保留检查通过，展开后 Host 原生 Surge 检查 OK。对比备份确认仅改动定义、引用和对应说明。未执行完整订阅转换或发布任务文件。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/surge-chaoxing/`（均仅本地）；`memory/plan.md`、`memory/verify.md`、`memory/progress.md`、本记录、`context/2026/11/23/18-18-23/对话.md`。
+- **Git 提交**：待提交。
+
+---
