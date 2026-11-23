@@ -3419,6 +3419,6 @@
   - 查阅 Komari 官方 Agent 文档，提供 systemd 状态、最近 60 条日志及从上海 VPS 发起 IPv4 HTTPS 请求的只读检查命令。
   - [验证]：用户返回 `Unit komari-agent.service could not be found`、日志无条目及 `curl: command not found`，确认默认系统服务不存在且连通性检查未执行。核对官方安装脚本默认服务名及 curl 依赖，建议 Debian/Ubuntu 先补依赖，再执行面板中现有节点的安装命令；尚未验证安装结果，未连接或修改服务器。
 - **涉及文件**：本记录、`context/2026/11/23/11-24-37/对话.md`。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`f93da75 docs: record Shanghai Komari agent diagnosis`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
