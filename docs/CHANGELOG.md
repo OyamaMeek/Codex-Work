@@ -3505,6 +3505,6 @@
 - **实际实现的功能与改动**：有效 DNS 缓存与连接记录确认 Cloudflare DoT 返回 103.155.16.133，现有域名规则 DIRECT 后脚本超时；阿里 DNS 的 CDN 节点在同一 Surge 环境中正常。备份活动 261014.conf，仅在 Host 增加 `mooc-res2.chaoxing.com = server:https://dns.alidns.com/dns-query`，重载并清理 DNS。
 - **测试/验证**：修复前真实 GET 检查失败；候选配置原生检查 OK；修复后增强模式和系统 HTTP 代理各 3 次 HTTP 200、88,145 字节、正文哈希一致，同域 nicescroll 脚本 200、59,977 字节。实际生效配置仅新增这一行，DNS 来源阿里 DoH，六次请求 DIRECT 连接 125.89.169.194。用户保持 Surge 开启，在原浏览器刷新后确认“课程正常显示”。未截图、未修改浏览器设置。
 - **涉及文件**：活动 Surge 配置、`.agent/surge-chaoxing/`（含配置备份，仅本地）；`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、本记录、`context/2026/11/23/18-18-23/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`e51f2ac docs: record verified Chaoxing DNS fix for Surge`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
