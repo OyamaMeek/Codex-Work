@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-23 超星与 Surge 共存排查
+
+- Codex 单代理，使用 systematic-debugging、verification-before-completion、Surge 原生 CLI、curl、系统 DNS 与官方文档；不读取课程登录凭据，不执行网页截图。
+- 本地诊断与配置恢复材料仅保存 `.agent/surge-chaoxing/`；配置、脚本不提交，协作记录限 context、docs、memory。
+
 ## 2026-11-17 CLion Codex 2.7.0 启动修复
 
 - 单代理。使用 CLion 原始日志、Node 官方校验表、PyCharm 中已有的 ACP 2.7.0 安装与官方 npm 包核对恢复材料。协议检查材料在本地忽略目录 `.agent/clion-acp-27/`。
