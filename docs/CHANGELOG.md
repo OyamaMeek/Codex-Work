@@ -3394,6 +3394,6 @@
   - 保留已有授权、安全及验证边界，目标文件仅本地保存。
   - [验证]：Python 文本断言检查四组要求覆盖、12 节标题、其他章节保持、围栏与行末空白，通过；未执行应用测试或验证后续模型行为。
 - **涉及文件**：`AGENTS/AGENTS.md`（仅本地，+8 / -2）、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、本记录、`context/2026/11/23/10-43-41/对话.md`。
-- **Git 提交**：待提交；仅提交本次协作记录，其他任务已有差异保留。
+- **Git 提交**：`1fe8c6c docs: record expression and execution rule integration`，已推送 `origin/main`；仅提交本次协作记录，其他任务已有差异保留。
 
 ---
