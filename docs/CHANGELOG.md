@@ -3422,3 +3422,16 @@
 - **Git 提交**：`f93da75 docs: record Shanghai Komari agent diagnosis`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-23 11:32] Komari 安装与面板域名核对
+
+- **需求/问题描述**：继续根据上海 VPS 的安装结果及 Agent 日志排查离线。
+- **实际实现的功能与改动**：
+  - 用户截图确认缺少 curl、GitHub 原始文件连接被重置；提供官方脚本列出的 ghfast 下载路径，后续截图显示 Agent 程序下载完成、systemd 服务创建及启用。
+  - 日志显示面板域名解析失败；Google 与 Cloudflare DNS 均对所用地址返回 Status 3。核对正确地址 `komari.happanetwork.com` 返回 Status 0 及两个 A 记录，HTTPS 页面标题为 HappaKomari。
+  - 明确承认此前命令漏写一个 p，提供修改 systemd 服务 endpoint、重新加载及重启后检查日志的步骤；未改动远端服务，尚未确认上海 VPS 上报成功。
+  - [验证]：上述三次 DNS 查询及正确地址 HTTPS 请求均退出 0；只读访问，无 token 请求。截图中的密钥不写入记录。
+- **涉及文件**：`memory/gotchas.md`、本记录、`context/2026/11/23/11-32-07/对话.md`。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
