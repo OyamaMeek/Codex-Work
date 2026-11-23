@@ -3410,3 +3410,15 @@
 - **Git 提交**：`2ca4df9 docs: record Debian 13 reinstall script guidance`；只提交本次记录，保留已有差异。
 
 ---
+
+## [2026-11-23 11:24] 上海 VPS Komari 离线初步排查
+
+- **需求/问题描述**：上海 VPS 安装后仍在 Komari 面板显示离线。
+- **实际实现的功能与改动**：
+  - 根据用户附件确认 Shanghai-Aliyun 显示离线、系统 Unknown、资源与流量数据为空；截图不足以判定根因。
+  - 查阅 Komari 官方 Agent 文档，提供 systemd 状态、最近 60 条日志及从上海 VPS 发起 IPv4 HTTPS 请求的只读检查命令。
+  - [验证]：用户返回 `Unit komari-agent.service could not be found`、日志无条目及 `curl: command not found`，确认默认系统服务不存在且连通性检查未执行。核对官方安装脚本默认服务名及 curl 依赖，建议 Debian/Ubuntu 先补依赖，再执行面板中现有节点的安装命令；尚未验证安装结果，未连接或修改服务器。
+- **涉及文件**：本记录、`context/2026/11/23/11-24-37/对话.md`。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
