@@ -3528,6 +3528,6 @@
   - [验证]：发行包及管理脚本哈希匹配；CLI 3.11.0，服务 active/running、enabled、NRestarts=0；匿名页面 HTTP 200、2676 字节，CSRF 保护下真实登录成功，携会话访问面板 HTTP 200。外部忽略自签名信任的 HTTPS 入口请求 HTTP 200。
   - [范围]：本机通过指定证书验证 TLS；未获得公共受信任证书，浏览器会提示证书不受信任。未修改云安全组、配置代理入站或实测代理流量。
 - **涉及文件**：服务器 `/usr/local/x-ui/`、`/usr/bin/x-ui`、`/etc/x-ui/`、`/etc/systemd/system/x-ui.service`、root 安装资料；本地 `.agent/3xui-install/`、`.agent/visual/3xui/`（仅本地）；本次 memory 四份记录、本日志与 `context/2026/11/24/23-11-00/对话.md`。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`14ab812 docs: record verified Shanghai 3x-ui installation`；本条通过后续文档提交补记。
 
 ---
