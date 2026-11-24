@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-11-24 Shanghai-Aliyun 安装 3x-ui
+
+- 所有通过镜像或中转获取的 `3x-ui` `v3.11.0` 文件必须与 GitHub 官方 SHA-256 完全一致，校验失败立即中止安装。
+- 安装完成后必须同时满足：`systemctl is-active x-ui` 为 `active`、`systemctl is-enabled x-ui` 为 `enabled`、`ss -ltnp` 确认面板监听端口、服务器本机 `curl` 请求面板路径返回有效 HTTP 响应。
+- 未经授权不调用截图，不修改 SSH 认证配置；面板账号、密码、Token、WebBasePath、公网 IP 与端口不写入远端仓库文档。
+
+实际结果：安装包 SHA-256 检查通过，安装后的 /usr/bin/x-ui 与官方 v3.11.0/x-ui.sh 哈希一致，CLI 返回 3.11.0。systemd 为 active/running、enabled、NRestarts=0，ss 确认监听。匿名页面 HTTP 200、2676 字节；按官方 csrf-token 流程获取令牌及 Cookie 后实际登录 success=true，已认证页面 HTTP 200。服务器本机使用 --cacert 验证自签名证书；外部 curl 使用 -k 的入口检查 HTTP 200，仅证明访问可达，不证明公共证书信任。用户已授权窗口截图，验证图保存在 .agent/visual/3xui/service-verification.png，登录资料文件权限 600。未配置代理入站或验证代理流量，未执行浏览器登录或更改云安全组。
+
 ## 2026-11-23 超星与 Surge 共存排查
 
 - 修复前保留具体资源超时证据与当前有效规则；禁止把虚拟 IP 的 TCP 建连成功当作真实远端连通。

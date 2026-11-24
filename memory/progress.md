@@ -1,5 +1,13 @@
 # 当前任务进度
 
+## 2026-11-24 Shanghai-Aliyun 安装 3x-ui
+
+- [x] 读取 `MHSanaei/3x-ui` 官方 `install.sh` 与 `v3.11.0` 发布元数据，确认 `x-ui-linux-amd64.tar.gz` 官方 SHA-256 为 `0ddfa4702f595442e2962acd81addc768fdacaa4ff2672c971a0463dae744916`，`v3.11.0/x-ui.sh` SHA-256 为 `26c229d5fb3b184e81581b4b223b801582ca7cf5908aaedeb8d1c7c70ad4cc25`。
+- [x] Termius 实机确认 Debian 13、x86_64、剩余 35 GB；既有 x-ui 未运行，安装目录不存在。
+- [x] GitHub 原始文件直连失败后，经 ghfast 下载官方发行包，SHA-256 完全匹配；使用包内原版 CLI 与 Debian unit 部署 v3.11.0，配置 SQLite、随机账号密码与路径、自签名 HTTPS 和开机自启。
+- [x] active/running、enabled、NRestarts=0；CSRF 保护下真实登录 success=true，携会话访问面板 HTTP 200；本机 TLS 使用指定证书验证，外部使用跳过证书信任验证的连接检查返回 HTTP 200。浏览器信任与完整代理转发未验证。
+- [x] 登录信息保存在服务器 root 专用目录内权限为 600 的文件，已在 Termius 显示；归档与日志仅含脱敏结果，未上传任何凭据。
+
 ## 2026-11-17 题库仓库分批推送
 
 - [x] 确认本地 `main` 与 GitHub 远端起初均无提交；远端为公开仓库，有推送权限。清点 375 个资料文件和 18 个 `.DS_Store`。

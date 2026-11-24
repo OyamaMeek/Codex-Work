@@ -3518,3 +3518,16 @@
 - **Git 提交**：`717bec3 docs: record Chaoxing DNS mapping in INI template`，已推送 `origin/main`；本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-24 23:11] 在 Shanghai-Aliyun 安装 3x-ui
+
+- **需求/问题描述**：用户要求在附件所示服务器安装 3x-ui，后续明确授权查看 Termius 窗口截图。
+- **实际实现的功能与改动**：
+  - 通过当前 root 会话确认 Debian 13 与 amd64；直连 GitHub 连接重置后经中转下载官方 v3.11.0 发行包，强制核对官方 SHA-256。
+  - 使用发行包内原版 CLI 和 Debian systemd unit 安装；配置 SQLite、随机登录账号密码与路径、自签名 HTTPS、服务开机自启。登录资料保存在服务器权限 600 的 root 文件，并显示于 Termius；凭据不纳入归档。
+  - [验证]：发行包及管理脚本哈希匹配；CLI 3.11.0，服务 active/running、enabled、NRestarts=0；匿名页面 HTTP 200、2676 字节，CSRF 保护下真实登录成功，携会话访问面板 HTTP 200。外部忽略自签名信任的 HTTPS 入口请求 HTTP 200。
+  - [范围]：本机通过指定证书验证 TLS；未获得公共受信任证书，浏览器会提示证书不受信任。未修改云安全组、配置代理入站或实测代理流量。
+- **涉及文件**：服务器 `/usr/local/x-ui/`、`/usr/bin/x-ui`、`/etc/x-ui/`、`/etc/systemd/system/x-ui.service`、root 安装资料；本地 `.agent/3xui-install/`、`.agent/visual/3xui/`（仅本地）；本次 memory 四份记录、本日志与 `context/2026/11/24/23-11-00/对话.md`。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---

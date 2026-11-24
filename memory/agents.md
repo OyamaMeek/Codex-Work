@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-24 Shanghai-Aliyun 安装 3x-ui
+
+- Codex 单代理，使用 verification-before-completion、本机 `curl`/`shasum` 核验 `MHSanaei/3x-ui` 官方 `v3.11.0` 发布信息，通过 CUA 操作 Termius `Shanghai-Aliyun` 会话；用户明确授权后读取窗口截图，脱敏验证图保存在本地 `.agent/visual/3xui/`。
+- 本地核验脚本材料仅保存于已忽略的 `.agent/3xui-install/`；服务器地址、端口、面板路径、账号密码与 API Token 不写入 `memory/`、`docs/` 或 `context/`。
+
 ## 2026-11-23 超星与 Surge 共存排查
 
 - Codex 单代理，使用 systematic-debugging、verification-before-completion、Surge 原生 CLI、curl、系统 DNS 与官方文档；不读取课程登录凭据，不执行网页截图。

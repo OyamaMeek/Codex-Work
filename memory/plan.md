@@ -1,5 +1,12 @@
 # 当前任务计划
 
+## 2026-11-24 Shanghai-Aliyun 安装 3x-ui
+
+1. 在本机读取 `MHSanaei/3x-ui` 最新稳定版 `v3.11.0` 的官方 `install.sh`、`x-ui.sh` 与 `x-ui-linux-amd64.tar.gz` 官方 SHA-256，确认中国大陆网络环境下的 GitHub 访问阻碍与安装依赖。
+2. 通过无障碍接口连接本机 Termius 的 `Shanghai-Aliyun` 终端，先只读检查系统架构、磁盘空间、既有 `x-ui` 安装状态与镜像连通性。
+3. 在 `Shanghai-Aliyun` 下载官方 `v3.11.0` 安装资源并强制校验官方 SHA-256，完成依赖安装、`x-ui` 服务部署与初始化设置。
+4. 验证 `x-ui` systemd 服务运行状态、监听端口、CLI 命令与本机 HTTP 响应，保存不包含敏感凭据的协作记录并提交推送。
+
 ## 2026-11-23 超星与 Surge 共存排查
 
 1. 确认 Surge 当前状态、有效配置及 mooc-res2 请求的解析、连接和处理阶段；记录关闭时已恢复的用户证据。
