@@ -3618,3 +3618,16 @@
 - **Git 提交**：`bee1840 docs: verify existing Emby rule`；本条通过后续文档提交补记，仅本次日志和对话归档。
 
 ---
+
+## [2026-11-26 17:35] 合并 Global Media 与 Social Media
+
+- **需求/问题描述**：
+  > 将 Global Media 和 Social Media 合并为 Global Media，Telegram、Twitter 和 TikTok 规则使用 Global Media。
+- **实际实现的功能与改动**：
+  - 保留 Global Media 的 Proxy 默认项与全部候选；Telegram 两规则、Twitter、原 Social Media 下的 WhatsApp 及 TikTok 共五条规则统一引用 Global Media。
+  - 删除 Social Media 与不再使用的 TikTok 选择组，更新注释；原 URL、其余 template 定义及 CONF 逐字保留，规则仍为 77 条。
+  - [验证]：修改前合并检查失败，修改后四个 unittest 用例通过，覆盖默认项、规则目标、全部组引用与无循环、模板内容和顺序。未运行完整转换或代理流量测试。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`.agent/happa-routing/check.py`、`.agent/happa-merge/`（仅本地）；本次 memory 三份记录、本日志与 `context/2026/11/26/17-35-21/对话.md`。
+- **Git 提交**：待提交；仅本次协作记录，保留其他已有修改。
+
+---

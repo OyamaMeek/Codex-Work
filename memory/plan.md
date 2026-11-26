@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-11-26 合并 Global Media 与 Social Media
+
+- 保留 Global Media 的 Proxy 默认项与现有候选，Telegram 两规则、Twitter、WhatsApp 和 TikTok 统一指向该组；移除合并后的 Social Media 和失去引用的 TikTok 组。
+- 先运行缺失检查，再验证规则目标、引用完整性和原有规则顺序；只提交协作记录，配置保留本地。
+
 ## 2026-11-26 Corrects 位于 Siri-Proxy 之后
 
 - 同步移动 INI 定义和 CONF 引用，Corrects 紧随 Siri-Proxy，保留 China 策略、77 条规则及其余相对顺序。

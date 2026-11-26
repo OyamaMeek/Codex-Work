@@ -1,5 +1,12 @@
 # 当前任务验证标准
 
+## 2026-11-26 合并 Global Media 与 Social Media
+
+- 五条规则转到 Global Media，原 URL 保留；Global Media 默认 Proxy、保留全部原候选，Social Media 与闲置 TikTok 组移除。
+- 原 CONF 逐字不变，77 条规则与其余定义保持；验证全部规则目标及分组引用，未实测代理流量。
+
+实际结果：修改前因 Social Media 组仍存在失败；修改后四个 unittest 用例通过，五条目标、原 URL、其他 template 定义、CONF 字节内容、77 条规则、默认项及全部组引用和循环检查通过。未运行完整转换或实际请求。
+
 ## 2026-11-26 Corrects 位于 Siri-Proxy 之后
 
 - 修改前顺序检查失败；修改后三个 unittest 用例通过，INI 与 CONF 中 Corrects 均紧随 Siri-Proxy、只引用一次，规则仍为 77 条，默认项与其余相对顺序保留。

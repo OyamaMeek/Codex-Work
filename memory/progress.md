@@ -1,5 +1,11 @@
 # 当前任务进度
 
+## 2026-11-26 合并 Global Media 与 Social Media
+
+- [x] 读取原配置与四个指定列表；Global Media 和 Social Media 候选一致，WhatsApp 也引用 Social Media。
+- [x] 修改前合并检查失败，修改后四个 unittest 用例通过；五条规则统一到 Global Media，移除 Social Media 与失去引用的 TikTok 组，77 条规则与原 CONF 保持。
+- [x] 已准备日志和对话归档；仅提交协作记录，提交结果见日志。
+
 ## 2026-11-26 Corrects 位于 Siri-Proxy 之后
 
 - [x] 先更新顺序检查并确认失败；移动 INI/CONF 中的 Corrects 至 Siri-Proxy 后，三个 unittest 用例通过。
