@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-11-26 业务策略组按名称排序
+
+- 对当前 17 个业务策略组按名称升序排列，忽略大小写；Proxy、All Proxies 保留顶部，Final、aTrust 及地区分组保留原顺序。
+- 仅移动分组及相关注释，保留所有组成员、默认项、81 条规则和 CONF；先检查失败再修改并验证，仅提交本次协作记录。
+
 ## 2026-11-26 新增 Global 与 China 通用列表并核对前序修改
 
 - 按用户明确的“增加”保留原 77 条规则的内容和相对顺序，仅新增 Global_All_No_Resolve、ChinaASN_Resolve、Lan→China、ChinaMaxNoIP_All_No_Resolve 四项；相同规则不重复新增。
