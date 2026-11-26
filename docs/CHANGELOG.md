@@ -3606,3 +3606,15 @@
 - **Git 提交**：`11e68bf docs: record Corrects ordering after Siri-Proxy`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
+
+## [2026-11-26 17:31] 核对已有 Emby 规则
+
+- **需求/问题描述**：
+  > 增加 Softlyx/Clash 的 Emby.list，策略为 Emby。
+- **实际实现的功能与改动**：
+  - 已存在完全相同的 INI 规则、Emby 选择组及 CONF 变量引用，配置保持原样，未重复添加。
+  - [验证]：Python 断言确认精确规则、Emby 组及 CONF 引用各存在一次；已读取指定远程列表，未测试实际代理流量。
+- **涉及文件**：只读核对 `HappaConfig/HappaConfig.ini:27`、`HappaConfig/HappaConfig.ini:138`、`HappaConfig/HappaConfig.conf:103`；本日志及 `context/2026/11/26/17-31-28/对话.md`。
+- **Git 提交**：待提交；仅本次日志和对话归档。
+
+---
