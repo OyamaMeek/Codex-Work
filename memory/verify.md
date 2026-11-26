@@ -1,5 +1,13 @@
 # 当前任务验证标准
 
+## 2026-11-26 HappaConfig 优先修正与通用拦截
+
+- 规则前六项为 UDP 443、STUN、Corrects、reject-no-drop、reject-drop、DouYin，策略及 extended-matching 与用户内容一致。
+- 六条规则仅引用一次，共 77 条规则；Siri、aTrust、Hziee 默认项和其他规则相对顺序保持。
+- 修改前后检查及真实列表的 Surge 局部语法检查；不修改活动配置，不声称完整转换或实际拦截效果通过。
+
+实际结果：修改前规则数和顺序两项失败，修改后三个 unittest 用例通过，77 条规则与前六项顺序、唯一引用、默认项、变量和其他引用顺序检查通过。四个真实下载列表的 Surge 局部语法检查 OK，上一任务三个本地列表的局部语法回归检查 OK。Corrects 含 gateway.icloud.com，按最新要求前置后先命中 China，覆盖后续 Siri-Proxy；未更改上游列表。未验证完整转换或实际请求。
+
 ## 2026-11-26 HappaConfig Siri 与 aTrust 分流
 
 - Siri-Direct、Siri-Proxy、Hziee 默认项分别为 DIRECT、Proxy、aTrust，aTrust 只按名称包含标记筛选节点。

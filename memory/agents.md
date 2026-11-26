@@ -1,5 +1,9 @@
 # 当前协作环境
 
+## 2026-11-26 HappaConfig 优先修正与通用拦截
+
+- 沿用单代理、test-driven-development、verification-before-completion；读取四个用户规则 URL，下载真实列表到已忽略的 `.agent/happa-priority/`，使用 Python 与 Surge CLI 验证。
+
 ## 2026-11-26 HappaConfig Siri 与 aTrust 分流
 
 - Codex 单代理；使用 test-driven-development、verification-before-completion、GitHub MCP 读取三个指定列表，Python 检查模板与 Surge CLI 检查局部规则语法。

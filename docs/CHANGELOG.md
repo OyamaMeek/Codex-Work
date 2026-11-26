@@ -3581,3 +3581,16 @@
 - **Git 提交**：`0d3a3c6 docs: record Siri and aTrust routing configuration`；本条通过后续文档提交补记，仅包含本次协作记录，配置文件保留本地。
 
 ---
+
+## [2026-11-26 17:24] HappaConfig 前置修正与通用拦截规则
+
+- **需求/问题描述**：
+  > 按用户提供顺序配置 UDP 443、STUN、优先 Corrects、两条通用拦截与默认走 China 的抖音列表。
+- **实际实现的功能与改动**：
+  - INI 新增 reject-no-drop、reject-drop（均保留 extended-matching）及 DouYin，前置已有逻辑规则与 Corrects；CONF 同步引用并移除原位置重复项，合计 77 条。
+  - 保留现有 Siri、aTrust、Hziee 默认项与其他规则相对顺序。按最新优先级，Corrects 中 gateway.icloud.com 先走 China，覆盖后面的 Siri-Proxy；已向用户说明。
+  - [验证]：四个列表完整读取；修改前两项检查失败，修改后三个 unittest 用例通过，真实列表局部配置及上一任务语法回归的 Surge CLI 检查均 OK。未修改活动配置、完成全量转换或测试实际拦截。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-priority/`、`.agent/happa-routing/check.py`（仅本地）；本次 memory 四份记录、本日志及 `context/2026/11/26/17-24-23/对话.md`。
+- **Git 提交**：待提交；仅本次协作记录，保留已有其他任务差异。
+
+---
