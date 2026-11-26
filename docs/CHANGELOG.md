@@ -3654,6 +3654,6 @@
   - 当前 17 个业务组按名称升序排列；Proxy、All Proxies 保留顶部，Final、aTrust 和地区组保留原顺序；相关注释随分组整理。
   - [验证]：修改前排序检查失败，修改后六项 unittest 通过。全部生效配置行的多重集合、template 原文和 CONF 内容一致，分组成员、默认项与 81 条规则保持。未更新活动客户端、生成配置或新增截图。
 - **涉及文件**：`HappaConfig/HappaConfig.ini`、`.agent/happa-routing/check.py`、`.agent/happa-sort/`（仅本地）；本次 memory 三份记录、本日志及 `context/2026/11/26/17-47-29/对话.md`。
-- **Git 提交**：待提交；仅本次协作记录，保留其他已有修改。
+- **Git 提交**：`7779fdd docs: record alphabetical business policy groups`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
