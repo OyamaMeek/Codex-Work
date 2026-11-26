@@ -3709,3 +3709,16 @@
 - **Git 提交**：`2048790 docs: organize Browser and Happa in Douyin toggles`；本行通过后续文档提交补记，仅包含本次协作记录，保留已有未提交修改。
 
 ---
+
+## [2026-11-26 23:30] 从 HappaConfig 删除 CampusAD
+
+- **需求/问题描述**：
+  > 在 HappaConfig 中删除截图所示 CampusAD。
+- **实际实现的功能与改动**：
+  - 删除 CampusAD 策略组、广告规则、专用 MITM 主机及对应 CONF 引用；规则总数更新为80条，其余配置保持。独立列表文件保留。
+  - [验证]：三项 unittest 修改前失败、修改后通过；无残留引用、80条规则唯一且模板变量全部可展开，其余内容与修改前副本逐字一致；git diff --check通过。
+  - 配置与检查材料仅本地保存；未执行完整订阅转换、重载活动客户端或实际流量验证。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`（+1/-7）、`HappaConfig/HappaConfig.conf`（-3）、`.agent/happa-remove-campusad/`（仅本地）；本次 memory 三份记录、本日志与 `context/2026/11/26/23-30-38/对话.md`。
+- **Git 提交**：待提交，仅提交本次协作记录。
+
+---
