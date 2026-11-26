@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-26 妙妙屋与妙妙屋 X 研究
+
+- 使用 research 技能，按技能明确要求委派一名后台研究代理核对原版仓库；主代理核对 X 版官网、官方文档及发布仓库。资料读取采用 Exa 与 GitHub MCP，不安装、迁移或操作服务器，不截图。
+- 研究笔记仅本地 `.agent/miaomiaowu-research/`；只提交本次协作记录，保留已有未提交差异。
+
 ## 2026-11-26 HappaConfig 优先修正与通用拦截
 
 - 沿用单代理、test-driven-development、verification-before-completion；读取四个用户规则 URL，下载真实列表到已忽略的 `.agent/happa-priority/`，使用 Python 与 Surge CLI 验证。
