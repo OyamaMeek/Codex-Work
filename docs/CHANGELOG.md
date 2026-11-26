@@ -3541,6 +3541,6 @@
   - 期末复习规划提示词独立归类，保留原正文、来源与完整提示词；清除孤立的格式标签和空标题，模型排名标注为原帖观点。
   - [验证]：18 项正文覆盖、3 个代码块逐字保留检查通过；Notion 写入成功且无警告，回读完整 content 与预期替换结果逐字一致，节外内容不变。未执行收藏提示词、核实排名或检查客户端视觉排版。
 - **涉及文件**：`.agent/notion-douyin/original.md`、`.agent/notion-douyin/organized.md`（仅本地）；`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、本日志、`context/2026/11/26/14-40-05/对话.md`。
-- **Git 提交**：待提交；仅暂存本次协作记录，保留已有其他任务修改。
+- **Git 提交**：`a45ec68 docs: organize Notion Douyin reference collection`；本条通过后续文档提交补记。仅提交本次协作记录，保留已有其他任务修改。
 
 ---
