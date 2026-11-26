@@ -1,8 +1,16 @@
 # 当前任务验证标准
 
+## 2026-11-26 新增 Global 与 China 通用列表并核对前序修改
+
+- 原 77 条规则的定义及相对引用顺序完全保留，只增加四条，共 81 条；原分组均保留，另外恢复独立 TikTok 组。
+- 新 Global 列表在 Apple 专用规则之后；Corrects 紧随 Siri-Proxy，Hziee 先于 Lan 与 China，新 Lan→China 在旧 Lan→DIRECT 之前；成人内容项未调整。
+- 修改前后结构检查、八个真实通用列表的 Surge 局部语法检查；不声称全量转换或代理实际连通性通过。
+
+实际结果：保留性检查修改前失败，修正后五个 unittest 用例通过；旧 template 每项值相同，CONF 去掉新增四个引用后与修改前顺序逐项一致，原组默认项保留且 TikTok 组恢复。八个完整下载列表的独立 Surge 配置检查返回 OK，未测试代理实际流量。
+
 ## 2026-11-26 合并 Global Media 与 Social Media
 
-- 五条规则转到 Global Media，原 URL 保留；Global Media 默认 Proxy、保留全部原候选，Social Media 与闲置 TikTok 组移除。
+- 五条规则转到 Global Media，原 URL 保留；Global Media 默认 Proxy、保留全部原候选，Social Media 合并移除，独立 TikTok 组保留。
 - 原 CONF 逐字不变，77 条规则与其余定义保持；验证全部规则目标及分组引用，未实测代理流量。
 
 实际结果：修改前因 Social Media 组仍存在失败；修改后四个 unittest 用例通过，五条目标、原 URL、其他 template 定义、CONF 字节内容、77 条规则、默认项及全部组引用和循环检查通过。未运行完整转换或实际请求。

@@ -1,8 +1,14 @@
 # 当前任务计划
 
+## 2026-11-26 新增 Global 与 China 通用列表并核对前序修改
+
+- 按用户明确的“增加”保留原 77 条规则的内容和相对顺序，仅新增 Global_All_No_Resolve、ChinaASN_Resolve、Lan→China、ChinaMaxNoIP_All_No_Resolve 四项；相同规则不重复新增。
+- 新 Global 列表位于 Apple 专用规则之后，国内新增项位于 ChinaMedia 后；新 Lan→China 优先于旧 Lan→DIRECT，Hziee 仍更早。恢复前次额外删除的独立 TikTok 组，TikTok 规则仍指向 Global Media。
+- HLbdy 涉及成人内容，不协助配置该项，既有定义及引用不作调整。完整下载其余八份列表，先检查后修改，运行结构回归及局部原生语法验证；只提交协作记录。
+
 ## 2026-11-26 合并 Global Media 与 Social Media
 
-- 保留 Global Media 的 Proxy 默认项与现有候选，Telegram 两规则、Twitter、WhatsApp 和 TikTok 统一指向该组；移除合并后的 Social Media 和失去引用的 TikTok 组。
+- 保留 Global Media 的 Proxy 默认项与现有候选，Telegram 两规则、Twitter、WhatsApp 和 TikTok 统一指向该组；移除合并后的 Social Media，保留独立 TikTok 组。
 - 先运行缺失检查，再验证规则目标、引用完整性和原有规则顺序；只提交协作记录，配置保留本地。
 
 ## 2026-11-26 Corrects 位于 Siri-Proxy 之后

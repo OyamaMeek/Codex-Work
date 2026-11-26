@@ -3631,3 +3631,17 @@
 - **Git 提交**：`7e9902f docs: record merged Global Media policies`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
+
+## [2026-11-26 17:42] 增加 Global 与 China 列表并核对前序修改
+
+- **需求/问题描述**：
+  > 新增用户提供的全球与国内服务规则；用户明确要求增加，并要求核对前面的修改。
+- **实际实现的功能与改动**：
+  - 原 77 条规则的定义和相对顺序完整保留，仅增加 Global_All_No_Resolve、ChinaASN_Resolve、Lan→China、ChinaMaxNoIP_All_No_Resolve，共 81 条；同 URL 同策略的既有规则不重复新增。
+  - 新全球列表位于 Apple 专用规则之后；新增 Lan→China 在原 Lan→DIRECT 之前，Hziee 仍优先。成人内容项未调整。
+  - 核对 Siri 拆分、aTrust/Hziee、Corrects 和 Emby；恢复上次额外删除的独立 TikTok 组，TikTok 规则按用户要求继续使用 Global Media。
+  - [验证]：修正前保留性检查失败，修正后五个 unittest 用例通过，旧 template 逐项一致、旧规则相对顺序一致、全部旧分组保留并恢复 TikTok，八个真实通用列表局部 Surge 语法检查 OK。未执行完整转换或实际代理流量验证。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-routing/check.py`、`.agent/happa-global-country/`（仅本地）；本次 memory 四份记录、本日志及 `context/2026/11/26/17-42-24/对话.md`。
+- **Git 提交**：待提交；仅本次协作记录，保留其他已有修改。
+
+---

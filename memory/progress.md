@@ -1,9 +1,15 @@
 # 当前任务进度
 
+## 2026-11-26 新增 Global 与 China 通用列表并核对前序修改
+
+- [x] 读取配置与指定通用规则页面，确认旧 Global、China 双列表与 Lan 的 DIRECT 策略。
+- [x] 八个通用列表下载完成；按“增加”保留原 77 条及其相对顺序，只新增四条。恢复前次额外删除的独立 TikTok 组；Siri、aTrust/Hziee、Corrects、Emby 核对符合要求。
+- [x] 五个 unittest 用例通过，旧定义逐项一致、引用顺序保持、总计 81 条；八个真实列表的 Surge 局部语法检查 OK。已准备归档和日志，仅提交协作记录。
+
 ## 2026-11-26 合并 Global Media 与 Social Media
 
 - [x] 读取原配置与四个指定列表；Global Media 和 Social Media 候选一致，WhatsApp 也引用 Social Media。
-- [x] 修改前合并检查失败，修改后四个 unittest 用例通过；五条规则统一到 Global Media，移除 Social Media 与失去引用的 TikTok 组，77 条规则与原 CONF 保持。
+- [x] 五条规则统一到 Global Media，Social Media 已合并；独立 TikTok 组在后续核对中恢复。该阶段 77 条规则与原 CONF 保持。
 - [x] 已准备日志和对话归档；仅提交协作记录，提交结果见日志。
 
 ## 2026-11-26 Corrects 位于 Siri-Proxy 之后
