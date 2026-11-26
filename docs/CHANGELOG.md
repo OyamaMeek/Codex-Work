@@ -3568,3 +3568,16 @@
 - **Git 提交**：`c93e019 docs: record Hziee rule list filename`；本条通过后续文档提交补记，仅提交本次协作记录。
 
 ---
+
+## [2026-11-26 17:16] HappaConfig 拆分 Siri 策略并新增 aTrust 与 Hziee
+
+- **需求/问题描述**：
+  > 将 INI 中的 SiriAI 替换成 Siri-Direct（默认 DIRECT）与 Siri-Proxy（默认 Proxy），增加筛选名称含 aTrust 的节点组，以及默认使用 aTrust 的 Hziee 规则。
+- **实际实现的功能与改动**：
+  - INI 使用用户指定的三个 raw URL；新增 Siri-Direct、Siri-Proxy、aTrust 与 Hziee 组，Hziee 默认引用 aTrust。aTrust 按名称包含标记筛选，忽略大小写。
+  - CONF 同步替换 SiriAI 变量并新增 Hziee 引用，Hziee 先于通用直连，Siri 先于 Apple；规则共 74 条，其余引用顺序不变。
+  - [验证]：修改前检查失败，修改后两个 unittest 用例通过；真实本地列表的 Surge 局部规则语法检查返回 OK。未运行完整 Subconverter 转换、节点连通性测试、修改活动配置或发布远端模板。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-routing/`（以上仅本地）；`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、本日志及本次对话归档。
+- **Git 提交**：待提交；仅提交本次协作记录，已有其他任务差异保留。
+
+---

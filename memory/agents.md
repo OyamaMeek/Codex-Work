@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-26 HappaConfig Siri 与 aTrust 分流
+
+- Codex 单代理；使用 test-driven-development、verification-before-completion、GitHub MCP 读取三个指定列表，Python 检查模板与 Surge CLI 检查局部规则语法。
+- INI、CONF 与 `.agent/happa-routing/` 验证材料仅本地保存；不修改活动配置，不发布 Document 仓库。
+
 ## 2026-11-26 Notion 抖音资料分类
 
 - Codex 单代理，使用 notion-knowledge-capture、verification-before-completion 与 Notion MCP；直接读取「领域」中的完整「抖音」小节并定点更新。

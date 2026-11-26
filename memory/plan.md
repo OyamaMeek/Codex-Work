@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-11-26 HappaConfig Siri 与 aTrust 分流
+
+1. 读取 INI、CONF 与三个远程列表，先检查新策略默认项、aTrust 名称筛选和模板引用，确认修改前失败。
+2. 将 SiriAI 拆为 Siri-Direct、Siri-Proxy，默认 DIRECT、Proxy；新增 aTrust 节点组与默认选择它的 Hziee 组，Hziee 规则优先于通用直连。
+3. 同步 CONF 变量引用并核对规则总数，执行结构检查和 Surge 局部语法检查；只提交推送本次协作记录，保留其他工作区差异。
+
 ## 2026-11-26 Notion 抖音资料分类
 
 1. 完整读取「领域」的「抖音」小节，清点 17 个原标题及末尾独立复习提示词，保存本地原稿。
