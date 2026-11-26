@@ -3578,6 +3578,6 @@
   - CONF 同步替换 SiriAI 变量并新增 Hziee 引用，Hziee 先于通用直连，Siri 先于 Apple；规则共 74 条，其余引用顺序不变。
   - [验证]：修改前检查失败，修改后两个 unittest 用例通过；真实本地列表的 Surge 局部规则语法检查返回 OK。未运行完整 Subconverter 转换、节点连通性测试、修改活动配置或发布远端模板。
 - **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-routing/`（以上仅本地）；`memory/agents.md`、`memory/plan.md`、`memory/progress.md`、`memory/verify.md`、本日志及本次对话归档。
-- **Git 提交**：待提交；仅提交本次协作记录，已有其他任务差异保留。
+- **Git 提交**：`0d3a3c6 docs: record Siri and aTrust routing configuration`；本条通过后续文档提交补记，仅包含本次协作记录，配置文件保留本地。
 
 ---
