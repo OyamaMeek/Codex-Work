@@ -3556,3 +3556,15 @@
 - **Git 提交**：`ad9989f docs: record campus IP rule list`；仅提交本次日志和对话归档，本条通过后续文档提交补记。
 
 ---
+
+## [2026-11-26 14:50] 将内网 IP 规则保存到 Hziee.list
+
+- **需求/问题描述**：
+  > 用户指定规则文件为 Hziee.list。
+- **实际实现的功能与改动**：
+  - 将本次创建的列表改为 `HappaConfig/Hziee.list`，保留规则 `IP-CIDR,10.130.10.75/32,no-resolve`。
+  - [验证]：检查新文件的精确内容、严格 CIDR 与旧文件移除，Python 断言退出 0；未修改 INI、CONF 或活动配置，未验证代理连通性。
+- **涉及文件**：`HappaConfig/Hziee.list`（仅本地）、`memory/gotchas.md`、本日志、`context/2026/11/26/14-50-11/对话.md`。
+- **Git 提交**：待提交；只提交本次协作记录。
+
+---
