@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-26 WebDesignCourse 课程笔记
+
+- 单代理，使用 notion-knowledge-capture 和 Notion MCP，读取本地课程 HTML/CSS，以 MDN 官方资料核对补充知识；只更新 Note 页 Html 折叠栏目。
+- 本地整理与验证材料位于已忽略的 `.agent/webdesign-notes/`；课程源码只读，不截图。
+
 ## 2026-11-26 妙妙屋与妙妙屋 X 研究
 
 - 使用 research 技能，按技能明确要求委派一名后台研究代理核对原版仓库；主代理核对 X 版官网、官方文档及发布仓库。资料读取采用 Exa 与 GitHub MCP，不安装、迁移或操作服务器，不截图。
