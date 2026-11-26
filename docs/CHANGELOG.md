@@ -3553,6 +3553,6 @@
   - 新增本地 `HappaConfig/CampusProxy.list`，内容为 `IP-CIDR,10.130.10.75/32,no-resolve`；代理策略由引用列表的 RULE-SET 指定。
   - [验证]：核对 Surge 官方规则集说明；Python 标准库校验单行格式、严格 CIDR 和相邻地址排除，退出 0。未接入活动配置、发布列表或验证代理连通性。
 - **涉及文件**：`HappaConfig/CampusProxy.list`（+1，仅本地）、本日志、`context/2026/11/26/14-45-52/对话.md`。
-- **Git 提交**：待提交；仅提交本次日志和对话归档。
+- **Git 提交**：`ad9989f docs: record campus IP rule list`；仅提交本次日志和对话归档，本条通过后续文档提交补记。
 
 ---
