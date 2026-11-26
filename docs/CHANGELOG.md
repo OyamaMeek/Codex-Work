@@ -3628,6 +3628,6 @@
   - 删除 Social Media 与不再使用的 TikTok 选择组，更新注释；原 URL、其余 template 定义及 CONF 逐字保留，规则仍为 77 条。
   - [验证]：修改前合并检查失败，修改后四个 unittest 用例通过，覆盖默认项、规则目标、全部组引用与无循环、模板内容和顺序。未运行完整转换或代理流量测试。
 - **涉及文件**：`HappaConfig/HappaConfig.ini`、`.agent/happa-routing/check.py`、`.agent/happa-merge/`（仅本地）；本次 memory 三份记录、本日志与 `context/2026/11/26/17-35-21/对话.md`。
-- **Git 提交**：待提交；仅本次协作记录，保留其他已有修改。
+- **Git 提交**：`7e9902f docs: record merged Global Media policies`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
