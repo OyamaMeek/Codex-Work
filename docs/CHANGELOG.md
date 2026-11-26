@@ -3565,6 +3565,6 @@
   - 将本次创建的列表改为 `HappaConfig/Hziee.list`，保留规则 `IP-CIDR,10.130.10.75/32,no-resolve`。
   - [验证]：检查新文件的精确内容、严格 CIDR 与旧文件移除，Python 断言退出 0；未修改 INI、CONF 或活动配置，未验证代理连通性。
 - **涉及文件**：`HappaConfig/Hziee.list`（仅本地）、`memory/gotchas.md`、本日志、`context/2026/11/26/14-50-11/对话.md`。
-- **Git 提交**：待提交；只提交本次协作记录。
+- **Git 提交**：`c93e019 docs: record Hziee rule list filename`；本条通过后续文档提交补记，仅提交本次协作记录。
 
 ---
