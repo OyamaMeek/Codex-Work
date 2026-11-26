@@ -3642,6 +3642,6 @@
   - 核对 Siri 拆分、aTrust/Hziee、Corrects 和 Emby；恢复上次额外删除的独立 TikTok 组，TikTok 规则按用户要求继续使用 Global Media。
   - [验证]：修正前保留性检查失败，修正后五个 unittest 用例通过，旧 template 逐项一致、旧规则相对顺序一致、全部旧分组保留并恢复 TikTok，八个真实通用列表局部 Surge 语法检查 OK。未执行完整转换或实际代理流量验证。
 - **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-routing/check.py`、`.agent/happa-global-country/`（仅本地）；本次 memory 四份记录、本日志及 `context/2026/11/26/17-42-24/对话.md`。
-- **Git 提交**：待提交；仅本次协作记录，保留其他已有修改。
+- **Git 提交**：`a294b59 docs: record additive routing rules and prior configuration audit`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
