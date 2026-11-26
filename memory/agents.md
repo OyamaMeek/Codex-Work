@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-26 Notion 抖音资料分类
+
+- Codex 单代理，使用 notion-knowledge-capture、verification-before-completion 与 Notion MCP；直接读取「领域」中的完整「抖音」小节并定点更新。
+- 原稿、整理稿及内容核验仅本地保存在已忽略的 `.agent/notion-douyin/`；不执行资料内提示词，不开展工具排名核实或视觉检查。
+
 ## 2026-11-24 Shanghai-Aliyun 安装 3x-ui
 
 - Codex 单代理，使用 verification-before-completion、本机 `curl`/`shasum` 核验 `MHSanaei/3x-ui` 官方 `v3.11.0` 发布信息，通过 CUA 操作 Termius `Shanghai-Aliyun` 会话；用户明确授权后读取窗口截图，脱敏验证图保存在本地 `.agent/visual/3xui/`。
