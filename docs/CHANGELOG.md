@@ -3719,6 +3719,6 @@
   - [验证]：三项 unittest 修改前失败、修改后通过；无残留引用、80条规则唯一且模板变量全部可展开，其余内容与修改前副本逐字一致；git diff --check通过。
   - 配置与检查材料仅本地保存；未执行完整订阅转换、重载活动客户端或实际流量验证。
 - **涉及文件**：`HappaConfig/HappaConfig.ini`（+1/-7）、`HappaConfig/HappaConfig.conf`（-3）、`.agent/happa-remove-campusad/`（仅本地）；本次 memory 三份记录、本日志与 `context/2026/11/26/23-30-38/对话.md`。
-- **Git 提交**：待提交，仅提交本次协作记录。
+- **Git 提交**：`605d21f docs: record CampusAD removal from HappaConfig`；本行通过后续文档提交补记，仅提交本次协作记录，配置保留本地。
 
 ---
