@@ -1,5 +1,10 @@
 # 当前任务验证标准
 
+## 2026-11-26 Corrects 位于 Siri-Proxy 之后
+
+- 修改前顺序检查失败；修改后三个 unittest 用例通过，INI 与 CONF 中 Corrects 均紧随 Siri-Proxy、只引用一次，规则仍为 77 条，默认项与其余相对顺序保留。
+- 仅调整模板顺序，未修改上游列表或活动配置，未执行完整转换或实际流量验证。
+
 ## 2026-11-26 HappaConfig 优先修正与通用拦截
 
 - 规则前六项为 UDP 443、STUN、Corrects、reject-no-drop、reject-drop、DouYin，策略及 extended-matching 与用户内容一致。

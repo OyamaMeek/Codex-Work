@@ -3594,3 +3594,15 @@
 - **Git 提交**：`2a6f84b docs: record priority reject and DouYin rules`；本条通过后续文档提交补记，仅本次协作记录，配置保留本地。
 
 ---
+
+## [2026-11-26 17:28] 将 Corrects 移至 Siri-Proxy 之后
+
+- **需求/问题描述**：
+  > Corrects 放到 Siri-Proxy 下面。
+- **实际实现的功能与改动**：
+  - INI 定义和 CONF 引用同步移动，Corrects 紧随 Siri-Proxy，保留 China 策略、77 条规则及其余相对顺序。
+  - [验证]：修改前顺序检查失败，修改后三个 unittest 用例通过，覆盖紧邻关系、唯一引用、默认项和模板变量；未执行完整转换或实际流量验证。
+- **涉及文件**：`HappaConfig/HappaConfig.ini`、`HappaConfig/HappaConfig.conf`、`.agent/happa-routing/check.py`（仅本地）；本次 memory 三份记录、本日志及 `context/2026/11/26/17-28-18/对话.md`。
+- **Git 提交**：待提交；仅本次协作记录，保留其他任务已有修改。
+
+---

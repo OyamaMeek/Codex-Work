@@ -1,5 +1,10 @@
 # 当前任务进度
 
+## 2026-11-26 Corrects 位于 Siri-Proxy 之后
+
+- [x] 先更新顺序检查并确认失败；移动 INI/CONF 中的 Corrects 至 Siri-Proxy 后，三个 unittest 用例通过。
+- [x] 保存本次日志和对话归档，配置仅本地；提交信息见日志。
+
 ## 2026-11-26 HappaConfig 优先修正与通用拦截
 
 - [x] 下载并读取四个规则列表，确认 UDP 443、STUN、Corrects 已存在。

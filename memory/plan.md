@@ -1,5 +1,9 @@
 # 当前任务计划
 
+## 2026-11-26 Corrects 位于 Siri-Proxy 之后
+
+- 同步移动 INI 定义和 CONF 引用，Corrects 紧随 Siri-Proxy，保留 China 策略、77 条规则及其余相对顺序。
+
 ## 2026-11-26 HappaConfig 优先修正与通用拦截
 
 1. 读取用户指定列表，确认已有 UDP 443、STUN、Corrects 定义，先检查目标优先顺序与三条新增规则。
