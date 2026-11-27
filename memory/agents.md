@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-27 aTrust 内网访问排查
+
+- 单代理，使用 systematic-debugging、verification-before-completion、Surge 原生 CLI、curl、官方文档与 CUA 的 Chrome DOM/AX；未截图，未调整本机 Surge 配置。用户授权后调整 3x-ui 现有规则顺序并重启 Xray。
+- 固定策略探测脚本位于忽略目录 .agent/atrust-diagnosis/；节点凭据、服务器登录资料和原始无关流量不写入协作归档。
+
 ## 2026-11-26 Browser 与 Happa 统一归档
 
 - 单代理，使用 notion-knowledge-capture、verification-before-completion 与 Notion MCP。Happa 源文件只读；本地快照、清单与检查保存在忽略目录 `.agent/notion-merge/`。

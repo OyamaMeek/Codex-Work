@@ -1,5 +1,15 @@
 # 当前任务进度
 
+## 2026-11-27 aTrust 内网访问排查
+
+- [x] 当前活动配置为 261127.conf，有效 Hziee 规则匹配目标；浏览器与 curl 均经过 Hziee → aTrust → ShangHai-aTrust-Vmess。
+- [x] HTTP 请求复现 0 字节及 WebSocket closed；增强模式实际接管，skip-proxy 不能解释本次失败。节点延迟测试 RTT 54 ms。
+- [x] 固定同节点访问公网 HTTP/HTTPS 均为204；内网 HTTP/HTTPS 均约50毫秒后 WebSocket closed。排除单纯 HTTP/HTTPS 输入错误及节点整体不可用。
+- [x] 用户说明 Shanghai 上通过本机 SOCKS5 返回200，3x-ui已有转发。转用已登录 Chrome 面板，无需截图；发现第2条 geoip:private → blocked 优先于第6条 atrustvmess → atrust，实时路由测试目标80端口确实返回 blocked。
+- [x] 用户确认“调整顺序并复测”后，仅把现有 atrustvmess 移至第2条，保存并重启 Xray；其他规则顺序保留。出站 atrust 为 socks 127.0.0.1:1080，无账号密码。
+- [x] 修正后公网 HTTP/HTTPS 继续204；内网从 WebSocket closed 变为 HTTP request timeout，curl延长至30秒仍0字节，尚未恢复。面板日志确认 Xray运行及配置加载，无明确转发错误。
+- [ ] 等待用户提供原先返回200的 curl 命令，核对本机 SOCKS5 的确切地址、端口、协议及测试 URL；Termius仍未截图，未取得 SSH 入口，不修改未知出站设置。
+
 ## 2026-11-27 CampusAD 线上模板错误
 
 - [x] 线上 INI 与本地逐字一致，线上 CONF 和 GitHub 源文件仍有两处已删除变量；与本地 CONF 相差三行 CampusAD 内容。

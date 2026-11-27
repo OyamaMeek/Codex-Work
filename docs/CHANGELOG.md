@@ -3736,3 +3736,18 @@
 - **Git 提交**：`1841c24 docs: diagnose stale CampusAD hosted template`；本行通过后续文档提交补记，仅提交本次诊断记录。
 
 ---
+
+## [2026-11-27 10:25] aTrust 内网网站连接诊断
+
+- **需求/问题描述**：
+  > 内网网站已选择 aTrust 代理仍无法打开；用户说明通过 Shanghai 转发。
+- **实际实现的功能与改动**：
+  - 只读核对活动配置、有效规则和浏览器请求，确认目标实际经过 Hziee → aTrust → ShangHai-aTrust-Vmess。
+  - [验证]：真实 HTTP 请求复现空响应，Surge 报 WebSocket closed 且入站0字节；固定节点访问公网 HTTP/HTTPS 均返回204，目标内网 HTTP/HTTPS 均在51—52毫秒关闭。节点延迟测试 RTT 54 ms。
+  - 读取已登录 Chrome 的 3x-ui 规则与实时路由：第2条 geoip:private → blocked 先于第6条 atrustvmess → atrust，目标80端口实时测试返回 blocked。用户报告服务器本机 SOCKS5 可返回200。
+  - 用户明确确认后，仅将现有 atrustvmess 规则移至第2条并保存、重启 Xray，其余规则相对顺序保留；atrust 出站指向 socks 127.0.0.1:1080，无账号密码。
+  - [复测]：公网 HTTP/HTTPS 仍204；目标从立即 WebSocket closed 变为6秒超时，独立 curl 延长至30秒仍0字节。尚未恢复，等待用户提供返回200的原 curl 命令以核对后续链路。未截图、未修改本机 Surge 或未知出站参数。
+- **涉及文件**：`.agent/atrust-diagnosis/`（仅本地）；memory 四份记录、本日志、`context/2026/11/27/10-25-13/对话.md`。
+- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+
+---
