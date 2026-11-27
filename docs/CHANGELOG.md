@@ -3722,3 +3722,17 @@
 - **Git 提交**：`605d21f docs: record CampusAD removal from HappaConfig`；本行通过后续文档提交补记，仅提交本次协作记录，配置保留本地。
 
 ---
+
+## [2026-11-27 08:07] 定位 CampusAD 线上模板渲染错误
+
+- **需求/问题描述**：
+  > 用户截图报告 Template render failed，local.campus_ad_rule not found。
+- **实际实现的功能与改动**：
+  - 读取网站真实 INI、CONF 与 GitHub CONF，确认 INI 已删除 CampusAD、CONF 仍引用 campus_ad_rule 和 campus_ad_mitm；第81行与截图错误一致。
+  - 修正版已位于本地 HappaConfig/HappaConfig.conf，与线上版本仅有三行 CampusAD 专用内容的删除差异；未改动其他配置。
+  - [验证]：线上文件组合检查退出1并列出两个缺失变量；线上 INI 配合修正版检查退出0，80条规则唯一且全部变量可展开；原三项回归检查及git diff --check通过。
+  - [范围]：未发布 Document 仓库、清除转换服务缓存或执行实际订阅转换；根据配置仅本地处理的项目约束，发布需用户明确授权。
+- **涉及文件**：`.agent/happa-render-error/`（仅本地）；本次 memory 四份记录、本日志与 `context/2026/11/27/08-07-26/对话.md`。
+- **Git 提交**：待提交，仅提交本次协作记录。
+
+---

@@ -1,5 +1,10 @@
 # 当前任务计划
 
+## 2026-11-27 CampusAD 线上模板错误
+
+- 下载线上 INI、CONF 并核对 GitHub 源文件，复现缺失变量；以本地已修正 CONF 验证线上 INI 的全部引用。
+- 修正版仅删除 CONF 的三行 CampusAD 专用内容；按项目配置仅本地处理的约束，发布至 Document 仓库等待用户明确授权。
+
 ## 2026-11-26 删除 CampusAD 接入
 
 - 删除 HappaConfig 的 CampusAD 策略组、广告规则与专用 MITM 主机定义及 CONF 引用；其余配置、独立规则文件保留。
