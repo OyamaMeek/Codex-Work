@@ -8,7 +8,12 @@
 - [x] 用户说明 Shanghai 上通过本机 SOCKS5 返回200，3x-ui已有转发。转用已登录 Chrome 面板，无需截图；发现第2条 geoip:private → blocked 优先于第6条 atrustvmess → atrust，实时路由测试目标80端口确实返回 blocked。
 - [x] 用户确认“调整顺序并复测”后，仅把现有 atrustvmess 移至第2条，保存并重启 Xray；其他规则顺序保留。出站 atrust 为 socks 127.0.0.1:1080，无账号密码。
 - [x] 修正后公网 HTTP/HTTPS 继续204；内网从 WebSocket closed 变为 HTTP request timeout，curl延长至30秒仍0字节，尚未恢复。面板日志确认 Xray运行及配置加载，无明确转发错误。
-- [ ] 等待用户提供原先返回200的 curl 命令，核对本机 SOCKS5 的确切地址、端口、协议及测试 URL；Termius仍未截图，未取得 SSH 入口，不修改未知出站设置。
+- [x] 用户要求直接在Shanghai测试，已通过Termius执行；宿主机 SOCKS5 两种解析方式均约5秒超时，HTTP代理8888约10秒超时，HTTP000、0字节、退出28；容器网络命名空间内同样失败，排除单纯Docker端口映射问题。
+- [x] 用户明确授权本次Termius截图。有效Dante配置为/run/danted.conf，认证none且允许127/8、172.18.0.1/32；代理进程及utun7存在，但目标路由仍指向eth0，SANGFOR_OUTPUT链为空。
+- [x] 目标aTrust隧道最后日志为11月25日18时左右：upstream由authed转为reconnect，errCode10000000，报resolve auth result data occur error, err: Invalid arguments.；代理容器运行中不能证明隧道可用。
+- [x] 当前sangfor用户日志有importSysCert fail；与11月25日历史隧道授权错误分别记录，未据历史日志判定当前失效原因。已保存非空截图与视觉记录。
+- [x] 已在服务器保存现有容器inspect检查点，权限600、12833字节；核对2个挂载，重启无需更换镜像、端口或数据卷，检查点未下载或上传。
+- [ ] 已提出重启现有aTrust容器后复测，说明VPN会中断且可能需要重登；等待用户授权。本轮未更改容器、认证或防火墙设置，不再要求用户代为执行curl。
 
 ## 2026-11-27 CampusAD 线上模板错误
 
