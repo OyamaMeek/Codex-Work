@@ -4,6 +4,7 @@
 
 - 单代理，使用 systematic-debugging、verification-before-completion、Surge 原生 CLI、curl、官方文档及 CUA；用户授权后调整 3x-ui 规则并重启Xray，继续通过Termius在Shanghai执行真实测试，用户已明确授权本次Termius截图；本机Surge配置未调整。
 - 固定策略探测脚本位于忽略目录 .agent/atrust-diagnosis/；节点凭据、服务器登录资料和原始无关流量不写入协作归档。
+- 用户授权后重启现有aTrust容器；用户自行重新登录，助手完成Shanghai代理、Surge及Chrome真实访问验证。仅保留已恢复的内网站点标签页。
 
 ## 2026-11-26 Browser 与 Happa 统一归档
 

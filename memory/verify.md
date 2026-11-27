@@ -8,7 +8,9 @@
 
 实际结果：修正前实时路由测试 in-35389-tcp → 10.130.10.75:80 返回 blocked；用户授权后调整现有 atrustvmess 到 private 拦截之前并重启成功。修正后公网 HTTP/HTTPS 返回204，目标 HTTP/HTTPS 在6秒超时，独立 curl 延长至30秒仍0字节。
 
-服务器直接验证：宿主机SOCKS5本地/远端解析均约5秒超时，HTTP代理8888约10秒超时；nsenter进入容器网络命名空间后两种代理同样失败，HTTP000、0字节、退出28。Dante实际使用/run/danted.conf，认证none且允许宿主网关；utun7存在，但目标路由走eth0，SANGFOR_OUTPUT链为空。11月25日历史隧道日志报授权结果解析错误并进入reconnect；当前用户日志另有系统证书导入失败，未将其直接认定为本次根因。用户授权后已截图检查并保存在.agent/visual/atrust/，网站未恢复，等待容器重启授权。
+服务器直接验证：宿主机SOCKS5本地/远端解析均约5秒超时，HTTP代理8888约10秒超时；nsenter进入容器网络命名空间后两种代理同样失败，HTTP000、0字节、退出28。Dante实际使用/run/danted.conf，认证none且允许宿主网关；utun7存在，但目标路由走eth0，SANGFOR_OUTPUT链为空。11月25日历史隧道日志报授权结果解析错误并进入reconnect；当前用户日志另有系统证书导入失败，未将其直接认定为本次根因。用户授权后已截图检查并保存在.agent/visual/atrust/。
+
+最终复测：用户授权重启容器后仍超时，页面显示logout；用户重新登录后显示online。Shanghai SOCKS5返回200、7624字节、0.074801秒；HTTP代理返回200、7624字节、0.055917秒，均退出0。本机Surge请求返回200、7624字节、0.101061秒；Chrome实际进入/login，标题“登录页-实训管理平台”，账号密码框可见；Surge资源记录确认Hziee → aTrust → ShangHai-aTrust-Vmess、Completed、failed=false。网站访问恢复，网站账号登录不在本次范围。
 
 ## 2026-11-27 CampusAD 线上模板错误
 

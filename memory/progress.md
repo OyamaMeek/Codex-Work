@@ -13,7 +13,9 @@
 - [x] 目标aTrust隧道最后日志为11月25日18时左右：upstream由authed转为reconnect，errCode10000000，报resolve auth result data occur error, err: Invalid arguments.；代理容器运行中不能证明隧道可用。
 - [x] 当前sangfor用户日志有importSysCert fail；与11月25日历史隧道授权错误分别记录，未据历史日志判定当前失效原因。已保存非空截图与视觉记录。
 - [x] 已在服务器保存现有容器inspect检查点，权限600、12833字节；核对2个挂载，重启无需更换镜像、端口或数据卷，检查点未下载或上传。
-- [ ] 已提出重启现有aTrust容器后复测，说明VPN会中断且可能需要重登；等待用户授权。本轮未更改容器、认证或防火墙设置，不再要求用户代为执行curl。
+- [x] 用户授权后重启现有aTrust容器，启动时间2026-11-27T02:58:58Z；原镜像、端口和挂载保持。重启后SOCKS5仍约5秒超时，页面明确显示logout。
+- [x] 用户重新登录后页面显示online；Shanghai SOCKS5返回200/7624字节/0.074801秒，HTTP代理返回200/7624字节/0.055917秒，均退出0。
+- [x] 本机经Surge请求目标返回200/7624字节/0.101061秒；Chrome真实打开/login，标题为“登录页-实训管理平台”，可见账号密码输入框。Surge日志确认Hziee → aTrust → ShangHai-aTrust-Vmess及资源请求完成、failed=false。网站已恢复，未执行网站账号登录。
 
 ## 2026-11-27 CampusAD 线上模板错误
 
