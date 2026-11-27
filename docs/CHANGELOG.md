@@ -3748,6 +3748,6 @@
   - 用户明确确认后，仅将现有 atrustvmess 规则移至第2条并保存、重启 Xray，其余规则相对顺序保留；atrust 出站指向 socks 127.0.0.1:1080，无账号密码。
   - [复测]：公网 HTTP/HTTPS 仍204；目标从立即 WebSocket closed 变为6秒超时，独立 curl 延长至30秒仍0字节。尚未恢复，等待用户提供返回200的原 curl 命令以核对后续链路。未截图、未修改本机 Surge 或未知出站参数。
 - **涉及文件**：`.agent/atrust-diagnosis/`（仅本地）；memory 四份记录、本日志、`context/2026/11/27/10-25-13/对话.md`。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`98fdbe5 docs: diagnose aTrust routing conflict and remaining timeout`；本行通过后续文档提交补记，仅提交本次协作记录，网站仍超时。
 
 ---
