@@ -3777,6 +3777,6 @@
   - 本机经Surge请求返回200、7624字节、0.101061秒；Chrome实际打开/login，标题“登录页-实训管理平台”，显示账号密码框。Surge日志确认Hziee → aTrust → ShangHai-aTrust-Vmess、资源Completed且failed=false。
   - 已修复前置private拦截顺序，重新登录恢复aTrust隧道；网站访问恢复。未执行网站账号登录，未上传凭据、完整inspect或截图。
 - **涉及文件**：`.agent/atrust-diagnosis/`、`.agent/visual/atrust/`（仅本地）；memory四份记录、本日志及`context/2026/11/27/10-25-13/对话.md`。
-- **Git 提交**：待提交；实际哈希通过后续文档提交补记。
+- **Git 提交**：`d1861d6 docs: verify aTrust access restored after login`；通过后续文档提交补记，仅上传脱敏协作记录。
 
 ---
