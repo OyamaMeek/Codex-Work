@@ -3842,3 +3842,16 @@
 - **Git 提交** `b8b37b4 docs: record verified Docker installation on UK-Happa`。
 
 ---
+
+## [2026-11-28 20:39] 排查 UK-Happa 磁盘占用
+
+- **需求/问题描述**
+  > 排查截图所示服务器的磁盘空间主要用在何处。
+- **实际处理与验证**
+  - 在 Termius 的 UK-Happa 会话中运行 `hostname`、`df`、`du`、`journalctl --disk-usage` 和 Docker 用量查询。两次检查均显示根分区容量 35 GiB，已用 29 GiB，可用 6.4 GiB，占用率 82%。
+  - VibeVoice-ASR-BitNet 的模型文件目录占 13 GiB。containerd 占 8.7 GiB，其中 OverlayFS 快照占 6.1 GiB，内容存储占 2.6 GiB。`/var/log` 占 2.5 GiB，其中 systemd journal 约占 2 GiB。
+  - Docker 列出 3 个镜像、0 个容器和 0 个本地卷。构建缓存报告为 7.205 GB，标记为活动且可回收量为 0。服务器仅执行只读查询。
+- **涉及文件** `context/2026/11/28/20-32-00/对话.md` 和本记录。
+- **Git 提交** 待提交。
+
+---
