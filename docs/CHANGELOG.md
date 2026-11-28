@@ -3826,6 +3826,6 @@
   - 截图显示从 `~/ARTEX` 发起安装，APT 下载依赖时返回 404。核对 Debian 11 的 LTS 截止日期与 Docker Engine 的 Debian 版本要求。
   - 未连接服务器、未改变其配置或安装软件。
 - **涉及文件** `context/2026/11/28/19-24-51/对话.md`、本记录。
-- **Git 提交** 待提交。
+- **Git 提交** `41ab8b8 docs: record Docker installation request review`。
 
 ---
