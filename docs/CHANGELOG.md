@@ -3852,6 +3852,6 @@
   - VibeVoice-ASR-BitNet 的模型文件目录占 13 GiB。containerd 占 8.7 GiB，其中 OverlayFS 快照占 6.1 GiB，内容存储占 2.6 GiB。`/var/log` 占 2.5 GiB，其中 systemd journal 约占 2 GiB。
   - Docker 列出 3 个镜像、0 个容器和 0 个本地卷。构建缓存报告为 7.205 GB，标记为活动且可回收量为 0。服务器仅执行只读查询。
 - **涉及文件** `context/2026/11/28/20-32-00/对话.md` 和本记录。
-- **Git 提交** 待提交。
+- **Git 提交** `0f507c8 docs: record UK-Happa disk usage diagnosis`。
 
 ---
