@@ -3791,7 +3791,7 @@
   - 注册表与本地入口均通过 ACP 初始化及 cpp-labs 新建会话。Codex ARM64 签名、npm 依赖、原有配置和主目录清单检查通过。
   - 未在 IDE 中发送消息。注册表自动安装器仍有上溯问题，本地入口可直接调用固定安装。
 - **涉及文件**：CLion ACP 缓存与 `~/.jetbrains/acp.json`，本地检查材料 `.agent/clion-1128/`，本次 memory 记录及 `context/2026/11/28/12-04-25/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`0fd4bf6 docs: record CLion Codex recovery and local agent`。
 
 ---
 
@@ -3803,6 +3803,6 @@
   - 日志证实 2.7.0 曾在 IDE 内启动，随后目录更新到 2.12.1。新版安装仍因 npm 上溯主目录失败。以独立 prefix 安装并部署 2.12.1。
   - Codex 0.172.0 ARM64 签名、npm 依赖、主目录 npm 清单校验通过。目录版和「Codex 本地」都通过 ACP 初始化和新建会话检查。
 - **涉及文件**：CLion ACP 2.12.1 缓存、本次 memory 记录及 `context/2026/11/28/15-27-39/对话.md`。
-- **Git 提交**：待提交。
+- **Git 提交**：`0fd4bf6 docs: record CLion Codex recovery and local agent`。
 
 ---
