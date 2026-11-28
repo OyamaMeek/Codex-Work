@@ -3866,6 +3866,6 @@
   - 默认 Buildx 构建器首次回收 0 B。确认没有容器及正在运行的本机构建进程后重启 Docker，重新执行 Buildx 回收。构建缓存降至 0 B，OverlayFS 快照目录从约 6.1 GiB 降至 289 MiB，3 个镜像的 ID 均保持一致。
   - Docker、containerd 和 systemd-journald 均为 `active`。按 `df -B1 /` 核对，实际增加约 20.6 GiB 可用空间，最终占用率 23%，剩余约 27 GiB。
 - **涉及文件** `context/2026/11/28/20-43-01/对话.md` 和本记录。
-- **Git 提交** 待提交。
+- **Git 提交** `c976dbd docs: record UK-Happa disk cleanup`。
 
 ---
