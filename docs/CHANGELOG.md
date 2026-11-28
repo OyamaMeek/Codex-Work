@@ -3839,6 +3839,6 @@
   - 预演新增 9 个包，升级与卸载均为 0。安装 Docker Engine 29.8.0、Compose v5.5.1、Buildx v0.37.0，保存并刷新 Docker 官方源。原 `/etc/apt/sources.list` 校验一致。
   - Docker、Docker socket 和 containerd 均已启用并正在运行。官方 `hello-world` 拉取并实际运行，退出状态为 0。`dpkg --audit` 无输出。
 - **涉及文件** 服务器 `/etc/apt/sources.list.d/docker.sources`、`/etc/apt/keyrings/docker.asc`，以及 `memory/plan.md`、`memory/progress.md`、`memory/verify.md`、`context/2026/11/28/19-35-01/对话.md` 和本记录。
-- **Git 提交** 待提交。
+- **Git 提交** `b8b37b4 docs: record verified Docker installation on UK-Happa`。
 
 ---
