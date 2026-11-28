@@ -3855,3 +3855,17 @@
 - **Git 提交** `0f507c8 docs: record UK-Happa disk usage diagnosis`。
 
 ---
+
+## [2026-11-28 20:48] 清理 UK-Happa 模型权重、系统日志与 Docker 快照
+
+- **需求/问题描述**
+  > 删除 VibeVoice 模型文件和系统日志，清理能够回收的文件系统快照。
+- **实际处理与验证**
+  - 确认目标目录、挂载状态和进程引用后，删除 3 个 `.safetensors` 分片和 2 个 `.gguf` 权重文件。复查权重文件数量为 0，保留约 9.8 MiB 配置和配套文件。
+  - 轮转并清理 systemd journal，删除已轮转的系统日志，原位清空当前 syslog、auth.log、btmp 和 Fail2ban 日志。`/var/log` 从 2.5 GiB 降至 28 MiB，journal 约 8 MiB，并验证了 Docker 启动产生的新日志。
+  - 默认 Buildx 构建器首次回收 0 B。确认没有容器及正在运行的本机构建进程后重启 Docker，重新执行 Buildx 回收。构建缓存降至 0 B，OverlayFS 快照目录从约 6.1 GiB 降至 289 MiB，3 个镜像的 ID 均保持一致。
+  - Docker、containerd 和 systemd-journald 均为 `active`。按 `df -B1 /` 核对，实际增加约 20.6 GiB 可用空间，最终占用率 23%，剩余约 27 GiB。
+- **涉及文件** `context/2026/11/28/20-43-01/对话.md` 和本记录。
+- **Git 提交** 待提交。
+
+---
