@@ -1,5 +1,12 @@
 # 当前任务验证标准
 
+## 2026-11-28 UK-Happa 安装 Docker
+
+- 安装前确认目标主机，证明没有现有 Docker，并用 APT 安装预演核对软件包增减。
+- 安装后检查守护进程启用及运行状态、实际服务端版本、Compose、Buildx，并启动 Docker 官方测试容器核对退出状态。
+
+实际结果：UK-Happa 的 APT 预演退出 0，新增 9 个包，升级与卸载均为 0。Docker、Docker socket、containerd 均为 `enabled` 和 `active`，服务端 29.8.0，Compose v5.5.1，Buildx v0.37.0。`dpkg --audit` 无输出，`hello-world` 拉取后运行并退出 0，原 `/etc/apt/sources.list` 的 SHA-256 验证通过。
+
 ## 2026-11-28 CLion Codex 缓存缺失修复
 
 - 空目录 npm prefix 复现上溯，修复后安装 prefix 指向独立缓存。npm 依赖和 Codex 签名有效。

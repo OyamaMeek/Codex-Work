@@ -1,5 +1,11 @@
 # 当前任务进度
 
+## 2026-11-28 UK-Happa 安装 Docker
+
+- [x] 用户明确 Docker 用于其他服务。Termius 文字回显确认 UK-Happa、Debian 11、amd64、可用空间 16 GB，Docker 与 containerd 未安装。
+- [x] 隔离 APT 刷新成功，预演显示新增 9 个包、升级与卸载均为 0。安装 Docker Engine 29.8.0、Compose v5.5.1 和 Buildx v0.37.0，添加并验证 Docker 官方更新源。
+- [x] Docker、Docker socket 与 containerd 均运行并已启用。官方 `hello-world` 执行退出 0。对话和开发日志已归档。
+
 ## 2026-11-28 CLion Codex 缓存缺失修复
 
 - [x] 最新日志确认 Node 24.13.0 安装通过，ACP 2.7.0 缓存缺失且 npm 访问主目录并退出190。

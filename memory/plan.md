@@ -1,5 +1,11 @@
 # 当前任务计划
 
+## 2026-11-28 UK-Happa 安装 Docker
+
+1. 通过 Termius 确认目标主机、系统版本、现有 Docker 状态和磁盘空间。
+2. 用隔离的 APT 源和索引读取 Debian 官方归档及 Docker 签名仓库，先模拟安装并检查软件包变动，再安装 Docker Engine、Compose 和 Buildx。
+3. 保留供 Docker 更新使用的官方源和签名密钥。验证守护进程、开机启动、插件版本及真实容器运行。
+
 ## 2026-11-28 CLion Codex 缓存缺失修复
 
 1. 对照日志与 npm prefix 确认缓存缺失和安装上溯主目录，核对现有独立安装。
