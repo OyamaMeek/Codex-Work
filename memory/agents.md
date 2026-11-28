@@ -1,5 +1,10 @@
 # 当前协作环境
 
+## 2026-11-28 CLion Codex 缓存缺失修复
+
+- 单代理，沿用 systematic-debugging、verification-before-completion 与 ponytail。读取 CLion 日志，使用显式 npm prefix 和真实 ACP 协议验证。
+- 本地材料与配置备份位于忽略目录 `.agent/clion-1128/`。注册表下午更新到 ACP 2.12.1，「Codex 本地」指向缓存之外的 ACP 2.6.0。
+
 ## 2026-11-27 aTrust 内网访问排查
 
 - 单代理，使用 systematic-debugging、verification-before-completion、Surge 原生 CLI、curl、官方文档及 CUA；用户授权后调整 3x-ui 规则并重启Xray，继续通过Termius在Shanghai执行真实测试，用户已明确授权本次Termius截图；本机Surge配置未调整。
